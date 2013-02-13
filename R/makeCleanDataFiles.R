@@ -2,17 +2,11 @@
 #TODO: 
 # - don't use sep='' in read.csv, use read.table instead
 
-
-dir.rawData   <-  "data" # paste0() in general, but file.path here
-dir.cleanData <-  "output/data"
-var.match     <-  read.csv("R/variable_match.csv", h=TRUE, stringsAsFactors=FALSE)#variable match for each study
-var.def       <-  read.csv("R/variable_definitions.csv", h=TRUE, stringsAsFactors=FALSE)#variable definitions
-var.conv      <-  read.csv("R/variable_conversion.csv", h=TRUE, stringsAsFactors=FALSE)#functions for variable conversion
-met.def       <-  read.csv("R/methods_definitions.csv", h=TRUE, stringsAsFactors=FALSE)#definition of methods
 source('R/unit_conversion-fun.R')
+source('R/Biomass-fun.R')
 
-names         <-  c("Aiba2005", "Baltzer2007", "Baraloto2006", "Bond-Lamberty2002", "Coll2008", "Domec2012", "Epron2012", "Harja2012", "Kenzo2009", "Kenzo2009b", "Kohyama1987", "Kohyama1990", "Kohyama1994", "leMaire2011", "Martin1998", "McCulloh2010", "Mokany2003", "Mori1991", "Myster2009", "Nouvellon2010", "O'Hara0000", "O'Hara1995", "Osada0000", "Osada2003", "Osada2005", "Osunkoya2007", "Petritan2009", "Ribeiro2011", "Rodriguez2003","Roeh1997", "Salazar2010", "SantaRegina1999", "Selaya2007", "Selaya2008", "Selaya2008b", "Sillett2010", "Stancioiu2005", "Lusk0000a", "Lusk0000b", "Lusk2002", "Lusk2004", "Lusk2011", "Lusk2012", "Sterck0000", "Sterck2001", "Valladares2000", "Wang1995", "Wang1996", "Wang2000", "Wang2011", "Yamada1996", "Yamada2000", "Aiba2007", "Delagrange2004", "O'Grady2000", "O'Grady2006")
-new           <-  list()
+names     <-  getStudyNames()
+new       <-  list()
 
 for(i in 1:length(names)){
 	#Aiba 2005--------------------------------------
