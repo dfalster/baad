@@ -1,9 +1,4 @@
 
-#make names lowercase
-lownames <- function(x)tolower(names(x))
-
-#
-
 #some nice colours
 col <- c("blue2", "goldenrod1", "firebrick2", "chartreuse4", 
          "deepskyblue1", "darkorange1", "darkorchid3", "darkgrey", 
