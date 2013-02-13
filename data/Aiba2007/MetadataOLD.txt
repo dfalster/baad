@@ -1,0 +1,48 @@
+TO DO: Area of total stem cross section, Plant functional type and Position in  forest canopy
+
+\underline{Contact}: Dagoberto Arias Aguilar, jucalvo@itcr.ac.cr
+
+\underline{Reference}: Aiba, M. and Nakashizuka, T. (2007) Variation in juvenile survival and related physiological traits among dipterocarp species co-existing in a Bornean forest. Journal of Vegetation Science, 18, 379-388.
+
+\underline{Species}: Dipterocarpus globosus, Dipterocarpus tempehes, Dryobalanops aromatica, Dryobalanops lanceolata, Hopea bracteata, Hopea sphaerocarpa, Shorea beccariana, Shorea crassa, Shorea falciferoides ssp. glaucescens, Shorea laxa, Shorea macroptera ssp. baillonii.
+
+\underline{Sampling strategy}: 187 individuals measured. 
+
+\underline{Leaf area}: Individual and total leaf area was measured using the software LIA32 for Windows 95 (ver. 0.371b1, K. Yamamoto).
+
+\underline{Stem cross sectional area}:
+
+\underline{Height}: Total height was measured on each individual. Heights ranged from 0.1 to 1.5 m.
+
+\underline{Crown area}:
+
+\underline{Biomass}: Total leaf mass, Stem mass, Branch mass and Total root mass
+Sampled saplings were divided into four parts: roots, main trunk, branches and leaf lamina. All parts were dried to constant weight and dried.
+
+\underline{Traits}:
+
+\underline{Growth environment}: Field experimental.
+
+\underline{Other variables}:
+
+Position in forest canopy
+
+Plant functional type
+
+Light environment
+Hemispherical photographs were taken 1 m above ground at the centre of all subquadrats to measure canopy openness.
+
+Location where sampled
+Two permanent plots: the Canopy Biology Plot (8 ha) and the Crane Plot (4 ha), located in Lambir Hills National Park, Sarawak, Malaysia.
+
+Longitude and latitude of location
+4°2'N, 113°50'E
+
+Vegetation type
+Tropical forest
+
+Mean annual rainfall
+2700 mm
+
+Mean annual temperature
+26 °C

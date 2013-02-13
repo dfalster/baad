@@ -1,0 +1,23 @@
+\underline{Contact}: Chris Lusk, clusk@waikato.ac.nz
+
+\underline{Reference}: Lusk, C.H. (2002) Leaf area accumulation helps juvenile evergreen trees tolerate shade in a temperate rainforest. Oecologia 132, 188-196.
+
+\underline{Species}: Aristotelia chilensis, Aextoxicon punctatum, Embothrium coccineum, Eucryphia cordifolia, Gevuina avellana, Luma apiculata, Laurelia philippiana, Myrceugenia planipes.
+
+\underline{Sampling strategy}: This study was carried out in a 35-year-old second-growth forest fragment dominated by Nothofagus dombeyi, in Parque Nacional Puyehue, Chile (40∞39íS, 72∞11íW).  0.2-1.0m tall seedlings of the eight commonest species in the understory were sampled along a 40m wide transect running from the margin to the interior of the stand. Seedling survival was measured from June 2000 till August 2001, when gas exchange was measured and subsamples of plants were harvested for calculation of growth and biomass distribution parameters.
+
+\underline{Leaf area}: The total foliage area of each sapling was measured using An ADC AM100 leaf area meter (ADC BioScientific, Hoddesdon, Hertfordshire, England).
+
+\underline{Stem cross sectional area}: Basal stem diameter (immediately above any root flanges) was measured on two orthogonal axis, using electronic callipers.
+
+\underline{Height}: Height was measured as the length of the longest stem, from the ground to the apex.
+
+\underline{Crown area}: n/a.
+
+\underline{Biomass}: Saplings were divided into root, stem, and leaf fractions, and then dried to a constant weight. Leaf petioles were included in total leaf mass.
+
+\underline{traits}: n/a.
+
+\underline{Growth environment}: Field, wild.
+
+\underline{Other variables}: The light environment of each seedling (% canopy openness) was estimated using a pair of LAI-2000 canopy analyzers (Li-COR, Lincoln, Nebr); Mean annual rainfall provided. 

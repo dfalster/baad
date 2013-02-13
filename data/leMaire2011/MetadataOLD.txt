@@ -1,0 +1,40 @@
+> Please find attached the database I prepared in your format (from your
+> website). I hope you will find it interesting. There are 100 trees
+> destructively sampled.
+> Concerning the mean temperature and annual precipitations, I only put rough
+> estimates from a single meteorological station, I hope this is OK. Also, the
+> locations of stands are not very precise, but for a global dataset it should
+> be ok, no ?
+> If you have any question about the methods, units, etc. please do not
+> hesitte to contact me before the end of the week or after the 20th of
+> August.
+>
+
+
+\underline{Contact}: ???
+
+Full bibliographic reference of source publication
+Latin name of species
+Size range
+Number of individuals
+Individual leaf size and Total leaf area
+Area of sapwood, heartwood cross section and/or total stem cross section
+Projected crown area and crown surface area
+Total height of plant
+Height of crown
+Biomass;Total leaf mass, Stem mass, Sapwood, Heartwood, Bark and Branch mass, Fine root, Coarse root and Total root mass
+Leaf mass per area
+Average density of all stem tissue, density of stem sapwood, of stem bark and of stem heartwood
+Nitrogen content of leaves, sapwood, bark, heartwood, fine roots and coarse roots
+Plant functional type
+Growth environment of sampled plant
+Position in forest canopy
+Light environment
+Treatment
+Location where sampled
+Longitude and latitude of location
+Vegetation type
+Leaf area of index
+Mean annual rainfall
+Mean annual temperature
+Other variables

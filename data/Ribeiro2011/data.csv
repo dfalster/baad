@@ -1,0 +1,119 @@
+ID,Species,Botanical.family,Wood.density..g.cm-3.,dbh..cm.,Total.height..m.,Basal.area..m2.,Basal.area..m2.ha-1.,Wood.mass..kg........bole.+.branches.,Wood.mass..kg.ha-1........bole.+.branches.,Leaf.mass..kg.,Leaf.mass..kg.ha-1.,Vegetation.type,Growing.environment,Location,Mean.annual.rainfall,Mean.annual.temperature
+37,Acosmium sp.,Papilionoideae,0.65,5,2.5,0.002,0.0039,1.71,23.96,0.15219,2.13,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+60,Acosmium sp.,Papilionoideae,0.65,6.7,3.5,0.0035,0.007,5.46,85.22,0.30156,4.7,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+114,Acosmium sp.,Papilionoideae,0.65,10.8,4.5,0.0092,0.0184,31.08,607.28,1.93764,37.86,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+17,Astronium fraxinifolium Schott ex Spreng.æ,Anacardiaceae,0.67,5,2,0.002,0.0039,3.86,28.52,0.41635,3.07,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+67,Astronium fraxinifolium Schott ex Spreng.æ,Anacardiaceae,0.67,12.7,5,0.0127,0.0255,30.52,628.73,2.01796,41.57,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+88,Astronium fraxinifolium Schott ex Spreng.æ,Anacardiaceae,0.67,6.7,3.5,0.0035,0.007,10.41,288.6,1.3033,36.12,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+4,Byrsonima coccolobifolia Kunthæ,Malpighiaceae,0.5,10.3,3.5,0.0084,0.0168,15.98,117.97,1.12035,8.27,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+42,Byrsonima coccolobifolia Kunthæ,Malpighiaceae,0.5,6.2,3,0.003,0.0061,2.72,38.11,0.64785,9.07,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+76,Byrsonima coccolobifolia Kunthæ,Malpighiaceae,0.5,5,3,0.002,0.0039,3.39,69.81,0.33155,6.83,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+63,Curatella americana L.æ,Dilleniaceae,0.51,21.8,6,0.0372,0.0743,84.7,1321.37,4.87892,76.11,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+83,Curatella americana L.æ,Dilleniaceae,0.51,6.2,3,0.003,0.0061,3.99,103.84,0.61629,16.02,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+31,Eriotheca gracilipes (K.Schum)A.Rob.,Bombacaceae,0.43,12.3,4,0.0118,0.0236,22.83,392.67,0,0,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+48,Eriotheca gracilipes (K.Schum)A.Rob.,Bombacaceae,0.43,12.6,4.5,0.0124,0.0248,36.5,510.95,1.21288,16.98,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+71,Eriotheca gracilipes (K.Schum)A.Rob.,Bombacaceae,0.43,18.8,7,0.0277,0.0554,111.13,2289.19,9.46328,194.94,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+80,Eriotheca gracilipes (K.Schum)A.Rob.,Bombacaceae,0.43,7.6,4,0.0046,0.0092,9.84,255.96,0.51269,13.33,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+99,Eriotheca gracilipes (K.Schum)A.Rob.,Bombacaceae,0.43,12.7,5.5,0.0127,0.0255,31.98,927.56,1.65039,47.86,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+104,Eriotheca gracilipes (K.Schum)A.Rob.,Bombacaceae,0.43,8,4,0.005,0.0099,7.56,219.29,0.2862,8.3,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+105,Eriotheca gracilipes (K.Schum)A.Rob.,Bombacaceae,0.43,13.5,6.5,0.0144,0.0287,30.3,878.68,0.22198,6.44,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+107,Eriotheca gracilipes (K.Schum)A.Rob.,Bombacaceae,0.43,12.3,5,0.0118,0.0236,9.8,191.46,2.66633,52.1,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+33,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,6.4,3,0.0032,0.0064,3.18,54.77,0.09844,1.69,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+50,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,6.4,2.5,0.0032,0.0064,4.85,67.9,0,0,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+51,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,5,2,0.002,0.0039,1.94,27.23,0.24584,3.44,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+55,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,10.8,4,0.0092,0.0184,10.94,170.68,1.22142,19.05,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+75,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,6.4,2.5,0.0032,0.0064,2.58,53.14,0.15607,3.22,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+79,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,5.4,2,0.0023,0.0046,0.31,8.01,0.14505,3.77,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+81,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,5.1,1.5,0.002,0.0041,1.06,27.56,0.27104,7.05,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+82,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,5.7,2,0.0026,0.0052,1.55,40.2,0.23636,6.15,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+85,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,9.5,2,0.007,0.0141,7.6,210.66,0.63916,17.71,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+102,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,10.2,4,0.0081,0.0163,13.97,405.25,3.99853,115.96,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+118,Erythroxylum suberosum A. St.-Hil.æ ,Erythroxylaceae,0.55,11.1,4,0.0097,0.0195,15.77,308.03,0.69313,13.54,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+29,Lafoensia pacari A. St.-Hil.æ ,Lythraceae,0.6,5,3,0.002,0.0039,5.27,90.7,0.23237,4,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+77,Lafoensia pacari A. St.-Hil.æ ,Lythraceae,0.6,8.1,2,0.0051,0.0103,8.6,223.6,0.18941,4.92,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+93,Lafoensia pacari A. St.-Hil.æ ,Lythraceae,0.6,6.2,3,0.003,0.0061,4.36,130.95,0.02243,0.67,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+41,Piptocarpha rotundifolia (Less.) Bakeræ ,Asteraceae,0.46,6.4,3.5,0.0032,0.0064,3.61,50.59,0.04629,0.65,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+47,Plathymenia reticulata Benth.æ ,Mimosaceae,0.58,11.1,3,0.0097,0.0195,29.02,406.3,2.70609,37.89,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+43,Pouteria torta (Mart.) Radlk.æ ,Sapotaceae,0.59,18.5,3.8,0.027,0.054,157.96,2211.45,1.9624,27.47,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+45,Pouteria torta (Mart.) Radlk.æ ,Sapotaceae,0.59,5,2.5,0.002,0.0039,2.51,35.16,0.49537,6.94,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+94,Pouteria torta (Mart.) Radlk.æ ,Sapotaceae,0.59,8.1,3.5,0.0052,0.0103,5.52,165.58,0.51016,15.3,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+34,Pterodon emarginatus Vogelæ ,Papilionoideae,0.68,11.6,4,0.0106,0.0212,32.99,567.5,3.1045,53.4,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+68,Pterodon emarginatus Vogelæ ,Papilionoideae,0.68,8.9,4,0.0062,0.0125,14.68,302.46,2.08822,43.02,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+98,Pterodon emarginatus Vogelæ ,Papilionoideae,0.68,10,5,0.0079,0.0158,16.76,486.07,0.49789,14.44,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+106,Pterodon emarginatus Vogelæ ,Papilionoideae,0.68,20.2,7.5,0.0321,0.0642,126.4,2469.72,6.60413,129.03,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+9,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,7.2,2.5,0.004,0.0081,5.61,41.45,0.11094,0.82,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+21,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,5,2.5,0.002,0.0039,2.39,17.62,0,0,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+25,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,7.2,2,0.004,0.0081,3.48,25.72,0,0,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+26,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,7.2,3,0.004,0.0081,3.44,25.41,0.0204,0.15,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+35,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,17.3,3.2,0.0236,0.0473,90.58,1557.92,1.9894,34.22,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+46,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,7.5,3,0.0044,0.0088,9.66,135.18,0.58326,8.17,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+52,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,7.3,3.5,0.0042,0.0084,6.53,101.85,0.03823,0.6,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+66,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,11.5,4,0.0103,0.0206,20.68,322.61,0.6417,10.01,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+91,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,12,3.3,0.0113,0.0226,25.79,773.63,0.21282,6.38,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+108,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,10.2,4,0.0081,0.0163,12.54,245.01,0.83287,16.27,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+109,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,11.1,3,0.0097,0.0195,19.96,389.94,0.37837,7.39,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+110,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,15,3.8,0.0176,0.0352,59.31,1158.8,0.63232,12.35,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+111,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,12.6,4.5,0.0124,0.0248,25.86,505.3,0.36185,7.07,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+112,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,11.8,4,0.0109,0.0218,22.28,435.33,3.03796,59.36,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+113,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,12.7,3.8,0.0126,0.0252,25.72,502.44,1.09963,21.49,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+115,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,11.8,4,0.0109,0.0218,15.68,306.3,1.31564,25.71,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+116,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,6.7,3.5,0.0035,0.007,3.29,64.32,0.03631,0.71,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+117,Qualea grandiflora Mart.æ ,Vochysiaceae,0.56,14.3,5,0.0161,0.0322,24.01,469.15,1.14251,22.32,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+1,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,11.1,4.5,0.0097,0.0195,35.07,258.95,0,0,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+2,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,7,3,0.0039,0.0077,3.81,28.1,0.0162,0.12,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+3,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,7.8,3,0.0048,0.0096,4.18,30.86,0.0565,0.42,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+5,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,9.9,3,0.0077,0.0154,24.96,184.31,0.12057,0.89,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+6,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,7.6,4,0.0046,0.0092,8.03,59.27,0.30502,2.25,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+7,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,6.7,2.5,0.0035,0.007,3.5,25.82,0.28247,2.09,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+8,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,16.3,4.5,0.0209,0.0419,94.31,696.46,0.2264,1.67,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+10,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.8,4,0.0092,0.0184,28.85,213.02,0.1888,1.39,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+11,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.8,3.3,0.0091,0.0182,23.17,171.07,0.52197,3.85,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+12,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,7.8,3.5,0.0048,0.0096,7,51.66,0.14085,1.04,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+13,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,5.1,3,0.002,0.0041,2.54,18.74,0.23666,1.75,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+14,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,6.8,3.5,0.0037,0.0074,9.73,71.85,0.02573,0.19,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+15,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,15.8,3.5,0.0197,0.0393,70.09,517.59,0.34823,2.57,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+18,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,13.2,4,0.0137,0.0274,39.68,293.03,0,0,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+19,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.3,4,0.0084,0.0168,15.05,111.15,0.14392,1.06,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+20,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,13.4,4,0.014,0.0281,38.71,285.88,0.49551,3.66,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+22,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,14.3,4.3,0.016,0.0321,65.63,484.64,0.18337,1.35,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+23,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,11.9,4.5,0.0112,0.0224,19.6,144.71,0.02694,0.2,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+24,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.7,5,0.0089,0.0179,21.55,159.15,0.13775,1.02,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+27,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.7,4,0.0089,0.0179,25.4,436.81,0.05496,0.95,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+28,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.3,4,0.0084,0.0168,16.35,281.22,0.56479,9.71,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+32,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,22.2,4.2,0.0387,0.0773,275.34,4735.84,0,0,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+38,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,11.9,4,0.0112,0.0224,26.38,369.32,0.0331,0.46,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+39,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.8,4,0.0092,0.0184,13.88,194.35,0.63353,8.87,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+40,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,14.6,3.5,0.0168,0.0337,1.76,24.62,0.48203,6.75,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+44,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,11.6,4.5,0.0106,0.0212,28.5,399.06,0.79575,11.14,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+49,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,17.8,4.3,0.0249,0.0498,102.38,1433.37,0,0,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+53,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,13.4,4.5,0.014,0.0281,23.38,364.78,0,0,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+56,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.5,4.5,0.0087,0.0173,15.94,248.65,0.65823,10.27,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+59,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.2,4.5,0.0081,0.0163,15.88,247.73,0.04306,0.67,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+78,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.2,4,0.0081,0.0163,21.92,569.84,0.3588,9.33,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+84,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,15.6,4,0.0191,0.0382,56.92,1577.44,0.19193,5.32,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+86,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,8,3,0.005,0.0099,9.01,249.68,0.19485,5.4,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+87,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,7.6,3.5,0.0046,0.0092,6.18,171.4,0.09636,2.67,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+90,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,7.6,3.5,0.0046,0.0092,6.64,183.9,0.02898,0.8,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+92,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,13.1,5,0.0134,0.0268,44.05,1321.48,0.159,4.77,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+95,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.8,4,0.0092,0.0184,18.84,565.16,0.62467,18.74,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+96,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,10.8,4,0.0092,0.0184,17.17,515.16,0.89667,26.9,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+97,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,12.1,5,0.0115,0.023,33.91,1017.23,0.7054,21.16,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+100,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,11.5,4,0.0103,0.0206,12.44,360.84,0.34917,10.13,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+101,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,11.9,4.5,0.0112,0.0224,34.95,1013.56,0.16362,4.74,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+103,Qualea parviflora Mart.æ ,Vochysiaceae,0.51,14,5,0.0154,0.0308,48.07,1394.12,0.07859,2.28,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+16,Sclerolobium sp.,Caesalpinioideae,0.6,11.8,5,0.0109,0.0218,50.22,370.88,1.60065,11.82,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+30,Sclerolobium sp.,Caesalpinioideae,0.6,15.6,5,0.0191,0.0382,71.86,1236.07,3.3305,57.28,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+70,Sclerolobium sp.,Caesalpinioideae,0.6,11.1,4,0.0097,0.0195,29.41,605.84,2.08078,42.86,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+73,Sclerolobium sp.,Caesalpinioideae,0.6,10.2,4,0.0081,0.0163,32.92,678.19,2.08771,43.01,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+89,Sclerolobium sp.,Caesalpinioideae,0.6,11.8,5.5,0.0109,0.0218,47.42,1314.17,2.54003,70.39,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+57,Solanum sp.,Solanaceae,0.45,10.7,4,0.0089,0.0179,13.56,211.5,0.36814,5.74,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+58,Solanum sp.,Solanaceae,0.45,13.5,4,0.0144,0.0287,13.96,217.81,0.66721,10.41,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+61,Solanum sp.,Solanaceae,0.45,13.7,4,0.0147,0.0294,17.76,277.03,0.849,13.24,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+69,Solanum sp.,Solanaceae,0.45,8.6,3,0.0058,0.0116,6.19,127.55,0.16509,3.4,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+72,Solanum sp.,Solanaceae,0.45,9.9,4,0.0076,0.0153,8.85,182.24,0.25028,5.16,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+74,Solanum sp.,Solanaceae,0.45,27.6,6.3,0.0597,0.1194,239.66,4936.9,1.74654,35.98,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+54,Strychnos pseudoquina A. St.-Hil.æ ,Loganiaceae,0.7,8.3,3.5,0.0054,0.0108,4.06,63.33,0.08387,1.31,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+64,Stryphnodendron adstringens (Mart.) Covilleæ ,Mimosaceae,0.54,18.1,5,0.0258,0.0516,83.06,1295.68,0.52325,8.16,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+65,Stryphnodendron adstringens (Mart.) Covilleæ ,Mimosaceae,0.54,15.9,4.5,0.0198,0.0395,103.22,1610.16,1.60259,25,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+36,Terminalia argentea Mart.æ,Combretaceae,0.67,11.9,4.3,0.0111,0.0222,66.87,1150.12,4.15067,71.39,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23
+62,Terminalia argentea Mart.æ,Combretaceae,0.67,12.3,4,0.0118,0.0236,40.58,632.97,4.27558,66.7,Cerrado sensu stricto ,Field wild,"Curvelo, Minas Gerais state, Brazil",1200,23

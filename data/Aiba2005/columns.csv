@@ -1,0 +1,13 @@
+var_in,var_out,method,unit_in,Description,Alternative related variables,Method
+Genus,genus,,,,,
+Species,species,,,,,
+root mass (g),m.rt,m1,g,,,
+trunk mass (g),m.st,m1,g,,,
+branch mass (g),m.br,m1,g,,,
+leaf mass (g),m.lf,m1,g,,,
+total leaf area (cm^2),a.lf,,cm2,,,
+individual leaf area (cm^2),lf.sz,b,cm2,,,
+crown depth (cm),c.d,,cm,,,
+crown area (cm^2),a.cp,a,cm2,,,
+height (cm),h.t,,cm,,,
+stem diameter (mm),d.ba,d,mm,,,

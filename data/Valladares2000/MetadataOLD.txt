@@ -1,0 +1,50 @@
+Metadata					TO DO: pft
+ 
+Valladares, F., Wright, S.J., Lasso, E., Kitajima, K. and Pearcy, R.W. (2004) Plastic phenotypic response to light of 16 congeneric shrubs from a panamanian rainforest. Ecology, 81(7), 1925-1936.
+
+/underline{Species}: ???
+Psychotria acuminata, Psychotria brachiata, Psychotria marginata, Psychotria chagrensis, Psychotria emetica, Psychotria gracilifora, Psychotria grandis, Psychotria horizontalis, Psychotria ipecacuan, Psychotria limonensis, Psychotria micrantha, Psychotria pittieri, Psychotria psychotrif, Psychotria pubescens, Psychotria racemosa.
+
+Size range
+2.1 to 81 cm in height.
+
+Number of individuals
+559
+
+/underline{Leaf area}: ???
+Leaf area was measured with a portable LI-COR Model 3000 area meter (LI-COR, Lincoln, Nebraska, USA) before drying.
+
+Area of total stem cross section
+Diameter of stem was measured on each individual.
+
+/underline{Crown area}: ???and surface area of crown 
+Areas were estimated for each individual.
+
+/underline{Height}: ??? and Height of crown
+Heights were measured on each individual.
+
+/underline{Biomass}: ???Total leaf mass, Stem mass, Branch mass, Root mass 
+Leaves, petioles, stems, branches and roots of each plant were dried separatly to a constant mass and weighed.
+
+Leaf mass per area
+Mass per area was calculated for each individual.
+
+Plant functional type
+
+/underline{Growth environment}: ???
+Shade houses in experimental field.
+
+Light environment
+PPFD was measured using Model G1118 GaAsP photocells (Hanamatsu, Bridgewater, New Jersey, USA) connected to a Model 21X datalogger (Campbell Scientific, Logan, Utah, USA).
+
+Treatment
+High light, medium light and low light environment. The tree light environments were created using neutral density shade cloth,
+
+Location where sampled
+screened growing house at the Smithsonian Tropical Research Institute Station on Barro Colorado Island (BCI, Panama)
+
+Latitude and longitude of location
+9°9'N, 79°51'W
+
+Vegetation type
+Tropical Rainforest.
