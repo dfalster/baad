@@ -69,15 +69,24 @@ for(j in 1:length(selec)){    #Do for every column that needs conversion
 data
 }
 
+loadStudyData<-function(studyName){
+  cat(studyName, " ")
+  #import options for data file
+  import <-  read.csv(paste0(dir.rawData,"/",studyName,"/import.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE) #loads import options for study
+  #brings in the original .csv
+  dat     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE)
+}
+
 loadDataOrig<-function(studyName){
+
+  raw<-loadStudyData(studyName)
+  
   #Aiba 2005--------------------------------------
   if(studyName=="Aiba2005"){
-    raw       <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE) #brings in the original .csv
     data  <-  cbind(dataset=studyName, species=paste(raw$Genus, raw$Species), raw[,2:12], pft="EA", growingCondition="FW", longitude=5.104833, latitude=114.605,  vegetation="TropRF", map=2700, mat=26, light="closed[average 6%]", location="Lambir Hills National Park, Sarawak, Malaysia", reference="Aiba M, Nakashizuka T (2005) Sapling structure and regeneration strategy in 18 Shorea sSpecies co-occurring in a tropical rainforest. Annals of Botany 96:313–321.", stringsAsFactors=FALSE)  
   }
   #Baltzer 2007-----------------------------------
   if(studyName=="Baltzer2007"){
-    raw       <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$species[raw$species=="AR"]  <-  "Acer rubrum"
     raw$species[raw$species=="AS"]  <-  "Acer saccharum"
     raw$species[raw$species=="BA"]  <-  "Betula alleghaniensis"
@@ -93,12 +102,10 @@ loadDataOrig<-function(studyName){
   }
   #Baraloto 2006----------------------------------
   if(studyName=="Baraloto2006"){
-    raw       <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$SpID, grouping=paste("Soil(",raw$Soil,"); ", "H2O(", raw$H2O, "); ", "P(", raw$P, ")", sep=""), raw[,c(6,7,10:14,16:17)], growingCondition="GH", longitude=-52.65034, latidude=5.159944, vegetation="TropRF", location="INRA, Kourou, French Guiana", reference="Baraloto C, Bonal D, Goldberg DE (2006) Differential seedling growth response to soil resource availability among nine neotropical tree species. Journal of Tropical Ecology 22:487–497.", stringsAsFactors=FALSE)
   }
   #Bond-Lamberty2002------------------------------
   if(studyName=="Bond-Lamberty2002"){
-    raw       <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$Species[raw$Species=='A']   <-  "Populus tremuloides"
     raw$Species[raw$Species=='BI']  <-  "Betula papyrifera"
     raw$Species[raw$Species=='BS']  <-  "Picea mariana"
@@ -109,7 +116,6 @@ loadDataOrig<-function(studyName){
   }
   #Coll2008------------------------------
   if(studyName=="Coll2008"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     #leaf and biomass measurements come from different individuals, so I'll take the average leaf measure from each variable and species and then paste this into the individual trees that contain the biomass data
     raw1       <-  raw[!is.na(raw$tree),1:6]
     raw1.mean  <-  data.frame(individual.leaf.mass.g=tapply(raw1$individual.leaf.mass.g, raw1$species, mean),
@@ -125,7 +131,6 @@ loadDataOrig<-function(studyName){
   }
   #Domec2012------------------------------
   if(studyName=="Domec2012"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     names(raw)[names(raw)=="Reference.publication"]  <-  "reference"
     raw$reference[raw$reference %in% c(unique(raw$reference)[1:6])]  <-  "Domec J-C, Gartner BL (2003) Relationship between growth rates and xylem hydraulic characteristics in young, mature and old-growth ponderosa pine trees. Plant, Cell and Environment 26:471–483; Domec, J-C, Lachenbruch B, Pruyn ML, Spicer R (2012) Effects of age-related increases in sapwood area, leaf area, and xylem conductivity on height-related hydraulic costs in two contrasting coniferous species. Annals of Forest Science 69:17–27."
     raw$reference[raw$reference %in% c(unique(raw$reference)[2:13])]  <- "Domec J-C, Pruyn ML, Gartner BL (2005) Axial and radial proﬁles in conductivities, water storage and native embolism in trunks of young and old-growth ponderosa pine trees. Plant, Cell and Environment 28:1103–1113; Domec, J-C, Lachenbruch B, Pruyn ML, Spicer R (2012) Effects of age-related increases in sapwood area, leaf area, and xylem conductivity on height-related hydraulic costs in two contrasting coniferous species. Annals of Forest Science 69:17–27."
@@ -137,7 +142,6 @@ loadDataOrig<-function(studyName){
   }
   #Epron2012------------------------------
   if(studyName=="Epron2012"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$a.babh <-  raw$a.st - raw$a.st.1
     names(raw)[names(raw)=="group"]  <-  "grouping"
     raw$reference  <-  "Epron D, Laclau J-P, Almeida JCR, Goncalves JLM, Ponton S, Sette Jr CR, Delgado-Rojas JS, Bouillet J-P, Nouvellon Y (2012) Do changes in carbon allocation account for the growth response to potassium and sodium applications in tropical Eucalyptus plantations? Tree Physiology 32:667–679; Almeida JCR, Laclau J-P, Goncalves JLM, Ranger J, Saint-Andre L (2010) A positive growth response to NaCl applications in Eucalyptus plantations established on K-deficient soils. Forest Ecology and Management 259:1786–1795; Laclau J-P unpublished."
@@ -145,7 +149,6 @@ loadDataOrig<-function(studyName){
   }
   #Harja2012------------------------------ NOT FINISHED
   if(studyName=="Harja2012"){
-    raw              <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     names(raw)[2:3]  <-  c("Indonesian name", "Species")
     raw$Species[raw$Species=='Landom']  <-  "Lansium domesticum"
     raw$Species[raw$Species=='Durzib']  <-  "Durio zibethinus"
@@ -168,7 +171,6 @@ loadDataOrig<-function(studyName){
   }
   #Kenzo2009------------------------------
   if(studyName=="Kenzo2009"){
-    raw           <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$n.lf.per  <-  (raw$n.lf.per/100) * raw$lf.ma.g.m2 # this transforms it from percentage (/unit mass) to /unit area --> final unit g/m2
     raw$reference[raw$reference %in% c(unique(raw$reference)[1])]  <-  "Kenzo T, Ichie T, Hattori D, Itioka T, Handa C, Ohkubo T, Kendawang JJ, Nakamura M, Sakaguchi M, Takahashi N, Okamoto M, Tanaka-Oda A, Sakurai K, Ninomiya I (2009) Development of allometric relationships for accurate estimation of above- and below-ground biomass in tropical secondary forests in Sarawak, Malaysia. Journal of Tropical Ecology 25:371–386."
     raw$reference[raw$reference %in% c(unique(raw$reference)[2])]  <-  "Kenzo T et al. 2008 unpublished"
@@ -176,12 +178,10 @@ loadDataOrig<-function(studyName){
   }
   #Kenzo2009b------------------------------
   if(studyName=="Kenzo2009b"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$species, grouping=paste(raw$location, raw$contributor, sep="; "), raw[,c(2, 4:ncol(raw))], stringsAsFactors=FALSE)
   }
   #Kohyama1987------------------------------
   if(studyName=="Kohyama1987"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$SpecCode[raw$SpecCode=='Cs']  <-  "Camellia sasanqua"
     raw$SpecCode[raw$SpecCode=='Cj']  <-  "Camellia japonia"
     raw$SpecCode[raw$SpecCode=='Na']  <-  "Neolitsea aciculata"
@@ -202,7 +202,6 @@ loadDataOrig<-function(studyName){
   }
   #Kohyama1990------------------------------
   if(studyName=="Kohyama1990"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$SpecCode[raw$SpecCode=='Swinto,']  <-  "Swintonia schwenkii"
     raw$SpecCode[raw$SpecCode=='Shorea,']  <-  "Shorea sumatrana"
     raw$SpecCode[raw$SpecCode=='Nephel,']  <-  "Nephelium juglandifolium"
@@ -216,7 +215,6 @@ loadDataOrig<-function(studyName){
   }
   #Kohyama1994------------------------------
   if(studyName=="Kohyama1994"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$SpecCode[raw$SpecCode=='Cs']  <-  "Camellia sasanqua"
     raw$SpecCode[raw$SpecCode=='Cj']  <-  "Camellia japonia"
     raw$SpecCode[raw$SpecCode=='Na']  <-  "Neolitsea aciculata"
@@ -239,15 +237,13 @@ loadDataOrig<-function(studyName){
     data   <-  cbind(dataset=studyName, species=raw$SpecCode, raw[,c(3:5, 10:ncol(raw))], latitude=30, longitude=130, growingCondition="FW", vegetation="TempRf", location="Yakushima Island, Kyushu, Japan", reference="Kohyama T, Grubb PJ (1994) Below- and above-ground allometries of shade-tolerant seedlings in a Japanese warm-temperate rain forest. Functional Ecology 8:229–236.", stringsAsFactors=FALSE)
   }
   #leMaire2011------------------------------
-  if(studyName=="leMaire2011"){ # TODO: either read.table not read.csv, or something else?
-    raw            <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
+  if(studyName=="leMaire2011"){ 
     names(raw)[names(raw)=="map.mm"]  <-  "map"
     raw$reference  <-  "le Maire G, Marsden C, Verhoef W, Ponzoni FJ, Lo Seen D, Bégué A, Stape J-L, Nouvellon Y (2011) Leaf area index estimation with MODIS reflectance time series and model inversion during full rotations of Eucalyptus plantations. Remote Sensing of Environment 115:586–599."
     data      <-  cbind(dataset=studyName, species=raw$species, grouping=paste(raw$Variable.Unit, sep="; "), raw[,c(3,5:19,21:ncol(raw))], stringsAsFactors=FALSE)
   }
   #Martin1998------------------------------
   if(studyName=="Martin1998"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw$spp[raw$spp=='acru']  <-  "Acer rubrum L."
     raw$spp[raw$spp=='bele']  <-  "Betula lento. L."
     raw$spp[raw$spp=='caov']  <-  "Carya ovata (Mill.) K. Koch"
@@ -263,9 +259,7 @@ loadDataOrig<-function(studyName){
     
   }
   #McCulloh2010------------------------------
-  if(studyName=="McCulloh2010"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
-    
+  if(studyName=="McCulloh2010"){    
     raw$vegetation[raw$species=="Anacardium excelsum"]    <-  "TropRF"
     raw$vegetation[raw$species=="Cordia alliodora"]       <-  "TropRF"
     raw$vegetation[raw$species=="Ficus insipida"]         <-  "TropRF"
@@ -320,56 +314,46 @@ loadDataOrig<-function(studyName){
   }
   #Mokany2003------------------------------
   if(studyName=="Mokany2003"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=2)
     data   <-  cbind(dataset=studyName, species=raw$Species, raw[,c(7:22)], reference=paste(raw$Name, raw$Year, raw$Title, raw$Symbol, sep=""), stringsAsFactors=FALSE)
   }
   #Mori1991------------------------------
   if(studyName=="Mori1991"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw[raw=="No data"] <-  NA
     data   <-  cbind(dataset=studyName, species="Chamaecyparis obtusa", raw[,c(2, 5, 10:17)], vegetation="TempF", growingCondition="PU", stringsAsFactors=FALSE)
   }
   #Myster2009------------------------------
   if(studyName=="Myster2009"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$species, raw[,c(2:6)], latitude=36.78333, longitude=-96.41667, map=820, vegetation="TempF", growingCondition="PM", stringsAsFactors=FALSE)
   }
   #Nouvellon2010------------------------------
   if(studyName=="Nouvellon2010"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=4)
     data   <-  cbind(dataset=studyName, species=raw$species, raw[,c(5:ncol(raw))], stringsAsFactors=FALSE)
   }
   #O'Hara0000------------------------------
   if(studyName=="O'Hara0000"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     data   <-  cbind(dataset=studyName, species="Sequoiadendron giganteum", raw[,c(2:4, 6:ncol(raw))], stringsAsFactors=FALSE)
   }
   #O'Hara1995------------------------------
   if(studyName=="O'Hara1995"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$species, grouping=raw$site, raw[,c(1:3, 5:7, 9)], vegetation="TempF", growingCondition="FW", stringsAsFactors=FALSE)
   }
   #Osada0000------------------------------
   if(studyName=="Osada0000"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw        <-  raw[raw$Source != "Osada et al. (2003) Forest Ecology and Management" & raw$Source != "Osada (2005) Canadian Journal of Botany", ]
     data   <-  cbind(dataset=studyName, species=raw$species, grouping=paste(raw$Source, raw$Tree.No., sep="; "), raw[,c(4:9, 11:12, 14:ncol(raw))], stringsAsFactors=FALSE)
   }
   #Osada2003------------------------------
   if(studyName=="Osada2003"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw        <-  raw[raw$Source == "Osada et al. (2003) Forest Ecology and Management", ]
     data   <-  cbind(dataset=studyName, species=raw$species, grouping=paste(raw$Source, raw$Tree.No., sep="; "), raw[,c(4:9, 11:12, 14:ncol(raw))], stringsAsFactors=FALSE)
   }
   #Osada2005------------------------------
   if(studyName=="Osada2005"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw        <-  raw[raw$Source == "Osada (2005) Canadian Journal of Botany", ]
     data   <-  cbind(dataset=studyName, species=raw$species, grouping=paste(raw$Source, raw$Tree.No., sep="; "), raw[,c(4:9, 11:12, 14:ncol(raw))], stringsAsFactors=FALSE)
   }
   #Osunkoya2007------------------------------
   if(studyName=="Osunkoya2007"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$species[raw$species=="Horsfiel_polysph"]  <-  "Horsfieldia polyspherulaa"
     raw$species[raw$species=="Knema_ashiton"]     <-  "Knema ashitoniia"
     raw$species[raw$species=="Litsea_ferrugi"]    <-  "Litsea ferrugiinea"		
@@ -396,12 +380,10 @@ loadDataOrig<-function(studyName){
   }
   #Petritan2009------------------------------
   if(studyName=="Petritan2009"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$Species, raw[,c(2:ncol(raw))], latitude=51.57944, longitude=10.03639, map=780, mat=7.8, growingCondition="FW", vegetation="TempF", pft="EA / DA", stringsAsFactors=FALSE)
   }
   #Ribeiro2011------------------------------
   if(studyName=="Ribeiro2011"){
-    raw                   <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     names(raw)[3]         <-  "family"
     names(raw)[15:17]     <-  c("location","map", "mat")
     names(raw)[13]        <-  "vegetation"
@@ -412,7 +394,6 @@ loadDataOrig<-function(studyName){
   }
   #Rodriguez2003---------------------------------------------
   if(studyName=="Rodriguez2003"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$Bark_Stemwood  <-  raw$Bark + raw$Stemwood
     raw$Crown_class[raw$Crown_class==1]  <-  "intermediate"
     raw$Crown_class[raw$Crown_class==1]  <-  "codominant"
@@ -421,12 +402,10 @@ loadDataOrig<-function(studyName){
   }
   #Roeh1997---------------------------------------------
   if(studyName=="Roeh1997"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$species, raw[,c(1:7,9)], growingCondition="PU", vegetation="TempF",   stringsAsFactors=FALSE)
   }
   #Salazar2010---------------------------------------------
   if(studyName=="Salazar2010"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw$Stem_biomass  <-  raw$Branch_biomass+raw$Trunk_biomass
     raw$map[raw$Species=="Castanea sativa "]    <-  1590
     raw$map[raw$Species=="Quercus pyrenaica "]  <-  1530
@@ -436,7 +415,6 @@ loadDataOrig<-function(studyName){
   }
   #SantaRegina1999---------------------------------------------
   if(studyName=="SantaRegina1999"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw$Stem_biomass  <-  raw$Branch_biomass+raw$Trunk_biomass
     raw$pft[raw$Species=="Fagus sylvatica"]    <-  "DA"
     raw$pft[raw$Species=="Pinus sylvestris"]   <-  "EG"
@@ -444,35 +422,24 @@ loadDataOrig<-function(studyName){
   }
   #Selaya2007---------------------------------------------
   if(studyName=="Selaya2007"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw        <-  raw[raw$reference=="Selaya et al. (2007) Annals of Botany 99:141-151; Selaya & Anten (2010) Ecology 91: 1102-1113",]
     raw$light  <-  raw$light/55*100
     data   <-  cbind(dataset=studyName, species=raw$Species, grouping=raw$group..7., raw[,c(4:16,18,19,25:ncol(raw))], growingCondition="PU",  latitude=-11, longitude=-66, stringsAsFactors=FALSE)
   }
   #Selaya2008---------------------------------------------
   if(studyName=="Selaya2008"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw        <-  raw[raw$reference=="Selaya & Anten (2008) Functional Ecology 22: 30-39",]
     raw$light  <-  raw$light/55*100
     data   <-  cbind(dataset=studyName, species=raw$Species, grouping=raw$group..7., raw[,c(4:16,18,19,25:ncol(raw))], growingCondition="PU",  latitude=-11, longitude=-66, location="Riberalta, Bolivian Amazon", stringsAsFactors=FALSE)
   }
   #Selaya2008b---------------------------------------------
   if(studyName=="Selaya2008b"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
-    raw        <-  raw[raw$reference=="Selaya et al. (2008) Journal of Ecology 96: 1211-1221; Selaya & Anten (2010) Ecology 91:1102-1113",]
-    raw$light  <-  raw$light/55*100
-    data   <-  cbind(dataset=studyName, species=raw$Species, grouping=raw$group..7., raw[,c(4:16,18,19,25:ncol(raw))], growingCondition="PU",  latitude=-11, longitude=-66, location="Riberalta, Bolivian Amazon", stringsAsFactors=FALSE)
-  }
-  #Selaya2008b---------------------------------------------
-  if(studyName=="Selaya2008b"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw        <-  raw[raw$reference=="Selaya et al. (2008) Journal of Ecology 96: 1211-1221; Selaya & Anten (2010) Ecology 91:1102-1113",]
     raw$light  <-  raw$light/55*100
     data   <-  cbind(dataset=studyName, species=raw$Species, grouping=raw$group..7., raw[,c(4:16,18,19,25:ncol(raw))], growingCondition="PU",  latitude=-11, longitude=-66, location="Riberalta, Bolivian Amazon", stringsAsFactors=FALSE)
   }
   #Sillett2010---------------------------------------------
   if(studyName=="Sillett2010"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     for(j in c(2,5:16)){
       raw[,j]  <-  unlist(lapply(raw[,j], function(x){as.numeric(strsplit(x, "_")[[1]][1])}))
     }
@@ -493,7 +460,6 @@ loadDataOrig<-function(studyName){
   }
   #Stancioiu2005---------------------------------------------
   if(studyName=="Stancioiu2005"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw$status[raw$crown.class=="i"]   <-  1
     raw$status[raw$crown.class=="s"]   <-  0
     raw$status[raw$crown.class=="d"]   <-  3
@@ -502,32 +468,26 @@ loadDataOrig<-function(studyName){
   }
   #Lusk0000a---------------------------------------------
   if(studyName=="Lusk0000a"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$Species, raw[,c(6:ncol(raw))], growingCondition="GH",  pft="EA", location="New Zealand", stringsAsFactors=FALSE)
   }
   #Lusk0000b---------------------------------------------
   if(studyName=="Lusk0000b"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$Species, raw[,c(6:10)], growingCondition="GH", pft="EA", location="New Zealand", stringsAsFactors=FALSE)
   }
   #Lusk2002---------------------------------------------
   if(studyName=="Lusk2002"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$Species, raw[,c(6:10)], growingCondition="FW",  vegetation="TempRf", pft="EA", location="Parque Nacional Puyehue, Chile", latitude=-40.65, longitude=-72.18, map=3500, stringsAsFactors=FALSE)
   }
   #Lusk2004---------------------------------------------
   if(studyName=="Lusk2004"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$Species, raw[,c(6:10)], growingCondition="FW", vegetation="TempRf", pft="EA", location="Parque Nacional Puyehue, Chile", latitude=-40.65, longitude=-72.18, map=3500, stringsAsFactors=FALSE)
   }
   #Lusk2011---------------------------------------------
   if(studyName=="Lusk2011"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species=raw$Species, raw[,c(6:ncol(raw))], growingCondition="FW",  vegetation="TempRf", location="Parque Nacional Puyehue, Chile", latitude=-40.65, longitude=-72.18, map=3500, stringsAsFactors=FALSE)
   }
   #Lusk2012---------------------------------------------
   if(studyName=="Lusk2012"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$pft    <-  "EA"
     raw$pft[raw$Species=="Podocarpus nubigena"]          <-  "EG"
     raw$pft[raw$Species=="Podocarpus salignus"]          <-  "EG"
@@ -539,35 +499,29 @@ loadDataOrig<-function(studyName){
   }
   #Sterck0000---------------------------------------------
   if(studyName=="Sterck0000"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data   <-  cbind(dataset=studyName, species="????????", raw[,c(4:10)], stringsAsFactors=FALSE)
   }
   #Sterck2001---------------------------------------------
   if(studyName=="Sterck2001"){
-    raw        <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$Sp[raw$Sp=="VA"]  <-  "Vouacapoua americana Aubl."
     raw$Sp[raw$Sp=="DG"]  <-  "Dicorynia guianensis Amshoff."
     data   <-  cbind(dataset=studyName, species=raw$Sp, raw[,c(4:8,10:12,15)], growingCondition="FW", vegetation="TropRF", location="les Nouragues Biological Field Station, French Guiana", latitude=4.08, longitude=-52.66, map=3000, stringsAsFactors=FALSE)
   }
   #Valladares2000---------------------------------------------
   if(studyName=="Valladares2000"){
-    raw          <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$species  <-  gsub("P.", "Psychotria", raw$species)
     data     <-  cbind(dataset=studyName, species=raw$species, grouping=raw$treatment, raw[,c(3:12)], growingCondition="FE", vegetation="TropRF", pft="EA", location="Barro Colorado Island (BCI, Panama)", latitude=9.15, longitude=-79.85, stringsAsFactors=FALSE)
   }
   #Wang1995---------------------------------------------
   if(studyName=="Wang1995"){
-    raw          <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=3)
     data     <-  cbind(dataset=studyName, species="Populus tremuloides Michx.", raw[,c(2:8)], growingCondition="FW", vegetation="BorF", pft="DA", location="Dawson Creek, Forest District of northeastern British Columbia, CA", map=450, stringsAsFactors=FALSE)
   }
   #Wang1996---------------------------------------------
   if(studyName=="Wang1996"){
-    raw          <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=3)
     data     <-  cbind(dataset=studyName, species="Betula papyrifera Marsh", raw[,c(2:8)], growingCondition="FW", vegetation="BorF", pft="DA", location="British Columbia, CA", map=668, stringsAsFactors=FALSE)
   }
   #Wang2000---------------------------------------------
   if(studyName=="Wang2000"){
-    raw            <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$m.rc       <-  raw$Lrg..Root+raw$Med..Root
     raw$Stem.Wood  <-  raw$Stem.Wood + raw$Stem.Bark
     
@@ -578,37 +532,31 @@ loadDataOrig<-function(studyName){
   }
   #Wang2011---------------------------------------------
   if(studyName=="Wang2011"){
-    raw            <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     data       <-  cbind(dataset=studyName, species="Pinus sylvestris var. mongolica", raw[,c(2:ncol(raw))], growingCondition="PM", location="Liaoning Sand Stabilization and Afforestation Institute in Zhanggutai, China", pft="EG", latitude=42.72, longitude=122.3667, map=505.9, mat=6, stringsAsFactors=FALSE)
   }
   #Yamada1996---------------------------------------------
   if(studyName=="Yamada1996"){
-    raw                   <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$stem.dry.mass..g. <-  raw$stem.dry.mass..g.+ raw$branch.dry.mass..g.
     data       <-  cbind(dataset=studyName, species=raw$Species, raw[,c(4:8,10:13)], growingCondition="FW", vegetation="TropRF", location=raw$site, pft="DA", latitude=0.75, longitude=110.1, map=4265, stringsAsFactors=FALSE)
   }
   #Yamada2000---------------------------------------------
   if(studyName=="Yamada2000"){
-    raw                   <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$stem.dry.mass..g. <-  raw$stem.dry.mass..g.+ raw$branch.dry.mass..g.
     data       <-  cbind(dataset=studyName, species=raw$Species, raw[,c(4:8,10:13)], growingCondition="FW", vegetation="TropRF", location=raw$site, pft="DA", latitude=4.12, longitude=114, map=3200, stringsAsFactors=FALSE)
   }
   #Aiba2007---------------------------------------------
   if(studyName=="Aiba2007"){
-    raw                      <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE)
     raw$total.stem.mass..g.  <-  raw$branch.mass...stem.mass..g.
     data       <-  cbind(dataset=studyName, species=paste(raw$genus, raw$species), raw[,c(3:5,7:13)], growingCondition="FW", vegetation="TropRF", pft="EA", location="Lambir Hills National Park, Sarawak, Malaysia", latitude=4.03, longitude=113.83, map=2700, mat=26, stringsAsFactors=FALSE)
   }
   #Delagrange2004---------------------------------------------
   if(studyName=="Delagrange2004"){
-    raw                      <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw$total.stem.mass..g.  <-  raw$branch.mass...stem.mass..g.
     raw$Reference            <-  "Delagrange S, Messier C, Lechowicz MJ, Dizengremel P (2004) Physiological, morphological and allocational plasticity in understory deciduous trees: importance of plant size and light availability. Tree Physiology 24:775–784."
     data                 <-  cbind(dataset=studyName, species=raw$Species, grouping=paste(raw$Group, "; Last perturbation = ", raw$Last.perturbation, sep=""), raw[,c(2,4:21,23:29)], stringsAsFactors=FALSE)
   }
   #O'Grady2000---------------------------------------------
   if(studyName=="O'Grady2000"){
-    raw       <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw$SPECIES[raw$SPECIES=="E.tet."]    <-  "Eucalyptus tetrodonta"
     raw$SPECIES[raw$SPECIES=="E.min."]    <-  "Eucalyptus miniata"
     raw$SPECIES[raw$SPECIES=="T.ferd."]   <-  "Terminalia ferdinandiana"
@@ -619,7 +567,6 @@ loadDataOrig<-function(studyName){
   }
   #O'Grady2006---------------------------------------------
   if(studyName=="O'Grady2006"){
-    raw            <-  read.csv(paste(dir.rawData,"/",studyName,"/data.csv", sep=''), h=TRUE, stringsAsFactors=FALSE, skip=1)
     raw$Leaf.area  <-  raw$X
     raw$stem       <-  raw$stem+raw$branch
     raw$m.rf       <-  raw$X5.Oct + raw$Oct.15

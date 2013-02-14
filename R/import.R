@@ -1,7 +1,4 @@
-
-#TODO: 
-# - don't use sep='' in read.csv, use read.table instead
-
+library(testthat)
 source('R/Biomass-fun.R')
 source('R/import-fun.R')
 
@@ -10,7 +7,6 @@ system("rm output/data/*")
 
 #names of all studies
 studyNames     <-  getStudyNames()
-
 
 #read in files
 new<-lapply(studyNames, loadDataOrig)
@@ -31,4 +27,7 @@ for(ax in 1:length(new)){
 	vec<-vec+dim(new[[ax]])[1]
 }
 cat(vec, " records")
-rm(vec, new, tmp, data)
+rm(vec, new, tmp)
+
+
+loadStudyData("Myster2009")
