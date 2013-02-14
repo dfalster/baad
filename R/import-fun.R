@@ -17,6 +17,21 @@ mmol.N.m2.kg.m2  <-  function(x){x*14e-6} #from mmol of nitrogen/m2 to kg/m2
 Mg.kg            <-  function(x){x/1000} #from megagrams (Mg) to kg
 g.l.kg.m3        <-  function(x){x} #from grams/litre to kg/m3
 
+
+importData<-function(studyName){
+  cat(studyName, " ")
+  new<-loadDataOrig(studyName) 
+  
+  #convert units and variable names
+  data<-convertDataOrig(new)
+
+  #write data to file  
+  writeDataOrig(data)
+  
+  data
+}
+
+
 #write data to file
 writeDataOrig<-function(data, name= data$dataset[1]){
   write.csv(data, paste0(dir.cleanData,"/", name, ".csv", sep=""), row.names=FALSE)
@@ -70,7 +85,6 @@ data
 }
 
 loadStudyData<-function(studyName){
-  cat(studyName, " ")
   #import options for data file
   import <-  read.csv(paste0(dir.rawData,"/",studyName,"/import.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE) #loads import options for study
   #brings in the original .csv
