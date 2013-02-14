@@ -1,0 +1,11 @@
+#Define a  function for that constructs dataframe for this study
+
+makeDataFrame<-function(raw, studyName){
+  names(raw)[names(raw)=="Reference.publication"]  <-  "reference"
+  raw$reference[raw$reference %in% c(unique(raw$reference)[1:6])]  <-  "Domec J-C, Gartner BL (2003) Relationship between growth rates and xylem hydraulic characteristics in young, mature and old-growth ponderosa pine trees. Plant, Cell and Environment 26:471–483; Domec, J-C, Lachenbruch B, Pruyn ML, Spicer R (2012) Effects of age-related increases in sapwood area, leaf area, and xylem conductivity on height-related hydraulic costs in two contrasting coniferous species. Annals of Forest Science 69:17–27."
+  raw$reference[raw$reference %in% c(unique(raw$reference)[2:13])]  <- "Domec J-C, Pruyn ML, Gartner BL (2005) Axial and radial proﬁles in conductivities, water storage and native embolism in trunks of young and old-growth ponderosa pine trees. Plant, Cell and Environment 28:1103–1113; Domec, J-C, Lachenbruch B, Pruyn ML, Spicer R (2012) Effects of age-related increases in sapwood area, leaf area, and xylem conductivity on height-related hydraulic costs in two contrasting coniferous species. Annals of Forest Science 69:17–27."
+  raw$reference[raw$reference %in% c(unique(raw$reference)[3:13])]  <- "Domec J-C, Pruyn ML (2008) Bole girdling affects metabolic properties and root, trunk and branch hydraulics of young ponderosa pine trees. Tree Physiology 28(10):1493–1504; Domec, J-C, Lachenbruch B, Pruyn ML, Spicer R (2012) Effects of age-related increases in sapwood area, leaf area, and xylem conductivity on height-related hydraulic costs in two contrasting coniferous species. Annals of Forest Science 69:17–27."
+  raw$reference[raw$reference %in% c(unique(raw$reference)[4:26])]  <- "Domec J-C, Gartner BL (2002) Age- and position-related changes in hydraulic versus mechanical dysfunction of xylem: inferring the design criteria for Douglas-fir wood structure. Tree Physiology 22:91–104; Domec, J-C, Lachenbruch B, Pruyn ML, Spicer R (2012) Effects of age-related increases in sapwood area, leaf area, and xylem conductivity on height-related hydraulic costs in two contrasting coniferous species. Annals of Forest Science 69:17–27."
+  
+  data   <-  cbind(dataset=studyName, species=raw$Species, raw[,c(3:12, 14:37, 39:45)], stringsAsFactors=FALSE)
+}

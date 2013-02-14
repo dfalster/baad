@@ -1,5 +1,6 @@
 
 library(testthat)
+rm(list=ls())
 source('R/Biomass-fun.R')
 source('R/import-fun.R')
 source("R/test-import-fun.R")
@@ -7,20 +8,28 @@ source("R/test-import-fun.R")
 #Remove existing data files
 system("rm output/data/*")
 
+#Test single study
+studyName     <-  "Baraloto2006"
+data<-importData(studyName)
+compareOldNew(studyName)
+
 #names of all studies
 studyNames     <-  getStudyNames()
 
 #import data
+cat("\nImport data:\t")
 data<-lapply(studyNames, importData)
 
-#ccount number of records
+#count number of records
 vec<-0
 for(ax in 1:length(data)){
   vec<-vec+dim(data[[ax]])[1]
 }
-cat(vec, " records")
+cat("\nNumber of records", vec,"\n")
 rm(vec)
 
-cat("Check old versus new data")
+cat("\nCheck old versus new data:\t")
 out<-lapply(studyNames, compareOldNew)
+
+
 
