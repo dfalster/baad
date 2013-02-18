@@ -24,7 +24,7 @@ importData<-function(studyName){
   new<-loadDataOrig(studyName) 
   
   #convert units and variable names
-  data<-convertDataOrig(new)
+  data<-convertDataOrig(new, studyName)
 
   #write data to file  
   writeDataOrig(data)
@@ -45,18 +45,19 @@ writeDataOrig<-function(data, name= data$dataset[1]){
 }
 
 #convert data to desired format, changing units, variable names
-convertDataOrig<-function(data){
+convertDataOrig<-function(data,studyName){
 
-  match  <-  var.match[var.match$reference==unique(data$dataset),] #Filters for a specific study, one at a time or each loop step
-
-  selec  <-  which(names(data) %in% match$var_in) #Find the column numbers in the data that need to be checked out for conversion
+  var.match     <-  read.csv("R/variable_match.csv", h=TRUE, stringsAsFactors=FALSE)#variable match for each study
+  var.match <- var.match[var.match$reference==studyName,] #Filters for a specific study, one at a time or each loop step
+#  browser()
+  selec  <-  which(names(data) %in% var.match$var_in) #Find the column numbers in the data that need to be checked out for conversion
 
 for(j in 1:length(selec)){    #Do for every column that needs conversion
   a        <-  selec[j]
   var.in   <-  names(data)[a] #variable that goes in
-  met.in   <-  match$method[match$var_in==var.in] #method used to measure
-  un.in    <-  match$unit_in[match$var_in==var.in] #unit that goes in
-  var.out  <-  match$var_out[match$var_in==var.in] #variable that goes out   
+  met.in   <-  var.match$method[var.match$var_in==var.in] #method used to measure
+  un.in    <-  var.match$unit_in[var.match$var_in==var.in] #unit that goes in
+  var.out  <-  var.match$var_out[var.match$var_in==var.in] #variable that goes out   
   un.out   <-  var.def$Units[var.def$Variable==var.out] #unit that goes out
   
   if(un.in != un.out){

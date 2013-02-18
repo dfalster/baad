@@ -1,4 +1,5 @@
-# Copy import.csv into all data directories
+# Renames pdf to stadard name format
+#to run type bash sh/renamePdf.sh ls data/   
 cd data
 for filename in *
 do

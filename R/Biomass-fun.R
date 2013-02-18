@@ -2,7 +2,6 @@
 #set directories for study
 dir.rawData   <-  "data" 
 dir.cleanData <-  "output/data"
-var.match     <-  read.csv("R/variable_match.csv", h=TRUE, stringsAsFactors=FALSE)#variable match for each study
 var.def       <-  read.csv("R/variable_definitions.csv", h=TRUE, stringsAsFactors=FALSE)#variable definitions
 var.conv      <-  read.csv("R/variable_conversion.csv", h=TRUE, stringsAsFactors=FALSE)#functions for variable conversion
 met.def       <-  read.csv("R/methods_definitions.csv", h=TRUE, stringsAsFactors=FALSE)#definition of methods
