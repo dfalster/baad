@@ -1,9 +1,3 @@
-\underline{Contact}: Jennifer Baltzer, jbaltzer@wlu.ca
-
-\underline{Reference}: Baltzer, J.L. and Thomas, S.C. (2007) Physiological and morphological correlates of the whole-plant light compensation point in the temperate deciduous tree seedlings. Oecologica, 153, 209-223.
-
-\underline{Species sampled}: Acer rubrum L., Acer saccharum Marsh., Betula alleghaniensis Britt., Betula papyrifera Marsh., Quercus rubra L., Fraxinus americana L., Populus grandidentata Michx., Ulmus americana L..
-
 \underline{Sampling strategy}: Seeds were of local provenance obtained from the National Tree Seed Centre (Canadian Forest Service Atlantic Forestry Centre, Fredericton, NB) and grown in glasshouse at the Faculty of Forestry, University of Toronto (CA), under high and low nutrient and light treatments. Individuals sampled from 1 to 5 months of age. Biomass harvests were conducted on 5–6 June, 21–23 July and 3–5 September 2003. Betula papyrifera and Populus grandidentata showed low germination rates and therefore seedlings were not available for the first harvest. Additionally, both species had 100% mortality in low light and thus data are missing for low-light measurements. For the first two harvests, five seedlings per species and treatment were selected at random. The final harvest included all surviving seedlings.
 
 \underline{Leaf area}: Fresh leaves from each harvest were measured for area individual and total area.

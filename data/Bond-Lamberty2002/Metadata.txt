@@ -1,10 +1,5 @@
-\underline{Contact}: Benjamin Bond-Lamberty, bondlamberty@pnnl.gov
-
-\underline{Reference}: Bond-Lamberty, B., Wang, C. and Gower, S.T. (2002) Aboveground and belowground biomass and sapwood area allometric equations for six boreal tree species of northern Manitoba. Canadian Journal of Forest Research, 32(8), 1441-1450.
-
-\underline{Species}: Populus tremuloides Michx., Betula papyrifera Marsh., Picea mariana (Mill.) BSP, Pinus banksiana Lamb., Larix laricina (Du Roi) Koch., Salix spp..
-
-\underline{Sampling strategy}: Aboveground biomass relations were based on 326 treesharvested during three field seasons, 1994, 1999, and 2000. Allometric coefficients for trees harvested in 1994 were previously published (Gower et al. 1997), although with different coefficients, as this study denominates tree mass in grams and not kilograms. In addition, Gower et al. (1997) did not measure D0 and only reported equations for mature trees based on DBH. Trees were destructively sampled between mid-July and early August in each year. Stems were cut at the soil surface.
+\underline{Sampling strategy}: Aboveground biomass relations were based on 326 trees
+harvested during three field seasons, 1994, 1999, and 2000. Allometric coefficients for trees harvested in 1994 were previously published (Gower et al. 1997), although with different coefficients, as this study denominates tree mass in grams and not kilograms. In addition, Gower et al. (1997) did not measure D0 and only reported equations for mature trees based on DBH. Trees were destructively sampled between mid-July and early August in each year. Stems were cut at the soil surface.
 
 \underline{Stem cross sectional area}: diameter at soil surface (D0), measured immediately above any root collar swelling; DBH was also recorded.
 

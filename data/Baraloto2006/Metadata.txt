@@ -1,14 +1,6 @@
-\underline{Contact}: Christopher Baraloto, chris.baraloto@ecofog.gf
-
-\underline{Reference}: Baraloto, C., Bonal, D. and Goldberg, D.E. (2006) Differential Seedling Growth Response to Soil Resource Availability Among Nine Neotropical Tree Species. Journal of Tropical Ecology, 22, 487-497.
-
-\underline{Species}: Goupia glabra Aubl., Jacaranda copaia (Aubl.) D. Don, Qualea rosea Aubl., Recordoxylon speciosum (Benoist), Dicorynia guianensis Amshoff, Sextonia rubra (Mez) van derWerff, Virola michelii Heckel, Eperua falcata Aubl., Eperua grandiflora (Aubl.) Benth.
-
 \underline{Sampling strategy}: The experiment was conducted in a shadehouse at the INRA research facilities in Kourou, French Guiana, approximately 60km from permanent plots at Paracou, French Guiana (5o18N,52o55W). The nine focal species were chosen to test for differences among species not exhibiting any strong edaphic preferences at the seedling stage at Paracou (Baraloto & Goldberg 2004) but representing the broad range of seed size and specific leaf area found among the tree species occurring in lowland tropical forest in French Guiana (reported in Baraloto 2001; see Table 1). Seeds were collected from within a 10-m radius of each of a minimum of five adult trees per species at Paracou and mixed with respect to maternal source. 867 individuals were sampled and varied from 1.09 to 9.93 mm basal stem diameter. The experiment consisted of a factorial design of two soil types (Brown clay or White sand), two water treatments (drought, no drought) and two fertilization treatments (phosphate addition, no phosphate addition).
 
-
 \underline{Leaf area}: Leaf surface area was measured immediately after harvest with a LICOR3000 leaf area meter (LI-COR Inc, Lincoln, Nebraska, USA). Mass-specific leaf area (SLA) was calculated as the ratio of leaf area to leaf dry biomass.
-
 
 \underline{Stem cross sectional area}: Stem diameter was measured at soil surface.
 
