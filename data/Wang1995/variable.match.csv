@@ -1,0 +1,8 @@
+"var_in","method","unit_in","var_out","notes"
+"DBH..cm.","","cm","d.bh",""
+"HEIGHT..m.","","m","h.t",""
+"LEAF..kg.","m1","kg","m.lf",""
+"BRANCH..kg.","m1","kg","m.br",""
+"STEMWOOD..kg.","m1","kg","m.st",""
+"STEMBARK..kg.","m1","kg","m.sb",""
+"TOTAL_ABOVE..kg.","m1","kg","m.so",""

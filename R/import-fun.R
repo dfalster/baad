@@ -21,83 +21,28 @@ g.l.kg.m3        <-  function(x){x} #from grams/litre to kg/m3
 importData<-function(studyName){
   cat(studyName, " ")
   #read original data from file
-  raw<-loadData(studyName) 
-  
-  #make dataframe
-  #TODO: change c(3:12, 14:37, 39:45) to something more robust, e.g. colnames
-  #remove not allowed columns
-  source(paste0(dir.rawData,"/",studyName,"/makeDataFrame.R"))
-  data<-makeDataFrame(raw, studyName)  
-
-  #add studyname to dataset
-  data<- cbind(data, dataset=studyName, stringsAsFactors=FALSE)
+  new<-loadData(studyName) 
   
   #convert units and variable names
-  data<-convertData(data, studyName)
-  
-  #expand columns to mirror those in final database
-  data<-addAllColumns(data)
-          
-  #import new data, if available
-  data<-addNewData(studyName, data)
-  
+  data<-convertData(new, studyName)
+
   #write data to file  
-  writeData(data, studyName)
+  writeData(data)
   
   data
 }
 
 loadData<-function(studyName){
   #import options for data file
-  import <-  read.csv(paste0(dir.rawData,"/",studyName,"/import.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE)   
-  
+  import <-  read.csv(paste0(dir.rawData,"/",studyName,"/import.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE) #loads import options for study
   #brings in the original .csv
   raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE)
-  raw
+  
+  source(paste0(dir.rawData,"/",studyName,"/makeDataFrame.R"))
+  #TODO: change c(3:12, 14:37, 39:45) to something more robust, e.g. colnames
+  data<-makeDataFrame(raw, studyName)
 }
 
-makeEmptyDataSet<-function(colnames){
-  #start with empty dataframe with all variables included
-  emptydfr <- data.frame( matrix("a", ncol=length(colnames),nrow=1), stringsAsFactors=FALSE)
-  names(emptydfr) <- colnames
-  emptydfr[-1,]
-}
-
-addAllColumns<-function(data){
-  
-  #all column names
-  names<-var.def$Variable
-  names<-c(names, as.character(paste("method_", var.def$Variable[var.def$methodsVariable], sep=""))) 
-  
-  #TODO: check no illegal columns
-  #check which variable already present
-  present<- (var.def$Variable %in% names(data))
-  for(i in 1:length(var.def$Variable))
-    if(!present[i]){  #variable not present, add
-      data[,var.def$Variable[i]] = NA
-      class(data[,var.def$Variable[i]])<-var.def$Type[i]
-    }      
-  data
-}
-
-
-addNewData<-function(studyName, data){
-  #import options for data file
-  filename<-paste0(dir.rawData,"/",studyName,"/newData.csv")
-#  browser()
-  if(file.exists(filename)){
-    import <-  read.csv(filename, h=TRUE, stringsAsFactors=FALSE) #read in new data    
-    for (i in 1:length(import[,1])){
-      if(is.na(import$lookupVariable[i])) #apply to whole column
-        data[,import$newVariable[i]] = import$newValue[i]
-      else  #apply to subset
-        data[data[,import$lookupVariable[i] ]==import$lookupValue[i],import$newVariable[i] ] = import$newValue[i]
-    }  
-  }
-  data
-}
-  
-  
 #Define a function for that constructs dataframe for this study
 #NOTE - this is just a template. this function is redfined for each study 
 # See file makeDataFrame.R stored in its each studies directory
@@ -109,19 +54,20 @@ makeDataFrame<-function(raw, studyName){
 convertData<-function(data,studyName){
 
   #load variable matching table
-  var.match <- read.csv("R/variable_match.csv", h=TRUE, stringsAsFactors=FALSE)#variable match for each study
-  var.match <- var.match[var.match$reference==studyName,] #Filters for a specific study, one at a time or each loop step
-  
+  var.match <- read.csv(paste0(dir.rawData,"/",studyName,"/variable.match.csv"),h=TRUE,stringsAsFactors=FALSE,na.strings=c("NA",""))
+  #browser()
   #Find the column numbers in the data that need to be checked out for conversion
   selec  <-  which(names(data) %in% var.match$var_in) 
   
 for(a in selec){    #Do for every column that needs conversion
-  #rename coulmns
+  #rename data
+  #TODO: put this in a function
   var.in   <-  names(data)[a] #variable that goes in
   var.out  <-  var.match$var_out[var.match$var_in==var.in] #variable that goes out   
   names(data)[a] <-  var.out #resets the name of a particular variable to the standardised form
   
   #change units  
+  #TODO: put this in a function
   un.in    <-  var.match$unit_in[var.match$var_in==var.in] #unit that goes in
   un.out   <-  var.def$Units[var.def$Variable==var.out] #unit that goes out
   
@@ -130,10 +76,12 @@ for(a in selec){    #Do for every column that needs conversion
     data[,a] <-  func(as.numeric(data[,a])) #applies the function to the column
   }
   
-  #add methods variable if required
+  #outline methods
+  #TODO: put this in a function
   met.in   <-  var.match$method[var.match$var_in==var.in] #method used to measure
   
-  if(met.in != ""){ # 
+  if(!is.na(met.in)){ # 
+  #TODO: DIEGO - why not use method abbreviation?
       data$NEW                 <-  rep(met.in, nrow(data)) #creates a new colum that contains the method description
       names(data)[ncol(data)]  <-  paste("method", "_", var.out, sep="") #changes the names by pasting "method" and the standardised variable name 
   }
@@ -145,22 +93,3 @@ data
 writeData<-function(data, name= data$dataset[1]){
   write.csv(data, paste0(dir.cleanData,"/", name, ".csv", sep=""), row.names=FALSE)
 }
-
-# smart Rbind - doesn't require exact match between columns of the two datasets. takes variable list from the first dataframe
-Rbind <- function (dfr1, dfr2) 
-{
-  if(is.null(dfr1) | is.null(dfr2))
-    stop("Empty dataframe passed to Rbind")
-
-  merger <- vector("list", ncol(dfr1))
-  names(merger) <- names(dfr1)
-  for (i in 1:length(merger)) {
-    nam <- names(merger)[i]
-    if (!(nam %in% names(dfr2))) 
-      merger[[i]] <- rep(NA, nrow(dfr2))
-    else merger[[i]] <- dfr2[, nam]
-  }
-  dfr <- rbind(dfr1, as.data.frame(merger))
-  return(dfr)
-}
-

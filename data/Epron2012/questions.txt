@@ -1,1 +1,3 @@
-At what height the cross-section measurements for sapwood, heartwood, bark and total stem were taken (soil, breast height, crown base)?  
+At what height the cross-section measurements for sapwood, heartwood, bark and total stem were taken (soil, breast height, crown base)? 
+
+Could you please confirm if what you call h.c is crown depth or height of the plant to the first bearing leaf?

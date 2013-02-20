@@ -1,0 +1,6 @@
+"var_in","method","unit_in","var_out","notes"
+"t.leaf.area","b","cm2","a.lf",""
+"t.height","","cm","h.t",""
+"t.leaf.mass","m7","g","m.lf",""
+"t.stem.mass","m7","g","m.st",""
+"t.root.mass","m7","g","m.rt",""

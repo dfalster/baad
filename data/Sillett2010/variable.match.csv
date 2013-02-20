@@ -1,0 +1,8 @@
+"var_in","method","unit_in","var_out","notes"
+"Minimum.Age..year.","","yr","age",""
+"Height..m.","","m","h.t",""
+"Dbh..cm.","","cm","d.bh",""
+"Dry.mass..Mg.","m1","Mg","m.so",""
+"Heartwood.area..m2.","j,m1","m2","a.shbh",""
+"Bark.area..m2.","j,m1","m2","a.babh",""
+"Leaf.dry.mass..kg.","m1","kg","m.lf",""

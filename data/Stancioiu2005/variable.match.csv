@@ -1,0 +1,8 @@
+"var_in","method","unit_in","var_out","notes"
+"dbh","","cm","d.bh",""
+"hgt","","m","h.t",""
+"hgt.crown.base","","m","h.c",""
+"foliage.mass","","kg","m.lf",""
+"BH.Sapwood.area","","cm2","a.ssbh",""
+"BLC.sapwood.area","","cm2","a.ssbc",""
+"Leaf.Area","","m2","a.lf",""

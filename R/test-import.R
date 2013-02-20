@@ -8,6 +8,11 @@ source("R/test-import-fun.R")
 #Remove existing data files
 system("rm output/data/*")
 
+#Test single study
+studyName     <-  "Epron2012"
+data<-importData(studyName)
+compareOldNew(studyName)
+
 #names of all studies
 studyNames     <-  getStudyNames()
 

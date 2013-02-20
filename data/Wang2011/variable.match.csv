@@ -1,0 +1,12 @@
+var_in,method,unit_in,var_out,notes
+Plant.height..cm.,,cm,h.t,
+Stem.diameter.at.base..cm.,,cm,d.ba,
+Total.fresh.mass..g.,m6,g,m.to,
+Total.dry.mass..g.,m0,g,m.to,
+Fresh.mass.of.main.stem..g.,m6,g,m.st,
+Dry.mass.of.main.stem..g.,m0,g,m.st,
+Fresh.mass.of.branches..g.,m6,g,m.br,
+Dry.mass.of.branches..g.,m0,g,m.br,
+Total.leaf.fresh.mass..g.,m6,g,m.lf,
+Total.leaf.dry.mass..g.,m0,g,m.lf,
+Total.leaf.area.cm2.,,cm2,a.lf,

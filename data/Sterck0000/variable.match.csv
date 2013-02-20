@@ -1,0 +1,8 @@
+"var_in","method","unit_in","var_out","notes"
+"height..m.","","m","h.t",""
+"Crown.depth..m.","","m","c.d",""
+"Crown.area..m2.","","m2","a.cs",""
+"Individual.leaf.area..cm2.","","cm2","lf.sz",""
+"Total.leaf.area..m2.","","m2","a.lf",""
+"LMA..g.cm.2.","","g.cm2","lf.ma",""
+"WD..g.cm3.","","g.cm3","d.st",""

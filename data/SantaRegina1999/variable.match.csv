@@ -1,0 +1,7 @@
+"var_in","method","unit_in","var_out","notes"
+"DBH","","cm","d.bh",""
+"Height","","m","h.t",""
+"Leaf_biomass","m5","kg","m.lf",""
+"Branch_biomass","m5","kg","m.br",""
+"Stem_biomass","m5","kg","m.st",""
+"Total.biomass","m5","kg","m.so",""
