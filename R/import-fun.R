@@ -56,14 +56,11 @@ convertData<-function(data,studyName){
   #load variable matching table
   var.match <- read.csv("R/variable_match.csv", h=TRUE, stringsAsFactors=FALSE)#variable match for each study
   var.match <- var.match[var.match$reference==studyName,] #Filters for a specific study, one at a time or each loop step
-#  browser()
   
   #Find the column numbers in the data that need to be checked out for conversion
   selec  <-  which(names(data) %in% var.match$var_in) 
   
-for(j in 1:length(selec)){    #Do for every column that needs conversion
-  a        <-  selec[j]
-
+for(a in selec){    #Do for every column that needs conversion
   #rename data
   #TODO: put this in a function
   var.in   <-  names(data)[a] #variable that goes in
@@ -86,43 +83,8 @@ for(j in 1:length(selec)){    #Do for every column that needs conversion
   
   if(met.in != ""){ # 
   #TODO: DIEGO - why not use method abbreviation?
-    
-    if(length(unlist(strsplit(met.in, ",")))==1){
-      method                   <-  met.def$definition[met.def$method==met.in] #matches the full descrition of the method based on its code
-      data$NEW                 <-  rep(method, nrow(data)) #creates a new colum that contains the method description
+      data$NEW                 <-  rep(met.in, nrow(data)) #creates a new colum that contains the method description
       names(data)[ncol(data)]  <-  paste("method", "_", var.out, sep="") #changes the names by pasting "method" and the standardised variable name 
-      data                     <-  data[,c(1:a, ncol(data), (a+1):(ncol(data)-1))] #puts the method beside its variable
-#       cat("selec ")
-#       cat(selec, " ")
-#       cat("\n")
-      selec                    <-  selec+1 #update the counter
-#       cat("selec +1")
-#       cat(selec, " ")
-#       cat("\n")
-
-      #TODO: DIEGO - why updating selec here?
-      
-      } else {
-      method  <-  vector()
-      for(z in 2:length(unlist(strsplit(met.in, ",")))){
-        method  <-  paste(method, " | ", met.def$definition[met.def$method==unlist(strsplit(met.in, ","))[z]], sep="")
-      }
-      
-      method  <-  substr(method, 4, length(unlist(strsplit(method, ""))))
-      
-      data$NEW                 <-  rep(method, nrow(data)) #creates a new colum that contains the method description
-      names(data)[ncol(data)]  <-  paste("method", "_", var.out, sep="") #changes the names by pasting "method" and the standardised variable name 
-      data                     <-  data[,c(1:a, ncol(data), (a+1):(ncol(data)-1))] #puts the method beside its variable
-#       cat("selec")
-#       cat(selec, " ")
-#       cat("\n")    
-      selec                    <-  selec+1 #update the counter
-      #TODO: DIEGO - why updating selec here?
-      
-#       cat("selec +1")
-#       cat(selec, " ")
-#       cat("\n")      
-    }
   }
 }
 data
