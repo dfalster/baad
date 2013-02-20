@@ -49,7 +49,8 @@ importData<-function(studyName){
 
 loadData<-function(studyName){
   #import options for data file
-  import <-  read.csv(paste0(dir.rawData,"/",studyName,"/import.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE) #loads import options for study
+  import <-  read.csv(paste0(dir.rawData,"/",studyName,"/import.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE)   
+  
   #brings in the original .csv
   raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE)
   raw
@@ -79,25 +80,6 @@ addAllColumns<-function(data){
   data
 }
 
-addAllColumns2<-function(data){
-  
-  #all column names
-  names<-var.def$Variable
-  names<-c(names, as.character(paste("method_", var.def$Variable[var.def$methodsVariable], sep=""))) 
-
-  #TODO: check no illegal columns
-  
-  #bind new data together with old data 
-  data<-Rbind(makeEmptyDataSet(names), data)
-
-  #fix variable classes, as specified in variable definitions
-#  browser()
-  for(i in 1:length(var.def$Variable))
-    class(data[,var.def$Variable[i]])<-var.def$Type[i]
-  for(i in  grep("method",names(data))) #make all methods character
-    class(data[,i])<-"character"
-  data
-}
 
 addNewData<-function(studyName, data){
   #import options for data file
