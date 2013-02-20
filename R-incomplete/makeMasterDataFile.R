@@ -51,21 +51,6 @@ alldata <- lapply(alldata, function(x){
   return(x)
 })
 
-# smart Rbind - doesn't require exact match between columns of the two datasets. takes variable list from the first dataframe
-Rbind <- function (dfr1, dfr2) 
-{
-  merger <- vector("list", ncol(dfr1))
-  names(merger) <- names(dfr1)
-  for (i in 1:length(merger)) {
-    nam <- names(merger)[i]
-    # browser()
-    if (!(tolower(nam) %in% lownames(dfr2))) 
-      merger[[i]] <- rep(NA, nrow(dfr2))
-    else merger[[i]] <- dfr2[, nam]
-  }
-  dfr <- rbind(dfr1, as.data.frame(merger))
-  return(dfr)
-}
 
 # Create one big dataframe.
 
