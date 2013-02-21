@@ -1,49 +1,38 @@
-#Conversion functions - converts unit before the dot into the unit after it
-g.kg             <-  function(x){x/1000} #from g to kg
-mg.kg            <-  function(x){x/1000000} #from mg to kg
-cm2.m2           <-  function(x){x/10000} #from cm2 to m2
-cm.m             <-  function(x){x/100} #from cm to m
-mm.m             <-  function(x){x/1000} #from mm to m
-months.yr        <-  function(x){x/12} #from months to yr
-g.cm2.kg.m2      <-  function(x){x*10} #from g/cm2 to kg/m2
-m2.kg.kg.m2      <-  function(x){1/x} #from m2/kg to kg/m2
-cm2.g.kg.m2      <-  function(x){1/x*10} #from cm2/g to kg/m2
-g.m2.kg.m2       <-  function(x){x/1000} #from g/m2 to kg/m2
-g.cm3.kg.m3      <-  function(x){x*1000} #from g/cm3 to kg/cm3
-per.kg.kg        <-  function(x){x/100} #from percentage to decimals
-mm2.m2           <-  function(x){x/(10^6)} #from mm2 to m2
-cm2.kg.kg.m2     <-  function(x){1000/x} #from cm2/kg to kg/m2
-mmol.N.m2.kg.m2  <-  function(x){x*14e-6} #from mmol of nitrogen/m2 to kg/m2
-Mg.kg            <-  function(x){x/1000} #from megagrams (Mg) to kg
-g.l.kg.m3        <-  function(x){x} #from grams/litre to kg/m3
 
-
-importData<-function(studyName){
-  cat(studyName, " ")
-  #read original data from file
-  raw<-loadData(studyName) 
+importData<-function(studyName, verbose=FALSE){
+  if(verbose) cat(studyName, " ")
   
-  #make dataframe
-  #TODO: change c(3:12, 14:37, 39:45) to something more robust, e.g. colnames
-  #remove not allowed columns
-  source(paste0(dir.rawData,"/",studyName,"/makeDataFrame.R"))
-  data<-makeDataFrame(raw, studyName)  
+  #read original data from file
+  if(verbose) cat("load data ")
+  
+  raw<-loadData(studyName) 
+
+#  browser()
+  
+  #Manipulate data where needed
+  if(verbose) cat("manipulate data ")
+  filename<-paste0(dir.rawData,"/",studyName,"/dataManipulate.R")
+  if(file.exists(filename))
+    source(filename, local=TRUE)
   
   #add studyname to dataset
-  data<- cbind(data, dataset=studyName, stringsAsFactors=FALSE)
+  data<- cbind(raw, dataset=studyName, stringsAsFactors=FALSE)
   
   #convert units and variable names
+  if(verbose) cat("convert units ")
   data<-convertData(data, studyName)
-  
-  #expand columns to mirror those in final database
+
+  #Remove / add columns to mirror those in final database
+  if(verbose) cat("add/remove columns ")
   data<-addAllColumns(data)
           
-#   #import new data, if available
-#   data<-addNewData(studyName, data)
+  #import new data, if available
+  if(verbose) cat("import new data ")
+  data<-addNewData(studyName, data)
   
-  #write data to file  
-  writeData(data, studyName)
-  
+  #write data to file
+  if(verbose) cat("write to file ")
+  writeData(data, studyName)  
   data
 }
 
@@ -66,35 +55,43 @@ makeEmptyDataSet<-function(colnames){
 addAllColumns<-function(data){
   
   #all column names
-  names<-var.def$Variable
+  allowedNames<-var.def$Variable
   type<-var.def$Type
   #add methods
-  names<-c(names, as.character(paste("method_", var.def$Variable[var.def$methodsVariable], sep=""))) 
+  allowedNames<-c(allowedNames, as.character(paste("method_", var.def$Variable[var.def$methodsVariable], sep=""))) 
   type<-c(type, rep("character",sum(var.def$methodsVariable)))
   
-  #TODO: check no illegal columns
+  #remove columns no in final variable list
+  present<- (names(data)%in%allowedNames)
+  data<-data[,present]  
+  
   #check which variable already present
-  present<- (names %in% names(data))
-  for(i in 1:length(names))
+  present<- (allowedNames %in% names(data))
+  for(i in 1:length(allowedNames))
     if(!present[i]){  #variable not present, add
-      data[,names[i]] = NA
-      class(data[,names[i]])<-type[i]
+      data[,allowedNames[i]] = NA
+      class(data[,allowedNames[i]])<-type[i]
     }  
-  data[,names]
+  data[,allowedNames] #return in desired order
 }
 
 
 addNewData<-function(studyName, data){
+#  browser()
   #import options for data file
   filename<-paste0(dir.rawData,"/",studyName,"/dataNew.csv")
   if(file.exists(filename)){
-    import <-  read.csv(filename, h=TRUE, stringsAsFactors=FALSE) #read in new data    
-    for (i in 1:length(import[,1])){
-      if(is.na(import$lookupVariable[i])) #apply to whole column
-        data[,import$newVariable[i]] = import$newValue[i]
-      else  #apply to subset
-        data[data[,import$lookupVariable[i] ]==import$lookupValue[i],import$newVariable[i] ] = import$newValue[i]
-    }  
+   #browser()
+   import <-  read.csv(filename, h=TRUE, stringsAsFactors=FALSE, strip.white = TRUE) #read in new data    
+   nchanges<- length(import$lookupVariable)
+   if(nchanges){
+      for (i in 1:nchanges){
+        if(is.na(import$lookupVariable[i]) | import$lookupVariable[i] =="") #apply to whole column
+          data[,import$newVariable[i]] = import$newValue[i]
+        else  #apply to subset
+          data[data[,import$lookupVariable[i] ]==import$lookupValue[i],import$newVariable[i] ] = import$newValue[i]
+      }   
+    }      
   }
   data
 }
@@ -169,3 +166,23 @@ Rbind <- function (dfr1, dfr2)
   return(dfr)
 }
 
+
+
+#Conversion functions - converts unit before the dot into the unit after it
+g.kg             <-  function(x){x/1000} #from g to kg
+mg.kg            <-  function(x){x/1000000} #from mg to kg
+cm2.m2           <-  function(x){x/10000} #from cm2 to m2
+cm.m             <-  function(x){x/100} #from cm to m
+mm.m             <-  function(x){x/1000} #from mm to m
+months.yr        <-  function(x){x/12} #from months to yr
+g.cm2.kg.m2      <-  function(x){x*10} #from g/cm2 to kg/m2
+m2.kg.kg.m2      <-  function(x){1/x} #from m2/kg to kg/m2
+cm2.g.kg.m2      <-  function(x){1/x*10} #from cm2/g to kg/m2
+g.m2.kg.m2       <-  function(x){x/1000} #from g/m2 to kg/m2
+g.cm3.kg.m3      <-  function(x){x*1000} #from g/cm3 to kg/cm3
+per.kg.kg        <-  function(x){x/100} #from percentage to decimals
+mm2.m2           <-  function(x){x/(10^6)} #from mm2 to m2
+cm2.kg.kg.m2     <-  function(x){1000/x} #from cm2/kg to kg/m2
+mmol.N.m2.kg.m2  <-  function(x){x*14e-6} #from mmol of nitrogen/m2 to kg/m2
+Mg.kg            <-  function(x){x/1000} #from megagrams (Mg) to kg
+g.l.kg.m3        <-  function(x){x} #from grams/litre to kg/m3

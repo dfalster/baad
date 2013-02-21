@@ -1,16 +1,16 @@
 lookupVariable,lookupValue,newVariable,newValue
-species,'Swinto,',species,"Swintonia schwenkii"
-species,'Shorea,',species,"Shorea sumatrana"
-species,'Nephel,',species,"Nephelium juglandifolium"
-species,'Hopeam,',species,"Hopea dryobalanoides"
-species,'Mastix,',species,"Mastixia trichotoma"
-species,'Phylla,',species,"Cleistanthus glandulosus"
-species,'Grewia,',species,"Grewia florida"
-species,'Gonyst,',species,"Gonystylus forbesii"
-species,'Diosum,',species,"Diospyrus sumatrana"
-,, latitude,-0.9166667 
-,, longitude,100.5 
-,, map,4760 
-,, growingCondition,"FW" 
-,, vegetation,"TropRF" 
-,, location,"Ulu Gadut valley, Padang, Sumatra, Indonesia"
+species,"Swinto,",species,"Swintonia schwenkii"
+species,"Shorea,",species,"Shorea sumatrana"
+species,"Nephel,",species,"Nephelium juglandifolium"
+species,"Hopeam,",species,"Hopea dryobalanoides"
+species,"Mastix,",species,"Mastixia trichotoma"
+species,"Phylla,",species,"Cleistanthus glandulosus"
+species,"Grewia,",species,"Grewia florida"
+species,"Gonyst,",species,"Gonystylus forbesii"
+species,"Diosum,",species,"Diospyrus sumatrana"
+,,latitude,-0.9166667 
+,,longitude,100.5 
+,,map,4760 
+,,growingCondition,"FW" 
+,,vegetation,"TropRF" 
+,,location,"Ulu Gadut valley, Padang, Sumatra, Indonesia"

@@ -21,10 +21,10 @@ species,"Ixora_grandif",species,"Ixora grandifolia"
 species,"Mal_ecaustus",species,"Mallotus eucaustus"		
 species,"Mal_wrayei",species,"Mallotus wreyi"		
 species,"Urophyl_arboret",species,"Urophyllum arboreum"		
-,latitude,4.5 
-,, longitude,115.1667 
-,, map,5080 
-,, mat,30 
-,, growingCondition,"FW" 
-,, vegetation,"TropRF" 
-,, pft,"EA" 
+,,latitude,4.5 
+,,longitude,115.1667 
+,,map,5080 
+,,mat,30 
+,,growingCondition,"FW" 
+,,vegetation,"TropRF" 
+,,pft,"EA" 

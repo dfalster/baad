@@ -6,9 +6,9 @@ species,"Saxegothaea conspicua",pft,"EG"
 species,"Araucaria araucana",pft,"EG"
 species,"Agathis australis",pft,"EG"
 species,"Phyllocladus trichomanoides",pft,"EG"
-,growingCondition,"FW" 
-,, vegetation,"TempRf" 
-,, location,"Parque Nacional Puyehue, Chile" 
-,, latitude,-40.65 
-,, longitude,-72.18 
-,, map,3500
+,,growingCondition,"FW" 
+,,vegetation,"TempRf" 
+,,location,"Parque Nacional Puyehue, Chile" 
+,,latitude,-40.65 
+,,longitude,-72.18 
+,,map,3500

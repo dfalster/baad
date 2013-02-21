@@ -1,17 +1,17 @@
 lookupVariable,lookupValue,newVariable,newValue
-species,'acru',species,"Acer rubrum L."
-species,'bele',species,"Betula lento. L."
-species,'caov',species,"Carya ovata (Mill.) K. Koch"
-species,'cofl',species,"Cornus florida L."
-species,'litu',species,"Liriodendron tulipifera L."
-species,'oxar',species,"Oxydendrum arboreum (L.) DC."
-species,'qual',species,"Quercus alba L."
-species,'quco',species,"Quercus coccinea Muenchh."
-species,'qupr',species,"Quercus prinus L."
-species,'quru',species,"Quercus rubra L."
-,, latitude,35 
-,, longitude,-83 
-,, map,2035 
-,, vegetation,"TempRf" 
-,, growingCondition,"FW" 
-,, pft,"DA"
+species,acru,species,"Acer rubrum L."
+species,bele,species,"Betula lento. L."
+species,caov,species,"Carya ovata (Mill.) K. Koch"
+species,cofl,species,"Cornus florida L."
+species,litu,species,"Liriodendron tulipifera L."
+species,oxar,species,"Oxydendrum arboreum (L.) DC."
+species,qual,species,"Quercus alba L."
+species,quco,species,"Quercus coccinea Muenchh."
+species,qupr,species,"Quercus prinus L."
+species,quru,species,"Quercus rubra L."
+,,latitude,35 
+,,longitude,-83 
+,,map,2035 
+,,vegetation,"TempRf" 
+,,growingCondition,"FW" 
+,,pft,"DA"

@@ -8,8 +8,8 @@ exclude  <-  function(x, pattern){
   ex
 }
 
-compareOldNew<-function(name){
-  cat(name, " ")
+compareOldNew<-function(name, verbose=FALSE, browse=FALSE){
+  if(verbose) cat("check data ")
   
   #load files for comparison
   old<-read.csv(paste0("output/data-orig/", name, ".csv"), stringsAsFactors=F)
@@ -26,9 +26,22 @@ compareOldNew<-function(name){
   #only keep names in final variable list
   old  <-  data.frame(old[,names(old)%in%var.def$Variable])
   new  <-  data.frame(new[,names(new)%in%var.def$Variable])
-  
-#  browser()
+
+  if(browse){
+    print(head(old))
+    print(head(new[,names(old)])) 
+    browser()
+    i=3;
+    cbind(old[,i], new[,names(old)[i]])
+  }
+ 
   #only compare columns in original file
-  expect_that(old, equals(new[,names(old)]))  
+  expect_that(old, equals(new[,names(old)]))
+  if(verbose) cat("\n") 
 }
 
+importAndCheck<-function(studyName, verbose=FALSE, browse=FALSE){
+  data<-importData(studyName, verbose=verbose)
+  compareOldNew(studyName, browse=browse, verbose=verbose)
+  data
+}

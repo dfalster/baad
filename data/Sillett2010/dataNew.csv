@@ -11,4 +11,6 @@ species,"Eucalyptus regnans",map,1208
 species,"Sequoia sempervirens",map,1226
 species,"Eucalyptus regnans",mat,11.6
 species,"Sequoia sempervirens",mat,12.6
-,, growingCondition,"FW", pft,"EA", vegetation,"TempF"
+,,growingCondition,"FW"
+,,pft,"EA"
+,,vegetation,"TempF"

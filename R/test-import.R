@@ -9,16 +9,14 @@ source("R/test-import-fun.R")
 system("rm output/data/*")
 
 #Test single study
-studyName     <-  "Epron2012"
-data<-importData(studyName)
-compareOldNew(studyName)
+d<-importAndCheck("Kohyama1987", verbose=TRUE)
+d<-importAndCheck("Petritan2009", verbose=TRUE, browse=TRUE)
 
 #names of all studies
 studyNames     <-  getStudyNames()
 
 #import data
-cat("\nImport data:\t")
-data<-lapply(studyNames, importData)
+data<-lapply(studyNames, importAndCheck, verbose=TRUE)
 
 #count number of records
 vec<-0
@@ -27,9 +25,6 @@ for(ax in 1:length(data)){
 }
 cat("\nNumber of records", vec,"\n")
 rm(vec)
-
-cat("\nCheck old versus new data:\t")
-out<-lapply(studyNames, compareOldNew)
 
 
 
