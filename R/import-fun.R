@@ -38,18 +38,11 @@ importData<-function(studyName, verbose=FALSE){
 
 loadData<-function(studyName){
   #import options for data file
-  import <-  read.csv(paste0(dir.rawData,"/",studyName,"/import.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE)   
+  import <-  read.csv(paste0(dir.rawData,"/",studyName,"/dataImportOptions.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE)   
   
   #brings in the original .csv
   raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE)
   raw
-}
-
-makeEmptyDataSet<-function(colnames){
-  #start with empty dataframe with all variables included
-  emptydfr <- data.frame( matrix("a", ncol=length(colnames),nrow=1), stringsAsFactors=FALSE)
-  names(emptydfr) <- colnames
-  emptydfr[-1,]
 }
 
 addAllColumns<-function(data){
@@ -77,11 +70,9 @@ addAllColumns<-function(data){
 
 
 addNewData<-function(studyName, data){
-#  browser()
   #import options for data file
   filename<-paste0(dir.rawData,"/",studyName,"/dataNew.csv")
   if(file.exists(filename)){
-   #browser()
    import <-  read.csv(filename, h=TRUE, stringsAsFactors=FALSE, strip.white = TRUE) #read in new data    
    nchanges<- length(import$lookupVariable)
    if(nchanges){
@@ -96,32 +87,22 @@ addNewData<-function(studyName, data){
   data
 }
   
-  
-#Define a function for that constructs dataframe for this study
-#NOTE - this is just a template. this function is redfined for each study 
-# See file makeDataFrame.R stored in its each studies directory
-makeDataFrame<-function(raw, studyName){
-  data  <-  NULL
-}
-
 #convert data to desired format, changing units, variable names
 convertData<-function(data,studyName){
   
   #load variable matching table
-  var.match <- read.csv(paste0(dir.rawData,"/",studyName,"/variable.match.csv"),h=TRUE,stringsAsFactors=FALSE,na.strings=c("NA",""))
-  #browser()
+  var.match <- read.csv(paste0(dir.rawData,"/",studyName,"/dataMatchColumns.csv"),h=TRUE,stringsAsFactors=FALSE,na.strings=c("NA",""))
+
   #Find the column numbers in the data that need to be checked out for conversion
   selec  <-  which(names(data) %in% var.match$var_in) 
   
   for(a in selec){    #Do for every column that needs conversion
     #rename data
-    #TODO: put this in a function
     var.in   <-  names(data)[a] #variable that goes in
     var.out  <-  var.match$var_out[var.match$var_in==var.in] #variable that goes out   
     names(data)[a] <-  var.out #resets the name of a particular variable to the standardised form
     
     #change units  
-    #TODO: put this in a function
     un.in    <-  var.match$unit_in[var.match$var_in==var.in] #unit that goes in
     un.out   <-  var.def$Units[var.def$Variable==var.out] #unit that goes out
     
@@ -130,12 +111,10 @@ convertData<-function(data,studyName){
       data[,a] <-  func(as.numeric(data[,a])) #applies the function to the column
     }
     
-    #outline methods
-    #TODO: put this in a function
+    #add methods varaibles
     met.in   <-  var.match$method[var.match$var_in==var.in] #method used to measure
     
     if(!is.na(met.in)){ # 
-      #TODO: DIEGO - why not use method abbreviation?
       data$NEW                 <-  rep(met.in, nrow(data)) #creates a new colum that contains the method description
       names(data)[ncol(data)]  <-  paste("method", "_", var.out, sep="") #changes the names by pasting "method" and the standardised variable name 
     }
@@ -146,24 +125,6 @@ convertData<-function(data,studyName){
 #write data to file
 writeData<-function(data, name= data$dataset[1]){
   write.csv(data, paste0(dir.cleanData,"/", name, ".csv", sep=""), row.names=FALSE)
-}
-
-# smart Rbind - doesn't require exact match between columns of the two datasets. takes variable list from the first dataframe
-Rbind <- function (dfr1, dfr2) 
-{
-  if(is.null(dfr1) | is.null(dfr2))
-    stop("Empty dataframe passed to Rbind")
-
-  merger <- vector("list", ncol(dfr1))
-  names(merger) <- names(dfr1)
-  for (i in 1:length(merger)) {
-    nam <- names(merger)[i]
-    if (!(nam %in% names(dfr2))) 
-      merger[[i]] <- rep(NA, nrow(dfr2))
-    else merger[[i]] <- dfr2[, nam]
-  }
-  dfr <- rbind(dfr1, as.data.frame(merger))
-  return(dfr)
 }
 
 

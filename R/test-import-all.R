@@ -10,7 +10,7 @@ system("rm output/data/*")
 
 #Test single study
 d<-importAndCheck("Kohyama1987", verbose=TRUE)
-d<-importAndCheck("Petritan2009", verbose=TRUE, browse=TRUE)
+#d<-importAndCheck("Petritan2009", verbose=TRUE, browse=TRUE)
 
 #names of all studies
 studyNames     <-  getStudyNames()
