@@ -1,0 +1,10 @@
+lookupVariable,lookupValue,newVariable,newValue
+species,"Fagus sylvatica",pft,"DA"
+species,"Pinus sylvestris",pft,"EG"
+,, growingCondition,"FW" 
+,, location,"Sierra de la Demanda, Spain" 
+,, vegetation,"TempF" 
+,, latitude,42.33 
+,, longitude,4.16 
+,, mat,12.4 
+,, map,895

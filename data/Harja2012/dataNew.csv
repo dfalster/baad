@@ -1,0 +1,13 @@
+lookupVariable,lookupValue,newVariable,newValue
+species,'Landom',species,"Lansium domesticum"
+species,'Durzib',species,"Durio zibethinus"
+species,'Hevbra',species,"Hevea brasiliensis"
+species,'Alssch',species,"Alstonia scholaris"
+species,'Schwal',species,"Schima wallichii"
+species,'Fagfra',species,"Fagraea fragrans"
+species,'Shoste',species,"Shorea stenoptera"
+species,'Pitjir',species,"Archidendron jiringa"
+species,'Acaman',species,"Acacia mangium"
+species,'Albfal',species,"Albizia falcataria"
+,, growingCondition,"FW" 
+,, vegetation,"TropRF"

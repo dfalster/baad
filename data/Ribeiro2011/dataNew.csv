@@ -1,0 +1,5 @@
+lookupVariable,lookupValue,newVariable,newValue
+,,vegetation , "TropSF (Savannah like)"
+,,growingCondition , "FW"
+,, latitude,-18.66 
+,, longitude,-44

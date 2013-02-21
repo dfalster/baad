@@ -1,0 +1,18 @@
+lookupVariable,lookupValue,newVariable,newValue
+species,'Cs',species,"Camellia sasanqua"
+species,'Cj',species,"Camellia japonia"
+species,'Na',species,"Neolitsea aciculata"
+species,'Sg',species,"Symplocos glauca"
+species,'Pn',species,"Podocarpus nagi"
+species,'Ia',species,"Illicium anisatsum"
+species,'Dr',species,"Distylium racemosum"
+species,'Ms',species,"Myrsine seguinii"
+species,'St',species,"Symplocos tanakae"
+species,'Sp',species,"Symplocos purnifolia"
+species,'Rt',species,"Rhododendron tashiroi"
+species,'La',species,"Litsea acuminata"
+species,'Cl',species,"Cleyera japonica"
+species,'Ej',species,"Eurya japonica" 	
+,, latitude,30.31667 
+,, longitude,130.4333 
+,, location,"Ohkou River, Yakushima Island, Kyushu, Japan"

@@ -1,0 +1,13 @@
+lookupVariable,lookupValue,newVariable,newValue
+status,"i",status,1
+status,"s",status,0
+status,"d",status,3
+status,"cd",status,2 
+,,species,"Sequoia sempervirens" 
+,, growingCondition,"FW" 
+,, pft,"EA" 
+,, vegetation,"TempF" 
+,, map,1300 
+,, latitude,39.37278 
+,, longitude,-123.6556 
+,, location,"Jackson Demonstration State Forest, California, USA"

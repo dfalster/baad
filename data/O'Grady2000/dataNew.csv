@@ -1,0 +1,14 @@
+lookupVariable,lookupValue,newVariable,newValue
+species,"E.tet.",species,"Eucalyptus tetrodonta"
+species,"E.min.",species,"Eucalyptus miniata"
+species,"T.ferd.",species,"Terminalia ferdinandiana"
+species,"E.min",species,"Eucalyptus miniata"
+species,"E.chlor.",species,"Erythrophloem chlorostachys"
+species,"E.clav.",species,"Eucalyptus clavigera"
+,, latitude,-12.5 
+,, longitude,130.75 
+,, growingCondition,"FW" 
+,, pft,"EA" 
+,, vegetation,"Sav" 
+,, location,"Howard Springs, NT, Australia" 
+,, map,1700

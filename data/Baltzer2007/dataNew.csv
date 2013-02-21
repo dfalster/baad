@@ -1,0 +1,10 @@
+lookupVariable,lookupValue,newVariable,newValue
+species,"AR",species,"Acer rubrum"
+species,"AS",species,"Acer saccharum" 
+species,"BA",species,"Betula alleghaniensis"
+species,"FA",species,"Fraxinus americana"
+species,"QR",species,"Quercus rubra"
+species,"UA",species,"Ulmus americana"
+species,"BP",species,"Betula papyrifera"
+,, latitude,43.66146 
+,, longitude,-79.40006 

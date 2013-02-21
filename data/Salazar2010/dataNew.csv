@@ -1,0 +1,6 @@
+lookupVariable,lookupValue,newVariable,newValue
+species,"Castanea sativa ",map,1590
+species,"Quercus pyrenaica ",map,1530
+species,"Castanea sativa ",mat,10.8
+species,"Quercus pyrenaica ",mat,11.1
+,, growingCondition,"FW"

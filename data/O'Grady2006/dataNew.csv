@@ -1,0 +1,8 @@
+lookupVariable,lookupValue,newVariable,newValue
+,,species,"Eucalyptus globulus" 
+,, latitude,-42.82 
+,, longitude,147.51 
+,, growingCondition,"PM" 
+,, pft,"EA" 
+,, location,"Pittwater plantation, TAS, Australia" 
+,, map,500

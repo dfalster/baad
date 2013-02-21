@@ -1,0 +1,9 @@
+lookupVariable,lookupValue,newVariable,newValue
+,,species,"Pinus radiata" 
+,, latitude,-34.2 
+,, longitude,-72.93 
+,, growingCondition,"PM" 
+,, vegetation,"TempF" 
+,, pft,"EG" 
+,, map,700 
+,, mat,13.64

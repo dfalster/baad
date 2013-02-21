@@ -1,6 +1,7 @@
 # Copy import.csv into all data directories
 for filename in data/* 
 do
-   cp makeDataFrame.R $filename
-#   mv $filename/import.txt $filename/import.csv
+   cp dataNew.csv $filename
+#   mv $filename/data_new.csv $filename/dataNew.csv
+#	touch $filename/dataManipulate.r
 done

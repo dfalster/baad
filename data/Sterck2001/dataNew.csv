@@ -1,0 +1,9 @@
+lookupVariable,lookupValue,newVariable,newValue
+species,"VA",species,"Vouacapoua americana Aubl."
+species,"DG",species,"Dicorynia guianensis Amshoff."
+,, growingCondition,"FW" 
+,, vegetation,"TropRF" 
+,, location,"les Nouragues Biological Field Station, French Guiana" 
+,, latitude,4.08 
+,, longitude,-52.66 
+,, map,3000
