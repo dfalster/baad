@@ -6,7 +6,8 @@ source('R/import-fun.R')
 source("R/test-import-fun.R")
 
 #Remove existing data files
-system("rm output/data/*")
+#system("rm output/data/*") 
+unlink("output/data/*")  # --> plaform independent
 
 #Test single study
 d<-importAndCheck("Kohyama1987", verbose=TRUE)
