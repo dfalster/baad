@@ -75,7 +75,7 @@ addNewData<-function(studyName, data){
   if(file.exists(filename)){
    import <-  read.csv(filename, h=TRUE, stringsAsFactors=FALSE, strip.white = TRUE) #read in new data    
    nchanges<- length(import$lookupVariable)
-   if(nchanges){
+   if(nchanges>0){
       for (i in 1:nchanges){
         if(is.na(import$lookupVariable[i]) | import$lookupVariable[i] =="") #apply to whole column
           data[,import$newVariable[i]] = import$newValue[i]
