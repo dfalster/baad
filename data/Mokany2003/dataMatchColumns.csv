@@ -11,7 +11,7 @@
 "10","Year",NA,NA,NA,NA,"Year"
 "11","Symbol",NA,NA,NA,NA,"Symbol"
 "12","Title",NA,NA,NA,NA,"Title"
-"13","Species",NA,NA,NA,NA,"Species"
+"13","Species",NA,NA,"species",NA,"Species"
 "14","Family",NA,NA,NA,NA,"Family"
 "15","pft",NA,NA,NA,NA,"pft"
 "16","growingCondition",NA,NA,NA,NA,"growingCondition"

@@ -12,7 +12,7 @@
 "11","BurnYear",NA,NA,NA,NA,"BurnYear"
 "12","HarvestYear",NA,NA,NA,NA,"HarvestYear"
 "13","Edaphic",NA,NA,NA,NA,"Edaphic"
-"14","Species",NA,NA,NA,NA,"Species"
+"14","Species",NA,NA,"species",NA,"Species"
 "15","Number",NA,NA,NA,NA,"Number"
 "16","D10",NA,NA,NA,NA,"D10"
 "17","DWT",NA,NA,NA,NA,"DWT"

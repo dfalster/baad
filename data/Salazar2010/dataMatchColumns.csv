@@ -5,5 +5,5 @@
 "4","Branch_biomass","m5","kg","m.br",NA,"Branch_biomass"
 "5","Stem_biomass","m5","kg","m.st",NA,"Stem_biomass"
 "6","Total_biomass","m5","kg","m.so",NA,"Total_biomass"
-"7","Species",NA,NA,NA,NA,"Species"
+"7","Species",NA,NA,"species",NA,"Species"
 "8","Trunk_biomass",NA,NA,NA,NA,"Trunk_biomass"

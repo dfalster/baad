@@ -5,7 +5,7 @@
 "4","Branch_biomass","m5","kg","m.br",NA,"Branch_biomass"
 "5","Stem_biomass","m5","kg","m.st",NA,"Stem_biomass"
 "6","Total.biomass","m5","kg","m.so",NA,"Total biomass"
-"7","Species",NA,NA,NA,NA,"Species"
+"7","Species",NA,NA,"species",NA,"Species"
 "8","Trunk_biomass",NA,NA,NA,NA,"Trunk_biomass"
 "9","trees.per.ha",NA,NA,NA,NA,"trees per ha"
 "10","Total.biomass.per.ha",NA,NA,NA,NA,"Total biomass per ha"

@@ -8,7 +8,7 @@
 "7","Leaf.Area",NA,"m2","a.lf",NA,"Leaf Area"
 "8","tree",NA,NA,NA,NA,"tree"
 "9","stratum",NA,NA,NA,NA,"stratum"
-"10","crown.class",NA,NA,NA,NA,"crown class"
+"10","crown.class",NA,NA,"status",NA,"crown class"
 "11","X..foliate.mass.by.morphology.type",NA,NA,NA,NA,"% foliate mass by morphology type"
 "12","X..foliate.mass.by.morphology.type.1",NA,NA,NA,NA,"% foliate mass by morphology type"
 "13","X..foliate.mass.by.morphology.type.2",NA,NA,NA,NA,"% foliate mass by morphology type"

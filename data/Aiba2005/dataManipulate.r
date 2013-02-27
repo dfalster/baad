@@ -1,2 +1,1 @@
-
-raw$species=paste(raw$Genus, raw$Species)
+raw$species  <-  paste(raw$Genus, raw$Species)

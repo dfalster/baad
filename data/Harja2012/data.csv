@@ -1,4 +1,4 @@
-Location,Species,LatCode,Low_Wd,Wd,Hi_Wd,Girth,Cw_Avg,Cw_Depth,Hcb,CP_Idx,CF_idx,Isolated,Dense,Cw_Surf,Cw_Vol,Dbh,Height
+Location,Indonesian_name,Species,Low_Wd,Wd,Hi_Wd,Girth,Cw_Avg,Cw_Depth,Hcb,CP_Idx,CF_idx,Isolated,Dense,Cw_Surf,Cw_Vol,Dbh,Height
 Jambi,Duku,Landom,750,850,920,44.8,5.9,8,2.4,3,4,No,low,272.1527164,583.2471481,14.2602829,10.4
 Jambi,Duku,Landom,750,850,920,57.8,7.236021006,10,2.1,2,4,No,high,415.392679,1096.625276,18.39831142,12.1
 Jambi,Duku,Landom,750,850,920,75,7.13582511,11.2,2.6,3,4,No,low,446.6461177,1194.441904,23.87324146,13.8

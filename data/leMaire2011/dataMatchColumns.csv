@@ -24,6 +24,6 @@
 "23","latitude",NA,NA,NA,NA,"latitude"
 "24","longitude",NA,NA,NA,NA,"longitude"
 "25","vegetation",NA,NA,NA,NA,"vegetation"
-"26","map.mm",NA,NA,NA,NA,"map.mm"
+"26","map.mm",NA,NA,"map",NA,"map.mm"
 "27","mat",NA,NA,NA,NA,"mat"
 "28","reference",NA,NA,NA,NA,"reference"

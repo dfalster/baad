@@ -33,7 +33,7 @@
 "32","Coarse.root.nitrogen","","kg.kg","n.rc",NA,"Coarse root nitrogen"
 "33","LAI","","m2.m2","lai",NA,"LAI"
 "34","Reference.publication",NA,NA,NA,NA,"Reference publication"
-"35","Species",NA,NA,NA,NA,"Species"
+"35","Species",NA,NA,"species",NA,"Species"
 "36","Family",NA,NA,NA,NA,"Family"
 "37","Height.of.crown",NA,NA,NA,NA,"Height of crown"
 "38","pft",NA,NA,NA,NA,"pft"

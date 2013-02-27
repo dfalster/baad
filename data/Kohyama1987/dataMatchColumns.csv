@@ -7,7 +7,7 @@
 "6","Wbs.g","m5","g","m.br",NA,"Wbs.g"
 "7","La.cm2","","cm2","a.lf",NA,"La.cm2"
 "8","leaf.mass","m5","g","m.lf",NA,"leaf.mass"
-"9","SpecCode",NA,NA,NA,NA,"SpecCode"
+"9","SpecCode",NA,NA,"soecies",NA,"SpecCode"
 "10","No",NA,NA,NA,NA,"No"
 "11","D1.cm",NA,NA,NA,NA,"D1.cm"
 "12","D2.cm",NA,NA,NA,NA,"D2.cm"

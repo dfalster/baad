@@ -30,7 +30,7 @@
 "29","growingCondition",NA,NA,NA,NA,"growingCondition"
 "30","status",NA,NA,NA,NA,"status"
 "31","light",NA,NA,NA,NA,"light"
-"32","group",NA,NA,NA,NA,"group"
+"32","group",NA,NA,"grouping",NA,"group"
 "33","location",NA,NA,NA,NA,"location"
 "34","latitude",NA,NA,NA,NA,"latitude"
 "35","longitude",NA,NA,NA,NA,"longitude"

@@ -10,4 +10,4 @@
 "9","lf.ma","a3","kg.m2","lf.ma",NA,"lf.ma"
 "10","a.cp","","m2","a.cp",NA,"a.cp"
 "11","species",NA,NA,NA,NA,"species"
-"12","treatment",NA,NA,NA,NA,"treatment"
+"12","treatment",NA,NA,"grouping",NA,"treatment"

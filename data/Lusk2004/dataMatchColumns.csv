@@ -7,7 +7,7 @@
 "6","dataset",NA,NA,NA,NA,"dataset"
 "7","Country",NA,NA,NA,NA,"Country"
 "8","Forest.type",NA,NA,NA,NA,"Forest.type"
-"9","Species",NA,NA,NA,NA,"Species"
+"9","Species",NA,NA,"species",NA,"Species"
 "10","Family",NA,NA,NA,NA,"Family"
 "11","lf.sz",NA,NA,NA,NA,"lf.sz"
 "12","a.cs",NA,NA,NA,NA,"a.cs"

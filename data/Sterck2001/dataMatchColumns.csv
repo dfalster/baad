@@ -8,7 +8,7 @@
 "7","LA","","cm2","lf.sz","leaf area (cm2) is the average area of a single leaf, based on the average area of a leaf sample of 20 leaves.","LA"
 "8","SLA","","cm2.g","lf.ma","","SLA"
 "9","PAR","li","-","light","","PAR"
-"10","Sp",NA,NA,NA,NA,"Sp"
+"10","Sp",NA,NA,"species",NA,"Sp"
 "11","Nr",NA,NA,NA,NA,"Nr"
 "12","Size",NA,NA,NA,NA,"Size"
 "13","NrLvs",NA,NA,NA,NA,"NrLvs"

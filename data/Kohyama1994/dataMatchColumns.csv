@@ -7,7 +7,7 @@
 "6","Ws.mg","m5","mg","m.st",NA,"Ws.mg"
 "7","Wr.mg","m5","mg","m.rt",NA,"Wr.mg"
 "8","SLA.cm2.g","","cm2.g","lf.ma",NA,"SLA.cm2.g"
-"9","SpecCode",NA,NA,NA,NA,"SpecCode"
+"9","SpecCode",NA,NA,"species",NA,"SpecCode"
 "10","No",NA,NA,NA,NA,"No"
 "11","RD.cm",NA,NA,NA,NA,"RD.cm"
 "12","RW1.cm",NA,NA,NA,NA,"RW1.cm"

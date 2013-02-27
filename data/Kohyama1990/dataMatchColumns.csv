@@ -10,7 +10,7 @@
 "9","W.g","m5","g","m.so",NA,"W.g"
 "10","Year",NA,NA,NA,NA,"Year"
 "11","X.",NA,NA,NA,NA,"#"
-"12","SpecCode",NA,NA,NA,NA,"SpecCode"
+"12","SpecCode",NA,NA,"species",NA,"SpecCode"
 "13","D.cm",NA,NA,NA,NA,"D.cm"
 "14","DDH.cm3",NA,NA,NA,NA,"DDH.cm3"
 "15","Ll.cm",NA,NA,NA,NA,"Ll.cm"

@@ -11,7 +11,7 @@
 "10","Soil",NA,NA,NA,NA,"Soil"
 "11","H2O",NA,NA,NA,NA,"H2O"
 "12","P",NA,NA,NA,NA,"P"
-"13","SpID",NA,NA,NA,NA,"SpID"
+"13","SpID",NA,NA,"species",NA,"SpID"
 "14","Ind",NA,NA,NA,NA,"Ind"
 "15","Lv",NA,NA,NA,NA,"Lv"
 "16","Lft",NA,NA,NA,NA,"Lft"
