@@ -9,6 +9,3 @@
 "8","crown.area..cm.2.","","cm2","a.cp",NA,"crown area (cm^2)"
 "9","crown.height..cm.","","cm","h.c",NA,"crown height (cm)"
 "10","base.diameter..mm.","","mm","d.ba",NA,"base diameter (mm)"
-"11","genus",NA,NA,NA,NA,"genus"
-"12","species",NA,NA,NA,NA,"species"
-"13","branch.mass...stem.mass..g.",NA,NA,NA,NA,"branch mass + stem mass (g)"

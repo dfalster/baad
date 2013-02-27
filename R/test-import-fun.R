@@ -31,8 +31,10 @@ compareOldNew<-function(name, verbose=FALSE, browse=FALSE){
     print(head(old))
     print(head(new[,names(old)])) 
     browser()
-    i=3;
-    cbind(old[,i], new[,names(old)[i]])
+    i=2
+    any(old[,i] != new[,names(old)][,i])
+    
+    cbind(old[,i], new[,names(old)[i]], old[,i] == new[,names(old)][,i])
   }
  
   #only compare columns in original file
@@ -41,7 +43,7 @@ compareOldNew<-function(name, verbose=FALSE, browse=FALSE){
 }
 
 importAndCheck<-function(studyName, verbose=FALSE, browse=FALSE){
-  data<-importData(studyName, verbose=verbose)
+  processStudy(studyName, verbose=verbose, browse=browse)
   compareOldNew(studyName, browse=browse, verbose=verbose)
   data
 }

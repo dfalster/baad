@@ -14,5 +14,5 @@
 "13","Vegetation.type",NA,NA,"vegetation",NA,"Vegetation.type"
 "14","Growing.environment",NA,NA,"growingCondition",NA,"Growing.environment"
 "15","Location",NA,NA,"location",NA,"Location"
-"16","Mean.annual.rainfall",NA,NA,"map",NA,"Mean.annual.rainfall"
-"17","Mean.annual.temperature",NA,NA,"mat",NA,"Mean.annual.temperature"
+"16","Mean.annual.rainfall",NA,mm,"map",NA,"Mean.annual.rainfall"
+"17","Mean.annual.temperature",NA,deg,"mat",NA,"Mean.annual.temperature"

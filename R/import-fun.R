@@ -1,14 +1,85 @@
 
-importData<-function(studyName, verbose=FALSE){
+loadStudies<-function(studyNames, reprocess= FALSE, verbose=FALSE, browse=FALSE){
+  
+  n=length(studyNames)
+  if(n>0){
+    
+    d<-lapply(studyNames, loadStudy, reprocess=reprocess, verbose = verbose)
+
+#    browser()
+    all<-list()
+    i=1;
+    all$data<-d[[i]]$data
+    all$ref<-d[[i]]$ref
+    all$contact<-d[[i]]$contact
+    
+    while(i< n){
+      i= i+1;
+      cat(studyNames[i], " ")
+    #  browser()
+      
+      all$data<-Rbind(all$data, d[[i]]$data)
+      all$ref<-Rbind(all$ref,d[[i]]$ref)
+      all$contact<-Rbind(all$contact,d[[i]]$contact)     
+    }
+  }
+  all
+}
+
+Rbind<-function(dfr1, dfr2){
+#  browser()
+  if(any(names(dfr1) != names(dfr2))){
+    cat("Column names do not match in rbind\n\n")
+    cat(names(dfr1))
+    cat("\n\n")
+    cat(names(dfr2))    
+    cat("\n\n")
+    cat(names(dfr1) == names(dfr2))
+    cat("\n\n")
+  }
+  rbind(dfr1, dfr2)
+}
+
+loadStudy<-function(studyName, reprocess= FALSE, verbose=FALSE, browse=FALSE){
   if(verbose) cat(studyName, " ")
+  
+  #name of cleaned data file
+  filename<-studyDataFile(studyName);
+  
+  #Check if cleaned datafile exists, if not create it
+  if(!file.exists(filename) | reprocess)
+    processStudy(studyName, verbose=verbose, browse=browse)
+  
+  study<-list()
+  
+  #Read cleaned data file
+  study$data<-read.csv(filename, h= TRUE)
+  #Read reference
+  study$ref<-data.frame(dataset = studyName, read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.csv"), h= TRUE, stringsAsFactors=FALSE, strip.white = TRUE))
+  
+  #Read contacts
+  study$contact<-data.frame(dataset = studyName, read.csv(paste0(dir.rawData,"/",studyName,"/studyContact.csv"), h= TRUE, stringsAsFactors=FALSE, strip.white = TRUE ))
+  study  
+}
+  
+
+
+processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
+  if(verbose) cat(studyName, " ")
+  
+  #delete existing output file, if exists
+  outputName<-studyDataFile(studyName)
+  if(file.exists(outputName))
+    file.remove(outputName)  
+
+  if(browse)
+    browser()
   
   #read original data from file
   if(verbose) cat("load data ")
   
-  raw<-loadData(studyName) 
+  raw<-readRawData(studyName) 
 
-#  browser()
-  
   #Manipulate data where needed
   if(verbose) cat("manipulate data ")
   filename<-paste0(dir.rawData,"/",studyName,"/dataManipulate.R")
@@ -18,7 +89,7 @@ importData<-function(studyName, verbose=FALSE){
   #add studyname to dataset
   data<- cbind(raw, dataset=studyName, stringsAsFactors=FALSE)
   
-  #convert units and variable names
+  #convert units and variable names, add methods variables
   if(verbose) cat("convert units ")
   data<-convertData(data, studyName)
 
@@ -32,16 +103,16 @@ importData<-function(studyName, verbose=FALSE){
   
   #write data to file
   if(verbose) cat("write to file ")
-  writeData(data, studyName)  
-  data
+  write.csv(data,   outputName, row.names=FALSE)
+  
 }
 
-loadData<-function(studyName){
+readRawData<-function(studyName){
   #import options for data file
   import <-  read.csv(paste0(dir.rawData,"/",studyName,"/dataImportOptions.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE)   
   
   #brings in the original .csv
-  raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE)
+  raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE, strip.white=TRUE)
   raw
 }
 
@@ -50,6 +121,7 @@ addAllColumns<-function(data){
   #all column names
   allowedNames<-var.def$Variable
   type<-var.def$Type
+
   #add methods
   allowedNames<-c(allowedNames, as.character(paste("method_", var.def$Variable[var.def$methodsVariable], sep=""))) 
   type<-c(type, rep("character",sum(var.def$methodsVariable)))
@@ -76,6 +148,13 @@ addNewData<-function(studyName, data){
    import <-  read.csv(filename, h=TRUE, stringsAsFactors=FALSE, strip.white = TRUE) #read in new data    
    nchanges<- length(import$lookupVariable)
    if(nchanges>0){
+      
+      #Check name is allowed
+     nameIsOK<-import$newVariable %in% var.def$Variable
+     if(any(!nameIsOK))
+       stop("Incorrect name in var_out columns of dataMatchColumns.csv for ", studyName, "--> ", import$newVariable[!nameIsOK])
+  
+      #make changes one by one     
       for (i in 1:nchanges){
         if(is.na(import$lookupVariable[i]) | import$lookupVariable[i] =="") #apply to whole column
           data[,import$newVariable[i]] = import$newValue[i]
@@ -92,23 +171,33 @@ convertData<-function(data,studyName){
   
   #load variable matching table
   var.match <- read.csv(paste0(dir.rawData,"/",studyName,"/dataMatchColumns.csv"),h=TRUE,stringsAsFactors=FALSE,na.strings=c("NA",""))
-
-  #Find the column numbers in the data that need to be checked out for conversion
-  selec  <-  which(names(data) %in% var.match$var_in) 
   
+  #Check all names in table are allowed
+  nameIsOK<-var.match$var_out[!is.na(var.match$var_out)] %in% var.def$Variable
+  if(any(!nameIsOK))
+    stop("Incorrect name in var_out columns of dataMatchColumns.csv for ", studyName, "--> ", var.match$var_out[!nameIsOK])
+        
+  #Find the column numbers in the data that need to be checked out for conversion, only check columns 
+  selec  <-  which(names(data) %in% var.match$var_in[!is.na(var.match$var_out)]) 
+#  cat(names(data)[selec], " ")
+#  browser()
   for(a in selec){    #Do for every column that needs conversion
-    #rename data
+
+    #rename variables
     var.in   <-  names(data)[a] #variable that goes in
     var.out  <-  var.match$var_out[var.match$var_in==var.in] #variable that goes out   
     names(data)[a] <-  var.out #resets the name of a particular variable to the standardised form
     
-    #change units  
+    #change units, only for numeric variables 
+    if(var.def$Type[var.def$Variable==var.out] == "numeric"){
+      
     un.in    <-  var.match$unit_in[var.match$var_in==var.in] #unit that goes in
     un.out   <-  var.def$Units[var.def$Variable==var.out] #unit that goes out
     
-    if(un.in != un.out){
+    if(un.in != un.out){ # check if units differ
       func     <-  get(paste(un.in, ".", un.out, sep="")) #select the function based on variables
       data[,a] <-  func(as.numeric(data[,a])) #applies the function to the column
+    }
     }
     
     #add methods varaibles
@@ -122,9 +211,9 @@ convertData<-function(data,studyName){
   data
 }
 
-#write data to file
-writeData<-function(data, name= data$dataset[1]){
-  write.csv(data, paste0(dir.cleanData,"/", name, ".csv", sep=""), row.names=FALSE)
+#creates name of file to sotre porcessed data
+studyDataFile<-function(studyName){
+  paste0(dir.cleanData,"/", studyName, ".csv", sep="")
 }
 
 
