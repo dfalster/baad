@@ -1,6 +1,6 @@
-lookupVariable,lookupValue,newVariable,newValue
-species,"Castanea sativa ",map,1590
-species,"Quercus pyrenaica ",map,1530
-species,"Castanea sativa ",mat,10.8
-species,"Quercus pyrenaica ",mat,11.1
-,, growingCondition,"FW"
+"","","lookupVariable","lookupValue","newVariable","newValue","source"
+"1",1,"species","Castanea sativa ","map","1590","from paper[D Barneche]"
+"2",2,"species","Quercus pyrenaica ","map","1530","from paper[D Barneche]"
+"3",3,"species","Castanea sativa ","mat","10.8","from paper[D Barneche]"
+"4",4,"species","Quercus pyrenaica ","mat","11.1","from paper[D Barneche]"
+"5",5,"",""," growingCondition","FW","from paper[D Barneche]"

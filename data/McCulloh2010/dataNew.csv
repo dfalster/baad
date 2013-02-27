@@ -1,50 +1,50 @@
-lookupVariable,lookupValue,newVariable,newValue
-species,"Anacardium excelsum",vegetation,"TropRF"
-species,"Cordia alliodora",vegetation,"TropRF"
-species,"Ficus insipida",vegetation,"TropRF"
-species,"Luehea seemannii",vegetation,"TropRF"
-species,"Acer circinatum",vegetation,"TemF"
-species,"Acer macrophyllum",vegetation,"TemF"
-species,"Alnus rubra",vegetation,"TemF"
-species,"Arbutus menziesii",vegetation,"TemF"
-species,"Fraxinus nigra",vegetation,"TemF"
-species,"Quercus ellipsoidalis",vegetation,"TemF"
-species,"Robinia pseudoacacia",vegetation,"TemF"
-species,"Abies grandis",vegetation,"TemF"
-species,"Pinus ponderosa",vegetation,"TemF"
-species,"Pseudotsuga menziesii",vegetation,"TemF"
-species,"Thuja plicata",vegetation,"TemF"
-species,"Tsuga heterophylla",vegetation,"TemF"
-species,"Anacardium excelsum",latitude,9
-species,"Cordia alliodora",latitude,9
-species,"Ficus insipida",latitude,9
-species,"Luehea seemannii",latitude,9
-species,"Acer circinatum",latitude,45
-species,"Acer macrophyllum",latitude,45
-species,"Alnus rubra",latitude,45
-species,"Arbutus menziesii",latitude,45
-species,"Fraxinus nigra",latitude,45
-species,"Quercus ellipsoidalis",latitude,45
-species,"Robinia pseudoacacia",latitude,45
-species,"Abies grandis",latitude,45
-species,"Pinus ponderosa",latitude,45
-species,"Pseudotsuga menziesii",latitude,45
-species,"Thuja plicata",latitude,45
-species,"Tsuga heterophylla",latitude,45
-species,"Anacardium excelsum",longitude,-79
-species,"Cordia alliodora",longitude,-79
-species,"Ficus insipida",longitude,-79
-species,"Luehea seemannii",longitude,-79
-species,"Acer circinatum",longitude,-123
-species,"Acer macrophyllum",longitude,-123
-species,"Alnus rubra",longitude,-123
-species,"Arbutus menziesii",longitude,-123
-species,"Fraxinus nigra",longitude,-93
-species,"Quercus ellipsoidalis",longitude,-93
-species,"Robinia pseudoacacia",longitude,-93
-species,"Abies grandis",longitude,-123
-species,"Pinus ponderosa",longitude,-123
-species,"Pseudotsuga menziesii",longitude,-123
-species,"Thuja plicata",longitude,-123
-species,"Tsuga heterophylla",longitude,-123
-,, growingCondition,"FW" 
+"","","lookupVariable","lookupValue","newVariable","newValue","source"
+"1",1,"species","Anacardium excelsum","vegetation","TropRF","from paper[D Barneche]"
+"2",2,"species","Cordia alliodora","vegetation","TropRF","from paper[D Barneche]"
+"3",3,"species","Ficus insipida","vegetation","TropRF","from paper[D Barneche]"
+"4",4,"species","Luehea seemannii","vegetation","TropRF","from paper[D Barneche]"
+"5",5,"species","Acer circinatum","vegetation","TemF","from paper[D Barneche]"
+"6",6,"species","Acer macrophyllum","vegetation","TemF","from paper[D Barneche]"
+"7",7,"species","Alnus rubra","vegetation","TemF","from paper[D Barneche]"
+"8",8,"species","Arbutus menziesii","vegetation","TemF","from paper[D Barneche]"
+"9",9,"species","Fraxinus nigra","vegetation","TemF","from paper[D Barneche]"
+"10",10,"species","Quercus ellipsoidalis","vegetation","TemF","from paper[D Barneche]"
+"11",11,"species","Robinia pseudoacacia","vegetation","TemF","from paper[D Barneche]"
+"12",12,"species","Abies grandis","vegetation","TemF","from paper[D Barneche]"
+"13",13,"species","Pinus ponderosa","vegetation","TemF","from paper[D Barneche]"
+"14",14,"species","Pseudotsuga menziesii","vegetation","TemF","from paper[D Barneche]"
+"15",15,"species","Thuja plicata","vegetation","TemF","from paper[D Barneche]"
+"16",16,"species","Tsuga heterophylla","vegetation","TemF","from paper[D Barneche]"
+"17",17,"species","Anacardium excelsum","latitude","9","from paper[D Barneche]"
+"18",18,"species","Cordia alliodora","latitude","9","from paper[D Barneche]"
+"19",19,"species","Ficus insipida","latitude","9","from paper[D Barneche]"
+"20",20,"species","Luehea seemannii","latitude","9","from paper[D Barneche]"
+"21",21,"species","Acer circinatum","latitude","45","from paper[D Barneche]"
+"22",22,"species","Acer macrophyllum","latitude","45","from paper[D Barneche]"
+"23",23,"species","Alnus rubra","latitude","45","from paper[D Barneche]"
+"24",24,"species","Arbutus menziesii","latitude","45","from paper[D Barneche]"
+"25",25,"species","Fraxinus nigra","latitude","45","from paper[D Barneche]"
+"26",26,"species","Quercus ellipsoidalis","latitude","45","from paper[D Barneche]"
+"27",27,"species","Robinia pseudoacacia","latitude","45","from paper[D Barneche]"
+"28",28,"species","Abies grandis","latitude","45","from paper[D Barneche]"
+"29",29,"species","Pinus ponderosa","latitude","45","from paper[D Barneche]"
+"30",30,"species","Pseudotsuga menziesii","latitude","45","from paper[D Barneche]"
+"31",31,"species","Thuja plicata","latitude","45","from paper[D Barneche]"
+"32",32,"species","Tsuga heterophylla","latitude","45","from paper[D Barneche]"
+"33",33,"species","Anacardium excelsum","longitude","-79","from paper[D Barneche]"
+"34",34,"species","Cordia alliodora","longitude","-79","from paper[D Barneche]"
+"35",35,"species","Ficus insipida","longitude","-79","from paper[D Barneche]"
+"36",36,"species","Luehea seemannii","longitude","-79","from paper[D Barneche]"
+"37",37,"species","Acer circinatum","longitude","-123","from paper[D Barneche]"
+"38",38,"species","Acer macrophyllum","longitude","-123","from paper[D Barneche]"
+"39",39,"species","Alnus rubra","longitude","-123","from paper[D Barneche]"
+"40",40,"species","Arbutus menziesii","longitude","-123","from paper[D Barneche]"
+"41",41,"species","Fraxinus nigra","longitude","-93","from paper[D Barneche]"
+"42",42,"species","Quercus ellipsoidalis","longitude","-93","from paper[D Barneche]"
+"43",43,"species","Robinia pseudoacacia","longitude","-93","from paper[D Barneche]"
+"44",44,"species","Abies grandis","longitude","-123","from paper[D Barneche]"
+"45",45,"species","Pinus ponderosa","longitude","-123","from paper[D Barneche]"
+"46",46,"species","Pseudotsuga menziesii","longitude","-123","from paper[D Barneche]"
+"47",47,"species","Thuja plicata","longitude","-123","from paper[D Barneche]"
+"48",48,"species","Tsuga heterophylla","longitude","-123","from paper[D Barneche]"
+"49",49,"",""," growingCondition","FW ","from paper[D Barneche]"

@@ -1,6 +1,6 @@
-lookupVariable,lookupValue,newVariable,newValue
-,, latitude,36.78333 
-,, longitude,-96.41667 
-,, map,820 
-,, vegetation,"TempF" 
-,, growingCondition,"PM"
+"","","lookupVariable","lookupValue","newVariable","newValue","source"
+"1",1,NA,NA," latitude","36.78333 ","from paper[D Barneche]"
+"2",2,NA,NA," longitude","-96.41667 ","from paper[D Barneche]"
+"3",3,NA,NA," map","820 ","from paper[D Barneche]"
+"4",4,NA,NA," vegetation","TempF ","from paper[D Barneche]"
+"5",5,NA,NA," growingCondition","PM","from paper[D Barneche]"

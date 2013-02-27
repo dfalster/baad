@@ -1,16 +1,16 @@
-lookupVariable,lookupValue,newVariable,newValue
-species,"E. regnans",species,"Eucalyptus regnans" 
-species,"S. sempervirens",species,"Sequoia sempervirens"
-species,"Eucalyptus regnans",location,"Wallaby Creek, Kinglake National Park, Victoria, Australia"
-species,"Sequoia sempervirens",location,"Bull Creek, Humboldt Redwoods State Park, California, USA"
-species,"Eucalyptus regnans",latitude,-37
-species,"Sequoia sempervirens",latitude,145
-species,"Eucalyptus regnans",longitude,40
-species,"Sequoia sempervirens",longitude,-124
-species,"Eucalyptus regnans",map,1208
-species,"Sequoia sempervirens",map,1226
-species,"Eucalyptus regnans",mat,11.6
-species,"Sequoia sempervirens",mat,12.6
-,,growingCondition,"FW"
-,,pft,"EA"
-,,vegetation,"TempF"
+"","","lookupVariable","lookupValue","newVariable","newValue","source"
+"1",1,"species","E. regnans","species","Eucalyptus regnans ","from paper[D Barneche]"
+"2",2,"species","S. sempervirens","species","Sequoia sempervirens","from paper[D Barneche]"
+"3",3,"species","Eucalyptus regnans","location","Wallaby Creek, Kinglake National Park, Victoria, Australia","from paper[D Barneche]"
+"4",4,"species","Sequoia sempervirens","location","Bull Creek, Humboldt Redwoods State Park, California, USA","from paper[D Barneche]"
+"5",5,"species","Eucalyptus regnans","latitude","-37","from paper[D Barneche]"
+"6",6,"species","Sequoia sempervirens","latitude","145","from paper[D Barneche]"
+"7",7,"species","Eucalyptus regnans","longitude","40","from paper[D Barneche]"
+"8",8,"species","Sequoia sempervirens","longitude","-124","from paper[D Barneche]"
+"9",9,"species","Eucalyptus regnans","map","1208","from paper[D Barneche]"
+"10",10,"species","Sequoia sempervirens","map","1226","from paper[D Barneche]"
+"11",11,"species","Eucalyptus regnans","mat","11.6","from paper[D Barneche]"
+"12",12,"species","Sequoia sempervirens","mat","12.6","from paper[D Barneche]"
+"13",13,"","","growingCondition","FW","from paper[D Barneche]"
+"14",14,"","","pft","EA","from paper[D Barneche]"
+"15",15,"","","vegetation","TempF","from paper[D Barneche]"

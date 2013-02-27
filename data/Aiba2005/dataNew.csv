@@ -1,10 +1,10 @@
-lookupVariable,lookupValue,newVariable,newValue
-,,pft,EA
-,,growingCondition,FW
-,,longitude,5.104833 
-,,latitude,114.605 
-,,vegetation,TropRF
-,,map,2700
-,,mat,26
-,,light,closed[average 6%]
-,,location,"Lambir Hills National Park, Sarawak, Malaysia"
+"","","","","","","lookupVariable","lookupValue","newVariable","newValue","source"
+"1",1,1,1,1,1,NA,NA,"pft","EA","from paper[D Barneche]"
+"2",2,2,2,2,2,NA,NA,"growingCondition","FW","from paper[D Barneche]"
+"3",3,3,3,3,3,NA,NA,"longitude","5.104833 ","from paper[D Barneche]"
+"4",4,4,4,4,4,NA,NA,"latitude","114.605 ","from paper[D Barneche]"
+"5",5,5,5,5,5,NA,NA,"vegetation","TropRF","from paper[D Barneche]"
+"6",6,6,6,6,6,NA,NA,"map","2700","from paper[D Barneche]"
+"7",7,7,7,7,7,NA,NA,"mat","26","from paper[D Barneche]"
+"8",8,8,8,8,8,NA,NA,"light","closed[average 6%]","from paper[D Barneche]"
+"9",9,9,9,9,9,NA,NA,"location","Lambir Hills National Park, Sarawak, Malaysia","from paper[D Barneche]"

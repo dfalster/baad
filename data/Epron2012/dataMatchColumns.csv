@@ -1,20 +1,41 @@
-var_in,method,unit_in,var_out,notes
-age,,yr,age,
-a.lf,c,m2,a.lf,
-a.ss,,cm2,a.ssbh,"Measured at 4 years, estimated other ages"
-a.sh,,m2,a.shbh,"Measured at 4 years, estimated other ages"
-a.st,,cm2,a.stbh,from circumference over bark
-a.babh,,cm2,a.babh,from circumference under bark
-a.cp,w,cm,d.cr,
-a.cs,,m2,a.cs,
-h.t,,m,h.t,
-h.c,,m,h.c,
-m.lf,m0,kg,m.lf,
-m.st,m0,kg,m.st,
-m.sb,m0,kg,m.sb,
-m.br,m0,kg,m.br,Living branch mass
-m.rc,m0,kg,m.rc,Coarse root + stump mass
-n.lf,a1,kg.m2,n.lf,
-n.ss,,kg.kg,n.ss,Sapwood + Heartwood
-n.sb,,kg.kg,n.sb,
-n.rf,a4,kg.kg,n.rf,
+"","var_in","method","unit_in","var_out","notes","var_in_unchecked_names"
+"1","age","","yr","age","","age"
+"2","a.lf","c","m2","a.lf","","a.lf"
+"3","a.ss","","cm2","a.ssbh","Measured at 4 years, estimated other ages","a.ss"
+"4","a.sh","","m2","a.shbh","Measured at 4 years, estimated other ages","a.sh"
+"5","a.st","","cm2","a.stbh","from circumference over bark","a.st"
+"6","a.babh","","cm2","a.babh","from circumference under bark","a.babh"
+"7","a.cp","w","cm","d.cr","","a.cp"
+"8","a.cs","","m2","a.cs","","a.cs"
+"9","h.t","","m","h.t","","h.t"
+"10","h.c","","m","h.c","","h.c"
+"11","m.lf","m0","kg","m.lf","","m.lf"
+"12","m.st","m0","kg","m.st","","m.st"
+"13","m.sb","m0","kg","m.sb","","m.sb"
+"14","m.br","m0","kg","m.br","Living branch mass","m.br"
+"15","m.rc","m0","kg","m.rc","Coarse root + stump mass","m.rc"
+"16","n.lf","a1","kg.m2","n.lf","","n.lf"
+"17","n.ss","","kg.kg","n.ss","Sapwood + Heartwood","n.ss"
+"18","n.sb","","kg.kg","n.sb","","n.sb"
+"19","n.rf","a4","kg.kg","n.rf","","n.rf"
+"20","Variable",NA,NA,NA,NA,"Variable"
+"21","contributor",NA,NA,NA,NA,"contributor"
+"22","family",NA,NA,NA,NA,"family"
+"23","species",NA,NA,NA,NA,"species"
+"24","Nutrition",NA,NA,NA,NA,"Nutrition"
+"25","a.st.1",NA,NA,NA,NA,"a.st"
+"26","m.br.1",NA,NA,NA,NA,"m.br"
+"27","m.rf",NA,NA,NA,NA,"m.rf"
+"28","pft",NA,NA,NA,NA,"pft"
+"29","growingCondition",NA,NA,NA,NA,"growingCondition"
+"30","status",NA,NA,NA,NA,"status"
+"31","light",NA,NA,NA,NA,"light"
+"32","group",NA,NA,NA,NA,"group"
+"33","location",NA,NA,NA,NA,"location"
+"34","latitude",NA,NA,NA,NA,"latitude"
+"35","longitude",NA,NA,NA,NA,"longitude"
+"36","vegetation",NA,NA,NA,NA,"vegetation"
+"37","lai",NA,NA,NA,NA,"lai"
+"38","map",NA,NA,NA,NA,"map"
+"39","mat",NA,NA,NA,NA,"mat"
+"40","reference",NA,NA,NA,NA,"reference"

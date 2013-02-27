@@ -1,7 +1,7 @@
-lookupVariable,lookupValue,newVariable,newValue
-,,growingCondition,"FW" 
-,, vegetation,"TempRf" 
-,, location,"Parque Nacional Puyehue, Chile" 
-,, latitude,-40.65 
-,, longitude,-72.18 
-,, map,3500
+"","","lookupVariable","lookupValue","newVariable","newValue","source"
+"1",1,NA,NA,"growingCondition","FW ","from paper[D Barneche]"
+"2",2,NA,NA," vegetation","TempRf ","from paper[D Barneche]"
+"3",3,NA,NA," location","Parque Nacional Puyehue, Chile ","from paper[D Barneche]"
+"4",4,NA,NA," latitude","-40.65 ","from paper[D Barneche]"
+"5",5,NA,NA," longitude","-72.18 ","from paper[D Barneche]"
+"6",6,NA,NA," map","3500","from paper[D Barneche]"

@@ -1,14 +1,14 @@
-lookupVariable,lookupValue,newVariable,newValue
-,, pft , "EA"
-species,"Podocarpus nubigena",pft,"EG"
-species,"Podocarpus salignus",pft,"EG"
-species,"Saxegothaea conspicua",pft,"EG"
-species,"Araucaria araucana",pft,"EG"
-species,"Agathis australis",pft,"EG"
-species,"Phyllocladus trichomanoides",pft,"EG"
-,,growingCondition,"FW" 
-,,vegetation,"TempRf" 
-,,location,"Parque Nacional Puyehue, Chile" 
-,,latitude,-40.65 
-,,longitude,-72.18 
-,,map,3500
+"","","lookupVariable","lookupValue","newVariable","newValue","source"
+"1",1,"",""," pft "," EA","from paper[D Barneche]"
+"2",2,"species","Podocarpus nubigena","pft","EG","from paper[D Barneche]"
+"3",3,"species","Podocarpus salignus","pft","EG","from paper[D Barneche]"
+"4",4,"species","Saxegothaea conspicua","pft","EG","from paper[D Barneche]"
+"5",5,"species","Araucaria araucana","pft","EG","from paper[D Barneche]"
+"6",6,"species","Agathis australis","pft","EG","from paper[D Barneche]"
+"7",7,"species","Phyllocladus trichomanoides","pft","EG","from paper[D Barneche]"
+"8",8,"","","growingCondition","FW ","from paper[D Barneche]"
+"9",9,"","","vegetation","TempRf ","from paper[D Barneche]"
+"10",10,"","","location","Parque Nacional Puyehue, Chile ","from paper[D Barneche]"
+"11",11,"","","latitude","-40.65 ","from paper[D Barneche]"
+"12",12,"","","longitude","-72.18 ","from paper[D Barneche]"
+"13",13,"","","map","3500","from paper[D Barneche]"

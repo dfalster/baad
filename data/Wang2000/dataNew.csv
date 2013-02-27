@@ -1,7 +1,7 @@
-lookupVariable,lookupValue,newVariable,newValue
-species,"Abies lasiocarpa",pft,"EG" 
-species,"Betula papyrifera",pft,"DA"
-,, growingCondition,"FW" 
-,, vegetation,"BorF" 
-,, location,"24 km east of Prince George, British Columbia, CA" 
-,, map,628.3
+"","","lookupVariable","lookupValue","newVariable","newValue","source"
+"1",1,"species","Abies lasiocarpa","pft","EG ","from paper[D Barneche]"
+"2",2,"species","Betula papyrifera","pft","DA","from paper[D Barneche]"
+"3",3,"",""," growingCondition","FW ","from paper[D Barneche]"
+"4",4,"",""," vegetation","BorF ","from paper[D Barneche]"
+"5",5,"",""," location","24 km east of Prince George, British Columbia, CA ","from paper[D Barneche]"
+"6",6,"",""," map","628.3","from paper[D Barneche]"

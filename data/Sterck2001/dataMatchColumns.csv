@@ -1,10 +1,16 @@
-var_in,method,unit_in,var_out,notes
-Diam,,cm,d.bh,
-Ht,,m,h.t,"height (m) using a measurement tape, and thus by climbing neigbouring trees for the larger focal trees"
-Ht2,,m,h.c,"height of the lowest leaf, but considered part of the crown, so not a single leaf sprouting from the stem base while the rest of the leafy crown starts at 20 m."
-CW1,,m,d.cr,
-CW2,,m,d.cr,
-TLA,c1,m2,a.lf,"total leaf area (m2) is calculated by multiplying the number of leaves with the mean leaf area of a random leaf sample (20 leaves for taller individuals, but smaller samples for small individuals)"
-LA,,cm2,lf.sz,"leaf area (cm2) is the average area of a single leaf, based on the average area of a leaf sample of 20 leaves."
-SLA,,cm2.g,lf.ma,
-PAR,li,-,light,
+"","var_in","method","unit_in","var_out","notes","var_in_unchecked_names"
+"1","Diam","","cm","d.bh","","Diam"
+"2","Ht","","m","h.t","height (m) using a measurement tape, and thus by climbing neigbouring trees for the larger focal trees","Ht"
+"3","Ht2","","m","h.c","height of the lowest leaf, but considered part of the crown, so not a single leaf sprouting from the stem base while the rest of the leafy crown starts at 20 m.","Ht2"
+"4","CW1","","m","d.cr","","CW1"
+"5","CW2","","m","d.cr","","CW2"
+"6","TLA","c1","m2","a.lf","total leaf area (m2) is calculated by multiplying the number of leaves with the mean leaf area of a random leaf sample (20 leaves for taller individuals, but smaller samples for small individuals)","TLA"
+"7","LA","","cm2","lf.sz","leaf area (cm2) is the average area of a single leaf, based on the average area of a leaf sample of 20 leaves.","LA"
+"8","SLA","","cm2.g","lf.ma","","SLA"
+"9","PAR","li","-","light","","PAR"
+"10","Sp",NA,NA,NA,NA,"Sp"
+"11","Nr",NA,NA,NA,NA,"Nr"
+"12","Size",NA,NA,NA,NA,"Size"
+"13","NrLvs",NA,NA,NA,NA,"NrLvs"
+"14","CPI",NA,NA,NA,NA,"CPI"
+"15","Open",NA,NA,NA,NA,"Open"

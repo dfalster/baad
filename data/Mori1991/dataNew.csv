@@ -1,4 +1,4 @@
-lookupVariable,lookupValue,newVariable,newValue
-,,species,"Chamaecyparis obtusa" 
-,,vegetation,"TempF" 
-,,growingCondition,"PU"
+"","","lookupVariable","lookupValue","newVariable","newValue","source"
+"1",1,NA,NA,"species","Chamaecyparis obtusa ","from paper[D Barneche]"
+"2",2,NA,NA,"vegetation","TempF ","from paper[D Barneche]"
+"3",3,NA,NA,"growingCondition","PU","from paper[D Barneche]"
