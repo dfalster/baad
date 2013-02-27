@@ -3,7 +3,6 @@
 dir.rawData   <-  "data" 
 dir.cleanData <-  "output/data"
 var.def       <-  read.csv("R/tables/variableDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#variable definitions
-var.conv      <-  read.csv("R/tables/variableConversion.csv", h=TRUE, stringsAsFactors=FALSE)#functions for variable conversion
 met.def       <-  read.csv("R/tables/methodsDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#definition of methods
 
 #Get list of studies included in database

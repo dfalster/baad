@@ -1,6 +1,6 @@
 "","","","","","","lookupVariable","lookupValue","newVariable","newValue","source"
 "1",1,1,1,1,1,NA,NA," growingCondition","GH ","from paper[D Barneche]"
 "2",2,2,2,2,2,NA,NA," longitude","-52.65034 ","from paper[D Barneche]"
-"3",3,3,3,3,3,NA,NA," latidude","5.159944 ","from paper[D Barneche]"
+"3",3,3,3,3,3,NA,NA," latitude","5.159944 ","from paper[D Barneche]"
 "4",4,4,4,4,4,NA,NA," vegetation","TropRF ","from paper[D Barneche]"
 "5",5,5,5,5,5,NA,NA," location","INRA, Kourou, French Guiana","from paper[D Barneche]"

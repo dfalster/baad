@@ -41,7 +41,7 @@ compareOldNew<-function(name, verbose=FALSE, browse=FALSE){
 }
 
 importAndCheck<-function(studyName, verbose=FALSE, browse=FALSE){
-  data<-importData(studyName, verbose=verbose)
+  processStudy(studyName, verbose=verbose, browse=browse)
   compareOldNew(studyName, browse=browse, verbose=verbose)
   data
 }

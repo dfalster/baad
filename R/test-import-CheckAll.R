@@ -5,15 +5,18 @@ source('R/Biomass-fun.R')
 source('R/import-fun.R')
 source("R/test-import-fun.R")
 
+#Remove existing data files
+unlink("output/data/*")
+
 #Test single study
-d<-loadStudy("Kohyama1987", verbose = TRUE)
+d<-importAndCheck("Kohyama1987", verbose=TRUE)
+#d<-importAndCheck("Petritan2009", verbose=TRUE, browse=TRUE)
 
 #names of all studies
 studyNames     <-  getStudyNames()
 
 #import data
-d<-loadStudies(studyNames)
-
+data<-lapply(studyNames, importAndCheck, verbose=TRUE)
 
 #count number of records
 vec<-0
