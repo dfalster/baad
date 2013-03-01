@@ -74,7 +74,7 @@ processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
 
   if(browse)
     browser()
-  
+
   #read original data from file
   if(verbose) cat("load data ")
   
