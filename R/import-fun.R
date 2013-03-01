@@ -54,6 +54,7 @@ loadStudy<-function(studyName, reprocess= FALSE, verbose=FALSE, browse=FALSE){
   
   #Read cleaned data file
   study$data<-read.csv(filename, h= TRUE)
+  
   #Read reference
   study$ref<-data.frame(dataset = studyName, read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.csv"), h= TRUE, stringsAsFactors=FALSE, strip.white = TRUE))
   

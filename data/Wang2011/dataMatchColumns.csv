@@ -1,14 +1,14 @@
-"","var_in","method","unit_in","var_out","notes","var_in_unchecked_names"
-"1","Plant.height..cm.","","cm","h.t",NA,"Plant height (cm)"
-"2","Stem.diameter.at.base..cm.","","cm","d.ba",NA,"Stem diameter at base (cm)"
-"3","Total.fresh.mass..g.","m6","g","m.to",NA,"Total fresh mass (g)"
-"4","Total.dry.mass..g.","m0","g","m.to",NA,"Total dry mass (g)"
-"5","Fresh.mass.of.main.stem..g.","m6","g","m.st",NA,"Fresh mass of main stem (g)"
-"6","Dry.mass.of.main.stem..g.","m0","g","m.st",NA,"Dry mass of main stem (g)"
-"7","Fresh.mass.of.branches..g.","m6","g","m.br",NA,"Fresh mass of branches (g)"
-"8","Dry.mass.of.branches..g.","m0","g","m.br",NA,"Dry mass of branches (g)"
-"9","Total.leaf.fresh.mass..g.","m6","g","m.lf",NA,"Total leaf fresh mass (g)"
-"10","Total.leaf.dry.mass..g.","m0","g","m.lf",NA,"Total leaf dry mass (g)"
-"11","Total.leaf.area.cm2.","","cm2","a.lf",NA,"Total leaf area(cm2)"
-"12","Individual",NA,NA,NA,NA,"Individual"
-"13","Age",NA,NA,NA,NA,"Age"
+,var_in,method,unit_in,var_out,notes,var_in_unchecked_names
+1,Plant.height..cm.,,cm,h.t,NA,Plant height (cm)
+2,Stem.diameter.at.base..cm.,,cm,d.ba,NA,Stem diameter at base (cm)
+3,Total.fresh.mass..g.,,,,,Total fresh mass (g)
+4,Total.dry.mass..g.,m0,g,m.to,NA,Total dry mass (g)
+5,Fresh.mass.of.main.stem..g.,,,,,Fresh mass of main stem (g)
+6,Dry.mass.of.main.stem..g.,m0,g,m.st,NA,Dry mass of main stem (g)
+7,Fresh.mass.of.branches..g.,,,,,Fresh mass of branches (g)
+8,Dry.mass.of.branches..g.,m0,g,m.br,NA,Dry mass of branches (g)
+9,Total.leaf.fresh.mass..g.,,,,,Total leaf fresh mass (g)
+10,Total.leaf.dry.mass..g.,m0,g,m.lf,NA,Total leaf dry mass (g)
+11,Total.leaf.area.cm2.,,cm2,a.lf,NA,Total leaf area(cm2)
+12,Individual,NA,NA,NA,NA,Individual
+13,Age,NA,NA,NA,NA,Age

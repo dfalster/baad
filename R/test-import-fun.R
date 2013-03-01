@@ -12,8 +12,8 @@ compareOldNew<-function(name, verbose=FALSE, browse=FALSE){
   if(verbose) cat("check data ")
   
   #load files for comparison
-  old<-read.csv(paste0("output/data-orig/", name, ".csv"), stringsAsFactors=F)
-  new<-read.csv(paste0("output/data/", name, ".csv"), stringsAsFactors=F)
+  old<-read.csv(paste0("output/data-orig/", name, ".csv"), stringsAsFactors=FALSE)
+  new<-read.csv(paste0("output/data/", name, ".csv"), stringsAsFactors=FALSE)
   
   #remove methods variables
   old  <-  old[,-1*exclude(old,"method")]
