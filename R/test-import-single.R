@@ -6,6 +6,6 @@ source('R/import-fun.R')
 source("R/test-import-fun.R")
 
 #Test single study
-studyName     <-  "Baltzer2007"
+studyName     <-  "Aiba2005"
 system(paste0("rm output/data/", studyName, ".csv"))
 d<-importAndCheck(studyName, verbose=TRUE)

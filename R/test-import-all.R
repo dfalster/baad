@@ -10,7 +10,7 @@ source("R/test-import-fun.R")
 unlink("output/data/*")  # --> plaform independent
 
 #Test single study
-d<-importAndCheck("Kohyama1987", verbose=TRUE)
+d<-importAndCheck("Aiba2007", verbose=TRUE, browse=TRUE)
 #d<-importAndCheck("Petritan2009", verbose=TRUE, browse=TRUE)
 
 #names of all studies

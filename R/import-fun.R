@@ -41,7 +41,7 @@ loadData<-function(studyName){
   import <-  read.csv(paste0(dir.rawData,"/",studyName,"/dataImportOptions.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE)   
   
   #brings in the original .csv
-  raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE)
+  raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE, check.names=FALSE)
   raw
 }
 
@@ -94,17 +94,22 @@ convertData<-function(data,studyName){
   var.match <- read.csv(paste0(dir.rawData,"/",studyName,"/dataMatchColumns.csv"),h=TRUE,stringsAsFactors=FALSE,na.strings=c("NA",""))
 
   #Find the column numbers in the data that need to be checked out for conversion
-  selec  <-  which(names(data) %in% var.match$var_in) 
-  
-  for(a in selec){    #Do for every column that needs conversion
+  selec  <-  match(names(data), var.match$var_in_unchecked_names[!is.na(var.match$var_out)]) 
+  for(a in selec[!is.na(selec)]){    #Do for every column that needs conversion
+    a  <-  which(selec==a)
     #rename data
     var.in   <-  names(data)[a] #variable that goes in
-    var.out  <-  var.match$var_out[var.match$var_in==var.in] #variable that goes out   
+    var.out  <-  var.match$var_out[var.match$var_in_unchecked_names==var.in] #variable that goes out   
     names(data)[a] <-  var.out #resets the name of a particular variable to the standardised form
     
     #change units  
-    un.in    <-  var.match$unit_in[var.match$var_in==var.in] #unit that goes in
+    un.in    <-  var.match$unit_in[var.match$var_in_unchecked_names==var.in] #unit that goes in
+    if(is.na(un.in)){
+      un.in  <-  "empty"; un.out  <-  un.in
+    } else {
     un.out   <-  var.def$Units[var.def$Variable==var.out] #unit that goes out
+    }
+    #browser()
     
     if(un.in != un.out){
       func     <-  get(paste(un.in, ".", un.out, sep="")) #select the function based on variables
@@ -112,7 +117,7 @@ convertData<-function(data,studyName){
     }
     
     #add methods varaibles
-    met.in   <-  var.match$method[var.match$var_in==var.in] #method used to measure
+    met.in   <-  var.match$method[var.match$var_in_unchecked_names==var.in] #method used to measure
     
     if(!is.na(met.in)){ # 
       data$NEW                 <-  rep(met.in, nrow(data)) #creates a new colum that contains the method description
