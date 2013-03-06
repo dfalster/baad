@@ -5,8 +5,8 @@ loadStudies<-function(studyNames, reprocess= FALSE, verbose=FALSE, browse=FALSE)
   if(n>0){
     
     d<-lapply(studyNames, loadStudy, reprocess=reprocess, verbose = verbose)
-
-#    browser()
+    
+    #    browser()
     all<-list()
     i=1;
     all$data<-d[[i]]$data
@@ -16,7 +16,7 @@ loadStudies<-function(studyNames, reprocess= FALSE, verbose=FALSE, browse=FALSE)
     while(i< n){
       i= i+1;
       cat(studyNames[i], " ")
-    #  browser()
+      #  browser()
       
       all$data<-Rbind(all$data, d[[i]]$data)
       all$ref<-Rbind(all$ref,d[[i]]$ref)
@@ -27,7 +27,7 @@ loadStudies<-function(studyNames, reprocess= FALSE, verbose=FALSE, browse=FALSE)
 }
 
 Rbind<-function(dfr1, dfr2){
-#  browser()
+  #  browser()
   if(any(names(dfr1) != names(dfr2))){
     cat("Column names do not match in rbind\n\n")
     cat(names(dfr1))
@@ -62,7 +62,7 @@ loadStudy<-function(studyName, reprocess= FALSE, verbose=FALSE, browse=FALSE){
   study$contact<-data.frame(dataset = studyName, read.csv(paste0(dir.rawData,"/",studyName,"/studyContact.csv"), h= TRUE, stringsAsFactors=FALSE, strip.white = TRUE ))
   study  
 }
-  
+
 
 
 processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
@@ -72,15 +72,15 @@ processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
   outputName<-studyDataFile(studyName)
   if(file.exists(outputName))
     file.remove(outputName)  
-
+  
   if(browse)
     browser()
-
+  
   #read original data from file
   if(verbose) cat("load data ")
   
   raw<-readRawData(studyName) 
-
+  
   #Manipulate data where needed
   if(verbose) cat("manipulate data ")
   filename<-paste0(dir.rawData,"/",studyName,"/dataManipulate.R")
@@ -93,11 +93,11 @@ processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
   #convert units and variable names, add methods variables
   if(verbose) cat("convert units ")
   data<-convertData(data, studyName)
-
+  
   #Remove / add columns to mirror those in final database
   if(verbose) cat("add/remove columns ")
   data<-addAllColumns(data)
-          
+  
   #import new data, if available
   if(verbose) cat("import new data ")
   data<-addNewData(studyName, data)
@@ -113,16 +113,15 @@ readRawData<-function(studyName){
   import <-  read.csv(paste0(dir.rawData,"/",studyName,"/dataImportOptions.csv"), h=FALSE, row.names=1, stringsAsFactors=FALSE)   
   
   #brings in the original .csv
-  raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE, strip.white=TRUE)
-  raw
-}
+  raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), h=(import['header',]=="TRUE"), skip=as.numeric(import['skip',]), stringsAsFactors=FALSE, strip.white=TRUE, check.names=FALSE)
+}  
 
 addAllColumns<-function(data){
   
   #all column names
   allowedNames<-var.def$Variable
   type<-var.def$Type
-
+  
   #add methods
   allowedNames<-c(allowedNames, as.character(paste("method_", var.def$Variable[var.def$methodsVariable], sep=""))) 
   type<-c(type, rep("character",sum(var.def$methodsVariable)))
@@ -146,15 +145,15 @@ addNewData<-function(studyName, data){
   #import options for data file
   filename<-paste0(dir.rawData,"/",studyName,"/dataNew.csv")
   if(file.exists(filename)){
-   import <-  read.csv(filename, h=TRUE, stringsAsFactors=FALSE, strip.white = TRUE) #read in new data    
-   nchanges<- length(import$lookupVariable)
-   if(nchanges>0){
+    import <-  read.csv(filename, h=TRUE, stringsAsFactors=FALSE, strip.white = TRUE) #read in new data    
+    nchanges<- length(import$lookupVariable)
+    if(nchanges>0){
       
       #Check name is allowed
-     nameIsOK<-import$newVariable %in% var.def$Variable
-     if(any(!nameIsOK))
-       stop("Incorrect name in var_out columns of dataMatchColumns.csv for ", studyName, "--> ", import$newVariable[!nameIsOK])
-  
+      nameIsOK<-import$newVariable %in% var.def$Variable
+      if(any(!nameIsOK))
+        stop("Incorrect name in var_out columns of dataMatchColumns.csv for ", studyName, "--> ", import$newVariable[!nameIsOK])
+      
       #make changes one by one     
       for (i in 1:nchanges){
         if(is.na(import$lookupVariable[i]) | import$lookupVariable[i] =="") #apply to whole column
@@ -166,7 +165,7 @@ addNewData<-function(studyName, data){
   }
   data
 }
-  
+
 #convert data to desired format, changing units, variable names
 convertData<-function(data,studyName){
   
@@ -177,23 +176,28 @@ convertData<-function(data,studyName){
   nameIsOK<-var.match$var_out[!is.na(var.match$var_out)] %in% var.def$Variable
   if(any(!nameIsOK))
     stop("Incorrect name in var_out columns of dataMatchColumns.csv for ", studyName, "--> ", var.match$var_out[!nameIsOK])
-        
-  #Find the column numbers in the data that need to be checked out for conversion, only check columns 
-  selec  <-  which(names(data) %in% var.match$var_in[!is.na(var.match$var_out)]) 
-#  cat(names(data)[selec], " ")
-#  browser()
-  for(a in selec){    #Do for every column that needs conversion
-
-    #rename variables
+  
+  #Find the column numbers in the data that need to be checked out for conversion
+  selec  <-  match(names(data), var.match$var_in_unchecked_names[!is.na(var.match$var_out)]) 
+  for(a in selec[!is.na(selec)]){    #Do for every column that needs conversion
+    a  <-  which(selec==a)
+    #rename data
     var.in   <-  names(data)[a] #variable that goes in
-    var.out  <-  var.match$var_out[var.match$var_in==var.in] #variable that goes out   
+    var.out  <-  var.match$var_out[var.match$var_in_unchecked_names==var.in & !is.na(var.match$var_in_unchecked_names)] #variable that goes out   
     names(data)[a] <-  var.out #resets the name of a particular variable to the standardised form
     
     #change units, only for numeric variables 
+    #browser()
     if(var.def$Type[var.def$Variable==var.out] == "numeric"){
       
-    un.in    <-  var.match$unit_in[var.match$var_in==var.in] #unit that goes in
-    un.out   <-  var.def$Units[var.def$Variable==var.out] #unit that goes out
+      un.in    <-  var.match$unit_in[var.match$var_in_unchecked_names==var.in] #unit that goes in
+
+      if(is.na(un.in))
+        stop("unit missing for variable ", var.in, " in ", studyName)
+      
+      
+      un.out   <-  var.def$Units[var.def$Variable==var.out] #unit that goes out
+    #browser()
     
     if(un.in != un.out){ # check if units differ
       func     <-  get(paste(un.in, ".", un.out, sep="")) #select the function based on variables
@@ -202,7 +206,7 @@ convertData<-function(data,studyName){
     }
     
     #add methods varaibles
-    met.in   <-  var.match$method[var.match$var_in==var.in] #method used to measure
+    met.in   <-  var.match$method[var.match$var_in_unchecked_names==var.in] #method used to measure
     
     if(!is.na(met.in)){ # 
       data$NEW                 <-  rep(met.in, nrow(data)) #creates a new colum that contains the method description

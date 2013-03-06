@@ -6,8 +6,7 @@ source('R/import-fun.R')
 source("R/test-import-fun.R")
 
 #Test single study
-d<-loadStudy("Kohyama1987", verbose = TRUE)
-
+d<-importAndCheck("O'Hara0000", verbose=TRUE)
 #names of all studies
 studyNames     <-  getStudyNames()
 
