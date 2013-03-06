@@ -71,8 +71,7 @@ addStudy<-function(newData, oldData=NULL, replace=FALSE){
   
   if (length(oldData)==0) {
     return(newData)
-  }
-  else {
+  } else {
     for(var in c("data", "ref", "contact"))
       oldData[[var]]<-Rbind(oldData[[var]], newData[[var]], replace=replace)
     return(oldData)
@@ -123,21 +122,17 @@ processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
   
   #delete existing output file, if exists
   outputName<-studyDataFile(studyName)
-  if (file.exists(outputName))
-    file.remove(outputName)  
+  if (file.exists(outputName)) file.remove(outputName)  
   
-  if (browse)
-    browser()
+  #call browser if required
+  if (browse) browser()
   
   #read original data from file
-  if (verbose) 
-    cat("load data ")
-  
+  if (verbose) cat("load data ")
   raw<-readRawData(studyName) 
   
   #Manipulate data where needed
-  if (verbose) 
-    cat("manipulate data ")
+  if (verbose)  cat("manipulate data ")
   filename<-paste0(dir.rawData,"/",studyName,"/dataManipulate.R")
   if (file.exists(filename))
     source(filename, local=TRUE)
@@ -146,23 +141,19 @@ processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
   data<- cbind(raw, dataset=studyName, stringsAsFactors=FALSE)
   
   #convert units and variable names, add methods variables
-  if (verbose) 
-    cat("convert units ")
+  if (verbose) cat("convert units ")
   data<-convertData(studyName, data)
   
   #Remove / add columns to mirror those in final database
-  if (verbose) 
-    cat("add/remove columns ")
+  if (verbose) cat("add/remove columns ")
   data<-addAllColumns(data)
   
   #import new data, if available
-  if (verbose) 
-    cat("import new data ")
+  if (verbose) cat("import new data ")
   data<-addNewData(studyName, data)
   
   #write data to file
-  if (verbose) 
-    cat("write to file ")
+  if (verbose) cat("write to file ")
   write.csv(data, outputName, row.names=FALSE)
 }
 
