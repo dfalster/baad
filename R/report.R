@@ -10,13 +10,13 @@ studyNames     <-  getStudyNames()
 #import data
 s<-"Baraloto2006"
 processStudy(s, verbose = TRUE)
-d<-loadStudies(studyNames, reprocess = FALSE, verbose = FALSE)
+d<-addStudies(studyNames, reprocess = FALSE, verbose = FALSE)
 makePlotPanel(d$data, s, pdf=FALSE)
 
 #plot of all data
 makePlotPanel(d$data, "all", col=niceColors()[as.factor(d$data$dataset)], pdf=TRUE)
 
-#tmp<-lapply(unique(d$data$dataset), makePlotPanel, data=d$data, dir="report")
+tmp<-lapply(unique(d$data$dataset), makePlotPanel, data=d$data, dir="report")
 
 #Reporting
 writeEmail<-function(d, fileName=paste("output/Email.txt", sep='')){

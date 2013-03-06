@@ -11,4 +11,11 @@ d<-importAndCheck("O'Hara0000", verbose=TRUE)
 studyNames     <-  getStudyNames()
 
 #import data
-d<-loadStudies(studyNames, reprocess = TRUE, verbose = TRUE)
+d<-addStudies(studyNames, reprocess = FALSE, verbose = TRUE)
+
+d<-addStudies(studyNames, reprocess = TRUE, verbose = TRUE)
+
+d<-addStudies(studyNames[-c(2)])
+
+
+d<-addStudies(studyNames[2], data=d)
