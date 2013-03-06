@@ -1,17 +1,17 @@
-"","var_in","method","unit_in","var_out","notes","var_in_unchecked_names"
-"1","Dia...mm.","","mm","d.ba",NA,"Dia. (mm)"
-"2","D.B.H..mm.","","mm","d.bh",NA,"D.B.H.(mm)"
-"3","Hieght..cm.","","cm","h.t",NA,"Hieght (cm)"
-"4","Branch..cm.","","cm","h.c",NA,"Branch (cm)"
-"5","Foliage","m1","g","m.lf",NA,"Foliage"
-"6","Branch","m1","g","m.br",NA,"Branch"
-"7","Dead.Branch","m1","g","m.br",NA,"Dead Branch"
-"8","Stem.Wood","m1","g","m.st",NA,"Stem Wood"
-"9","Stem.Bark","m1","g","m.sb",NA,"Stem Bark"
-"10","m.rc","m1","g","m.rc",NA,"m.rc"
-"11","Sm..Root","m1","g","m.rf",NA,"Sm. Root"
-"12","TOTAL","m1","g","m.to",NA,"TOTAL"
-"13","species",NA,NA,NA,NA,"species"
-"14","Tree..",NA,NA,NA,NA,"Tree #"
-"15","Lrg..Root",NA,NA,NA,NA,"Lrg. Root"
-"16","Med..Root",NA,NA,NA,NA,"Med. Root"
+"","var_in","method","unit_in","var_out","notes"
+"1","Dia. (mm)","","mm","d.ba",NA
+"2","D.B.H.(mm)","","mm","d.bh",NA
+"3","Hieght (cm)","","cm","h.t",NA
+"4","Branch (cm)","","cm","h.c",NA
+"5","Foliage","m1","g","m.lf",NA
+"6","Branch","m1","g","m.br",NA
+"7","Dead Branch","m1","g","m.br",NA
+"8","Stem Wood","m1","g","m.st",NA
+"9","Stem Bark","m1","g","m.sb",NA
+"10","m.rc","m1","g","m.rc",NA
+"11","Sm. Root","m1","g","m.rf",NA
+"12","TOTAL","m1","g","m.to",NA
+"13","species",NA,NA,NA,NA
+"14","Tree #",NA,NA,NA,NA
+"15","Lrg. Root",NA,NA,NA,NA
+"16","Med. Root",NA,NA,NA,NA

@@ -1,21 +1,21 @@
-"","var_in","method","unit_in","var_out","notes","var_in_unchecked_names"
-"1","height..m.",NA,"m","h.t",NA,"height (m)"
-"2","Crown.depth..m.",NA,"m","c.d",NA,"Crown depth (m)"
-"3","Crown.area..m2.",NA,"m2","a.cs",NA,"Crown area (m2)"
-"4","Individual.leaf.area..cm2.",NA,"cm2","lf.sz",NA,"Individual leaf area (cm2)"
-"5","Total.leaf.area..m2.",NA,"m2","a.lf",NA,"Total leaf area (m2)"
-"6","LMA..g.cm.2.",NA,"g.cm2","lf.ma",NA,"LMA (g.cm-2)"
-"7","WD..g.cm3.",NA,"g.cm3","d.st",NA,"WD (g.cm3)"
-"8","Individual",NA,NA,NA,NA,"Individual"
-"9","Type..1.tree..2.sapling.shade..3.sapling.light.",NA,NA,NA,NA,"Type (1=tree; 2=sapling shade; 3=sapling light)"
-"10","X..shoots",NA,NA,NA,NA,"# shoots"
-"11","Current.year.wood.biomass..g.yr.1.",NA,NA,NA,NA,"Current-year wood biomass (g.yr-1)"
-"12","Leaf.biomass..g.yr.1.",NA,NA,NA,NA,"Leaf biomass (g.yr-1)"
-"13","Segment.biomass..g.yr.1.",NA,NA,NA,NA,"Segment biomass (g.yr-1)"
-"14","Fruit.biomass..g.yr.1.",NA,NA,NA,NA,"Fruit biomass (g.yr-1)"
-"15","Biomass.fraction.allocated.to.wood",NA,NA,NA,NA,"Biomass fraction allocated to wood"
-"16","Biomass.fraction.allocated.to.leaves",NA,NA,NA,NA,"Biomass fraction allocated to leaves"
-"17","Biomass.fraction.allocated.to.segments",NA,NA,NA,NA,"Biomass fraction allocated to segments"
-"18","Biomass.fraction.allocated.to.fruits",NA,NA,NA,NA,"Biomass fraction allocated to fruits"
-"19","X",NA,NA,NA,NA,""
-"20","X.1",NA,NA,NA,NA,""
+"","var_in","method","unit_in","var_out","notes"
+"1","height (m)",NA,"m","h.t",NA
+"2","Crown depth (m)",NA,"m","c.d",NA
+"3","Crown area (m2)",NA,"m2","a.cs",NA
+"4","Individual leaf area (cm2)",NA,"cm2","lf.sz",NA
+"5","Total leaf area (m2)",NA,"m2","a.lf",NA
+"6","LMA (g.cm-2)",NA,"g.cm2","lf.ma",NA
+"7","WD (g.cm3)",NA,"g.cm3","d.st",NA
+"8","Individual",NA,NA,NA,NA
+"9","Type (1=tree; 2=sapling shade; 3=sapling light)",NA,NA,NA,NA
+"10","# shoots",NA,NA,NA,NA
+"11","Current-year wood biomass (g.yr-1)",NA,NA,NA,NA
+"12","Leaf biomass (g.yr-1)",NA,NA,NA,NA
+"13","Segment biomass (g.yr-1)",NA,NA,NA,NA
+"14","Fruit biomass (g.yr-1)",NA,NA,NA,NA
+"15","Biomass fraction allocated to wood",NA,NA,NA,NA
+"16","Biomass fraction allocated to leaves",NA,NA,NA,NA
+"17","Biomass fraction allocated to segments",NA,NA,NA,NA
+"18","Biomass fraction allocated to fruits",NA,NA,NA,NA
+"19","",NA,NA,NA,NA
+"20","",NA,NA,NA,NA

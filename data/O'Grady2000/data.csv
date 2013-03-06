@@ -1,5 +1,5 @@
 ,,(cm)),(cm)),,,,,(KG),,(kg),(KG),,,m2,,,
-SITE ,SPECIES,DBH,dbh>10,HT CLASS,MOD A,MOD B,AVG,Leaf weight,,Wood Weight,TOT,"bo, dbh>10",logbio,Leaf area,modla,log dbh,log bio
+SITE ,SPECIES,DBH,dbh>10,HT CLASS,MOD A,MOD B,AVG,Leaf weight,X,Wood Weight,TOT,"bo, dbh>10",logbio,Leaf area,modla,log dbh,log bio
 1,E.tet.,5.3,,2,2.5,2.5,2.5,0.875,,13,13.875,,1.142232992,2.2728,4.4625,0.72427587,1.142232992
 1,E.tet.,10.8,10.8,3,10,12,11,7.25,,73.25,80.5,80.5,1.90579588,18.8478,19.635,1.033423755,1.90579588
 1,E.tet.,6,,2,1,2,1.5,1.5,,12.75,14.25,,1.153814864,3.8978,2.6775,0.77815125,1.153814864

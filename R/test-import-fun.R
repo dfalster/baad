@@ -27,11 +27,12 @@ compareOldNew<-function(name, verbose=FALSE, browse=FALSE){
   old  <-  data.frame(old[,names(old)%in%var.def$Variable])
   new  <-  data.frame(new[,names(new)%in%var.def$Variable])
 
+  #browser()
   if(browse){
     print(head(old))
     print(head(new[,names(old)])) 
     browser()
-    i=2
+    i=13
     any(old[,i] != new[,names(old)][,i])
     
     cbind(old[,i], new[,names(old)[i]], old[,i] == new[,names(old)][,i])

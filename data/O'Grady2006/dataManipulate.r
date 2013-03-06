@@ -4,5 +4,5 @@ raw[["m.rc"]]       <-  raw[["15 - 20"]] + raw[["20  + stump"]]
 raw$grouping        <-  paste("Harvested on ", raw[["Harvested"]], "; Plot = ", raw[["plot"]], "; Treatment = ", raw[["treatment"]], "; seedling = ", raw[["seedling"]], sep="")
 
 #Exclude data from zulu plot, these seem to be in different units. Send query to author
-#raw  <-  raw[raw[["plot"]] != "zulu",]
-#raw  <-  raw[!(raw[["plot"]] == 1 & raw[["seedling"]] ==16),]
+raw  <-  raw[raw[["plot"]] != "zulu",]
+raw  <-  raw[!(raw[["plot"]] == 1 & raw[["seedling"]] ==16),]

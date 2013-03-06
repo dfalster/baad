@@ -1,49 +1,49 @@
-"","var_in","method","unit_in","var_out","notes","var_in_unchecked_names"
-"1","Age","","yr","age",NA,"Age"
-"2","Total.leaf.area","r,c,t","m2","a.lf",NA,"Total leaf area"
-"3","Individual.leaf.size_equals_projected.AREA","b,1","m2","lf.sz",NA,"Individual leaf size_equals_projected AREA"
-"4","Area.of.sapwood.cross.section","j","m2","a.ssbh",NA,"Area of sapwood cross section"
-"5","Area.of.heartwood.cross.section","","m2","a.shbh",NA,"Area of heartwood cross section"
-"6","Area.of.total.stem.cross.section","","m2","a.stbh",NA,"Area of total stem cross section"
-"7","Crown.projected.area","","m2","a.cp",NA,"Crown projected area"
-"8","Crown.surface.area","","m2","a.cs",NA,"Crown surface area"
-"9","Height.to.crown.base","","m","h.c",NA,"Height to crown base"
-"10","Total.height.of.plant","","m","h.t",NA,"Total height of plant"
-"11","Total.leaf.mass","","kg","m.lf",NA,"Total leaf mass"
-"12","Stem.mass","","kg","m.st",NA,"Stem mass"
-"13","Sapwood.mass","","kg","m.ss",NA,"Sapwood mass"
-"14","Heartwood.mass","","kg","m.sh",NA,"Heartwood mass"
-"15","Bark.mass","","kg","m.sb",NA,"Bark mass"
-"16","Branch.mass","","kg","m.br",NA,"Branch mass"
-"17","Fine.root.mass","","kg","m.rf",NA,"Fine root mass"
-"18","Coarse.root.mass","","kg","m.rc",NA,"Coarse root mass"
-"19","Total.root.mass","","kg","m.rt",NA,"Total root mass"
-"20","Leaf.mass.per.area","","kg.m2","lf.ma",NA,"Leaf mass per area"
-"21","Density of stem sapwood","","kg.m3","d.ss",NA,"Density of stem sapwood"
-"22","Density of stem heartwood","","kg.m3","d.sh",NA,"Density of stem heartwood"
-"23","Density.of.stem.tissue","","kg.m3","d.st",NA,"Density of stem tissue"
-"24","Density.of.stem.sapwood","","kg.m3","d.ss",NA,"Density of stem sapwood"
-"25","Density.of.stem.bark","","kg.m3","d.sb",NA,"Density of stem bark"
-"26","Density.of.stem.heartwood","","kg.m3","d.sh",NA,"Density of stem heartwood"
-"27","Leaf.nitrogen","","kg.m2","n.lf",NA,"Leaf nitrogen"
-"28","Sapwood.nitrogen","","kg.kg","n.ss",NA,"Sapwood nitrogen"
-"29","Bark.nitrogen","","kg.kg","n.sb",NA,"Bark nitrogen"
-"30","Heartwood.nitrogen","","kg.kg","n.sh",NA,"Heartwood nitrogen"
-"31","Fine.roots.nitrogen","","kg.kg","n.rf",NA,"Fine roots nitrogen"
-"32","Coarse.root.nitrogen","","kg.kg","n.rc",NA,"Coarse root nitrogen"
-"33","LAI","","m2.m2","lai",NA,"LAI"
-"34","Reference.publication",NA,NA,NA,NA,"Reference publication"
-"35","Species",NA,NA,"species",NA,"Species"
-"36","Family",NA,NA,NA,NA,"Family"
-"37","Height.of.crown",NA,NA,NA,NA,"Height of crown"
-"38","pft",NA,NA,NA,NA,"pft"
-"39","growingCondition",NA,NA,NA,NA,"growingCondition"
-"40","Position.inforest.canopy",NA,NA,NA,NA,"Position inforest canopy"
-"41","vegetation",NA,NA,NA,NA,"vegetation"
-"42","light",NA,NA,NA,NA,"light"
-"43","location",NA,NA,NA,NA,"location"
-"44","latitude",NA,NA,NA,NA,"latitude"
-"45","longitude",NA,NA,NA,NA,"longitude"
-"46","map",NA,NA,NA,NA,"map"
-"47","mat",NA,NA,NA,NA,"mat"
-"48","Comment",NA,NA,NA,NA,"Comment"
+"","var_in","method","unit_in","var_out","notes"
+"1","Age","","yr","age",NA
+"2","Total leaf area","r,c,t","m2","a.lf",NA
+"3","Individual leaf size_equals_projected AREA","b,1","m2","lf.sz",NA
+"4","Area of sapwood cross section","j","m2","a.ssbh",NA
+"5","Area of heartwood cross section","","m2","a.shbh",NA
+"6","Area of total stem cross section","","m2","a.stbh",NA
+"7","Crown projected area","","m2","a.cp",NA
+"8","Crown surface area","","m2","a.cs",NA
+"9","Height to crown base","","m","h.c",NA
+"10","Total height of plant","","m","h.t",NA
+"11","Total leaf mass","","kg","m.lf",NA
+"12","Stem mass","","kg","m.st",NA
+"13","Sapwood mass","","kg","m.ss",NA
+"14","Heartwood mass","","kg","m.sh",NA
+"15","Bark mass","","kg","m.sb",NA
+"16","Branch mass","","kg","m.br",NA
+"17","Fine root mass","","kg","m.rf",NA
+"18","Coarse root mass","","kg","m.rc",NA
+"19","Total root mass","","kg","m.rt",NA
+"20","Leaf mass per area","","kg.m2","lf.ma",NA
+"21","Density of stem sapwood","","kg.m3","d.ss",NA
+"22","Density of stem heartwood","","kg.m3","d.sh",NA
+"23","Density of stem tissue","","kg.m3","d.st",NA
+"24","Density of stem sapwood","","kg.m3","d.ss",NA
+"25","Density of stem bark","","kg.m3","d.sb",NA
+"26","Density of stem heartwood","","kg.m3","d.sh",NA
+"27","Leaf nitrogen","","kg.m2","n.lf",NA
+"28","Sapwood nitrogen","","kg.kg","n.ss",NA
+"29","Bark nitrogen","","kg.kg","n.sb",NA
+"30","Heartwood nitrogen","","kg.kg","n.sh",NA
+"31","Fine roots nitrogen","","kg.kg","n.rf",NA
+"32","Coarse root nitrogen","","kg.kg","n.rc",NA
+"33","LAI","","m2.m2","lai",NA
+"34","Reference publication",NA,NA,NA,NA
+"35","Species",NA,NA,"species",NA
+"36","Family",NA,NA,NA,NA
+"37","Height of crown",NA,NA,NA,NA
+"38","pft",NA,NA,NA,NA
+"39","growingCondition",NA,NA,NA,NA
+"40","Position inforest canopy",NA,NA,NA,NA
+"41","vegetation",NA,NA,NA,NA
+"42","light",NA,NA,NA,NA
+"43","location",NA,NA,NA,NA
+"44","latitude",NA,NA,NA,NA
+"45","longitude",NA,NA,NA,NA
+"46","map",NA,NA,NA,NA
+"47","mat",NA,NA,NA,NA
+"48","Comment",NA,NA,NA,NA

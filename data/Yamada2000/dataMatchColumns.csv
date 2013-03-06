@@ -1,15 +1,15 @@
-"","var_in","method","unit_in","var_out","notes","var_in_unchecked_names"
-"1","tree.height..cm.","","cm","h.t",NA,"tree height (cm)"
-"2","height.at.the.lowest.leaf..or.branch...cm.","","cm","h.c",NA,"height at the lowest leaf (or branch) (cm)"
-"3","diameter.at.the.ground.level..cm.","","cm","d.ba",NA,"diameter at the ground level (cm)"
-"4","diameter.at.breast.height..at.130.cm.from.the.ground...cm.","","cm","d.bh",NA,"diameter at breast height (at 130 cm from the ground) (cm)"
-"5","crown.projection.area..cm2.","a","cm2","a.cp",NA,"crown projection area (cm2)"
-"6","stem.dry.mass..g.","m5","g","m.st",NA,"stem dry mass (g)"
-"7","leaf.dry.mass..g.","m5","g","m.lf",NA,"leaf dry mass (g)"
-"8","branch.dry.mass..g.","m5","g","m.br",NA,"branch dry mass (g)"
-"9","total.above.ground.mass..g.","m5","g","m.so",NA,"total above ground mass (g)"
-"10","Species",NA,NA,"species",NA,"Species"
-"11","site",NA,NA,"location",NA,"site"
-"12","tree.no",NA,NA,NA,NA,"tree no"
-"13","number.of.leaves",NA,NA,NA,NA,"number of leaves"
-"14","source",NA,NA,NA,NA,"source"
+"","var_in","method","unit_in","var_out","notes"
+"1","tree height (cm)","","cm","h.t",NA
+"2","height at the lowest leaf (or branch) (cm)","","cm","h.c",NA
+"3","diameter at the ground level (cm)","","cm","d.ba",NA
+"4","diameter at breast height (at 130 cm from the ground) (cm)","","cm","d.bh",NA
+"5","crown projection area (cm2)","a","cm2","a.cp",NA
+"6","stem dry mass (g)","m5","g","m.st",NA
+"7","leaf dry mass (g)","m5","g","m.lf",NA
+"8","branch dry mass (g)","m5","g","m.br",NA
+"9","total above ground mass (g)","m5","g","m.so",NA
+"10","Species",NA,NA,"species",NA
+"11","site",NA,NA,"location",NA
+"12","tree no",NA,NA,NA,NA
+"13","number of leaves",NA,NA,NA,NA
+"14","source",NA,NA,NA,NA

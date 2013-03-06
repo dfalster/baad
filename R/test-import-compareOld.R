@@ -15,9 +15,9 @@ studyNames     <- c("Aiba2005", "Aiba2007", "Baltzer2007", "Baraloto2006", "Bond
 
 
 #import data
-data<-lapply(studyNames, importAndCheck, verbose=TRUE)
+data<-lapply(studyNames[-c(4,35,36,39,54)], importAndCheck, verbose=TRUE)
 
 #Test single study
-#d<-importAndCheck("Salazar2010", verbose=TRUE, browse= TRUE)
+d<-importAndCheck("Aiba2005", verbose=TRUE)
 
 

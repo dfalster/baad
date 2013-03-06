@@ -1,11 +1,11 @@
-"","var_in","method","unit_in","var_out","notes","var_in_unchecked_names"
-"1","DBH","","cm","d.bh",NA,"DBH"
-"2","Height","","m","h.t",NA,"Height"
-"3","Leaf_biomass","m5","kg","m.lf",NA,"Leaf_biomass"
-"4","Branch_biomass","m5","kg","m.br",NA,"Branch_biomass"
-"5","Stem_biomass","m5","kg","m.st",NA,"Stem_biomass"
-"6","Total.biomass","m5","kg","m.so",NA,"Total biomass"
-"7","Species",NA,NA,"species",NA,"Species"
-"8","Trunk_biomass",NA,NA,NA,NA,"Trunk_biomass"
-"9","trees.per.ha",NA,NA,NA,NA,"trees per ha"
-"10","Total.biomass.per.ha",NA,NA,NA,NA,"Total biomass per ha"
+"","var_in","method","unit_in","var_out","notes"
+"1","DBH","","cm","d.bh",NA
+"2","Height","","m","h.t",NA
+"3","Leaf_biomass","m5","kg","m.lf",NA
+"4","Branch_biomass","m5","kg","m.br",NA
+"5","Stem_biomass","m5","kg","m.st",NA
+"6","Total biomass","m5","kg","m.so",NA
+"7","Species",NA,NA,"species",NA
+"8","Trunk_biomass",NA,NA,NA,NA
+"9","trees per ha",NA,NA,NA,NA
+"10","Total biomass per ha",NA,NA,NA,NA
