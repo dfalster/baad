@@ -1,20 +1,20 @@
-"","var_in","method","unit_in","var_out","notes"
-"1","Dbh","","cm","d.bh",NA
-"2","Total_height","","m","h.t",NA
-"3","Sapwood_area","j","cm2","a.ssbh",NA
-"4","Leaf_area","r,c,t","m2","a.lf",NA
-"5","Branches","m5","kg","m.br",NA
-"6","Needles","m5","kg","m.lf",NA
-"7","Bark_Stemwood","m5","kg","m.st",NA
-"8","Bark","m5","kg","m.sb",NA
-"9","Fine_roots","m5","kg","m.rf",NA
-"10","Coarse_roots","m5","kg","m.rc",NA
-"11","SLA_Lower_third","","","",NA
-"12","SLA_Middle_Third","","","",NA
-"13","SLA_Upper_third","","","",NA
-"14","Treatment",NA,NA,NA,NA
-"15","Crown_class",NA,NA,NA,NA
-"16","Number Tree",NA,NA,NA,NA
-"17","Twigs",NA,NA,NA,NA
-"18","Stemwood",NA,NA,NA,NA
-"19","sla","","cm2.kg","lf.ma","Average sla"
+"var_in","method","unit_in","var_out","notes"
+"Dbh","","cm","d.bh",NA
+"Total_height","","m","h.t",NA
+"Sapwood_area","j","cm2","a.ssbh",NA
+"Leaf_area","r,c,t","m2","a.lf",NA
+"Branches","m5","kg","m.br",NA
+"Needles","m5","kg","m.lf",NA
+"Bark_Stemwood","m5","kg","m.st",NA
+"Bark","m5","kg","m.sb",NA
+"Fine_roots","m5","kg","m.rf",NA
+"Coarse_roots","m5","kg","m.rc",NA
+"SLA_Lower_third","","","",NA
+"SLA_Middle_Third","","","",NA
+"SLA_Upper_third","","","",NA
+"Treatment",NA,NA,NA,NA
+"Crown_class",NA,NA,NA,NA
+"Number Tree",NA,NA,NA,NA
+"Twigs",NA,NA,NA,NA
+"Stemwood",NA,NA,NA,NA
+"sla","","cm2.kg","lf.ma","Average sla"

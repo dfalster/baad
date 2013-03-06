@@ -1,18 +1,18 @@
-"","var_in","method","unit_in","var_out","notes"
-"1","individual.leaf.area.cm2","b","cm2","lf.sz",""
-"2","specific.leaf.area.cm2/g","c","cm2.g","lf.ma",""
-"3","diameter.cm","","cm","d.ba","10cm from the ground"
-"4","height.cm","","cm","h.t",""
-"5","branch.biomass.g","","g","m.br",""
-"6","total.leaf.biomass.g","","g","m.lf",""
-"7","total.aboveground.biomass.g","","g","m.so",""
-"8","total.belowground.biomass.g","","g","m.rt",""
-"9","total.plant.biomass.g","","g","m.to",""
-"10","stem.biomass.g","","g","m.st",""
-"11","species",NA,NA,NA,NA
-"12","tree",NA,NA,NA,NA
-"13","sampled.leaves.#",NA,NA,NA,NA
-"14","individual.leaf.mass.g",NA,NA,NA,NA
-"15","biomass.samples",NA,NA,NA,NA
-"16","trunk.biomass.g",NA,NA,NA,NA
-"17","root.length.cm",NA,NA,NA,NA
+"var_in","method","unit_in","var_out","notes"
+"individual.leaf.area.cm2","b","cm2","lf.sz",""
+"specific.leaf.area.cm2/g","c","cm2.g","lf.ma",""
+"diameter.cm","","cm","d.ba","10cm from the ground"
+"height.cm","","cm","h.t",""
+"branch.biomass.g","","g","m.br",""
+"total.leaf.biomass.g","","g","m.lf",""
+"total.aboveground.biomass.g","","g","m.so",""
+"total.belowground.biomass.g","","g","m.rt",""
+"total.plant.biomass.g","","g","m.to",""
+"stem.biomass.g","","g","m.st",""
+"species",NA,NA,NA,NA
+"tree",NA,NA,NA,NA
+"sampled.leaves.#",NA,NA,NA,NA
+"individual.leaf.mass.g",NA,NA,NA,NA
+"biomass.samples",NA,NA,NA,NA
+"trunk.biomass.g",NA,NA,NA,NA
+"root.length.cm",NA,NA,NA,NA

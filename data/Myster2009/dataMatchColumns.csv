@@ -1,7 +1,7 @@
-"","var_in","method","unit_in","var_out","notes"
-"1","t.leaf.area","b","cm2","a.lf",NA
-"2","t.height","","cm","h.t",NA
-"3","t.leaf.mass","m7","g","m.lf",NA
-"4","t.stem.mass","m7","g","m.st",NA
-"5","t.root.mass","m7","g","m.rt",NA
-"6","species",NA,NA,NA,NA
+"var_in","method","unit_in","var_out","notes"
+"t.leaf.area","b","cm2","a.lf",NA
+"t.height","","cm","h.t",NA
+"t.leaf.mass","m7","g","m.lf",NA
+"t.stem.mass","m7","g","m.st",NA
+"t.root.mass","m7","g","m.rt",NA
+"species",NA,NA,NA,NA

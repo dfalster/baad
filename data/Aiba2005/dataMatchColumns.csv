@@ -1,11 +1,11 @@
-"","var_in","method","unit_in","var_out","notes"
-"1","root mass (g)","m1","g","m.rt",NA
-"2","trunk mass (g)","m1","g","m.st",NA
-"3","branch mass (g)","m1","g","m.br",NA
-"4","leaf mass (g)","m1","g","m.lf",NA
-"5","total leaf area (cm^2)","","cm2","a.lf",NA
-"6","individual leaf area (cm^2)","b","cm2","lf.sz",NA
-"7","crown depth (cm)","","cm","c.d",NA
-"8","crown area (cm^2)","a","cm2","a.cp",NA
-"9","height (cm)","","cm","h.t",NA
-"10","stem diameter (mm)","d","mm","d.ba",NA
+"var_in","method","unit_in","var_out","notes"
+"root mass (g)","m1","g","m.rt",NA
+"trunk mass (g)","m1","g","m.st",NA
+"branch mass (g)","m1","g","m.br",NA
+"leaf mass (g)","m1","g","m.lf",NA
+"total leaf area (cm^2)","","cm2","a.lf",NA
+"individual leaf area (cm^2)","b","cm2","lf.sz",NA
+"crown depth (cm)","","cm","c.d",NA
+"crown area (cm^2)","a","cm2","a.cp",NA
+"height (cm)","","cm","h.t",NA
+"stem diameter (mm)","d","mm","d.ba",NA

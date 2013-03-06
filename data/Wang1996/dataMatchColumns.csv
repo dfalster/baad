@@ -1,9 +1,9 @@
-"","var_in","method","unit_in","var_out","notes"
-"1","DBH (cm)","","cm","d.bh",NA
-"2","HEIGHT (m)","","m","h.t",NA
-"3","LEAF (kg)","m1","kg","m.lf",NA
-"4","BRANCH (kg)","m1","kg","m.br",NA
-"5","STEMWOOD (kg)","m1","kg","m.st",NA
-"6","STEMBARK (kg)","m1","kg","m.sb",NA
-"7","TOTAL_ABOVE (kg)","m1","kg","m.so",NA
-"8","TREE NO",NA,NA,NA,NA
+"var_in","method","unit_in","var_out","notes"
+"DBH (cm)","","cm","d.bh",NA
+"HEIGHT (m)","","m","h.t",NA
+"LEAF (kg)","m1","kg","m.lf",NA
+"BRANCH (kg)","m1","kg","m.br",NA
+"STEMWOOD (kg)","m1","kg","m.st",NA
+"STEMBARK (kg)","m1","kg","m.sb",NA
+"TOTAL_ABOVE (kg)","m1","kg","m.so",NA
+"TREE NO",NA,NA,NA,NA

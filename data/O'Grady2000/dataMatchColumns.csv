@@ -1,19 +1,19 @@
-"","var_in","method","unit_in","var_out","notes"
-"1","DBH","","cm","d.bh",NA
-"2","Leaf weight","m0","kg","m.lf",NA
-"3","Wood Weight","m0","kg","m.so",NA
-"4","TOT","m0","kg","m.st",NA
-"5","Leaf area","s","m2","a.lf",NA
-"6","SITE",NA,NA,NA,NA
-"7","SPECIES",NA,NA,"species",NA
-"8","dbh>10",NA,NA,NA,NA
-"9","HT CLASS",NA,NA,NA,NA
-"10","MOD A",NA,NA,NA,NA
-"11","MOD B",NA,NA,NA,NA
-"12","AVG",NA,NA,NA,NA
-"13","X",NA,NA,NA,NA
-"14","bo, dbh>10",NA,NA,NA,NA
-"15","logbio",NA,NA,NA,NA
-"16","modla",NA,NA,NA,NA
-"17","log dbh",NA,NA,NA,NA
-"18","log bio",NA,NA,NA,NA
+"var_in","method","unit_in","var_out","notes"
+"DBH","","cm","d.bh",NA
+"Leaf weight","m0","kg","m.lf",NA
+"Wood Weight","m0","kg","m.so",NA
+"TOT","m0","kg","m.st",NA
+"Leaf area","s","m2","a.lf",NA
+"SITE",NA,NA,NA,NA
+"SPECIES",NA,NA,"species",NA
+"dbh>10",NA,NA,NA,NA
+"HT CLASS",NA,NA,NA,NA
+"MOD A",NA,NA,NA,NA
+"MOD B",NA,NA,NA,NA
+"AVG",NA,NA,NA,NA
+"X",NA,NA,NA,NA
+"bo, dbh>10",NA,NA,NA,NA
+"logbio",NA,NA,NA,NA
+"modla",NA,NA,NA,NA
+"log dbh",NA,NA,NA,NA
+"log bio",NA,NA,NA,NA
