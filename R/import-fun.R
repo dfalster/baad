@@ -170,11 +170,22 @@ readRawData<-function(studyName){
   import <-  read.csv(paste0(dir.rawData,"/",studyName,"/dataImportOptions.csv"), 
                       h=FALSE, row.names=1, stringsAsFactors=FALSE)   
   
+  # na.strings, optional (RAD)
+  if("na.strings" %in% rownames(import)){
+    nastr <- import['na.strings',]
+    # make na.strings numeric if it looks like it should be
+    if(!is.na(as.numeric(nastr)))nastr <- as.numeric(nastr)
+    nastr <- c(NA,nastr) # and add NA, the default missing string.    
+  } else
+    nastr <- NA
+  
   #brings in the original .csv
   raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), 
                        h=(import['header',]=="TRUE"), 
                        skip=as.numeric(import['skip',]), 
+                       na.strings=nastr,
                        stringsAsFactors=FALSE, strip.white=TRUE)
+  
   raw
 }
 
