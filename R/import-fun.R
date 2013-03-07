@@ -12,7 +12,7 @@ addStudies<-function(studyNames, data=NULL, reprocess= FALSE, replace=FALSE, ver
   # Returns:
   #   merged list with three parts: data, reference, contact
   
-  N=length(studyNames) #number of studies
+  N <- length(studyNames) #number of studies
   
   if (N>0){    
     #load data from each study as 
