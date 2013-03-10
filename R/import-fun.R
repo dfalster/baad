@@ -168,9 +168,9 @@ readRawData<-function(studyName){
   
   #import options for data file
   import <-  read.csv(paste0(dir.rawData,"/",studyName,"/dataImportOptions.csv"), 
-                      h=FALSE, row.names=1, stringsAsFactors=FALSE)   
+                      h=FALSE, row.names=1, stringsAsFactors=FALSE, strip.white=TRUE)   
   
-  # na.strings, optional (RAD)
+  # Specify na.strings, optional
   if("na.strings" %in% rownames(import)){
     nastr <- import['na.strings',]
     # make na.strings numeric if it looks like it should be
@@ -179,13 +179,20 @@ readRawData<-function(studyName){
   } else
     nastr <- NA
   
-  #brings in the original .csv
+  #allow custom fileEncoding if specified, optional
+  if("fileEncoding" %in% rownames(import)){
+    fileEncoding <- as.character(import['fileEncoding',])    
+  } else {
+    fileEncoding <- ""  #default 
+  }
+  
+  #read in the original .csv
   raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), 
                        h=(import['header',]=="TRUE"), 
                        skip=as.numeric(import['skip',]), 
-                       na.strings=nastr,
-                       stringsAsFactors=FALSE, strip.white=TRUE)
-  
+                       na.strings=nastr, check.names=FALSE,
+                       stringsAsFactors=FALSE, strip.white=TRUE, 
+                       fileEncoding =fileEncoding)
   raw
 }
 

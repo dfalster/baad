@@ -8,9 +8,9 @@ source('R/report-fun.R')
 studyNames     <-  getStudyNames()
 
 #import data
-s<-"Baraloto2006"
+s<-"Ishihara0000"
 processStudy(s, verbose = TRUE)
-d<-addStudies(studyNames, reprocess = FALSE, verbose = FALSE)
+d<-addStudies(studyNames, reprocess = TRUE, verbose = FALSE)
 makePlotPanel(d$data, s, pdf=FALSE)
 
 #plot of all data
