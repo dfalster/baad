@@ -14,6 +14,10 @@ Use whisker package to generate new Rmd files for each study
 
 # Process for importing a new study #
 
+a list
+
+- 
+- 
 
 # Setting up git repository on local machine#
 

@@ -164,7 +164,9 @@ Ggplot2 plots work well:
   qplot(x, y, data = df)
   ```
   
-  ![plot of chunk ggplot2ex](figure/ggplot2ex.png) 
+  ```
+  ## Error: could not find function "revalue"
+  ```
 
 
 ### `lattice` plot

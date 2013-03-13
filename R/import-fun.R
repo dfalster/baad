@@ -73,6 +73,7 @@ setUpFiles  <-  function(newStudy){
                            newValue="",
                            source="", 
                            stringsAsFactors=FALSE)
+    datnew  <-  datnew[-1,]
     write.csv(datnew, paste0(readyDir,"/",newStudy,"/dataNew.csv"), row.names=FALSE)
   }
   
@@ -80,10 +81,10 @@ setUpFiles  <-  function(newStudy){
   cat("creates studyContact.csv ")
   filename  <-  paste0(readyDir, "/", newStudy, "/studyContact.csv")
   if(!file.exists(filename)){
-    contact  <-  data.frame(name="",
-                            email="",
-                            address="",
-                            additional.info="",
+    contact  <-  data.frame(name=NA,
+                            email=NA,
+                            address=NA,
+                            additional.info=NA,
                             stringsAsFactors=FALSE)
     write.csv(contact, paste0(readyDir,"/",newStudy,"/studyContact.csv"), row.names=FALSE)
   }
@@ -97,11 +98,12 @@ setUpFiles  <-  function(newStudy){
   }
   
   #creates and writes studyRef.csv
-  cat("creates studyRef.txt ")
-  filename  <-  paste0(readyDir, "/", newStudy, "/studyRef.txt")
+  cat("creates studyRef.csv ")
+  filename  <-  paste0(readyDir, "/", newStudy, "/studyRef.csv")
   if(!file.exists(filename)){
-    sturef  <-  ""
-    write.table(sturef, paste0(readyDir,"/",newStudy,"/studyRef.txt"), row.names=FALSE)
+    sturef  <-  data.frame(reference="Missing",
+                           stringsAsFactors=FALSE)
+    write.csv(sturef, paste0(readyDir,"/",newStudy,"/studyRef.csv"), row.names=FALSE)
   }
 }
 
@@ -260,6 +262,7 @@ processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
   data<-addNewData(studyName, data)
   
   #write data to file
+  browser()
   if (verbose) cat("write to file ")
   write.csv(data, outputName, row.names=FALSE)
 }

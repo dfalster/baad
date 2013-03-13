@@ -9,8 +9,11 @@ extractThisStduy<-function(alldata, study){
   alldata  
 }
 
-studyReport<-function(alldata, study){
-  d<- extractThisStduy(alldata, study)
+studyReport<-function(alldata, study="all"){
+  if(study =="all")
+    d<-alldata
+  else
+    d<- extractThisStduy(alldata, study)
   
   cat("\nSTUDIES: ", as.character(unique(d$data$dataset)), "\n")
   
