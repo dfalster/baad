@@ -8,9 +8,9 @@ source('R/report-fun.R')
 studyNames     <-  getStudyNames()
 
 #import data
-s<-"Ishihara0000"
+s<-"Aiba2005"
 processStudy(s, verbose = TRUE)
-d<-addStudies(studyNames, reprocess = TRUE, verbose = FALSE)
+d<-addStudies(studyNames, reprocess = FALSE, verbose = FALSE)
 makePlotPanel(d$data, s, pdf=FALSE)
 
 #plot of all data
@@ -37,5 +37,3 @@ writeEmail(d)
 ##
 writeLines(sprintf('%s,', getContributors(d)$name))
 
-
-d$data$dataset[which(d$data$species =="Jc")]
