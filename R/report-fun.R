@@ -3,6 +3,54 @@ getContributors<-function(data){
   data$contact[!duplicated(d$contact$name),]
 }
 
+extractThisStduy<-function(alldata, study){
+  for(var in c("data", "ref", "contact"))
+    alldata[[var]]<-alldata[[var]][alldata[[var]]$dataset == study,]
+  alldata  
+}
+
+studyReport<-function(alldata, study){
+  d<- extractThisStduy(alldata, study)
+  
+  cat("\nSTUDIES: ", as.character(unique(d$data$dataset)), "\n")
+  
+  cat("Data for",  length(d$data$dataset),"individuals from", length(unique(d$data$location)), "locations covering",  length(unique(d$data$species)), "species.\n\n")
+  
+  cat("\nNUMBER OF RECORDS FOR EACH VARIABLE: \n")  
+  counts<-apply(!is.na(d$data), MARGIN=2, FUN = sum)
+  counts<-counts[counts>0]  #only include no zeros
+  #only include tree variables
+  (counts<-counts[names(counts)%in%var.def$Variable[var.def$Group=="tree"]])
+
+  cat("\nMORE DETAIL:\n")  
+  cat("\nSITES:\n")  
+  cat("\nprint information for each site, ie. ", var.def$Variable[var.def$Group=="site"])  
+  cat("\nmap of locations used")  
+  
+  cat("\nSPECIES: ", length(unique(d$data$species)), "\n", paste0(as.character(unique(sort(d$data$species))), "; "), "\n")
+  cat("\nprint information for each species, ie. ", var.def$Variable[var.def$Group=="species"])  
+  cat("\n also number of records for each species")  
+  
+  #Brief look at data
+  makePlotPanel(alldata$data, study, pdf=FALSE)
+  
+}
+  
+
+#Reporting 2013.03.01
+writeEmail<-function(d, fileName=paste("output/Email.txt", sep='')){
+  cat(sprintf('%s,', unique(d$contact$email)), file= fileName)
+  cat("\n\nDear contributors to the Biomass and Allometry database, (", file= fileName, append= TRUE)
+  cat(sprintf('%s,', getContributors(d)$name), file= fileName, append= TRUE)
+  cat(")\n\n", file= fileName, append= TRUE)
+  cat("We have data for",  length(d$data$dataset),"individuals from", length(unique(d$data$dataset)), "studies covering",  length(unique(d$data$species)), "species.\n\n", file= fileName, append= TRUE)
+  cat("The full list of studies included in the study is:\n", file= fileName, append= TRUE)
+  cat(sprintf('  %s\n',d$ref[,2]), file= fileName, append= TRUE)
+  cat("\n\nThe species included in the study are:\n", file= fileName, append= TRUE)
+  cat(sprintf('%s,', sort(unique(as.character(d$data$species)))), file= fileName, append= TRUE)
+}
+
+
 makePlotPanel<-function(data, study, dir="report", col="grey", pdf=TRUE){
   cat(study, " ")
   
