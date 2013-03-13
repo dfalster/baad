@@ -1,0 +1,51 @@
+\underline{Contact}: ???
+
+Maguire, D.A., Brissette, J.C. and Gu, L. (1998) Crown structure and growth efficiency of red spruce in uneven-aged, mixed-species stands in Maine. Canadian Journal of Forest Research, 28, 1233-1240.
+
+Latin name of species
+Picea rubens Sarg..
+
+Size range
+Stem diameters at breast height (1.37 m) ranged from 11 to 50 cm.
+
+Number of individuals
+16
+
+Individual leaf size and Total leaf area
+100 needles was randomly drawn from the frozen fresh sample of collected branches and total projected leaf area was determined using AgVision image processing system. Total projected foliage area was calculated by estimating the total area for each sample branch by multiplying its foliage dry weight by its specific leaf area and then scaling to total tree area.
+
+Area of sapwood, heartwood cross section and/or total stem cross section
+Disks were cut at breast height (1.37 m), at the crown base, and at 2.5-m intervals to the tip of the tree. On the stump cut and on disks from the upper stem, the longest axis and the axis perpendicular to the longest were measured. Diameter inside bark and diameter outside bark were recorded  to the nearest 1 mm. Disks were analyzed for cross sectional sapwood area by staining with methyl orange and determining areas with a Java image analysis system.
+
+Projected crown area 
+Crown radii was measured in four cardinal directions to the nearest 0.1 m and was used to calculate crown projected area.
+
+Total height of plant and Height of crown
+Total height and height to crown base were measured to the nearest 0.1 m.
+
+Biomass;Total leaf mass
+Was estimated from the total leaf mass of sampled branches and scaled to total leaf mass per tree.
+
+Leaf mass per area
+Specific leaf area was computed as the ratio of projected foliage area (cm2) to dry weight (g).
+
+Plant functional type
+Evergreen gymnosperm.
+
+Growth environment of sampled plant
+Plantation, managed.
+
+Location where sampled
+Penobscot Experimental Forest (PEF), located in the towns of Bradley and Eddington, in southern Penobscot County, Maine, USA.
+
+Longitude and latitude of location
+44°52'N, 68°38'W
+
+Vegetation type
+Boreal forest
+
+Mean annual rainfall
+1060 mm
+
+Mean annual temperature
+6.6°C

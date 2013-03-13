@@ -1,16 +1,16 @@
-"var_in","method","unit_in","var_out","notes"
-"No.",NA,NA,NA,NA
-"ht1 (cm)",NA,NA,NA,NA
-"ht2 (cm)",NA,NA,NA,NA
-"Delta t (days)",NA,NA,NA,NA
-"Wood1 (g)",NA,NA,NA,NA
-"Delta wood (g)",NA,NA,NA,NA
-"Leaf1 (g)",NA,NA,NA,NA
-"Delta leaf (g)",NA,NA,NA,NA
-"Leaf area1 (cm2)",NA,NA,NA,NA
-"Leaf area2 (cm2)",NA,NA,NA,NA
-"Area/leaf (cm2)",NA,NA,NA,NA
-"ISF",NA,NA,NA,NA
-"Wood2 (g)",NA,NA,NA,NA
-"Leaf2 (g)",NA,NA,NA,NA
-"species",NA,NA,NA,NA
+var_in,method,unit_in,var_out,notes
+No.,NA,NA,NA,NA
+ht1 (cm),NA,cm,h.t,NA
+ht2 (cm),NA,NA,NA,NA
+Delta t (days),NA,NA,NA,NA
+Wood1 (g),NA,g,m.st,NA
+Delta wood (g),NA,NA,NA,NA
+Leaf1 (g),NA,g,m.lf,NA
+Delta leaf (g),NA,NA,NA,NA
+Leaf area1 (cm2),NA,cm2,a.lf,NA
+Leaf area2 (cm2),NA,NA,NA,NA
+Area/leaf (cm2),NA,cm2,lf.sz,NA
+ISF,li,-,light,NA
+Wood2 (g),NA,NA,NA,NA
+Leaf2 (g),NA,NA,NA,NA
+species,NA,NA,NA,NA
