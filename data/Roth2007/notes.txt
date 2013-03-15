@@ -1,0 +1,54 @@
+Metadata				TO DO: Lf.sz and a.lf
+
+Roth, B.E., Jokela. E.J., Martin, T.A., Huber, D.A. and White, T.L. (2007) Genotype X environment interactions in selected loblolly and slash pine plantations in Southeastern United States. Forest Ecology and Management, 238, 175-188.
+
+Latin name of species
+Pinus taeda L., Pinus elliottii Engelm. var. elliotttii
+
+Size range
+Diameter at breast height (1.37 m) ranged from 1.3 to 15.2 cm.
+
+Number of individuals
+184
+
+Individual leaf size and Total leaf area
+
+
+Area total stem cross section
+Stem diameter was measured at breast height (1.37 m ) and at ground line. 
+
+Projected crown area and crown surface area
+Crown width was measured at the widest point parallel to, and perpendicular to the
+planting bed.
+
+Total height of plant and Height of crown
+Heights were measured for each individual.
+
+Biomass;Total leaf mass, Stem mass and Bark mass
+Trees were separated into four aboveground components: foliage, branches, stem and dead branches. The total fresh weight of each component was measured separately in the field. 6 cm disks were cut from the base of each of three equally spaced stem segments along the full length of the
+stem. Bark was separated from each disk and the fresh weight of each was determined in the field. Samples of each component was dried to constant weight as to recieve dry weight/wet weight ratio. 
+
+Plant functional type
+Evergreen gumnosperms
+
+Growth environment of sampled plant
+Plantation managed.
+
+Treatment
+species, genotype, silviculture and planting density
+
+Location where sampled
+Loblolly; Sanderson, FL and Waverly, GA
+Slash; Perry, FL and Waldo, FL
+
+Latitude and longitude of location
+29.28, 82.33W
+31.13, 81.75W
+30.17, 83.73W 
+29.80, 82.21W
+
+Vegetation type
+Tropical
+
+Mean annual rainfall
+1384 mm
