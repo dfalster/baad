@@ -85,6 +85,65 @@ makePlot<-function(data, study, xvar, yvar, xlab, ylab, main="", col="grey"){
   points(data[i,xvar], data[i,yvar], col = "red")  
 }
 
+makeMapPlot<-function(data, study, dir="report", pdf=TRUE){
+  
+  datum  <-  data[study==data$dataset,]
+  coord  <-  unique(paste0(unique(datum$latitude),";", unique(datum$longitude)))  
+  catdat <-  data.frame(lat=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][1]}))),
+                        lon=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][2]}))),
+                        stringsAsFactors=FALSE)
+  
+  catdat$loc     <-  as.character(datum$location[match(catdat$lat, datum$latitude)])
+  catdat$colour  <-  as.character(sample(colors(),nrow(catdat)))
+  catdat$ytxt    <-  seq(-100,-180,length.out=nrow(catdat))
+  catdat$xtxt    <-  rep(-175, nrow(catdat))
+
+  if(pdf){    
+    path<-paste0("output/", dir)
+    if(!file.exists(path))
+      dir.create(path)
+    pdf(file=paste0(path,"/mapPlot_", study,".pdf"))
+  }
+  
+  map('world',col="grey80",bg="white",lwd=0.5,fill=TRUE,resolution=0,wrap=TRUE, border="grey80")
+  map('world',col="black",boundary=TRUE,lwd=0.2,interior=FALSE,fill=FALSE,add=TRUE,resolution=0,wrap=TRUE)
+  
+  if(is.na(catdat$lat) & is.na(catdat$lon) & is.na(catdat$loc)){
+    polygon(c(-100,95,95,-100), c(-10,-10,15,15), col=rgb(0,0,0,240,maxColorValue=255))
+    text(-100, 0, expression(paste(bold("Missing coordinate/location"))), col="red", xpd=TRUE, pos=4, cex=0.8)
+  } else {
+    for(k in 1:nrow(catdat)){
+      lat=catdat$lat[k]
+      lon=catdat$lon[k]
+      loc=catdat$loc[k]
+      colour=catdat$colour[k]
+      ytxt=catdat$ytxt[k]
+      xtxt=catdat$xtxt[k]
+      
+      if(!is.na(lat) & !is.na(lon) & lat != "" & lon != ""){
+        points(lon, lat, pch=21, col="black", bg=colour, cex=0.9)
+        points(xtxt, ytxt, pch=21, col="black", bg=colour, cex=1.2, xpd=TRUE)
+        if(length(loc)==0 | is.na(loc)){
+          text(xtxt, ytxt, "Missing location information", col="black", xpd=TRUE, pos=4, cex=0.8)
+        } else {
+          text(xtxt, ytxt, paste0(loc, "; lat=", lat, "; lon=", lon), col="black", xpd=TRUE, pos=4, cex=0.8)
+        }  
+        
+      } else {  
+        points(xtxt, ytxt, pch=23, col="black", bg="red", cex=1.2, xpd=TRUE)
+        if(length(loc)==0 | is.na(loc)){
+          text(xtxt, ytxt, "Missing coordinate for some data", col="black", xpd=TRUE, pos=4, cex=0.8)
+        } else {
+          text(xtxt, ytxt, paste0("Missing coordinate for ", loc), col="black", xpd=TRUE, pos=4, cex=0.8)
+        }
+      }
+  
+    }
+  }
+  if(pdf) 
+    dev.off()
+}
+
 
 is.wholenumber <-  function(x, tol = .Machine$double.eps^0.5)  abs(x - round(x)) < tol
 

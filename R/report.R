@@ -17,6 +17,9 @@ makePlotPanel(d$data, "all", col=niceColors()[as.factor(d$data$dataset)], pdf=TR
 makePlotPanel(d$data, "Ishihara0000", pdf=TRUE) #one study, print to screen
 tmp<-lapply(unique(d$data$dataset), makePlotPanel, data=d$data, dir="report")  #all, print to file
 
+#maps for each study
+makeMapPlot(data=d$data, study="Aiba2005", pdf=TRUE) #one study, print to screen
+tmp2<-lapply(unique(d$data$dataset), makeMapPlot, data=d$data, dir="report", pdf=TRUE)  #all, print to file
 #print report fo study
 studyReport(d, "Ishihara0000")
 

@@ -44,8 +44,6 @@ setUpFiles  <-  function(newStudy){
     write(manip, paste0(readyDir,"/",newStudy,"/dataManipulate.R"))
   }  
   
-  
-  #browser()
   #creates dataMatchColumns.csv
   cat("creates dataMatchColumns.csv ")
   filename  <-  paste0(readyDir, "/", newStudy, "/dataMatchColumns.csv")
@@ -262,7 +260,6 @@ processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
   data<-addNewData(studyName, data)
   
   #write data to file
-  browser()
   if (verbose) cat("write to file ")
   write.csv(data, outputName, row.names=FALSE)
 }
