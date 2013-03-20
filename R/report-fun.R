@@ -88,16 +88,34 @@ makePlot<-function(data, study, xvar, yvar, xlab, ylab, main="", col="grey"){
 makeMapPlot<-function(data, study, dir="report", pdf=TRUE){
   
   datum  <-  data[study==data$dataset,]
-  coord  <-  unique(paste0(unique(datum$latitude),";", unique(datum$longitude)))  
+  coord  <-  unique(paste0(datum$latitude,";", datum$longitude, ";", datum$location))  
   catdat <-  data.frame(lat=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][1]}))),
                         lon=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][2]}))),
+                        loc=as.character(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][3]}))),
                         stringsAsFactors=FALSE)
   
-  catdat$loc     <-  as.character(datum$location[match(catdat$lat, datum$latitude)])
   catdat$colour  <-  as.character(sample(colors(),nrow(catdat)))
-  catdat$ytxt    <-  seq(-100,-180,length.out=nrow(catdat))
-  catdat$xtxt    <-  rep(-175, nrow(catdat))
+  ytext          <-  c(seq(-100,-180,length.out=10), seq(100,180,length.out=10))
+  
+  #if the study has more than 20 coordinates, then we need to split it, otherwise the maps can't be read
+  if(nrow(catdat) <= 20){
+    catdat$ytxt    <-  ytext[1:nrow(catdat)]
+    catdat$xtxt    <-  rep(-175, nrow(catdat))
+    drawPlot(catdat, study=study, dir=dir, pdf=pdf)
+  } else {
+    catdat$org  <-  as.integer(cut(1:nrow(catdat), ceiling(nrow(catdat)/20)))
+    for(j in unique(catdat$org)){
+      cutdat         <-  catdat[catdat$org==j, ]
+      cutdat$ytxt    <-  ytext[1:nrow(cutdat)]
+      cutdat$xtxt    <-  rep(-175, nrow(cutdat))
+      drawPlot(cutdat, study=paste0(study, "_part_",j), dir=dir, pdf=pdf)
+    }
+  }
+  
+}
 
+
+drawPlot  <-  function(catdat, study, dir="report", pdf=TRUE){
   if(pdf){    
     path<-paste0("output/", dir)
     if(!file.exists(path))
@@ -108,7 +126,7 @@ makeMapPlot<-function(data, study, dir="report", pdf=TRUE){
   map('world',col="grey80",bg="white",lwd=0.5,fill=TRUE,resolution=0,wrap=TRUE, border="grey80")
   map('world',col="black",boundary=TRUE,lwd=0.2,interior=FALSE,fill=FALSE,add=TRUE,resolution=0,wrap=TRUE)
   
-  if(is.na(catdat$lat) & is.na(catdat$lon) & is.na(catdat$loc)){
+  if(is.na(catdat$lat) & is.na(catdat$lon) & catdat$loc=="NA"){
     polygon(c(-100,95,95,-100), c(-10,-10,15,15), col=rgb(0,0,0,240,maxColorValue=255))
     text(-100, 0, expression(paste(bold("Missing coordinate/location"))), col="red", xpd=TRUE, pos=4, cex=0.8)
   } else {
@@ -122,22 +140,22 @@ makeMapPlot<-function(data, study, dir="report", pdf=TRUE){
       
       if(!is.na(lat) & !is.na(lon) & lat != "" & lon != ""){
         points(lon, lat, pch=21, col="black", bg=colour, cex=0.9)
-        points(xtxt, ytxt, pch=21, col="black", bg=colour, cex=1.2, xpd=TRUE)
-        if(length(loc)==0 | is.na(loc)){
-          text(xtxt, ytxt, "Missing location information", col="black", xpd=TRUE, pos=4, cex=0.8)
+        points(xtxt, ytxt, pch=21, col="black", bg=colour, cex=0.9, xpd=TRUE)
+        if(length(loc)==0 | loc=="NA"){
+          text(xtxt, ytxt, "Missing location information", col="black", xpd=TRUE, pos=4, cex=0.7)
         } else {
-          text(xtxt, ytxt, paste0(loc, "; lat=", lat, "; lon=", lon), col="black", xpd=TRUE, pos=4, cex=0.8)
+          text(xtxt, ytxt, paste0(loc, "; lat=", lat, "; lon=", lon), col="black", xpd=TRUE, pos=4, cex=0.7)
         }  
         
       } else {  
         points(xtxt, ytxt, pch=23, col="black", bg="red", cex=1.2, xpd=TRUE)
-        if(length(loc)==0 | is.na(loc)){
-          text(xtxt, ytxt, "Missing coordinate for some data", col="black", xpd=TRUE, pos=4, cex=0.8)
+        if(length(loc)==0 | loc=="NA"){
+          text(xtxt, ytxt, "Missing coordinate for some data", col="black", xpd=TRUE, pos=4, cex=0.7)
         } else {
-          text(xtxt, ytxt, paste0("Missing coordinate for ", loc), col="black", xpd=TRUE, pos=4, cex=0.8)
+          text(xtxt, ytxt, paste0("Missing coordinate for ", loc), col="black", xpd=TRUE, pos=4, cex=0.7)
         }
       }
-  
+      
     }
   }
   if(pdf) 

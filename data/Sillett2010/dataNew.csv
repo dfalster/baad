@@ -1,16 +1,16 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-"species","E. regnans","species","Eucalyptus regnans","from paper[D Barneche]"
-"species","S. sempervirens","species","Sequoia sempervirens","from paper[D Barneche]"
-"species","Eucalyptus regnans","location","Wallaby Creek, Kinglake National Park, Victoria, Australia","from paper[D Barneche]"
-"species","Sequoia sempervirens","location","Bull Creek, Humboldt Redwoods State Park, California, USA","from paper[D Barneche]"
-"species","Eucalyptus regnans","latitude","-37","from paper[D Barneche]"
-"species","Sequoia sempervirens","latitude","145","from paper[D Barneche]"
-"species","Eucalyptus regnans","longitude","40","from paper[D Barneche]"
-"species","Sequoia sempervirens","longitude","-124","from paper[D Barneche]"
-"species","Eucalyptus regnans","map","1208","from paper[D Barneche]"
-"species","Sequoia sempervirens","map","1226","from paper[D Barneche]"
-"species","Eucalyptus regnans","mat","11.6","from paper[D Barneche]"
-"species","Sequoia sempervirens","mat","12.6","from paper[D Barneche]"
-"","","growingCondition","FW","from paper[D Barneche]"
-"","","pft","EA","from paper[D Barneche]"
-"","","vegetation","TempF","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+species,E. regnans,species,Eucalyptus regnans,from paper[D Barneche]
+species,S. sempervirens,species,Sequoia sempervirens,from paper[D Barneche]
+species,Eucalyptus regnans,location,"Wallaby Creek, Kinglake National Park, Victoria, Australia",from paper[D Barneche]
+species,Sequoia sempervirens,location,"Bull Creek, Humboldt Redwoods State Park, California, USA",from paper[D Barneche]
+species,Eucalyptus regnans,latitude,-37,from paper[D Barneche]
+species,Sequoia sempervirens,latitude,40,from paper[D Barneche]
+species,Eucalyptus regnans,longitude,145,from paper[D Barneche]
+species,Sequoia sempervirens,longitude,-124,from paper[D Barneche]
+species,Eucalyptus regnans,map,1208,from paper[D Barneche]
+species,Sequoia sempervirens,map,1226,from paper[D Barneche]
+species,Eucalyptus regnans,mat,11.6,from paper[D Barneche]
+species,Sequoia sempervirens,mat,12.6,from paper[D Barneche]
+,,growingCondition,FW,from paper[D Barneche]
+,,pft,EA,from paper[D Barneche]
+,,vegetation,TempF,from paper[D Barneche]
