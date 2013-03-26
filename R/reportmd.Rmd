@@ -1,0 +1,89 @@
+Report for study: `r .study`
+========================================================
+
+Data for `r length(.dat$data$dataset)` individuals from `r length(unique(.dat$data$location))` locations covering `r length(unique(.dat$data$species))` species.
+
+
+Number of records for each variable
+-----------------------------------
+
+```{r echo=FALSE}
+counts<-apply(!is.na(.dat$data), MARGIN=2, FUN = sum)
+counts<-counts[counts>0]  #only include no zeros
+counts <- counts[names(counts)%in%var.def$Variable[var.def$Group=="tree"]]
+```
+```{r echo=FALSE}
+cbind(counts)
+```
+
+
+More details
+------------------------------------
+
+### Sites
+
+```{r echo=FALSE}
+sitevarnames <- var.def$Variable[var.def$Group=="site"]
+
+sitevarnames <- intersect(sitevarnames, names(.dat$data))
+```
+
+```{r echo=FALSE, comment=''}
+if("location" %in% sitevarnames){
+  sites <- sort(levels(.dat$data[,"location"]))
+  cat(paste(sites, collapse="\n"))
+}
+```
+
+```{r echo=FALSE, fig.width=8, fig.height=6}
+if("latitude" %in% sitevarnames){
+  latlong <- .dat$data[,c("location","latitude","longitude")]
+  latlong <- latlong[!duplicated(latlong$location),]
+ 
+  suppressPackageStartupMessages(library(maps))
+  
+  map("world")
+  points(latlong$longitude, latlong$latitude, pch=19, col="red")
+}
+```
+
+
+
+### Species
+
+The dataset includes the following species (`r nlevels(.dat$data$species)` species in total):
+`r cbind(sort(levels(.dat$data$species)))`
+
+
+These species belong to the following families:
+```{r echo=FALSE}
+specvars <- var.def$Variable[var.def$Group=="species"]
+specvars <- intersect(specvars, names(.dat$data))
+```
+```{r echo=FALSE, comment=''}
+if("family" %in% specvars){
+  families <- sort(unique(.dat$data[,"family"]))
+  cat(paste(families, collapse="\n"))
+}
+
+```
+
+And include the following plant functional types:
+```{r echo=FALSE, comment=''}
+if("pft" %in% specvars){
+  pfts <- sort(unique(.dat$data[,"pft"]))
+  cat(paste(pfts, collapse="\n"))
+}
+
+```
+
+Plot of data
+---------------------------------
+```{r fig.height=8, fig.width=8, echo=FALSE, warning=FALSE, message=FALSE}
+makePlotPanel(d$data, "Ishihara0000", pdf=FALSE)
+```
+
+
+  
+  
+  

@@ -14,7 +14,7 @@ d<-addStudies(studyNames, reprocess = FALSE, verbose = FALSE)
 makePlotPanel(d$data, "all", col=niceColors()[as.factor(d$data$dataset)], pdf=TRUE)
 
 #plots for each study
-makePlotPanel(d$data, "Ishihara0000", pdf=TRUE) #one study, print to screen
+makePlotPanel(d$data, "Ishihara0000", pdf=FALSE) #one study, print to screen
 tmp<-lapply(unique(d$data$dataset), makePlotPanel, data=d$data, dir="report")  #all, print to file
 
 #maps for each study
