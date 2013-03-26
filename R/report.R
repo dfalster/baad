@@ -3,6 +3,7 @@ rm(list=ls())
 source('R/Biomass-fun.R')
 source('R/import-fun.R')
 source('R/report-fun.R')
+source('R/reportfun-markdown.R')
 
 #names of all studies
 studyNames     <-  getStudyNames()
@@ -25,6 +26,12 @@ studyReport(d, "Ishihara0000")
 
 writeEmail(d)
 
+
+## NEW: markdown report.
+# Need package 'knitr' installed
+studyReportMd(d, "Ishihara0000")
+studyReportMd(d, "Aiba2007")
+studyReportMd(d, "Bond-Lamberty2002")
 
 ##
 writeLines(sprintf('%s,', getContributors(d)$name))

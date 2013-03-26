@@ -30,17 +30,17 @@ sitevarnames <- intersect(sitevarnames, names(.dat$data))
 
 ```{r echo=FALSE, comment=''}
 if("location" %in% sitevarnames){
-  sites <- sort(levels(.dat$data[,"location"]))
+  sites <- sort(unique(as.character(.dat$data[,"location"])))
   cat(paste(sites, collapse="\n"))
 }
 ```
 
-```{r echo=FALSE, fig.width=8, fig.height=6}
+```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE}
 if("latitude" %in% sitevarnames){
   latlong <- .dat$data[,c("location","latitude","longitude")]
   latlong <- latlong[!duplicated(latlong$location),]
  
-  suppressPackageStartupMessages(library(maps))
+  library(maps)
   
   map("world")
   points(latlong$longitude, latlong$latitude, pch=19, col="red")
@@ -51,8 +51,8 @@ if("latitude" %in% sitevarnames){
 
 ### Species
 
-The dataset includes the following species (`r nlevels(.dat$data$species)` species in total):
-`r cbind(sort(levels(.dat$data$species)))`
+The dataset includes the following species (`r length(unique(.dat$data$species))` species in total):
+`r cbind(sort(unique(as.character(.dat$data$species))))`
 
 
 These species belong to the following families:
@@ -80,7 +80,7 @@ if("pft" %in% specvars){
 Plot of data
 ---------------------------------
 ```{r fig.height=8, fig.width=8, echo=FALSE, warning=FALSE, message=FALSE}
-makePlotPanel(d$data, "Ishihara0000", pdf=FALSE)
+makePlotPanel(d$data, .study, pdf=FALSE)
 ```
 
 
