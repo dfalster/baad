@@ -8,9 +8,9 @@ Number of records for each variable
 -----------------------------------
 
 ```{r echo=FALSE}
-counts<-apply(!is.na(.dat$data), MARGIN=2, FUN = sum)
-counts<-counts[counts>0]  #only include no zeros
-counts <- counts[names(counts)%in%var.def$Variable[var.def$Group=="tree"]]
+counts  <-  apply(!is.na(.dat$data), MARGIN=2, FUN = sum)
+counts  <-  counts[counts>0]  #only include no zeros
+counts  <-  counts[names(counts)%in%var.def$Variable[var.def$Group=="tree"]]
 ```
 ```{r echo=FALSE}
 cbind(counts)
@@ -20,62 +20,31 @@ cbind(counts)
 More details
 ------------------------------------
 
-### Sites
+### Please analyse if points on the map match locations and coordinates  
 
-```{r echo=FALSE}
-sitevarnames <- var.def$Variable[var.def$Group=="site"]
-
-sitevarnames <- intersect(sitevarnames, names(.dat$data))
-```
-
-```{r echo=FALSE, comment=''}
-if("location" %in% sitevarnames){
-  sites <- sort(unique(as.character(.dat$data[,"location"])))
-  cat(paste(sites, collapse="\n"))
-}
-```
-
-```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE}
-if("latitude" %in% sitevarnames){
-  latlong <- .dat$data[,c("location","latitude","longitude")]
-  latlong <- latlong[!duplicated(latlong$location),]
- 
-  library(maps)
-  
-  map("world")
-  points(latlong$longitude, latlong$latitude, pch=19, col="red")
-}
+```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE, warning=FALSE}
+prepdata  <-  prepMapInfo(alldata$data, study)
+drawWorldPlot (prepdata)
 ```
 
 
 
-### Species
+### Please analyse if points on country map match locations and coordinates  
 
-The dataset includes the following species (`r length(unique(.dat$data$species))` species in total):
-`r cbind(sort(unique(as.character(.dat$data$species))))`
-
-
-These species belong to the following families:
-```{r echo=FALSE}
-specvars <- var.def$Variable[var.def$Group=="species"]
-specvars <- intersect(specvars, names(.dat$data))
-```
-```{r echo=FALSE, comment=''}
-if("family" %in% specvars){
-  families <- sort(unique(.dat$data[,"family"]))
-  cat(paste(families, collapse="\n"))
-}
-
+```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE, warning=FALSE}
+repMissingInfo(prepdata)
+drawCountryPlot(prepdata)
 ```
 
-And include the following plant functional types:
-```{r echo=FALSE, comment=''}
-if("pft" %in% specvars){
-  pfts <- sort(unique(.dat$data[,"pft"]))
-  cat(paste(pfts, collapse="\n"))
-}
 
+
+### Species - please provide any missing information
+
+The dataset includes `r length(unique(.dat$data$species))` species belonging to `r length(unique(.dat$data$family))` families, presenting `r length(unique(.dat$data$pft))` functional types, growing in `r length(unique(.dat$data$growingCondition))` conditions within `r length(unique(.dat$data$vegetation))` major types of habitat:
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+fam.spec(.dat$data)
 ```
+
 
 Plot of data
 ---------------------------------

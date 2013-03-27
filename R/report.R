@@ -4,6 +4,7 @@ source('R/Biomass-fun.R')
 source('R/import-fun.R')
 source('R/report-fun.R')
 source('R/reportfun-markdown.R')
+source('R/packages.R')
 
 #names of all studies
 studyNames     <-  getStudyNames()

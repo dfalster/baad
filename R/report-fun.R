@@ -55,7 +55,7 @@ writeEmail<-function(d, fileName=paste("output/Email.txt", sep='')){
 
 
 makePlotPanel<-function(data, study, dir="report", col="grey", pdf=TRUE){
-  cat(study, " ")
+  cat("This is how the study", study, "fits in the entire dataset distribution")
   
   if(pdf){    
     path<-paste0("output/", dir)
@@ -85,81 +85,143 @@ makePlot<-function(data, study, xvar, yvar, xlab, ylab, main="", col="grey"){
   points(data[i,xvar], data[i,yvar], col = "red")  
 }
 
-makeMapPlot<-function(data, study, dir="report", pdf=TRUE){
+prepMapInfo<-function(data, study){
   
-  datum  <-  data[study==data$dataset,]
-  coord  <-  unique(paste0(datum$latitude,";", datum$longitude, ";", datum$location))  
-  catdat <-  data.frame(lat=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][1]}))),
+  data   <-  data[study==data$dataset,]
+  coord  <-  unique(paste0(data$latitude,";", data$longitude, ";", data$location))  
+  data   <-  data.frame(lat=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][1]}))),
                         lon=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][2]}))),
                         loc=as.character(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][3]}))),
                         stringsAsFactors=FALSE)
-  
-  catdat$colour  <-  as.character(sample(colors(),nrow(catdat)))
-  ytext          <-  c(seq(-100,-180,length.out=10), seq(100,180,length.out=10))
-  
-  #if the study has more than 20 coordinates, then we need to split it, otherwise the maps can't be read
-  if(nrow(catdat) <= 20){
-    catdat$ytxt    <-  ytext[1:nrow(catdat)]
-    catdat$xtxt    <-  rep(-175, nrow(catdat))
-    drawPlot(catdat, study=study, dir=dir, pdf=pdf)
-  } else {
-    catdat$org  <-  as.integer(cut(1:nrow(catdat), ceiling(nrow(catdat)/20)))
-    for(j in unique(catdat$org)){
-      cutdat         <-  catdat[catdat$org==j, ]
-      cutdat$ytxt    <-  ytext[1:nrow(cutdat)]
-      cutdat$xtxt    <-  rep(-175, nrow(cutdat))
-      drawPlot(cutdat, study=paste0(study, "_part_",j), dir=dir, pdf=pdf)
-    }
+  i      <-  !is.na(data$lat) | !is.na(data$lon)
+  if( any(i) ){
+    data$country[i]  <-  map.where(x=data$lon[i], y=data$lat[i])
   }
+  data$country       <-  as.character(unlist(lapply(data$country, function(x){strsplit(x,":")[[1]][1]})))
+
+  #final object
+  data
   
-}
+}  
 
-
-drawPlot  <-  function(catdat, study, dir="report", pdf=TRUE){
-  if(pdf){    
-    path<-paste0("output/", dir)
-    if(!file.exists(path))
-      dir.create(path)
-    pdf(file=paste0(path,"/mapPlot_", study,".pdf"))
-  }
+drawWorldPlot  <-  function(data){
   
   map('world',col="grey80",bg="white",lwd=0.5,fill=TRUE,resolution=0,wrap=TRUE, border="grey80")
   map('world',col="black",boundary=TRUE,lwd=0.2,interior=FALSE,fill=FALSE,add=TRUE,resolution=0,wrap=TRUE)
+  lines(c(-180,180),c(-100,-100), lty="dashed", xpd=TRUE, lwd=2)
+  lines(c(-180,180),c(100,100), lty="dashed", xpd=TRUE, lwd=2)
   
-  if(is.na(catdat$lat) & is.na(catdat$lon) & catdat$loc=="NA"){
+  j  <-  !is.na(data$lat) & !is.na(data$lon) & data$loc != "NA" | is.na(data$loc)
+  
+  if(length(j)==length(j[j==FALSE])){
     polygon(c(-100,95,95,-100), c(-10,-10,15,15), col=rgb(0,0,0,240,maxColorValue=255))
     text(-100, 0, expression(paste(bold("Missing coordinate/location"))), col="red", xpd=TRUE, pos=4, cex=0.8)
   } else {
-    for(k in 1:nrow(catdat)){
-      lat=catdat$lat[k]
-      lon=catdat$lon[k]
-      loc=catdat$loc[k]
-      colour=catdat$colour[k]
-      ytxt=catdat$ytxt[k]
-      xtxt=catdat$xtxt[k]
-      
-      if(!is.na(lat) & !is.na(lon) & lat != "" & lon != ""){
-        points(lon, lat, pch=21, col="black", bg=colour, cex=0.9)
-        points(xtxt, ytxt, pch=21, col="black", bg=colour, cex=0.9, xpd=TRUE)
-        if(length(loc)==0 | loc=="NA"){
-          text(xtxt, ytxt, "Missing location information", col="black", xpd=TRUE, pos=4, cex=0.7)
-        } else {
-          text(xtxt, ytxt, paste0(loc, "; lat=", lat, "; lon=", lon), col="black", xpd=TRUE, pos=4, cex=0.7)
-        }  
-        
-      } else {  
-        points(xtxt, ytxt, pch=23, col="black", bg="red", cex=1.2, xpd=TRUE)
-        if(length(loc)==0 | loc=="NA"){
-          text(xtxt, ytxt, "Missing coordinate for some data", col="black", xpd=TRUE, pos=4, cex=0.7)
-        } else {
-          text(xtxt, ytxt, paste0("Missing coordinate for ", loc), col="black", xpd=TRUE, pos=4, cex=0.7)
-        }
-      }
-      
+    if( any(j) ){
+      points(data$lon[j], data$lat[j], pch=19, col="red", bg="red", cex=0.6)
     }
   }
-  if(pdf) 
-    dev.off()
+
+}
+
+repMissingInfo  <-  function(data){
+  j    <-  !is.na(data$lat) & !is.na(data$lon) & data$loc != "NA" | is.na(data$loc)
+  sj   <-  data[j==FALSE,]
+  
+  #location Info
+  k  <-  !is.na(sj$loc) & is.na(sj$lon)
+  if(length(k[k==TRUE]) > 0){
+    cat("Please notice that there is no coordinates for the following location(s):")
+    return(cbind(sj$loc[k]))
+  }
+  #coordinate Info
+  k  <-  !is.na(sj$lon) & is.na(sj$loc) | sj$loc=="NA"
+  if(length(k[k==TRUE]) > 0){
+    cat("Please notice that there is no location information for the following coordinate(s):")
+    return(cbind(lon=sj$lon[k],lat=sj$lat[k]))
+  }
+  #country Info
+  k  <-  !is.na(sj$loc) & is.na(sj$country)
+  if(length(k[k==TRUE]) > 0){
+    cat("Please notice that there is no country information for the following location(s):")
+    return(cbind(sj$loc[k]))
+    cat("The most likely reason is either a missing or wrong coordinate, please revise")
+  }
+}
+
+drawCountryPlot  <-  function(data){
+  mapCountries  <-  unique(data$country)
+  mapCountries  <-  mapCountries[!is.na(mapCountries)]
+  countriesLen  <-  length(mapCountries)
+  ppoint        <-  rep(c(21,22,23,24,25),2)
+  cpoint        <-  c("yellow","blue","darkgreen","red","grey","black","yellow","blue","darkgreen","red")
+  
+  #make map for each country
+  for(g in mapCountries){
+    zeta        <-  data$country==g
+    subC        <-  data[which(zeta==TRUE),]
+    
+    if(nrow(subC) <= 10){
+      
+      par(mfrow=c(1,2), mar=c(4,4,5,1))
+      if(g=="USA"){map("usa")} else {map("worldHires",g)}
+      title(g)
+      subC$group   <-  as.numeric(as.factor(paste0(subC$lon,subC$lat)))
+      subC$cpoint  <-  cpoint[match(subC$group,1:10)]
+      subC$ppoint  <-  ppoint[match(subC$group,1:10)]
+      for(d in unique(subC$group)){
+        subD  <-  subC[subC$group==d,]
+        points(subD$lon[1], subD$lat[1], pch=subD$ppoint[1], col="black", bg=subD$cpoint[1], cex=0.8)
+      }
+      
+      par(mar=c(2,0,2,0))
+      plot(0,0,type="n",axes=FALSE,xlab="",ylab="",xlim=c(0,20),ylim=c(-2,12))
+      for(i in c(10:1)[1:nrow(subC)]){
+        points(0, i, pch=subC$ppoint[which(c(10:1)==i)], col="black", bg=subC$cpoint[which(c(10:1)==i)])
+        text(0.3, i, subC$loc[which(c(10:1)==i)], pos=4, xpd=TRUE, cex=0.8)
+      }    
+    
+    } else {
+      subC$org  <-  as.integer(cut(1:nrow(subC), ceiling(nrow(subC)/10)))
+      for(f in unique(subC$org)){
+        subK         <-  subC[subC$org==f,]
+        
+        par(mfrow=c(1,2), mar=c(4,4,5,1))
+        if(g=="USA"){map("usa")} else {map("worldHires",g)}
+        title(g)
+        subK$group   <-  as.numeric(as.factor(paste0(subK$lon,subK$lat)))
+        subK$cpoint  <-  cpoint[match(subK$group,1:10)]
+        subK$ppoint  <-  ppoint[match(subK$group,1:10)]
+        for(d in unique(subK$group)){
+          subD  <-  subK[subK$group==d,]
+          points(subD$lon[1], subD$lat[1], pch=subD$ppoint[1], col="black", bg=subD$cpoint[1], cex=0.8)
+        }
+        
+        par(mar=c(2,0,2,0))
+        plot(0,0,type="n",axes=FALSE,xlab="",ylab="",xlim=c(0,20),ylim=c(-2,12))
+        for(i in c(10:1)[1:nrow(subK)]){
+          points(0, i, pch=subK$ppoint[which(c(10:1)==i)], col="black", bg=subK$cpoint[which(c(10:1)==i)])
+          text(0.3, i, subK$loc[which(c(10:1)==i)], pos=4, xpd=TRUE, cex=0.8)
+        }    
+      }
+    }
+  }
+}
+
+fam.spec  <-  function(data){
+  spec         <-  data.frame(species=as.character(unique(data$species)), stringsAsFactors=FALSE)
+  for(z in c("family", "pft", "growingCondition", "vegetation")){
+    spec[[z]]  <-  as.character(data[[z]][match(spec$species,data$species)])
+    i          <-  spec[[z]]=="" | is.na(spec[[z]]) 
+    if(any(i)){
+      spec[[z]][i]  <-  paste0("MISSING ", toupper(z), " INFO")
+    }
+  }
+  j            <-  spec$species=="" | is.na(spec$species) 
+  if(any(j)){
+    spec$species[j]  <-  "MISSING SPECIES INFO"
+  }
+  spec
 }
 
 
