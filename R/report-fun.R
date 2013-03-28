@@ -54,8 +54,8 @@ writeEmail<-function(d, fileName=paste("output/Email.txt", sep='')){
 }
 
 
-makePlotPanel<-function(data, study, dir="report", col="grey", pdf=TRUE){
-  cat("This is how the study", study, "fits in the entire dataset distribution")
+makePlotPanel<-function(data, study, dir="report", col="grey", pdf=TRUE, quiet=FALSE){
+  if(!quiet)cat("This is how the study", study, "fits in the entire dataset distribution")
   
   if(pdf){    
     path<-paste0("output/", dir)

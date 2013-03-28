@@ -7,12 +7,10 @@ Data for `r length(.dat$data$dataset)` individuals from `r length(unique(.dat$da
 Number of records for each variable
 -----------------------------------
 
-```{r echo=FALSE}
+```{r echo=FALSE, comment=''}
 counts  <-  apply(!is.na(.dat$data), MARGIN=2, FUN = sum)
 counts  <-  counts[counts>0]  #only include no zeros
 counts  <-  counts[names(counts)%in%var.def$Variable[var.def$Group=="tree"]]
-```
-```{r echo=FALSE}
 cbind(counts)
 ```
 
@@ -20,7 +18,7 @@ cbind(counts)
 More details
 ------------------------------------
 
-### Please analyse if points on the map match locations and coordinates  
+### Please check if the points on the map match locations and coordinates  
 
 ```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE, warning=FALSE}
 prepdata  <-  prepMapInfo(alldata$data, study)
@@ -41,15 +39,18 @@ drawCountryPlot(prepdata)
 ### Species - please provide any missing information
 
 The dataset includes `r length(unique(.dat$data$species))` species belonging to `r length(unique(.dat$data$family))` families, presenting `r length(unique(.dat$data$pft))` functional types, growing in `r length(unique(.dat$data$growingCondition))` conditions within `r length(unique(.dat$data$vegetation))` major types of habitat:
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
 fam.spec(.dat$data)
 ```
 
 
 Plot of data
 ---------------------------------
+
+This is how the study `r .study` (red symbols) fits in the entire dataset.
+
 ```{r fig.height=8, fig.width=8, echo=FALSE, warning=FALSE, message=FALSE}
-makePlotPanel(d$data, .study, pdf=FALSE)
+makePlotPanel(d$data, .study, pdf=FALSE, quiet=TRUE)
 ```
 
 

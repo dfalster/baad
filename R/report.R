@@ -29,7 +29,7 @@ writeEmail(d)
 
 
 ## NEW: markdown report.
-# Need package 'knitr' installed
+# Need package 'knitr' installed (added to packages.R; RAD)
 studyReportMd(d, "Ishihara0000")
 studyReportMd(d, "Aiba2007")
 studyReportMd(d, "Bond-Lamberty2002")
