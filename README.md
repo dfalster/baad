@@ -29,15 +29,13 @@
 
 Diego has written some functions to help create the above files. 
 
-1. First create a file `dataImportOptions.csv` for each new study
-    makeDataImport(newStudyName) 
+1. First create a file `dataImportOptions.csv` for each new study using `makeDataImport(newStudyName)` 
 
 2. Then enter arguments in the `dataImportOptions.csv` files just created. Does the new data need to skip row, does it have a header? 
 
-3. Then make the remaining files
-	setUpFiles(newStudyName)
+3. Then make the remaining files: `setUpFiles(newStudyName)`
 
-4. Fill in values for `dataMatchColumns.csv`, `dataManipulate.R`, `dataNew.csv`,  `studyContact.csv`, 'questions.txt', `StudyRef.csv`.
+4. Fill in values for `dataMatchColumns.csv`, `dataManipulate.R`, `dataNew.csv`,  `studyContact.csv`, `questions.txt`, `StudyRef.csv`.
   
 
 # Setting up git repository on local machine#
