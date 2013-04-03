@@ -256,7 +256,6 @@ spLevelInfo  <-  function(data){
 }
 
 printMeta  <-  function(data){
-  browser()
   dataset   <-  as.character(unique(data$dataset))
   openMeta  <-  read.csv(paste0("../",dir.rawData,"/",dataset,"/studyMetadata.csv"), h=TRUE, stringsAsFactors=FALSE)
   openMeta

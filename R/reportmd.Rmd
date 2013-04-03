@@ -67,7 +67,11 @@ spLevelInfo(.dat$data)
 
 ### Method - please provide any missing information/follow template
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
-printMeta(.dat$data)
+metaTable  <-  printMeta(.dat$data)
+for(j in 1:nrow(metaTable)){
+  cat(paste0(metaTable[j,1], ": ", metaTable[j,2], "\n"))
+}
+
 ```
 
 Plot of data
