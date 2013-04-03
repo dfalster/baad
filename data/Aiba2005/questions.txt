@@ -1,1 +1,1 @@
-1. I see in your paper that you provide an average value for canopy openness [average 5.9 +- 0.7%], however we did not get individual information. Would you be willing to share individual-based that in case you have it?
+I see in your paper that you provide an average value for canopy openness [average 5.9 +- 0.7%], however we did not get individual information. Would you be willing to share individual-based info in case you have it?

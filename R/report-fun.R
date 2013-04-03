@@ -92,12 +92,12 @@ prepMapInfo<-function(data, study){
   data   <-  data.frame(lat=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][1]}))),
                         lon=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][2]}))),
                         loc=as.character(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][3]}))),
+                        country=NA,
                         stringsAsFactors=FALSE)
   i      <-  !is.na(data$lat) | !is.na(data$lon)
   if( any(i) ){
-    data$country[i]  <-  map.where(x=data$lon[i], y=data$lat[i])
-  }
-  data$country       <-  as.character(unlist(lapply(data$country, function(x){strsplit(x,":")[[1]][1]})))
+    data$country[i]  <-  as.character(strsplit(map.where(x=data$lon[i], y=data$lat[i]),":")[[1]][1])
+  }  
 
   #final object
   data
@@ -208,23 +208,60 @@ drawCountryPlot  <-  function(data){
   }
 }
 
-fam.spec  <-  function(data){
+locLevelInfo  <-  function(data){
+  loc  <-  unique(paste(data$location, data$map, data$mat, data$longitude, data$latitude, data$vegetation, sep=";"))
+  loc  <-  data.frame(Location=as.character(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][1]}))),
+                      MAP=as.numeric(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][2]}))),
+                      MAT=as.numeric(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][3]}))),
+                      Longitude=as.numeric(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][4]}))),
+                      Latitude=as.numeric(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][5]}))),
+                      Vegetation_Type=as.character(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][6]}))),
+                      stringsAsFactors=FALSE)
+  
+  loc[is.na(loc) | loc=="" | loc=="NA"]  <-  "????"  
+  loc
+}
+
+
+standLevelInfo  <-  function(data){
+  sta  <-  unique(paste(data$location, data$grouping, data$growingCondition, data$status, sep="&T&"))
+  sta  <-  data.frame(Location=as.character(unlist(lapply(sta, function(x){strsplit(x,"&T&")[[1]][1]}))),
+                      Grouping=as.character(unlist(lapply(sta, function(x){strsplit(x,"&T&")[[1]][2]}))),
+                      Growing_condition=as.character(unlist(lapply(sta, function(x){strsplit(x,"&T&")[[1]][3]}))),
+                      Status=as.character(unlist(lapply(sta, function(x){strsplit(x,"&T&")[[1]][4]}))),
+                      stringsAsFactors=FALSE)
+  
+  if(length(which(is.na(sta$Grouping)==TRUE))==length(sta$Grouping)){
+    sta  <-  sta[,c("Location", "Growing_condition", "Status")]
+  }
+  sta[is.na(sta) | sta=="" | sta=="NA"]  <-  "????"  
+  sta
+}
+
+
+spLevelInfo  <-  function(data){
   spec         <-  data.frame(species=as.character(unique(data$species)), stringsAsFactors=FALSE)
-  for(z in c("family", "pft", "growingCondition", "vegetation")){
+  for(z in c("family", "pft")){
     spec[[z]]  <-  as.character(data[[z]][match(spec$species,data$species)])
     i          <-  spec[[z]]=="" | is.na(spec[[z]]) 
     if(any(i)){
-      spec[[z]][i]  <-  paste0("MISSING ", toupper(z), " INFO")
+      spec[[z]][i]  <-  "????"
     }
   }
   j            <-  spec$species=="" | is.na(spec$species) 
   if(any(j)){
-    spec$species[j]  <-  "MISSING SPECIES INFO"
+    spec$species[j]  <-  "????"
   }
   spec
 }
 
-
+printMeta  <-  function(data){
+  browser()
+  dataset   <-  as.character(unique(data$dataset))
+  openMeta  <-  read.csv(paste0("../",dir.rawData,"/",dataset,"/studyMetadata.csv"), h=TRUE, stringsAsFactors=FALSE)
+  openMeta
+}
+  
 is.wholenumber <-  function(x, tol = .Machine$double.eps^0.5)  abs(x - round(x)) < tol
 
 
@@ -279,3 +316,16 @@ niceColors<-function(n=80){
   cols<-c("#75954F","#D455E9","#E34423","#4CAAE1","#451431","#5DE737","#DC9B94","#DC3788","#E0A732","#67D4C1","#5F75E2","#1A3125","#65E689","#A8313C","#8D6F96","#5F3819","#D8CFE4","#BDE640","#DAD799","#D981DD","#61AD34","#B8784B","#892870","#445662","#493670","#3CA374","#E56C7F","#5F978F","#BAE684","#DB732A","#7148A8","#867927","#918C68","#98A730","#DDA5D2","#456C9C","#2B5024","#E4D742","#D3CAB6","#946661","#9B66E3","#AA3BA2","#A98FE1","#9AD3E8","#5F8FE0","#DF3565","#D5AC81","#6AE4AE","#652326","#575640","#2D6659","#26294A","#DA66AB","#E24849","#4A58A3","#9F3A59","#71E764","#CF7A99","#3B7A24","#AA9FA9","#DD39C0","#604458","#C7C568","#98A6DA","#DDAB5F","#96341B","#AED9A8","#55DBE7","#57B15C","#B9E0D5","#638294","#D16F5E","#504E1A","#342724","#64916A","#975EA8","#9D641E","#59A2BB","#7A3660","#64C32A")
   cols[1:n]
 }
+
+
+#creates html reports using knitr
+studyReportMd <- function(alldata, study=NULL){
+  
+  .study <- study
+  .dat <- extractThisStduy(alldata, study)
+  
+  library(knitr)
+  suppressMessages(knit2html("R/reportmd.Rmd", output=paste0("output/reportmd/",.study,"-report.html")))
+  
+}
+

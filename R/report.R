@@ -3,7 +3,6 @@ rm(list=ls())
 source('R/Biomass-fun.R')
 source('R/import-fun.R')
 source('R/report-fun.R')
-source('R/reportfun-markdown.R')
 source('R/packages.R')
 
 #names of all studies
@@ -33,6 +32,8 @@ writeEmail(d)
 studyReportMd(d, "Ishihara0000")
 studyReportMd(d, "Aiba2007")
 studyReportMd(d, "Bond-Lamberty2002")
+
+l  <-  lapply(studyNames, function(x){studyReportMd(d, x)})
 
 ##
 writeLines(sprintf('%s,', getContributors(d)$name))

@@ -1,7 +1,21 @@
 Report for study: `r .study`
 ========================================================
 
+Study reference: `r .dat$ref`
+
+Study contact: `r .dat$contact$name`.
+
+Contact email: `r .dat$contact$email`.
+
+Contact address: `r .dat$contact$address`.
+
+
+Data description
+-----------------------------------
+
 Data for `r length(.dat$data$dataset)` individuals from `r length(unique(.dat$data$location))` locations covering `r length(unique(.dat$data$species))` species.
+
+The dataset includes `r length(unique(.dat$data$species))` species belonging to `r length(unique(.dat$data$family))` family(ies), presenting `r length(unique(.dat$data$pft))` functional type(s), growing in `r length(unique(.dat$data$growingCondition))` condition(s) within `r length(unique(.dat$data$vegetation))` major type(s) of habitat:
 
 
 Number of records for each variable
@@ -36,13 +50,25 @@ drawCountryPlot(prepdata)
 
 
 
-### Species - please provide any missing information
-
-The dataset includes `r length(unique(.dat$data$species))` species belonging to `r length(unique(.dat$data$family))` families, presenting `r length(unique(.dat$data$pft))` functional types, growing in `r length(unique(.dat$data$growingCondition))` conditions within `r length(unique(.dat$data$vegetation))` major types of habitat:
+### Location level - please provide any missing information
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
-fam.spec(.dat$data)
+locLevelInfo(.dat$data)
 ```
 
+### Stand level - please provide any missing information
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+standLevelInfo(.dat$data)
+```
+
+### Species level - please provide any missing information
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+spLevelInfo(.dat$data)
+```
+
+### Method - please provide any missing information/follow template
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+printMeta(.dat$data)
+```
 
 Plot of data
 ---------------------------------

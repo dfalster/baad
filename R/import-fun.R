@@ -245,7 +245,8 @@ processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
     source(filename, local=TRUE)
   
   #add studyname to dataset
-  data<- cbind(raw, dataset=studyName, stringsAsFactors=FALSE)
+  data<-raw
+  data$dataset=studyName
   
   #convert units and variable names, add methods variables
   if (verbose) cat("convert units ")

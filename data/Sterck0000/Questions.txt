@@ -1,7 +1,1 @@
 Could you please specify the species in this dataset?
-What about the location?
-What growing condition? Field wild, Glass house, Plantation managed or unmanaged
-What is the vegetation type? Tropical rainforest, temperate rainforest, temperate forest, seasonal tropical rainforest, grassland?
-Do you have coordinates for the site?
-Mean annual temperature (in celsius)?
-Mean annual precipitation (in mm)?
