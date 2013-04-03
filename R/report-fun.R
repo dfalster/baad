@@ -1,4 +1,6 @@
 
+library(knitr)
+
 getContributors<-function(data){  
   data$contact[!duplicated(d$contact$name),]
 }
@@ -318,13 +320,22 @@ niceColors<-function(n=80){
 
 
 #creates html reports using knitr
-studyReportMd <- function(alldata, study=NULL){
+studyReportMd <- function(alldata, study=NULL, Dir="report", delete=TRUE){
   
   .study <- study
   .dat <- extractThisStduy(alldata, study)
   
-  library(knitr)
-  suppressMessages(knit2html("R/reportmd.Rmd", output=paste0("output/reportmd/",.study,"-report.html")))
+  #Check output directory exists
+  path<-paste0("output/", Dir)
+  if(!file.exists(path)) dir.create(path)
   
+  suppressMessages(knit2html("R/reportmd.Rmd", output=paste0(path,"/",.study,"-report.html")))
+  
+  #delete support files
+  if(delete){
+    unlink("reportmd.md")
+    unlink("figure", recursive=TRUE) 
+  }
+         
 }
 
