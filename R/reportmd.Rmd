@@ -1,25 +1,21 @@
-Report for study: `r .study`
-========================================================
+# Report for study: `r .study`
 
-Study reference: `r .dat$ref`
+**Reference:** `r .dat$ref[2]`
 
-Study contact: `r .dat$contact$name`.
+**Data contributor:** `r .dat$contact$name`.
 
-Contact email: `r .dat$contact$email`.
+**Email:** `r .dat$contact$email`.
 
-Contact address: `r .dat$contact$address`.
+**Address:** `r .dat$contact$address`.
 
-
-Data description
------------------------------------
+## Overview of data provided
 
 Data for `r length(.dat$data$dataset)` individuals from `r length(unique(.dat$data$location))` locations covering `r length(unique(.dat$data$species))` species.
 
 The dataset includes `r length(unique(.dat$data$species))` species belonging to `r length(unique(.dat$data$family))` family(ies), presenting `r length(unique(.dat$data$pft))` functional type(s), growing in `r length(unique(.dat$data$growingCondition))` condition(s) within `r length(unique(.dat$data$vegetation))` major type(s) of habitat:
 
 
-Number of records for each variable
------------------------------------
+### Number of records for each variable
 
 ```{r echo=FALSE, comment=''}
 counts  <-  apply(!is.na(.dat$data), MARGIN=2, FUN = sum)
@@ -29,19 +25,23 @@ cbind(counts)
 ```
 
 
-More details
-------------------------------------
+## Study details
 
-### Please check if the points on the map match locations and coordinates  
+### Location
+
+**Location dtaa**
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+locLevelInfo(.dat$data)
+```
+
+**Global map**
 
 ```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE, warning=FALSE}
 prepdata  <-  prepMapInfo(alldata$data, study)
 drawWorldPlot (prepdata)
 ```
 
-
-
-### Please analyse if points on country map match locations and coordinates  
+**Country map**
 
 ```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE, warning=FALSE}
 repMissingInfo(prepdata)
@@ -49,33 +49,28 @@ drawCountryPlot(prepdata)
 ```
 
 
+**Stand description**
 
-### Location level - please provide any missing information
-```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
-locLevelInfo(.dat$data)
-```
-
-### Stand level - please provide any missing information
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
 standLevelInfo(.dat$data)
 ```
 
-### Species level - please provide any missing information
+### Species data
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
 spLevelInfo(.dat$data)
 ```
 
-### Method - please provide any missing information/follow template
+### Methods
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
 metaTable  <-  printMeta(.dat$data)
 for(j in 1:nrow(metaTable)){
-  cat(paste0(metaTable[j,1], ": ", metaTable[j,2], "\n"))
+  cat(paste0(metaTable[j,1], ": ", metaTable[j,2], "\n\n"))
 }
 
 ```
 
-Plot of data
----------------------------------
+## Plots of data
 
 This is how the study `r .study` (red symbols) fits in the entire dataset.
 

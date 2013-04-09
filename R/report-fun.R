@@ -1,6 +1,4 @@
 
-library(knitr)
-
 getContributors<-function(data){  
   data$contact[!duplicated(d$contact$name),]
 }
