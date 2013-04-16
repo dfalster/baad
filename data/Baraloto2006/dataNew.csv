@@ -1,7 +1,7 @@
 "lookupVariable","lookupValue","newVariable","newValue","source"
 NA,NA,"growingCondition","GH","from paper[D Barneche]"
 NA,NA,"longitude","-52.65034","from paper[D Barneche]"
-NA,NA,"latitude","5.159944","from paper[D Barneche]"
+NA,NA,"latitude","5.13","from paper[D Barneche]"
 NA,NA,"vegetation","TropRF","from paper[D Barneche]"
 NA,NA,"location","INRA, Kourou, French Guiana","from paper[D Barneche]"
 "species","Gg","family","Goupiaceae","from paper[D Falster]"

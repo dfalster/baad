@@ -64,44 +64,46 @@ makePlotPanel<-function(data, study, dir="report", col="grey", pdf=TRUE, quiet=F
     pdf(file=paste0(path,"/", study,".pdf"))
   }
   
+  dat        <-  data[data$dataset==study,]
+  plot.vars  <-  var.def$Variable[var.def$Group=="tree"]
+  plot.vars  <-  plot.vars[plot.vars %in% c("growingCondition","status","light") == FALSE]
+  available  <-  dat[,names(dat) %in% plot.vars]   
+  available  <-  apply(available,2,as.numeric)
+  available  <-  available[,!is.na(colSums(available))]
+  
+  #set up a vector of colors, each species with different color
+  species  <-  as.numeric(as.factor(dat$species))
+  species  <-  species - (min(species)-1)
+  colorvec <-  sample(colors()[-grep("grey",colors())],max(unique(species)))
+  colorvec <-  colorvec[match(species, unique(species))]
+  
   par(mfrow=c(2,2))
-  makePlot(data, study, col=col, xvar = "h.t", yvar = "m.lf",  xlab="height (m)", ylab= "leaf mass (kg)", main = study)
-  makePlot(data, study, col=col, xvar = "h.t", yvar = "a.lf",  xlab="height (m)", ylab= expression(paste("leaf area (",m^2,")")))
-  makePlot(data, study, col=col, xvar = "h.t", yvar = "m.st",  xlab="height (m)", ylab= "stem mass (kg)")
-  makePlot(data, study, col=col, xvar = "m.lf", yvar = "m.st",  xlab="leaf mass (kg)", ylab= "stem mass (kg)")  
+  z  <- 0
+  for(j in 1:(dim(available)[2]-1)){
+    varjx  <-  paste0(var.def$label[var.def$Variable==colnames(available)[j]], " (", var.def$Units[var.def$Variable==colnames(available)[j]], ")")
+    
+    for(k in (j+1):dim(available)[2]){
+      z  <-  z + 1
+      if(z==5){par(mfrow=c(2,2)); z  <- 1}
+      varjy  <-  paste0(var.def$label[var.def$Variable==colnames(available)[k]], " (", var.def$Units[var.def$Variable==colnames(available)[k]], ")")
+      makePlot(data, available, studycol=colorvec, xvar = colnames(available)[j], yvar = colnames(available)[k],  xlab=varjx, ylab=varjy)
+    }
+  }
+  
   if(pdf) 
     dev.off()
 }
 
-makePlot<-function(data, study, xvar, yvar, xlab, ylab, main="", col="grey"){
-  i<-(study==data$dataset)
-  plot(data[,xvar], data[,yvar], log="xy", col = col, xlab=xlab, ylab= ylab, main= main, las=1, yaxt="n", xaxt="n")
+makePlot<-function(data, subset, xvar, yvar, xlab, ylab, main="", maincol="grey", studycol){
+  
+  plot(data[,xvar], data[,yvar], log="xy", col = maincol, xlab=xlab, ylab= ylab, main= main, las=1, yaxt="n", xaxt="n")
   
   #add nice log axes
   axis.log10(1) 
   axis.log10(2)
   
   #add data for select study, highlighted in red
-  points(data[i,xvar], data[i,yvar], col = "red")  
-}
-
-prepMapInfo<-function(data, study){
-  
-  data   <-  data[study==data$dataset,]
-  coord  <-  unique(paste0(data$latitude,";", data$longitude, ";", data$location))  
-  data   <-  data.frame(lat=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][1]}))),
-                        lon=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][2]}))),
-                        loc=as.character(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][3]}))),
-                        country=NA,
-                        stringsAsFactors=FALSE)
-  i      <-  !is.na(data$lat) | !is.na(data$lon)
-  if( any(i) ){
-    data$country[i]  <-  as.character(strsplit(map.where(x=data$lon[i], y=data$lat[i]),":")[[1]][1])
-  }  
-
-  #final object
-  data
-  
+  points(subset[,xvar], subset[,yvar], col = studycol)  
 }  
 
 drawWorldPlot  <-  function(data){
@@ -131,7 +133,7 @@ repMissingInfo  <-  function(data){
   #location Info
   k  <-  !is.na(sj$loc) & is.na(sj$lon)
   if(length(k[k==TRUE]) > 0){
-    cat("Please notice that there is no coordinates for the following location(s):")
+    cat("Please notice that there are no coordinates for the following location(s):")
     return(cbind(sj$loc[k]))
   }
   #coordinate Info
