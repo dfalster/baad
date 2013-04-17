@@ -1,4 +1,3 @@
-
 getContributors<-function(data){  
   data$contact[!duplicated(d$contact$name),]
 }
@@ -24,7 +23,7 @@ studyReport<-function(alldata, study="all"){
   counts<-counts[counts>0]  #only include no zeros
   #only include tree variables
   (counts<-counts[names(counts)%in%var.def$Variable[var.def$Group=="tree"]])
-
+  
   cat("\nMORE DETAIL:\n")  
   cat("\nSITES:\n")  
   cat("\nprint information for each site, ie. ", var.def$Variable[var.def$Group=="site"])  
@@ -38,7 +37,7 @@ studyReport<-function(alldata, study="all"){
   makePlotPanel(alldata$data, study, pdf=FALSE)
   
 }
-  
+
 
 #Reporting 2013.03.01
 writeEmail<-function(d, fileName=paste("output/Email.txt", sep='')){
@@ -69,27 +68,28 @@ makePlotPanel<-function(data, study, dir="report", col="grey", pdf=TRUE, quiet=F
   plot.vars  <-  plot.vars[plot.vars %in% c("growingCondition","status","light") == FALSE]
   available  <-  dat[,names(dat) %in% plot.vars]   
   available  <-  apply(available,2,as.numeric)
-  available  <-  available[,!is.na(colSums(available))]
+  available  <-  available[,colSums(available, na.rm=TRUE) != 0]
   
   #set up a vector of colors, each species with different color
   species  <-  as.numeric(as.factor(dat$species))
-  species  <-  species - (min(species)-1)
-  colorvec <-  sample(colors()[-grep("grey",colors())],max(unique(species)))
+  if(min(species)!=1){species  <-  species - (min(species)-1)}
+  colorvec <-  niceColors(length(unique(species)))
   colorvec <-  colorvec[match(species, unique(species))]
   
   par(mfrow=c(2,2))
   z  <- 0
   for(j in 1:(dim(available)[2]-1)){
-    varjx  <-  paste0(var.def$label[var.def$Variable==colnames(available)[j]], " (", var.def$Units[var.def$Variable==colnames(available)[j]], ")")
-    
     for(k in (j+1):dim(available)[2]){
-      z  <-  z + 1
-      if(z==5){par(mfrow=c(2,2)); z  <- 1}
-      varjy  <-  paste0(var.def$label[var.def$Variable==colnames(available)[k]], " (", var.def$Units[var.def$Variable==colnames(available)[k]], ")")
-      makePlot(data, available, studycol=colorvec, xvar = colnames(available)[j], yvar = colnames(available)[k],  xlab=varjx, ylab=varjy)
+      testNa  <-  available[,j]+available[,k]
+      if(length(testNa[!is.na(testNa)]) != 0){
+        z  <-  z + 1
+        if(z==5){par(mfrow=c(2,2)); z  <- 1}
+        varjx  <-  paste0(var.def$label[var.def$Variable==colnames(available)[j]], " (", var.def$Units[var.def$Variable==colnames(available)[j]], ")")
+        varjy  <-  paste0(var.def$label[var.def$Variable==colnames(available)[k]], " (", var.def$Units[var.def$Variable==colnames(available)[k]], ")")
+        makePlot(data, available, studycol=colorvec, xvar = colnames(available)[j], yvar = colnames(available)[k],  xlab=varjx, ylab=varjy)
+      }
     }
-  }
-  
+  }  
   if(pdf) 
     dev.off()
 }
@@ -104,6 +104,25 @@ makePlot<-function(data, subset, xvar, yvar, xlab, ylab, main="", maincol="grey"
   
   #add data for select study, highlighted in red
   points(subset[,xvar], subset[,yvar], col = studycol)  
+}  
+
+prepMapInfo<-function(data, study){
+  
+  data   <-  data[study==data$dataset,]
+  coord  <-  unique(paste0(data$latitude,";", data$longitude, ";", data$location))  
+  data   <-  data.frame(lat=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][1]}))),
+                        lon=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][2]}))),
+                        loc=as.character(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][3]}))),
+                        country=NA,
+                        stringsAsFactors=FALSE)
+  i      <-  !is.na(data$lat) | !is.na(data$lon)
+  if( any(i) ){
+    data$country[i]  <-  as.character(strsplit(map.where(x=data$lon[i], y=data$lat[i]),":")[[1]][1])
+  }  
+  
+  #final object
+  data
+  
 }  
 
 drawWorldPlot  <-  function(data){
@@ -123,7 +142,7 @@ drawWorldPlot  <-  function(data){
       points(data$lon[j], data$lat[j], pch=19, col="red", bg="red", cex=0.6)
     }
   }
-
+  
 }
 
 repMissingInfo  <-  function(data){
@@ -182,7 +201,7 @@ drawCountryPlot  <-  function(data){
         points(0, i, pch=subC$ppoint[which(c(10:1)==i)], col="black", bg=subC$cpoint[which(c(10:1)==i)])
         text(0.3, i, subC$loc[which(c(10:1)==i)], pos=4, xpd=TRUE, cex=0.8)
       }    
-    
+      
     } else {
       subC$org  <-  as.integer(cut(1:nrow(subC), ceiling(nrow(subC)/10)))
       for(f in unique(subC$org)){
@@ -233,7 +252,7 @@ standLevelInfo  <-  function(data){
                       Status=as.character(unlist(lapply(sta, function(x){strsplit(x,"&T&")[[1]][4]}))),
                       stringsAsFactors=FALSE)
   
-  if(length(which(is.na(sta$Grouping)==TRUE))==length(sta$Grouping)){
+  if(length(which(is.na(sta$Grouping)==TRUE))==length(sta$Grouping) | length(which(sta$Grouping=="NA"))==length(sta$Grouping)){
     sta  <-  sta[,c("Location", "Growing_condition", "Status")]
   }
   sta[is.na(sta) | sta=="" | sta=="NA"]  <-  "????"  
@@ -262,7 +281,7 @@ printMeta  <-  function(data){
   openMeta  <-  read.csv(paste0("../",dir.rawData,"/",dataset,"/studyMetadata.csv"), h=TRUE, stringsAsFactors=FALSE)
   openMeta
 }
-  
+
 is.wholenumber <-  function(x, tol = .Machine$double.eps^0.5)  abs(x - round(x)) < tol
 
 
@@ -336,6 +355,61 @@ studyReportMd <- function(alldata, study=NULL, Dir="report", delete=TRUE){
     unlink("reportmd.md")
     unlink("figure", recursive=TRUE) 
   }
-         
+  
 }
 
+generateDataNew  <-  function(data, studyName){
+  dat     <-  data[data$dataset %in% studyName, ]
+  if(is.na(as.character(unique(dat$location)))){
+    nloc  <-  NA
+  } else {
+    nloc  <-  length(as.character(unique(dat$location)))
+  }
+  datnew  <-  data.frame()
+  
+  if(is.na(nloc)){
+    datnew  <-  data.frame(lookupVariable="",lookupValue="",newVariable=c("location","latitude","longitude","map","mat","vegetation","growingCondition","status"),newValue="",source="",stringsAsFactors=FALSE)
+  } else {
+    for(j in 1:nloc){
+      ob   <-  as.character(unique(dat$location)[j])
+      su   <-  dat[dat$location==ob,c("latitude","longitude","map","mat","vegetation","growingCondition","status")]
+      t    <-  sapply(su,function(x){length(x)==length(x[is.na(x)])})
+      if(length(names(su)[t]) > 0){
+        for(k in names(su)[t]){
+          datnew  <-  rbind(datnew, data.frame(lookupVariable="location",lookupValue=ob,newVariable=k,newValue="",source="",stringsAsFactors=FALSE))
+        }
+      } else {
+        datnew  <-  rbind(datnew, data.frame(lookupVariable="location",lookupValue="",newVariable="",newValue="",source="",stringsAsFactors=FALSE))
+      }
+    }
+  }
+  
+  spp  <-  as.character(unique(dat$species))
+  fam  <-  as.character(dat$family[match(spp,dat$species)])
+  pft  <-  as.character(dat$pft[match(spp,dat$species)])
+  
+  a  <-  is.na(fam)
+  if(any(a)){
+    datnew  <-  rbind(datnew, data.frame(lookupVariable="species",lookupValue=spp[a],newVariable="family",newValue="",source="",stringsAsFactors=FALSE))
+  }  
+  a  <-  is.na(pft)
+  if(any(a)){
+    datnew  <-  rbind(datnew, data.frame(lookupVariable="species",lookupValue=spp[a],newVariable="pft",newValue="",source="",stringsAsFactors=FALSE))
+  }
+  
+  tdir  <-  paste0(dir.Emails, "/", studyName)
+  if(!file.exists(tdir)){
+    dir.create(tdir)
+  }
+  write.csv(datnew, paste0(dir.Emails, "/", studyName, "/dataNew.csv"))
+  
+}
+
+
+emailFiles  <-  function(data, studyName){
+  contact    <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyContact.csv"), h=TRUE,stringsAsFactors=FALSE)
+  reference  <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.csv"), h=TRUE,stringsAsFactors=FALSE)
+  write.csv(contact, paste0(dir.Emails,"/",studyName,"/studyContact.csv"))
+  write.csv(reference, paste0(dir.Emails,"/",studyName,"/studyRef.csv"))
+  write.csv(var.def, paste0(dir.Emails,"/",studyName,"/Variable_definitions.csv"))
+}

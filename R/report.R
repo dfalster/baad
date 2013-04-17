@@ -26,6 +26,11 @@ studyReport(d, "Ishihara0000")
 
 writeEmail(d)
 
+#create dataNew.csv files for authors to fill in
+z  <-  lapply(studyNames, function(x){generateDataNew(d$data, x)})
+
+#for each study, put variable.definition, contactInfo and Reference in the email folder
+y  <-  lapply(studyNames, function(x){emailFiles(d$data, x)})
 
 ## NEW: markdown report.
 # Need package 'knitr' installed (added to packages.R; RAD)

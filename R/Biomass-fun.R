@@ -2,6 +2,7 @@
 #set directories for study
 dir.rawData   <-  "data" 
 dir.cleanData <-  "output/data"
+dir.Emails    <-  "output/email"
 if(!file.exists(dir.cleanData)){
   ## Creates output directory if does not already exist 
   dir.create("output")
