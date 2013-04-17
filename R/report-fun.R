@@ -397,6 +397,9 @@ generateDataNew  <-  function(data, studyName){
     datnew  <-  rbind(datnew, data.frame(lookupVariable="species",lookupValue=spp[a],newVariable="pft",newValue="",source="",stringsAsFactors=FALSE))
   }
   
+  if(!file.exists(dir.Emails))
+    dir.create(dir.Emails)
+  
   tdir  <-  paste0(dir.Emails, "/", studyName)
   if(!file.exists(tdir)){
     dir.create(tdir)
