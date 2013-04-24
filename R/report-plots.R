@@ -14,4 +14,4 @@ d  <-  addStudies(studyNames, reprocess = FALSE, verbose = FALSE)
 #Explore
 alldata  <-  d$data
 
-comparePlots(alldata, pdf=TRUE)
+comparePlots(alldata)
