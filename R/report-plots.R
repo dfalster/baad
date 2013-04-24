@@ -1,6 +1,7 @@
 rm(list=ls())
 source('R/Biomass-fun.R')
 source('R/import-fun.R')
+source('R/report-per-study-fun.R')
 source('R/report-plots-fun.R')
 source('R/packages.R')
 
