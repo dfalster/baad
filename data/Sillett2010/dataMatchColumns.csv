@@ -4,7 +4,7 @@
 "Dbh (cm)","","cm","d.bh",NA
 "Dry mass (Mg)","m1","Mg","m.so",NA
 "Heartwood area (m2)","j,m1","m2","a.shbh",NA
-"Bark area (m2)","j,m1","m2","a.babh",NA
+"Bark area (m2)","j,m1","cm2","a.babh",NA
 "Leaf dry mass (kg)","m1","kg","m.lf",NA
 "Tree",NA,NA,"species",NA
 "Heartwood volume (m3)",NA,NA,NA,NA
