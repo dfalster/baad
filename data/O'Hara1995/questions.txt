@@ -1,0 +1,1 @@
+It seems that the units you provided for leaf area might be wrong. You provided m2 but we suspect it may be cm2. Could you please double-check this information? The original indicates m2 indeed, but maybe the original dataset is expressed in cm2?
