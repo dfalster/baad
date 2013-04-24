@@ -13,8 +13,7 @@ a  <-  lapply(newStudies, makeDataImport)
 #after doing that, create all the files necessary for the data processing
 b  <-  lapply(newStudies, setUpFiles)
 
-dir.rawData   <-  "ready-for-import"
-d<-addStudies(newStudies, reprocess = FALSE, verbose = TRUE)
+d  <-  addStudies(newStudies, reprocess = TRUE, verbose = TRUE)
 
 
 
