@@ -1,4 +1,4 @@
-comparePlots<-function(alldata, dir="report/pairwise_plots", col="grey", pdf=FALSE){
+comparePlots<-function(alldata, dir="plot-report/pairwise_plots", col="grey", pdf=FALSE){
   
   plot.vars  <-  var.def$Variable[var.def$Group=="tree"]
   plot.vars  <-  plot.vars[plot.vars %in% c("growingCondition","status","light") == FALSE]
