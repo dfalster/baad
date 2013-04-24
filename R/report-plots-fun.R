@@ -7,7 +7,7 @@ comparePlots<-function(alldata, dir="plot-report", col="grey", pdf=TRUE){
   available  <-  available[,colSums(available, na.rm=TRUE) != 0]
   
   par(mfrow=c(2,2))
-  z  <- 0
+  
   for(j in 1:(dim(available)[2]-1)){
     
     for(k in (j+1):dim(available)[2]){
@@ -22,7 +22,8 @@ comparePlots<-function(alldata, dir="plot-report", col="grey", pdf=TRUE){
             dir.create(path)
           pdf(file=paste0(path,"/", colnames(available)[j],"-vs-",colnames(available)[k],".pdf"))
         }
-        
+
+        z  <- 0
         for(g in as.character(unique(alldata$dataset))){
           subdata  <-  available[alldata$dataset==g,]
           testNa   <-  subdata[,j]+subdata[,k]
