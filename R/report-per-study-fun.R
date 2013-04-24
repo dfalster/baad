@@ -53,7 +53,7 @@ writeEmail<-function(d, fileName=paste("output/Email.txt", sep='')){
 }
 
 
-makePlotPanel<-function(data, study, dir="report", col="grey", pdf=TRUE, quiet=FALSE){
+makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRUE, quiet=FALSE){
   if(!quiet)cat("This is how the study", study, "fits in the entire dataset distribution")
   
   if(pdf){    
@@ -339,7 +339,7 @@ niceColors<-function(n=80){
 
 
 #creates html reports using knitr
-studyReportMd <- function(alldata, study=NULL, Dir="report", delete=TRUE){
+studyReportMd <- function(alldata, study=NULL, Dir="report-per-study", delete=TRUE){
   
   .study <- study
   .dat <- extractThisStduy(alldata, study)
