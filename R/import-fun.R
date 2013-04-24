@@ -87,12 +87,14 @@ setUpFiles  <-  function(newStudy){
     write.csv(contact, paste0(dir.rawData,"/",newStudy,"/studyContact.csv"), row.names=FALSE)
   }
   
-  #creates and writes studyMetadata.txt
-  cat("creates studyMetadata.txt ")
-  filename  <-  paste0(dir.rawData, "/", newStudy, "/studyMetadata.txt")
+  #creates and writes studyMetadata.csv
+  cat("creates studyMetadata.csv ")
+  filename  <-  paste0(dir.rawData, "/", newStudy, "/studyMetadata.csv")
   if(!file.exists(filename)){
-    metadat  <-  ""
-    write(metadat, paste0(dir.rawData,"/",newStudy,"/studyMetadata.txt"))
+    metadat  <-  data.frame(Topic=c("Sampling strategy", "Leaf area", "Stem cross sectional area", "Height", "Crown area", "Biomass", "traits", "Growth environment", "Other variables"),
+                            Description=c("Please provide a brief description of the sampling strategy used in this paper (up to 4 sentences)", rep("Please provide ...",8)),
+                            stringsAsFactors=FALSE)    
+    write(metadat, paste0(dir.rawData,"/",newStudy,"/studyMetadata.csv"))
   }
   
   #creates and writes studyRef.csv
