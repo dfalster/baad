@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
 "DBH","","cm","d.bh",NA
 "Height","","cm","h.t",NA
-"Crown.depth","","m","c.d",NA
+"Crown.depth","","cm","c.d",NA
 "Crown.Projection.Area","a","m2","a.cp",NA
 "Stem.mass","","g","m.st",NA
 "Total.leaf.mass","","g","m.lf",NA

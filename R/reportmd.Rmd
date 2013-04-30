@@ -29,8 +29,9 @@ cbind(counts)
 
 ### Location
 
-**Location dtaa**
+**Location data**
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+options(width =160)
 locLevelInfo(.dat$data)
 ```
 
@@ -72,10 +73,10 @@ for(j in 1:nrow(metaTable)){
 
 ## Plots of data
 
-This is how the study `r .study` (red symbols) fits in the entire dataset.
+This is how the study `r .study` (each color represents a species) fits in the entire dataset (grey).
 
 ```{r fig.height=8, fig.width=8, echo=FALSE, warning=FALSE, message=FALSE}
-makePlotPanel(d$data, .study, pdf=FALSE, quiet=TRUE)
+makePlotPanel(alldata$data, .study, pdf=FALSE, quiet=TRUE)
 ```
 
 

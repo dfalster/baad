@@ -7,7 +7,7 @@
 "m.t","","kg","m.to",NA
 "m.lf","","kg","m.lf",NA
 "d.st","a2","kg.m3","d.st",NA
-"lf.ma","a3","kg.m2","lf.ma",NA
+"lf.ma","a3","g.m2","lf.ma",NA
 "a.cp","","m2","a.cp",NA
 "species",NA,NA,NA,NA
 "treatment",NA,NA,"grouping",NA

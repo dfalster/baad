@@ -3,7 +3,7 @@ spdataset,NA,NA,NA,NA
 dataset,NA,NA,NA,NA
 wrong.sp,NA,NA,NA,NA
 age,NA,yr,age,NA
-dbh,NA,m,d.bh,NA
+dbh,NA,cm,d.bh,NA
 sapbh,NA,NA,NA,NA
 sapcb,NA,NA,NA,NA
 h_t,NA,m,h.t,NA
