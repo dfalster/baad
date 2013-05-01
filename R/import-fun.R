@@ -302,33 +302,14 @@ readRawData<-function(studyName){
   #   dataframe
   
   #import options for data file
-  import <-  read.csv(paste0(dir.rawData,"/",studyName,"/dataImportOptions.csv"), 
-                      h=FALSE, row.names=1, stringsAsFactors=FALSE, strip.white=TRUE)   
-  
-  # Specify na.strings, optional
-  if("na.strings" %in% rownames(import)){
-    nastr <- import['na.strings',]
-    # make na.strings numeric if it looks like it should be
-    if(!is.na(as.numeric(nastr)))nastr <- as.numeric(nastr)
-    nastr <- c(NA,nastr) # and add NA, the default missing string.    
-  } else
-    nastr <- NA
-  
-  #allow custom fileEncoding if specified, optional
-  if("fileEncoding" %in% rownames(import)){
-    fileEncoding <- as.character(import['fileEncoding',])    
-  } else {
-    fileEncoding <- ""  #default 
-  }
+  import <- readImport(studyName)
   
   #read in the original .csv
-  raw     <-  read.csv(paste0(dir.rawData,"/",studyName,"/",import['name',]), 
-                       h=(import['header',]=="TRUE"), 
-                       skip=as.numeric(import['skip',]), 
-                       na.strings=nastr, check.names=FALSE,
-                       stringsAsFactors=FALSE, strip.white=TRUE, 
-                       fileEncoding =fileEncoding)
-  raw
+  read.csv(file.path(dir.rawData, studyName, import$name),
+           header=import$header, skip=import$skip,
+           fileEncoding=import$fileEncoding,
+           na.strings=import$na.strings, check.names=FALSE,
+           stringsAsFactors=FALSE, strip.white=TRUE)
 }
 
 addAllColumns<-function(data){
@@ -458,6 +439,24 @@ makeGroups <-function(data, varNames){
 #creates name of file to store processed data
 studyDataFile<-function(studyName){
   paste0(dir.cleanData,"/", studyName, ".csv", sep="")
+}
+
+readImport <- function(studyName) {
+  filename <- file.path(dir.rawData, studyName, "dataImportOptions.csv")
+  if (!file.exists(filename))
+    stop(sprintf("Import options file does not exist (expected at %s)",
+                 filename))
+  tmp <- read.csv(filename, header=FALSE, row.names=1,
+                  stringsAsFactors=FALSE)
+
+  defaults <- list(na.strings="NA", fileEncoding="")
+  import <- modifyList(defaults,
+                       structure(as.list(tmp[[1]]), names=rownames(tmp)))
+  import$header <- as.logical(import$header)
+  import$skip <- as.integer(import$skip)
+  if ( !("NA" %in% import$na.strings) )
+    import$na.strings <- c("NA", import$na.strings)
+  import
 }
 
 #Conversion functions - converts unit before the dot into the unit after it
