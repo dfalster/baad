@@ -6,6 +6,26 @@ processAllStudies <- function(reprocess=FALSE, verbose=FALSE,
   invisible(d)
 }
 
+#' Adds studies to the central dataset
+#'
+#' @param studyNames Character vector of study names to be added
+#' @param data If provided, will add studies to this dataframe
+#' @param reprocess If TRUE, will reprocess studies even if they already exist in the data directory
+#' @param replace If TRUE, replaces data from the same dataset, if it exists
+#' @param verbose If TRUE, print tsages to screen, good for isolating problems  
+#' @return merged list with three parts: data, reference, contact,
+#'    each is a dataframe with all data combined.
+#' @keywords misc
+#' @export
+addStudies <- function(studyNames, data=NULL, reprocess= FALSE,
+                       replace=FALSE, verbose=FALSE) {
+  d <- lapply(studyNames, loadStudy, reprocess=reprocess,
+              verbose=verbose)
+  for (i in seq_along(studyNames))
+    data <- addStudy(d[[i]], oldData=data, replace=replace)
+  data
+}
+
 #first create a dataImportOptions.csv for each new study
 makeDataImport  <-  function(newStudy){
   impo      <-  data.frame(name=c("header","skip"),data.csv=c(TRUE,0),row.names=NULL)
@@ -128,41 +148,6 @@ setUpFiles  <-  function(newStudy, quiet=FALSE){
 
 
 
-#' Adds studies to the central dataset
-#'
-#' @param studyNames Character vector of study names to be added
-#' @param data If provided, will add studies to this dataframe
-#' @param reprocess If TRUE, will reprocess studies even if they already exist in the data directory
-#' @param replace If TRUE, replaces data from the same dataset, if it exists
-#' @param verbose If TRUE, print tsages to screen, good for isolating problems  
-#' @param browse (To be removed) for debugging purposes
-#' @return A dataframe with all data combined
-#' @keywords misc
-#' @export
-addStudies<-function(studyNames, data=NULL, reprocess= FALSE, replace=FALSE, verbose=FALSE, browse=FALSE){
-  # merge data from studyNames with existing 'data'    
-  #
-  # Args: 
-  #   data: existing data
-  #   reprocess: force data to be reprocessed
-  #   replace: replace data from same dataset, if it exists
-  #   verbose: print tsages to screen, good for isolating problems  
-  #   browse: starts browser
-  #
-  # Returns:
-  #   merged list with three parts: data, reference, contact
-  
-  N <- length(studyNames) #number of studies
-  
-  if (N>0){    
-    #load data from each study as 
-    d<-lapply(studyNames, loadStudy, reprocess=reprocess, verbose = verbose) 
-    #merge data from each list into existing data
-    for (i in 1:N)
-      data<-addStudy(d[[i]], oldData=data, replace=replace)
-  }
-  data
-}
 
 
 loadStudy<-function(studyName, reprocess= FALSE, verbose=FALSE, browse=FALSE){
