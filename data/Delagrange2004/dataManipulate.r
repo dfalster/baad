@@ -1,3 +1,3 @@
-raw$grouping             <-  paste(raw[["Group"]], "; Last perturbation = ", raw[["Last perturbation"]], sep="")    
+raw$grouping             <- makeGroups(raw, c("Group", "Last perturbation"))
 
 

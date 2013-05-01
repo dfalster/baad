@@ -8,7 +8,9 @@ source('R/packages.R')
 studyNames     <-  getStudyNames()
 
 #import data
-d  <-  addStudies(studyNames, reprocess = FALSE, verbose = FALSE)
+d  <-  addStudies(studyNames, reprocess = TRUE, verbose = FALSE)
+unique(d$data$grouping)
+
 
 #create dataNew.csv files for authors to fill in
 z  <-  lapply(studyNames, function(x){generateDataNew(d$data, x)})
@@ -21,3 +23,9 @@ studyReportMd(d, "Ilomaki2003")
 studyReportMd(d, "Parviainen1999")
 
 l  <-  lapply(studyNames, function(x){studyReportMd(d, x)})
+
+
+#
+name<-
+d  addStudies(studyNames, reprocess = TRUE, verbose = FALSE)
+

@@ -418,6 +418,18 @@ convertData<-function(studyName,data){
   data
 }
 
+
+#Paste together list of varNames and their values, used for aggregating varnames into "grouping" variable
+makeGroups <-function(data, varNames){
+  
+  #if name does not exist stop with error message
+  checkNameExists<-!(varNames %in% names(data))
+  if(any(checkNameExists))
+    stop(paste("Variable ", varNames[checkNameExists], " not found, called in dataManipulate.R"))
+ 
+  apply(cbind(data[,varNames]), 1, function(x)paste(varNames,"=",x,collapse="; "))  
+}
+
 #creates name of file to store processed data
 studyDataFile<-function(studyName){
   paste0(dir.cleanData,"/", studyName, ".csv", sep="")

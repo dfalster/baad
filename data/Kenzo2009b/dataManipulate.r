@@ -1,2 +1,2 @@
-raw$grouping  <-  paste(raw[["location"]], raw[["contributor"]], sep="; ")
+raw$grouping  <-  makeGroups(raw, c("location", "contributor"))
 
