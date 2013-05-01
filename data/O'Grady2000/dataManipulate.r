@@ -1,2 +1,2 @@
-raw$grouping  <-  paste("Site = ", raw[["SITE"]], sep="")
+raw$grouping  <-  makeGroups(raw, c("SITE"))
 

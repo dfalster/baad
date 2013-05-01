@@ -7,7 +7,8 @@
 
 ## Getting email sent
 
-* How to automate emails - applescript or bash to gmail, direct or via Mailplane or Apple mail (Rich)
+* How to automate emails - applescript or bash to gmail, direct or via
+  Mailplane or Apple mail (Rich) [done]
 * Review variable list, names and definitions (Remko and Daniel)
 * Write email (Daniel)
 * Process for managing "stage" of project
@@ -51,3 +52,27 @@
 
 * Entries from Jeff Kelly data in shared dropbox folder
 * Duursma 2012
+
+
+## Changes required after revising variable list
+
+Remove vegetation type for any non-field grown plants
+
+Fix lai values that are text
+
+Mark MAP, MAT, family, as "user" supplied, then populate from standardised data (world clim)
+
+Conifer leaf area - define ideal, then implement it. 
+ - check all studies with conifers to standardise measurements
+
+Check methods variables for h.c
+
+Check branch mass and determine consistent definition and check implemented this way
+
+Delete c.d variable, for these studies ensure h.c is calculated correctly (Aiba2005       Delagrange2004 Osada0000      Osada2003      Osada2005      Osunkoya2007   Petritan2009   Sterck0000)
+
+Change leaf N to per mass
+
+In variableDefinitions file, change Variables with NewName given in column, need to change throughout whole directory, i.e. all dataMatchColumns.csv 
+
+

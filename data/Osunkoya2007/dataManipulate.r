@@ -1,2 +1,2 @@
-raw$grouping  <-  paste(raw[["Tree_no"]], raw[["growth_form"]], sep="; ")
+raw$grouping  <-  makeGroups(raw, c("Tree_no","growth_form"))
 

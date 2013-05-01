@@ -1,2 +1,2 @@
-raw$grouping  <-  paste(raw[["wood.type"]], raw[["collection.site"]], raw[["sample"]], sep="; ")
+raw$grouping  <-  makeGroups(raw, c("wood.type", "collection.site", "sample"))
 

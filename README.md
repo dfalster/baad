@@ -44,12 +44,11 @@ Diego has written some functions to help create the above files.
 Add the following text to .git/config
 This must be done on **each clone**
 
+```
 [filter "cr"]
-
     clean =  tr '\\r' '\\n'
-
     smudge = tr '\\n' '\\r'
-
+```
 
 # writing reports using knitr #
 
@@ -60,7 +59,9 @@ See introductory material here
 
 Turn any script into a report
 
-    `system.file("misc", "knitr-template.Rmd", package = "knitr")`
+```
+    system.file("misc", "knitr-template.Rmd", package = "knitr")
+```
 
 Use whisker package to generate new Rmd files for each study
 
