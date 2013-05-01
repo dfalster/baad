@@ -1,3 +1,4 @@
 "name","data.csv"
 "header",TRUE
 "skip",1
+"na.strings","#DIV/0!"
