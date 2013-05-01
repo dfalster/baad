@@ -22,9 +22,7 @@
 "Density of stem sapwood","","kg.m3","d.ss",NA
 "Density of stem heartwood","","kg.m3","d.sh",NA
 "Density of stem tissue","","kg.m3","d.st",NA
-"Density of stem sapwood","","kg.m3","d.ss",NA
 "Density of stem bark","","kg.m3","d.sb",NA
-"Density of stem heartwood","","kg.m3","d.sh",NA
 "Leaf nitrogen","","kg.m2","n.lf",NA
 "Sapwood nitrogen","","kg.kg","n.ss",NA
 "Bark nitrogen","","kg.kg","n.sb",NA
