@@ -15,7 +15,7 @@
 "N.sa","","per","n.ss",""
 "N.ht","","per","n.sh",""
 "N.ba","","per","n.sb",""
-"N.lf","","cm2.g","n.lf","multiplied the poriginal percentage with LMA and then converting the units in R"
+"N.lf","","kg.m2","n.lf","multiplied the poriginal percentage with LMA and then converting the units in R"
 "spp",NA,NA,"species",NA
 "Filter",NA,NA,NA,NA
 "age",NA,NA,NA,NA
