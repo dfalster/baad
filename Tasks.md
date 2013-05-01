@@ -46,6 +46,17 @@
 * Check references for Kenzo 2009
 * Mistake in Rodriguez2003/dataManipulate.r crown classes are all the same??. Fix and move to dataNew.csv
 * McCulloh2010 - check we are only taking largest individual, as rest are branch level data
+* Does stem mass, i.e., 'm.st', include branch mass? Our definition of m.st is the sum of heartwood mass (m.sh), sapwood mass (m.ss) and bark mass (m.sh). Some studies, e.g., Ilomaki2003, have both m.st and another stem measure that excludes branch mass.
+* check the dataset from Epron2012, there is something wrong with h.t, a.cp and/or a.cs the data do not match.
+* Plots to check out with Remko (possible outliers):
+	 - a.cp-vs-h.c = Aiba2007
+	 - a.cp-vs-lf.sz = Osada2003,Osada2005,Peri's papers
+	 - a.cp-vs-m.st = Albretkson1984
+	 - a.cs-vs-d.st = both plots
+	 - a.lf-vs-a.ssbc = I can't tell what could be wrong, sorry
+	 - a.ssbc-vs-h.t = which one is likely to be wrong?
+	 - a.ssbc-vs-h.c = same as above
+
 
 ## Other data to import
 
