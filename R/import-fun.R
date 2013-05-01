@@ -1,3 +1,10 @@
+## Process all the data.
+processAllStudies <- function(reprocess=FALSE, verbose=FALSE,
+                              replace=FALSE) {
+  d <- addStudies(getStudyNames(), reprocess=reprocess, verbose=verbose,
+                  replace=replace)
+  invisible(d)
+}
 
 #first create a dataImportOptions.csv for each new study
 makeDataImport  <-  function(newStudy){
