@@ -10,7 +10,7 @@
 "SLA","","cm2.g","lf.ma",NA
 "LMA","","g.m2","lf.ma",NA
 "LAI","","m2.m2","lai",NA
-"D0","","mm","d.ba",NA
+"D0","","cm","d.ba",NA
 "light.ISF","li4","-","light",NA
 "light.DSF","li4","-","light",NA
 "light.GSF","li4","-","light",NA

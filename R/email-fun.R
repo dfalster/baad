@@ -16,7 +16,7 @@
 ##        c("daniel.falster@mq.edu.au", "daniel@falsters.net"),
 ##        "rich.fitzjohn@gmail.com",
 ##        bcc=c("fitzjohn@zoology.ubc.ca", "dfalster@bio.mq.edu.au"),
-##        files="R/email.R", send=TRUE)
+##        files="R/email.R", send=FALSE)
 ## 
 ## If 'from' is omitted, Mail uses whatever Cmd-N would use.
 ## 

@@ -1,0 +1,1 @@
+Is wood density measured in g/l? We suspect it may be in kg/l?

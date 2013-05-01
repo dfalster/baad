@@ -1,0 +1,1 @@
+Does sapwood area (cm2) contain the right units? It seems that your study falls outside the general trend, so we would appreciate if you could double-check that information.
