@@ -1,6 +1,6 @@
 ## Process all the data.
-processAllStudies <- function(reprocess=FALSE, verbose=FALSE,
-                              replace=FALSE) {
+processAllStudies <- function(reprocess=FALSE, replace=FALSE,
+                              verbose=FALSE) {
   d <- addStudies(getStudyNames(), reprocess=reprocess, verbose=verbose,
                   replace=replace)
   invisible(d)
@@ -12,7 +12,7 @@ processAllStudies <- function(reprocess=FALSE, verbose=FALSE,
 #' @param data If provided, will add studies to this dataframe
 #' @param reprocess If TRUE, will reprocess studies even if they already exist in the data directory
 #' @param replace If TRUE, replaces data from the same dataset, if it exists
-#' @param verbose If TRUE, print tsages to screen, good for isolating problems  
+#' @param verbose If TRUE, print messages to screen, good for isolating problems  
 #' @return merged list with three parts: data, reference, contact,
 #'    each is a dataframe with all data combined.
 #' @keywords misc
@@ -25,6 +25,28 @@ addStudies <- function(studyNames, data=NULL, reprocess= FALSE,
     data <- addStudy(d[[i]], oldData=data, replace=replace)
   data
 }
+
+##' Load data from specified studyName
+##'
+##' @param studyName: name of folder where data stored
+##' @param reprocess: force data to be reprocessed
+##' @param verbose: print tsages to screen, good for isolating problems  
+##' @param browse: starts browser
+##' @return list with three parts: data, reference, contact
+##' @export
+loadStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
+                      browse=FALSE) {
+  if (verbose)
+    cat(studyName, " ")
+
+  if (!file.exists(studyDataFile(studyName)) || reprocess)
+    processStudy(studyName, verbose=verbose, browse=browse)
+  
+  list(data=readDataClean(studyName),
+       ref=readReference(studyName),
+       contact=readContact(studyName))
+}
+
 
 #first create a dataImportOptions.csv for each new study
 makeDataImport  <-  function(newStudy){
@@ -150,40 +172,6 @@ setUpFiles  <-  function(newStudy, quiet=FALSE){
 
 
 
-loadStudy<-function(studyName, reprocess= FALSE, verbose=FALSE, browse=FALSE){
-  # loads data from specified studyName
-  #
-  # Args: 
-  #   studyName: name of folder where data stored
-  #   reprocess: force data to be reprocessed
-  #   verbose: print tsages to screen, good for isolating problems  
-  #   browse: starts browser
-  #
-  # Returns:
-  #   list with three parts: data, reference, contact
-  
-  if (verbose) cat(studyName, " ")
-  
-  #name of cleaned data file
-  filename<-studyDataFile(studyName)
-  
-  #Check if cleaned datafile exists, if not create it
-  if (!file.exists(filename) | reprocess)
-    processStudy(studyName, verbose=verbose, browse=browse)
-  
-  study<-list()
-  
-  #Read cleaned data file
-  study$data<-read.csv(filename, header=TRUE, stringsAsFactors=FALSE)
-  
-  #Read reference
-  study$ref<-data.frame(dataset = studyName, read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.csv"), h= TRUE, stringsAsFactors=FALSE, strip.white = TRUE))
-  
-  #Read contacts
-  study$contact<-data.frame(dataset = studyName, read.csv(paste0(dir.rawData,"/",studyName,"/studyContact.csv"), h= TRUE, stringsAsFactors=FALSE, strip.white = TRUE ))
-  
-  study  
-}
 
 addStudy<-function(newData, oldData=NULL, replace=FALSE){
   # merge data from newData with oldData    
@@ -497,3 +485,24 @@ mmol.N.m2.kg.m2  <-  function(x){x*14e-6} #from mmol of nitrogen/m2 to kg/m2
 Mg.kg            <-  function(x){x/1000} #from megagrams (Mg) to kg
 g.l.kg.m3        <-  function(x){x} #from grams/litre to kg/m3
 kg.l.kg.m3        <-  function(x){x*1000} #from kilograms/litre to kg/m3
+
+data.path <- function(studyName, ...)
+  file.path(dir.rawData, studyName, ...)
+
+readReference <- function(studyName) {
+  ref <- read.csv(data.path(studyName, "studyRef.csv"),
+                  header=TRUE, stringsAsFactors=FALSE,
+                  strip.white=TRUE)
+  data.frame(dataset=studyName, ref)
+}
+
+readContact <- function(studyName) {
+  contact <- read.csv(data.path(studyName,"studyContact.csv"),
+                      header=TRUE, stringsAsFactors=FALSE,
+                      strip.white=TRUE)
+  data.frame(dataset = studyName, contact)
+}
+
+readDataClean <- function(studyName)
+  read.csv(studyDataFile(studyName), header=TRUE,
+           stringsAsFactors=FALSE)
