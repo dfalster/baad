@@ -348,11 +348,14 @@ studyReportMd <- function(alldata, study=NULL, Dir="report-per-study", delete=TR
   path<-paste0("output/", Dir)
   if(!file.exists(path)) dir.create(path)
   
-  suppressMessages(knit2html("R/reportmd.Rmd", output=paste0(path,"/",.study,"-report.html")))
+  suppressMessages(knit2html("R/reportmd.Rmd"))
+  
+  file.copy("reportmd.html", paste0(path,"/",.study,"-report.html"))
   
   #delete support files
   if(delete){
     unlink("reportmd.md")
+    unlink("reportmd.html")
     unlink("figure", recursive=TRUE) 
   }
   
