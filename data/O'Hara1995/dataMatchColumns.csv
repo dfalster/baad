@@ -1,10 +1,10 @@
 "var_in","method","unit_in","var_out","notes"
 "h.t","","m","h.t",NA
-"a.st","","cm2","a.stbh",NA
+"a.st","","m2","a.stbh",NA
 "h.c","","m","h.c",NA
-"a.ss1","","cm2","a.ssbh",NA
-"a.lf","c","cm2","a.lf",NA
-"a.ss2","","cm2","a.ssbc",NA
+"a.ss1","","m2","a.ssbh",NA
+"a.lf","c","m2","a.lf",NA
+"a.ss2","","m2","a.ssbc",NA
 "status",NA,NA,NA,NA
 "species",NA,NA,NA,NA
 "pft",NA,NA,NA,NA

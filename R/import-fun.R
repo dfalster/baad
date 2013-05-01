@@ -219,7 +219,16 @@ addStudy<-function(newData, oldData=NULL, replace=FALSE){
   }
 }
 
-
+#' Binds two dataframes together
+#' 
+#' @param dfr first dataframe
+#' @param dfr2 second dataframe
+#' @param checkColumn checks for matches between drf1 and dfr2 in a column with this name
+#' @param add add new instances of checkColumn, even if they already exist
+#' @param replace replace instances of checkColumn if they already exist
+#' @return A dataframe
+#' @export
+#' @keywords misc
 Rbind<-function(dfr1, dfr2, checkColumn = "dataset", add=FALSE, replace=FALSE){
   # Binds two dataframes togther
   # 
@@ -502,3 +511,4 @@ cm2.kg.kg.m2     <-  function(x){1000/x} #from cm2/kg to kg/m2
 mmol.N.m2.kg.m2  <-  function(x){x*14e-6} #from mmol of nitrogen/m2 to kg/m2
 Mg.kg            <-  function(x){x/1000} #from megagrams (Mg) to kg
 g.l.kg.m3        <-  function(x){x} #from grams/litre to kg/m3
+kg.l.kg.m3        <-  function(x){x*1000} #from kilograms/litre to kg/m3

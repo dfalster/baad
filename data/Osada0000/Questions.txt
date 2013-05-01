@@ -1,0 +1,1 @@
+Is diameter at base measured in mm? We suspect it may be in cm? Would you mind double-checking it?
