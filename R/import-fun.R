@@ -1,5 +1,4 @@
 
-
 #first create a dataImportOptions.csv for each new study
 makeDataImport  <-  function(newStudy){
   impo      <-  data.frame(name=c("header","skip"),data.csv=c(TRUE,0),row.names=NULL)
