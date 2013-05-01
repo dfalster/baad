@@ -374,6 +374,22 @@ addNewData<-function(studyName, data){
   data
 }
 
+readMatchColumns <- function(studyName) {
+  filename <- file.path(dir.rawData, studyName, "dataMatchColumns.csv")
+  var.match <- read.csv(filename, header=TRUE, stringsAsFactors=FALSE,
+                        na.strings=c("NA", ""))
+
+  ## TODO: var.def is global
+  nameIsOK <- (var.match$var_out[!is.na(var.match$var_out)] %in%
+               var.def$Variable)
+  if (any(!nameIsOK))
+    stop("Incorrect name in var_out columns of dataMatchColumns.csv for ",
+         studyName, "--> ",
+         paste(var.match$var_out[!nameIsOK], collapse=", "))
+  var.match
+}
+
+
 convertData<-function(studyName,data){
   #convert data to desired format, changing units, variable names
   #
@@ -384,12 +400,7 @@ convertData<-function(studyName,data){
   #   modified data frame
   
   #load variable matching table
-  var.match <- read.csv(paste0(dir.rawData,"/",studyName,"/dataMatchColumns.csv"),h=TRUE,stringsAsFactors=FALSE,na.strings=c("NA",""))
-  
-  #Check all names in table are allowed
-  nameIsOK<-var.match$var_out[!is.na(var.match$var_out)] %in% var.def$Variable
-  if (any(!nameIsOK))
-    stop("Incorrect name in var_out columns of dataMatchColumns.csv for ", studyName, "--> ", var.match$var_out[!nameIsOK])
+  var.match <- readMatchColumns(studyName)
   
   #Find the column numbers in the data that need to be checked out for conversion, only check columns 
   selec  <-  match(names(data), var.match$var_in[!is.na(var.match$var_out)]) 
@@ -397,7 +408,8 @@ convertData<-function(studyName,data){
     a  <-  which(selec==a)
     #rename variables
     var.in   <-  names(data)[a] #variable that goes in
-    var.out  <-  var.match$var_out[var.match$var_in==var.in & !is.na(var.match$var_in)] #variable that goes out   
+    var.out  <-  var.match$var_out[var.match$var_in==var.in &
+                                   !is.na(var.match$var_in)]
     names(data)[a] <-  var.out #resets the name of a particular variable to the standardised form
     
     #change units, only for numeric variables 
