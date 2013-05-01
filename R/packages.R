@@ -1,3 +1,5 @@
 library(maps)
 library(mapdata)
 library(knitr)
+library(bibtex)
+library(gdata)

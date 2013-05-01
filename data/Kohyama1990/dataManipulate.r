@@ -1,2 +1,1 @@
-raw$grouping  <-  paste(raw[["Year"]], raw[["#"]], sep="; ")
-
+raw$grouping  <-  makeGroups(raw, c("Year", "#"))

@@ -1,1 +1,1 @@
-raw$grouping  <-  paste0("plot number ", raw[["plot_ID"]], "; subplot_ID number ", raw[["Subplot_ID"]])
+raw$grouping  <-  makeGroups(raw, c("plot_ID", "Subplot_ID"))
