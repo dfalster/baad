@@ -42,9 +42,64 @@ loadStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
   if (!file.exists(studyDataFile(studyName)) || reprocess)
     processStudy(studyName, verbose=verbose, browse=browse)
   
-  list(data=readDataClean(studyName),
+  list(data=readDataProcessed(studyName),
        ref=readReference(studyName),
        contact=readContact(studyName))
+}
+
+## TODO: Roxygenise(?)
+# Processes raw data from studyName, for incorporation into main dataset.
+# Fixes column names, variable names, imports new data, makes standard dataframe
+#
+# Args: 
+# 
+# Returns:
+#     transformed data saved in file output/data/studyName.csv
+processStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
+                         browse=FALSE) {
+  if (verbose) cat(studyName, " ")
+  
+  outputName <- studyDataFile(studyName)
+  if (file.exists(outputName)) {
+    if ( reprocess )
+      file.remove(outputName)
+    else
+      return(invisible())
+  }
+  
+  #call browser if required
+  if (browse)
+    browser()
+  
+  #read original data from file
+  if (verbose) cat("load data ")
+  raw <- readRawData(studyName)
+  
+  #Manipulate data where needed
+  if (verbose) cat("manipulate data ")
+  filename <- data.file(studyName, "dataManipulate.R")
+  if (file.exists(filename))
+    source(filename, local=TRUE)
+  
+  #add studyname to dataset
+  data<-raw
+  data$dataset <- studyName
+  
+  #convert units and variable names, add methods variables
+  if (verbose) cat("convert units ")
+  data<-convertData(studyName, data)
+  
+  #Remove / add columns to mirror those in final database
+  if (verbose) cat("add/remove columns ")
+  data <- addAllColumns(data)
+  
+  #import new data, if available
+  if (verbose) cat("import new data ")
+  data <- addNewData(studyName, data)
+  
+  #write data to file
+  if (verbose) cat("write to file ")
+  write.csv(data, outputName, row.names=FALSE)
 }
 
 
@@ -232,54 +287,6 @@ Rbind<-function(dfr1, dfr2, checkColumn = "dataset", add=FALSE, replace=FALSE){
   rbind(dfr1, dfr2)    
 }
 
-processStudy<-function(studyName, verbose=FALSE, browse=FALSE){
-  # Processes raw data from studyName, for incorporation into main dataset.
-  # Fixes column names, variable names, imports new data, makes standard dataframe
-  #
-  # Args: 
-  # 
-  # Returns:
-  #     transformed data savef in file output/data/studyName.csv
-  
-  if (verbose) cat(studyName, " ")
-  
-  #delete existing output file, if exists
-  outputName<-studyDataFile(studyName)
-  if (file.exists(outputName)) file.remove(outputName)  
-  
-  #call browser if required
-  if (browse) browser()
-  
-  #read original data from file
-  if (verbose) cat("load data ")
-  raw<-readRawData(studyName) 
-  
-  #Manipulate data where needed
-  if (verbose)  cat("manipulate data ")
-  filename<-paste0(dir.rawData,"/",studyName,"/dataManipulate.R")
-  if (file.exists(filename))
-    source(filename, local=TRUE)
-  
-  #add studyname to dataset
-  data<-raw
-  data$dataset=studyName
-  
-  #convert units and variable names, add methods variables
-  if (verbose) cat("convert units ")
-  data<-convertData(studyName, data)
-  
-  #Remove / add columns to mirror those in final database
-  if (verbose) cat("add/remove columns ")
-  data<-addAllColumns(data)
-  
-  #import new data, if available
-  if (verbose) cat("import new data ")
-  data<-addNewData(studyName, data)
-  
-  #write data to file
-  if (verbose) cat("write to file ")
-  write.csv(data, outputName, row.names=FALSE)
-}
 
 readRawData<-function(studyName){
   # Load raw data from studyName
@@ -503,6 +510,7 @@ readContact <- function(studyName) {
   data.frame(dataset = studyName, contact)
 }
 
-readDataClean <- function(studyName)
+readDataProcessed <- function(studyName)
   read.csv(studyDataFile(studyName), header=TRUE,
            stringsAsFactors=FALSE)
+
