@@ -2,18 +2,16 @@
 
 formatBib <- function(bibfile,
                       initialSep=".",
-                      fieldSep="."
+                      fieldSep=". "
                       ){
   
   require(gdata)
-  
-  r <- require(bibtex)
-  if(!r)stop("Need bibtex package!")
+  require(bibtex)
   
   b <- unclass(read.bib(bibfile))[[1]]
   
   
-  # strip html tags:
+  # strip html tags in title (typically <i> etc.):
   tit <- gsub("<.+?>","",b$title)
   
   
@@ -28,19 +26,27 @@ formatBib <- function(bibfile,
     paste0(paste(x, collapse=initialSep),initialSep)
     }))
   
+  # author names
   p <- paste(family, initials, collapse=", ")
   
-  lastChar <- substr(p, nchar(p),nchar(p))
-  if(lastChar != fieldSep)p <- paste0(p, fieldSep)
+  # field separator, unless it is identical to the initial separator
+  if(trim(fieldSep) != trim(initialSep))
+    p <- paste0(p, fieldSep)
+  else
+    p <- paste0(p, " ")
   
-  p <- paste0(p, " ")
+  # year
+  p <- paste0(p, b$year, fieldSep)
   
-  p <- paste0(p, b$year, fieldSep," ")
+  # title
+  p <- paste0(p, tit, fieldSep)
   
-  p <- paste0(p, tit, fieldSep, " ")
+  # journal name
+  p <- paste0(p, b$journal, fieldSep)
   
-  p <- paste0(p, b$journal, fieldSep, " ")
+  # not sure how often this happens ... double '-'
   
+  # volume and page numbers
   pag <- gsub("--","-",b$pages)
   p <- paste0(p, b$volume,":",pag)
   
