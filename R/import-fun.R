@@ -21,9 +21,7 @@ addStudies <- function(studyNames, data=NULL, reprocess= FALSE,
                        replace=FALSE, verbose=FALSE) {
   d <- lapply(studyNames, loadStudy, reprocess=reprocess,
               verbose=verbose)
-  for (i in seq_along(studyNames))
-    data <- addStudy(d[[i]], oldData=data, replace=replace)
-  data
+  mergeStudies(d)
 }
 
 ##' Load data from specified studyName
@@ -223,70 +221,12 @@ setUpFiles  <-  function(newStudy, quiet=FALSE){
   }
 }
 
-
-
-
-
-
-addStudy<-function(newData, oldData=NULL, replace=FALSE){
-  # merge data from newData with oldData    
-  #
-  # Args: 
-  #   newData: new data to be included
-  #   replace: replace data from same dataset, if it exists
-  #
-  # Returns:
-  #   merged list with three parts: data, reference, contact
-  
-  if (length(oldData)==0) {
-    return(newData)
-  } else {
-    for(var in c("data", "ref", "contact"))
-      oldData[[var]]<-Rbind(oldData[[var]], newData[[var]], replace=replace)
-    return(oldData)
-  }
+mergeStudies <- function(list) {
+  vars <- c("data", "ref", "contact")
+  f <- function(v)
+    do.call(rbind, lapply(list, "[[", v))
+  structure(lapply(vars, f), names=vars)
 }
-
-#' Binds two dataframes together
-#' 
-#' @param dfr first dataframe
-#' @param dfr2 second dataframe
-#' @param checkColumn checks for matches between drf1 and dfr2 in a column with this name
-#' @param add add new instances of checkColumn, even if they already exist
-#' @param replace replace instances of checkColumn if they already exist
-#' @return A dataframe
-#' @export
-#' @keywords misc
-Rbind<-function(dfr1, dfr2, checkColumn = "dataset", add=FALSE, replace=FALSE){
-  # Binds two dataframes togther
-  # 
-  # Args: 
-  #   dfr1: first dataframe
-  #   dfr2: second dataframe
-  #   checkColumn: checks for matches between drf1 and dfr2 in a column with this name
-  #   add: add new instances of checkColumn, even if they already exist
-  #   replace: replace instances of checkColumn if they already exist
-  # 
-  # Returns:
-  #   merged dataframe
-  
-  #check column names match, if not print an error
-  if (any(names(dfr1) != names(dfr2))){
-    cat("Column names do not match in rbind\n\n")
-    cat(names(dfr1), "\n\n", names(dfr2), "\n\n", names(dfr1) == names(dfr2), "\n\n")
-  }
-  
-  #check data does not already exist
-  if (!replace & !add & any(dfr1[, checkColumn] %in% dfr2[, checkColumn]))
-    stop("Attempting to add data when allready exists for ", checkColumn)
-  
-  #Remove existing data if required
-  if (replace)
-    dfr1<-dfr1[!(dfr1[, checkColumn] %in% dfr2[, checkColumn]),]
-  
-  rbind(dfr1, dfr2)    
-}
-
 
 readRawData<-function(studyName){
   # Load raw data from studyName
@@ -451,8 +391,8 @@ makeGroups <-function(data, varNames){
 }
 
 #creates name of file to store processed data
-studyDataFile<-function(studyName){
-  paste0(dir.cleanData,"/", studyName, ".csv", sep="")
+studyDataFile <- function(studyName) {
+  file.path(dir.cleanData, paste0(studyName, ".csv"))
 }
 
 readImport <- function(studyName) {
