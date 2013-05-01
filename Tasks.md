@@ -34,6 +34,15 @@
        r <- gsub("raw","rawdata",r)
      writeLines(r, fn[i])
     }
+	
+* Check input files (make function to do this routinely, perhaps as
+  the project files are updated).
+ - order of column names should correspond
+ - no dupicate column names
+ - no NA values in var_in (e.g., was in O'Hara0000)
+  This is harder than it looks because things like "Genus" are
+  sometimes missing from the matching columns.  Some work will be
+  needed here.
 
 ## Data issues
 
@@ -47,6 +56,9 @@
 * Check references for Kenzo 2009
 * Mistake in Rodriguez2003/dataManipulate.r crown classes are all the same??. Fix and move to dataNew.csv
 * McCulloh2010 - check we are only taking largest individual, as rest are branch level data
+* In Delagrange0000a and Delagrange0000b there are a few "#DIV/0!"
+  entries (divide-by-zero errors) -- these are currently flagged as
+  NA, but should be chased up.
 
 ## Other data to import
 
