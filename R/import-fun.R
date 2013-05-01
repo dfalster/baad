@@ -9,7 +9,12 @@ makeDataImport  <-  function(newStudy){
 }
 
 
-#create the proper set of files in each folder
+#' Create the proper set of files in each folder
+#' 
+#' @param newStudy folder where data is stored
+#' @return a dataframe
+#' @export
+#' @keywords misc
 readNewFiles  <-  function(newStudy){
   # Load raw data from newStudy
   #
@@ -32,11 +37,17 @@ readNewFiles  <-  function(newStudy){
 }
 
 
-setUpFiles  <-  function(newStudy){
-  print(newStudy)
+#' Sets up files for new study to be added to the database
+#' 
+#' @param newStudy Name of the directory that is to be added
+#' @param quiet If TRUE, don't print messages about progress
+#' @return Nothing; directories are created
+#' @export
+setUpFiles  <-  function(newStudy, quiet=FALSE){
+  if(!quiet)message("Setting up files for ", newStudy)
   
   #creates and writes dataManipulate.R
-  cat("creates dataManipulate.R ")
+  if(!quiet)message("creates dataManipulate.R")
   filename  <-  paste0(dir.rawData, "/", newStudy, "/dataManipulate.R")
   if(!file.exists(filename)){
     manip     <-  ""
@@ -44,7 +55,7 @@ setUpFiles  <-  function(newStudy){
   }  
   
   #creates dataMatchColumns.csv
-  cat("creates dataMatchColumns.csv ")
+  if(!quiet)message("creates dataMatchColumns.csv")
   filename  <-  paste0(dir.rawData, "/", newStudy, "/dataMatchColumns.csv")
   if(!file.exists(filename)){
     
@@ -61,7 +72,7 @@ setUpFiles  <-  function(newStudy){
   }
   
   #creates and writes dataNew.csv
-  cat("creates dataNew.csv ")
+  if(!quiet)message("creates dataNew.csv")
   filename  <-  paste0(dir.rawData, "/", newStudy, "/dataNew.csv")
   if(!file.exists(filename)){
     datnew  <-  data.frame(lookupVariable="",
@@ -75,7 +86,7 @@ setUpFiles  <-  function(newStudy){
   }
   
   #creates and writes studyContact.csv
-  cat("creates studyContact.csv ")
+  if(!quiet)message("creates studyContact.csv")
   filename  <-  paste0(dir.rawData, "/", newStudy, "/studyContact.csv")
   if(!file.exists(filename)){
     contact  <-  data.frame(name=NA,
@@ -86,8 +97,10 @@ setUpFiles  <-  function(newStudy){
     write.csv(contact, paste0(dir.rawData,"/",newStudy,"/studyContact.csv"), row.names=FALSE)
   }
   
+  
+  
   #creates and writes studyMetadata.csv
-  cat("creates studyMetadata.csv ")
+  if(!quiet)cat("creates studyMetadata.csv ")
   filename  <-  paste0(dir.rawData, "/", newStudy, "/studyMetadata.csv")
   if(!file.exists(filename)){
     metadat  <-  data.frame(Topic=c("Sampling strategy", "Leaf area", "Stem cross sectional area", "Height", "Crown area", "Biomass", "traits", "Growth environment", "Other variables"),
@@ -97,7 +110,7 @@ setUpFiles  <-  function(newStudy){
   }
   
   #creates and writes studyRef.csv
-  cat("creates studyRef.csv ")
+  if(!quiet)cat("creates studyRef.csv ")
   filename  <-  paste0(dir.rawData, "/", newStudy, "/studyRef.csv")
   if(!file.exists(filename)){
     sturef  <-  data.frame(reference="Missing",
@@ -107,6 +120,18 @@ setUpFiles  <-  function(newStudy){
 }
 
 
+
+#' Adds studies to the central dataset
+#'
+#' @param studyNames Character vector of study names to be added
+#' @param data If provided, will add studies to this dataframe
+#' @param reprocess If TRUE, will reprocess studies even if they already exist in the data directory
+#' @param replace If TRUE, replaces data from the same dataset, if it exists
+#' @param verbose If TRUE, print tsages to screen, good for isolating problems  
+#' @param browse (To be removed) for debugging purposes
+#' @return A dataframe with all data combined
+#' @keywords misc
+#' @export
 addStudies<-function(studyNames, data=NULL, reprocess= FALSE, replace=FALSE, verbose=FALSE, browse=FALSE){
   # merge data from studyNames with existing 'data'    
   #
@@ -131,6 +156,7 @@ addStudies<-function(studyNames, data=NULL, reprocess= FALSE, replace=FALSE, ver
   }
   data
 }
+
 
 loadStudy<-function(studyName, reprocess= FALSE, verbose=FALSE, browse=FALSE){
   # loads data from specified studyName
@@ -189,7 +215,7 @@ addStudy<-function(newData, oldData=NULL, replace=FALSE){
 
 Rbind<-function(dfr1, dfr2, checkColumn = "dataset", add=FALSE, replace=FALSE){
   # Binds two dataframes togther
-  #
+  # 
   # Args: 
   #   dfr1: first dataframe
   #   dfr2: second dataframe
