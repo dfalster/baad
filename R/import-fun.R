@@ -173,7 +173,7 @@ loadStudy<-function(studyName, reprocess= FALSE, verbose=FALSE, browse=FALSE){
   if (verbose) cat(studyName, " ")
   
   #name of cleaned data file
-  filename<-studyDataFile(studyName);
+  filename<-studyDataFile(studyName)
   
   #Check if cleaned datafile exists, if not create it
   if (!file.exists(filename) | reprocess)
@@ -182,7 +182,7 @@ loadStudy<-function(studyName, reprocess= FALSE, verbose=FALSE, browse=FALSE){
   study<-list()
   
   #Read cleaned data file
-  study$data<-read.csv(filename, h= TRUE)
+  study$data<-read.csv(filename, header=TRUE, stringsAsFactors=FALSE)
   
   #Read reference
   study$ref<-data.frame(dataset = studyName, read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.csv"), h= TRUE, stringsAsFactors=FALSE, strip.white = TRUE))
