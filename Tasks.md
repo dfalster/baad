@@ -7,7 +7,8 @@
 
 ## Getting email sent
 
-* How to automate emails - applescript or bash to gmail, direct or via Mailplane or Apple mail (Rich)
+* How to automate emails - applescript or bash to gmail, direct or via
+  Mailplane or Apple mail (Rich) [done]
 * Review variable list, names and definitions (Remko and Daniel)
 * Write email (Daniel)
 * Process for managing "stage" of project
