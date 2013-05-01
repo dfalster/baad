@@ -212,7 +212,16 @@ addStudy<-function(newData, oldData=NULL, replace=FALSE){
   }
 }
 
-
+#' Binds two dataframes together
+#' 
+#' @param dfr first dataframe
+#' @param dfr2 second dataframe
+#' @param checkColumn checks for matches between drf1 and dfr2 in a column with this name
+#' @param add add new instances of checkColumn, even if they already exist
+#' @param replace replace instances of checkColumn if they already exist
+#' @return A dataframe
+#' @export
+#' @keywords misc
 Rbind<-function(dfr1, dfr2, checkColumn = "dataset", add=FALSE, replace=FALSE){
   # Binds two dataframes togther
   # 

@@ -17,6 +17,7 @@
 * Referencing
    - Import bib files for each study
    - Function to print reference, also DOI, URL
+   - function `formatBib` was added to R-working (RAD); testing and extending in progress
 
 
 ## Code improvements
@@ -28,16 +29,19 @@
 * function to create std files for a new study
 * User manual, exp for importing data
 * Function to find and replace a variable name throughout project. Untested draft
+
+```{r eval=FALSE}  
     fn <- list.files(pattern="\\.R", recursive=TRUE, full.names=TRUE)
     for(i in 1:length(fn)){
        r <- readLines(fn[i])
        r <- gsub("raw","rawdata",r)
      writeLines(r, fn[i])
     }
+```
 
 ## Data issues
 
-* determine contact details for Roth data
+* determine contact details for Roth data (RAD: email sent to Eric Jokela)
 * Change variable.match file on folder Epron 2012, line 11, column var_out: from h.t to c.d -> I put a question to the authors to figure out what variable this actually is, it is not clear from their dataset and explanations
 * Change variable.match file on folder Kohyama 1987, line 5, column var_out: from d.cr to d.cr2 -> I already added the variable d.cr2 to the variable.definitions.csv file, but for the moment we will use d.cr to compare the newer output datasets with the older ones.
 * Same thing as above for Kohyama1994, line 4, column var_out
@@ -56,23 +60,24 @@
 
 ## Changes required after revising variable list
 
-Remove vegetation type for any non-field grown plants
+* Remove vegetation type for any non-field grown plants
 
-Fix lai values that are text
+* Fix lai values that are text
 
-Mark MAP, MAT, family, as "user" supplied, then populate from standardised data (world clim)
+* Mark MAP, MAT, family, as "user" supplied, then populate from standardised data (world clim)
 
-Conifer leaf area - define ideal, then implement it. 
- - check all studies with conifers to standardise measurements
+* Conifer leaf area - define ideal, then implement it. 
+ * check all studies with conifers to standardise measurements
+ * Definition should be 'half of total surface area' (other measurements often include either 'projected area', or 'total surface area')
 
-Check methods variables for h.c
+* Check methods variables for h.c
 
-Check branch mass and determine consistent definition and check implemented this way
+* Check branch mass and determine consistent definition and check implemented this way
 
-Delete c.d variable, for these studies ensure h.c is calculated correctly (Aiba2005       Delagrange2004 Osada0000      Osada2003      Osada2005      Osunkoya2007   Petritan2009   Sterck0000)
+* Delete c.d variable, for these studies ensure h.c is calculated correctly (Aiba2005       Delagrange2004 Osada0000      Osada2003      Osada2005      Osunkoya2007   Petritan2009   Sterck0000)
 
-Change leaf N to per mass
+* Change leaf N to per mass
 
-In variableDefinitions file, change Variables with NewName given in column, need to change throughout whole directory, i.e. all dataMatchColumns.csv 
+* In variableDefinitions file, change Variables with NewName given in column, need to change throughout whole directory, i.e. all dataMatchColumns.csv 
 
 
