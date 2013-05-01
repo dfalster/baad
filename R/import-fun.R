@@ -71,21 +71,21 @@ processStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
   
   #read original data from file
   if (verbose) cat("load data ")
-  raw <- readRawData(studyName)
+  raw <- readDataRaw(studyName)
   
   #Manipulate data where needed
   if (verbose) cat("manipulate data ")
-  filename <- data.file(studyName, "dataManipulate.R")
+  filename <- data.path(studyName, "dataManipulate.R")
   if (file.exists(filename))
     source(filename, local=TRUE)
   
   #add studyname to dataset
-  data<-raw
+  data <- raw
   data$dataset <- studyName
   
   #convert units and variable names, add methods variables
   if (verbose) cat("convert units ")
-  data<-convertData(studyName, data)
+  data <- convertData(studyName, data)
   
   #Remove / add columns to mirror those in final database
   if (verbose) cat("add/remove columns ")
@@ -99,6 +99,25 @@ processStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
   if (verbose) cat("write to file ")
   write.csv(data, outputName, row.names=FALSE)
 }
+
+# Load raw data from studyName
+#
+# Args: 
+#   studyName: folder where data is stored
+# 
+# Returns:
+#   dataframe
+readDataRaw<-function(studyName){
+  import <- readImport(studyName)
+  read.csv(data.path(studyName, import$name),
+           header=import$header, skip=import$skip,
+           fileEncoding=import$fileEncoding,
+           na.strings=import$na.strings, check.names=FALSE,
+           stringsAsFactors=FALSE, strip.white=TRUE)
+}
+
+
+
 
 
 #first create a dataImportOptions.csv for each new study
@@ -226,26 +245,6 @@ mergeStudies <- function(list) {
   f <- function(v)
     do.call(rbind, lapply(list, "[[", v))
   structure(lapply(vars, f), names=vars)
-}
-
-readRawData<-function(studyName){
-  # Load raw data from studyName
-  #
-  # Args: 
-  #   studyName: folder where data is stored
-  # 
-  # Returns:
-  #   dataframe
-  
-  #import options for data file
-  import <- readImport(studyName)
-  
-  #read in the original .csv
-  read.csv(file.path(dir.rawData, studyName, import$name),
-           header=import$header, skip=import$skip,
-           fileEncoding=import$fileEncoding,
-           na.strings=import$na.strings, check.names=FALSE,
-           stringsAsFactors=FALSE, strip.white=TRUE)
 }
 
 addAllColumns<-function(data){
