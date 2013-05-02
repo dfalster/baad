@@ -142,6 +142,58 @@ addAllColumns <- function(data) {
   data[info$allowedNames]
 }
 
+##' Modifies data by adding new values from table studyName/dataNew.csv
+##'
+##' Within the column given by 'newVariable', replace values that
+##' match 'lookupValue' within column 'lookupVariable' with the value
+##' newValue'.  If 'lookupVariable' is NA, then replace *all* elements
+##' of 'newVariable' with the value 'newValue'.
+##'
+##' Note that lookupVariable can be the same as newVariable.
+##'
+##' @param data existing data.frame (from addAllColumns)
+##' @return modified data.frame
+addNewData <- function(studyName, data) {
+  import <- readNewData(studyName)
+  if ( !is.null(import) ) {
+    for (i in seq_len(nrow(import))) {
+      col.to <- import$newVariable[i]
+      col.from <- import$lookupVariable[i]
+      if (is.na(col.from)) { # apply to whole column
+        data[col.to] <- import$newValue[i]
+      } else {
+        ## apply to subset
+        rows <- data[[col.from]] == import$lookupValue[i]
+        data[rows,col.to] <- import$newValue[i]
+      }
+    }   
+  }      
+  data
+}
+
+##' Utility function to read/process dataNew.csv for addNewData
+readNewData <- function(studyName) {
+  filename <- data.path(studyName, "dataNew.csv")
+  if ( file.exists(filename) ) {
+    import <- read.csv(filename, header=TRUE, stringsAsFactors=FALSE,
+                       strip.white=TRUE)
+    if ( nrow(import) > 0 ) {
+      import$lookupVariable[import$lookupVariable == ""] <- NA
+      nameIsOK <- import$newVariable %in% var.def$Variable
+      if (any(!nameIsOK)) 
+        stop("Incorrect name in var_out columns of dataMatchColumns.csv for ",
+             studyName, "--> ", paste(import$newVariable[!nameIsOK],
+                                      collapse=", "))
+    } else {
+      import <- NULL
+    }
+  } else {
+    import <- NULL
+  }
+  import
+}
+
+
 ## * Functions for creating the import directory structure for new
 ## * data.  Not reviewed yet.
 
@@ -181,7 +233,6 @@ readNewFiles  <-  function(newStudy){
                        stringsAsFactors=FALSE, strip.white=TRUE, check.names=FALSE)
   raw
 }
-
 
 ##' Sets up files for new study to be added to the database
 ##' 
@@ -273,39 +324,6 @@ mergeStudies <- function(list) {
 }
 
 
-addNewData<-function(studyName, data){
-  # Modifies data by adding new values from table studyName/dataNew.csv. 
-  # Applies newValues in newVariable to all matches for lookupValue in lookupVariable. 
-  # Applies to entire dataset when lookupValue == NA
-  #
-  # Args: 
-  #   data: existing data frame
-  # 
-  # Returns:
-  #   modified data frame
-  
-  filename<-paste0(dir.rawData,"/",studyName,"/dataNew.csv") #name of data file
-  
-  if (file.exists(filename)){ #open if it exists
-    import <-  read.csv(filename, h=TRUE, stringsAsFactors=FALSE, strip.white = TRUE) #read in new data    
-    
-    nchanges<- length(import$lookupVariable) #count number of changes required
-    if (nchanges>0){
-      
-      nameIsOK<-import$newVariable %in% var.def$Variable #Check name is allowed
-      if (any(!nameIsOK)) 
-        stop("Incorrect name in var_out columns of dataMatchColumns.csv for ", studyName, "--> ", import$newVariable[!nameIsOK])
-      
-      for (i in 1:nchanges){     #make changes one by one
-        if (is.na(import$lookupVariable[i]) | import$lookupVariable[i] =="") #apply to whole column
-          data[,import$newVariable[i]] = import$newValue[i]
-        else  #apply to subset
-          data[data[,import$lookupVariable[i] ]==import$lookupValue[i],import$newVariable[i] ] = import$newValue[i]
-      }   
-    }      
-  }
-  data
-}
 
 readMatchColumns <- function(studyName) {
   filename <- file.path(dir.rawData, studyName, "dataMatchColumns.csv")
@@ -471,3 +489,6 @@ columnInfo <- function() {
   list(allowedNames=allowedNames,
        type=type)
 }
+
+is.blank <- function(x)
+  is.na(x) | x == ""
