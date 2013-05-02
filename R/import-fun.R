@@ -93,7 +93,7 @@ readDataRaw<-function(studyName){
 
 ##' Perform arbitrary manipulations to the raw data
 ##'
-##' @param studyName folder where data is tored
+##' @param studyName folder where data is stored
 ##' @param data raw data, as from readDataRaw
 ##' @return data.frame, with manipulations carried out
 manipulateData <- function(studyName, data) {
@@ -110,7 +110,7 @@ manipulateData <- function(studyName, data) {
 ##' return one as the return value, but this is not checked at
 ##' present.
 ##'
-##' @param studyName folder where data is tored
+##' @param studyName folder where data is stored
 ##' @return function for manipulating a data.frame
 getManipulateData <- function(studyName) {
   filename <- data.path(studyName, "dataManipulate.R")
@@ -125,6 +125,22 @@ getManipulateData <- function(studyName) {
   }
 }
 
+##' Standardise data columns to match standard template.
+##'
+##' May add or remove columns of data as needed so that all sets have
+##' the same columns.
+##'
+##' @param data data.frame, after being run through convertData
+##' @return data.frame
+addAllColumns <- function(data) {
+  info <- columnInfo()
+  missing <- setdiff(info$allowedNames, names(data))
+  missing.df <-
+    as.data.frame(lapply(info$type[missing], na.vector, nrow(data)),
+                  stringsAsFactors=FALSE)
+  data <- cbind(data[names(data) %in% info$allowedNames], missing.df)
+  data[info$allowedNames]
+}
 
 ## * Functions for creating the import directory structure for new
 ## * data.  Not reviewed yet.
@@ -167,12 +183,12 @@ readNewFiles  <-  function(newStudy){
 }
 
 
-#' Sets up files for new study to be added to the database
-#' 
-#' @param newStudy Name of the directory that is to be added
-#' @param quiet If TRUE, don't print messages about progress
-#' @return Nothing; directories are created
-#' @export
+##' Sets up files for new study to be added to the database
+##' 
+##' @param newStudy Name of the directory that is to be added
+##' @param quiet If TRUE, don't print messages about progress
+##' @return Nothing; directories are created
+##' @export
 setUpFiles  <-  function(newStudy, quiet=FALSE){
   if(!quiet)message("Setting up files for ", newStudy)
   
@@ -256,33 +272,6 @@ mergeStudies <- function(list) {
   structure(lapply(vars, f), names=vars)
 }
 
-addAllColumns<-function(data){
-  # Add/removes columns of data so that they match those in 
-  # standrad template for study
-  #
-  # Returns:
-  #   dataframe
-  
-  allowedNames<-var.def$Variable  #allowed names
-  type<-var.def$Type  #variable type: charcater / numeric
-  
-  
-  #Expand list to include "methods" variables, where appropriate
-  allowedNames<-c(allowedNames, as.character(paste("method_", var.def$Variable[var.def$methodsVariable], sep=""))) 
-  type<-c(type, rep("character",sum(var.def$methodsVariable)))  #all methods have type "character"
-  
-  #remove columns not in allowed list
-  data<-data[,(names(data)%in%allowedNames)]  
-  
-  #add columns missing from final list
-  present<- (allowedNames %in% names(data)) #check if already present
-  for (i in 1:length(allowedNames))
-    if (!present[i]){  #variable not present, add
-      data[,allowedNames[i]] = NA
-      class(data[,allowedNames[i]])<-type[i]
-    }  
-  data[,allowedNames] #return in desired order
-}
 
 addNewData<-function(studyName, data){
   # Modifies data by adding new values from table studyName/dataNew.csv. 
@@ -462,3 +451,23 @@ readDataProcessed <- function(studyName)
   read.csv(studyDataFile(studyName), header=TRUE,
            stringsAsFactors=FALSE)
 
+na.vector <- function(type, n) {
+  x <- switch(type,
+              character=NA_character_,
+              numeric=NA_real_,
+              stop("Unknown type", type))
+  rep.int(x, n)
+}
+
+## TODO: This might merge somewhat with the definition of var.def.
+columnInfo <- function() {
+  allowedNames <- var.def$Variable
+  type <- var.def$Type # variable type: charcater / numeric
+  ##Expand list to include "methods" variables, where appropriate
+  methods <- paste0("method_", var.def$Variable[var.def$methodsVariable])
+  allowedNames <- c(allowedNames, methods)
+  type <- c(type, rep("character", length(methods)))
+  names(type) <- allowedNames
+  list(allowedNames=allowedNames,
+       type=type)
+}
