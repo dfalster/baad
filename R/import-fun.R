@@ -1,8 +1,6 @@
 ## Process all the data.
-processAllStudies <- function(reprocess=FALSE, replace=FALSE,
-                              verbose=FALSE) {
-  d <- addStudies(getStudyNames(), reprocess=reprocess, verbose=verbose,
-                  replace=replace)
+processAllStudies <- function(reprocess=FALSE, verbose=FALSE) {
+  d <- addStudies(getStudyNames(), reprocess=reprocess, verbose=verbose)
   invisible(d)
 }
 
@@ -11,14 +9,13 @@ processAllStudies <- function(reprocess=FALSE, replace=FALSE,
 #' @param studyNames Character vector of study names to be added
 #' @param data If provided, will add studies to this dataframe
 #' @param reprocess If TRUE, will reprocess studies even if they already exist in the data directory
-#' @param replace If TRUE, replaces data from the same dataset, if it exists
 #' @param verbose If TRUE, print messages to screen, good for isolating problems  
 #' @return merged list with three parts: data, reference, contact,
 #'    each is a dataframe with all data combined.
 #' @keywords misc
 #' @export
-addStudies <- function(studyNames, data=NULL, reprocess= FALSE,
-                       replace=FALSE, verbose=FALSE) {
+addStudies <- function(studyNames, data=NULL, reprocess=FALSE,
+                       verbose=FALSE) {
   d <- lapply(studyNames, loadStudy, reprocess=reprocess,
               verbose=verbose)
   mergeStudies(d)
@@ -29,16 +26,13 @@ addStudies <- function(studyNames, data=NULL, reprocess= FALSE,
 ##' @param studyName: name of folder where data stored
 ##' @param reprocess: force data to be reprocessed
 ##' @param verbose: print tsages to screen, good for isolating problems  
-##' @param browse: starts browser
 ##' @return list with three parts: data, reference, contact
 ##' @export
-loadStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
-                      browse=FALSE) {
+loadStudy <- function(studyName, reprocess=FALSE, verbose=FALSE) {
   if (verbose)
     cat(studyName, " ")
 
-  if (!file.exists(studyDataFile(studyName)) || reprocess)
-    processStudy(studyName, verbose=verbose, browse=browse)
+  processStudy(studyName, reprocess=reprocess, verbose=verbose)
   
   list(data=readDataProcessed(studyName),
        ref=readReference(studyName),
@@ -53,31 +47,20 @@ loadStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
 # 
 # Returns:
 #     transformed data saved in file output/data/studyName.csv
-processStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
-                         browse=FALSE) {
+processStudy <- function(studyName, reprocess=FALSE, verbose=FALSE) {
+
   if (verbose) cat(studyName, " ")
-  
+
   outputName <- studyDataFile(studyName)
-  if (file.exists(outputName)) {
-    if ( reprocess )
-      file.remove(outputName)
-    else
+  if (file.exists(outputName) && !reprocess)
       return(invisible())
-  }
   
-  #call browser if required
-  if (browse)
-    browser()
-  
-  #read original data from file
   if (verbose) cat("load data ")
   data <- readDataRaw(studyName)
   
-  #Manipulate data where needed
   if (verbose) cat("manipulate data ")
   data <- manipulateData(studyName, data)
   
-  #add studyname to dataset
   data$dataset <- studyName
   
   #convert units and variable names, add methods variables
@@ -88,22 +71,17 @@ processStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
   if (verbose) cat("add/remove columns ")
   data <- addAllColumns(data)
   
-  #import new data, if available
   if (verbose) cat("import new data ")
   data <- addNewData(studyName, data)
   
-  #write data to file
   if (verbose) cat("write to file ")
   write.csv(data, outputName, row.names=FALSE)
 }
 
-# Load raw data from studyName
-#
-# Args: 
-#   studyName: folder where data is stored
-# 
-# Returns:
-#   dataframe
+##' Load raw data from studyName
+##'
+##' @param studyName folder where data is stored
+##' @return dataframe with raw data
 readDataRaw<-function(studyName){
   import <- readImport(studyName)
   read.csv(data.path(studyName, import$name),
@@ -113,11 +91,27 @@ readDataRaw<-function(studyName){
            stringsAsFactors=FALSE, strip.white=TRUE)
 }
 
+##' Perform arbitrary manipulations to the raw data
+##'
+##' @param studyName folder where data is tored
+##' @param data raw data, as from readDataRaw
+##' @return data.frame, with manipulations carried out
 manipulateData <- function(studyName, data) {
   manipulate <- getManipulateData(studyName)
   manipulate(data)
 }
 
+##' Load the data manipulation function, if present
+##'
+##' If the `dataManipulate.R` file is present within a study's data
+##' directory, it must contain the function `manipulate`.  Otherwise
+##' we return the identity function to indicate no manipulations will
+##' be done.  The function must take a data.frame as an argument and
+##' return one as the return value, but this is not checked at
+##' present.
+##'
+##' @param studyName folder where data is tored
+##' @return function for manipulating a data.frame
 getManipulateData <- function(studyName) {
   filename <- data.path(studyName, "dataManipulate.R")
   if (file.exists(filename)) {
@@ -130,6 +124,10 @@ getManipulateData <- function(studyName) {
     identity
   }
 }
+
+
+## * Functions for creating the import directory structure for new
+## * data.  Not reviewed yet.
 
 #first create a dataImportOptions.csv for each new study
 makeDataImport  <-  function(newStudy){
