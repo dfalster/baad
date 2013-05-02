@@ -129,43 +129,27 @@ getManipulateData <- function(studyName) {
 ##' 
 ##' @param data existing data frame
 ##' @return modified data frame
-convertData <- function(studyName,data){
-  ## load variable matching table
+convertData <- function(studyName, data){
   var.match <- readMatchColumns(studyName)
-  
-  ## Find the column numbers in the data that need to be checked out
-  ## for conversion, only check columns
-  selec <-  match(names(data), var.match$var_in[!is.na(var.match$var_out)]) 
-  for (a in selec[!is.na(selec)]) {
-    a  <-  which(selec==a)
-    ##rename variables
-    var.in  <- names(data)[a]
-    var.out <- var.match$var_out[var.match$var_in==var.in &
-                                 !is.na(var.match$var_in)]
-    names(data)[a] <- var.out
-    
-    ## change units, only for numeric variables 
-    if(var.def$Type[var.def$Variable==var.out] == "numeric") {
-      un.in <- var.match$unit_in[var.match$var_in==var.in] # input unit
-      if (is.na(un.in))
-        stop("unit missing for variable ", var.in, " in ", studyName)
-      un.out   <-  var.def$Units[var.def$Variable==var.out] # output unit
-      if(un.in != un.out){ # check if units differ
-        ## select the function based on units
-        func     <-  get(paste(un.in, ".", un.out, sep=""))
-        data[[a]] <-  func(as.numeric(data[[a]]))
-      }
+  info <- columnInfo()
+
+  data <- rename(data, var.match$var_in, var.match$var_out)
+
+  for ( col in intersect(names(data), var.match$var_out) ) {
+    idx <- match(col, var.match$var_out)[[1]]
+    if (info$type[[col]] == "numeric" ) {
+      unit.from <- var.match$unit_in[idx]
+      unit.to   <- info$units[[col]]
+      data[[col]] <- transform(data[[col]], unit.from, unit.to)
     }
-    
-    ## add methods varaibles
-    ## method used to measure
-    met.in <- var.match$method[var.match$var_in==var.in]
-    if (!is.na(met.in))
-      data[[paste("method", var.out, sep="_")]] <- met.in
+
+    method <- var.match$method[idx]
+    if ( !is.na(method) )
+      data[[paste("method", col, sep="_")]] <- method
   }
+
   data
 }
-
 
 ##' Standardise data columns to match standard template.
 ##'
@@ -247,7 +231,6 @@ makeDataImport  <-  function(newStudy){
     write.csv(impo, paste0(dir.rawData, "/", newStudy, "/dataImportOptions.csv"),row.names=FALSE)
   }
 }
-
 
 #' Create the proper set of files in each folder
 #' 
@@ -358,6 +341,7 @@ setUpFiles  <-  function(newStudy, quiet=FALSE){
   }
 }
 
+## * Utility functions mostly
 mergeStudies <- function(list) {
   vars <- c("data", "ref", "contact")
   f <- function(v)
@@ -365,12 +349,10 @@ mergeStudies <- function(list) {
   structure(lapply(vars, f), names=vars)
 }
 
-
-
 readMatchColumns <- function(studyName) {
   filename <- file.path(dir.rawData, studyName, "dataMatchColumns.csv")
   var.match <- read.csv(filename, header=TRUE, stringsAsFactors=FALSE,
-                        na.strings=c("NA", ""))
+                        na.strings=c("NA", ""), strip.white=TRUE)
 
   ## TODO: var.def is global
   nameIsOK <- (var.match$var_out[!is.na(var.match$var_out)] %in%
@@ -385,10 +367,16 @@ readMatchColumns <- function(studyName) {
     var.match <- var.match[!is.na(var.match$var_in),]
   }
 
-  var.match
+  ## if ( any(duplicated(var.match$var_out)) )
+    ## warning("Duplicated output column in ", studyName)
+  
+
+  var.match[!is.na(var.match$var_out),]
 }
 
-#Paste together list of varNames and their values, used for aggregating varnames into "grouping" variable
+#Paste together list of varNames and their values, used for
+#aggregating varnames into "grouping" variable
+## TODO: This is never used.
 makeGroups <-function(data, varNames){
   
   #if name does not exist stop with error message
@@ -480,9 +468,27 @@ columnInfo <- function() {
   allowedNames <- c(allowedNames, methods)
   type <- c(type, rep("character", length(methods)))
   names(type) <- allowedNames
+  units <- structure(var.def$Units, names=var.def$Variable)
   list(allowedNames=allowedNames,
-       type=type)
+       type=type,
+       units=units)
 }
 
 is.blank <- function(x)
   is.na(x) | x == ""
+
+rename <- function(obj, names.from, names.to) {
+  if ( length(names.from) != length(names.to) )
+    stop("names.from and names.to must be the same length")
+  i <- match(names.from, names(obj))
+  if ( any(is.na(i)) )
+    stop("Could not find some names")
+  names(obj)[i] <- names.to
+  obj
+}
+
+transform <- function(x, unit.from, unit.to) {
+  if (unit.from != unit.to)
+    x <- match.fun(paste(unit.from, unit.to, sep="."))(x)
+  x
+}
