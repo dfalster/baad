@@ -71,16 +71,13 @@ processStudy <- function(studyName, reprocess=FALSE, verbose=FALSE,
   
   #read original data from file
   if (verbose) cat("load data ")
-  raw <- readDataRaw(studyName)
+  data <- readDataRaw(studyName)
   
   #Manipulate data where needed
   if (verbose) cat("manipulate data ")
-  filename <- data.path(studyName, "dataManipulate.R")
-  if (file.exists(filename))
-    source(filename, local=TRUE)
+  data <- manipulateData(studyName, data)
   
   #add studyname to dataset
-  data <- raw
   data$dataset <- studyName
   
   #convert units and variable names, add methods variables
@@ -116,9 +113,23 @@ readDataRaw<-function(studyName){
            stringsAsFactors=FALSE, strip.white=TRUE)
 }
 
+manipulateData <- function(studyName, data) {
+  manipulate <- getManipulateData(studyName)
+  manipulate(data)
+}
 
-
-
+getManipulateData <- function(studyName) {
+  filename <- data.path(studyName, "dataManipulate.R")
+  if (file.exists(filename)) {
+    e <- new.env()
+    source(filename, local=e)
+    if ( !exists("manipulate", envir=e) )
+      stop("Expected function 'manipulate' within dataManipulate.R")
+    match.fun(e$manipulate)
+  } else {
+    identity
+  }
+}
 
 #first create a dataImportOptions.csv for each new study
 makeDataImport  <-  function(newStudy){

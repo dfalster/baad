@@ -1,2 +1,6 @@
-raw$grouping  <-  makeGroups(raw, c("SITE"))
+manipulate <- function(raw) {
+  raw$grouping  <-  makeGroups(raw, c("SITE"))
+  
+  raw
+}
 

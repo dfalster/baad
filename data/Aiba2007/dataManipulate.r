@@ -1,1 +1,5 @@
-raw[["species"]]              <-  paste(raw[["genus"]], raw[["species"]])
+manipulate <- function(raw) {
+  raw[["species"]]              <-  paste(raw[["genus"]], raw[["species"]])
+  raw
+}
+
