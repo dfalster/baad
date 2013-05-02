@@ -1,8 +1,4 @@
 ## Process all the data.
-processAllStudies <- function(reprocess=FALSE, verbose=FALSE) {
-  d <- addStudies(getStudyNames(), reprocess=reprocess, verbose=verbose)
-  invisible(d)
-}
 
 #' Adds studies to the central dataset
 #'
@@ -14,11 +10,14 @@ processAllStudies <- function(reprocess=FALSE, verbose=FALSE) {
 #'    each is a dataframe with all data combined.
 #' @keywords misc
 #' @export
-addStudies <- function(studyNames, data=NULL, reprocess=FALSE,
-                       verbose=FALSE) {
+loadStudies <- function(studyNames=getStudyNames(), data=NULL,
+                        reprocess=FALSE, verbose=FALSE) {
   d <- lapply(studyNames, loadStudy, reprocess=reprocess,
               verbose=verbose)
-  mergeStudies(d)
+  vars <- c("data", "ref", "contact")
+  f <- function(v)
+    do.call(rbind, lapply(d, "[[", v))
+  structure(lapply(vars, f), names=vars)
 }
 
 ##' Load data from specified studyName
@@ -32,11 +31,17 @@ loadStudy <- function(studyName, reprocess=FALSE, verbose=FALSE) {
   if (verbose)
     cat(studyName, " ")
 
-  processStudy(studyName, reprocess=reprocess, verbose=verbose)
-  
-  list(data=readDataProcessed(studyName),
+  list(data=readDataProcessed(studyName, reprocess),
        ref=readReference(studyName),
        contact=readContact(studyName))
+}
+
+readDataProcessed <- function(studyName, reprocess=TRUE) {
+  filename <- studyDataFile(studyName)
+  if ( reprocess || !file.exists(filename) )
+    processStudy(studyName)
+  else
+    read.csv(filename, header=TRUE, stringsAsFactors=FALSE)
 }
 
 ## TODO: Roxygenise(?)
@@ -47,13 +52,11 @@ loadStudy <- function(studyName, reprocess=FALSE, verbose=FALSE) {
 # 
 # Returns:
 #     transformed data saved in file output/data/studyName.csv
-processStudy <- function(studyName, reprocess=FALSE, verbose=FALSE) {
+processStudy <- function(studyName, verbose=FALSE) {
 
   if (verbose) cat(studyName, " ")
 
   outputName <- studyDataFile(studyName)
-  if (file.exists(outputName) && !reprocess)
-      return(invisible())
   
   if (verbose) cat("load data ")
   data <- readDataRaw(studyName)
@@ -76,6 +79,8 @@ processStudy <- function(studyName, reprocess=FALSE, verbose=FALSE) {
   
   if (verbose) cat("write to file ")
   write.csv(data, outputName, row.names=FALSE)
+
+  data
 }
 
 ##' Load raw data from studyName
@@ -341,14 +346,6 @@ setUpFiles  <-  function(newStudy, quiet=FALSE){
   }
 }
 
-## * Utility functions mostly
-mergeStudies <- function(list) {
-  vars <- c("data", "ref", "contact")
-  f <- function(v)
-    do.call(rbind, lapply(list, "[[", v))
-  structure(lapply(vars, f), names=vars)
-}
-
 readMatchColumns <- function(studyName) {
   filename <- file.path(dir.rawData, studyName, "dataMatchColumns.csv")
   var.match <- read.csv(filename, header=TRUE, stringsAsFactors=FALSE,
@@ -363,20 +360,22 @@ readMatchColumns <- function(studyName) {
          paste(var.match$var_out[!nameIsOK], collapse=", "))
 
   if ( any(is.na(var.match$var_in)) ) {
-    ## warning("Pruning empty columns from", studyName)
+    warning("Pruning empty columns from", studyName)
     var.match <- var.match[!is.na(var.match$var_in),]
   }
 
-  ## if ( any(duplicated(var.match$var_out)) )
-    ## warning("Duplicated output column in ", studyName)
+  if ( any(duplicated(na.omit(var.match$var_out))) ) {
+    dups <- na.omit(unique(var.match$var_out[duplicated(var.match$var_out)]))
+    warning(sprintf("Duplicated output columns in %s: %s",
+                    studyName, paste(dups, collapse=", ")))
+  }
   
-
   var.match[!is.na(var.match$var_out),]
 }
 
 #Paste together list of varNames and their values, used for
 #aggregating varnames into "grouping" variable
-## TODO: This is never used.
+## NOTE: Used in dataManipulate.R
 makeGroups <-function(data, varNames){
   
   #if name does not exist stop with error message
@@ -446,10 +445,6 @@ readContact <- function(studyName) {
                       strip.white=TRUE)
   data.frame(dataset = studyName, contact)
 }
-
-readDataProcessed <- function(studyName)
-  read.csv(studyDataFile(studyName), header=TRUE,
-           stringsAsFactors=FALSE)
 
 na.vector <- function(type, n) {
   x <- switch(type,
