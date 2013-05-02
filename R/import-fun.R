@@ -125,6 +125,48 @@ getManipulateData <- function(studyName) {
   }
 }
 
+##' Convert data to desired format, changing units, variable names
+##' 
+##' @param data existing data frame
+##' @return modified data frame
+convertData <- function(studyName,data){
+  ## load variable matching table
+  var.match <- readMatchColumns(studyName)
+  
+  ## Find the column numbers in the data that need to be checked out
+  ## for conversion, only check columns
+  selec <-  match(names(data), var.match$var_in[!is.na(var.match$var_out)]) 
+  for (a in selec[!is.na(selec)]) {
+    a  <-  which(selec==a)
+    ##rename variables
+    var.in  <- names(data)[a]
+    var.out <- var.match$var_out[var.match$var_in==var.in &
+                                 !is.na(var.match$var_in)]
+    names(data)[a] <- var.out
+    
+    ## change units, only for numeric variables 
+    if(var.def$Type[var.def$Variable==var.out] == "numeric") {
+      un.in <- var.match$unit_in[var.match$var_in==var.in] # input unit
+      if (is.na(un.in))
+        stop("unit missing for variable ", var.in, " in ", studyName)
+      un.out   <-  var.def$Units[var.def$Variable==var.out] # output unit
+      if(un.in != un.out){ # check if units differ
+        ## select the function based on units
+        func     <-  get(paste(un.in, ".", un.out, sep=""))
+        data[[a]] <-  func(as.numeric(data[[a]]))
+      }
+    }
+    
+    ## add methods varaibles
+    ## method used to measure
+    met.in <- var.match$method[var.match$var_in==var.in]
+    if (!is.na(met.in))
+      data[[paste("method", var.out, sep="_")]] <- met.in
+  }
+  data
+}
+
+
 ##' Standardise data columns to match standard template.
 ##'
 ##' May add or remove columns of data as needed so that all sets have
@@ -345,54 +387,6 @@ readMatchColumns <- function(studyName) {
 
   var.match
 }
-
-
-convertData<-function(studyName,data){
-  #convert data to desired format, changing units, variable names
-  #
-  # Args: 
-  #   data: existing data frame
-  # 
-  # Returns:
-  #   modified data frame
-  
-  #load variable matching table
-  var.match <- readMatchColumns(studyName)
-  
-  #Find the column numbers in the data that need to be checked out for conversion, only check columns 
-  selec  <-  match(names(data), var.match$var_in[!is.na(var.match$var_out)]) 
-  for(a in selec[!is.na(selec)]){    #Do for every column that needs conversion
-    a  <-  which(selec==a)
-    #rename variables
-    var.in   <-  names(data)[a] #variable that goes in
-    var.out  <-  var.match$var_out[var.match$var_in==var.in &
-                                   !is.na(var.match$var_in)]
-    names(data)[a] <-  var.out #resets the name of a particular variable to the standardised form
-    
-    #change units, only for numeric variables 
-    if(var.def$Type[var.def$Variable==var.out] == "numeric"){
-      un.in    <-  var.match$unit_in[var.match$var_in==var.in] #unit that goes in
-      if(is.na(un.in))
-        stop("unit missing for variable ", var.in, " in ", studyName)
-      un.out   <-  var.def$Units[var.def$Variable==var.out] #unit that goes out
-    
-    if(un.in != un.out){ # check if units differ
-      func     <-  get(paste(un.in, ".", un.out, sep="")) #select the function based on variables
-      data[,a] <-  func(as.numeric(data[,a])) #applies the function to the column
-    }
-    }
-    
-    #add methods varaibles
-    met.in   <-  var.match$method[var.match$var_in==var.in] #method used to measure
-    
-    if (!is.na(met.in)){ # 
-      data$NEW                 <-  rep(met.in, nrow(data)) #creates a new colum that contains the method description
-      names(data)[ncol(data)]  <-  paste("method", "_", var.out, sep="") #changes the names by pasting "method" and the standardised variable name 
-    }
-  }
-  data
-}
-
 
 #Paste together list of varNames and their values, used for aggregating varnames into "grouping" variable
 makeGroups <-function(data, varNames){
