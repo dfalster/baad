@@ -8,6 +8,18 @@ extractThisStduy<-function(alldata, study){
   alldata  
 }
 
+
+allStudyReport <- function(data, studynames){
+  
+  for(i in seq_along(studynames)){
+    studyReportMd(data, studynames[i])
+    message("------==== Report ",i," of ", length(studynames), 
+            " completed. ====-----")
+
+  }
+  
+}
+
 studyReport<-function(alldata, study="all"){
   if(study =="all")
     d<-alldata
@@ -361,28 +373,53 @@ studyReportMd <- function(alldata, study=NULL, Dir="report-per-study", delete=TR
   
 }
 
+
+generateAllDataNew <- function(data, studynames){
+  
+  
+  lapply(studynames, function(x)generateAllDataNew(data$data,x))
+  
+  
+}
+
 generateDataNew  <-  function(data, studyName){
-  dat     <-  data[data$dataset %in% studyName, ]
-  if(is.na(as.character(unique(dat$location)))){
+  
+  # Extract dataframe of observations only
+  data <- data$data
+  dat <- data[data$dataset == studyName, ]
+  
+  if(all(is.na(dat$location))){
     nloc  <-  NA
   } else {
-    nloc  <-  length(as.character(unique(dat$location)))
+    nloc  <-  length(unique(dat$location))
   }
+  
   datnew  <-  data.frame()
   
   if(is.na(nloc)){
-    datnew  <-  data.frame(lookupVariable="",lookupValue="",newVariable=c("location","latitude","longitude","map","mat","vegetation","growingCondition","status"),newValue="",source="",stringsAsFactors=FALSE)
+    datnew  <-  data.frame(lookupVariable="",
+                           lookupValue="",
+                           newVariable=c("location","latitude","longitude","map","mat","vegetation","growingCondition","status"),
+                           newValue="",
+                           source="",
+                           stringsAsFactors=FALSE)
   } else {
-    for(j in 1:nloc){
+    for(j in seq_len(nloc)){
+      
       ob   <-  as.character(unique(dat$location)[j])
       su   <-  dat[dat$location==ob,c("latitude","longitude","map","mat","vegetation","growingCondition","status")]
-      t    <-  sapply(su,function(x){length(x)==length(x[is.na(x)])})
-      if(length(names(su)[t]) > 0){
-        for(k in names(su)[t]){
-          datnew  <-  rbind(datnew, data.frame(lookupVariable="location",lookupValue=ob,newVariable=k,newValue="",source="",stringsAsFactors=FALSE))
+      
+      allNA    <-  sapply(su,function(x)all(is.na(x)))
+      varsNA <- names(su)[allNA]
+      
+      if(any(allNA)){
+        for(k in varsNA){
+          datnew  <-  rbind(datnew, data.frame(lookupVariable="location",lookupValue=ob,
+                                               newVariable=k,newValue="",source="",stringsAsFactors=FALSE))
         }
       } else {
-        datnew  <-  rbind(datnew, data.frame(lookupVariable="location",lookupValue="",newVariable="",newValue="",source="",stringsAsFactors=FALSE))
+        datnew  <-  rbind(datnew, data.frame(lookupVariable="location",lookupValue="",
+                                             newVariable="",newValue="",source="",stringsAsFactors=FALSE))
       }
     }
   }
@@ -393,11 +430,14 @@ generateDataNew  <-  function(data, studyName){
   
   a  <-  is.na(fam)
   if(any(a)){
-    datnew  <-  rbind(datnew, data.frame(lookupVariable="species",lookupValue=spp[a],newVariable="family",newValue="",source="",stringsAsFactors=FALSE))
+    datnew  <-  rbind(datnew, data.frame(lookupVariable="species",lookupValue=spp[a],
+                                         newVariable="family",newValue="",source="",stringsAsFactors=FALSE))
   }  
+  
   a  <-  is.na(pft)
   if(any(a)){
-    datnew  <-  rbind(datnew, data.frame(lookupVariable="species",lookupValue=spp[a],newVariable="pft",newValue="",source="",stringsAsFactors=FALSE))
+    datnew  <-  rbind(datnew, data.frame(lookupVariable="species",lookupValue=spp[a],
+                                         newVariable="pft",newValue="",source="",stringsAsFactors=FALSE))
   }
   
   if(!file.exists(dir.Emails))

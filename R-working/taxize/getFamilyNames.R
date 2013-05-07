@@ -6,7 +6,7 @@ source('R/report-fun.R')
 source('R/packages.R')
 
 #names of all studies
-studyNames     <-  getStudyNames()
+studyNames <-  getStudyNames()
 
 #import data
 d<-addStudies(studyNames, reprocess = FALSE, verbose = FALSE)

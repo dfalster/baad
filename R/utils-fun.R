@@ -15,7 +15,7 @@ met.def       <-  read.csv("R/tables/methodsDefinitions.csv", h=TRUE, stringsAsF
 
 
 #Get list of studies included in database
-getStudyNames <-function(){dir("data")}
+getStudyNames <-function()dir("data")
 
 #make names lowercase
 lownames <- function(x)tolower(names(x))
