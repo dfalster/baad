@@ -13,7 +13,7 @@ studyNames <- getStudyNames()
 #create dataNew.csv files for authors to fill in
 generateAllDataNew(dat, studyNames)
 
-# Not touched : will change with new email code??
+#-- Not touched : will change with new email code??
 #for each study, put variable.definition, contactInfo and Reference in the email folder
 y  <-  lapply(studyNames, function(x)emailFiles(d$data, x))
 

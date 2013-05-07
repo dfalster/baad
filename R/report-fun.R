@@ -2,7 +2,7 @@ getContributors<-function(data){
   data$contact[!duplicated(d$contact$name),]
 }
 
-extractThisStduy<-function(alldata, study){
+extractStudy<-function(alldata, study){
   for(var in c("data", "ref", "contact"))
     alldata[[var]]<-alldata[[var]][alldata[[var]]$dataset == study,]
   alldata  
@@ -30,7 +30,7 @@ studyReport<-function(alldata, study="all"){
   if(study =="all")
     d<-alldata
   else
-    d<- extractThisStduy(alldata, study)
+    d<- extractStudy(alldata, study)
   
   cat("\nSTUDIES: ", as.character(unique(d$data$dataset)), "\n")
   
@@ -360,7 +360,7 @@ niceColors<-function(n=80){
 studyReportMd <- function(alldata, study=NULL, Dir="report-per-study", delete=TRUE){
   
   .study <- study
-  .dat <- extractThisStduy(alldata, study)
+  .dat <- extractStudy(alldata, study)
   
   #Check output directory exists
   path<-paste0("output/", Dir)
