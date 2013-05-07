@@ -165,7 +165,7 @@ drawWorldPlot  <-  function(data){
 
 repMissingInfo  <-  function(data){
   j    <-  !is.na(data$lat) & !is.na(data$lon) & data$loc != "NA" | is.na(data$loc)
-  sj   <-  data[j==FALSE,]
+  sj   <-  data[!j,]
   
   #location Info
   k  <-  !is.na(sj$loc) & is.na(sj$lon)
@@ -175,13 +175,13 @@ repMissingInfo  <-  function(data){
   }
   #coordinate Info
   k  <-  !is.na(sj$lon) & is.na(sj$loc) | sj$loc=="NA"
-  if(length(k[k==TRUE]) > 0){
+  if(any(k)){
     cat("Please notice that there is no location information for the following coordinate(s):")
     return(cbind(lon=sj$lon[k],lat=sj$lat[k]))
   }
   #country Info
   k  <-  !is.na(sj$loc) & is.na(sj$country)
-  if(length(k[k==TRUE]) > 0){
+  if(any(k)){
     cat("Please notice that there is no country information for the following location(s):")
     return(cbind(sj$loc[k]))
     cat("The most likely reason is either a missing or wrong coordinate, please revise")
@@ -189,6 +189,7 @@ repMissingInfo  <-  function(data){
 }
 
 drawCountryPlot  <-  function(data){
+  
   mapCountries  <-  unique(data$country)
   mapCountries  <-  mapCountries[!is.na(mapCountries)]
   countriesLen  <-  length(mapCountries)
@@ -198,7 +199,7 @@ drawCountryPlot  <-  function(data){
   #make map for each country
   for(g in mapCountries){
     zeta        <-  data$country==g
-    subC        <-  data[which(zeta==TRUE),]
+    subC        <-  data[zeta,]
     
     if(nrow(subC) <= 10){
       
@@ -210,7 +211,8 @@ drawCountryPlot  <-  function(data){
       subC$ppoint  <-  ppoint[match(subC$group,1:10)]
       for(d in unique(subC$group)){
         subD  <-  subC[subC$group==d,]
-        points(subD$lon[1], subD$lat[1], pch=subD$ppoint[1], col="black", bg=subD$cpoint[1], cex=0.8)
+        points(subD$lon[1], subD$lat[1], pch=subD$ppoint[1], 
+               col="black", bg=subD$cpoint[1], cex=0.8)
       }
       
       par(mar=c(2,0,2,0))
@@ -248,33 +250,28 @@ drawCountryPlot  <-  function(data){
 }
 
 locLevelInfo  <-  function(data){
-  loc  <-  unique(paste(data$location, data$map, data$mat, data$longitude, data$latitude, data$vegetation, sep=";"))
-  loc  <-  data.frame(Location=as.character(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][1]}))),
-                      MAP=as.numeric(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][2]}))),
-                      MAT=as.numeric(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][3]}))),
-                      Longitude=as.numeric(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][4]}))),
-                      Latitude=as.numeric(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][5]}))),
-                      Vegetation_Type=as.character(unlist(lapply(loc, function(x){strsplit(x,";")[[1]][6]}))),
-                      stringsAsFactors=FALSE)
+  
+  vars <- c("location","map","mat","longitude","latitude","vegetation")
+  
+  loc <- data[!duplicated(data[,vars]),vars]
   
   loc[is.na(loc) | loc=="" | loc=="NA"]  <-  "????"  
-  loc
+return(loc)
 }
 
 
 standLevelInfo  <-  function(data){
-  sta  <-  unique(paste(data$location, data$grouping, data$growingCondition, data$status, sep="&T&"))
-  sta  <-  data.frame(Location=as.character(unlist(lapply(sta, function(x){strsplit(x,"&T&")[[1]][1]}))),
-                      Grouping=as.character(unlist(lapply(sta, function(x){strsplit(x,"&T&")[[1]][2]}))),
-                      Growing_condition=as.character(unlist(lapply(sta, function(x){strsplit(x,"&T&")[[1]][3]}))),
-                      Status=as.character(unlist(lapply(sta, function(x){strsplit(x,"&T&")[[1]][4]}))),
-                      stringsAsFactors=FALSE)
   
-  if(length(which(is.na(sta$Grouping)==TRUE))==length(sta$Grouping) | length(which(sta$Grouping=="NA"))==length(sta$Grouping)){
-    sta  <-  sta[,c("Location", "Growing_condition", "Status")]
-  }
+  vars <- c("location","grouping","growingCondition","status")
+  sta <- data[!duplicated(data[,vars]),vars]
+  
+  
+  if(all(is.na(sta$grouping)))
+    sta  <-  sta[,c("location", "growing_condition", "status")]
+  
   sta[is.na(sta) | sta=="" | sta=="NA"]  <-  "????"  
-  sta
+
+return(sta)
 }
 
 
