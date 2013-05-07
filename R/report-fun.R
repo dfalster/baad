@@ -9,14 +9,20 @@ extractThisStduy<-function(alldata, study){
 }
 
 
-allStudyReport <- function(data, studynames){
-  
+allStudyReport <- function(data, studynames, progressbar=TRUE){
+
+  message("Generating ", length(studynames), " markdown reports.")
+  if(progressbar){
+    wp <- txtProgressBar(min = 0, max = length(studynames), 
+                       initial = 0, width = 50, style=3)
+  }
+
   for(i in seq_along(studynames)){
     studyReportMd(data, studynames[i])
-    message("------==== Report ",i," of ", length(studynames), 
-            " completed. ====-----")
-
+    if(progressbar)setTxtProgressBar(wp, i)
   }
+  
+  if(progressbar)close(wp)
   
 }
 
@@ -360,7 +366,7 @@ studyReportMd <- function(alldata, study=NULL, Dir="report-per-study", delete=TR
   path<-paste0("output/", Dir)
   if(!file.exists(path)) dir.create(path)
   
-  suppressMessages(knit2html("R/reportmd.Rmd"))
+  suppressMessages(knit2html("R/reportmd.Rmd", quiet=TRUE))
   
   file.copy("reportmd.html", paste0(path,"/",.study,"-report.html"))
   
@@ -374,11 +380,18 @@ studyReportMd <- function(alldata, study=NULL, Dir="report-per-study", delete=TR
 }
 
 
-generateAllDataNew <- function(data, studynames){
+generateAllDataNew <- function(data, studynames, progressbar=TRUE){
   
+  if(progressbar){
+  wp <- txtProgressBar(label = "", min = 0, max = length(studynames), 
+                       initial = 0, width = 50, style=3)
+  }
   
-  lapply(studynames, function(x)generateAllDataNew(data$data,x))
-  
+  for(i in seq_along(studynames)){
+      generateDataNew(data,studynames[i])
+      if(progressbar)setTxtProgressBar(wp, i)
+  }
+  if(progressbar)close(wp)
   
 }
 
@@ -386,6 +399,7 @@ generateDataNew  <-  function(data, studyName){
   
   # Extract dataframe of observations only
   data <- data$data
+
   dat <- data[data$dataset == studyName, ]
   
   if(all(is.na(dat$location))){
