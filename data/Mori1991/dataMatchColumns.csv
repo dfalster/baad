@@ -8,7 +8,7 @@
 "Leaf.area","b,1","m2","a.lf",NA
 "crown.projection.area.calculated.by.crown.diameter..A.B","z","m2","a.cp",NA
 "crown.diameter.A","","m","d.cr",NA
-"crown.diameter.B","","m","d.cr",NA
+"crown.diameter.B","","m",NA,NA
 "hinoki..Chamaecyparis.obtusa.",NA,NA,NA,NA
 "clear.bole.length.",NA,NA,NA,NA
 "Diameter.at.clear.bole.length",NA,NA,NA,NA
