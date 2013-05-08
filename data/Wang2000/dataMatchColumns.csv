@@ -5,7 +5,7 @@
 "Branch (cm)","","cm","h.c",NA
 "Foliage","m1","g","m.lf",NA
 "Branch","m1","g","m.br",NA
-"Dead Branch","m1","g","m.br",NA
+"Dead Branch",NA,NA,NA,NA
 "Stem Wood","m1","g","m.st",NA
 "Stem Bark","m1","g","m.sb",NA
 "m.rc","m1","g","m.rc",NA
