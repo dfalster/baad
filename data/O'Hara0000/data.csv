@@ -1,5 +1,5 @@
-tree,cm2,cm2,cm2,,m2,cm,m,cm,cm2,m
-,base.sap,bh.sap,cb.sap,num.of.branches,leaf.area,dbh,hgt.crown.base.,basal.diameter,Basal.cross.sectional.area,height
+,cm2,cm2,cm2,,m2,cm,m,cm,cm2,m
+tree,base.sap,bh.sap,cb.sap,num.of.branches,leaf.area,dbh,hgt.crown.base.,basal.diameter,Basal.cross.sectional.area,height
 1,390.7,177.5,390.7,184,45.76,16.51,0.08,24.55,473.4,6.1
 2,94.8,40,94.8,132,17.48,7.49,0,12.8,128.7,4.27
 4,16.5,,16.5,98,5.82,0.51,0.03,4.95,19.2,1.37
