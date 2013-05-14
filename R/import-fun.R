@@ -1,5 +1,27 @@
 ## Process all the data.
 
+#set directories for study
+dir.rawData   <-  "data" 
+dir.cleanData <-  "output/data"
+dir.Emails    <-  "output/email"
+var.def       <-  read.csv("R/tables/variableDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#variable definitions
+met.def       <-  read.csv("R/tables/methodsDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#definition of methods
+
+
+if(!file.exists(dir.cleanData)){
+  ## Creates output directory if does not already exist 
+  dir.create("output")
+  dir.create(dir.cleanData)  
+}
+
+
+
+# Get list of studies included in database
+getStudyNames <-function(){
+  dir(dir.rawData)
+}
+
+
 #' Adds studies to the central dataset
 #'
 #' @param studyNames Character vector of study names to be added
@@ -429,8 +451,9 @@ Mg.kg            <-  function(x){x/1000} #from megagrams (Mg) to kg
 g.l.kg.m3        <-  function(x){x} #from grams/litre to kg/m3
 kg.l.kg.m3        <-  function(x){x*1000} #from kilograms/litre to kg/m3
 
-data.path <- function(studyName, ...)
-  file.path(dir.rawData, studyName, ...)
+data.path <- function(studyName, ...){
+  file.path(dir.rawData, studyName, ...)  
+}
 
 readReference <- function(studyName) {
   ref <- read.csv(data.path(studyName, "studyRef.csv"),

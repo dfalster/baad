@@ -1,11 +1,10 @@
 rm(list=ls())
 source('R/packages.R')
-source('R/utils-fun.R')
 source('R/import-fun.R')
 source('R/report-fun.R')
 
 # Load all data
-dat <- loadStudies()
+dat <- loadStudies(reprocess=TRUE)
 
 # List all study names
 studyNames <- getStudyNames()
