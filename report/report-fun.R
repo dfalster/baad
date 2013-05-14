@@ -9,7 +9,7 @@ extractStudy<-function(alldata, study){
 }
 
 
-allStudyReport <- function(data, studynames, progressbar=TRUE){
+allStudyReport <- function(data, studynames= getStudyNames(), progressbar=TRUE){
 
   message("Generating ", length(studynames), " markdown reports.")
   if(progressbar){
@@ -363,7 +363,7 @@ studyReportMd <- function(alldata, study=NULL, Dir="report-per-study", delete=TR
   path<-paste0("output/", Dir)
   if(!file.exists(path)) dir.create(path)
   
-  suppressMessages(knit2html("R/reportmd.Rmd", quiet=TRUE))
+  suppressMessages(knit2html("report/reportmd.Rmd", quiet=TRUE))
   
   file.copy("reportmd.html", paste0(path,"/",.study,"-report.html"))
   
