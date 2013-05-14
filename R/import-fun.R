@@ -4,15 +4,8 @@
 dir.rawData   <-  "data" 
 dir.cleanData <-  "output/data"
 dir.Emails    <-  "output/email"
-var.def       <-  read.csv("R/tables/variableDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#variable definitions
-met.def       <-  read.csv("R/tables/methodsDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#definition of methods
-
-
-if(!file.exists(dir.cleanData)){
-  ## Creates output directory if does not already exist 
-  dir.create("output")
-  dir.create(dir.cleanData)  
-}
+var.def       <-  read.csv("config/variableDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#variable definitions
+met.def       <-  read.csv("config/methodsDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#definition of methods
 
 
 
@@ -100,6 +93,10 @@ processStudy <- function(studyName, verbose=FALSE) {
   data <- addNewData(studyName, data)
   
   if (verbose) cat("write to file ")
+  
+  ## Creates output directory if does not already exist 
+  if(!file.exists(dir.cleanData))
+    dir.create(dir.cleanData, recursive=TRUE)  
   write.csv(data, outputName, row.names=FALSE)
 
   data
