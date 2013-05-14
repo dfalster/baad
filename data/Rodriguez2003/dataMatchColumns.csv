@@ -12,8 +12,8 @@
 "SLA_Lower_third","","","",NA
 "SLA_Middle_Third","","","",NA
 "SLA_Upper_third","","","",NA
-"Treatment",NA,NA,NA,NA
-"Crown_class",NA,NA,NA,NA
+"Treatment",NA,NA,"grouping",NA
+"Crown_class",NA,NA,"status",NA
 "Number Tree",NA,NA,NA,NA
 "Twigs",NA,NA,NA,NA
 "Stemwood",NA,NA,NA,NA
