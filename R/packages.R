@@ -1,5 +1,0 @@
-require(maps)
-require(mapdata)
-require(knitr)
-require(bibtex)
-require(gdata)

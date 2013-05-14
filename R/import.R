@@ -1,11 +1,11 @@
-## Process all the data.
+library(bibtex, quietly=TRUE)
 
 #set directories for study
 dir.rawData   <-  "data" 
 dir.cleanData <-  "output/data"
-dir.Emails    <-  "output/email"
 var.def       <-  read.csv("config/variableDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#variable definitions
 met.def       <-  read.csv("config/methodsDefinitions.csv", h=TRUE, stringsAsFactors=FALSE)#definition of methods
+
 
 
 
@@ -13,6 +13,7 @@ met.def       <-  read.csv("config/methodsDefinitions.csv", h=TRUE, stringsAsFac
 getStudyNames <-function(){
   dir(dir.rawData)
 }
+
 
 
 #' Adds studies to the central dataset
@@ -427,6 +428,17 @@ readImport <- function(studyName) {
     import$na.strings <- c("NA", import$na.strings)
   import
 }
+
+getContributors<-function(data){  
+  data$contact[!duplicated(d$contact$name),]
+}
+
+extractStudy<-function(alldata, study){
+  for(var in c("data", "ref", "contact"))
+    alldata[[var]]<-alldata[[var]][alldata[[var]]$dataset == study,]
+  alldata  
+}
+
 
 #Conversion functions - converts unit before the dot into the unit after it
 g.kg             <-  function(x){x/1000} #from g to kg
