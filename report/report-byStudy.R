@@ -1,6 +1,6 @@
 rm(list=ls())
 source('R/packages.R')
-source('R/import-fun.R')
+source('R/import.R')
 source('report/report-fun.R')
 
 # Load all data

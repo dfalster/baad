@@ -1,9 +1,8 @@
 
 library(testthat)
 rm(list=ls())
-source('R/Biomass-fun.R')
-source('R/import-fun.R')
-source("R/test-import-fun.R")
+source('R/import.R')
+source("report/test-import-fun.R")
 
 #Test single study
 studyName     <-  "Aiba2005"

@@ -1,4 +1,4 @@
-library(testthat)
+require(testthat)
 
 exclude  <-  function(x, pattern){
   ex  <-  grep(pattern, names(x))
