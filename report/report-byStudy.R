@@ -1,15 +1,14 @@
 rm(list=ls())
 source('R/import.R')
-source('report/report-fun.R')
 source('R/plotting.R')
 source('R/formatBib.R')
+source('report/report-fun.R')
 
 # Load all data
 dat <- loadStudies(reprocess=FALSE)
 
 # Markdown report (HTML)
-studyReportMd(dat, "Ilomaki2003")
-studyReportMd(dat, "Parviainen1999")
+printStudyReport(dat, "Ilomaki2003")
 
 # All reports:
 allStudyReport(dat)

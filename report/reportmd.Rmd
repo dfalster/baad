@@ -1,3 +1,7 @@
+```{r echo=FALSE, comment=''}
+.dat = extractStudy(alldata, .study)
+```
+
 # Report for study: `r .study`
 
 **Reference:** `r formatBib(paste0("../", as.character(.dat$ref$reference)))[[1]]`

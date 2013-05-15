@@ -12,12 +12,11 @@ allStudyReport <- function(data, studynames= getStudyNames(), progressbar=TRUE){
   }
   
   for(i in seq_along(studynames)){
-    studyReportMd(data, studynames[i])
+    printStudyReport(data, studynames[i])
     if(progressbar)setTxtProgressBar(wp, i)
   }
   
-  if(progressbar)close(wp)
-  
+  if(progressbar)close(wp) 
 }
 
 
@@ -71,28 +70,58 @@ printMeta  <-  function(data){
 
 
 #creates html reports using knitr
-studyReportMd <- function(alldata, study=NULL, Dir="report-per-study", delete=TRUE){
+printStudyReport <- function(alldata, study=NULL, RmdFile ="report/reportmd.Rmd", path="output/report-per-study", name=NULL, delete=TRUE){
+
+  #if no name provided, use study name
+  if(is.null(name)) 
+    name <- study
+  #if study is null
+  if(is.null(name)) 
+    name <- "all"
   
-  .study <- study
-  .dat <- extractStudy(alldata, study)
+  knitThis(RmdFile = RmdFile, path=path, name=name, delete=TRUE, overwrite=TRUE, 
+           predefined=list(.study = study, alldata=alldata)) 
+}
+
+
+#creates html reports using knitr, copies output file to desired location and renames as required
+knitThis <- function(RmdFile ="report/reportmd.Rmd", path="output/report-per-study", 
+                     name="study", delete=TRUE,
+                     overwrite=TRUE, ..., predefined=list(...)){
   
-  #Check output directory exists
-  path<-paste0("output/", Dir)
-  if(!file.exists(path)) dir.create(path, recursive=TRUE)
+  #create new environment with predfined variables
+  e <- new.env()
+  if (length(predefined) > 0) { 
+    #avoid issues when variables unnamed
+    if (is.null(names(predefined)) || any(names(predefined) == ""))
+      stop("All extra variables must be named")
   
-  suppressMessages(knit2html("report/reportmd.Rmd", quiet=TRUE))
+    for ( v in names(predefined))
+      assign(v, predefined[[v]], e)
+  }
   
-  file.copy("reportmd.html", paste0(path,"/",.study,"-report.html"))
+  #knit
+  suppressMessages(knit2html(RmdFile, quiet=TRUE, envir=e))
+  
+  #copy html file to output dir
+  if(!file.exists(path)) 
+    dir.create(path, recursive=TRUE)
+  
+  #extract filename from RmdFile 
+  filebits <- strsplit(RmdFile, "/")[[1]]
+  filename <- filebits[length(filebits)]
+  
+  #copy html file to output dir, rename
+  file.copy(sub("Rmd", "html", filename), paste0(path,"/",name,".html"), overwrite =  overwrite)
   
   #delete support files
   if(delete){
-    unlink("reportmd.md")
-    unlink("reportmd.html")
+    unlink(sub("Rmd", "html", filename))
+    unlink(sub("Rmd", "md", filename))
     unlink("figure", recursive=TRUE) 
   }
   
 }
-
 
 generateAllDataNew <- function(data, studynames, progressbar=TRUE){
   
