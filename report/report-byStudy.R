@@ -2,6 +2,7 @@ rm(list=ls())
 source('R/import.R')
 source('report/report-fun.R')
 source('R/plotting.R')
+source('R/formatBib.R')
 
 # Load all data
 dat <- loadStudies(reprocess=FALSE)

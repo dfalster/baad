@@ -465,10 +465,8 @@ data.path <- function(studyName, ...){
 }
 
 readReference <- function(studyName) {
-  ref <- read.csv(data.path(studyName, "studyRef.csv"),
-                  header=TRUE, stringsAsFactors=FALSE,
-                  strip.white=TRUE)
-  data.frame(dataset=studyName, ref)
+  reference <-data.path(studyName, "studyRef.bib")
+  data.frame(dataset=studyName, reference)
 }
 
 readContact <- function(studyName) {

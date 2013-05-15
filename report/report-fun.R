@@ -20,36 +20,6 @@ allStudyReport <- function(data, studynames= getStudyNames(), progressbar=TRUE){
   
 }
 
-studyReport<-function(alldata, study="all"){
-  if(study =="all")
-    d<-alldata
-  else
-    d<- extractStudy(alldata, study)
-  
-  cat("\nSTUDIES: ", as.character(unique(d$data$dataset)), "\n")
-  
-  cat("Data for",  length(d$data$dataset),"individuals from", length(unique(d$data$location)), "locations covering",  length(unique(d$data$species)), "species.\n\n")
-  
-  cat("\nNUMBER OF RECORDS FOR EACH VARIABLE: \n")  
-  counts<-apply(!is.na(d$data), MARGIN=2, FUN = sum)
-  counts<-counts[counts>0]  #only include no zeros
-  #only include tree variables
-  (counts<-counts[names(counts)%in%var.def$Variable[var.def$Group=="tree"]])
-  
-  cat("\nMORE DETAIL:\n")  
-  cat("\nSITES:\n")  
-  cat("\nprint information for each site, ie. ", var.def$Variable[var.def$Group=="site"])  
-  cat("\nmap of locations used")  
-  
-  cat("\nSPECIES: ", length(unique(d$data$species)), "\n", paste0(as.character(unique(sort(d$data$species))), "; "), "\n")
-  cat("\nprint information for each species, ie. ", var.def$Variable[var.def$Group=="species"])  
-  cat("\n also number of records for each species")  
-  
-  #Brief look at data
-  makePlotPanel(alldata$data, study, pdf=FALSE)
-  
-}
-
 
 locLevelInfo  <-  function(data){
   
@@ -108,7 +78,7 @@ studyReportMd <- function(alldata, study=NULL, Dir="report-per-study", delete=TR
   
   #Check output directory exists
   path<-paste0("output/", Dir)
-  if(!file.exists(path)) dir.create(path)
+  if(!file.exists(path)) dir.create(path, recursive=TRUE)
   
   suppressMessages(knit2html("report/reportmd.Rmd", quiet=TRUE))
   
@@ -212,8 +182,8 @@ generateDataNew  <-  function(data, studyName){
 
 emailFiles  <-  function(data, studyName){
   contact    <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyContact.csv"), h=TRUE,stringsAsFactors=FALSE)
-  reference  <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.csv"), h=TRUE,stringsAsFactors=FALSE)
+  reference  <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.bib"), h=TRUE,stringsAsFactors=FALSE)
   write.csv(contact, paste0(dir.Emails,"/",studyName,"/studyContact.csv"))
-  write.csv(reference, paste0(dir.Emails,"/",studyName,"/studyRef.csv"))
+  write.csv(reference, paste0(dir.Emails,"/",studyName,"/studyRef.bib"))
   write.csv(var.def, paste0(dir.Emails,"/",studyName,"/Variable_definitions.csv"))
 }

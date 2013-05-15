@@ -1,6 +1,6 @@
 # Report for study: `r .study`
 
-**Reference:** `r .dat$ref[2]`
+**Reference:** `r formatBib(paste0("../", as.character(.dat$ref$reference)))[[1]]`
 
 **Data contributor:** `r .dat$contact$name`.
 

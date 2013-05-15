@@ -5,8 +5,8 @@ formatBib <- function(bibfile,
                       fieldSep=". "
                       ){
   
-  require(gdata)
-  require(bibtex)
+  library(gdata, quietly=TRUE)
+  library(bibtex, quietly=TRUE)
   
   bibs <- read.bib(bibfile)
   
