@@ -353,7 +353,7 @@ setUpFiles  <-  function(newStudy, quiet=FALSE){
     metadat  <-  data.frame(Topic=c("Sampling strategy", "Leaf area", "Stem cross sectional area", "Height", "Crown area", "Biomass", "traits", "Growth environment", "Other variables"),
                             Description=c("Please provide a brief description of the sampling strategy used in this paper (up to 4 sentences)", rep("Please provide ...",8)),
                             stringsAsFactors=FALSE)    
-    write(metadat, paste0(dir.rawData,"/",newStudy,"/studyMetadata.csv"))
+    write.csv(metadat, paste0(dir.rawData,"/",newStudy,"/studyMetadata.csv"))
   }
   
   #creates and writes studyRef.csv
