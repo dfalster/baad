@@ -1,5 +1,8 @@
 lookupVariable,lookupValue,newVariable,newValue,source
-NA,NA,pft,DA,from .txt file[R Smith]
+NA,NA,pft,EG,from .txt file[R Smith]
 NA,NA,growingCondition,GH,from .txt file[R Smith]
+NA,NA,vegetation,TempRF,from .txt file[R Smith]
+NA,NA,light,closed[average 50%],from .txt file[R Smith]
 NA,NA,location,"University of Western Sydney, Richmond, NSW, Australia",from .txt file[R Smith]
-NA,NA,species,Gossypium hirsutum,from .txt file[R Smith]
+NA,NA,species,Wollemia nobilis,from .txt file[R Smith]
+NA,NA,age,2.5yrs,from .txt file[R Smith]
