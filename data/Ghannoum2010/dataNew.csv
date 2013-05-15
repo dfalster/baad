@@ -1,0 +1,7 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+species,Saligna,species,Eucalyptus saligna,from paper[O. Ghannoum]
+species,Sideroxylon,species,Eucalyptus sideroxylon,from paper[O. Ghannoum]
+NA,NA,vegetation,TempF,from paper[O. Ghannoum]
+NA,NA,pft,EA,from paper[O. Ghannoum]
+NA,NA,growingCondition,GH,from paper[O. Ghannoum]
+NA,NA,location,"University of Western Sydney, Richmond, NSW, Australia",from paper[O. Ghannoum]
