@@ -1,6 +1,6 @@
-library(maps, quietly=TRUE)
-library(mapdata, quietly=TRUE)
-library(gdata, quietly=TRUE)
+suppressPackageStartupMessages(library(maps))
+suppressPackageStartupMessages(library(mapdata))
+suppressPackageStartupMessages(library(gdata))
 
 
 

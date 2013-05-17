@@ -1,6 +1,6 @@
 rm(list=ls())
 source('R/import.R')
-source('R/packages.R')
+# source('R/packages.R')
 
 #prepare new files for pre-import
 NewStudies  <-  getStudyNames()
