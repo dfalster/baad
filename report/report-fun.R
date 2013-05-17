@@ -80,7 +80,7 @@ printStudyReport <- function(alldata, study=NULL, RmdFile ="report/reportmd.Rmd"
     name <- "all"
   
   knitThis(RmdFile = RmdFile, path=path, name=name, delete=TRUE, overwrite=TRUE, 
-           predefined=list(.study = study, alldata=alldata)) 
+           predefined=list(.study = study, alldata=alldata, .dat = extractStudy(alldata, study))) 
 }
 
 
