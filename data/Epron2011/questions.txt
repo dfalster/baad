@@ -1,0 +1,5 @@
+At what height the cross-section measurements for sapwood, heartwood, bark and total stem were taken (soil, breast height, crown base)? 
+
+Could you please confirm if what you call h.c is crown depth or height of the plant to the first bearing leaf?
+
+It seems that the units you provided for crown.area (a.cp) might be wrong. You provided m2 but we suspect there is a wrong calculation in the original excel file. Could you please double-check this information?

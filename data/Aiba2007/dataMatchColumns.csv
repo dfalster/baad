@@ -1,0 +1,14 @@
+"var_in","method","unit_in","var_out","notes"
+"total root mass (g)","m0","g","m.rt",NA
+"total stem mass (g)",NA,NA,NA,NA
+"branch mass (g)","m0","g","m.br",NA
+"total leaf mass (g)","m0","g","m.lf",NA
+"total leaf area (cm^2)","","cm2","a.lf",NA
+"individual leaf area (cm^2)","b","cm2","lf.sz",NA
+"height (cm)","","cm","h.t",NA
+"crown area (cm^2)","","cm2","a.cp",NA
+"crown height (cm)","","cm","h.c",NA
+"base diameter (mm)","","mm","d.ba",NA
+"genus",NA,NA,NA,NA
+"species",NA,NA,NA,NA
+"branch mass + stem mass (g)","m0","g","m.st",NA

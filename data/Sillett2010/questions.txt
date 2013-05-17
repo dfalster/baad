@@ -1,0 +1,1 @@
+It seems that the units you provided for bark area might be wrong. You provided m2 but we suspect it may be cm2. Vould you please double-check this information? We couldn't find it in the original paper unfortunately.

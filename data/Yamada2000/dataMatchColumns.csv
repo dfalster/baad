@@ -1,0 +1,15 @@
+"var_in","method","unit_in","var_out","notes"
+"tree height (cm)","","cm","h.t",NA
+"height at the lowest leaf (or branch) (cm)","","cm","h.c",NA
+"diameter at the ground level (cm)","","cm","d.ba",NA
+"diameter at breast height (at 130 cm from the ground) (cm)","","cm","d.bh",NA
+"crown projection area (cm2)","a","cm2","a.cp",NA
+"stem dry mass (g)","m5","g","m.st",NA
+"leaf dry mass (g)","m5","g","m.lf",NA
+"branch dry mass (g)","m5","g","m.br",NA
+"total above ground mass (g)","m5","g","m.so",NA
+"Species",NA,NA,"species",NA
+"site",NA,NA,"location",NA
+"tree no",NA,NA,NA,NA
+"number of leaves",NA,NA,NA,NA
+"source",NA,NA,NA,NA

@@ -1,0 +1,25 @@
+"var_in","method","unit_in","var_out","notes"
+"age (months)","","months","age",NA
+"total height (cm)","","cm","h.t",NA
+"stem diameter at base (mm)","","mm","d.ba",NA
+"leaf area (cm2)","","cm2","a.lf",NA
+"total leaf mass (g)","m1","g","m.lf",NA
+"total root mass (g)","m1","g","m.rt",NA
+"stem mass (g)","m1","g","m.st",NA
+"Single leaf area (cm2)","","cm2","lf.sz",NA
+"lma (g cm-2)","","g.cm2","lf.ma",NA
+"contributor",NA,NA,NA,NA
+"family",NA,NA,NA,NA
+"species",NA,NA,NA,NA
+"Plant functional type",NA,NA,"pft",NA
+"Growing condition",NA,NA,"growingCondition",NA
+"Status",NA,NA,NA,NA
+"Light",NA,NA,NA,NA
+"Other notes about growing conditions",NA,NA,NA,NA
+"Location",NA,NA,NA,NA
+"Lat",NA,NA,NA,NA
+"Long",NA,NA,NA,NA
+"Vegetation",NA,NA,NA,NA
+"map",NA,NA,NA,NA
+"mat",NA,NA,NA,NA
+"reference",NA,NA,NA,NA

@@ -1,0 +1,48 @@
+\underline{Contact}: ???
+
+Reid, D.E.B., Leiffers, V.J. and Silins, U. (2004) Growth and crown efficiency of height repressed logepole pine; are supressed trees more efficient? Trees, 18, 390-398.
+
+Latin name of species
+Pinus contorta var. latifolia
+
+Size range
+Diameter at breast height (1.3 m) ranging from 1.2 to 20.5 cm.
+
+Number of individuals
+139
+
+Individual leaf size and Total leaf area
+A sub-sample of fresh needles from each sampled branch was scanned and one-sided, projected leaf area was measured (Sigma Scan-Pro image analysis software). Leaf area of each tree was determined by scaling projected leaf area with specific leaf area and leaf mass.
+
+Area of sapwood, heartwood cross section and/or total stem cross section
+Diameter at breast height (1.3 m) was measured for each individual. 1 cm disks were cut at breast height and scanned for sapwood/heartwood cross sectional areas.
+
+Projected crown area and crown surface area
+Crown projection area was estimated by measuring crown diameter and assuming circular horizontal crown dimensionsr.
+
+Total height of plant and Height of crown
+Heights were measured on each individual.
+
+Biomass; Total leaf mass and Branch mass
+Crowns were devided into upper, mid, and lower sections. The fresh weight of all branches and all needles from each crown section were dried to constant weight and weighed.
+
+Leaf mass per area
+Needle specific area was determined from the dry weight of the scanned needle sub-sample.
+
+Plant functional type
+Evergreen gymnosperm.
+
+Growth environment of sampled plant
+Field, wild. 
+
+Position in forest canopy
+Samples include dominant (D), co-dominant (CD) and suppressed (SP) trees
+
+Location where sampled
+Twelve study locations located in the Gregg river burn, located 50 km south of Hinton, Alberta, USA.
+
+Vegetation type
+Boreal forest
+
+Leaf area index
+Measurements using hemispherical photography were made and LAI was estimated from the digital images collected using SLIM software.

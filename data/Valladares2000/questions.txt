@@ -1,0 +1,2 @@
+It seems that the units you provided for leaf mass per area might be wrong. You provided kg.m2 but we suspect it may be g.cm2. Vould you please double-check this information? We couldn't find it in the original paper unfortunately.
+Same thing for wood density, we suspect it may be kg/l and not g/l(=kg/m3). Could you please double check?

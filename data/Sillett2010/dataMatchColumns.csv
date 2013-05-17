@@ -1,0 +1,19 @@
+"var_in","method","unit_in","var_out","notes"
+"Minimum Age (year)","","yr","age",NA
+"Height (m)","","m","h.t",NA
+"Dbh (cm)","","cm","d.bh",NA
+"Dry mass (Mg)","m1","Mg","m.so",NA
+"Heartwood area (m2)",NA,NA,NA,NA
+"Bark area (m2)",NA,NA,NA,NA
+"Leaf dry mass (kg)","m1","kg","m.lf",NA
+"Tree",NA,NA,"species",NA
+"Heartwood volume (m3)",NA,NA,NA,NA
+"Sapwood volume (m3)",NA,NA,NA,NA
+"Bark volume (m3)",NA,NA,NA,NA
+"Decaying wood volume (m3)",NA,NA,NA,NA
+"Cambium (m2)",NA,NA,NA,NA
+"Leaf area (m2)",NA,NA,NA,NA
+"Number of leaves (millions)",NA,NA,NA,NA
+"Wood growth (kg)",NA,NA,NA,NA
+"PC1",NA,NA,NA,NA
+"PC2",NA,NA,NA,NA

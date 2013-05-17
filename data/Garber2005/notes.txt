@@ -1,0 +1,56 @@
+Metadata				
+
+Garber, S.M. and Maguire, D.A. (2005) The response of vertical foliage distribution to spacing and species composition in mixed conifer stands in central Oregon. Forest Ecology and management, 211, 341-355.
+
+Latin name of species
+Abies grandis (Dougl. ex D. Don) Lindl., Pinus contorta Dougl. ex Loud., Pinus ponderosa Dougl. ex Laws.
+
+Size range
+Stem diameter range from 2 to 38.8 cm.
+
+Number of individuals
+94
+
+Individual leaf size and Total leaf area
+Fresh foliage samples were frozen until they could be analyzed for projected (A. grandis) or all-sided (Pinus species) leaf area. Leaf area of each subsample was measured to the nearest 0.001 cm2. These subsamples were then dried and weighed to the nearest 0.0001 g. Total leaf area was estimated by multiplying total foliage dry weight by SLA.
+
+Area of sapwood, heartwood cross section and/or total stem cross section
+Diameter outside bark at breast height (1.37 m) was measured to the nearest 0.1 cm.
+
+Projected crown area 
+Area was estimated for each individual.
+
+Total height of plant
+Total tree height was measured to the nearest 0.01 m. 
+
+Height of crown
+Height to the lowest living branch was measured to the mearest 0.01 m. 
+
+Biomass;Total leaf mass
+The crown was divided into thirds. Two whorl branches and noe inter whorl branch were selected at random form each crown third. A random subsample of approximately 100 fresh needles was removed in  proportion to age class representation on the sample branch.
+
+Leaf mass per area
+Specific leaf area (SLA) was computed as the ratio of leaf area to dry weight.
+
+Plant functional type
+Evergreen gymnosperm
+
+Growth environment of sampled plant
+Plantation managed
+
+Treatment
+Spacing and species composition.
+
+Location where sampled
+Pringle Butte and Lookout Mountain. Cascade Range crest, approximately 45 km southwest of Bend, Oregon, USA.
+
+Longitude and latitude of location
+Pringle Butte 43°44'N, 121°37'W
+Lookout Mountain 43°49'N, 121°41'W
+
+Vegetation type
+Boreal forest
+
+Mean annual rainfall
+610 mm
+1000 mm

@@ -1,0 +1,11 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+,,growingCondition,FE,D Barneche[from paper]
+,,age,28,D Barneche[from paper]
+,,longitude,5.733333333,D Barneche[from paper]
+,,latitude,69.28333333,D Barneche[from paper]
+,,pft,DA,D Barneche[from web]
+,,species,Betula pendula,D Barneche[from paper]
+,,family,Betulaceae,D Barneche[from web]
+status,1,status,3,D Barneche
+status,3,status,1,D Barneche
+status,4,status,0,D Barneche

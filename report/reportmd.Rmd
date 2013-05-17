@@ -1,0 +1,86 @@
+
+# Report for study: `r .study`
+
+**Reference:** `r formatBib(paste0("../", as.character(.dat$ref$reference)))[[1]]`
+
+**Data contributor:** `r .dat$contact$name`.
+
+**Email:** `r .dat$contact$email`.
+
+**Address:** `r .dat$contact$address`.
+
+## Overview of data provided
+
+Data for `r length(.dat$data$dataset)` individuals from `r length(unique(.dat$data$location))` locations covering `r length(unique(.dat$data$species))` species.
+
+The dataset includes `r length(unique(.dat$data$species))` species belonging to `r length(unique(.dat$data$family))` family(ies), presenting `r length(unique(.dat$data$pft))` functional type(s), growing in `r length(unique(.dat$data$growingCondition))` condition(s) within `r length(unique(.dat$data$vegetation))` major type(s) of habitat:
+
+
+### Number of records for each variable
+
+```{r echo=FALSE, comment=''}
+counts  <-  apply(!is.na(.dat$data), MARGIN=2, FUN = sum)
+counts  <-  counts[counts>0]  #only include no zeros
+counts  <-  counts[names(counts)%in%var.def$Variable[var.def$Group=="tree"]]
+cbind(counts)
+```
+
+
+## Study details
+
+### Location
+
+**Location data**
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+options(width =160)
+locLevelInfo(.dat$data)
+```
+
+**Global map**
+
+```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE, warning=FALSE}
+prepdata  <-  prepMapInfo(alldata$data, .study)
+drawWorldPlot (prepdata)
+```
+
+**Country map**
+
+```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE, warning=FALSE}
+repMissingInfo(prepdata)
+drawCountryPlot(prepdata)
+```
+
+
+**Stand description**
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+standLevelInfo(.dat$data)
+```
+
+### Species data
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+spLevelInfo(.dat$data)
+```
+
+### Methods
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+metaTable  <-  printMeta(.dat$data)
+for(j in 1:nrow(metaTable)){
+  cat(paste0(metaTable[j,1], ": ", metaTable[j,2], "\n\n"))
+}
+
+```
+
+## Plots of data
+
+This is how the study `r .study` (each color represents a species) fits in the entire dataset (grey).
+
+```{r fig.height=8, fig.width=8, echo=FALSE, warning=FALSE, message=FALSE}
+makePlotPanel(alldata$data, .study, pdf=FALSE, quiet=TRUE)
+```
+
+
+  
+  
+  

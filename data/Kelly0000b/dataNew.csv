@@ -1,0 +1,7 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+NA,NA,vegetation,TempF,from .txt file[J Kelly]
+NA,NA,pft,EA,from .txt file[J Kelly]
+NA,NA,growingCondition,GH,from .txt file[J Kelly]
+NA,NA,location,"Macquarie University, North Ryde, NSW, Australia",from .txt file[J Kelly]
+species,PIL,species,Eucalyptus pilularis,from .txt file[J Kelly]
+species,POP,species,Eucalytpus populnea,from .txt file[J Kelly]

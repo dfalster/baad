@@ -1,0 +1,32 @@
+"var_in","method","unit_in","var_out","notes"
+"Age","","yr","age",NA
+"LeafArea","c,1","cm2","a.lf",NA
+"Diam at colar height","","cm","d.bh",NA
+"CrownWidth","","cm","c.d",NA
+"h.t","","cm","h.t",NA
+"h.c","","cm","h.c",NA
+"m.lf","m1","g","m.lf",NA
+"m.st","m1","g","m.st",NA
+"m.br","m1","g","m.br",NA
+"m.rf","m1","g","m.rf",NA
+"m.rc","m1","g","m.rc",NA
+"m.rt","m1","g","m.rt",NA
+"lf.ma","","g.m2","lf.ma",NA
+"d.st","","kg.l","d.st",NA
+"n.lf","","g.m2","n.lf",NA
+"Light","li3","-","light",NA
+"Contributor",NA,NA,NA,NA
+"Family",NA,NA,NA,NA
+"Species",NA,NA,"species",NA
+"pft",NA,NA,NA,NA
+"growingCondition",NA,NA,NA,NA
+"Group",NA,NA,NA,NA
+"Location",NA,NA,NA,NA
+"Latitude",NA,NA,NA,NA
+"Longitude",NA,NA,NA,NA
+"Vegetation",NA,NA,NA,NA
+"map",NA,NA,NA,NA
+"mat",NA,NA,NA,NA
+"Reference",NA,NA,NA,NA
+"Last perturbation",NA,NA,NA,NA
+"Tree_ID",NA,NA,NA,NA

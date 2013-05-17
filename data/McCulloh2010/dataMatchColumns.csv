@@ -1,0 +1,15 @@
+"var_in","method","unit_in","var_out","notes"
+"lf.A.m2","b","m2","lf.sz",NA
+"stem.d.mm","","mm","d.ba",NA
+"sapwd.area.m2","","cm2","a.ssba",NA
+"height.m","","m","h.t",NA
+"species",NA,NA,NA,NA
+"wood.type",NA,NA,NA,NA
+"collection.site",NA,NA,NA,NA
+"individual.number",NA,NA,NA,NA
+"sample",NA,NA,NA,NA
+"hydraulic.conductivity.Kg.m.Mpa-1.s-1",NA,NA,NA,NA
+"conduit.diameter.microns",NA,NA,NA,NA
+"conduit.diameter.stdev",NA,NA,NA,NA
+"conduit.frequency.mm-2",NA,NA,NA,NA
+"xylem.area.m2",NA,NA,NA,NA
