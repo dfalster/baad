@@ -1,6 +1,6 @@
 manipulate <- function(raw) {
   
-  raw$grouping <- paste("Temp-CO2=",raw$Temp, raw$CO2)
+  raw$grouping <- makeGroups(raw, c("CO2", "Temp")) 
   
   raw
 }
