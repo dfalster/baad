@@ -2,6 +2,8 @@ rm(list=ls())
 source('R/import.R')
 source('R/plotting.R')
 source('R/formatBib.R')
+source('R/email.R')
+
 source('report/report-fun.R')
 
 # Load all data

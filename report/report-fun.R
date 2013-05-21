@@ -3,21 +3,31 @@ library(knitr, quietly=TRUE)
 dir.Emails    <-  "output/email"
 
 
-# emailReport <- function(data, studynames= getStudyNames(), dir.Emails    <-  "output/email", reprocess=FALSE, progressbar=TRUE){
-#   
-#   message("Generating ", length(studynames), " emails")
-#   if(progressbar){
-#     wp <- txtProgressBar(min = 0, max = length(studynames), 
-#                          initial = 0, width = 50, style=3)
-#   }
-#   
-#   for(i in seq_along(studynames)){
-#     printStudyReport(data, studynames[i])
-#     if(progressbar)setTxtProgressBar(wp, i)
-#   }
-#   
-#   if(progressbar)close(wp) 
-# }
+
+#creates html reports using knitr
+emailReport <- function(studyName, reportPath= NULL, to = c("daniel.falster@mq.edu.au"), from ="daniel.falster@mq.edu.au", cc= "daniel@falsters.net"){
+  
+  files<-c(reportPath, 
+              "config/variableDefinitions.csv", 
+              paste0(dir.rawData,"/",studyName,"/studyRef.bib"),
+              paste0(dir.rawData,"/",studyName,"/studyContact.csv")
+              )
+  content <- "Hi, iam writing"
+
+  email(content, "About your data",
+          to,
+          bcc=c("fitzjohn@zoology.ubc.ca", "dfalster@bio.mq.edu.au"),
+          files= files, send=FALSE)
+  
+#   emailFiles  <-  function(data, studyName){
+#     contact    <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyContact.csv"), h=TRUE,stringsAsFactors=FALSE)
+#     reference  <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.bib"), h=TRUE,stringsAsFactors=FALSE)
+#     write.csv(contact, paste0(dir.Emails,"/",studyName,"/studyContact.csv"))
+#     write.csv(reference, paste0(dir.Emails,"/",studyName,"/studyRef.bib"))
+#     write.csv(var.def, paste0(dir.Emails,"/",studyName,"/Variable_definitions.csv"))
+  }
+  
+}
 
 
 printAllStudyReports <- function(data, studynames= getStudyNames(), reprocess=FALSE, progressbar=TRUE){
@@ -40,7 +50,7 @@ output
 
 
 #creates html reports using knitr
-printStudyReport <- function(alldata, study=NULL, RmdFile ="report/reportmd.Rmd", path="output/report-per-study", name=NULL, delete=TRUE, reprocess=FALSE){
+printStudyReport <- function(alldata, study=NULL, RmdFile ="report/reportmd.Rmd", path="output/report-by-study", name=NULL, delete=TRUE, reprocess=FALSE){
   
   #if no name provided, use study name
   if(is.null(name)) 
@@ -234,10 +244,3 @@ generateDataNew  <-  function(data, studyName){
 }
 
 
-emailFiles  <-  function(data, studyName){
-  contact    <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyContact.csv"), h=TRUE,stringsAsFactors=FALSE)
-  reference  <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.bib"), h=TRUE,stringsAsFactors=FALSE)
-  write.csv(contact, paste0(dir.Emails,"/",studyName,"/studyContact.csv"))
-  write.csv(reference, paste0(dir.Emails,"/",studyName,"/studyRef.bib"))
-  write.csv(var.def, paste0(dir.Emails,"/",studyName,"/Variable_definitions.csv"))
-}
