@@ -28,12 +28,14 @@ printAllStudyReports <- function(data, studynames= getStudyNames(), reprocess=FA
                          initial = 0, width = 50, style=3)
   }
   
+  output<-list()
   for(i in seq_along(studynames)){
-    printStudyReport(data, studynames[i], reprocess=reprocess)
+    output[[i]]<-printStudyReport(data, studynames[i], reprocess=reprocess)
     if(progressbar)setTxtProgressBar(wp, i)
   }
   
   if(progressbar)close(wp) 
+output
 }
 
 
