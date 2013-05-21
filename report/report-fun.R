@@ -20,7 +20,7 @@ dir.Emails    <-  "output/email"
 # }
 
 
-allStudyReport <- function(data, studynames= getStudyNames(), progressbar=TRUE){
+allStudyReport <- function(data, studynames= getStudyNames(), reprocess=FALSE, progressbar=TRUE){
   
   message("Generating ", length(studynames), " markdown reports.")
   if(progressbar){
@@ -29,7 +29,7 @@ allStudyReport <- function(data, studynames= getStudyNames(), progressbar=TRUE){
   }
   
   for(i in seq_along(studynames)){
-    printStudyReport(data, studynames[i])
+    printStudyReport(data, studynames[i], reprocess=reprocess)
     if(progressbar)setTxtProgressBar(wp, i)
   }
   
@@ -38,7 +38,7 @@ allStudyReport <- function(data, studynames= getStudyNames(), progressbar=TRUE){
 
 
 #creates html reports using knitr
-printStudyReport <- function(alldata, study=NULL, RmdFile ="report/reportmd.Rmd", path="output/report-per-study", name=NULL, delete=TRUE){
+printStudyReport <- function(alldata, study=NULL, RmdFile ="report/reportmd.Rmd", path="output/report-per-study", name=NULL, delete=TRUE, reprocess=FALSE){
   
   #if no name provided, use study name
   if(is.null(name)) 
@@ -47,7 +47,7 @@ printStudyReport <- function(alldata, study=NULL, RmdFile ="report/reportmd.Rmd"
   if(is.null(name)) 
     name <- "all"
   
-  knitThis(RmdFile = RmdFile, path=path, name=name, delete=TRUE, overwrite=TRUE, 
+  knitThis(RmdFile = RmdFile, path=path, name=name, delete=TRUE, reprocess=reprocess, 
            predefined=list(.study = study, alldata=alldata, .dat = extractStudy(alldata, study))) 
 }
 
@@ -55,41 +55,44 @@ printStudyReport <- function(alldata, study=NULL, RmdFile ="report/reportmd.Rmd"
 #creates html reports using knitr, copies output file to desired location and renames as required
 knitThis <- function(RmdFile ="report/reportmd.Rmd", path="output/report-per-study", 
                      name="study", delete=TRUE,
-                     overwrite=TRUE, ..., predefined=list(...)){
+                     reprocess=TRUE, ..., predefined=list(...)){
   
-  #create new environment with predfined variables
-  e <- new.env()
-  if (length(predefined) > 0) { 
-    #avoid issues when variables unnamed
-    if (is.null(names(predefined)) || any(names(predefined) == ""))
-      stop("All extra variables must be named")
-    
-    for ( v in names(predefined))
-      assign(v, predefined[[v]], e)
-  }
-  
-  #knit
-  suppressMessages(knit2html(RmdFile, quiet=TRUE, envir=e))
-  
-  #copy html file to output dir
-  if(!file.exists(path)) 
-    dir.create(path, recursive=TRUE)
-  
-  #extract filename from RmdFile 
-  filebits <- strsplit(RmdFile, "/")[[1]]
-  filename <- filebits[length(filebits)]
-  
-  #copy html file to output dir, rename
   outputfile<- paste0(path,"/",name,".html")
-  file.copy(sub("Rmd", "html", filename), outputfile, overwrite =  overwrite)
   
-  #delete support files
-  if(delete){
-    unlink(sub("Rmd", "html", filename))
-    unlink(sub("Rmd", "md", filename))
-    unlink("figure", recursive=TRUE) 
-  }
-  
+  if ( reprocess || !file.exists( outputfile) ){
+    
+    #create new environment with predfined variables
+    e <- new.env()
+    if (length(predefined) > 0) { 
+      #avoid issues when variables unnamed
+      if (is.null(names(predefined)) || any(names(predefined) == ""))
+        stop("All extra variables must be named")
+      
+      for ( v in names(predefined))
+        assign(v, predefined[[v]], e)
+    }
+    
+    #knit
+    suppressMessages(knit2html(RmdFile, quiet=TRUE, envir=e))
+    
+    #copy html file to output dir
+    if(!file.exists(path)) 
+      dir.create(path, recursive=TRUE)
+    
+    #extract filename from RmdFile 
+    filebits <- strsplit(RmdFile, "/")[[1]]
+    filename <- filebits[length(filebits)]
+    
+    #copy html file to output dir, rename
+    file.copy(sub("Rmd", "html", filename), outputfile, overwrite =  TRUE)
+    
+    #delete support files
+    if(delete){
+      unlink(sub("Rmd", "html", filename))
+      unlink(sub("Rmd", "md", filename))
+      unlink("figure", recursive=TRUE) 
+    }
+  }  
   outputfile
 }
 
