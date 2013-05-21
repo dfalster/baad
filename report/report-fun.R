@@ -80,7 +80,8 @@ knitThis <- function(RmdFile ="report/reportmd.Rmd", path="output/report-per-stu
   filename <- filebits[length(filebits)]
   
   #copy html file to output dir, rename
-  file.copy(sub("Rmd", "html", filename), paste0(path,"/",name,".html"), overwrite =  overwrite)
+  outputfile<- paste0(path,"/",name,".html")
+  file.copy(sub("Rmd", "html", filename), outputfile, overwrite =  overwrite)
   
   #delete support files
   if(delete){
@@ -89,6 +90,7 @@ knitThis <- function(RmdFile ="report/reportmd.Rmd", path="output/report-per-stu
     unlink("figure", recursive=TRUE) 
   }
   
+  outputfile
 }
 
 
