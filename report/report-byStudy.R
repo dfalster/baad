@@ -11,7 +11,7 @@ dat <- loadStudies(reprocess=FALSE)
 printStudyReport(dat, "Ilomaki2003")
 
 # All reports:
-allStudyReport(dat)
+printAllStudyReports(dat)
 
 
 

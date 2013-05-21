@@ -20,7 +20,7 @@ dir.Emails    <-  "output/email"
 # }
 
 
-allStudyReport <- function(data, studynames= getStudyNames(), reprocess=FALSE, progressbar=TRUE){
+printAllStudyReports <- function(data, studynames= getStudyNames(), reprocess=FALSE, progressbar=TRUE){
   
   message("Generating ", length(studynames), " markdown reports.")
   if(progressbar){
