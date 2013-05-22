@@ -5,30 +5,20 @@ dir.Emails    <-  "output/email"
 
 
 #creates html reports using knitr
-emailReport <- function(studyName, reportPath= NULL, to = c("daniel.falster@mq.edu.au"), from ="daniel.falster@mq.edu.au", cc= "daniel@falsters.net"){
+emailReport <- function(studyName, reportPath= NULL, to = "daniel.falster@mq.edu.au", from ="daniel.falster@mq.edu.au", cc= "daniel@falsters.net", bcc =character(0)){
   
   files<-c(reportPath, 
               "config/variableDefinitions.csv", 
               paste0(dir.rawData,"/",studyName,"/studyRef.bib"),
               paste0(dir.rawData,"/",studyName,"/studyContact.csv")
               )
+  
   content <- "Hi, iam writing"
-
-  email(content, "About your data",
-          to,
-          bcc=c("fitzjohn@zoology.ubc.ca", "dfalster@bio.mq.edu.au"),
-          files= files, send=FALSE)
+  subject <- "About your data"
   
-#   emailFiles  <-  function(data, studyName){
-#     contact    <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyContact.csv"), h=TRUE,stringsAsFactors=FALSE)
-#     reference  <-  read.csv(paste0(dir.rawData,"/",studyName,"/studyRef.bib"), h=TRUE,stringsAsFactors=FALSE)
-#     write.csv(contact, paste0(dir.Emails,"/",studyName,"/studyContact.csv"))
-#     write.csv(reference, paste0(dir.Emails,"/",studyName,"/studyRef.bib"))
-#     write.csv(var.def, paste0(dir.Emails,"/",studyName,"/Variable_definitions.csv"))
-  }
+  email(content, subject, to, from =from, bcc=bcc, cc=cc, files= files, send=FALSE)
+}  
   
-}
-
 
 printAllStudyReports <- function(data, studynames= getStudyNames(), reprocess=FALSE, progressbar=TRUE){
   

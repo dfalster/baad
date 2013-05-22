@@ -10,11 +10,13 @@ source('report/report-fun.R')
 dat <- loadStudies(reprocess=FALSE)
 
 # Markdown report (HTML)
-printStudyReport(dat, "Ilomaki2003")
+reportPath<-printStudyReport(dat, "Ilomaki2003")
 
 # All reports:
 reportPaths <- printAllStudyReports(dat)
 
+emailReport("Ilomaki2003", reportPath= reportPath, to = c("daniel.falster@mq.edu.au"), from ="daniel.falster@mq.edu.au", cc= "daniel@falsters.net")
+  
 
 
 #create dataNew.csv files for authors to fill in
