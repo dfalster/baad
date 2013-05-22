@@ -488,6 +488,11 @@ na.vector <- function(type, n) {
   rep.int(x, n)
 }
 
+
+# Subset of dataframe, removing all columns that are NA only.
+nonNA <- function(df)df[,sapply(df, function(x)!all(is.na(x)))]
+
+
 ## TODO: This might merge somewhat with the definition of var.def.
 columnInfo <- function() {
   allowedNames <- var.def$Variable
