@@ -32,7 +32,8 @@ generateEmailContent <-function(allData, study, studyData){
   
   extraQuestionsFile <- file.path(data.path(study), "questions.txt")
   if(file.exists(extraQuestionsFile))
-    extraQuestions<-readLines( extraQuestionsFile)
+    extraQuestions<-  paste0("\n\nIn addtion to the above list, which appply to every study, we have some specific questions for your study:\n\n", 
+                             readLines( extraQuestionsFile), "\n")
   else
     extraQuestions<-""
   
@@ -81,6 +82,6 @@ To assist us in preparing the data for publication, we request that you review t
          "
 
 With best regards,
-Daniel Falster\n\n"
+Daniel Falster, Remko Duursma, Diego Barneche \n\n"
          )
 }
