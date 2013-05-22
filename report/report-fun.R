@@ -13,7 +13,6 @@ emailReport <- function(alldata, study,
                         contentFile ="report/report-1-email.R",
                         reprocess=FALSE,
                         send=FALSE){
-
   
   source(contentFile)  #defines function getEmailDetails
   details <- getEmailDetails(alldata, study, reprocess=reprocess)
@@ -169,65 +168,18 @@ generateAllDataNew <- function(data, studynames, progressbar=TRUE){
   
 }
 
-generateDataNew  <-  function(data, studyName){
+generateDataNew  <-  function(data, studyName, levels=c("site","species","tree")){
   
   # Extract dataframe of observations only
   data <- data$data
+  dat  <- data[data$dataset == studyName, ]
   
-  dat <- data[data$dataset == studyName, ]
-  
-  if(all(is.na(dat$location))){
-    nloc  <-  NA
-  } else {
-    nloc  <-  length(unique(dat$location))
+  checked  <-  lapply(levels, function(x){checkLevels(dat, x)})
+  dataNew  <-  data.frame(stringsAsFactors=FALSE)
+  for(z in 1:length(checked)){
+    dataNew  <-  rbind(dataNew,checked[[z]])
   }
-  
-  datnew  <-  data.frame()
-  
-  if(is.na(nloc)){
-    datnew  <-  data.frame(lookupVariable="",
-                           lookupValue="",
-                           newVariable=c("location","latitude","longitude","map","mat","vegetation","growingCondition","status"),
-                           newValue="",
-                           source="",
-                           stringsAsFactors=FALSE)
-  } else {
-    for(j in seq_len(nloc)){
-      
-      ob   <-  as.character(unique(dat$location)[j])
-      su   <-  dat[dat$location==ob,c("latitude","longitude","map","mat","vegetation","growingCondition","status")]
-      
-      allNA    <-  sapply(su,function(x)all(is.na(x)))
-      varsNA <- names(su)[allNA]
-      
-      if(any(allNA)){
-        for(k in varsNA){
-          datnew  <-  rbind(datnew, data.frame(lookupVariable="location",lookupValue=ob,
-                                               newVariable=k,newValue="",source="",stringsAsFactors=FALSE))
-        }
-      } else {
-        datnew  <-  rbind(datnew, data.frame(lookupVariable="location",lookupValue="",
-                                             newVariable="",newValue="",source="",stringsAsFactors=FALSE))
-      }
-    }
-  }
-  
-  spp  <-  as.character(unique(dat$species))
-  fam  <-  as.character(dat$family[match(spp,dat$species)])
-  pft  <-  as.character(dat$pft[match(spp,dat$species)])
-  
-  a  <-  is.na(fam)
-  if(any(a)){
-    datnew  <-  rbind(datnew, data.frame(lookupVariable="species",lookupValue=spp[a],
-                                         newVariable="family",newValue="",source="",stringsAsFactors=FALSE))
-  }  
-  
-  a  <-  is.na(pft)
-  if(any(a)){
-    datnew  <-  rbind(datnew, data.frame(lookupVariable="species",lookupValue=spp[a],
-                                         newVariable="pft",newValue="",source="",stringsAsFactors=FALSE))
-  }
-  
+
   if(!file.exists(dir.Emails))
     dir.create(dir.Emails)
   
@@ -235,8 +187,36 @@ generateDataNew  <-  function(data, studyName){
   if(!file.exists(tdir)){
     dir.create(tdir)
   }
-  write.csv(datnew, paste0(dir.Emails, "/", studyName, "/dataNew.csv"))
+  write.csv(dataNew, paste0(dir.Emails, "/", studyName, "/dataNew.csv"))
   
 }
 
+
+checkLevels  <-  function(site.data, group){
+  #get essential variables for the chosen group
+  chosen  <-  var.def$Variable[var.def$Group==group & var.def$essential==TRUE]
+  #find NA's
+  nas     <-  apply(site.data[names(site.data) %in% chosen], 2, function(x){which(is.na(x))})
+  if(class(nas) == "matrix"){
+    nas  <-  as.data.frame(nas)
+  }
+  if(length(nas)>0){
+    #create empty dataframe for dataNew results
+    dataNew  <-  data.frame()
+    for(k in 1:length(nas)){
+      if(length(nas[[k]]) > 0){
+        if(length(nas[[k]])==length(site.data[[names(nas[k])]])){
+          dataNew  <-  rbind(dataNew,data.frame(a="",b="",c=names(nas[k]),d="",e="",stringsAsFactors=FALSE))
+        } else {
+          for(i in nas[[k]]){
+            bit      <-  site.data[i,chosen[-k]]
+            dataNew  <-  rbind(dataNew,data.frame(a=chosen[-k][which(!is.na(bit))[1]],b=bit[!is.na(bit)][1],c=names(nas[k]),d="",e="",stringsAsFactors=FALSE))
+          }
+        }
+      }
+    }
+    names(dataNew)  <-  c("lookupVariable","lookupValue","newVariable","newValue","source")
+  }
+  if(length(nas)>0){return(dataNew)}
+}
 

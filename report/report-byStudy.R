@@ -16,6 +16,7 @@ printStudyReport(dat, "Aiba2007", reprocess=TRUE)
   
 
 #create dataNew.csv files for authors to fill in
+studyNames  <-  getStudyNames()
 generateAllDataNew(dat, studyNames)
 
 #-- Not touched : will change with new email code??
