@@ -10,8 +10,10 @@ reportPaths <- printAllStudyReports(dat)
 
 
 #trial emal
-emailReport(dat, "Gargaglione2010")
+emailReport(dat, "Aiba2005")
 
+printStudyReport(dat, "Aiba2007", reprocess=TRUE)
+  
 
 #create dataNew.csv files for authors to fill in
 generateAllDataNew(dat, studyNames)
