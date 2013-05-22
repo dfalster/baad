@@ -104,54 +104,5 @@ knitThis <- function(RmdFile ="report/reportmd.Rmd", path="output/report-per-stu
 }
 
 
-locLevelInfo  <-  function(data){
-  
-  vars <- c("location","map","mat","longitude","latitude","vegetation")
-  
-  loc <- data[!duplicated(data[,vars]),vars]
-  
-  loc[is.na(loc) | loc=="" | loc=="NA"]  <-  "????"  
-  return(loc)
-}
-
-
-standLevelInfo  <-  function(data){
-  
-  vars <- c("location","grouping","growingCondition","status")
-  sta <- data[!duplicated(data[,vars]),vars]
-  
-  
-  if(all(is.na(sta$grouping)))
-    sta  <-  sta[,c("location", "growing_condition", "status")]
-  
-  sta[is.na(sta) | sta=="" | sta=="NA"]  <-  "????"  
-  
-  return(sta)
-}
-
-
-spLevelInfo  <-  function(data){
-  spec         <-  data.frame(species=as.character(unique(data$species)), stringsAsFactors=FALSE)
-  for(z in c("family", "pft")){
-    spec[[z]]  <-  as.character(data[[z]][match(spec$species,data$species)])
-    i          <-  spec[[z]]=="" | is.na(spec[[z]]) 
-    if(any(i)){
-      spec[[z]][i]  <-  "????"
-    }
-  }
-  j            <-  spec$species=="" | is.na(spec$species) 
-  if(any(j)){
-    spec$species[j]  <-  "????"
-  }
-  spec
-}
-
-printMeta  <-  function(data){
-  dataset   <-  as.character(unique(data$dataset))
-  openMeta  <-  read.csv(paste0("../",dir.rawData,"/",dataset,"/studyMetadata.csv"), h=TRUE, stringsAsFactors=FALSE)
-  openMeta
-}
-
-
 
 
