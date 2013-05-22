@@ -20,6 +20,9 @@ manipulate <- function(raw) {
   raw$WS <- raw$WSB - raw$WB
   
   
+  #Combine DE (deciduous/evergreen) and CB (conifer/broadleaf)
+  raw$pft <- paste(raw$DE, raw$CB, sep="-")
+  
   raw$SiteStand <- paste(raw$Country, raw$Site, raw$Stand, sep="-")
   
   raw$Forest.type[raw$Forest.type == "S?"] <- "S"

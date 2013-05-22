@@ -1,10 +1,10 @@
 var_in,method,unit_in,var_out,notes
 g.epi,,-,species,
 APG.Family,,-,family,
-CB,,-,pft,
 H,,m,h.t,
 HL,,m,h.c,
 D0,,cm,d.ba,
+pft,,,,
 DBH,,cm,d.bh,
 a.stbc,,cm2,a.stbc,calculated from DL and DL.2
 CrwnW,,m,d.cr,
