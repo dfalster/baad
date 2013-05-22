@@ -10,11 +10,7 @@ reportPaths <- printAllStudyReports(dat)
 
 
 #trial emal
-reportPath<-printStudyReport(dat, "Ilomaki2003")
-emailReport(dat, "Ilomaki2003", reportPath= reportPath)
-
-, to = c("daniel.falster@mq.edu.au"), from ="daniel.falster@mq.edu.au", cc= "daniel@falsters.net")
-  
+emailReport(dat, "Gargaglione2010")
 
 
 #create dataNew.csv files for authors to fill in

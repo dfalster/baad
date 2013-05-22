@@ -9,21 +9,26 @@ source('R/formatBib.R')
 
 
 #creates html reports using knitr
-emailReport <- function(alldata, study, reportPath= NULL, contentFile = "report/report-1-email.R", to = "daniel.falster@mq.edu.au",from = "daniel.falster@mq.edu.au", bcc= character(0), cc= character(0), send=FALSE){
+emailReport <- function(alldata, study, reportPath=printStudyReport(alldata, study), 
+                        contentFile ="report/report-1-email.R", 
+                        from="daniel.falster@mq.edu.au",  cc= c("remkoduursma@gmail.com", "barnechedr@gmail.com"), bcc= character(0),
+                        send=FALSE){
 
   dat<-extractStudy(alldata, study)
   
-  source("report/report-1-email.R")
+  source(contentFile)
 
-  
   filesToSend<-c(reportPath, 
                  "config/variableDefinitions.csv", 
                  dat$ref$filename, 
                  dat$contact$filename)
   
-  email(content = generateEmailContent(),
+  email(content = generateEmailContent(dat$contact$name, study),
         subject = generateEmailSubject(study), 
-        to = to, from =from, bcc=bcc, cc=cc, files= filesToSend, send=send)
+        to =  dat$contact$email, 
+        from =from, bcc=bcc, cc=cc, 
+        files= filesToSend, 
+        send=send)
 }  
   
 

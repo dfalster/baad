@@ -1,13 +1,13 @@
 
 generateEmailSubject <-function(study){
-  paste("Biomass and allometry database -", study, ", - error checking") 
+  paste("Biomass and allometry database: report on ", study) 
 }
   
-generateEmailContent <-function(to=NA){
+generateEmailContent <-function(to, study){
   
-"Dear XXXXX,
+paste0("Dear ", to,",
 
-You will find attached an individual .html report for the study XXXXX that you provided.
+You will find attached an individual report for the study ", study, " that you provided.
 We would really appreciate if you could answer each of the questions below following the .html report.
 
 1. Is your contact information correct? If not, could you please revise the information in the attached studyContact.csv file?
@@ -24,5 +24,5 @@ We would really appreciate if you could answer each of the questions below follo
 Additionally, could you please answer additional questions in the Question file attached and return it to us?
 
 With best regards,
-Daniel Falster"
+Daniel Falster")
 }
