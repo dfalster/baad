@@ -467,15 +467,17 @@ data.path <- function(studyName, ...){
 }
 
 readReference <- function(studyName) {
-  reference <-data.path(studyName, "studyRef.bib")
-  data.frame(dataset=studyName, reference)
+  filename <-data.path(studyName, "studyRef.bib")
+  data.frame(dataset=studyName, filename,  stringsAsFactors=FALSE)
 }
 
 readContact <- function(studyName) {
-  contact <- read.csv(data.path(studyName,"studyContact.csv"),
+  filename <-data.path(studyName, "studyContact.csv")
+  
+  contact <- read.csv( filename,
                       header=TRUE, stringsAsFactors=FALSE,
                       strip.white=TRUE)
-  data.frame(dataset = studyName, contact)
+  data.frame(dataset = studyName, contact, filename,  stringsAsFactors=FALSE)
 }
 
 na.vector <- function(type, n) {

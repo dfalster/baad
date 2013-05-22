@@ -1,22 +1,29 @@
 library(knitr, quietly=TRUE)
 
 dir.Emails    <-  "output/email"
+source('R/import.R')
+source('R/email.R')
+source('R/plotting.R')
+source('R/formatBib.R')
 
 
 
 #creates html reports using knitr
-emailReport <- function(studyName, reportPath= NULL, to = "daniel.falster@mq.edu.au", from ="daniel.falster@mq.edu.au", cc= "daniel@falsters.net", bcc =character(0)){
+emailReport <- function(alldata, study, reportPath= NULL, contentFile = "report/report-1-email.R", to = "daniel.falster@mq.edu.au",from = "daniel.falster@mq.edu.au", bcc= character(0), cc= character(0), send=FALSE){
+
+  dat<-extractStudy(alldata, study)
   
-  files<-c(reportPath, 
-              "config/variableDefinitions.csv", 
-              paste0(dir.rawData,"/",studyName,"/studyRef.bib"),
-              paste0(dir.rawData,"/",studyName,"/studyContact.csv")
-              )
+  source("report/report-1-email.R")
+
   
-  content <- "Hi, iam writing"
-  subject <- "About your data"
+  filesToSend<-c(reportPath, 
+                 "config/variableDefinitions.csv", 
+                 dat$ref$filename, 
+                 dat$contact$filename)
   
-  email(content, subject, to, from =from, bcc=bcc, cc=cc, files= files, send=FALSE)
+  email(content = generateEmailContent(),
+        subject = generateEmailSubject(study), 
+        to = to, from =from, bcc=bcc, cc=cc, files= filesToSend, send=send)
 }  
   
 
@@ -40,7 +47,7 @@ output
 
 
 #creates html reports using knitr
-printStudyReport <- function(alldata, study=NULL, RmdFile ="report/reportmd.Rmd", path="output/report-by-study", name=NULL, delete=TRUE, reprocess=FALSE){
+printStudyReport <- function(alldata, study=NULL, RmdFile ="report/report-1.Rmd", path="output/report-by-study", name=NULL, delete=TRUE, reprocess=FALSE){
   
   #if no name provided, use study name
   if(is.null(name)) 

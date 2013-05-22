@@ -1,21 +1,19 @@
 rm(list=ls())
-source('R/import.R')
-source('R/plotting.R')
-source('R/formatBib.R')
-source('R/email.R')
 
 source('report/report-fun.R')
 
 # Load all data
 dat <- loadStudies(reprocess=FALSE)
 
-# Markdown report (HTML)
-reportPath<-printStudyReport(dat, "Ilomaki2003")
-
 # All reports:
 reportPaths <- printAllStudyReports(dat)
 
-emailReport("Ilomaki2003", reportPath= reportPath, to = c("daniel.falster@mq.edu.au"), from ="daniel.falster@mq.edu.au", cc= "daniel@falsters.net")
+
+#trial emal
+reportPath<-printStudyReport(dat, "Ilomaki2003")
+emailReport(dat, "Ilomaki2003", reportPath= reportPath)
+
+, to = c("daniel.falster@mq.edu.au"), from ="daniel.falster@mq.edu.au", cc= "daniel@falsters.net")
   
 
 
