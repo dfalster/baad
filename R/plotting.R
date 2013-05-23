@@ -79,6 +79,9 @@ bivarPlot <- function(data, xvar, yvar, xlab=yvar, ylab=yvar, col= make.transpar
   points(data[,xvar], data[,yvar],  type= 'p', col = col, pch=pch, ...)  
 }  
 
+whichStudies <- function(alldata, var, value){
+  unique(alldata$data$dataset[alldata$data[[var]] == value])  
+}
 
 makePlot <-function(data, subset, xvar, yvar, xlab, ylab, main="", maincol=make.transparent("grey", 0.5), studycol = "red",pch=19){
   
