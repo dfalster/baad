@@ -48,7 +48,6 @@ makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRU
 
 bivarPlotColorBy <- function(data, xvar, yvar, colorBy, col = make.transparent(niceColors(), 0.5), add = FALSE, ...){ 
   
-  browser()
   #make NAs in colorBy grey, sort data so these are plotted first and thus least visible
   colours <- col[as.factor(colorBy)]
   nans <- is.na(colorBy)
@@ -65,6 +64,11 @@ bivarPlotColorBy <- function(data, xvar, yvar, colorBy, col = make.transparent(n
   out <- out[order(out$group),]
 }    
     
+bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", pch = 19, lwd=0, bty ="n"){
+  legend(location, tmp$group , col = tmp$col, text.col = text.col, pch = pch, merge = TRUE, lwd=lwd, bty =bty)  
+}
+
+
 
 bivarPlot <- function(data, xvar, yvar, xlab=yvar, ylab=yvar, col= make.transparent("grey", 0.5), pch=19, add = FALSE, ...){
   
