@@ -70,17 +70,25 @@ bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", pch = 
 
 
 
-bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, col= make.transparent("grey", 0.5), pch=19, add = FALSE, ...){
+bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, col= make.transparent("grey", 0.5), pch=19, add = FALSE, id =c("dataset", "species"), zeroWarning = FALSE, ...){
   
+  #check for negative values  
+  i <-  unique(c( which(data[,xvar] <= 0), which(data[,yvar] <= 0)))
+  
+  if(zeroWarning  & length(i) > 0 ){
+    warning("values <= 0 omitted from logarithmic plot")
+    print(data[i, c(id, xvar, yvar)])
+  }
+    
   if(!add){
-    plot(data[,xvar], data[,yvar],  type= 'n', log="xy", las=1, yaxt="n", xaxt="n", xlab=xlab, ylab=ylab,  ...)
+    plot(data[-i,xvar], data[-i,yvar],  type= 'n', log="xy", las=1, yaxt="n", xaxt="n", xlab=xlab, ylab=ylab,  ...)
     #add nice log axes
     axis.log10(1) 
     axis.log10(2)    
   }
   
   #add data
-  points(data[,xvar], data[,yvar],  type= 'p', col = col, pch=pch, ...)  
+  points(data[-i,xvar], data[-i,yvar],  type= 'p', col = col[-i], pch=pch, ...)  
 }  
 
 whichStudies <- function(alldata, var, value){

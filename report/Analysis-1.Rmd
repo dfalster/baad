@@ -45,8 +45,6 @@ drawWorldPlot (prepdata)
 
 ## Plots of data
 
-This is how the study `r .study` (each color represents a species) fits in the entire dataset (grey).
-
 ```{r fig.height=8, fig.width=8, echo=FALSE, warning=FALSE, message=FALSE}
 bivarPlot(dat$data, "h.t", "a.lf")
 
