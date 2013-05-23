@@ -50,7 +50,7 @@ bivarPlotColorBy <- function(data, xvar, yvar, colorBy, col = make.transparent(n
   
   #make NAs in colorBy grey, sort data so these are plotted first and thus least visible
   colours <- col[as.factor(colorBy)]
-  nans <- is.na(colorBy)
+  nans <- is.na(colorBy) | (colorBy== "")
   colours[nans] <- "grey" 
   colorBy[nans] = "xxxxx"
   
