@@ -56,7 +56,7 @@ bivarPlotColorBy <- function(data, xvar, yvar, colorBy, col = make.transparent(n
   
   i <- order(colorBy, decreasing = TRUE)
 
-  bivarPlot(data[i,], xvar, yvar, col= colours[i], add = add, ...)
+  bivarPlot(data[i,], xvar, yvar, col= make.transparent(colours[i], 0.5), add = add, ...)
   
   #Return color by group, in order
   i <- !duplicated(colorBy)
@@ -70,7 +70,7 @@ bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", pch = 
 
 
 
-bivarPlot <- function(data, xvar, yvar, xlab=yvar, ylab=yvar, col= make.transparent("grey", 0.5), pch=19, add = FALSE, ...){
+bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, col= make.transparent("grey", 0.5), pch=19, add = FALSE, ...){
   
   if(!add){
     plot(data[,xvar], data[,yvar],  type= 'n', log="xy", las=1, yaxt="n", xaxt="n", xlab=xlab, ylab=ylab,  ...)
