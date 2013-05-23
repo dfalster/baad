@@ -109,12 +109,17 @@ processStudy <- function(studyName, verbose=FALSE) {
 ##' @return dataframe with raw data
 readDataRaw<-function(studyName){
   import <- readImport(studyName)
+  
   read.csv(data.path(studyName, import$name),
            header=import$header, skip=import$skip,
            fileEncoding=import$fileEncoding,
            na.strings=import$na.strings, check.names=FALSE,
            stringsAsFactors=FALSE, strip.white=TRUE)
 }
+
+
+
+
 
 ##' Perform arbitrary manipulations to the raw data
 ##'

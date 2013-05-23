@@ -1,7 +1,5 @@
 manipulate <- function(raw) {
-  
-  
-  
+    
   raw$Age[raw$Age == "33-34"] <- "33.5"
   raw$Age[raw$Age == "22-23"] <- "22.5"
   raw$Age <- as.numeric(raw$Age)
@@ -19,10 +17,9 @@ manipulate <- function(raw) {
   # Separate stem mass from branch mass:
   raw$WS <- raw$WSB - raw$WB
   
-  
   #Combine DE (deciduous/evergreen) and CB (conifer/broadleaf)
   raw$pft <- paste(raw$DE, raw$CB, sep="-")
-  
+
   raw$SiteStand <- paste(raw$Country, raw$Site, raw$Stand, sep="-")
   
   raw$Forest.type[raw$Forest.type == "S?"] <- "S"
