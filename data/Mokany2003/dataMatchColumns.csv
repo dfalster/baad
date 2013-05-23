@@ -13,7 +13,7 @@
 "Title",NA,NA,NA,NA
 "Species",NA,NA,"species",NA
 "Family",NA,NA,NA,NA
-"pft",NA,NA,NA,NA
+"pft",NA,NA,pft,NA
 "growingCondition",NA,NA,NA,NA
 "status",NA,NA,NA,NA
 "vegetation",NA,NA,NA,NA
