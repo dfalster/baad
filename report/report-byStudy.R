@@ -12,3 +12,7 @@ emailReport(dat, "Aiba2005")
 # All reports:
 reportPaths <- printAllStudyReports(dat)
 
+# Reprocess one study
+tmp <- loadStudy("Gargaglione2010", reprocess= TRUE)
+dat <- loadStudies(reprocess=FALSE)
+
