@@ -45,35 +45,77 @@ makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRU
     dev.off()
 }
 
-makePlot<-function(data, subset, xvar, yvar, xlab, ylab, main="", maincol="grey", studycol){
+
+bivarPlotColorBy <- function(data, xvar, yvar, colorBy, col = make.transparent(niceColors(), 0.5), add = FALSE, ...){ 
   
-  plot(data[,xvar], data[,yvar], log="xy", col = maincol, xlab=xlab, ylab= ylab, main= main, las=1, yaxt="n", xaxt="n")
+  #make NAs in colorBy grey, sort data so these are plotted first and thus least visible
+  colours <- col[as.factor(colorBy)]
+  nans <- is.na(colorBy)
+  colours[nans] <- "grey" 
+  colorBy[nans] = "xxxxx"
+  
+  i <- order(colorBy, decreasing = TRUE)
+
+  bivarPlot(data[i,], xvar, yvar, col= colours[i], add = add, ...)
+  
+  #Return color by group, in order
+  i <- !duplicated(colorBy)
+  out <- data.frame(group=colorBy[i], col = colours[i], stringsAsFactors=FALSE)
+  out <- out[order(out$group),]
+}    
+    
+bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", pch = 19, lwd=0, bty ="n"){
+  legend(location, tmp$group , col = tmp$col, text.col = text.col, pch = pch, merge = TRUE, lwd=lwd, bty =bty)  
+}
+
+
+
+bivarPlot <- function(data, xvar, yvar, xlab=yvar, ylab=yvar, col= make.transparent("grey", 0.5), pch=19, add = FALSE, ...){
+  
+  if(!add){
+    plot(data[,xvar], data[,yvar],  type= 'n', log="xy", las=1, yaxt="n", xaxt="n", xlab=xlab, ylab=ylab,  ...)
+    #add nice log axes
+    axis.log10(1) 
+    axis.log10(2)    
+  }
+  
+  #add data
+  points(data[,xvar], data[,yvar],  type= 'p', col = col, pch=pch, ...)  
+}  
+
+whichStudies <- function(alldata, var, value){
+  unique(alldata$data$dataset[alldata$data[[var]] == value])  
+}
+
+makePlot <-function(data, subset, xvar, yvar, xlab, ylab, main="", maincol=make.transparent("grey", 0.5), studycol = "red",pch=19){
+  
+  plot(data[,xvar], data[,yvar], log="xy", col = maincol, xlab=xlab, ylab= ylab, main= main, las=1, yaxt="n", xaxt="n", pch=pch)
   
   #add nice log axes
   axis.log10(1) 
   axis.log10(2)
   
   #add data for select study, highlighted in red
-  points(subset[,xvar], subset[,yvar], col = studycol)  
+  points(subset[,xvar], subset[,yvar], col = studycol, pch=pch)  
 }  
 
-prepMapInfo<-function(data, study){
+prepMapInfo<-function(data, study=NA){
+
+  if(!is.na(study))
+    data   <-  data[data$dataset %in% study,]
   
-  data   <-  data[study==data$dataset,]
-  coord  <-  unique(paste0(data$latitude,";", data$longitude, ";", data$location))  
-  data   <-  data.frame(lat=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][1]}))),
-                        lon=as.numeric(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][2]}))),
-                        loc=as.character(unlist(lapply(coord, function(x){strsplit(x,";")[[1]][3]}))),
-                        country=NA,
-                        stringsAsFactors=FALSE)
-  i      <-  !is.na(data$lat) | !is.na(data$lon)
-  if( any(i) ){
-    data$country[i]  <-  as.character(strsplit(map.where(x=data$lon[i], y=data$lat[i]),":")[[1]][1])
-  }  
+  #Remove duplicate locations
+  keep <- c("dataset", "latitude", "longitude", "location") 
   
-  #final object
-  data
-  
+  data <- data[!duplicated(paste0(data$dataset,";", data$latitude,";", data$longitude, ";", data$location)), keep]
+
+  i <- !is.na(data$latitude) | !is.na(data$longitude)
+  if(any(i)){
+    data$country <- ""
+    data$country[i]  <- map.where(x=as.numeric(data$longitude[i]), y=as.numeric(data$latitude[i]))    
+  }
+                  
+  data  
 }  
 
 drawWorldPlot  <-  function(data){

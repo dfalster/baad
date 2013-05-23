@@ -1,6 +1,6 @@
 "lookupVariable","lookupValue","newVariable","newValue","source"
 NA,NA,"growingCondition","FW","from paper[D Barneche]"
-NA,NA,"vegetation","TempRf","from paper[D Barneche]"
+NA,NA,"vegetation","TempRF","from paper[D Barneche]"
 NA,NA,"pft","EA","from paper[D Barneche]"
 NA,NA,"location","Parque Nacional Puyehue, Chile","from paper[D Barneche]"
 NA,NA,"latitude","-40.65","from paper[D Barneche]"
