@@ -1,8 +1,16 @@
 suppressPackageStartupMessages(library(maps))
 suppressPackageStartupMessages(library(mapdata))
 suppressPackageStartupMessages(library(gdata))
+suppressPackageStartupMessages(library(smatr))
 
 
+to.pdf <- function(expr, filename, ..., verbose=TRUE) {
+  if ( verbose )
+    cat(sprintf("Creating %s\n", filename))
+  pdf(filename, ...)
+  on.exit(dev.off())
+  eval.parent(substitute(expr))
+}
 
 makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRUE, quiet=FALSE){
   if(!quiet)cat("This is how the study", study, "fits in the entire dataset distribution")
@@ -45,50 +53,96 @@ makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRU
     dev.off()
 }
 
+getLabel<-function(xvar){
+  i<-which(var.def$Variable==xvar)
+  paste0(var.def[i, "label"], " (", var.def[i, "Units"], ")")
+}
 
-bivarPlotColorBy <- function(data, xvar, yvar, colorBy, col = make.transparent(niceColors(), 0.5), add = FALSE, ...){ 
+bivarPlotColorBy <- function(data, xvar, yvar, colorBy, type='b', col = make.transparent(niceColors(), 0.5), add = FALSE, legend=TRUE, ...){ 
+  
+  #if
+  if(length(col) ==1 )
+      col<-rep(col[1],length(unique(colorBy))) #check right vector length  
   
   #make NAs in colorBy grey, sort data so these are plotted first and thus least visible
   colours <- col[as.factor(colorBy)]
   nans <- is.na(colorBy) | (colorBy== "")
+  nanMarker <- "xxxxx"
   colours[nans] <- "grey" 
-  colorBy[nans] = "xxxxx"
+  colorBy[nans] = nanMarker
   
   i <- order(colorBy, decreasing = TRUE)
-
-  bivarPlot(data[i,], xvar, yvar, col= make.transparent(colours[i], 0.5), add = add, ...)
+  
+  bivarPlot(data[i,], xvar, yvar, xlab =getLabel(xvar), ylab = getLabel(yvar), col= make.transparent(colours[i], 0.5), add = add, type=type, ...)
   
   #Return color by group, in order
   i <- !duplicated(colorBy)
   out <- data.frame(group=colorBy[i], col = colours[i], stringsAsFactors=FALSE)
   out <- out[order(out$group),]
+  
+  if(legend)
+    bivarPlot.Legend(out)
+  
+  if(type %in% c("o","b", "l"))
+     add.sma(data, xvar, yvar, colorBy, out,...)   
+  
+  out
 }    
+
+add.sma <-function (data, xvar, yvar, colorBy, colours,...){
+
+  i <- findPositive(data, xvar, yvar)
+  fit <- sma(data[i,yvar]~data[i,xvar]*colorBy[i], log="xy")
+  
+  out<- fit$groupsummary
+
+  ngrps<-length(out[,1])
     
+  #add lines to plot
+  for(i in 1:ngrps){
+    #coefficients
+    a <- fit$groupsummary$Int[i]
+    B <-  fit$groupsummary$Slope[i]
+    from <- as.numeric(fit$from[i])  
+    to <- as.numeric(fit$to[i])
+    col <- colours$col [ match(as.character(fit$groupsummary$group[i]), as.character(colours$group))]
+    
+    #choose line according to log-trsnaformation used in fitting data, even if different transformation used for axes
+    curve(10^a*x^B, from, to, add=TRUE,col = col, lty= "solid",...)    
+    }
+} 
+
 bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", pch = 19, lwd=0, bty ="n"){
   legend(location, tmp$group , col = tmp$col, text.col = text.col, pch = pch, merge = TRUE, lwd=lwd, bty =bty)  
 }
 
+findPositive<-function(data, xvar, yvar){
+  i <-  unique(c( which(data[,xvar] <= 0), which(data[,yvar] <= 0)))
+  seq_len(length(data[,xvar]))[-i]
+}
 
-
-bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, col= make.transparent("grey", 0.5), pch=19, add = FALSE, id =c("dataset", "species"), zeroWarning = FALSE, ...){
+bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, type='p', col= make.transparent("grey", 0.5), pch=19, add = FALSE, zeroWarning = FALSE, ...){
   
   #check for negative values  
-  i <-  unique(c( which(data[,xvar] <= 0), which(data[,yvar] <= 0)))
+  i <- findPositive(data, xvar, yvar)
   
-  if(zeroWarning  & length(i) > 0 ){
+  if(zeroWarning  & (length(i) < length(data[,1]))){
     warning("values <= 0 omitted from logarithmic plot")
-    print(data[i, c(id, xvar, yvar)])
+    id =c("dataset", "species")
+    print(data[-i, c(id, xvar, yvar)])
   }
-    
+  
   if(!add){
-    plot(data[-i,xvar], data[-i,yvar],  type= 'n', log="xy", las=1, yaxt="n", xaxt="n", xlab=xlab, ylab=ylab,  ...)
+    plot(data[i,xvar], data[i,yvar],  type= 'n', log="xy", las=1, yaxt="n", xaxt="n", xlab=xlab, ylab=ylab,  ...)
     #add nice log axes
     axis.log10(1) 
     axis.log10(2)    
   }
   
   #add data
-  points(data[-i,xvar], data[-i,yvar],  type= 'p', col = col[-i], pch=pch, ...)  
+  if(type %in% c("o","b", "p"))
+    points(data[i,xvar], data[i,yvar],  type= 'p', col = col[i], pch=pch, ...)  
+  
 }  
 
 whichStudies <- function(alldata, var, value){
@@ -108,7 +162,7 @@ makePlot <-function(data, subset, xvar, yvar, xlab, ylab, main="", maincol=make.
 }  
 
 prepMapInfo<-function(data, study=NA){
-
+  
   if(!is.na(study))
     data   <-  data[data$dataset %in% study,]
   
@@ -116,13 +170,13 @@ prepMapInfo<-function(data, study=NA){
   keep <- c("dataset", "latitude", "longitude", "location") 
   
   data <- data[!duplicated(paste0(data$dataset,";", data$latitude,";", data$longitude, ";", data$location)), keep]
-
+  
   i <- !is.na(data$latitude) | !is.na(data$longitude)
   if(any(i)){
     data$country <- ""
     data$country[i]  <- map.where(x=as.numeric(data$longitude[i]), y=as.numeric(data$latitude[i]))    
   }
-                  
+  
   data  
 }  
 
@@ -332,4 +386,16 @@ comparePlots<-function(alldata, dir="plot-report", col="grey", pdf=TRUE){
       }
     }  
   }
+}
+
+getExpression<-function(units){
+  switch(units,
+         m2 = "m^2",
+         mm = "mm",   
+         yr= "yr",                                                                                                                                                                                                                   
+         m=  "m",                                                                                                                                                                                                                    
+         kg= "kg",                                                                                                                                                                                                                   
+         kg.m2 =  "kg m^-2",                                                                                                                                                                                                                
+         kg.m3 = "kg m^-3",                                                                                                                                                                                                                
+         kg.kg = "kg.kg")   
 }
