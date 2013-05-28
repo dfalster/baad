@@ -7,6 +7,10 @@ suppressPackageStartupMessages(library(smatr))
 to.pdf <- function(expr, filename, ..., verbose=TRUE) {
   if ( verbose )
     cat(sprintf("Creating %s\n", filename))
+  
+  if(!file.exists(dirname(filename)))
+    dir.create(dirname(filename), recursive=TRUE)
+  
   pdf(filename, ...)
   on.exit(dev.off())
   eval.parent(substitute(expr))
@@ -73,7 +77,7 @@ highlightStudies <- function(data, xvar, yvar, group, studies, col = niceColors(
   invisible(leg)
 }
 
-bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.transparent(niceColors(), 0.5), add = FALSE, legend=FALSE, from=NA, to=NA,...){ 
+bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.transparent(niceColors(), 0.5), pch=1, add = FALSE, legend=FALSE, from=NA, to=NA,...){ 
   
   colorBy <- data[[group]]
   
@@ -89,7 +93,7 @@ bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.trans
   
   i <- order(colorBy, decreasing = TRUE)
   
-  bivarPlot(data[i,], xvar, yvar, xlab =getLabel(xvar), ylab = getLabel(yvar), col= make.transparent(colours[i], 0.5), add = add, type=type, ...)
+  bivarPlot(data[i,], xvar, yvar, xlab =getLabel(xvar), ylab = getLabel(yvar), col= make.transparent(colours[i], 0.5), add = add, type=type, pch=pch, ...)
   
   #Return color by group, in order
   i <- !duplicated(colorBy)
@@ -97,7 +101,7 @@ bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.trans
   out <- out[order(out$group),]
   
   if(legend)
-    bivarPlot.Legend(out)
+    bivarPlot.Legend(out, pch=pch)
   
   if(type %in% c("o","b", "l"))
      add.sma(data, xvar, yvar, colorBy, out, from=from, to=to,...)   
@@ -132,9 +136,10 @@ add.sma <-function (data, xvar, yvar, colorBy, colours, from=NA, to=NA,...){
     #choose line according to log-trsnaformation used in fitting data, even if different transformation used for axes
     curve(10^a*x^B, From, To, add=TRUE,col = col, lty= "solid",...)    
     }
+  invisible(out)
 } 
 
-bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", pch = 19, lwd=0, bty ="n"){
+bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", pch = 1, lwd=0, bty ="n"){
   legend(location, tmp$group , col = tmp$col, text.col = text.col, pch = pch, merge = TRUE, lwd=lwd, bty =bty)  
 }
 
@@ -149,7 +154,7 @@ findPositive<-function(data, xvar, yvar){
   keep
 }
 
-bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, type='p', col= make.transparent("grey", 0.5), pch=19, add = FALSE, zeroWarning = FALSE, ...){
+bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, type='p', col= make.transparent("grey", 0.5), pch=1, add = FALSE, zeroWarning = FALSE, ...){
   
   #check for negative values  
   i <- findPositive(data, xvar, yvar)
