@@ -4,4 +4,5 @@
 "status","Dominant trees","status","3","Original file"
 ,,"latitude",-35.7, "Daniel Falster - converted value in paper"
 ,,"longitude",148.5, "Daniel Falster - converted value in paper"
-vegetation, Temp forest, vegetation, TempF, Daniel Falster - standardising vegetation type
+vegetation, Temp forest, vegetation, TempF, Daniel Falster - standardising 
+growingCondition,"field wild",growingCondition,"FW", "RAD fix"
