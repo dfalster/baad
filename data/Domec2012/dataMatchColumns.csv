@@ -1,6 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
 "Age","","yr","age",NA
-"Total leaf area","r,c,t","m2","a.lf",NA
+"Total leaf area","r2,c,t","m2","a.lf",NA
 "Individual leaf size_equals_projected AREA","b,1","m2","lf.sz",NA
 "Area of sapwood cross section","j","m2","a.ssbh",NA
 "Area of heartwood cross section","","m2","a.shbh",NA
