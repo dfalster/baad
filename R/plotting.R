@@ -58,9 +58,25 @@ getLabel<-function(xvar){
   paste0(var.def[i, "label"], " (", var.def[i, "Units"], ")")
 }
 
-bivarPlotColorBy <- function(data, xvar, yvar, colorBy, type='b', col = make.transparent(niceColors(), 0.5), add = FALSE, legend=TRUE, ...){ 
+highlightStudies <- function(data, xvar, yvar, group, studies, col = niceColors(length(studies)), type='b'){
   
-  #if
+  bivarPlotColorBy(data, xvar, yvar, group =group, col=make.transparent("grey", 0.5), legend= FALSE, type = 'p')
+  
+  for(i  in seq_len(length(studies))){
+    ii <- data$dataset==studies[i]
+    if(sum(ii) > 0)
+      bivarPlotColorBy(data[ii,], xvar, yvar, group = group, add = TRUE, legend = FALSE, col=col[i], type=type)  
+  }
+  
+  leg <- data.frame(group = studies, col = col, stringsAsFactors=FALSE)
+  bivarPlot.Legend(leg)
+  invisible(leg)
+}
+
+bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.transparent(niceColors(), 0.5), add = FALSE, legend=FALSE, from=NA, to=NA,...){ 
+  
+  colorBy <- data[[group]]
+  
   if(length(col) ==1 )
       col<-rep(col[1],length(unique(colorBy))) #check right vector length  
   
@@ -84,12 +100,12 @@ bivarPlotColorBy <- function(data, xvar, yvar, colorBy, type='b', col = make.tra
     bivarPlot.Legend(out)
   
   if(type %in% c("o","b", "l"))
-     add.sma(data, xvar, yvar, colorBy, out,...)   
+     add.sma(data, xvar, yvar, colorBy, out, from=from, to=to,...)   
   
-  out
+  invisible(out)
 }    
 
-add.sma <-function (data, xvar, yvar, colorBy, colours,...){
+add.sma <-function (data, xvar, yvar, colorBy, colours, from=NA, to=NA,...){
 
   i <- findPositive(data, xvar, yvar)
   fit <- sma(data[i,yvar]~data[i,xvar]*colorBy[i], log="xy")
@@ -103,12 +119,18 @@ add.sma <-function (data, xvar, yvar, colorBy, colours,...){
     #coefficients
     a <- fit$groupsummary$Int[i]
     B <-  fit$groupsummary$Slope[i]
-    from <- as.numeric(fit$from[i])  
-    to <- as.numeric(fit$to[i])
+    if(is.na(from)) 
+      From <- as.numeric(fit$from[i])  
+    else
+      From <- from  
+    if(is.na(to)) 
+      To <- as.numeric(fit$to[i])
+    else
+      To <- to  
     col <- colours$col [ match(as.character(fit$groupsummary$group[i]), as.character(colours$group))]
     
     #choose line according to log-trsnaformation used in fitting data, even if different transformation used for axes
-    curve(10^a*x^B, from, to, add=TRUE,col = col, lty= "solid",...)    
+    curve(10^a*x^B, From, To, add=TRUE,col = col, lty= "solid",...)    
     }
 } 
 
@@ -117,8 +139,14 @@ bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", pch = 
 }
 
 findPositive<-function(data, xvar, yvar){
+  
+  keep <- seq_len(length(data[,xvar]))
+  
   i <-  unique(c( which(data[,xvar] <= 0), which(data[,yvar] <= 0)))
-  seq_len(length(data[,xvar]))[-i]
+  if(length(i) > 0)
+    keep <- keep[-i]
+
+  keep
 }
 
 bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, type='p', col= make.transparent("grey", 0.5), pch=19, add = FALSE, zeroWarning = FALSE, ...){
