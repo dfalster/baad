@@ -6,3 +6,9 @@ output
 figure
 xtra
 slidify
+
+talk/slides.snm
+talk/slides.pdf
+talk/slides.fls
+talk/slides.fdb*
+talk/slides.nav
