@@ -1,1 +1,2 @@
 Some species are not listed in the paper or the metadata provided by the authoe. Could you please please provide species names for the species labelled: "Ci", "Sb", "Daph.", "Ardis." and "Sarca."?
+There are a few entries in the Kohyama1994 dataset with zero leaf area (and zero SLA); can you check these data?
