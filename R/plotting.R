@@ -62,14 +62,14 @@ getLabel<-function(xvar){
   paste0(var.def[i, "label"], " (", var.def[i, "Units"], ")")
 }
 
-highlightStudies <- function(data, xvar, yvar, group, studies, col = niceColors(length(studies)), type='b'){
+highlightStudies <- function(data, xvar, yvar, group, studies, col = niceColors(length(studies)), type='b', pch=1){
   
-  bivarPlotColorBy(data, xvar, yvar, group =group, col=make.transparent("grey", 0.5), legend= FALSE, type = 'p')
+  bivarPlotColorBy(data, xvar, yvar, group =group, col=make.transparent("grey", 0.5), legend= FALSE, type = 'p', pch=pch)
   
   for(i  in seq_len(length(studies))){
     ii <- data$dataset==studies[i]
     if(sum(ii) > 0)
-      bivarPlotColorBy(data[ii,], xvar, yvar, group = group, add = TRUE, legend = FALSE, col=col[i], type=type)  
+      bivarPlotColorBy(data[ii,], xvar, yvar, group = group, add = TRUE, legend = FALSE, col=col[i], type=type, pch=pch)  
   }
   
   leg <- data.frame(group = studies, col = col, stringsAsFactors=FALSE)
@@ -101,7 +101,7 @@ bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.trans
   out <- out[order(out$group),]
   
   if(legend)
-    bivarPlot.Legend(out, pch=pch)
+    bivarPlot.Legend(out)
   
   if(type %in% c("o","b", "l"))
      add.sma(data, xvar, yvar, colorBy, out, from=from, to=to,...)   
@@ -139,8 +139,8 @@ add.sma <-function (data, xvar, yvar, colorBy, colours, from=NA, to=NA,...){
   invisible(out)
 } 
 
-bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", pch = 1, lwd=0, bty ="n"){
-  legend(location, tmp$group , col = tmp$col, text.col = text.col, pch = pch, merge = TRUE, lwd=lwd, bty =bty)  
+bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", lwd=0, bty ="n"){
+  legend(location, tmp$group , col = tmp$col, text.col = text.col,  merge = TRUE, lwd=lwd, bty =bty, pch=19)  
 }
 
 findPositive<-function(data, xvar, yvar){

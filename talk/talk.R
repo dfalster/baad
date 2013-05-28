@@ -2,35 +2,47 @@ source('report/report-fun.R')
 data<- loadStudies(reprocess=FALSE)$data
 
 
+#World map
 to.pdf(
   drawWorldPlot (prepMapInfo(data))
   ,"talk/figures/map.pdf", height= 4, width =6)
 
 to.pdf(
-  highlightStudies(data, "h.t","a.lf", "species", c("Martin1998", "Aiba2005"))
-  ,"talk/figures/H-A.pdf", height= 6, width =8)
-# add  pas used  a1 = 5.44;      B1= 0.306; 
+  highlightStudies(data[data$dataset %in% c("Martin1998", "Aiba2005"), ], "h.t","a.lf", "species", c("Martin1998", "Aiba2005"), pch=19)
+  ,"talk/figures/H-A-Aiba-Martin-only.pdf", height= 6, width =8)
 
-bivarPlotColorBy(data[data$dataset=="Martin1998",], "a.lf", "h.t","species", pch=19)
+to.pdf(
+  highlightStudies(data, "h.t","a.lf", "species", c("Martin1998", "Aiba2005"), pch=19)
+  ,"talk/figures/H-A-Aiba-Martin-all.pdf", height= 6, width =8)
 
-tmp <- bivarPlotColorBy(data, "a.lf", "h.t", group = "vegetation", pch=19)       
+n = 20
+v <- data.frame(x = rep("",n), y= rep("",n), g = rep("",n), stringsAsFactors=FALSE)
+v[1,] <- c("h.t", "a.lf", "pft") 
+v[2,] <- c("h.t", "a.lf", "vegetation") 
+v[3,] <- c("h.t", "m.lf", "vegetation") 
+v[4,] <- c("h.t", "m.st", "vegetation") 
+v[5,] <- c("m.lf", "m.st", "vegetation") 
+v[6,] <- c("a.lf", "m.st", "vegetation") 
+v[7,] <- c("a.stbh", "m.st", "vegetation") 
+v[8,] <- c("a.stbh", "a.lf", "vegetation") 
+v[9,] <- c("a.ssbh", "a.lf", "vegetation") 
 
-  
---- 
 
-## Nice plots
-```{r, echo=FALSE, warning=FALSE}
-tmp <- bivarPlotColorBy(data, "m.st", "h.t",colorBy = data$vegetation)
-bivarPlot.Legend(tmp)
-```
+for(i in seq_len(9)){
+  to.pdf(
+    tmp <- bivarPlotColorBy(data, v$x[i], v$y[i], group = v$g[i], pch=19, legend= TRUE)       
+    ,paste0("talk/figures/plot-", i,".pdf"), height= 6, width =8)  
+}
 
---- 
 
-## The end of 3/4 scaling?
-```{r, echo=FALSE, warning=FALSE}
-tmp <- bivarPlotColorBy(data, "m.st", "m.lf",colorBy = data$pft)
-bivarPlot.Legend(tmp)
-```
+fig.txt<-function(i) paste0("\\includegraphics<",i,">[width=\textwidth]{figures/plot-",i,".pdf}")
+sapply(1:9, fig.txt)
+
+
+# Summarise dataset
+
+var.def$Group =="tree"
+table(data[,var.def$Type =="numeric"])
 
 
 

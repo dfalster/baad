@@ -10,7 +10,6 @@
 \usepackage{times}
 \usepackage[T1]{fontenc}
 %\usepackage{graphicx}
-\usepackage{movie15}  % For embedding movies http://pages.uoregon.edu/noeckel/PDFmovie.html
 \usepackage[normal,tight,center]{subfigure}
 \usepackage{epstopdf}
 \usepackage{colortbl}
@@ -20,9 +19,9 @@
 \setbeamertemplate{navigation symbols}{}  % remove navigation material in footer
 
 \title[] % (optional, use only with long paper titles)
-{ }
+{A biomass and allometry database for woody plants}
 \author%[D~Falster] % (optional, use only with lots of authors)
-{Daniel Falster\inst{1}\\
+{Daniel Falster\inst{1}
 Collaborators: Remko Duursma\inst{2}, Rich FitzJohn\inst{1}, Diego Barneche\inst{1}, many others }
 % - Give the names in the same order as the appear in the paper.
 % - Use the \inst{?} command only if the authors have different affiliation.
@@ -49,8 +48,128 @@ Collaborators: Remko Duursma\inst{2}, Rich FitzJohn\inst{1}, Diego Barneche\inst
 
 \titlepage{}
 
-\section{Problem} \subsection{intro}
+%----------------------------------------------------------------------------------------
+\section{Motivation} \subsection{intro}
 \begin{frame}[c]  \frametitle{}
+\vskip5pt
+{\Huge \color{structure.fg} Challenge: Modelling plant life cycles }
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}[c]  \frametitle{Mechanistic model capturing common processes}
+{\tiny   \color{grey} Falster {\em et al}, J Ecol 2011}
+\begin{center}
+	 \includegraphics[width=\textwidth]{/Users/dfalster/Dropbox/Documents/talks/archive/12_Falster_ESA/analysis/plantModel.pdf}
+\end{center}
+\end{frame}
+
+% ----------------------------------------------------------------------------------------
+\begin{frame}[c]  \frametitle{Two assumptions about biomass allocation}
+\begin{center}
+	\includegraphics<1>[width=\textwidth]{/Users/dfalster/Dropbox/Documents/talks/archive/12_Falster_ESA/analysis/output/Assumption-2.pdf}
+\end{center}
+{\tiny   \color{grey} Falster {\em et al}, J Ecol 2011}
+\end{frame}%
+
+% ----------------------------------------------------------------------------------------
+\begin{frame}[c]  \frametitle{But - what happens at smaller sizes?}
+\begin{center}
+	\includegraphics<1>[width=\textwidth]{figures/H-A-Aiba-Martin-only.pdf}
+	\includegraphics<2>[width=\textwidth]{figures/H-A-Aiba-Martin-all.pdf}
+\end{center}
+\end{frame}%
+
+% ----------------------------------------------------------------------------------------
+\begin{frame}[c]  \frametitle{Problem - few datasets available}
+
+Mostly not suitable 
+\begin{center}
+\begin{itemize}
+		\item Stand avarges (e.g. Niklas \& Enquist; Gentry) \\[\baselineskip] 
+		\item small plants (Poorter 2012)\\[\baselineskip] 
+		\item Multi-species (Chave 2005)\\[\baselineskip] 
+		\item Focus on  DBH and AGB (not so helpful)\\[\baselineskip] 
+	\end{itemize}
+\end{center}
+
+\pause
+But $\ldots$ lots of data in existence
+\end{frame}%
+
+% ----------------------------------------------------------------------------------------
+\begin{frame}[c]  \frametitle{Liberating data}
+\begin{center}
+	\includegraphics<1>[width=\textwidth]{figures/H-A-Aiba-Martin-all.pdf}
+\end{center}
+\end{frame}%
+
+%----------------------------------------------------------------------------------------
+\section{Collaboration} \subsection{intro}
+\begin{frame}[c]  \frametitle{}
+\vskip5pt
+{\Huge \color{structure.fg} Idea: A data paper}
+\end{frame}
+
+\begin{frame} [c] \frametitle{Contributions so far}
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{figures/map.pdf}
+\end{center}
+
+{\small \color{red} 86 studies, 14156 individuals, 205 locations, 476 species.}
+\end{frame}
+
+% ----------------------------------------------------------------------------------------
+\begin{frame}[c]  \frametitle{Principles}
+\begin{enumerate}
+		\item Recognition for contributors \\$\rightarrow$ coauthorship on data paper (only)\\[\baselineskip] 
+		\item Public data \\$\rightarrow$ open and unrestricted use, citation credit \\[\baselineskip] 
+		\item Transparent data handling \\$\rightarrow$ text and scripts \\[\baselineskip] 
+	\end{enumerate}
+
+\end{frame}
+
+% ----------------------------------------------------------------------------------------
+\begin{frame}[c]  \frametitle{}
+\vskip5pt
+{\Huge \color{structure.fg} Mechanics: Scalable and reproducible}
+\end{frame}
+
+% ----------------------------------------------------------------------------------------
+\begin{frame}[c]  \frametitle{An R package: dataMashR ??}
+
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\section{Overview of dataset} \subsection{intro}
+\begin{frame}[c]  \frametitle{}
+\vskip5pt
+{\Huge \color{structure.fg} The dataset}
+\end{frame}
+
+% ----------------------------------------------------------------------------------------
+\begin{frame}[c]  \frametitle{First plots}
+	\includegraphics<1>[width=\textwidth]{figures/plot-1.pdf}
+	\includegraphics<2>[width=\textwidth]{figures/plot-2.pdf}
+	\includegraphics<3>[width=\textwidth]{figures/plot-3.pdf} 
+	\includegraphics<4>[width=\textwidth]{figures/plot-4.pdf}
+	\includegraphics<5>[width=\textwidth]{figures/plot-5.pdf} 
+	\includegraphics<6>[width=\textwidth]{figures/plot-6.pdf}
+	\includegraphics<7>[width=\textwidth]{figures/plot-7.pdf} 
+	\includegraphics<8>[width=\textwidth]{figures/plot-8.pdf}
+	\includegraphics<9>[width=\textwidth]{figures/plot-9.pdf}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\section{Future} \subsection{intro}
+\begin{frame}[c]  \frametitle{What next}
+\begin{center}
+\begin{itemize}
+		\item Email report to collabortaors \\[\baselineskip] 
+		\item Draft data paper \\[\baselineskip] 
+		\item Draft dataMashR package and paper \\[\baselineskip] 
+		\item Analysis papers \\[\baselineskip] 
+	\end{itemize}
+\end{center}
 \end{frame}
 
 \end{document}
