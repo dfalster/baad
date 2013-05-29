@@ -545,7 +545,7 @@ changeVarCsv  <-  function(study, filename, column, from, to, path=dir.rawData){
   } else {
     x  <-  read.csv(paste0(path, "/", study, "/", filename, ".csv"), h=TRUE, stringsAsFactors=FALSE)
   }
-  if(length(x[[column]][x[[column]]==from & !is.na(x[[column]]==from)]) > 0){
+  if(length(x[[column]][x[[column]] %in% from]) > 0){
     x[[column]][x[[column]]==from]  <-  to
     if(missing(study)){
       write.csv(x, paste0(path, "/", filename, ".csv"), row.names=FALSE)
