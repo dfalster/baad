@@ -112,7 +112,6 @@ readDataRaw<-function(studyName){
   
   read.csv(data.path(studyName, import$name),
            header=import$header, skip=import$skip,
-           fileEncoding=import$fileEncoding,
            na.strings=import$na.strings, check.names=FALSE,
            stringsAsFactors=FALSE, strip.white=TRUE)
 }
@@ -426,7 +425,7 @@ readImport <- function(studyName) {
   tmp <- read.csv(filename, header=FALSE, row.names=1,
                   stringsAsFactors=FALSE)
 
-  defaults <- list(na.strings="NA", fileEncoding="")
+  defaults <- list(na.strings="NA")
   import <- modifyList(defaults,
                        structure(as.list(tmp[[1]]), names=rownames(tmp)))
   import$header <- as.logical(import$header)
