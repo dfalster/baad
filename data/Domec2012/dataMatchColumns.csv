@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
 "Age","","yr","age",NA
 "Total leaf area","r2,c,t","m2","a.lf",NA
-"Individual leaf size_equals_projected AREA","b,1","m2","lf.sz",NA
+"Individual leaf size_equals_projected AREA","b,1","m2","a.ilf",NA
 "Area of sapwood cross section","j","m2","a.ssbh",NA
 "Area of heartwood cross section","","m2","a.shbh",NA
 "Area of total stem cross section","","m2","a.stbh",NA
@@ -18,11 +18,11 @@
 "Fine root mass","","kg","m.rf",NA
 "Coarse root mass","","kg","m.rc",NA
 "Total root mass","","kg","m.rt",NA
-"Leaf mass per area","","kg.m2","lf.ma",NA
-"Density of stem sapwood","","kg.m3","d.ss",NA
-"Density of stem heartwood","","kg.m3","d.sh",NA
-"Density of stem tissue","","kg.m3","d.st",NA
-"Density of stem bark","","kg.m3","d.sb",NA
+"Leaf mass per area","","kg.m2","ma.ilf",NA
+"Density of stem sapwood","","kg.m3","r.ss",NA
+"Density of stem heartwood","","kg.m3","r.sh",NA
+"Density of stem tissue","","kg.m3","r.st",NA
+"Density of stem bark","","kg.m3","r.sb",NA
 "Leaf nitrogen","","kg.m2","n.lf",NA
 "Sapwood nitrogen","","kg.kg","n.ss",NA
 "Bark nitrogen","","kg.kg","n.sb",NA

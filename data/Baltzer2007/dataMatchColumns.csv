@@ -6,8 +6,8 @@
 "total leaf mass (g)","m1","g","m.lf",NA
 "total root mass (g)","m1","g","m.rt",NA
 "stem mass (g)","m1","g","m.st",NA
-"Single leaf area (cm2)","","cm2","lf.sz",NA
-"lma (g cm-2)","","g.cm2","lf.ma",NA
+"Single leaf area (cm2)","","cm2","a.ilf",NA
+"lma (g cm-2)","","g.cm2","ma.ilf",NA
 "contributor",NA,NA,NA,NA
 "family",NA,NA,NA,NA
 "species",NA,NA,NA,NA

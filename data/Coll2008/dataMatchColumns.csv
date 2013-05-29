@@ -1,6 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
-"individual.leaf.area.cm2","b","cm2","lf.sz",""
-"specific.leaf.area.cm2/g","c","cm2.g","lf.ma",""
+"individual.leaf.area.cm2","b","cm2","a.ilf",""
+"specific.leaf.area.cm2/g","c","cm2.g","ma.ilf",""
 "diameter.cm","","cm","d.ba","10cm from the ground"
 "height.cm","","cm","h.t",""
 "branch.biomass.g","","g","m.br",""

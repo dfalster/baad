@@ -1,5 +1,5 @@
 manipulate <- function(raw) {
-  raw[["a.babh"]] <-  raw[["a.st"]] - raw[["a.st1"]]
+  raw[["a.sbbh"]] <-  raw[["a.st"]] - raw[["a.st1"]]
   raw[["group"]]  <-  paste(raw[["Variable"]], raw[["contributor"]], raw[["Nutrition"]], sep="; ")
   raw[["a.cs"]]  <-  pi*(raw[["a.cp"]]/100)^2
   
@@ -9,4 +9,5 @@ manipulate <- function(raw) {
   raw[["h.c"]][i] <- raw[["h.c"]][i]/100
   raw
 }
+
 

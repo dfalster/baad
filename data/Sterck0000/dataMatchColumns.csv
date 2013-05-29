@@ -2,10 +2,10 @@
 "height (m)",NA,"m","h.t",NA
 "Crown depth (m)",NA,"m","c.d",NA
 "Crown area (m2)",NA,"m2","a.cs",NA
-"Individual leaf area (cm2)",NA,"cm2","lf.sz",NA
+"Individual leaf area (cm2)",NA,"cm2","a.ilf",NA
 "Total leaf area (m2)",NA,"m2","a.lf",NA
-"LMA (g.cm-2)",NA,"g.cm2","lf.ma",NA
-"WD (g.cm3)",NA,"g.cm3","d.st",NA
+"LMA (g.cm-2)",NA,"g.cm2","ma.ilf",NA
+"WD (g.cm3)",NA,"g.cm3","r.st",NA
 "Individual",NA,NA,NA,NA
 "Type (1=tree; 2=sapling shade; 3=sapling light)",NA,NA,NA,NA
 "# shoots",NA,NA,NA,NA

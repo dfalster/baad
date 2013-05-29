@@ -5,8 +5,8 @@
 "CW1","","m","d.cr",""
 "CW2",NA,NA,NA,NA
 "TLA","c1","m2","a.lf","total leaf area (m2) is calculated by multiplying the number of leaves with the mean leaf area of a random leaf sample (20 leaves for taller individuals, but smaller samples for small individuals)"
-"LA","","cm2","lf.sz","leaf area (cm2) is the average area of a single leaf, based on the average area of a leaf sample of 20 leaves."
-"SLA","","cm2.g","lf.ma",""
+"LA","","cm2","a.ilf","leaf area (cm2) is the average area of a single leaf, based on the average area of a leaf sample of 20 leaves."
+"SLA","","cm2.g","ma.ilf",""
 "PAR","li","-","light",""
 "Sp",NA,NA,"species",NA
 "Nr",NA,NA,NA,NA

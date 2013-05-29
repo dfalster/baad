@@ -6,9 +6,9 @@
 "Stem.mass","","g","m.st",NA
 "Total.leaf.mass","","g","m.lf",NA
 "Total.leaf.area","","m2","a.lf",NA
-"Individual.leaf.area","b,1","cm2","lf.sz",NA
+"Individual.leaf.area","b,1","cm2","a.ilf",NA
 "SLA","","cm2.g",NA,NA
-"LMA","","g.m2","lf.ma",NA
+"LMA","","g.m2","ma.ilf",NA
 "LAI","","m2.m2","lai",NA
 "D0","","mm","d.ba",NA
 "light.ISF","li4","-","light",NA
