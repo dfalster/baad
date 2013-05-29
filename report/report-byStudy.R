@@ -6,7 +6,9 @@ source('report/report-fun.R')
 dat <- loadStudies(reprocess=TRUE)
 
 # single study
-#printStudyReport(dat, "Aiba2007", reprocess=TRUE)
+printStudyReport(dat, "Aiba2007", reprocess=TRUE)
+printStudyReport(dat, "Ishihara0000", reprocess=TRUE)
+
 #emailReport(dat, "Aiba2005")
 
 # All reports:

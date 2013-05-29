@@ -472,7 +472,14 @@ data.path <- function(studyName, ...){
 
 readReference <- function(studyName) {
   filename <-data.path(studyName, "studyRef.bib")
-  data.frame(dataset=studyName, filename,  stringsAsFactors=FALSE)
+  myBib <- read.bib(filename)  
+  
+  if(is.null(myBib$doi)) myBib$doi <-""  
+  
+  if(myBib$doi != "") myBib$url <- paste0("http://dx.doi.org/", myBib$doi)
+  if(is.null(myBib$url)) myBib$url <-""  
+  
+  data.frame(dataset=studyName, filename,  doi = myBib$doi, url= myBib$url, stringsAsFactors=FALSE)
 }
 
 readContact <- function(studyName) {
