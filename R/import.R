@@ -527,7 +527,7 @@ rename <- function(obj, names.from, names.to) {
     stop("names.from and names.to must be the same length")
   i <- match(names.from, names(obj))
   if ( any(is.na(i)) )
-    stop("Could not find some names")
+    stop(paste("Could not find names", paste(names.from[is.na(i)], collapse=", ")))
   names(obj)[i] <- names.to
   obj
 }
@@ -538,6 +538,19 @@ transform <- function(x, unit.from, unit.to) {
   x
 }
 
+
+changeVars <-  function(studyNames=getStudyNames(), from, to, path=dir.rawData){
+  
+  lapply(studyNames, changeVarsInFolder, from=from, to=to, path=path)
+  changeVarCsv(filename="variableDefinitions", column="Variable", from=from, to=to, path="config")
+  
+}
+
+changeVarsInFolder  <-  function(study, from, to, path=dir.rawData){
+  changeVarCsv(study, from=from, to=to, filename="dataMatchColumns", column="var_out", path=path)
+  changeVarCsv(study, from=from, to=to, filename="dataNew", column="newVariable", path=path)
+  changeVarR(study, from=from, to=to, filename="dataManipulate", path=path)
+}
 
 changeVarCsv  <-  function(study, filename, column, from, to, path=dir.rawData){
   if(missing(study)){
@@ -555,17 +568,18 @@ changeVarCsv  <-  function(study, filename, column, from, to, path=dir.rawData){
   }
 }  
   
-changeVarR  <-  function(study, filename, from, to, path=dir.rawData){
-  File  <-  paste0(path, "/", study, "/", filename, ".R")
-  x     <-  readChar(File, file.info(File)$size)
-  if(length(grep(from, x)) > 0){
-    x  <-  gsub(from, to, x)
-    write(x, File)
-  }
+changeVarR  <-  function(study, filename, from, to, path=dir.rawData){  
+    File  <-  paste0(path, "/", study, "/", filename, ".R")
+    
+    from <- paste0('"',from,'"')
+    to <- paste0('"',to,'"')
+    
+    if(file.exists(File)){
+      x     <-  readChar(File, file.info(File)$size)
+      if(length(grep(from, x)) > 0){
+        x  <-  gsub(from, to, x)
+        write(x, File)
+      }          
+    }
 }
 
-changeVars  <-  function(study, from, to, path=dir.rawData){
-  changeVarCsv(study, from=from, to=to, filename="dataMatchColumns", column="var_out", path=path)
-  changeVarCsv(study, from=from, to=to, filename="dataNew", column="newVariable", path=path)
-  changeVarR(study, from=from, to=to, filename="dataManipulate", path=path)
-}
