@@ -19,6 +19,7 @@ to.pdf <- function(expr, filename, ..., verbose=TRUE) {
 makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRUE, quiet=FALSE){
   if(!quiet)cat("This is how the study", study, "fits in the entire dataset distribution")
   
+  #browser()
   if(pdf){    
     path<-paste0("output/", dir)
     if(!file.exists(path))
@@ -35,7 +36,9 @@ makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRU
   
   #set up a vector of colors, each species with different color
   species  <-  as.numeric(as.factor(dat$species))
-  if(min(species)!=1){species  <-  species - (min(species)-1)}
+  
+#  if(min(species)!=1){species  <-  species - (min(species)-1)}
+  
   colorvec <-  niceColors(length(unique(species)))
   colorvec <-  colorvec[match(species, unique(species))]
   
