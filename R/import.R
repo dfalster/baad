@@ -537,3 +537,35 @@ transform <- function(x, unit.from, unit.to) {
     x <- match.fun(paste(unit.from, unit.to, sep="."))(x)
   x
 }
+
+
+changeVarCsv  <-  function(study, filename, column, from, to, path=dir.rawData){
+  if(missing(study)){
+    x  <-  read.csv(paste0(path, "/", filename, ".csv"), h=TRUE, stringsAsFactors=FALSE)
+  } else {
+    x  <-  read.csv(paste0(path, "/", study, "/", filename, ".csv"), h=TRUE, stringsAsFactors=FALSE)
+  }
+  if(length(x[[column]][x[[column]]==from & !is.na(x[[column]]==from)]) > 0){
+    x[[column]][x[[column]]==from]  <-  to
+    if(missing(study)){
+      write.csv(x, paste0(path, "/", filename, ".csv"), row.names=FALSE)
+    } else {
+      write.csv(x, paste0(path, "/", study, "/", filename, ".csv"), row.names=FALSE)
+    }
+  }
+}  
+  
+changeVarR  <-  function(study, filename, from, to, path=dir.rawData){
+  File  <-  paste0(path, "/", study, "/", filename, ".R")
+  x     <-  readChar(File, file.info(File)$size)
+  if(length(grep(from, x)) > 0){
+    x  <-  gsub(from, to, x)
+    write(x, File)
+  }
+}
+
+changeVars  <-  function(study, from, to, path=dir.rawData){
+  changeVarCsv(study, from=from, to=to, filename="dataMatchColumns", column="var_out", path=path)
+  changeVarCsv(study, from=from, to=to, filename="dataNew", column="newVariable", path=path)
+  changeVarR(study, from=from, to=to, filename="dataManipulate", path=path)
+}
