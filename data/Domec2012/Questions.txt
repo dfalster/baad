@@ -1,0 +1,1 @@
+It seems that the coordinates for Coast Range, Roseburg, Oregon, USA are wrong, falling on the sea (lat=41.18, lon=-124.5). Could you please double-check that?

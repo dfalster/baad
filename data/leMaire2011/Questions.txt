@@ -1,1 +1,3 @@
 Are branch and leaf mass fresh or dried mass?
+It seems that the coordinates for the locations "BR171", "BR183U", "BR89", "BR178U" and "BR43E" are wrong, falling on the sea. Could you please double-check that?
+

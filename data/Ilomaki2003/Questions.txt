@@ -1,0 +1,1 @@
+It seems that the coordinates for your location [missing] are wrong, falling on the sea (lat=69.28, lon=5.73). Could you please double-check that?

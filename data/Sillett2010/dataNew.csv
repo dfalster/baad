@@ -6,7 +6,7 @@ species,Sequoia sempervirens,location,"Bull Creek, Humboldt Redwoods State Park,
 species,Eucalyptus regnans,latitude,-37,from paper[D Barneche]
 species,Sequoia sempervirens,latitude,40,from paper[D Barneche]
 species,Eucalyptus regnans,longitude,145,from paper[D Barneche]
-species,Sequoia sempervirens,longitude,-124,from paper[D Barneche]
+species,Sequoia sempervirens,longitude,-123.8,from paper[D Barneche]
 species,Eucalyptus regnans,map,1208,from paper[D Barneche]
 species,Sequoia sempervirens,map,1226,from paper[D Barneche]
 species,Eucalyptus regnans,mat,11.6,from paper[D Barneche]

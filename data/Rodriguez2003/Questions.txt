@@ -1,5 +1,4 @@
 Can you please clarify the units for the "Leaf area" and "Sapwood_area" variables? 
-
 Could you please specify the variables used to measure SLA, Sapwood area and leaf area?
-
 How would you define Cerrado in terms of the categories adopted for our database?
+Could you please provide specific coordinates for your sampled locations?
