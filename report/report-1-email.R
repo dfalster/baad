@@ -33,33 +33,30 @@ generateEmailContent <-function(allData, study, studyData){
      
   paste0("Dear ", paste0(studyData$contact$name, collapse = " and "),",
 
-Last year you kindly agreed to contribute data to a biomass and allometry database for woody plants, for publication as a data paper in the journal Ecology. 
+Last year you kindly agreed to contribute data to a biomass and allometry database for woody plants, for publication as a data paper in the journal Ecology.  Overall we had a fantastic response to our request for data, with data now collected from ", length(unique(allData$ref$dataset)), " studies, with information for ", length(allData$data$dataset), " individuals from ", length(unique(allData$data$location)), " locations, covering ",length(unique(allData$data$species)), " species. We are certain this dataset will be a widely used resource and thank you for your contribution.
 
-We had a fantastic response to our request for data, with data now collected from ", length(unique(allData$ref$dataset)), " studies, with information for ", length(allData$data$dataset), " individuals from ", length(unique(allData$data$location)), " locations, covering ",length(unique(allData$data$species)), " species. We are certain this dataset will be a widely used resource.
+The purpose of this email is to provide you with a report on the data you contributed to the study. The database is organised by publication, so if you contributed data from more than one publication, you will receive multiple emails. We kindly request that you review each of these before we submit our paper for publication, to ensure all the information is correct. Unless there are major issues with your data, it should only take 30 mins to complete each review. 
 
-The purpose of this email is to provide you with a report on the data you contributed for you to review, before we submit our paper. The database is organised by publication, so if you contributed data from more than one publication, you will receive multiple emails. 
-
-This email contains a report for the study: ",
+This email contains a report for the following study, for which you are listed as contact person: ",
         formatBib(studyData$ref$filename)[[1]],
-         ".\n
-To assist us in preparing the data for publication, we request that you review the attached report and provide answers to ALL of the questions listed in the file 'report1-questions.txt' attached. We require all questions be answered for a study to be included in the final dataset. 
+         ".
 
-The following files are attached to this email: 
-\t ", paste0(study, ".html"), ": is a report generated from the data you provided
-\t report1-questions.txt: is the list of questions we would like you to answer
-\t studyContact.csv: includes the contact nfomration we have for you
-\t studyRef.bib: includes citation details for your study 
-\t studyMetadata.csv: includes details about the methods used in your study
-\t data.csv: is the original data file you provided
-\t ", paste0(study, ".csv"), ": is a cleaned data file, with units used in our data paper
-\t variableDefinitions.csv: provides names, units and definitions used in our data paper.
-
-By returing the requested information you are assisting us in handling a large number of files and corrections.
+To assist us in preparing the data for publication, we ask that you review the attached report of your data and provide answers to ALL of the questions listed in the file 'report1-questions.txt' attached. We require all questions be answered for a study to be included in the final dataset. Please type your answers directly into that file or into one of the other attached files, where appropriate.  By returning the requested information in this way, you are assisting us in handling a large number of files and corrections.
 
 We look forward to hearing from you. If you could reply within the next 2 weeks that would be much appreciated. If you are unable to reply within this time period, please send us a quick reply to let us know when we can expect to hear from you. 
 
 With best regards,
-Daniel Falster, Remko Duursma, Diego Barneche \n\n"       
+Daniel Falster, Remko Duursma, Diego Barneche\n
+
+Please find the following files attached to this email: 
+\t ", paste0(study, ".html"), ": is a report generated from the data you provided
+\t report1-questions.txt: is the list of questions we would like you to answer
+\t studyContact.csv: includes the contact information we have for you
+\t studyRef.bib: includes citation details for your study 
+\t studyMetadata.csv: includes details about the methods used in your study
+\t data.csv: is the original data file you provided
+\t ", paste0(study, ".csv"), ": is a cleaned data file, with units used in our data paper
+\t variableDefinitions.csv: provides names, units and definitions used in our data paper. \n\n\n"
          )
 }
 
@@ -71,45 +68,59 @@ makeQuestionsFile <- function(study, outputDir="output/questions"){
   if(!file.exists(dirname(filename)))
     dir.create(dirname(filename), recursive=TRUE)  
   
-  con <- file(filename, "w")  
-  cat("Questions about the study: ", study, "
+  #list of questions
+  questions <- c(
+    "Is your contact information correct?
+\tIf not, could you please revise the information in the attached studyContact.csv file and send it to us?",
 
-1. Is your contact information correct?
-\tIf not, could you please revise the information in the attached studyContact.csv file and send it to us?
+"Is your reference information correct?
+\tIf not, could you please revise the information in the attached studyRef.bib file and send it to us?",
 
-2. Is your reference information correct?
-\tIf not, could you please revise the information in the attached studyContact.csv file and send it to us?
+"Does the number of records for each variable seem reasonable based on the datafile you provided?
+\t For your interest, the raw data file you originally sent us and the cleaned data file are both attached.",
 
-3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+"Is 'Location data' complete?
+\t If not, could you please provide the missing information in the attached file dataNew.csv. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.",
 
-4. Is 'Location data' complete?
-\t If not, could you please provide the missing information in the attached file dataNew.csv. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
-  
-5. Do your locations fall in the right spot in both world and country map?
-  
-6. Is the 'Stand description' complete?
-\t If not, could you please fill in the missing information in dataNew.csv? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.  
-  
-7. Is the 'Species data' correct? What about plant functional type (pft)?  
-\t If not, please correct the data in dataNew.csv and check the relevant codes for pft in Variable.definition.csv.
-  
-8. Is the 'Methods' information complete and accurate? 
-\t If not, could you please provide the missing infomration in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of each of the items listed. Additional items not listed in the report are not needed, but if you judge it really important add it to 'Other variables'.
-  
-9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
-\t If so, could you please review the original data file you provided us with and verify that all iformation is correct.", 
-      file = con, sep = " ")
+"Do your locations fall in the right spot in both world and country map?
+\t If not, please outline the issues here and provide us with update locationcation data.",
+
+"Is the 'Stand description' complete?
+\t If not, could you please fill in the missing information in dataNew.csv? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.  ",
+
+"Is the 'Species data' correct? What about plant functional type (pft)?  
+\t If not, please correct the data in dataNew.csv and check the relevant codes for pft in Variable.definition.csv. The dataNew.csv allows us to incorporate your changes into our dataset using a lookup table. The columns of this file are as follows
+\t\tlookupVariable is the name of the variable in the parent data we want to match against. If left blank, change all rows.
+\t\tlookupValue is the value of lookupVariable to match against
+\t\tnewVariable is the variable to be changed
+\t\tnewValue is the value of newVariable for matched rows
+\t\tsource includes any notes about where the data came from (e.g., who made the change).",
+
+"Is the 'Methods' information complete and accurate? 
+\t If not, could you please provide the missing infomration in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of each of the items listed. Additional items not listed in the report are not needed, but if you judge it really important add it to 'Other variables'.",
+
+"Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+\t If so, could you please review the original data file you provided us with and verify that all iformation is correct.",
+
+"The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+Please indicate that you understand what this means and agree to this by answering 'I agree' here")
 
   #Add details in extra questions file
   extraQuestionsFile <- file.path(data.path(study), "questions.txt")
    if(file.exists(extraQuestionsFile)){
      extraQuestions <-  readLines( extraQuestionsFile)
-     
-     extraQuestions <-  extraQuestions[extraQuestions!=""]
-     
-     N <- 9 + seq_len(length(extraQuestions))
-     cat(paste0("\n\n", N, ". ", extraQuestions, collapse ="\n"),  file = con, sep = "")
-   }
+     questions<- c(questions, extraQuestions[extraQuestions!=""])     
+     }
+
+  con <- file(filename, "w")  
+
+  #PRINT TO FILE
+  cat("Questions about the study: ", study, "
+
+Please look at the attached html report ", paste0(study, ".html"), " and answer the following questions. Type your answers directly into this file, or into the other files as indicated.\n\n", 
+      file = con, sep = " ")
+
+ cat(paste0(seq_len(length(questions)), ". ", questions, "\nANSWER: \n", collapse ="\n"),  file = con, sep = "")
   
   close(con)
   filename  
