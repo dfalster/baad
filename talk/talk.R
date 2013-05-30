@@ -39,10 +39,3 @@ fig.txt<-function(i) paste0("\\includegraphics<",i,">[width=\textwidth]{figures/
 sapply(1:9, fig.txt)
 
 
-# Summarise dataset
-
-var.def$Group =="tree"
-table(data[,var.def$Type =="numeric"])
-
-
-
