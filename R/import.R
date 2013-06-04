@@ -1,5 +1,14 @@
 library(bibtex, quietly=TRUE)
 
+
+if("dataMashR" %in% .packages()){
+  library(dataMashR)  
+} else {
+  library(devtools)
+  install_github("dataMashR","dfalster")
+  library(dataMashR)
+}
+
 #set directories for study
 dir.rawData   <-  "data" 
 dir.cleanData <-  "output/data"
