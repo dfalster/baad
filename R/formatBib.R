@@ -1,4 +1,9 @@
 
+bibGetElement <- function(bibfile, element = "doi", i=1){
+  bibs <- read.bib(bibfile)
+  unclass(bibs[[i]])[[1]][[element]]
+}
+
 
 formatBib <- function(bibfile,
                       initialSep=".",
