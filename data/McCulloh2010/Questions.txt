@@ -1,4 +1,2 @@
 Was stem diameter measured at base, breast height or crown base?
-
 What about sapwood area, which we suspect was measured in cm2 and not m2 - could you please double-check that?
- 
