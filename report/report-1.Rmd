@@ -2,11 +2,11 @@
 
 locLevelInfo  <-  function(data){
   
-  vars <- c("location","map","mat","longitude","latitude","vegetation")
+  vars <- c("location","longitude","latitude","vegetation")
   
   loc <- data[!duplicated(data[,vars]),vars]
   
-  loc[is.na(loc) | loc=="" | loc=="NA"]  <-  "????"  
+  loc[is.na(loc) | loc=="" | loc=="NA"]  <-  "missing"  
   return(loc)
 }
 
@@ -15,12 +15,11 @@ standLevelInfo  <-  function(data){
   
   vars <- c("location","grouping","growingCondition","status")
   sta <- data[!duplicated(data[,vars]),vars]
-  
-  
+    
   if(all(is.na(sta$grouping)))
-    sta  <-  sta[,c("location", "growing_condition", "status")]
+    sta  <-  sta[,-which(names(sta) == "grouping")]
   
-  sta[is.na(sta) | sta=="" | sta=="NA"]  <-  "????"  
+  sta[is.na(sta) | sta=="" | sta=="NA"]  <-  "missing"  
   
   return(sta)
 }
@@ -32,12 +31,12 @@ spLevelInfo  <-  function(data){
     spec[[z]]  <-  as.character(data[[z]][match(spec$species,data$species)])
     i          <-  spec[[z]]=="" | is.na(spec[[z]]) 
     if(any(i)){
-      spec[[z]][i]  <-  "????"
+      spec[[z]][i]  <-  "missing"
     }
   }
   j            <-  spec$species=="" | is.na(spec$species) 
   if(any(j)){
-    spec$species[j]  <-  "????"
+    spec$species[j]  <-  "missing"
   }
   spec
 }
@@ -53,13 +52,24 @@ printMeta  <-  function(data){
 
 # Report for study: `r .study`
 
-**Reference:** `r formatBib(paste0("../", as.character(.dat$ref$filename)))[[1]]`
+## Contact Information
 
 **Data contributor:** `r .dat$contact$name`.
 
 **Email:** `r .dat$contact$email`.
 
 **Address:** `r .dat$contact$address`.
+
+## Citation
+Information about the primary reference for the data you provided. 
+```{r echo=FALSE, comment=''}
+  bibfile<- paste0("../", as.character(.dat$ref$filename))
+```
+**Reference:** `r formatBib(bibfile)[[1]]`
+
+**DOI:** `r  bibGetElement(bibfile, element = "doi")`
+
+**Abstract:** `r  bibGetElement(bibfile, element = "abstract")`
 
 ## Overview of data provided
 
@@ -102,8 +112,8 @@ repMissingInfo(prepdata)
 drawCountryPlot(prepdata)
 ```
 
-
 **Stand description**
+Information about the growing condition of plants in your study, i.e. their local environment.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
 standLevelInfo(.dat$data)
@@ -126,7 +136,7 @@ for(j in 1:nrow(metaTable)){
 
 ## Plots of data
 
-This is how the study `r .study` (each color represents a species) fits in the entire dataset (grey).
+This is how the study `r .study` (each colour represents a species) fits in the entire dataset (grey).
 
 ```{r fig.height=8, fig.width=8, echo=FALSE, warning=FALSE, message=FALSE}
 makePlotPanel(alldata$data, .study, pdf=FALSE, quiet=TRUE)
