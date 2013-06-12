@@ -1,3 +1,11 @@
 "lookupVariable","lookupValue","newVariable","newValue","source"
 NA,NA,"vegetation","TempF","from paper[D Barneche]"
 NA,NA,"growingCondition","FW","from paper[D Barneche]"
+site,Montana,location,"Western Montana, USA",DBarneche[from_author_reply]
+site,Oregon,location,"central Oregon, USA",DBarneche[from_author_reply]
+site,Montana,latitude,46.858,DBarneche[from_author_reply]
+site,Oregon,latitude,43.710,DBarneche[from_author_reply]
+site,Montana,longitude,-113.984,DBarneche[from_author_reply]
+site,Oregon,longitude,-121.627,DBarneche[from_author_reply]
+,,family,Pinaceae,DBarneche[from_author_reply]
+,,pft,EG,DBarneche[from_author_reply]

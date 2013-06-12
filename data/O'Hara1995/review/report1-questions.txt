@@ -1,0 +1,50 @@
+Questions about the study:  O'Hara1995 
+
+Please look at the attached html report  O'Hara1995.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER: CORRECT
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: CORRECT
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: NOTE THE FOLLOWING IS INCORRECT: "Data for 114 individuals from 1 locations covering 1 species."  SHOULD BE "Data 
+for 114 individuals from 2 locations covering 1 species."
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: NOT CORRECT SEE THE FOLLOWING:
+Study area 1: Western Montana, USA; approximate: Long 113.984, Lat 46.858
+Study area 2: central Oregon, USA: approximate: Long 121.627, Lat 43.710
+Note, these are central locations of broad study areas
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: 
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: STAND DESCRIPTION: Multiaged ponderosa pine stands on range of soils and plant associations. 
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: Family = Pinaceae, PFT = Needleleaf evergree
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: SEE SEPARATE FILE
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: WE DID NOT Have sapwood data at crown base so the one graph that shows our data as outliers is incorrect. We should have no data on that graph.
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: I agree
+
+11. It seems that the units you provided for leaf area might be wrong. You provided m2 but we suspect it may be cm2. Could you please double-check this information? The original indicates m2 indeed, but maybe the original dataset is expressed in cm2?
+ANSWER: should be m2, but should be specified as "all-sided leaf area"
