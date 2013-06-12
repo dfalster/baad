@@ -1,0 +1,87 @@
+Questions about the study:  Kantola2004 
+
+Please look at the attached html report  Kantola2004.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct? 
+	If not, could you please provide correct information.
+ANSWER: YES
+
+2. Is your reference information correct? 
+	If not, could you please provide correct information.
+ANSWER: YES
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: Data for 29 individuals from 3 locations in Finland covering 1 species.
+
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: 
+     location longitude latitude vegetation
+8596  Finland (Heinola) 26 61 BorF
+8596  Finland (Punkaharju) 29 61 BorF
+8596  Finland (Lapinjärvi) 26 60 BorF
+
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: 
+
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: 
+     location growingCondition  status
+8596  Finland (Heinola) 0-3
+8596  Finland (Punkaharju) 0-3
+8596  Finland (Lapinjärvi) 3
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: 
+      species  family pft
+1 Picea abies Pinaceae EG
+
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: 
+
+Sampling strategy: The trees were sampled according to the
+stem cumulative basal area distribution in each plot (more accurate description in the article).
+ 
+
+Leaf area:  Calculated by the crown width measurements. Crown width was measured in two directions ; the maximum width and the wodth perpendicular to it. 
+Projected crown area eas estimated as a circle, of which the diameter was the mean of these two measurements.
+
+Stem cross sectional area: Calculated by stem diameter the crown base of the living crown. The stem measured in two directions using a slide gauge.
+
+Height: The sample trees were felled and tree height was measured by tape measure from the base of the trunk to the tip of the crown
+
+Crown area: Estimatd as a circle by the measurements of the crown width (Crown width was measured in two directions ; the maximum width and the wodth perpendicular to it).
+
+Biomass: The foliage and branch wood biomasses were estimated for each branch in the crown using the measurements of ten randomly sampled branches. 
+The fresh sample branches were measured in the field and then oven dried. Th dry mass of needles and branch wood was then determined.
+The stem basic density estimated from five sample discs (at crown base, 1.3 m, 30%, 70%, and 90% height). The randomly cut sample sectors were separated into sapwood, heartwood
+and bark fragments, which were measured for volume by immersion, and then oven dried and weighed.
+
+traits: In the young stand (Lapinjärvi), 5 trees
+were sampled from an unthinned plot, while in each of the two
+older stands (Heinola and Punkaharju), a total of 12 trees were sampled from 3 plots
+with different thinning treatments, including unthinned
+control (5 trees sampled), normal commercial thinning (4
+trees sampled), and intensive thinning (3 trees sampled).
+
+Growth environment: The site type classified by the  method of Cajander (1949) and Vuokila and Väliaho (1980)
+
+Other variables: Please provide ...
+
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: The data seems to fit within the rest of the dataset.No outliers.
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: yes
