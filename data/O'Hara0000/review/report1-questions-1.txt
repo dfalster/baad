@@ -1,0 +1,56 @@
+Questions about the study:  O'Hara0000 
+
+Please look at the attached html report  O'Hara0000.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER: 
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: O'Hara, K.L., York, R.A. (in review). Leaf area and crown architecture in a giant sequoia spacing study: A new model for LAI development. Forest Science
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: CORRECT
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: Blodgett Forest Research Station on the western slope of the Sierra Nevada of California (38.867?N, 120.667?W) 
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: 
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: 
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: FAMILY = TAXODIACEAE, PFT = NEEDLELEAF EVERGREEN 
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: 
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: CORRECT
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: I agree
+
+11. Could you please specify the methods used to measure each variable?
+ANSWER: Trees from range of ages approximately 3 to 40 years, in stands within 2 km radius were subjectively chosen for sampling.Trees were felled and crowns were divided into equal thirds. All branches in each third (i.e. 100% of all branches on the tree) were measured for branch diameter 
+(caliper) at the branch base. Within each third, an individual branch was randomly selected for intensive study.Specific leaf area (SLA) was calculated as projected leaf surface area divided by weight for the fine foliage samples. Projected branch leaf area was the product of SLA and the 
+dry foliage weight of the bulk foliage samples. The branch leaf area prediction model was applied to branch caliper measurements on all 15 sample trees.  Branch leaf areas were then summed to get tree leaf area.  Sapwood cross-sectional area measurements from crown base provided the best 
+estimation of tree leaf area. The best model used dbh and height to crown base. Basal area was insignificant in the presence of dbh.  The model was:
+SACB = -23.317 + 24.927?DBH + -107.802?HCB 
+Where SACB is sapwood cross-sectional area at crown base, DBH is diameter breast height, and HCB is height to crown base. This model had a residual standard error of 63.6cm2, and AICC of 144.876, and a multiple R2 of .946. An alternative model using tree height and dbh had a residual standard error of 86.1cm2, and AICC of 151.631, and a multiple R2 of .901.
+  
+
+
+12. Is leaf area measured in m or m2?
+ANSWER: m2
