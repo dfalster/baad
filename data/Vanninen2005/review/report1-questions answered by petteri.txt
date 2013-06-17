@@ -1,0 +1,43 @@
+Questions about the study:  Vanninen2005 
+
+Please look at the attached html report  Vanninen2005.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER: School of Applied Educational Science and Teacher Education, University of Eastern Finland, Box 86, 57101 Savonlinna, Finland
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: petteri.vanninen@uef.fi
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: I wonder if 18 trees are missing (in paper n =117 but in data 99) these 18 trees sounds like the data for vanninen et al 1996. Maybe its good to leave them out from this study but i can i put the paper and dataset that contains that data.Futher you ll find all the tree ages for current 99 trees from that data (by tree height and crown length as an example)   
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: I put a map vanninen makela sites.jpg its picture taken from my thesis, the vegetation type you'll get from datafile (sitetype joined by same manner as tree age above) 
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: location from the map i put? - cant find the accurate coordinates now - put its bossible to find them if its nesessary 
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: Trees are from 6 stands!
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: 
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: I put a short descripition
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: it seems ok to me
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: yes

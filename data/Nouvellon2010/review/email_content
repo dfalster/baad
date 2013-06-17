@@ -1,0 +1,19 @@
+Dear Daniel,
+ 
+Thanks. Nice to see how our data compared to the overall dataset!  
+ 
+Please find enclosed the 2 files that I have modified, + the pdf file where I have included a comment.
+ 
+Everything seems OK.
+ 
+The only thing that may need some modification: For the variable status, I did not use the same range than you:
+ 
+·         In your definition of variables “Status” there are  4 possible values : 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed)
+
+ 
+·         Before sampling trees, I made an inventory, and I divided the full range of DBH in 10 classes, and I sampled one tree in each class. Then in the “Nouvellon2010.csv” file, I used 0 for the smallest tree and 9 for the biggest tree (or 0 to 14 for one date since for this date I selected 15 trees from 15 diameter classes). Then, this do not fit with your 0 to 3 classes for the “STATUS” variable. If you think better, I can change this (e.g. allocate the 2 smallest trees in the class 0=suppressed, the two biggest tree in class 3=dominant, and the other trees in class 1=intermediate and 2=co-dominant). Please tell me if you wish me to do this change.
+
+ 
+Best regards,
+ 
+Yann
