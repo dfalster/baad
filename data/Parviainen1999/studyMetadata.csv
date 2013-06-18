@@ -1,10 +1,10 @@
 Topic, Description
-Sampling strategy, "Please a brief description of the sampling strategy used in this paper (up to 4 sentences)"
-Leaf area, "Please provide ..."
-Stem cross sectional area,"Please provide ..."
-Height,"Please provide ..."
-Crown area,"Please provide ..."
-Biomass,"Please provide ..."
-traits,"Please provide ..."
-Growth environment,"Please provide ..."
-Other variables,"Please provide ..."
+Sampling strategy,12 dominant Silver birch trees were sampled from 7 mixed stands with minimum 10% birch mixture.  The trees were chosen to represent a continuum of tree height. The measurements were done in August 1996.
+Leaf area,Leaf area estimate was based on leaf biomass (see below) and specific leaf area. SLA (projected) was measured on sample leaves  (12.65 m2/kg).
+Stem cross sectional area,Stem cross sectional area was determined from sample disks taken at breast height (1.3 m) and at crown base. The cross section was calculated as a circle with radius equalling the average of the largest diameter and that perpendicular to it.
+Height,Height was measured using a tape measure on the felled trees that had been felled with minimum possible stump.
+Crown area,"Before felling, the width of the crown was measured at the widest diameter and the one perpendicular to that. Crown area was calculated as an ellipsoid from mean crown width and crown length."
+Biomass,"Branches were sampled systematically, taking each n’th branch from the top to the bottom of the crown such that the total nr of sample branches was 10. Discs were taken from the stem at a number of heights, all including breast height and crown base. Tree-wise regression models were developed for the sample branches to estimate leaf and branch dry mass from branch diameter and distance from the tree top, which were measured from all live branches in the crown. Stem volume was calculated from the logs between the disc measurement heights by assuming the logs as cut cones. The volume was converted to stem biomass using wood density of the lower disc of each log, obtained by weighing and immersion of the disc."
+traits,SLA = 12.6
+Growth environment,"The stands were classified as Myrtillus type which is medium fertile moist forest. MAT = 3.8 C, MAP = 704 mm"
+Other variables,Please provide ...
