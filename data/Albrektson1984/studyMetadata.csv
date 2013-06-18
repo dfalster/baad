@@ -1,10 +1,18 @@
 Topic, Description
-Sampling strategy, "Please a brief description of the sampling strategy used in this paper (up to 4 sentences)"
-Leaf area, "Please provide ..."
-Stem cross sectional area,"Please provide ..."
-Height,"Please provide ..."
-Crown area,"Please provide ..."
-Biomass,"Please provide ..."
-traits,"Please provide ..."
-Growth environment,"Please provide ..."
-Other variables,"Please provide ..."
+Sampling strategy, "The sample trees were selected as stems of mean basal area, by classes of basal
+area, to represent the diameter distribution of the stands."
+Leaf area, "Not measured."
+Stem cross sectional area,"DBH measured in the field."
+Height,"No additional information provided."
+Crown area,"Every 10th branch,
+from the base to the top of the live crown, was taken systematically for the branch
+sample. To avoid systematic errors, the first sample branch on every sample tree
+was randomized. Length of these branches was used to estimate crown width."
+Biomass,"Fresh weight was determined by section in the field, and converted to dry mass based on a subsample (of foliage and wood)."
+Growth environment,"Single-species Scots pine stands, no other information provided."
+Other variables,"The basal area of sapwood was measured on discs from breast height. Sapwood
+was visually separated from heartwood after they had been treated with sulphanilic
+acid and sodium nitrite (Anon 1962). The width of the sapwood was calculated
+from the average of four measurements at right angles. The mean annual ring width
+in the sapwood was calculated as the width of sapwood, divided by the number of
+annual rings in the sapwood."
