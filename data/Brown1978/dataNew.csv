@@ -1,1 +1,28 @@
 lookupVariable,lookupValue,newVariable,newValue,source
+,,vegetation,TempF,
+,,location,northern Rocky Mountains U.S.A.,
+species,Abies grandis,pft,EG,
+species,Abies lasiocarpa,pft,EG,
+species,Larix occidentalis,pft,DG,
+species,Pinus albicaulis,pft,EG,
+species,Picea engelmannii,pft,EG,
+species,Pinus monticola,pft,EG,
+species,Pinus ponderosa,pft,EG,
+species,Pseudotsuga menziesii var. glauca,pft,EG,
+species,Thuja plicata,pft,EG,
+species,Tsuga heterophylla,pft,EG,
+,,latitude,47.44,Eye-balled average from Appendix I
+,,longitude,-115.7,Eye-balled average from Appendix I
+,,growingCondition,FW,Publication
+species,Abies grandis,family,Pinaceae,
+species,Abies lasiocarpa,family,Pinaceae,
+species,Larix occidentalis,family,Pinaceae,
+species,Pinus albicaulis,family,Pinaceae,
+species,Picea engelmannii,family,Pinaceae,
+species,Pinus monticola,family,Pinaceae,
+species,Pinus ponderosa,family,Pinaceae,
+species,Pseudotsuga menziesii var. glauca,family,Pinaceae,
+species,Thuja plicata,family,Cupressaceae,
+species,Tsuga heterophylla,family,Pinaceae,
+status,i,status,1,
+status,d,status,3,
