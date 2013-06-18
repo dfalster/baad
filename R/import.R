@@ -1,7 +1,7 @@
 library(bibtex, quietly=TRUE)
 
 
-if("dataMashR" %in% .packages()){
+if("dataMashR" %in% .packages(all.available=TRUE)){
   library(dataMashR)  
 } else {
   library(devtools)
