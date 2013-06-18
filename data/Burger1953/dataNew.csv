@@ -1,2 +1,11 @@
 lookupVariable,lookupValue,newVariable,newValue,source
 ,,pft,EG,
+,,family,Pinaceae,
+,,species,Picea abies,
+status,u,status,0,
+status,b,status,1,
+status,m,status,2,
+status,d,status,3,
+,,location,Switzerland,
+,,vegetation,TempF,
+,,growingCondition,PM,

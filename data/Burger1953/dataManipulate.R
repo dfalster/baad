@@ -1,5 +1,9 @@
 manipulate <- function(raw) {
-  names(raw)[names(raw)=="species"]  <-  "wrong.sp"
+  
+  raw$h.c <- with(raw, height - hcb)
+  
+  raw$grouping <- makeGroups(raw, c("site","altitude"))
+  
   raw
 }
 
