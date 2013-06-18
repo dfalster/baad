@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
 "a.stba.cm","","cm","d.ba",NA
 "a.stbh.cm","","cm","d.bh",NA
-"a.stbc.cm","","cm","d.cr",NA
+"a.stbc.cm",NA,NA,NA,NA
 "h.t.m","","m","h.t",NA
 "h.c.m","","m","h.c",NA
 "m.lf.kg","","kg","m.lf",NA
