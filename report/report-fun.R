@@ -12,7 +12,8 @@ source('R/formatBib.R')
 emailReport <- function(alldata, study,
                         contentFile ="report/report-1-email.R",
                         reprocess=FALSE,
-                        send=FALSE){
+                        send=FALSE,
+                        updateStage=TRUE){
   
   source(contentFile)  #defines function getEmailDetails
   details <- getEmailDetails(alldata, study, reprocess=reprocess)
