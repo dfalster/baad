@@ -13,7 +13,7 @@ locLevelInfo  <-  function(data){
 
 standLevelInfo  <-  function(data){
   
-  vars <- c("location","grouping","growingCondition","status")
+  vars <- c("location","grouping","growingCondition") #,"status")
   sta <- data[!duplicated(data[,vars]),vars]
     
   if(all(is.na(sta$grouping)))
