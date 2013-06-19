@@ -1,7 +1,9 @@
 lookupVariable,lookupValue,newVariable,newValue,source
 species,Saligna,species,Eucalyptus saligna,from .txt file[R Smith]
 species,Sideroxylon,species,Eucalyptus sideroxylon,from .txt file[R Smith]
-NA,NA,vegetation,TempF,from .txt file[R Smith]
-NA,NA,pft,EA,from .txt file[R Smith]
-NA,NA,growingCondition,GH,from .txt file[R Smith]
-NA,NA,location,"University of Western Sydney, Richmond, NSW, Australia",from .txt file[R Smith]
+,,pft,EA,from .txt file[R Smith]
+,,growingCondition,GH,from .txt file[R Smith]
+,,location,"University of Western Sydney, Richmond, NSW, Australia",from .txt file[R Smith]
+,,family,Myrtaceae,
+,,latitude,-33.61,
+,,longitude,150.75,
