@@ -1,5 +1,5 @@
 Species,Total.leaf.area..cm2.,Mean.leaf.area..cm2.,Area.of.total.stem.cross.section..basal.area..mm2.,Crown.projected.area..cm2.,Height.to.crown.base..cm.,Crown.lenght..cm.,Total.height.of.plant..cm.,Specific.leaf.area..cm2.g-1.,ISF..percent...Indirect.Site.Factor..in.percent.of.above.canopy.light,LAI..cm2.cm-2.
-Acer pseudoplatanus,71.4,35.7,19.63,94.25,83,2,83,476,3.5,0.76
+Acer pseudoplatanus,71.4,35.7,19.63,94.25,83,,83,476,3.5,0.76
 Acer pseudoplatanus,759.5,63.29,28.27,1036.73,88,22,97,404.42,4.7,0.73
 Acer pseudoplatanus,701.4,46.76,38.48,824.67,88,46,130,381.61,4.8,0.85
 Acer pseudoplatanus,379.3,37.93,19.63,298.45,38,72,110,452.63,5.2,1.27
@@ -7,7 +7,7 @@ Acer pseudoplatanus,923.4,46.17,28.27,1072.07,98,45,143,350.57,5.4,0.86
 Acer pseudoplatanus,510.8,56.76,28.27,647.95,82,40,121,389.92,6,0.79
 Acer pseudoplatanus,4902.7,57.68,63.62,2632.84,140,27,166,354.17,6.1,1.86
 Acer pseudoplatanus,1125.9,62.55,28.27,1264.49,94,48,138,386.91,6.2,0.89
-Acer pseudoplatanus,99.1,33.03,28.27,78.54,135,3,135,254.1,7.2,1.26
+Acer pseudoplatanus,99.1,33.03,28.27,78.54,135,,135,254.1,7.2,1.26
 Acer pseudoplatanus,2630.7,40.47,95.03,2199.11,77,126,200,264.13,8.4,1.2
 Acer pseudoplatanus,4909.7,44.63,132.73,3647.39,85,115,182,255.85,10.6,1.35
 Acer pseudoplatanus,2957.1,89.61,78.54,2946.81,90,60,150,267.3,11,1
@@ -83,7 +83,7 @@ Fagus sylvatica,21814.19,14.89,660.52,12558.52,82,288,370,203.74,46.6,1.74
 Fagus sylvatica,38057,22.3,855.3,19715.06,213,287,497,292.97,47.4,1.93
 Fagus sylvatica,67574.4,27.28,530.93,37820.46,250,340,590,227.58,49,1.79
 Fraxinus excelsior,1121.4,74.76,28.27,1074.42,78,57,130,267.64,3.1,1.04
-Fraxinus excelsior,139.7,13.97,38.48,451.6,161,4,164,288.04,4,0.31
+Fraxinus excelsior,139.7,13.97,38.48,451.6,161,,164,288.04,4,0.31
 Fraxinus excelsior,490.47,23.36,28.27,596.9,103,61,159,466.23,4.1,0.82
 Fraxinus excelsior,206.1,10.85,38.48,268.54,48,102,149,471.62,4.3,0.77
 Fraxinus excelsior,493.3,41.11,28.27,1017.09,74,68,134,310.25,4.9,0.49

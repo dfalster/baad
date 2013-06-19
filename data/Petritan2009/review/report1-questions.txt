@@ -1,0 +1,57 @@
+Questions about the study:  Petritan2009 
+
+Please look at the attached html report  Petritan2009.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER: Department of Silviculture and Forest Ecology of the Temperate Zones, Georg-August University Göttingen, Büsgenweg 1, 37077 Göttingen, Germany, e-mail: apetritan@gmail.com, and 
+ Department of Forest Ecology, Forest Research and Management Institute, Closca 13, 500040 Brasov, Romania
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: Yes.
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: Yes.
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: Forest Wibbecke, near Goettingen (Lower Saxony, Germany) 
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: Yes
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: location: Forest Wibbecke, near Goettingen (Lower Saxony, Germany), Growing_condition: FW, Status: NA
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: Acer pseudoplatanus, fam. Aceraceae, DA; Fagus sylvatica, fam. Fagaceae, DA; Fraxinus excelsior, Fam. Oleaceae, DA 
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: 
+Sampling strategy: A sample of N = 41-44 individual trees per species was randomly recorded, free of apparent damage, growing under a wide gradient of light conditions.
+Leaf area: "Each sapling was divided into five horizontal layers of equal height (=1/5 of total length). A subsample of 50 randomly chosen leaves per layer (when the number was less, we took all leaves) was used for leaf area measurements with the LI-3100 Area Meter (LI-COR, Inc. 1987) and subsequent drying (at 70C for 3 days) and weighing. For all other leaves, only dry weights were determined. Using the ratio of leaf weight to leaf area of the subsamples, we calculated for each layer the area of the rest of the leaves. The sum of the leaf areas of the individual layers made up the total leaf area of the sapling".
+Stem cross sectional area: replace please with "stem area at base" = p x diameter (at 10 cm above ground) x diameter (at 10 cm above ground) / 4.
+Height: is total height, measured with a tape to the nearest centimeter.
+Crown area: is the projected crown area, that was computed an ellipse area (the product of the two crown diameters with p, divided by 4). The two crown diameters were recorded at the height of the maximal crown width (in N–S and W–E orientation).
+Biomass: We used only leaf mass, that was obtained by drying and weighing. 
+Traits: Specific leaf area (SLA in cm2 g-1) is ratio of total leaf area to leaf dry weight.
+        Leaf area index (LAI in cm2 cm-2) as ratio of total leaf area to projected crown area .
+Growth environment: FW; "The study was carried out in a mixed deciduous stand with an overstory of 120-year-old beech and some trees of hornbeam (Carpinus betulus), ash, maple, Norway maple (Acer platanoides), and sessile oak (Quercus petraea)".
+Light: "Light availability was quantified by taking a hemispherical photo just above the uppermost leaves of every sampled sapling in mid-summer with a Nikon digital camera with fisheye lens and a self-leveling mount. Photos were processed with the Winscanopy software (Regents Instruments Inc., Sainte-Foy, Que´bec 2003). As a measure of light intensity, we used the indirect site factor (ISF) in percent of above canopy light, which is based on diffuse radiation. Under our conditions, this measure proved as a reliable proxy of total growing season’s photosynthetically active radiation as ISF and total site factor (including diffuse and direct radiation) were strongly correlated with R2 = 0.94 and p\0.001".
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: Comparing our data to other data in the study we can remark that all graphs containing the crown depth variable exhibit three points (0.02 m Acer pseudoplatanus, 0.03 Acer pseudoplatanus and 0.04 m Fraxinus excelsior) that do not fall well within the rest of the dataset. We checked them, and they are outliers. Therefore, remove please these values from the list.
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: I agree.
+
+11. please confirm the pft of your species.
+ANSWER: I confirm pft of our species as DA.
