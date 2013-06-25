@@ -17,6 +17,6 @@ tmp <- loadStudy("Selaya2007", reprocess= TRUE)
 dat <- loadStudies(reprocess=FALSE)
 
 #Email report
-emailReport(dat, "Gargaglione2010")
+emailReport(dat, "Parviainen1999", updateStage=TRUE)
 lapply(getStudyNames() ,emailReport, alldata=dat)
 emailReport(dat, "Selaya2008")
