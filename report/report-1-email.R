@@ -1,10 +1,11 @@
-getEmailDetails <- function(alldata, study, updateStage=TRUE, reprocess=FALSE){
+getEmailDetails <- function(alldata, study, updateStage=TRUE, reprocess=FALSE, print.only=FALSE){
   
   dat                =  extractStudy(alldata, study)
   reportPath         =  printStudyReport(alldata, study, reprocess=reprocess) 
-  email.text         =  generateEmailContent(alldata, study, dat, updateStage)$text
-  study.init.stage   =  generateEmailContent(alldata, study, dat, updateStage)$initial.stage
-  study.final.stage  =  generateEmailContent(alldata, study, dat, updateStage)$final.stage
+  email.content      =  generateEmailContent(alldata, study, dat, updateStage=updateStage, print.only=print.only)
+  email.text         =  email.content$text
+  study.init.stage   =  email.content$initial.stage
+  study.final.stage  =  email.content$final.stage
     
   if(study.init.stage == 1 & study.final.stage == 2){
   attachments  =  c(reportPath, 
@@ -37,7 +38,7 @@ generateEmailSubject <-function(study){
   paste0("Biomass and allometry database: report on ", study) 
 }
 
-generateEmailContent <-function(allData, study, studyData, updateStage){
+generateEmailContent <-function(allData, study, studyData, updateStage, print.only=FALSE){
   
   stage <- getStage(study)
   
@@ -70,52 +71,72 @@ generateEmailContent <-function(allData, study, studyData, updateStage){
                  \t ", paste0(study, ".csv"), ": is a cleaned data file, with units used in our data paper
                  \t variableDefinitions.csv: provides names, units and definitions used in our data paper. \n\n\n"
     )
-    updateStage(study, stage+1)
+    new.stage  <-  updateStage(study, stage+1, print.only=print.only)
   }
+  
   if(stage==2){
     if(updateStage == FALSE){
       em <- paste0("Dear ", paste0(studyData$contact$name, collapse = " and "),",
                    
-                   you have recently replied to our first email providing answers for our main questions.
+                   you recently replied to our email requesting more information about the data you
 
-                   After carefully reprocessing your data, we realized that there are still some minor
+                   contributed to the Biomass and Allometry database we are assembling. Thank you for 
 
-                   outstanding issues to be taken care of before we can wrap up your study within the final
+                   taking the time to respond to our email - that was most helpful. 
 
-                   dataset format for our datapaper. We would really appreciate if you could reply to the
-              
-                   questions found below within the attached file entitled 'new_questions.txt'.
-                
-                   We look forward to hearing from you. If you could reply within the next 2 weeks that would be much appreciated. If you are unable to reply within this time period, please send us a quick reply to let us know when we can expect to hear from you. 
-                 
+            
+                   After carefully reviewing the additional information you provided, we identified
+
+                   some some minor outstanding issues that still require attention, before we can 
+
+                   finalise your contribution to our datapaper. Could you please reply to the questions
+
+                   found below within the attached file entitled 'new_questions.txt'.
+
+                  
+                   We look forward to hearing from you. We would really appreciate if you could reply 
+
+                   within the next week. If you are unable to reply within this time period, please send
+                  
+                   us a quick reply to let us know when we can expect to hear from you.
+
                    With best regards,
                    Daniel Falster, Remko Duursma, Diego Barneche \n\n\n"
       )
-    } else{
+      new.stage  <-  updateStage(study, stage, print.only=print.only)  
+      
+    } else {
       em <- paste0("Dear ", paste0(studyData$contact$name, collapse = " and "),",
                    
-                   you have recently replied to our first email providing answers for our main questions.
+                   You recently replied to our email requesting more information about the data you
 
-                   We are pleased to tell you that your data is ready to be imported into the final dataset 
+                   contributed to the Biomass and Allometry database we are assembling. Thank you for 
 
-                   for our datapaper. We would like to take the opportunity and thank you for your kind
+                   taking the time to respond to our email - that was most helpful.
+
+                    
+                   We are pleased to tell you that we now have all the information needed to include 
               
-                   collaboration. As soon as we have the other studies properly incorporated, we will contact
+                   your study in our datapaper. We would like to take the opportunity and thank you for 
 
-                   you back for a first draft of the paper.
-                
+                   your collaboration. As soon as we have the other studies properly incorporated, we will
+  
+                   contact you back for a first draft of the paper.
+              
                    With best regards,
                    Daniel Falster, Remko Duursma, Diego Barneche\n
                     
                    Please find the following file attached to this email: 
                    \t ", paste0(study, ".html"), ": is the final report for your appreciation. Download to open. \n\n\n"
       )
-      
-      updateStage(study, stage+1)  
+      new.stage  <-  updateStage(study, stage+1, print.only=print.only)  
     }
   }
   
-  final.stage <- getStage(study)
+  if(print.only==FALSE)
+    final.stage <- getStage(study)
+  else
+    final.stage <- new.stage$progress[new.stage$study==study]
   
   list(text=em, initial.stage=stage, final.stage=final.stage)
   
@@ -127,10 +148,28 @@ getStage  <-  function(study){
   prog$progress[prog$study==study]
 }
 
-updateStage  <-  function(study, newStage){
-  prog  <-  read.csv("config/progress.csv", h=TRUE, stringsAsFactors=FALSE)
-  prog$progress[prog$study==study]  <-  newStage
-  write.csv(prog, "config/progress.csv", row.names=FALSE)
+updateStage  <-  function(study, newStage, print.only=FALSE){
+  prog                              <-  read.csv("config/progress.csv", h=TRUE, stringsAsFactors=FALSE)
+  
+  if(prog$progress[prog$study==study] != newStage){
+    prog$progress[prog$study==study]  <-  newStage
+  }
+  
+  email.date                        <-  getCurrentDate()
+  prog$comment[prog$study==study]   <-  paste0("emailed ", email.date)
+  
+  if(print.only==FALSE)
+    write.csv(prog, "config/progress.csv", row.names=FALSE)
+  else
+    print(prog)
+  prog
+}
+
+getCurrentDate  <-  function(){
+  email.date  <-  as.character(Sys.time())
+  reg         <-  "([0-9.]+)[[:space:]].*"
+  email.date  <-  unname(sub(reg, "\\1", email.date))
+  return(gsub("-", ".", email.date))
 }
 
 makeQuestionsFile <- function(study, outputDir="output/questions"){

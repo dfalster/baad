@@ -13,10 +13,11 @@ emailReport <- function(alldata, study,
                         contentFile ="report/report-1-email.R",
                         reprocess=FALSE,
                         send=FALSE,
-                        updateStage=TRUE){
+                        updateStage=TRUE,
+                        print.only=FALSE){
   
   source(contentFile)  #defines function getEmailDetails
-  details <- getEmailDetails(alldata, study, reprocess=reprocess)
+  details <- getEmailDetails(alldata, study, updateStage=updateStage, reprocess=reprocess, print.only=print.only)
   
   email(content = details$content,
         subject = details$subject, 
