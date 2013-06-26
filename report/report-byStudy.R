@@ -16,7 +16,7 @@ reportPaths <- mclapply(getStudyNames(), printStudyReport, alldata=dat, reproces
 
 
 # Reprocess one study
-tmp <- loadStudy("Selaya2007", reprocess= TRUE)
+tmp <- loadStudy("Martin1998", reprocess= TRUE)
 dat <- loadStudies(reprocess=FALSE)
 
 #Email report
@@ -26,11 +26,16 @@ lapply(getStudyNames() ,emailReport, alldata=dat)
 emailReport(dat, "Selaya2008")
 
 
+emailReport(dat, "Martin1998", updateStage=TRUE, print.only=FALSE)
+
 #batch update - done
 processedStudies  <-  read.csv("processed_studies.csv", h=TRUE, stringsAsFactors=FALSE)
 chosen.st  <-  processedStudies$study[ processedStudies$update_with_email=="y"]
 lapply(chosen.st, function(x)emailReport(dat, x, updateStage=TRUE, print.only=FALSE))
 
+#batch update - more info needed
+chosen.st  <-  processedStudies$study[ processedStudies$update_with_email=="n"]
+lapply(chosen.st, function(x)emailReport(dat, x, updateStage=FALSE, print.only=FALSE))
 
 
 
