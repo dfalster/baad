@@ -1,3 +1,0 @@
-Questions about the study:  O'Hara1995
-
-1. In your former reply you did not specify the Stand Description (status, growingCondition) following the guidelines in the variable definitions file provided. We would really appreciate if you could do so and send it back to us.
