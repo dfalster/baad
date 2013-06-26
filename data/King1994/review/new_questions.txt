@@ -1,0 +1,5 @@
+Questions about the study:  King1994 
+
+1. In your former reply you indicated that the stand description of your study was "Saplings in understory and gaps of tropical humid forest on Barro Colorado Island, Panama". We would really appreciate if you could put that within the context of our four main categories (please refer to the variable definitions file sent in the first email): 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed)
+
+2. Could you also do that for the plant functional type of each species? Our categories are: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm 
