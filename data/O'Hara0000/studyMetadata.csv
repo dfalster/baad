@@ -1,10 +1,10 @@
 Topic, Description
-Sampling strategy, "Please a brief description of the sampling strategy used in this paper (up to 4 sentences)"
-Leaf area, "Please provide ..."
-Stem cross sectional area,"Please provide ..."
-Height,"Please provide ..."
-Crown area,"Please provide ..."
-Biomass,"Please provide ..."
-traits,"Please provide ..."
-Growth environment,"Please provide ..."
-Other variables,"Please provide ..."
+Sampling strategy, "A 22-year-old spacing study was used to examine development of leaf area index (LAI) from different initial spacings in giant sequoia. Fifteen trees ages 3 to 36 yrs were dissected to develop leaf area predictions from sapwood cross-sectional area. Tree leaf area and LAI were estimated from three plots per spacing for nine spacing treatments from 2.1 to 6.1 m. Crown width and crown length measurements at 10, 16 and 22 yrs were used to assess crown architecture. Tree leaf area was greatest at low densities."
+Leaf area, "Projected leaf area based on scanned foilage samples; ranged from 1.5 to 50.2 m2."
+Stem cross sectional area, "Cross-sectional area at breast height (1.37m) or base of tree."
+Height, "Sample trees ranged from 0.7 to 29.4m"
+Crown area,
+Biomass,
+traits,
+Growth environment,
+Other variables, "Diameter at breast height (DBH) ranged from 0 to 47.9 cm."
