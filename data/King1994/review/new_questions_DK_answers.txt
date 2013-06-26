@@ -1,0 +1,11 @@
+Questions about the study:  King1994 
+
+1. In your former reply you indicated that the stand description of your study was "Saplings in understory and gaps of tropical humid forest on Barro Colorado Island, Panama". We would really appreciate if you could put that within the context of our four main categories (please refer to the variable definitions file sent in the first email): 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed)
+
+  Answer: These classifications were devised by foresters to describe the relative positions of trees (traditionally defined as >10 cm dbh) in forest canopies, not the light environments of saplings. A rather small fraction of the saplings were fully exposed to the sky above (but not to sky to all sides), but were way below the height of dominant trees in their vicinity. 
+
+  Given that the indirect site factors ranged from 0.01 to 0.2 (on a scale of 0 to 1) with a very few saplings receiving more light, I'd rate them as either 0 or 1 on your scale, though the indirect site factors themselves (given for each sapling in the data set) are better indicators of light environment for saplings.     
+
+2. Could you also do that for the plant functional type of each species? Our categories are: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm 
+
+  Answer: They are all EA. 
