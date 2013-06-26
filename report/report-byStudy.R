@@ -29,12 +29,12 @@ emailReport(dat, "Selaya2008")
 emailReport(dat, "Martin1998", updateStage=TRUE, print.only=FALSE)
 
 #batch update - done
-processedStudies  <-  read.csv("processed_studies.csv", h=TRUE, stringsAsFactors=FALSE)
-chosen.st  <-  processedStudies$study[ processedStudies$update_with_email=="y"]
+processedStudies  <-  read.csv("config/processed_studies.csv", h=TRUE, stringsAsFactors=FALSE)
+chosen.st  <-  processedStudies$study[processedStudies$update_with_email=="y1"]
 lapply(chosen.st, function(x)emailReport(dat, x, updateStage=TRUE, print.only=FALSE))
 
 #batch update - more info needed
-chosen.st  <-  processedStudies$study[ processedStudies$update_with_email=="n"]
+chosen.st  <-  processedStudies$study[processedStudies$update_with_email=="y2"]
 lapply(chosen.st, function(x)emailReport(dat, x, updateStage=FALSE, print.only=FALSE))
 
 
