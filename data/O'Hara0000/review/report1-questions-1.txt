@@ -16,7 +16,7 @@ ANSWER: CORRECT
 
 4. Is 'Location data' complete?
 	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
-ANSWER: Blodgett Forest Research Station on the western slope of the Sierra Nevada of California (38.867?N, 120.667?W) 
+ANSWER: Blodgett Forest Research Station on the western slope of the Sierra Nevada of California (38.867?N, 120.667?W), vegetation = TempF 
 
 5. Do your locations fall in the right spot in both world and country map?
 	 If not, please outline the issues here and provide us with updated longitude and latitude data.
@@ -24,7 +24,7 @@ ANSWER:
 
 6. Is the 'Stand description' complete?
 	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
-ANSWER: 
+ANSWER: status=3, growingCondition=PM
 
 7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
 	 If not, please provide details where possible.
