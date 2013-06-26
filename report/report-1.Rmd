@@ -43,7 +43,7 @@ spLevelInfo  <-  function(data){
 
 printMeta  <-  function(data){
   dataset   <-  as.character(unique(data$dataset))
-  openMeta  <-  read.csv(paste0("../",dir.rawData,"/",dataset,"/studyMetadata.csv"), h=TRUE, stringsAsFactors=FALSE)
+  openMeta  <-  read.csv(paste0("../",mashrDetail("dir.raw"),"/",dataset,"/studyMetadata.csv"), h=TRUE, stringsAsFactors=FALSE)
   openMeta
 }
 
@@ -83,7 +83,7 @@ The dataset includes `r length(unique(.dat$data$species))` species belonging to 
 ```{r echo=FALSE, comment=''}
 counts  <-  apply(!is.na(.dat$data), MARGIN=2, FUN = sum)
 counts  <-  counts[counts>0]  #only include no zeros
-counts  <-  counts[names(counts)%in%var.def$Variable[var.def$Group=="tree"]]
+counts  <-  counts[names(counts)%in%mashrDetail("var.def")$Variable[mashrDetail("var.def")$Group=="tree"]]
 cbind(counts)
 ```
 

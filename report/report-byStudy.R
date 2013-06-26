@@ -3,8 +3,10 @@ rm(list=ls())
 source('report/report-fun.R')
 source('report/report-1-email.R')
 
+mashrDetail("var.def")
+
 # Load all data
-dat <- loadStudies(reprocess=TRUE)
+dat <- loadStudies(reprocess=FALSE)
 
 # single study
 printStudyReport(dat, "Aiba2007", reprocess=FALSE)

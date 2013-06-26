@@ -229,7 +229,7 @@ generateDataNew  <-  function(alldata, studyName, levels=c("site","species","tre
 
 checkLevels  <-  function(site.data, group){
   #get essential variables for the chosen group
-  chosen  <-  var.def$Variable[var.def$Group==group & var.def$essential==TRUE]
+  chosen  <-  mashrDetail("var.def")$Variable[mashrDetail("var.def")$Group==group & mashrDetail("var.def")$essential==TRUE]
   #find NA's
   nas     <-  apply(site.data[names(site.data) %in% chosen], 2, function(x){which(is.na(x))})
   if(class(nas) == "matrix"){

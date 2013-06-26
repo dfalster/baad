@@ -28,7 +28,7 @@ makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRU
   }
   
   dat        <-  data[data$dataset==study,]
-  plot.vars  <-  var.def$Variable[var.def$Group=="tree"]
+  plot.vars  <-  mashrDetail("var.def")$Variable[mashrDetail("var.def")$Group=="tree"]
   plot.vars  <-  plot.vars[plot.vars %in% c("growingCondition","status","light") == FALSE]
   available  <-  dat[,names(dat) %in% plot.vars]   
   available  <-  apply(available,2,as.numeric)
@@ -50,8 +50,8 @@ makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRU
       if(length(testNa[!is.na(testNa)]) != 0){
         z  <-  z + 1
         if(z==5){par(mfrow=c(2,2)); z  <- 1}
-        varjx  <-  paste0(var.def$label[var.def$Variable==colnames(available)[j]], " (", var.def$Units[var.def$Variable==colnames(available)[j]], ")")
-        varjy  <-  paste0(var.def$label[var.def$Variable==colnames(available)[k]], " (", var.def$Units[var.def$Variable==colnames(available)[k]], ")")
+        varjx  <-  paste0(mashrDetail("var.def")$label[mashrDetail("var.def")$Variable==colnames(available)[j]], " (", mashrDetail("var.def")$Units[mashrDetail("var.def")$Variable==colnames(available)[j]], ")")
+        varjy  <-  paste0(mashrDetail("var.def")$label[mashrDetail("var.def")$Variable==colnames(available)[k]], " (", mashrDetail("var.def")$Units[mashrDetail("var.def")$Variable==colnames(available)[k]], ")")
         makePlot(data, available, studycol=colorvec, xvar = colnames(available)[j], yvar = colnames(available)[k],  xlab=varjx, ylab=varjy)
       }
     }
@@ -61,8 +61,8 @@ makePlotPanel<-function(data, study, dir="report-per-study", col="grey", pdf=TRU
 }
 
 getLabel<-function(xvar){
-  i<-which(var.def$Variable==xvar)
-  paste0(var.def[i, "label"], " (", var.def[i, "Units"], ")")
+  i<-which(mashrDetail("var.def")$Variable==xvar)
+  paste0(mashrDetail("var.def")[i, "label"], " (", mashrDetail("var.def")[i, "Units"], ")")
 }
 
 highlightStudies <- function(data, xvar, yvar, group, studies, col = niceColors(length(studies)), type='b', pch=1){
@@ -383,7 +383,7 @@ niceColors<-function(n=80){
 
 comparePlots<-function(alldata, dir="plot-report", col="grey", pdf=TRUE){
   
-  plot.vars  <-  var.def$Variable[var.def$Group=="tree"]
+  plot.vars  <-  mashrDetail("var.def")$Variable[mashrDetail("var.def")$Group=="tree"]
   plot.vars  <-  plot.vars[plot.vars %in% c("growingCondition","status","light") == FALSE]
   available  <-  alldata[,names(alldata) %in% plot.vars]   
   available  <-  apply(available,2,as.numeric)
@@ -394,8 +394,8 @@ comparePlots<-function(alldata, dir="plot-report", col="grey", pdf=TRUE){
   for(j in 1:(dim(available)[2]-1)){
     
     for(k in (j+1):dim(available)[2]){
-      varjx  <-  paste0(var.def$label[var.def$Variable==colnames(available)[j]], " (", var.def$Units[var.def$Variable==colnames(available)[j]], ")")
-      varjy  <-  paste0(var.def$label[var.def$Variable==colnames(available)[k]], " (", var.def$Units[var.def$Variable==colnames(available)[k]], ")")
+      varjx  <-  paste0(mashrDetail("var.def")$label[mashrDetail("var.def")$Variable==colnames(available)[j]], " (", mashrDetail("var.def")$Units[mashrDetail("var.def")$Variable==colnames(available)[j]], ")")
+      varjy  <-  paste0(mashrDetail("var.def")$label[mashrDetail("var.def")$Variable==colnames(available)[k]], " (", mashrDetail("var.def")$Units[mashrDetail("var.def")$Variable==colnames(available)[k]], ")")
       testNa   <-  available[,j]+available[,k]
       if(length(testNa[!is.na(testNa)]) != 0){
         if(pdf){    
