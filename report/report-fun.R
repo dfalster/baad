@@ -1,4 +1,6 @@
 library(knitr, quietly=TRUE)
+library(multicore, quietly=TRUE)
+
 
 dir.Emails    <-  "output/email"
 source('R/import.R')
