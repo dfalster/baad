@@ -130,7 +130,7 @@ updateStage  <-  function(study, newStage, print.only=FALSE){
   prog$comment[prog$study==study]   <-  paste0("emailed ", email.date)
   
   if(print.only==FALSE)
-    write.csv(prog, "config/progress.csv", row.names=FALSE)
+    write.csv(prog, "config/progress.csv", row.names=FALSE, quote=FALSE)
   else
     print(prog[prog$study==study, ])
   prog
