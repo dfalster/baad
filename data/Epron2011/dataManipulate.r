@@ -7,6 +7,7 @@ manipulate <- function(raw) {
   i <-1:8
   raw[["h.t"]][i] <- raw[["h.t"]][i]/100
   raw[["h.c"]][i] <- raw[["h.c"]][i]/100
+  
   raw
 }
 

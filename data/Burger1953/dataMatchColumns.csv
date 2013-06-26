@@ -2,7 +2,7 @@ var_in,method,unit_in,var_out,notes
 age,NA,yr,age,NA
 dbh,NA,cm,d.bh,NA
 height,NA,m,h.t,NA
-h.c,NA,m,h.c,NA
+hcb,NA,m,h.c,NA
 cw,NA,m,d.cr,NA
 wf,NA,kg,m.lf,NA
 la,r2,m2,a.lf,NA
