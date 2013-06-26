@@ -1,0 +1,9 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+,,age,15,original datafile
+,,family,Pinaceae,
+,,pft,EG,
+,,species,Pinus taeda,
+,,growingCondition,PM,
+,,latitude,33.235,found on map
+,,longitude,-89.05,found on map
+,,location,Winston County Mississippi,datafile

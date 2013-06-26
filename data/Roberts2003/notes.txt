@@ -1,0 +1,16 @@
+Variables, definitions, and units of measure
+A - fam = family
+B - tree = family/tree number
+C - dbh = diameter at breast height (1.37m) measured in cm
+D - hite_m = tree height (m) measured from ground prior to felling
+E - hite_a = tree height (m) measured from ground by stretching tape along bole
+F - ht_blc = height (m) to the base of the live crown, measured from the ground prior to felling
+G - CW1 = First crown width (m), measured from ground prior to felling
+H - CW2 = Second crown width (m), measured from ground prior to felling
+I - cw_avg = Arithmetic average of the two crown width measurements
+J - stem = total weight of the stem (wood & bark) (g) 
+K - branches = weight of the mostly non-foliage bearing branches (g)
+L - foliage = weight of the foliage (g)
+M - twigs = weight of foliage bearing twigs (g)
+N - crn_wood = weight of all crown wood (K + M) (g)
+O - tot_wt = total weight (g) of all aboveground biomass components
