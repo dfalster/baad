@@ -6,7 +6,7 @@
 "TotFol","m3","g","m.lf",NA
 "Sapwood","q","cm2","a.ssbh",NA
 "Root","m4","g","m.rc",NA
-"Site",NA,NA,NA,NA
+"Site",NA,NA,status,NA
 "longitude",NA,NA,NA,NA
 "latitude",NA,NA,NA,NA
 "BurnYear",NA,NA,NA,NA

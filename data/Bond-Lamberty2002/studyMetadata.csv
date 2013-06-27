@@ -1,10 +1,10 @@
-Topic,"Description"
+Topic,Description
 Sampling strategy,"Aboveground biomass relations were based on 326 trees harvested during three field seasons, 1994, 1999, and 2000. Allometric coefficients for trees harvested in 1994 were previously published (Gower et al. 1997), although with different coefficients, as this study denominates tree mass in grams and not kilograms. In addition, Gower et al. (1997) did not measure D0 and only reported equations for mature trees based on DBH. Trees were destructively sampled between mid-July and early August in each year. Stems were cut at the soil surface."
-Leaf area,"n/a."
+Leaf area,"Given in Bond-Lamberty et al. (2002), doi: 10.1093/treephys/22.14.993"
 Stem cross sectional area,"diameter at soil surface (D0), measured immediately above any root collar swelling; DBH was also recorded."
-Height,"Tree height was measured from ground to base of the terminal bud."
-Crown area, "n/a."
+Height,Tree height was measured from ground to base of the terminal bud.
+Crown area,"N/A"
 Biomass,"Samples were placed in a forced-air oven, dried to a constant mass at 70?C, and sorted into new (current year) foliage, older foliage, new (current-year) branches, older branches, and stem tissue. Conifer cones were discarded. Stems of large young jack pine trees were cut into 1-m sections and weighed on an electronic balance, while the stems of other large trees were cut into 2-m sections and weighed. A 2 cm thick disk was cut from the base of each stem section and weighed on an electronic balance. The dry biomass of each stem section was calculated by multiplying the wet mass of each stem section by the dry/wet ratio of each stem disk. The total dry biomass of each stem was calculated by summing the dry biomass of all stem sections."
 traits,"Tree height (cm), Diameter at soil surface (cm), Diameter at 1.37 m (cm), Total stem biomass (g), Total foliage biomass (g), Sapwood area at DBH or D0 (cm^2), Coarse root biomass (g), age (years)."
 Growth environment,"Field, wild."
-Other variables,"Vegetation type - Boreal forest."
+Other variables,Vegetation type - Boreal forest.
