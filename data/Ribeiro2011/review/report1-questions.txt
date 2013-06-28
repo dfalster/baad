@@ -1,0 +1,70 @@
+Questions about the study:  Ribeiro2011 
+
+Please look at the attached html report  Ribeiro2011.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	
+ANSWER:  I have a new address: Universidade de Brasília, Campus Darcy Ribeiro, Faculdade de Tecnologia, Departamento de Engenharia Florestal, 70904-970 Brasília (DF), Brazil. 
+
+
+2. Is your reference information correct?
+	
+ANSWER: Yes.
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 
+ANSWER: Yes.
+
+4. Is 'Location data' complete?
+	 
+ANSWER: Yes. 
+
+5. Do your locations fall in the right spot in both world and country map?
+	
+ANSWER: Yes.
+
+6. Is the 'Stand description' complete?
+
+ANSWER:	 About status: If I understood the definition of status correctly, as Cerrado is a savannah (open vegetation), almost all trees have crown fully exposed (dominant). Please if I am not correct, let me know.
+ 
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+
+ANSWER:
+        Species / pft
+Acosmium sp. / DA
+Astronium fraxinifolium Schott ex Spreng. / DA
+Byrsonima coccolobifolia Kunth / DA
+Curatella americana L. / DA
+Eriotheca gracilipes (K.Schum)A.Rob. / DA
+Erythroxylum suberosum A. St.-Hil. / DA
+Lafoensia pacari A. St.-Hil. / DA
+Piptocarpha rotundifolia (Less.) Baker / DA
+Plathymenia reticulata Benth. /	DA
+Pouteria torta (Mart.) Radlk. /	DA
+Pterodon emarginatus Vogel  / DA
+Qualea grandiflora Mart. / DA
+Qualea parviflora Mart. / DA
+Sclerolobium sp. / EA
+Solanum sp. / EA
+Strychnos pseudoquina A. St.-Hil. / DA
+Stryphnodendron adstringens (Mart.) Coville / DA
+Terminalia argentea Mart. / DA
+
+
+8. Is the 'Methods' information complete and accurate? 
+	 
+ANSWER: Ok! See file studyMetadata_Ribeiro, S.C.
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+
+ANSWER:	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ 
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+
+ANSWER:  I agree.
+
+11. There are 9 data points where 'Leaf mass (kg)' is zero. Can you please check whether these data are correct?
+
+ANSWER: The data is correct. The data are from deciduous species that at the moment were without leaves.
