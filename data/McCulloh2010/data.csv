@@ -1,413 +1,413 @@
-species,wood.type,collection.site,individual.number,sample,lf.A.m2,hydraulic.conductivity.Kg.m.Mpa-1.s-1,stem.d.mm,conduit.diameter.microns,conduit.diameter.stdev,conduit.frequency.mm-2,xylem.area.m2,sapwd.area.m2,height.m
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,LowerTrunk,0.3667137,7.47E-04,9.59,62.43095779,28.43774595,79.10385132,0.000038481,0.000020676,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,UpperTrunk,0.3667137,5.59E-04,9.14,53.31441116,28.96574335,88.13600922,0.000035861,0.000023686,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch1,0.0199964,1.61E-06,3.175,23.88694572,11.4236557,214.2360535,0.00000352,0.00000352,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch2,0.0319417,6.46E-07,2.25,25.33396149,11.83502065,141.3060608,0.000000987,0.000000987,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch3,0.0572982,2.60E-07,3.03,25.50822258,10.1814251,204.8419189,0.000001665,0.000001665,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch4,0.0376041,4.72E-06,2.6,22.54080582,11.1712757,176.8831024,0.000002082,0.000002082,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch5,0.0427585,4.14E-07,2.8,28.90025902,9.484825551,141.5323944,0.00000122,0.00000122,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,LowerTrunk,0.4386061,5.23E-04,13.68,55.87214273,26.06102924,28.85934152,0.000082142,0.00007448,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,UpperTrunk,0.4386061,4.37E-04,13.34,,,,0.0000742,0.000069377,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch1,0.0097361,1.81E-06,2.65,24.85972023,8.220933365,259.6259766,0.000001908,0.000001908,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch2,0.0358417,2.63E-06,3.2,26.75834465,,110.7740631,0.000003929,0.000003929,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch3,0.0161172,8.27E-07,2.85,22.55673599,10.91977869,144.6864777,2.86E-06,2.86E-06,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch4,0.013025,2.79E-07,1.76,21.63917542,8.463516654,141.6645508,0.000001003,0.000001003,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch5,0.0276087,4.72E-08,1.88,18.89426099,5.425337228,128.9150612,2.02E-06,2.02E-06,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,LowerTrunk,0.1799524,6.66E-04,7.88,38.24302673,22.72218253,84.67079163,0.000035796,0.000018703,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,UpperTrunk,0.1799524,1.34E-04,8.98,37.65473557,22.41795517,105.077179,0.000027937,0.000018388,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch1,0.0128536,1.54E-06,2.22,23.96406364,9.284232286,288.7886353,1.97E-06,1.97E-06,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch2,0.0300323,3.96E-07,2.64,23.0378042,8.932915244,311.7024042,2.22E-06,2.22E-06,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch3,0.0102184,,1.63,21.37509537,9.33792126,299.0733032,9.81E-07,9.81E-07,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch4,0.0158472,1.21E-06,2.47,,,,0.000001376,0.000001376,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch5,0.0189298,1.24E-06,2.24,20.4868679,9.804541576,355.9404602,1.56E-06,1.56E-06,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,LowerTrunk,0.5717936,no Kh meas,11.2,48.23630524,26.92374613,28.16383743,0.000069597,0.000069143,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,UpperTrunk,0.5717936,no Kh meas,10.9,58.13141251,28.84895201,20.2722435,0.000059224,0.000057273,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch1,0.011948,no Kh meas,2.5,27.07305336,8.993410384,304.2756042,1.14E-06,1.14E-06,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch2,0.0191155,no Kh meas,2.5,27.63166237,11.76022836,262.1368103,2.66E-06,2.66E-06,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch3,0.0170854,no Kh meas,2.5,25.74574852,11.71569921,199.4391785,2.78E-06,2.78E-06,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch4,0.0219154,no Kh meas,3.5,24.69503784,9.625057223,267.6555481,2.05E-06,2.05E-06,
-Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch5,0.0103873,no Kh meas,2.5,19.72838783,8.777022584,280.2819519,9.58E-07,9.58E-07,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,LowerTrunk,1.9282229,9.11E-05,15.66,70.05078125,36.14558469,28.26184845,0.000080316,0.000067062,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,UpperTrunk,1.9282229,2.92E-04,14.75,67.4095459,35.03176993,25.77737617,0.000073355,0.000060501,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch1,0.0896032,2.03E-06,4.51,37.24803925,18.00022365,97.971138,0.000004512,0.000004512,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch2,0.1031584,1.17E-05,3.65,40.78711319,17.83405362,105.6769257,5.02E-06,5.02E-06,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch3,0.0989431,3.44E-06,4.1,31.11864853,15.09681519,169.6380157,7.34E-06,7.34E-06,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch4,0.1226053,1.85E-05,4.5,34.26882935,16.54195588,111.1054916,0.000006172,0.000006172,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch5,0.1645002,5.82E-05,5.1,37.15110016,21.86263298,124.6736069,0.00000906,0.00000906,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,LowerTrunk,1.6308947,2.43E-04,12.98,60.82042313,35.72553475,29.0769043,0.000060101,0.000060101,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,UpperTrunk,1.6308947,2.79E-04,12.74,59.722435,37.20210008,29.56784058,0.000060653,0.000060653,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch1,0.1326312,1.21E-06,4.21,32.79841995,18.69512999,100.5565109,0.000004831,0.000004831,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch2,0.0833073,1.12E-06,3.6,35.38072586,11.24713095,103.1044617,4.97E-06,4.97E-06,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch3,0.0659208,4.34E-07,2.59,30.1184597,11.96707375,114.6872559,3.09E-06,3.09E-06,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch4,0.0641147,1.77E-06,3.83,39.58509064,12.62716845,63.06166458,4.67E-06,4.67E-06,
-Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch5,0.0670391,2.20E-06,4.01,45.4917717,17.99935965,57.81526184,5.93E-06,5.93E-06,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",5,LowerTrunk,0.143205,1.85E-04,6.8,52.79021454,23.59444238,39.7929039,0.000019025,0.000019025,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",5,UpperTrunk,0.143205,2.19E-04,6.7,50.27425766,31.80821648,47.59817886,0.000018134,0.000018134,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch1,0.011875,2.62E-07,1.91,20.29882431,8.743114131,301.2532654,1.41E-06,1.41E-06,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch2,0.013906,1.06E-06,2.24,,,,,,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch3,0.036735,6.66E-06,2.72,25.71230507,12.42106002,175.2380371,3.02E-06,3.02E-06,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch4,0.02089,2.15E-06,2.21,23.39707184,11.33513339,239.083786,2.40E-06,2.40E-06,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch5,0.02578,2.36E-06,2.21,24.22195435,12.13786452,224.236618,1.92E-06,1.92E-06,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch6,,no Kh meas,,26.65435791,10.84020901,158.6758728,1.40E-06,1.40E-06,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",6,LowerTrunk,2.35488,1.92E-03,18.54,65.36464691,45.65180879,18.49753952,0.000163606,0.000163606,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",6,UpperTrunk,2.35488,1.14E-03,17.72,64.39167023,38.73840403,16.49776459,0.000145008,0.000145008,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch1,0.036385,6.43E-06,2.93,34.38583374,16.37947892,54.68354797,0.000002331,0.000002331,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch2,0.02201,1.75E-06,2.56,23.33364296,10.67994749,201.4217987,1.90E-06,1.90E-06,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch3,0.05772,9.55E-06,3.16,29.09095192,13.29725096,101.6205444,3.81E-06,3.81E-06,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch4,0.16108,3.62E-05,4.83,,,,0.000007678,0.000007678,
-Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch5,0.2081,6.23E-05,5.09,35.80052185,17.76725569,68.03216553,0.000008793,0.000008793,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",1,LowerTrunk,1.3631938,1.88E-03,16.23,63.34583282,43.77400044,22.32355309,0.000130349,0.00006597,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",1,UpperTrunk,1.3631938,2.21E-03,15.46,61.31574631,38.60798864,42.05976868,0.000102809,0.000054675,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch1,0.130726,1.52E-05,5.36,23.52456284,15.72842522,214.6018829,0.000006578,0.000006578,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch2,0.1003255,5.50E-06,6.11,22.55963516,9.958506006,134.804718,0.000006274,0.000006274,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch3,0.2854493,9.90E-05,7.39,45.55058289,19.5981398,78.64395142,0.000016813,0.000016813,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch4,0.1061343,6.48E-06,6.66,34.5016098,15.05096381,99.92015076,0.000007348,0.000007348,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch5,0.1367624,2.48E-04,6.26,33.546772,15.04966906,98.82830811,0.00001019,0.00001019,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch6,0.2506748,5.77E-04,6.65,42.88618088,19.25419355,67.47366333,0.000009737,0.000009737,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",2,LowerTrunk,0.7876051,1.46E-03,15,65.1791687,35.19772007,24.04025841,0.000080475,0.00004236,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",2,UpperTrunk,0.7876051,1.27E-03,13.07,63.78952408,33.91552365,27.32921219,0.000076742,0.000042341,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",2,branch1,0.242772,1.12E-04,7.38,36.39817047,20.70265596,90.78515625,0.000012123,0.000012123,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",2,branch2,0.2988401,2.24E-04,8.07,48.59660339,25.086864,47.36058044,0.000016792,0.000016792,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",2,branch3,0.12963,1.46E-05,4.3,26.23946762,13.85632344,152.53508,0.000004046,0.000004046,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",2,branch4,0.1095132,8.04E-05,6.32,35.9543457,17.2576729,123.4501724,0.000009616,0.000009616,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",3,LowerTrunk,0.3176004,1.64E-03,14.21,65.08029175,36.10963343,51.14735794,0.000090449,0.000021246,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",3,UpperTrunk,0.3176004,1.60E-03,13.9,80.25617981,33.29924132,39.7078476,0.000072089,0.000019506,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch1,0.0159035,2.19E-06,6.2,18.48322487,7.520493695,158.5306549,0.000003478,0.000003478,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch2,0.1467659,7.60E-07,7.64,35.11687851,14.11569859,97.78617096,0.000012115,0.000012115,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch3,0.0159135,2.33E-06,3.93,32.90945435,14.8613832,98.37468719,0.000010745,0.000010745,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch4,0.1186133,3.09E-05,6.32,34.602314,13.4249137,115.3256226,0.000009197,0.000009197,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch5,0.0204042,4.57E-06,5.42,28.73007774,12.07221507,77.53141785,0.000005657,0.000005657,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",4,LowerTrunk,0.78987,1.84E-03,14.84,69.97576904,31.50148277,18.5145359,0.00010986,0.000051835,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",4,UpperTrunk,0.78987,1.69E-03,14.75,69.86824036,29.71796411,22.63000679,0.00012271,0.000053218,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch1,0.1594506,3.49E-05,5.45,39.31940842,18.14664451,49.77394485,0.000009227,0.000009227,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch2,0.1273032,1.59E-05,6.24,36.02371979,16.01615366,92.75994873,0.000008441,0.000008441,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch3,0.1853754,2.22E-05,6.6,30.40286446,15.1767293,75.89835358,0.000011278,0.000011278,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch4,0.1011666,1.98E-05,5.08,31.60098267,14.18205639,73.56249237,0.00000547,0.00000547,
-Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch5,0.0324994,6.46E-06,4.11,25.92991829,10.37176482,100.7518234,,,
-Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 1,0.07622832,3.74E-06,2.09,19.10922641,5.722940921,562.5852521,1.74E-06,1.74E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 6,0.05686272,2.18E-06,2.06,24.15173189,5.933590561,469.0764319,2.00E-06,2.00E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 3,0.06035344,2.41E-06,2.46,19.2380233,5.632404624,249.8847934,3.70E-06,3.70E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 4,0.05548224,3.49E-06,2.38,19.30861844,5.897139735,441.0429368,2.52E-06,2.52E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 5,0.09067856,3.93E-06,2.15,21.00775141,6.297307382,346.4650376,2.08E-06,2.08E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",1,LowerTrunk,1.73690864,0.000122425,12.3,27.69410952,8.295185063,154.3693601,8.40E-05,8.40E-05,
-Alnus rubra,diffuse-porous,"Oregon, USA",1,upper trunk,1.73690864,0.000245261,12.4,29.48231813,9.257169743,178.3506368,8.79E-05,8.79E-05,
-Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 1,0.009450662,5.56E-07,1.81,17.74573311,,374.1046581,1.33E-06,1.33E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 2,0.014531191,1.76E-06,2.07,19.91385674,5.943634942,346.4011928,1.97E-06,1.97E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 3,0.009225898,8.29E-07,1.51,17.43458153,,849.4733265,7.71E-07,7.71E-07,
-Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 4,0.017403592,1.14E-06,1.74,17.3961756,4.650972277,540.6347051,1.07E-06,1.07E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 5,0.028116824,1.29E-06,2.01,19.05342237,5.623410998,408.0793481,1.58E-06,1.58E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",2,LowerTrunk,0.551052552,0.000125615,12.33,30.62924124,,165.444574,8.06E-05,8.06E-05,
-Alnus rubra,diffuse-porous,"Oregon, USA",2,upper trunk,0.551052552,0.000124668,12.46,29.25079631,,132.7481051,7.58E-05,7.58E-05,
-Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 1,0.015962977,8.20E-07,1.62,19.26016814,,409.1526164,6.71E-07,6.71E-07,
-Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 2,0.003673824,5.32E-07,1.16,16.69216952,,425.2032117,5.47E-07,5.47E-07,
-Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 3,0.006633242,1.28E-06,1.54,18.59102644,3.810846023,648.7436339,1.01E-06,1.01E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 4,0.012970795,4.01E-07,1.31,14.47519467,4.065370598,758.9371391,7.62E-07,7.62E-07,
-Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 5,0.00978133,4.22E-07,1.73,13.38677235,4.596336866,1586.300868,1.24E-06,1.24E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",3,upper trunk,0.597250384,8.78E-05,7.55,,,,3.42E-05,3.42E-05,
-Alnus rubra,diffuse-porous,"Oregon, USA",3,LowerTrunk,0.597250384,7.90E-05,7.77,20.0964562,,96.33301912,2.84E-05,2.84E-05,
-Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 1,0.006402268,7.46E-07,1.55,15.40699649,4.155740594,616.9256692,1.06E-06,1.06E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 2,0.01547259,1.35E-06,1.92,16.09913067,4.882189569,808.5718069,1.17E-06,1.17E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 3,0.009117013,6.85E-07,1.35,15.62571438,5.272712817,632.5310731,7.47E-07,7.47E-07,
-Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 4,0.011870321,7.64E-07,1.71,15.24797227,5.206235375,787.7560207,1.17E-06,1.17E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 5,0.012170321,1.11E-06,1.34,18.95694621,4.74072376,454.3048346,1.07E-06,1.07E-06,
-Alnus rubra,diffuse-porous,"Oregon, USA",4,LowerTrunk,0.591102836,0.000161712,11.76,27.98526607,8.828744241,280.751878,4.51E-05,4.51E-05,
-Alnus rubra,diffuse-porous,"Oregon, USA",4,upper trunk,0.591102836,0.000170194,10.3,23.28335248,7.375220505,284.8240013,8.91E-05,8.91E-05,
-Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 1,0.009721172,1.75E-07,1.31,12.03051538,3.395446575,1089.689858,5.55E-07,5.55E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 2,0.00808242,1.36E-07,1.28,10.35758981,2.1398582,1371.511719,5.83E-07,5.83E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 3,0.006259735,2.97E-08,1.12,11.57739394,2.825545896,1378.100708,4.04E-07,4.04E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 4,0.014220038,2.68E-07,1.61,12.52892867,,1521.726208,8.27E-07,8.27E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 5,0.005341777,6.51E-08,1.25,10.71903836,2.010466855,1127.090454,5.46E-07,5.46E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",1,LowerTrunk,0.09575879,4.79E-06,5.9,19.79860417,6.086204477,133.056264,1.53E-05,1.53E-05,
-Acer circinatum,diffuse-porous,"Oregon, USA",1,upper trunk,0.09575879,8.63E-06,5.93,20.9954235,6.761242003,103.6364212,1.69E-05,1.69E-05,
-Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 6,0.010703403,1.49E-07,1.47,13.0384774,,711.8801851,1.64E-06,1.64E-06,
-Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 5,0.009877694,3.28E-07,1.66,13.79272376,3.67303474,990.5057983,6.77E-07,6.77E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 2,0.004996975,3.20E-07,1.93,12.71236252,2.828679034,951.0419922,,,
-Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 3,0.005362949,2.00E-07,1.58,13.80474846,2.952039391,743.8037109,1.02E-06,1.02E-06,
-Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 4,0.006583176,1.31E-07,1.29,13.92526178,,990.505777,6.04E-07,6.04E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",2,LowerTrunk,0.152340454,1.68E-05,9.03,22.69597616,,109.1012798,,,
-Acer circinatum,diffuse-porous,"Oregon, USA",2,upper trunk,0.152340454,2.06E-05,8.82,22.46330616,,116.7573253,1.65E-05,1.65E-05,
-Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 1,0.008630057,1.75E-07,1.38,15.70089708,4.738850468,268.6072083,5.37E-07,5.37E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 2,0.01168242,5.03E-07,1.7,15.21120454,3.69642558,581.6583862,1.16E-06,1.16E-06,
-Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 3,0.003229301,6.33E-08,1.02,13.49940575,3.61387338,669.6547241,3.61E-07,3.61E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 4,0.010289036,3.77E-07,1.66,13.24318198,,693.6434468,9.02E-07,9.02E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 5,0.010686767,4.11E-07,1.57,13.2987399,3.469446033,725.746837,6.39E-07,6.39E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",4,upper trunk,0.171691493,2.74E-05,10.78,21.70801476,6.676501787,150.801712,5.08E-05,5.08E-05,
-Acer circinatum,diffuse-porous,"Oregon, USA",4,LowerTrunk,0.171691493,1.71E-05,11.08,,,,,,
-Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 1,0.013962193,1.75E-06,2.55,17.83941448,,313.8059715,2.37E-06,2.37E-06,
-Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 2,0.007852741,3.95E-07,1.78,15.30591401,,581.6583726,1.13E-06,1.13E-06,
-Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 3,0.010225331,4.21E-07,1.97,13.62731395,,669.6547473,1.71E-06,1.71E-06,
-Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 4,0.009427977,2.00E-06,2.57,20.57675545,,340.4286551,2.78E-06,2.78E-06,
-Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 5,0.013813989,1.87E-07,1.68,13.43148317,,736.8345806,8.45E-07,8.45E-07,
-Acer circinatum,diffuse-porous,"Oregon, USA",3,upper trunk,0.369220794,5.71E-05,11.65,21.19842194,,150.8017176,6.32E-05,6.32E-05,
-Acer circinatum,diffuse-porous,"Oregon, USA",3,LowerTrunk,0.369220794,4.26E-05,12.26,17.30673496,,195.1987888,7.80E-05,7.80E-05,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 1,0.011132703,3.31E-06,3.33,15.92265668,5.038188525,806.3915405,3.35E-06,3.35E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 2,0.006200756,6.96E-07,2.33,12.58739649,3.258473952,898.282959,1.43E-06,1.43E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 3,0.02313724,2.21E-06,3.7,15.65504542,,957.6058933,3.61E-06,3.61E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 4,0.01019206,4.52E-07,1.96,11.87943074,3.2156972,703.0942383,7.54E-07,7.54E-07,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 5,0.008157467,1.55E-06,2.75,11.67847815,3.588717571,964.4696045,1.67E-06,1.67E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",1,upper trunk,0.159342911,0.000172526,10.82,23.4057163,,317.7095455,4.16E-05,4.16E-05,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",1,LowerTrunk,0.159342911,0.000123373,11.22,17.60285291,,190.3225003,4.67E-05,4.67E-05,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 1,0.003037807,3.94E-07,2.99,13.30836661,3.684809393,1266.114014,2.32E-06,2.32E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 2,0.013608696,8.84E-07,3.33,13.80296898,4.473050681,1000.23053,2.89E-06,2.89E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 3,0.003431002,,2.33,17.81017835,5.681814177,827.4088135,1.47E-06,1.47E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 4,0.013441021,,3.35,15.13766121,4.916057201,1188.886597,2.66E-06,2.66E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 5,0.015949905,1.35E-06,4.13,11.71061179,,964.4696278,4.52E-06,4.52E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",2,upper trunk,0.216835161,0.000127245,13.39,25.07376062,,353.328611,7.12E-05,7.12E-05,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",2,LowerTrunk,0.216835161,0.000148354,14.21,21.25864969,,303.714373,8.46E-05,8.46E-05,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 1,0.003582987,6.86E-07,3.35,14.02968597,3.644948596,1138.853882,3.43E-06,3.43E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 2,,,,14.96388435,3.476805107,1074.186646,2.86E-06,2.86E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 3,0.027945369,6.67E-06,5.24,15.58722878,4.183523796,957.605896,6.76E-06,6.76E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 4,0.026332514,6.49E-06,4.22,15.76974297,4.125938371,643.8427124,9.53E-06,9.53E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 5,0.03229603,5.34E-06,5.13,16.78112411,4.906411505,919.6019287,7.94E-06,7.94E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",3,upper trunk,0.138194707,7.76E-05,13.69,18.35063268,6.213669213,395.2763648,8.98E-05,8.98E-05,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",3,LowerTrunk,0.138194707,7.00E-05,13.66,16.78721441,,,8.14E-05,8.14E-05,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch1,0.010276371,1.03E-06,2.76,15.48588085,4.150911785,1454.884644,2.46E-06,2.46E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch 2,0.013842533,2.57E-06,2.72,16.74581146,5.368687073,1288.291138,,,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch 3,0.015574858,4.09E-06,3.05,15.86114216,5.381711821,1111.580566,3.35E-06,3.35E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch 4,0.022941966,4.92E-06,4,15.84319019,4.879596767,1454.512573,4.73E-06,4.73E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch 5,0.013263327,3.17E-06,3.52,14.29692173,4.168230991,1697.053467,3.08E-06,3.08E-06,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",4,upper trunk,0.208217769,0.000175555,12.52,19.90516663,8.078238133,440.3898266,0.000114245,0.000114245,
-Arbutus menziesii,diffuse-porous,"Oregon, USA",4,LowerTrunk,0.208217769,0.000194544,13.52,18.13049493,7.576897921,497.4231566,0.000137004,0.000137004,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 1,0.07544282,9.66E-06,4.07,21.49932073,8.331244701,302.364321,2.52E-06,2.52E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 2,0.046308696,3.68E-06,3.52,18.30287571,,202.7017646,2.34E-06,2.34E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 3,0.025279773,2.44E-07,2.24,16.21884063,5.041137342,462.1691137,,,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 4,0.022951418,1.80E-06,3.01,17.51479799,,223.3156418,2.28E-06,2.28E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 5,0.090075425,7.94E-06,3.71,20.59165974,,264.0136678,3.88E-06,3.88E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",1,upper trunk,0.476431191,0.000101189,10.17,26.90933492,6.421914026,151.7617201,3.20E-05,3.20E-05,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",1,LowerTrunk,0.476431191,0.000149052,13.5,26.86308198,7.013102026,108.9638569,9.81E-05,9.81E-05,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 1,0.07544282,1.45E-06,3.03,22.04318947,6.624943442,234.2468962,3.45E-06,3.45E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 2,0.018647826,1.89E-07,2.93,20.01944859,6.564315734,253.6465925,2.05E-06,2.05E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 3,0.046643289,3.33E-06,3.43,21.46543626,,279.0871937,3.07E-06,3.07E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 4,0.035729301,9.59E-07,3.49,18.63826818,6.46514112,448.5556508,2.07E-06,2.07E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 5,0.020514367,2.31E-07,2.73,22.01729986,6.966219646,411.6708691,8.25E-07,8.25E-07,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",2,upper trunk,0.312764839,9.46E-05,11.13,25.19667178,7.040754171,64.03997175,7.25E-05,7.25E-05,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",2,LowerTrunk,0.312764839,0.000112187,12.1,25.45482227,7.425535165,108.091583,7.51E-05,7.51E-05,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 1,0.075486767,3.87E-06,3.53,22.73384913,8.712969735,504.7502544,4.60E-06,4.60E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 2,0.050095463,2.19E-06,3.14,19.53264666,6.657894139,467.8410067,3.25E-06,3.25E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 3,0.095363516,5.52E-06,3.52,24.46296139,8.463454943,260.48662,4.50E-06,4.50E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 4,0.063989981,2.35E-06,3.45,18.19415678,6.729633036,365.476585,4.07E-06,4.07E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 5,0.065146692,1.82E-06,3.22,19.96684661,4.578470124,439.3048402,3.77E-06,3.77E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",3,upper trunk,0.623060113,6.29E-05,12.62,32.3522633,10.35111594,125.8228235,,,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",3,LowerTrunk,0.623060113,0.000105471,13.18,29.26122161,8.557550369,102.4395216,7.21E-05,7.21E-05,2.77
-Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 1,0.100893195,3.81E-06,3.24,16.74492859,5.103446663,590.1586899,2.37E-06,2.37E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 2,0.018111531,1.05E-07,1.92,14.56654116,4.116749918,420.9645836,1.34E-06,1.34E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 3,0.068097732,2.29E-06,3.25,15.76962588,4.971664908,443.3450302,2.01E-06,2.01E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 4,0.018383932,1.82E-07,2.22,13.95802498,3.7999812,791.6458954,1.34E-06,1.34E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 5,0.07893913,7.29E-06,3.38,16.79808583,6.736415536,539.529408,3.67E-06,3.67E-06,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",4,upper trunk,0.784900378,7.67E-05,13.49,29.10919442,8.861048182,175.8794899,,,
-Acer macrophyllum,diffuse-porous,"Oregon, USA",4,LowerTrunk,0.784900378,6.01E-05,15.05,24.82196961,8.530055557,70.86839405,8.93E-05,8.93E-05,3.06
-Abies grandis,conifer,"Oregon, USA",1,branch 1,0.02748752,2.34E-06,3.7,5.902861595,1.371856317,14420.33301,0.000006254,0.000006254,
-Abies grandis,conifer,"Oregon, USA",1,branch 2,0.0179868,6.77E-07,3.23,5.45868969,1.330841658,17287.37109,0.000003934,0.000003934,
-Abies grandis,conifer,"Oregon, USA",1,branch 3,0.01005416,3.24E-07,2.48,4.965165138,1.093354772,20113.50977,0.000002425,0.000002425,
-Abies grandis,conifer,"Oregon, USA",1,branch 4,0.03071592,2.78E-06,3.85,6.423051357,1.396621184,15403.87207,0.000007149,0.000007149,
-Abies grandis,conifer,"Oregon, USA",1,branch 5,0.00996192,,2.33,5.611738682,1.171193548,20161.20313,0.00000185,0.00000185,
-Abies grandis,conifer,"Oregon, USA",1,LowerTrunk,0.43712536,1.97E-05,16.44,7.835276604,1.725817933,12118.50684,8.91E-05,8.91E-05,
-Abies grandis,conifer,"Oregon, USA",2,branch 1,0.02324448,5.46E-07,2.96,5.088106155,1.312459643,19266.18359,0.000002739,0.000002739,
-Abies grandis,conifer,"Oregon, USA",2,branch 2,0.01964712,3.25E-07,2.89,5.574028492,1.690623712,17503.57227,0.000003243,0.000003243,
-Abies grandis,conifer,"Oregon, USA",2,branch 3,0.02564272,6.99E-07,2.96,4.978612423,1.172333157,18347.17383,0.000002937,0.000002937,
-Abies grandis,conifer,"Oregon, USA",2,branch 4,0.03975544,5.50E-06,3.56,5.584453106,1.560413089,16304.20215,0.000007055,0.000007055,
-Abies grandis,conifer,"Oregon, USA",2,branch 5,0.02914784,9.32E-07,3.56,5.090085506,1.484224447,18021.18164,0.000004099,0.000004099,
-Abies grandis,conifer,"Oregon, USA",2,LowerTrunk,1.4121944,5.96E-05,24.54,6.704660892,2.517781602,10086.91211,0.000275426,0.000275426,
-Abies grandis,conifer,"Oregon, USA",3,branch 1,0.0198316,3.76E-07,3.36,8.108994484,2.037883598,6017.151855,0.000004111,0.000004111,
-Abies grandis,conifer,"Oregon, USA",3,branch 2,0.02711856,1.53E-06,3.58,9.439271927,2.615623391,7072.596191,0.000005401,0.000005401,
-Abies grandis,conifer,"Oregon, USA",3,branch 3,0.02010832,7.02E-07,3.08,9.107268333,2.983866722,7314.639648,0.000004312,0.000004312,
-Abies grandis,conifer,"Oregon, USA",3,branch 4,0.03329864,3.29E-07,4.08,6.640628815,1.99654579,6393.479492,0.000008576,0.000008576,
-Abies grandis,conifer,"Oregon, USA",3,branch 5,0.01863248,,3.42,7.429862976,2.621900025,6348.092285,0.000004162,0.000004162,
-Abies grandis,conifer,"Oregon, USA",3,LowerTrunk,0.292884138,4.80E-06,13.11,,,,4.77E-05,4.77E-05,
-Abies grandis,conifer,"Oregon, USA",4,branch 1,0.02176864,1.27E-06,3.31,9.466494985,,7200.040808,0.00000475,0.00000475,
-Abies grandis,conifer,"Oregon, USA",4,branch 2,0.02001608,1.35E-06,3.02,,,,0.000003961,0.000003961,
-Abies grandis,conifer,"Oregon, USA",4,branch 3,0.018448,1.02E-06,3.03,,,,0.000004189,0.000004189,
-Abies grandis,conifer,"Oregon, USA",4,branch 4,0.01927816,5.38E-07,3.05,,,,0.000003642,0.000003642,
-Abies grandis,conifer,"Oregon, USA",4,branch 5,0.01411272,6.17E-07,2.77,10.56490215,2.689166492,3901.857419,0.000002969,0.000002969,
-Abies grandis,conifer,"Oregon, USA",4,LowerTrunk,0.3671152,1.97E-06,15.09,,3.974916555,2453.428278,0.000124511,0.000124511,
-Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 1,0.1151625,9.50E-06,6.73,13.76849079,3.494038588,2982.154704,0.000013598,0.000013598,
-Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 2,0.0917565,3.08E-06,4.94,12.00560379,3.362675463,3654.767253,0.000010467,0.000010467,
-Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 3,0.04222542,6.22E-07,4.1,9.338267326,3.414464595,4811.044922,0.000005798,0.000005798,
-Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 4,0.0912585,5.95E-06,6.14,12.4873848,3.909721755,3762.693115,0.000011554,0.000011554,
-Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 5,0.088146,2.70E-06,5.93,9.010138512,3.172781816,5248.109212,0.000010176,0.000010176,
-Pseudotsuga menziesii,conifer,"Oregon, USA",1,LowerTrunk,1.53977118,4.40E-04,22.185,15.9378624,4.626130346,2438.747477,0.000207009,0.000207009,
-Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 1,0.1413075,4.10E-06,4.61,8.819135685,3.266839235,4360.267578,0.000008962,0.000008962,
-Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 2,0.114291,5.58E-06,5.43,10.18157518,3.833566125,3999.029053,0.000010823,0.000010823,
-Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 3,0.0900135,3.69E-06,5.25,9.612387701,3.810205285,4775.974121,0.000008423,0.000008423,
-Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 4,0.039093,1.83E-06,3.41,9.683942292,3.338353441,4292.492676,0.000003904,0.000003904,
-Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 5,0.020169,6.55E-07,2.98,8.055858495,2.934318851,5804.500326,0.000001967,0.000001967,
-Pseudotsuga menziesii,conifer,"Oregon, USA",2,LowerTrunk,2.859516,8.34E-05,28.06,13.99236087,6.108476007,2767.148519,0.000253966,0.000253966,
-Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 1,0.04731,1.15E-06,3.89,7.86457634,3.349414292,5795.918132,0.000004903,0.000004903,
-Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 2,0.087648,3.51E-06,4.94,9.131476402,2.776566237,4577.801188,0.000007637,0.000007637,
-Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 3,0.0917565,2.74E-06,5.18,9.304039955,2.829678035,4041.549479,0.000011001,0.000011001,
-Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 4,0.049551,1.94E-06,4.08,9.179110527,2.79814378,4167.050374,0.00000719,0.00000719,
-Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 5,0.1114275,5.52E-06,5.28,10.09318924,3.596259539,4226.43457,0.000010441,0.000010441,
-Pseudotsuga menziesii,conifer,"Oregon, USA",3,LowerTrunk,0.964377,5.80E-05,16.49,10.34379101,3.220719389,3776.758219,0.000160992,0.000160992,
-Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 1,0.052041,2.30E-06,3.95,9.125123978,3.065466369,4659.125732,0.000005431,0.000005431,
-Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 2,0.052539,3.20E-06,3.92,10.01582432,3.498005565,3876.02832,0.000006573,0.000006573,
-Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 3,0.020916,6.49E-07,2.33,8.749955177,2.972333398,4775.356934,0.00000288,0.00000288,
-Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 4,0.070218,4.76E-06,4.46,9.715605736,3.279256228,3878.565186,0.000008499,0.000008499,
-Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 5,0.083913,4.65E-06,5.34,11.028862,4.083238073,3695.720703,0.000009388,0.000009388,
-Pseudotsuga menziesii,conifer,"Oregon, USA",4,LowerTrunk,1.976829675,9.10E-05,24.54,13.58358097,4.716791109,2773.804199,0.000200779,0.000200779,
-Tsuga heterophylla,conifer,"Oregon, USA",1,branch 1,0.09718632,1.66E-06,3.52,9.99832058,2.479996202,4346.1486,0.00000686,0.00000686,
-Tsuga heterophylla,conifer,"Oregon, USA",1,branch 2,0.10518,2.07E-06,3.54,10.5593605,2.646722087,4104.630778,0.000007408,0.000007408,
-Tsuga heterophylla,conifer,"Oregon, USA",1,branch 3,0.09718632,2.12E-06,3.42,9.78517437,2.713914998,4406.775391,0.000006837,0.000006837,
-Tsuga heterophylla,conifer,"Oregon, USA",1,branch 4,0.07299492,1.67E-06,3.32,10.07398891,2.601505172,4262.643636,0.000005926,0.000005926,
-Tsuga heterophylla,conifer,"Oregon, USA",1,branch 5,0.08077824,8.10E-07,3.83,9.449584007,2.473940271,4945.880534,0.000007086,0.000007086,
-Tsuga heterophylla,conifer,"Oregon, USA",1,LowerTrunk,5.526819834,3.73E-04,21.31,13.64709854,4.26990636,2844.800374,0.000267967,0.000267967,
-Tsuga heterophylla,conifer,"Oregon, USA",2,branch 1,0.11759124,1.89E-06,3.77,9.64378643,2.404175263,4424.20638,0.000010322,0.000010322,
-Tsuga heterophylla,conifer,"Oregon, USA",2,branch 2,0.05532468,6.33E-07,3.05,9.64378643,2.283213564,4649.836751,0.000004706,0.000004706,
-Tsuga heterophylla,conifer,"Oregon, USA",2,branch 3,0.13715472,1.37E-06,4.54,10.2774334,2.693349893,4488.964518,0.000011575,0.000011575,
-Tsuga heterophylla,conifer,"Oregon, USA",2,branch 4,0.13126464,1.77E-06,4.36,10.63790989,2.837886461,4564.203776,0.000010803,0.000010803,
-Tsuga heterophylla,conifer,"Oregon, USA",2,branch 5,0.073626,3.14E-07,3.54,10.35319996,2.704678212,4673.423665,0.000007027,0.000007027,
-Tsuga heterophylla,conifer,"Oregon, USA",2,LowerTrunk,2.30680776,3.32E-05,18.44,12.23783493,3.452740687,3594.525472,0.000194006,0.000194006,
-Tsuga heterophylla,conifer,"Oregon, USA",3,branch 1,0.05195892,9.77E-07,2.98,9.130194664,2.269378893,5220.98291,0.000004205,0.000004205,
-Tsuga heterophylla,conifer,"Oregon, USA",3,branch 2,0.06058368,1.25E-06,3.07,9.422031403,2.803866723,4901.104818,0.000004751,0.000004751,
-Tsuga heterophylla,conifer,"Oregon, USA",3,branch 3,0.12158808,2.95E-06,5.13,10.06651402,2.912206517,4635.928223,0.000009345,0.000009345,
-Tsuga heterophylla,conifer,"Oregon, USA",3,branch 4,0.07930572,1.38E-06,3.83,8.198689461,2.156127272,5823.897786,0.000008697,0.000008697,
-Tsuga heterophylla,conifer,"Oregon, USA",3,branch 5,0.13442004,3.13E-06,4.31,9.820638657,3.01726851,4678.442383,0.000010994,0.000010994,
-Tsuga heterophylla,conifer,"Oregon, USA",3,LowerTrunk,1.9479336,1.90E-04,20.04,12.2659502,3.885080116,3539.00765,0.00021987,0.00021987,
-Tsuga heterophylla,conifer,"Oregon, USA",4,branch 1,0.10433856,3.54E-06,4.08,9.548862457,#REF!,5144.972656,0.000008816,0.000008816,
-Tsuga heterophylla,conifer,"Oregon, USA",4,branch 2,0.06773592,8.89E-07,3.15,8.138705254,2.060984286,6198.417318,0.000006378,0.000006378,
-Tsuga heterophylla,conifer,"Oregon, USA",4,branch 3,0.11653944,4.15E-06,4.87,10.54022598,2.91285125,4324.537272,0.000009948,0.000009948,
-Tsuga heterophylla,conifer,"Oregon, USA",4,branch 4,0.09950028,2.94E-06,3.84,8.351126671,2.58842147,5736.534993,0.000008652,0.000008652,
-Tsuga heterophylla,conifer,"Oregon, USA",4,branch 5,0.11843268,3.31E-06,4.04,10.26723766,2.856227345,4698.429688,0.000009637,0.000009637,
-Tsuga heterophylla,conifer,"Oregon, USA",4,LowerTrunk,2.96544492,3.00E-04,21.36,13.98531055,3.871235418,2744.494792,0.000297806,0.000297806,
-Thuja plicata,conifer,"Oregon, USA",1,branch 1,0.05642,2.84E-06,4.59,12.48046112,4.215462004,3821.912598,0.000009624,0.000009624,
-Thuja plicata,conifer,"Oregon, USA",1,branch 2,0.03731,1.87E-06,3.82,11.60386658,4.389913034,4197.6014,0.000006816,0.000006816,
-Thuja plicata,conifer,"Oregon, USA",1,branch 3,0.032123,1.46E-06,4.12,11.27177429,3.207996224,4186.045736,0.000006698,0.000006698,
-Thuja plicata,conifer,"Oregon, USA",1,branch 4,0.033033,6.08E-07,3.51,10.55531502,3.195497683,4479.984212,0.0000058,0.0000058,
-Thuja plicata,conifer,"Oregon, USA",1,branch 5,0.030394,1.15E-06,3.89,10.41387367,3.330405723,4463.24528,0.000006105,0.000006105,
-Thuja plicata,conifer,"Oregon, USA",1,LowerTrunk,1.182363,8.96E-05,20.99,13.8404808,5.38467833,2801.608724,0.000241857,0.000241857,
-Thuja plicata,conifer,"Oregon, USA",2,branch 1,0.035308,1.86E-06,3.39,10.62611866,3.247944669,4537.273926,0.000005469,0.000005469,
-Thuja plicata,conifer,"Oregon, USA",2,branch 2,0.040222,1.13E-06,3.8,10.29519749,2.49894677,4430.345378,0.000005977,0.000005977,
-Thuja plicata,conifer,"Oregon, USA",2,branch 3,0.035308,1.57E-06,3.5,10.42856407,3.391986619,4356.878418,0.000007291,0.000007291,
-Thuja plicata,conifer,"Oregon, USA",2,branch 4,0.015925,1.96E-07,2.65,10.05646038,2.264471336,4474.450033,0.000003401,0.000003401,
-Thuja plicata,conifer,"Oregon, USA",2,branch 5,0.01638,3.00E-07,2.74,9.948150635,2.379331774,4731.964193,0.000003446,0.000003446,
-Thuja plicata,conifer,"Oregon, USA",2,LowerTrunk,0.897078,3.79E-05,17.62,14.01625824,4.487136495,2933.245199,0.000129321,0.000129321,
-Thuja plicata,conifer,"Oregon, USA",3,branch 1,0.017563,1.42E-06,3.48,10.50182915,2.810865799,4443.197754,0.000005251,0.000005251,
-Thuja plicata,conifer,"Oregon, USA",3,branch 2,0.019292,6.21E-07,3.1,9.557982445,2.667888277,4622.322103,0.000003416,0.000003416,
-Thuja plicata,conifer,"Oregon, USA",3,branch 3,0.031577,1.24E-06,3.35,11.02896023,2.442992454,4296.053223,0.000004905,0.000004905,
-Thuja plicata,conifer,"Oregon, USA",3,branch 4,0.020839,7.32E-07,3.05,10.05321884,2.395364223,4386.132813,0.000003537,0.000003537,
-Thuja plicata,conifer,"Oregon, USA",3,branch 5,0.036127,1.45E-06,3.87,12.03858471,3.095251961,3803.929688,0.000006668,0.000006668,
-Thuja plicata,conifer,"Oregon, USA",3,LowerTrunk,1.199562,4.85E-05,18.36,13.35854626,4.783038733,3037.637695,0.000264776,0.000264776,
-Thuja plicata,conifer,"Oregon, USA",4,branch 1,0.012467,5.75E-08,2.19,9.543291092,2.860712682,4762.149902,0.000001794,0.000001794,
-Thuja plicata,conifer,"Oregon, USA",4,branch 2,0.018291,3.51E-07,2.86,9.759064674,2.344134092,4697.484863,0.000003198,0.000003198,
-Thuja plicata,conifer,"Oregon, USA",4,branch 3,0.015743,6.45E-08,3.05,9.400000572,2.420495156,4900.602214,0.000003192,0.000003192,
-Thuja plicata,conifer,"Oregon, USA",4,branch 4,0.011557,3.06E-08,2.08,8.307425499,2.026690458,5364.099609,0.000001961,0.000001961,
-Thuja plicata,conifer,"Oregon, USA",4,branch 5,0.02184,2.54E-07,2.66,10.34713268,3.111795664,4787.13265,0.000003981,0.000003981,
-Thuja plicata,conifer,"Oregon, USA",4,LowerTrunk,0.677495,1.81E-05,16.13,12.69390392,4.276401931,3107.678874,0.000161222,0.000161222,
-Pinus ponderosa,conifer,"Oregon, USA",1,branch 1,0.00951352,9.80E-07,2.38,5.557889462,1.76046154,6177.768066,0.000003072,0.000003072,
-Pinus ponderosa,conifer,"Oregon, USA",1,branch 2,0.01885248,1.77E-07,3.44,5.305553913,1.761308212,6821.934326,0.000004,0.000004,
-Pinus ponderosa,conifer,"Oregon, USA",1,branch 3,0.00445128,2.56E-08,2.32,5.042213917,1.693192285,6345.740723,0.00000159,0.00000159,
-Pinus ponderosa,conifer,"Oregon, USA",1,branch 4,0.01160824,3.13E-07,2.6,4.966890812,1.707039473,6667.765137,0.000003375,0.000003375,
-Pinus ponderosa,conifer,"Oregon, USA",1,branch 5,0.02120904,4.06E-07,3.66,5.758826256,1.824736041,6335.431152,0.000004791,0.000004791,
-Pinus ponderosa,conifer,"Oregon, USA",1,LowerTrunk,0.20519528,2.80E-05,15.06,7.249741554,2.433612743,4317.103027,8.53E-05,8.53E-05,0.62
-Pinus ponderosa,conifer,"Oregon, USA",1,upper trunk,0.20519528,3.92E-05,13.96,,,,0.000107803,0.000107803,
-Pinus ponderosa,conifer,"Oregon, USA",2,branch 1,0.00898984,5.73E-07,2.89,5.804777622,1.774876752,6272.439453,0.000002464,0.000002464,
-Pinus ponderosa,conifer,"Oregon, USA",2,branch 2,0.0034912,1.66E-07,2.1,5.750844479,1.492242496,7144.770996,0.000000891,0.000000891,
-Pinus ponderosa,conifer,"Oregon, USA",2,branch 3,0.01457576,9.46E-07,3.12,5.922261238,1.88244291,6732.501465,0.000003697,0.000003697,
-Pinus ponderosa,conifer,"Oregon, USA",2,branch 4,0.00968808,5.28E-07,3.5,6.166546345,1.81413349,5831.025879,0.000001991,0.000001991,
-Pinus ponderosa,conifer,"Oregon, USA",2,branch 5,,,3.05,,,,,,
-Pinus ponderosa,conifer,"Oregon, USA",2,upper trunk,0.1204464,1.43E-05,11.63,6.486994267,2.102349123,8816.066744,4.49E-05,4.49E-05,
-Pinus ponderosa,conifer,"Oregon, USA",2,LowerTrunk,0.1204464,1.80E-05,9.24,6.338982582,2.138008096,5157.412598,4.83E-05,4.83E-05,0.598
-Pinus ponderosa,conifer,"Oregon, USA",3,branch 1,0.01248104,6.36E-07,4.07,5.756536484,1.324945903,7138.999023,0.000002571,0.000002571,
-Pinus ponderosa,conifer,"Oregon, USA",3,branch 2,0.02888968,1.04E-06,4.99,7.276338577,1.883950787,4913.497559,0.000005452,0.000005452,
-Pinus ponderosa,conifer,"Oregon, USA",3,branch 3,0.01187008,6.01E-07,3.52,6.123436451,1.573682693,7494.357422,0.000002741,0.000002741,
-Pinus ponderosa,conifer,"Oregon, USA",3,branch 4,0.00096008,,2.3,4.80693531,1.162604581,11126.39453,0.000000326,0.000000326,
-Pinus ponderosa,conifer,"Oregon, USA",3,branch 5,0.00453856,5.37E-08,2.46,5.749274731,1.714067079,8740.754883,0.000000948,0.000000948,
-Pinus ponderosa,conifer,"Oregon, USA",3,upper trunk,0.21409784,1.90E-05,10.55,7.43363905,2.317438358,4669.624023,5.05E-05,5.05E-05,
-Pinus ponderosa,conifer,"Oregon, USA",3,LowerTrunk,0.21409784,1.50E-05,12.82,7.420275688,1.888772194,4627.538574,6.69E-05,6.69E-05,0.693
-Pinus ponderosa,conifer,"Oregon, USA",4,branch 1,0.01204464,1.02E-06,3.54,,,,0.000003148,0.000003148,
-Pinus ponderosa,conifer,"Oregon, USA",4,branch 2,0.00864072,4.71E-07,3.31,7.708974361,1.605935965,7949.963379,0.000002404,0.000002404,
-Pinus ponderosa,conifer,"Oregon, USA",4,branch 3,0.01448848,9.27E-07,3.2,8.354125023,1.833692408,7307.715332,0.000004299,0.000004299,
-Pinus ponderosa,conifer,"Oregon, USA",4,branch 4,0.00200744,3.04E-07,2.89,8.339174271,2.212270093,8056.834961,0.000001331,0.000001331,
-Pinus ponderosa,conifer,"Oregon, USA",4,branch 5,0.01073544,5.68E-07,2.89,8.442493439,1.784317266,7032.732422,0.000002285,0.000002285,
-Pinus ponderosa,conifer,"Oregon, USA",4,LowerTrunk,0.1675776,2.99E-05,12.04,9.444449425,2.655900975,4988.367676,5.49E-05,5.49E-05,0.64
-Pinus ponderosa,conifer,"Oregon, USA",4,upper trunk,0.1675776,3.04E-05,11.37,,,,7.46E-05,7.46E-05,
-Cordia alliodora,diffuse-porous,Panama,1,branch1,0.049618,9.18E-06,3.35,32.19412613,8.956408292,157.9841614,0.000004054,0.000004054,
-Cordia alliodora,diffuse-porous,Panama,1,branch2,0.018676,8.05E-06,2.8,32.11880875,8.822037139,201.2911174,2.66E-06,2.66E-06,
-Cordia alliodora,diffuse-porous,Panama,1,branch3,0.018619,9.99E-06,2.85,32.29278564,7.664169564,134.6534576,0.000003775,0.000003775,
-Cordia alliodora,diffuse-porous,Panama,1,branch4,0.053621,6.29E-06,2.8,32.30374908,7.474312963,182.2160695,0.00000314,0.00000314,
-Cordia alliodora,diffuse-porous,Panama,1,LowerTrunk,0.140534,8.00E-05,7.25,44.42712402,8.845900094,53.36962128,0.000026079,0.000026079,0.5
-Cordia alliodora,diffuse-porous,Panama,2,branch8,0.038977,,3.15,15.88559055,4.699810267,7.33E+02,4.07E-06,4.07E-06,
-Cordia alliodora,diffuse-porous,Panama,2,branch13,0.012792,,2.45,15.62445354,4.557048799,9.51E+02,2.06E-06,2.06E-06,
-Cordia alliodora,diffuse-porous,Panama,2,branch19,0.047032,,2.6,15.41776276,4.75757969,7.41E+02,2.45E-06,2.45E-06,
-Cordia alliodora,diffuse-porous,Panama,2,branch27,0.270296,,6.5,26.30690956,7.108092882,1.60E+02,2.04E-05,2.04E-05,
-Cordia alliodora,diffuse-porous,Panama,2,branch28,0.191389,,3.9,21.04706383,7.952207701,3.19E+02,6.97E-06,6.97E-06,
-Cordia alliodora,diffuse-porous,Panama,2,LowerTrunk,1.579166,6.30E-04,23.85,58.06302046,5.838424457,18.51080212,0.000339564,0.000339564,2.5
-Cordia alliodora,diffuse-porous,Panama,3,branch1,0.068497,8.67E-06,3.75,33.02206421,8.946352921,1.38E+02,4.60E-06,4.60E-06,
-Cordia alliodora,diffuse-porous,Panama,3,branch3,0.091837,3.74E-05,4.05,34.85893631,8.977092332,9.91E+01,6.96E-06,6.96E-06,
-Cordia alliodora,diffuse-porous,Panama,3,branch6,,4.85E-05,5.01,42.94399643,12.89330163,7.93E+01,1.07E-05,1.07E-05,
-Cordia alliodora,diffuse-porous,Panama,3,branch9,,8.58E-06,3.28,35.50799942,7.362024122,1.46E+02,2.94E-06,2.94E-06,
-Cordia alliodora,diffuse-porous,Panama,3,branch13,0.064229,1.42E-05,3.7,38.42285538,8.758409244,1.01E+02,4.11E-06,4.11E-06,
-Cordia alliodora,diffuse-porous,Panama,3,LowerTrunk,0.112607,2.12E-04,15.6,50.38908768,9.345086549,2.54E+01,0.000123583,0.000123583,1.58
-Cordia alliodora,diffuse-porous,Panama,4,branch1,0.022732,,2.225,19.23792458,4.25786009,313.4278717,0.000000836,0.000000836,
-Cordia alliodora,diffuse-porous,Panama,4,branch2,0.018044,,1.8,20.63655663,4.911262137,349.7624207,0.000000751,0.000000751,
-Cordia alliodora,diffuse-porous,Panama,4,branch3,0.022873,,2.6,22.21936989,5.628744815,288.1901703,0.000000871,0.000000871,
-Cordia alliodora,diffuse-porous,Panama,4,branch4,0.032882,7.94E-07,2.4,25.1322155,6.216684905,256.838932,0.000001308,0.000001308,
-Cordia alliodora,diffuse-porous,Panama,4,branch5,0.040333,3.13E-06,2.65,24.22311592,7.578295682,226.5741119,0.000002018,0.000002018,
-Cordia alliodora,diffuse-porous,Panama,4,LowerTrunk,0.273231,2.00E-05,10.45,33.19989777,8.882034936,35.94841957,4.92E-05,4.92E-05,0.803
-Anacardium excelsum,diffuse-porous,Panama,1,LowerTrunk,1.457878,5.19E-04,24.6,52.06820102,17.72763844,33.05644099,0.000431439,0.000431439,1.66
-Anacardium excelsum,diffuse-porous,Panama,1,branch3,,6.72E-05,7.53,52.35143764,12.63685144,41.36705462,0.000035569,0.000035569,
-Anacardium excelsum,diffuse-porous,Panama,1,branch4,0.128989,1.66E-05,6.15,49.44526947,13.55144329,38.35977999,0.000018007,0.000018007,
-Anacardium excelsum,diffuse-porous,Panama,1,branch5,0.387867,1.32E-04,13.32,51.69443498,17.75353455,28.70768611,8.05E-05,8.05E-05,
-Anacardium excelsum,diffuse-porous,Panama,1,branch6,0.301495,6.19E-05,7.91,59.98194856,20.18991007,29.19410133,0.00003228,0.00003228,
-Anacardium excelsum,diffuse-porous,Panama,1,branch7,0.442729,1.28E-04,11.8,56.50014864,22.32652169,35.33645185,0.00005355,0.00005355,
-Anacardium excelsum,diffuse-porous,Panama,2,LowerTrunk,0.963639,4.62E-04,21.15,62.03653422,17.83347472,15.32606459,0.000403833,0.000403833,2.51
-Anacardium excelsum,diffuse-porous,Panama,2,branch1,0.029879,1.50E-05,6.66,51.72848977,19.74775456,59.89408366,0.00001364,0.00001364,
-Anacardium excelsum,diffuse-porous,Panama,2,branch3,0.157062,2.11E-05,7.55,49.1100301,15.61018339,47.0188357,0.000023044,0.000023044,
-Anacardium excelsum,diffuse-porous,Panama,2,branch7,0.085611,1.07E-05,5.6,44.40562685,17.18730959,70.90304456,0.000006896,0.000006896,
-Anacardium excelsum,diffuse-porous,Panama,2,branch9,0.020621,1.44E-06,4.4,35.14470436,13.50910165,113.9712404,0.000002857,0.000002857,
-Anacardium excelsum,diffuse-porous,Panama,2,branch12,0.186454,1.03E-04,7.6,51.00468795,19.77609279,35.74408849,0.000032393,0.000032393,
-Anacardium excelsum,diffuse-porous,Panama,3,LowerTrunk,0.398976,7.65E-05,18.5,47.2035114,14.27319572,23.45234998,0.00026282,0.00026282,1.3
-Anacardium excelsum,diffuse-porous,Panama,3,branch1,0.021375,2.32E-06,4.4,43.11735897,15.38496559,58.84240723,0.000009069,0.000009069,
-Anacardium excelsum,diffuse-porous,Panama,3,branch2,0.177692,2.13E-05,6.69,44.73758342,18.22417674,57.01523209,0.000015508,0.000015508,
-Anacardium excelsum,diffuse-porous,Panama,3,branch3,0.199909,5.11E-05,7.65,54.84229169,18.81563275,35.88438988,0.000022099,0.000022099,
-Anacardium excelsum,diffuse-porous,Panama,4,LowerTrunk,0.710482,6.90E-05,20.05,50.74351872,15.73689383,20.59965324,0.000312431,0.000312431,1.52
-Anacardium excelsum,diffuse-porous,Panama,4,branch2,0.057463,1.07E-06,5.15,33.57993256,10.57229483,88.77853902,0.000006277,0.000006277,
-Anacardium excelsum,diffuse-porous,Panama,4,branch5,0.120051,1.28E-05,6.6,49.45385157,13.14399669,42.84774653,0.000011767,0.000011767,
-Anacardium excelsum,diffuse-porous,Panama,4,branch6,0.053076,3.93E-06,4.66,33.38771304,12.31827952,87.51953506,0.000005194,0.000005194,
-Anacardium excelsum,diffuse-porous,Panama,4,branch7,0.398651,3.39E-05,9.15,43.65397187,13.17122742,53.20725886,0.000033837,0.000033837,
-Ficus insipida,diffuse-porous,Panama,1,branch2,0.044199,7.50E-05,13.35,55.12891006,18.91634191,44.80892944,0.000115063,0.000115063,
-Ficus insipida,diffuse-porous,Panama,1,branch3,0.037803,1.58E-05,8.34,40.82592392,10.86669168,121.367185,4.30E-05,4.30E-05,
-Ficus insipida,diffuse-porous,Panama,1,branch4,0.347257,9.70E-06,6.65,44.95043564,12.07736339,37.74458059,2.84E-05,2.84E-05,
-Ficus insipida,diffuse-porous,Panama,1,branch6,0.466632,5.42E-05,10.15,56.10821533,18.41322938,100.7977295,7.34E-05,7.34E-05,
-Ficus insipida,diffuse-porous,Panama,1,branch7,0.328044,1.08E-04,11.8,61.56651688,19.13930566,23.29577192,0.000103633,0.000103633,
-Ficus insipida,diffuse-porous,Panama,1,LowerTrunk,2.144678,3.10E-03,25.4,97.49494171,21.13472825,11.61858273,0.000462529,0.000462529,3.4
-Ficus insipida,diffuse-porous,Panama,2,branch1,0.468434,8.28E-05,7.2,66.11925507,20.94974343,34.20564651,4.59E-05,4.59E-05,
-Ficus insipida,diffuse-porous,Panama,2,branch2,0.3119,2.13E-04,8.25,75.27747345,24.21219074,28.49667295,8.57E-05,8.57E-05,
-Ficus insipida,diffuse-porous,Panama,2,branch3,0.193223,6.69E-06,11.1,77.56721497,21.39013068,26.94177691,7.21E-05,7.21E-05,
-Ficus insipida,diffuse-porous,Panama,2,branch4,,9.61E-06,11.1,52.25551987,14.70737558,57.99364217,3.05E-05,3.05E-05,
-Ficus insipida,diffuse-porous,Panama,2,LowerTrunk,1.130892,2.70E-03,24.95,99.19521332,29.61550209,10.34566307,0.000409901,0.000409901,4.1
-Ficus insipida,diffuse-porous,Panama,3,branch1,0.416678,3.45E-05,10.8,51.60480118,11.34194089,21.15248235,6.22E-05,6.22E-05,
-Ficus insipida,diffuse-porous,Panama,3,branch2,0.294147,7.65E-05,9.65,57.5623436,16.69890855,36.63314056,6.51E-05,6.51E-05,
-Ficus insipida,diffuse-porous,Panama,3,branch3,0.363667,3.41E-04,13.85,71.82643127,18.68151609,20.0312322,0.000140478,0.000140478,
-Ficus insipida,diffuse-porous,Panama,3,branch4,0.256976,1.35E-04,11,61.90270615,16.72473463,22.20804342,8.49E-05,8.49E-05,
-Ficus insipida,diffuse-porous,Panama,3,branch5,0.290445,1.17E-04,10.1,64.94326019,19.2395655,34.47509384,6.76E-05,6.76E-05,
-Ficus insipida,diffuse-porous,Panama,3,LowerTrunk,1.621913,1.46E-03,24.98,85.1010437,27.05171761,11.49803575,0.000428435,0.000428435,2.48
-Ficus insipida,diffuse-porous,Panama,5,branch1,0.128439,5.39E-05,6.69,57.23403931,15.38093193,28.72247171,3.52E-05,3.52E-05,
-Ficus insipida,diffuse-porous,Panama,5,branch2,0.151532,1.40E-06,8.64,44.68762207,13.93534492,121.0267995,4.61E-05,4.61E-05,
-Ficus insipida,diffuse-porous,Panama,5,branch4,0.316151,1.45E-06,9,53.26534653,11.64202901,70.17460505,5.24E-05,5.24E-05,
-Ficus insipida,diffuse-porous,Panama,5,branch5,0.129905,2.45E-06,8.9,56.817276,10.52538349,49.56200918,5.88E-05,5.88E-05,
-Ficus insipida,diffuse-porous,Panama,5,branch6,0.100397,2.66E-06,8.95,42.38599014,10.87577299,104.3396428,5.29E-05,5.29E-05,
-Ficus insipida,diffuse-porous,Panama,5,LowerTrunk,0.937315,2.53E-03,25,103.303093,23.5189984,6.497993787,0.000450385,0.000450385,4.5
-Luehea seemannii,diffuse-porous,Panama,1,branch1,0.09232,,5.14,41.74050014,12.43886747,51.80251694,0.000008805,0.000008805,
-Luehea seemannii,diffuse-porous,Panama,1,branch2,0.184511,1.27E-06,7.32,56.69347763,13.86097878,30.68483734,1.59E-05,1.59E-05,
-Luehea seemannii,diffuse-porous,Panama,1, branch4,0.028525,,5.45,25.67823601,7.51913245,280.2609253,0.000001621,0.000001621,
-Luehea seemannii,diffuse-porous,Panama,1,branch5,0.247981,9.26E-06,7.24,52.17113876,17.43790438,36.89820862,0.000016207,0.000016207,
-Luehea seemannii,diffuse-porous,Panama,1,LowerTrunk,0.568009,3.96E-04,27.5,74.28087616,22.45057822,13.59684086,0.00059219,0.00059219,4.05
-Luehea seemannii,diffuse-porous,Panama,2,branch1,0.042208,,2.9,23.18579292,8.176237432,327.6767578,1.27E-06,1.27E-06,
-Luehea seemannii,diffuse-porous,Panama,2,branch3,0.330939,3.08E-06,7.45,52.1375351,18.77069853,53.16479111,0.000013416,0.000013416,
-Luehea seemannii,diffuse-porous,Panama,2,branch4,0.168962,3.40E-06,4,37.20035934,14.46890425,93.45168304,0.000006097,0.000006097,
-Luehea seemannii,diffuse-porous,Panama,2,branch5,0.057058,,3.95,26.22415924,7.684945122,199.0588074,2.07E-06,2.07E-06,
-Luehea seemannii,diffuse-porous,Panama,2,branch7,0.010587,,4.5,31.9105072,10.20698083,163.4876862,3.14E-06,3.14E-06,
-Luehea seemannii,diffuse-porous,Panama,2,branch9,0.008347,2.06E-06,5.03,40.95108795,13.13606503,104.5006638,3.99E-06,3.99E-06,
-Luehea seemannii,diffuse-porous,Panama,2,LowerTrunk,0.820635,2.49E-04,23.69,48.58458328,15.54705711,16.35024071,0.000428392,0.000428392,1.97
-Luehea seemannii,diffuse-porous,Panama,3,branch2,0.040171,,4.3,28.13359833,11.32563729,131.5288391,2.33E-06,2.33E-06,
-Luehea seemannii,diffuse-porous,Panama,3,branch8,0.071618,,5.2,27.92830467,14.31943091,191.4298553,3.30E-06,3.30E-06,
-Luehea seemannii,diffuse-porous,Panama,3,branch11,0.021232,,3.1,22.02181816,8.446723087,327.6416931,1.01E-06,1.01E-06,
-Luehea seemannii,diffuse-porous,Panama,3,branch10,0.026111,,3.4,25.75024986,9.871867272,62.37763214,1.57E-06,1.57E-06,
-Luehea seemannii,diffuse-porous,Panama,3,LowerTrunk,0.269615,5.41E-05,15.95,40.33414841,12.4418177,32.85238647,0.000199022,0.000199022,1.84
-Luehea seemannii,diffuse-porous,Panama,4,branch2,0.024596,,,24.04541016,6.588750726,304.3817444,1.60E-06,1.60E-06,
-Luehea seemannii,diffuse-porous,Panama,4,branch3,0.025384,,,23.50260544,8.027826389,345.1522217,2.27E-06,2.27E-06,
-Luehea seemannii,diffuse-porous,Panama,4,branch4,0.107599,1.86E-06,6.42,24.65255356,8.128292019,344.6758423,5.27E-06,5.27E-06,
-Luehea seemannii,diffuse-porous,Panama,4,branch7,0.138894,1.19E-06,6.35,28.92542839,7.585034238,140.5739899,0.00000661,0.00000661,
-Luehea seemannii,diffuse-porous,Panama,4,branch12,0.078415,2.03E-06,5.08,28.82957649,10.0957823,256.9041748,3.95E-06,3.95E-06,
-Luehea seemannii,diffuse-porous,Panama,4,branch14,0.196593,1.97E-05,7.33,40.66956711,13.73621301,85.46722412,0.00001161,0.00001161,
-Luehea seemannii,diffuse-porous,Panama,4,LowerTrunk,0.835706,4.71E-04,24.9,41.47409439,12.70013479,19.55846977,0.000484685,0.000484685,2.56
+species,wood.type,collection.site,individual.number,sample,A.lf.m2,hydraulic.conductivity.Kg.m.Mpa-1.s-1,stem.d.mm,conduit.diameter.microns,conduit.diameter.stdev,conduit.frequency.mm-2,xylem.area.m2,sapwd.area.m2,height.m,latitude,longitude,vegetation,Family,pft,growingCondition,status
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,LowerTrunk,0.3667137,7.47E-04,9.59,62.43095779,28.43774595,79.10385132,0.000038481,0.000020676,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,UpperTrunk,0.3667137,5.59E-04,9.14,53.31441116,28.96574335,88.13600922,0.000035861,0.000023686,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch1,0.0199964,1.61E-06,3.175,23.88694572,11.4236557,214.2360535,0.00000352,0.00000352,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch2,0.0319417,6.46E-07,2.25,25.33396149,11.83502065,141.3060608,0.000000987,0.000000987,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch3,0.0572982,2.60E-07,3.03,25.50822258,10.1814251,204.8419189,0.000001665,0.000001665,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch4,0.0376041,4.72E-06,2.6,22.54080582,11.1712757,176.8831024,0.000002082,0.000002082,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",1,branch5,0.0427585,4.14E-07,2.8,28.90025902,9.484825551,141.5323944,0.00000122,0.00000122,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,LowerTrunk,0.4386061,5.23E-04,13.68,55.87214273,26.06102924,28.85934152,0.000082142,0.00007448,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,UpperTrunk,0.4386061,4.37E-04,13.34,,,,0.0000742,0.000069377,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch1,0.0097361,1.81E-06,2.65,24.85972023,8.220933365,259.6259766,0.000001908,0.000001908,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch2,0.0358417,2.63E-06,3.2,26.75834465,,110.7740631,0.000003929,0.000003929,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch3,0.0161172,8.27E-07,2.85,22.55673599,10.91977869,144.6864777,2.86E-06,2.86E-06,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch4,0.013025,2.79E-07,1.76,21.63917542,8.463516654,141.6645508,0.000001003,0.000001003,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",2,branch5,0.0276087,4.72E-08,1.88,18.89426099,5.425337228,128.9150612,2.02E-06,2.02E-06,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,LowerTrunk,0.1799524,6.66E-04,7.88,38.24302673,22.72218253,84.67079163,0.000035796,0.000018703,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,UpperTrunk,0.1799524,1.34E-04,8.98,37.65473557,22.41795517,105.077179,0.000027937,0.000018388,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch1,0.0128536,1.54E-06,2.22,23.96406364,9.284232286,288.7886353,1.97E-06,1.97E-06,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch2,0.0300323,3.96E-07,2.64,23.0378042,8.932915244,311.7024042,2.22E-06,2.22E-06,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch3,0.0102184,,1.63,21.37509537,9.33792126,299.0733032,9.81E-07,9.81E-07,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch4,0.0158472,1.21E-06,2.47,,,,0.000001376,0.000001376,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",3,branch5,0.0189298,1.24E-06,2.24,20.4868679,9.804541576,355.9404602,1.56E-06,1.56E-06,,45,-93,TempF,Fagaceae,DA,FW,3
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,LowerTrunk,0.5717936,no Kh meas,11.2,48.23630524,26.92374613,28.16383743,0.000069597,0.000069143,,45,-93,TempF,Fagaceae,DA,FW,2
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,UpperTrunk,0.5717936,no Kh meas,10.9,58.13141251,28.84895201,20.2722435,0.000059224,0.000057273,,45,-93,TempF,Fagaceae,DA,FW,2
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch1,0.011948,no Kh meas,2.5,27.07305336,8.993410384,304.2756042,1.14E-06,1.14E-06,,45,-93,TempF,Fagaceae,DA,FW,2
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch2,0.0191155,no Kh meas,2.5,27.63166237,11.76022836,262.1368103,2.66E-06,2.66E-06,,45,-93,TempF,Fagaceae,DA,FW,2
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch3,0.0170854,no Kh meas,2.5,25.74574852,11.71569921,199.4391785,2.78E-06,2.78E-06,,45,-93,TempF,Fagaceae,DA,FW,2
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch4,0.0219154,no Kh meas,3.5,24.69503784,9.625057223,267.6555481,2.05E-06,2.05E-06,,45,-93,TempF,Fagaceae,DA,FW,2
+Quercus ellipsoidalis,ring-porous,"Minnesota, USA",4,branch5,0.0103873,no Kh meas,2.5,19.72838783,8.777022584,280.2819519,9.58E-07,9.58E-07,,45,-93,TempF,Fagaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,LowerTrunk,1.9282229,9.11E-05,15.66,70.05078125,36.14558469,28.26184845,0.000080316,0.000067062,,45,-93,TempF,Fabaceae,DA,FW,3
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,UpperTrunk,1.9282229,2.92E-04,14.75,67.4095459,35.03176993,25.77737617,0.000073355,0.000060501,,45,-93,TempF,Fabaceae,DA,FW,3
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch1,0.0896032,2.03E-06,4.51,37.24803925,18.00022365,97.971138,0.000004512,0.000004512,,45,-93,TempF,Fabaceae,DA,FW,3
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch2,0.1031584,1.17E-05,3.65,40.78711319,17.83405362,105.6769257,5.02E-06,5.02E-06,,45,-93,TempF,Fabaceae,DA,FW,3
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch3,0.0989431,3.44E-06,4.1,31.11864853,15.09681519,169.6380157,7.34E-06,7.34E-06,,45,-93,TempF,Fabaceae,DA,FW,3
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch4,0.1226053,1.85E-05,4.5,34.26882935,16.54195588,111.1054916,0.000006172,0.000006172,,45,-93,TempF,Fabaceae,DA,FW,3
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",1,branch5,0.1645002,5.82E-05,5.1,37.15110016,21.86263298,124.6736069,0.00000906,0.00000906,,45,-93,TempF,Fabaceae,DA,FW,3
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,LowerTrunk,1.6308947,2.43E-04,12.98,60.82042313,35.72553475,29.0769043,0.000060101,0.000060101,,45,-93,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,UpperTrunk,1.6308947,2.79E-04,12.74,59.722435,37.20210008,29.56784058,0.000060653,0.000060653,,45,-93,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch1,0.1326312,1.21E-06,4.21,32.79841995,18.69512999,100.5565109,0.000004831,0.000004831,,45,-93,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch2,0.0833073,1.12E-06,3.6,35.38072586,11.24713095,103.1044617,4.97E-06,4.97E-06,,45,-93,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch3,0.0659208,4.34E-07,2.59,30.1184597,11.96707375,114.6872559,3.09E-06,3.09E-06,,45,-93,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch4,0.0641147,1.77E-06,3.83,39.58509064,12.62716845,63.06166458,4.67E-06,4.67E-06,,45,-93,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Minnesota, USA",2,branch5,0.0670391,2.20E-06,4.01,45.4917717,17.99935965,57.81526184,5.93E-06,5.93E-06,,45,-93,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",5,LowerTrunk,0.143205,1.85E-04,6.8,52.79021454,23.59444238,39.7929039,0.000019025,0.000019025,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",5,UpperTrunk,0.143205,2.19E-04,6.7,50.27425766,31.80821648,47.59817886,0.000018134,0.000018134,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch1,0.011875,2.62E-07,1.91,20.29882431,8.743114131,301.2532654,1.41E-06,1.41E-06,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch2,0.013906,1.06E-06,2.24,,,,,,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch3,0.036735,6.66E-06,2.72,25.71230507,12.42106002,175.2380371,3.02E-06,3.02E-06,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch4,0.02089,2.15E-06,2.21,23.39707184,11.33513339,239.083786,2.40E-06,2.40E-06,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch5,0.02578,2.36E-06,2.21,24.22195435,12.13786452,224.236618,1.92E-06,1.92E-06,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",5,branch6,,no Kh meas,,26.65435791,10.84020901,158.6758728,1.40E-06,1.40E-06,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",6,LowerTrunk,2.35488,1.92E-03,18.54,65.36464691,45.65180879,18.49753952,0.000163606,0.000163606,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",6,UpperTrunk,2.35488,1.14E-03,17.72,64.39167023,38.73840403,16.49776459,0.000145008,0.000145008,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch1,0.036385,6.43E-06,2.93,34.38583374,16.37947892,54.68354797,0.000002331,0.000002331,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch2,0.02201,1.75E-06,2.56,23.33364296,10.67994749,201.4217987,1.90E-06,1.90E-06,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch3,0.05772,9.55E-06,3.16,29.09095192,13.29725096,101.6205444,3.81E-06,3.81E-06,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch4,0.16108,3.62E-05,4.83,,,,0.000007678,0.000007678,,44,-123,TempF,Fabaceae,DA,FW,2
+Robinia pseudoacacia,ring-porous,"Oregon, USA",6,branch5,0.2081,6.23E-05,5.09,35.80052185,17.76725569,68.03216553,0.000008793,0.000008793,,44,-123,TempF,Fabaceae,DA,FW,2
+Fraxinus latifolia,ring-porous,"Minnesota, USA",1,LowerTrunk,1.3631938,1.88E-03,16.23,63.34583282,43.77400044,22.32355309,0.000130349,0.00006597,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",1,UpperTrunk,1.3631938,2.21E-03,15.46,61.31574631,38.60798864,42.05976868,0.000102809,0.000054675,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch1,0.130726,1.52E-05,5.36,23.52456284,15.72842522,214.6018829,0.000006578,0.000006578,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch2,0.1003255,5.50E-06,6.11,22.55963516,9.958506006,134.804718,0.000006274,0.000006274,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch3,0.2854493,9.90E-05,7.39,45.55058289,19.5981398,78.64395142,0.000016813,0.000016813,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch4,0.1061343,6.48E-06,6.66,34.5016098,15.05096381,99.92015076,0.000007348,0.000007348,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch5,0.1367624,2.48E-04,6.26,33.546772,15.04966906,98.82830811,0.00001019,0.00001019,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",1,branch6,0.2506748,5.77E-04,6.65,42.88618088,19.25419355,67.47366333,0.000009737,0.000009737,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",2,LowerTrunk,0.7876051,1.46E-03,15,65.1791687,35.19772007,24.04025841,0.000080475,0.00004236,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",2,UpperTrunk,0.7876051,1.27E-03,13.07,63.78952408,33.91552365,27.32921219,0.000076742,0.000042341,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",2,branch1,0.242772,1.12E-04,7.38,36.39817047,20.70265596,90.78515625,0.000012123,0.000012123,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",2,branch2,0.2988401,2.24E-04,8.07,48.59660339,25.086864,47.36058044,0.000016792,0.000016792,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",2,branch3,0.12963,1.46E-05,4.3,26.23946762,13.85632344,152.53508,0.000004046,0.000004046,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",2,branch4,0.1095132,8.04E-05,6.32,35.9543457,17.2576729,123.4501724,0.000009616,0.000009616,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",3,LowerTrunk,0.3176004,1.64E-03,14.21,65.08029175,36.10963343,51.14735794,0.000090449,0.000021246,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",3,UpperTrunk,0.3176004,1.60E-03,13.9,80.25617981,33.29924132,39.7078476,0.000072089,0.000019506,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch1,0.0159035,2.19E-06,6.2,18.48322487,7.520493695,158.5306549,0.000003478,0.000003478,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch2,0.1467659,7.60E-07,7.64,35.11687851,14.11569859,97.78617096,0.000012115,0.000012115,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch3,0.0159135,2.33E-06,3.93,32.90945435,14.8613832,98.37468719,0.000010745,0.000010745,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch4,0.1186133,3.09E-05,6.32,34.602314,13.4249137,115.3256226,0.000009197,0.000009197,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",3,branch5,0.0204042,4.57E-06,5.42,28.73007774,12.07221507,77.53141785,0.000005657,0.000005657,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",4,LowerTrunk,0.78987,1.84E-03,14.84,69.97576904,31.50148277,18.5145359,0.00010986,0.000051835,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",4,UpperTrunk,0.78987,1.69E-03,14.75,69.86824036,29.71796411,22.63000679,0.00012271,0.000053218,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch1,0.1594506,3.49E-05,5.45,39.31940842,18.14664451,49.77394485,0.000009227,0.000009227,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch2,0.1273032,1.59E-05,6.24,36.02371979,16.01615366,92.75994873,0.000008441,0.000008441,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch3,0.1853754,2.22E-05,6.6,30.40286446,15.1767293,75.89835358,0.000011278,0.000011278,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch4,0.1011666,1.98E-05,5.08,31.60098267,14.18205639,73.56249237,0.00000547,0.00000547,,45,-93,TempF,Oleaceae,DA,FW,0
+Fraxinus latifolia,ring-porous,"Minnesota, USA",4,branch5,0.0324994,6.46E-06,4.11,25.92991829,10.37176482,100.7518234,,,,45,-93,TempF,Oleaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 1,0.07622832,3.74E-06,2.09,19.10922641,5.722940921,562.5852521,1.74E-06,1.74E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 6,0.05686272,2.18E-06,2.06,24.15173189,5.933590561,469.0764319,2.00E-06,2.00E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 3,0.06035344,2.41E-06,2.46,19.2380233,5.632404624,249.8847934,3.70E-06,3.70E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 4,0.05548224,3.49E-06,2.38,19.30861844,5.897139735,441.0429368,2.52E-06,2.52E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",1,branch 5,0.09067856,3.93E-06,2.15,21.00775141,6.297307382,346.4650376,2.08E-06,2.08E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",1,LowerTrunk,1.73690864,0.000122425,12.3,27.69410952,8.295185063,154.3693601,8.40E-05,8.40E-05,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",1,upper trunk,1.73690864,0.000245261,12.4,29.48231813,9.257169743,178.3506368,8.79E-05,8.79E-05,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 1,0.009450662,5.56E-07,1.81,17.74573311,,374.1046581,1.33E-06,1.33E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 2,0.014531191,1.76E-06,2.07,19.91385674,5.943634942,346.4011928,1.97E-06,1.97E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 3,0.009225898,8.29E-07,1.51,17.43458153,,849.4733265,7.71E-07,7.71E-07,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 4,0.017403592,1.14E-06,1.74,17.3961756,4.650972277,540.6347051,1.07E-06,1.07E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",2,branch 5,0.028116824,1.29E-06,2.01,19.05342237,5.623410998,408.0793481,1.58E-06,1.58E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",2,LowerTrunk,0.551052552,0.000125615,12.33,30.62924124,,165.444574,8.06E-05,8.06E-05,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",2,upper trunk,0.551052552,0.000124668,12.46,29.25079631,,132.7481051,7.58E-05,7.58E-05,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 1,0.015962977,8.20E-07,1.62,19.26016814,,409.1526164,6.71E-07,6.71E-07,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 2,0.003673824,5.32E-07,1.16,16.69216952,,425.2032117,5.47E-07,5.47E-07,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 3,0.006633242,1.28E-06,1.54,18.59102644,3.810846023,648.7436339,1.01E-06,1.01E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 4,0.012970795,4.01E-07,1.31,14.47519467,4.065370598,758.9371391,7.62E-07,7.62E-07,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",3,branch 5,0.00978133,4.22E-07,1.73,13.38677235,4.596336866,1586.300868,1.24E-06,1.24E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",3,upper trunk,0.597250384,8.78E-05,7.55,,,,3.42E-05,3.42E-05,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",3,LowerTrunk,0.597250384,7.90E-05,7.77,20.0964562,,96.33301912,2.84E-05,2.84E-05,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 1,0.006402268,7.46E-07,1.55,15.40699649,4.155740594,616.9256692,1.06E-06,1.06E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 2,0.01547259,1.35E-06,1.92,16.09913067,4.882189569,808.5718069,1.17E-06,1.17E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 3,0.009117013,6.85E-07,1.35,15.62571438,5.272712817,632.5310731,7.47E-07,7.47E-07,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 4,0.011870321,7.64E-07,1.71,15.24797227,5.206235375,787.7560207,1.17E-06,1.17E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",4,branch 5,0.012170321,1.11E-06,1.34,18.95694621,4.74072376,454.3048346,1.07E-06,1.07E-06,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",4,LowerTrunk,0.591102836,0.000161712,11.76,27.98526607,8.828744241,280.751878,4.51E-05,4.51E-05,,44,-123,TempF,Betulaceae,DA,FW,0
+Alnus rubra,diffuse-porous,"Oregon, USA",4,upper trunk,0.591102836,0.000170194,10.3,23.28335248,7.375220505,284.8240013,8.91E-05,8.91E-05,,44,-123,TempF,Betulaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 1,0.009721172,1.75E-07,1.31,12.03051538,3.395446575,1089.689858,5.55E-07,5.55E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 2,0.00808242,1.36E-07,1.28,10.35758981,2.1398582,1371.511719,5.83E-07,5.83E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 3,0.006259735,2.97E-08,1.12,11.57739394,2.825545896,1378.100708,4.04E-07,4.04E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 4,0.014220038,2.68E-07,1.61,12.52892867,,1521.726208,8.27E-07,8.27E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",1,branch 5,0.005341777,6.51E-08,1.25,10.71903836,2.010466855,1127.090454,5.46E-07,5.46E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",1,LowerTrunk,0.09575879,4.79E-06,5.9,19.79860417,6.086204477,133.056264,1.53E-05,1.53E-05,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",1,upper trunk,0.09575879,8.63E-06,5.93,20.9954235,6.761242003,103.6364212,1.69E-05,1.69E-05,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 6,0.010703403,1.49E-07,1.47,13.0384774,,711.8801851,1.64E-06,1.64E-06,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 5,0.009877694,3.28E-07,1.66,13.79272376,3.67303474,990.5057983,6.77E-07,6.77E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 2,0.004996975,3.20E-07,1.93,12.71236252,2.828679034,951.0419922,,,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 3,0.005362949,2.00E-07,1.58,13.80474846,2.952039391,743.8037109,1.02E-06,1.02E-06,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",2,branch 4,0.006583176,1.31E-07,1.29,13.92526178,,990.505777,6.04E-07,6.04E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",2,LowerTrunk,0.152340454,1.68E-05,9.03,22.69597616,,109.1012798,,,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",2,upper trunk,0.152340454,2.06E-05,8.82,22.46330616,,116.7573253,1.65E-05,1.65E-05,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 1,0.008630057,1.75E-07,1.38,15.70089708,4.738850468,268.6072083,5.37E-07,5.37E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 2,0.01168242,5.03E-07,1.7,15.21120454,3.69642558,581.6583862,1.16E-06,1.16E-06,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 3,0.003229301,6.33E-08,1.02,13.49940575,3.61387338,669.6547241,3.61E-07,3.61E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 4,0.010289036,3.77E-07,1.66,13.24318198,,693.6434468,9.02E-07,9.02E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",4,branch 5,0.010686767,4.11E-07,1.57,13.2987399,3.469446033,725.746837,6.39E-07,6.39E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",4,upper trunk,0.171691493,2.74E-05,10.78,21.70801476,6.676501787,150.801712,5.08E-05,5.08E-05,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",4,LowerTrunk,0.171691493,1.71E-05,11.08,,,,,,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 1,0.013962193,1.75E-06,2.55,17.83941448,,313.8059715,2.37E-06,2.37E-06,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 2,0.007852741,3.95E-07,1.78,15.30591401,,581.6583726,1.13E-06,1.13E-06,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 3,0.010225331,4.21E-07,1.97,13.62731395,,669.6547473,1.71E-06,1.71E-06,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 4,0.009427977,2.00E-06,2.57,20.57675545,,340.4286551,2.78E-06,2.78E-06,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",3,branch 5,0.013813989,1.87E-07,1.68,13.43148317,,736.8345806,8.45E-07,8.45E-07,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",3,upper trunk,0.369220794,5.71E-05,11.65,21.19842194,,150.8017176,6.32E-05,6.32E-05,,44,-123,TempF,Sapindaceae,DA,FW,0
+Acer circinatum,diffuse-porous,"Oregon, USA",3,LowerTrunk,0.369220794,4.26E-05,12.26,17.30673496,,195.1987888,7.80E-05,7.80E-05,,44,-123,TempF,Sapindaceae,DA,FW,0
+Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 1,0.011132703,3.31E-06,3.33,15.92265668,5.038188525,806.3915405,3.35E-06,3.35E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 2,0.006200756,6.96E-07,2.33,12.58739649,3.258473952,898.282959,1.43E-06,1.43E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 3,0.02313724,2.21E-06,3.7,15.65504542,,957.6058933,3.61E-06,3.61E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 4,0.01019206,4.52E-07,1.96,11.87943074,3.2156972,703.0942383,7.54E-07,7.54E-07,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",1,branch 5,0.008157467,1.55E-06,2.75,11.67847815,3.588717571,964.4696045,1.67E-06,1.67E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",1,upper trunk,0.159342911,0.000172526,10.82,23.4057163,,317.7095455,4.16E-05,4.16E-05,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",1,LowerTrunk,0.159342911,0.000123373,11.22,17.60285291,,190.3225003,4.67E-05,4.67E-05,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 1,0.003037807,3.94E-07,2.99,13.30836661,3.684809393,1266.114014,2.32E-06,2.32E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 2,0.013608696,8.84E-07,3.33,13.80296898,4.473050681,1000.23053,2.89E-06,2.89E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 3,0.003431002,,2.33,17.81017835,5.681814177,827.4088135,1.47E-06,1.47E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 4,0.013441021,,3.35,15.13766121,4.916057201,1188.886597,2.66E-06,2.66E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",2,branch 5,0.015949905,1.35E-06,4.13,11.71061179,,964.4696278,4.52E-06,4.52E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",2,upper trunk,0.216835161,0.000127245,13.39,25.07376062,,353.328611,7.12E-05,7.12E-05,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",2,LowerTrunk,0.216835161,0.000148354,14.21,21.25864969,,303.714373,8.46E-05,8.46E-05,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 1,0.003582987,6.86E-07,3.35,14.02968597,3.644948596,1138.853882,3.43E-06,3.43E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 2,,,,14.96388435,3.476805107,1074.186646,2.86E-06,2.86E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 3,0.027945369,6.67E-06,5.24,15.58722878,4.183523796,957.605896,6.76E-06,6.76E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 4,0.026332514,6.49E-06,4.22,15.76974297,4.125938371,643.8427124,9.53E-06,9.53E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",3,branch 5,0.03229603,5.34E-06,5.13,16.78112411,4.906411505,919.6019287,7.94E-06,7.94E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",3,upper trunk,0.138194707,7.76E-05,13.69,18.35063268,6.213669213,395.2763648,8.98E-05,8.98E-05,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",3,LowerTrunk,0.138194707,7.00E-05,13.66,16.78721441,,,8.14E-05,8.14E-05,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch1,0.010276371,1.03E-06,2.76,15.48588085,4.150911785,1454.884644,2.46E-06,2.46E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch 2,0.013842533,2.57E-06,2.72,16.74581146,5.368687073,1288.291138,,,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch 3,0.015574858,4.09E-06,3.05,15.86114216,5.381711821,1111.580566,3.35E-06,3.35E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch 4,0.022941966,4.92E-06,4,15.84319019,4.879596767,1454.512573,4.73E-06,4.73E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",4,branch 5,0.013263327,3.17E-06,3.52,14.29692173,4.168230991,1697.053467,3.08E-06,3.08E-06,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",4,upper trunk,0.208217769,0.000175555,12.52,19.90516663,8.078238133,440.3898266,0.000114245,0.000114245,,44,-123,TempF,Ericaceae,DA,FW,3
+Arbutus menziesii,diffuse-porous,"Oregon, USA",4,LowerTrunk,0.208217769,0.000194544,13.52,18.13049493,7.576897921,497.4231566,0.000137004,0.000137004,,44,-123,TempF,Ericaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 1,0.07544282,9.66E-06,4.07,21.49932073,8.331244701,302.364321,2.52E-06,2.52E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 2,0.046308696,3.68E-06,3.52,18.30287571,,202.7017646,2.34E-06,2.34E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 3,0.025279773,2.44E-07,2.24,16.21884063,5.041137342,462.1691137,,,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 4,0.022951418,1.80E-06,3.01,17.51479799,,223.3156418,2.28E-06,2.28E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",1,branch 5,0.090075425,7.94E-06,3.71,20.59165974,,264.0136678,3.88E-06,3.88E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",1,upper trunk,0.476431191,0.000101189,10.17,26.90933492,6.421914026,151.7617201,3.20E-05,3.20E-05,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",1,LowerTrunk,0.476431191,0.000149052,13.5,26.86308198,7.013102026,108.9638569,9.81E-05,9.81E-05,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 1,0.07544282,1.45E-06,3.03,22.04318947,6.624943442,234.2468962,3.45E-06,3.45E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 2,0.018647826,1.89E-07,2.93,20.01944859,6.564315734,253.6465925,2.05E-06,2.05E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 3,0.046643289,3.33E-06,3.43,21.46543626,,279.0871937,3.07E-06,3.07E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 4,0.035729301,9.59E-07,3.49,18.63826818,6.46514112,448.5556508,2.07E-06,2.07E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",2,branch 5,0.020514367,2.31E-07,2.73,22.01729986,6.966219646,411.6708691,8.25E-07,8.25E-07,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",2,upper trunk,0.312764839,9.46E-05,11.13,25.19667178,7.040754171,64.03997175,7.25E-05,7.25E-05,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",2,LowerTrunk,0.312764839,0.000112187,12.1,25.45482227,7.425535165,108.091583,7.51E-05,7.51E-05,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 1,0.075486767,3.87E-06,3.53,22.73384913,8.712969735,504.7502544,4.60E-06,4.60E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 2,0.050095463,2.19E-06,3.14,19.53264666,6.657894139,467.8410067,3.25E-06,3.25E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 3,0.095363516,5.52E-06,3.52,24.46296139,8.463454943,260.48662,4.50E-06,4.50E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 4,0.063989981,2.35E-06,3.45,18.19415678,6.729633036,365.476585,4.07E-06,4.07E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",3,branch 5,0.065146692,1.82E-06,3.22,19.96684661,4.578470124,439.3048402,3.77E-06,3.77E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",3,upper trunk,0.623060113,6.29E-05,12.62,32.3522633,10.35111594,125.8228235,,,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",3,LowerTrunk,0.623060113,0.000105471,13.18,29.26122161,8.557550369,102.4395216,7.21E-05,7.21E-05,2.77,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 1,0.100893195,3.81E-06,3.24,16.74492859,5.103446663,590.1586899,2.37E-06,2.37E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 2,0.018111531,1.05E-07,1.92,14.56654116,4.116749918,420.9645836,1.34E-06,1.34E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 3,0.068097732,2.29E-06,3.25,15.76962588,4.971664908,443.3450302,2.01E-06,2.01E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 4,0.018383932,1.82E-07,2.22,13.95802498,3.7999812,791.6458954,1.34E-06,1.34E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",4,branch 5,0.07893913,7.29E-06,3.38,16.79808583,6.736415536,539.529408,3.67E-06,3.67E-06,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",4,upper trunk,0.784900378,7.67E-05,13.49,29.10919442,8.861048182,175.8794899,,,,44,-123,TempF,Sapindaceae,DA,FW,3
+Acer macrophyllum,diffuse-porous,"Oregon, USA",4,LowerTrunk,0.784900378,6.01E-05,15.05,24.82196961,8.530055557,70.86839405,8.93E-05,8.93E-05,3.06,44,-123,TempF,Sapindaceae,DA,FW,3
+Abies grandis,conifer,"Oregon, USA",1,branch 1,0.02748752,2.34E-06,3.7,5.902861595,1.371856317,14420.33301,0.000006254,0.000006254,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",1,branch 2,0.0179868,6.77E-07,3.23,5.45868969,1.330841658,17287.37109,0.000003934,0.000003934,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",1,branch 3,0.01005416,3.24E-07,2.48,4.965165138,1.093354772,20113.50977,0.000002425,0.000002425,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",1,branch 4,0.03071592,2.78E-06,3.85,6.423051357,1.396621184,15403.87207,0.000007149,0.000007149,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",1,branch 5,0.00996192,,2.33,5.611738682,1.171193548,20161.20313,0.00000185,0.00000185,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",1,LowerTrunk,0.43712536,1.97E-05,16.44,7.835276604,1.725817933,12118.50684,8.91E-05,8.91E-05,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",2,branch 1,0.02324448,5.46E-07,2.96,5.088106155,1.312459643,19266.18359,0.000002739,0.000002739,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",2,branch 2,0.01964712,3.25E-07,2.89,5.574028492,1.690623712,17503.57227,0.000003243,0.000003243,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",2,branch 3,0.02564272,6.99E-07,2.96,4.978612423,1.172333157,18347.17383,0.000002937,0.000002937,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",2,branch 4,0.03975544,5.50E-06,3.56,5.584453106,1.560413089,16304.20215,0.000007055,0.000007055,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",2,branch 5,0.02914784,9.32E-07,3.56,5.090085506,1.484224447,18021.18164,0.000004099,0.000004099,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",2,LowerTrunk,1.4121944,5.96E-05,24.54,6.704660892,2.517781602,10086.91211,0.000275426,0.000275426,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",3,branch 1,0.0198316,3.76E-07,3.36,8.108994484,2.037883598,6017.151855,0.000004111,0.000004111,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",3,branch 2,0.02711856,1.53E-06,3.58,9.439271927,2.615623391,7072.596191,0.000005401,0.000005401,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",3,branch 3,0.02010832,7.02E-07,3.08,9.107268333,2.983866722,7314.639648,0.000004312,0.000004312,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",3,branch 4,0.03329864,3.29E-07,4.08,6.640628815,1.99654579,6393.479492,0.000008576,0.000008576,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",3,branch 5,0.01863248,,3.42,7.429862976,2.621900025,6348.092285,0.000004162,0.000004162,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",3,LowerTrunk,0.292884138,4.80E-06,13.11,,,,4.77E-05,4.77E-05,,44,-123,TempF,Pinaceae,EG,FW,2
+Abies grandis,conifer,"Oregon, USA",4,branch 1,0.02176864,1.27E-06,3.31,9.466494985,,7200.040808,0.00000475,0.00000475,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",4,branch 2,0.02001608,1.35E-06,3.02,,,,0.000003961,0.000003961,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",4,branch 3,0.018448,1.02E-06,3.03,,,,0.000004189,0.000004189,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",4,branch 4,0.01927816,5.38E-07,3.05,,,,0.000003642,0.000003642,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",4,branch 5,0.01411272,6.17E-07,2.77,10.56490215,2.689166492,3901.857419,0.000002969,0.000002969,,44,-123,TempF,Pinaceae,EG,FW,3
+Abies grandis,conifer,"Oregon, USA",4,LowerTrunk,0.3671152,1.97E-06,15.09,,3.974916555,2453.428278,0.000124511,0.000124511,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 1,0.1151625,9.50E-06,6.73,13.76849079,3.494038588,2982.154704,0.000013598,0.000013598,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 2,0.0917565,3.08E-06,4.94,12.00560379,3.362675463,3654.767253,0.000010467,0.000010467,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 3,0.04222542,6.22E-07,4.1,9.338267326,3.414464595,4811.044922,0.000005798,0.000005798,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 4,0.0912585,5.95E-06,6.14,12.4873848,3.909721755,3762.693115,0.000011554,0.000011554,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",1,branch 5,0.088146,2.70E-06,5.93,9.010138512,3.172781816,5248.109212,0.000010176,0.000010176,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",1,LowerTrunk,1.53977118,4.40E-04,22.185,15.9378624,4.626130346,2438.747477,0.000207009,0.000207009,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 1,0.1413075,4.10E-06,4.61,8.819135685,3.266839235,4360.267578,0.000008962,0.000008962,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 2,0.114291,5.58E-06,5.43,10.18157518,3.833566125,3999.029053,0.000010823,0.000010823,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 3,0.0900135,3.69E-06,5.25,9.612387701,3.810205285,4775.974121,0.000008423,0.000008423,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 4,0.039093,1.83E-06,3.41,9.683942292,3.338353441,4292.492676,0.000003904,0.000003904,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",2,branch 5,0.020169,6.55E-07,2.98,8.055858495,2.934318851,5804.500326,0.000001967,0.000001967,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",2,LowerTrunk,2.859516,8.34E-05,28.06,13.99236087,6.108476007,2767.148519,0.000253966,0.000253966,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 1,0.04731,1.15E-06,3.89,7.86457634,3.349414292,5795.918132,0.000004903,0.000004903,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 2,0.087648,3.51E-06,4.94,9.131476402,2.776566237,4577.801188,0.000007637,0.000007637,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 3,0.0917565,2.74E-06,5.18,9.304039955,2.829678035,4041.549479,0.000011001,0.000011001,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 4,0.049551,1.94E-06,4.08,9.179110527,2.79814378,4167.050374,0.00000719,0.00000719,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",3,branch 5,0.1114275,5.52E-06,5.28,10.09318924,3.596259539,4226.43457,0.000010441,0.000010441,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",3,LowerTrunk,0.964377,5.80E-05,16.49,10.34379101,3.220719389,3776.758219,0.000160992,0.000160992,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 1,0.052041,2.30E-06,3.95,9.125123978,3.065466369,4659.125732,0.000005431,0.000005431,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 2,0.052539,3.20E-06,3.92,10.01582432,3.498005565,3876.02832,0.000006573,0.000006573,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 3,0.020916,6.49E-07,2.33,8.749955177,2.972333398,4775.356934,0.00000288,0.00000288,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 4,0.070218,4.76E-06,4.46,9.715605736,3.279256228,3878.565186,0.000008499,0.000008499,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",4,branch 5,0.083913,4.65E-06,5.34,11.028862,4.083238073,3695.720703,0.000009388,0.000009388,,44,-123,TempF,Pinaceae,EG,FW,3
+Pseudotsuga menziesii,conifer,"Oregon, USA",4,LowerTrunk,1.976829675,9.10E-05,24.54,13.58358097,4.716791109,2773.804199,0.000200779,0.000200779,,44,-123,TempF,Pinaceae,EG,FW,3
+Tsuga heterophylla,conifer,"Oregon, USA",1,branch 1,0.09718632,1.66E-06,3.52,9.99832058,2.479996202,4346.1486,0.00000686,0.00000686,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",1,branch 2,0.10518,2.07E-06,3.54,10.5593605,2.646722087,4104.630778,0.000007408,0.000007408,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",1,branch 3,0.09718632,2.12E-06,3.42,9.78517437,2.713914998,4406.775391,0.000006837,0.000006837,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",1,branch 4,0.07299492,1.67E-06,3.32,10.07398891,2.601505172,4262.643636,0.000005926,0.000005926,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",1,branch 5,0.08077824,8.10E-07,3.83,9.449584007,2.473940271,4945.880534,0.000007086,0.000007086,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",1,LowerTrunk,5.526819834,3.73E-04,21.31,13.64709854,4.26990636,2844.800374,0.000267967,0.000267967,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",2,branch 1,0.11759124,1.89E-06,3.77,9.64378643,2.404175263,4424.20638,0.000010322,0.000010322,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",2,branch 2,0.05532468,6.33E-07,3.05,9.64378643,2.283213564,4649.836751,0.000004706,0.000004706,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",2,branch 3,0.13715472,1.37E-06,4.54,10.2774334,2.693349893,4488.964518,0.000011575,0.000011575,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",2,branch 4,0.13126464,1.77E-06,4.36,10.63790989,2.837886461,4564.203776,0.000010803,0.000010803,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",2,branch 5,0.073626,3.14E-07,3.54,10.35319996,2.704678212,4673.423665,0.000007027,0.000007027,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",2,LowerTrunk,2.30680776,3.32E-05,18.44,12.23783493,3.452740687,3594.525472,0.000194006,0.000194006,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",3,branch 1,0.05195892,9.77E-07,2.98,9.130194664,2.269378893,5220.98291,0.000004205,0.000004205,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",3,branch 2,0.06058368,1.25E-06,3.07,9.422031403,2.803866723,4901.104818,0.000004751,0.000004751,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",3,branch 3,0.12158808,2.95E-06,5.13,10.06651402,2.912206517,4635.928223,0.000009345,0.000009345,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",3,branch 4,0.07930572,1.38E-06,3.83,8.198689461,2.156127272,5823.897786,0.000008697,0.000008697,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",3,branch 5,0.13442004,3.13E-06,4.31,9.820638657,3.01726851,4678.442383,0.000010994,0.000010994,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",3,LowerTrunk,1.9479336,1.90E-04,20.04,12.2659502,3.885080116,3539.00765,0.00021987,0.00021987,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",4,branch 1,0.10433856,3.54E-06,4.08,9.548862457,#REF!,5144.972656,0.000008816,0.000008816,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",4,branch 2,0.06773592,8.89E-07,3.15,8.138705254,2.060984286,6198.417318,0.000006378,0.000006378,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",4,branch 3,0.11653944,4.15E-06,4.87,10.54022598,2.91285125,4324.537272,0.000009948,0.000009948,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",4,branch 4,0.09950028,2.94E-06,3.84,8.351126671,2.58842147,5736.534993,0.000008652,0.000008652,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",4,branch 5,0.11843268,3.31E-06,4.04,10.26723766,2.856227345,4698.429688,0.000009637,0.000009637,,44,-123,TempF,Pinaceae,EG,FW,0
+Tsuga heterophylla,conifer,"Oregon, USA",4,LowerTrunk,2.96544492,3.00E-04,21.36,13.98531055,3.871235418,2744.494792,0.000297806,0.000297806,,44,-123,TempF,Pinaceae,EG,FW,0
+Thuja plicata,conifer,"Oregon, USA",1,branch 1,0.05642,2.84E-06,4.59,12.48046112,4.215462004,3821.912598,0.000009624,0.000009624,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",1,branch 2,0.03731,1.87E-06,3.82,11.60386658,4.389913034,4197.6014,0.000006816,0.000006816,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",1,branch 3,0.032123,1.46E-06,4.12,11.27177429,3.207996224,4186.045736,0.000006698,0.000006698,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",1,branch 4,0.033033,6.08E-07,3.51,10.55531502,3.195497683,4479.984212,0.0000058,0.0000058,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",1,branch 5,0.030394,1.15E-06,3.89,10.41387367,3.330405723,4463.24528,0.000006105,0.000006105,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",1,LowerTrunk,1.182363,8.96E-05,20.99,13.8404808,5.38467833,2801.608724,0.000241857,0.000241857,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",2,branch 1,0.035308,1.86E-06,3.39,10.62611866,3.247944669,4537.273926,0.000005469,0.000005469,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",2,branch 2,0.040222,1.13E-06,3.8,10.29519749,2.49894677,4430.345378,0.000005977,0.000005977,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",2,branch 3,0.035308,1.57E-06,3.5,10.42856407,3.391986619,4356.878418,0.000007291,0.000007291,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",2,branch 4,0.015925,1.96E-07,2.65,10.05646038,2.264471336,4474.450033,0.000003401,0.000003401,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",2,branch 5,0.01638,3.00E-07,2.74,9.948150635,2.379331774,4731.964193,0.000003446,0.000003446,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",2,LowerTrunk,0.897078,3.79E-05,17.62,14.01625824,4.487136495,2933.245199,0.000129321,0.000129321,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",3,branch 1,0.017563,1.42E-06,3.48,10.50182915,2.810865799,4443.197754,0.000005251,0.000005251,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",3,branch 2,0.019292,6.21E-07,3.1,9.557982445,2.667888277,4622.322103,0.000003416,0.000003416,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",3,branch 3,0.031577,1.24E-06,3.35,11.02896023,2.442992454,4296.053223,0.000004905,0.000004905,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",3,branch 4,0.020839,7.32E-07,3.05,10.05321884,2.395364223,4386.132813,0.000003537,0.000003537,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",3,branch 5,0.036127,1.45E-06,3.87,12.03858471,3.095251961,3803.929688,0.000006668,0.000006668,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",3,LowerTrunk,1.199562,4.85E-05,18.36,13.35854626,4.783038733,3037.637695,0.000264776,0.000264776,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",4,branch 1,0.012467,5.75E-08,2.19,9.543291092,2.860712682,4762.149902,0.000001794,0.000001794,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",4,branch 2,0.018291,3.51E-07,2.86,9.759064674,2.344134092,4697.484863,0.000003198,0.000003198,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",4,branch 3,0.015743,6.45E-08,3.05,9.400000572,2.420495156,4900.602214,0.000003192,0.000003192,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",4,branch 4,0.011557,3.06E-08,2.08,8.307425499,2.026690458,5364.099609,0.000001961,0.000001961,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",4,branch 5,0.02184,2.54E-07,2.66,10.34713268,3.111795664,4787.13265,0.000003981,0.000003981,,44,-123,TempF,Cupressaceae,EG,FW,2
+Thuja plicata,conifer,"Oregon, USA",4,LowerTrunk,0.677495,1.81E-05,16.13,12.69390392,4.276401931,3107.678874,0.000161222,0.000161222,,44,-123,TempF,Cupressaceae,EG,FW,2
+Pinus ponderosa,conifer,"Oregon, USA",1,branch 1,0.00951352,9.80E-07,2.38,5.557889462,1.76046154,6177.768066,0.000003072,0.000003072,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",1,branch 2,0.01885248,1.77E-07,3.44,5.305553913,1.761308212,6821.934326,0.000004,0.000004,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",1,branch 3,0.00445128,2.56E-08,2.32,5.042213917,1.693192285,6345.740723,0.00000159,0.00000159,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",1,branch 4,0.01160824,3.13E-07,2.6,4.966890812,1.707039473,6667.765137,0.000003375,0.000003375,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",1,branch 5,0.02120904,4.06E-07,3.66,5.758826256,1.824736041,6335.431152,0.000004791,0.000004791,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",1,LowerTrunk,0.20519528,2.80E-05,15.06,7.249741554,2.433612743,4317.103027,8.53E-05,8.53E-05,0.62,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",1,upper trunk,0.20519528,3.92E-05,13.96,,,,0.000107803,0.000107803,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",2,branch 1,0.00898984,5.73E-07,2.89,5.804777622,1.774876752,6272.439453,0.000002464,0.000002464,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",2,branch 2,0.0034912,1.66E-07,2.1,5.750844479,1.492242496,7144.770996,0.000000891,0.000000891,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",2,branch 3,0.01457576,9.46E-07,3.12,5.922261238,1.88244291,6732.501465,0.000003697,0.000003697,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",2,branch 4,0.00968808,5.28E-07,3.5,6.166546345,1.81413349,5831.025879,0.000001991,0.000001991,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",2,branch 5,,,3.05,,,,,,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",2,upper trunk,0.1204464,1.43E-05,11.63,6.486994267,2.102349123,8816.066744,4.49E-05,4.49E-05,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",2,LowerTrunk,0.1204464,1.80E-05,9.24,6.338982582,2.138008096,5157.412598,4.83E-05,4.83E-05,0.598,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",3,branch 1,0.01248104,6.36E-07,4.07,5.756536484,1.324945903,7138.999023,0.000002571,0.000002571,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",3,branch 2,0.02888968,1.04E-06,4.99,7.276338577,1.883950787,4913.497559,0.000005452,0.000005452,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",3,branch 3,0.01187008,6.01E-07,3.52,6.123436451,1.573682693,7494.357422,0.000002741,0.000002741,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",3,branch 4,0.00096008,,2.3,4.80693531,1.162604581,11126.39453,0.000000326,0.000000326,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",3,branch 5,0.00453856,5.37E-08,2.46,5.749274731,1.714067079,8740.754883,0.000000948,0.000000948,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",3,upper trunk,0.21409784,1.90E-05,10.55,7.43363905,2.317438358,4669.624023,5.05E-05,5.05E-05,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",3,LowerTrunk,0.21409784,1.50E-05,12.82,7.420275688,1.888772194,4627.538574,6.69E-05,6.69E-05,0.693,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",4,branch 1,0.01204464,1.02E-06,3.54,,,,0.000003148,0.000003148,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",4,branch 2,0.00864072,4.71E-07,3.31,7.708974361,1.605935965,7949.963379,0.000002404,0.000002404,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",4,branch 3,0.01448848,9.27E-07,3.2,8.354125023,1.833692408,7307.715332,0.000004299,0.000004299,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",4,branch 4,0.00200744,3.04E-07,2.89,8.339174271,2.212270093,8056.834961,0.000001331,0.000001331,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",4,branch 5,0.01073544,5.68E-07,2.89,8.442493439,1.784317266,7032.732422,0.000002285,0.000002285,,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",4,LowerTrunk,0.1675776,2.99E-05,12.04,9.444449425,2.655900975,4988.367676,5.49E-05,5.49E-05,0.64,44,-123,TempF,Pinaceae,EG,FW,3
+Pinus ponderosa,conifer,"Oregon, USA",4,upper trunk,0.1675776,3.04E-05,11.37,,,,7.46E-05,7.46E-05,,44,-123,TempF,Pinaceae,EG,FW,3
+Cordia alliodora,diffuse-porous,Panama,1,branch1,0.049618,9.18E-06,3.35,32.19412613,8.956408292,157.9841614,0.000004054,0.000004054,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,1,branch2,0.018676,8.05E-06,2.8,32.11880875,8.822037139,201.2911174,2.66E-06,2.66E-06,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,1,branch3,0.018619,9.99E-06,2.85,32.29278564,7.664169564,134.6534576,0.000003775,0.000003775,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,1,branch4,0.053621,6.29E-06,2.8,32.30374908,7.474312963,182.2160695,0.00000314,0.00000314,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,1,LowerTrunk,0.140534,8.00E-05,7.25,44.42712402,8.845900094,53.36962128,0.000026079,0.000026079,0.5,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,2,branch8,0.038977,,3.15,15.88559055,4.699810267,7.33E+02,4.07E-06,4.07E-06,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,2,branch13,0.012792,,2.45,15.62445354,4.557048799,9.51E+02,2.06E-06,2.06E-06,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,2,branch19,0.047032,,2.6,15.41776276,4.75757969,7.41E+02,2.45E-06,2.45E-06,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,2,branch27,0.270296,,6.5,26.30690956,7.108092882,1.60E+02,2.04E-05,2.04E-05,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,2,branch28,0.191389,,3.9,21.04706383,7.952207701,3.19E+02,6.97E-06,6.97E-06,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,2,LowerTrunk,1.579166,6.30E-04,23.85,58.06302046,5.838424457,18.51080212,0.000339564,0.000339564,2.5,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,3,branch1,0.068497,8.67E-06,3.75,33.02206421,8.946352921,1.38E+02,4.60E-06,4.60E-06,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,3,branch3,0.091837,3.74E-05,4.05,34.85893631,8.977092332,9.91E+01,6.96E-06,6.96E-06,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,3,branch6,,4.85E-05,5.01,42.94399643,12.89330163,7.93E+01,1.07E-05,1.07E-05,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,3,branch9,,8.58E-06,3.28,35.50799942,7.362024122,1.46E+02,2.94E-06,2.94E-06,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,3,branch13,0.064229,1.42E-05,3.7,38.42285538,8.758409244,1.01E+02,4.11E-06,4.11E-06,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,3,LowerTrunk,0.112607,2.12E-04,15.6,50.38908768,9.345086549,2.54E+01,0.000123583,0.000123583,1.58,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,4,branch1,0.022732,,2.225,19.23792458,4.25786009,313.4278717,0.000000836,0.000000836,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,4,branch2,0.018044,,1.8,20.63655663,4.911262137,349.7624207,0.000000751,0.000000751,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,4,branch3,0.022873,,2.6,22.21936989,5.628744815,288.1901703,0.000000871,0.000000871,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,4,branch4,0.032882,7.94E-07,2.4,25.1322155,6.216684905,256.838932,0.000001308,0.000001308,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,4,branch5,0.040333,3.13E-06,2.65,24.22311592,7.578295682,226.5741119,0.000002018,0.000002018,,9,-80,TropSF,Boraginaceae,EA,FW,3
+Cordia alliodora,diffuse-porous,Panama,4,LowerTrunk,0.273231,2.00E-05,10.45,33.19989777,8.882034936,35.94841957,4.92E-05,4.92E-05,0.803,9,-80,TropSF,Boraginaceae,EA,FW,3
+Anacardium excelsum,diffuse-porous,Panama,1,LowerTrunk,1.457878,5.19E-04,24.6,52.06820102,17.72763844,33.05644099,0.000431439,0.000431439,1.66,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,1,branch3,,6.72E-05,7.53,52.35143764,12.63685144,41.36705462,0.000035569,0.000035569,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,1,branch4,0.128989,1.66E-05,6.15,49.44526947,13.55144329,38.35977999,0.000018007,0.000018007,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,1,branch5,0.387867,1.32E-04,13.32,51.69443498,17.75353455,28.70768611,8.05E-05,8.05E-05,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,1,branch6,0.301495,6.19E-05,7.91,59.98194856,20.18991007,29.19410133,0.00003228,0.00003228,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,1,branch7,0.442729,1.28E-04,11.8,56.50014864,22.32652169,35.33645185,0.00005355,0.00005355,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,2,LowerTrunk,0.963639,4.62E-04,21.15,62.03653422,17.83347472,15.32606459,0.000403833,0.000403833,2.51,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,2,branch1,0.029879,1.50E-05,6.66,51.72848977,19.74775456,59.89408366,0.00001364,0.00001364,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,2,branch3,0.157062,2.11E-05,7.55,49.1100301,15.61018339,47.0188357,0.000023044,0.000023044,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,2,branch7,0.085611,1.07E-05,5.6,44.40562685,17.18730959,70.90304456,0.000006896,0.000006896,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,2,branch9,0.020621,1.44E-06,4.4,35.14470436,13.50910165,113.9712404,0.000002857,0.000002857,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,2,branch12,0.186454,1.03E-04,7.6,51.00468795,19.77609279,35.74408849,0.000032393,0.000032393,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,3,LowerTrunk,0.398976,7.65E-05,18.5,47.2035114,14.27319572,23.45234998,0.00026282,0.00026282,1.3,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,3,branch1,0.021375,2.32E-06,4.4,43.11735897,15.38496559,58.84240723,0.000009069,0.000009069,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,3,branch2,0.177692,2.13E-05,6.69,44.73758342,18.22417674,57.01523209,0.000015508,0.000015508,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,3,branch3,0.199909,5.11E-05,7.65,54.84229169,18.81563275,35.88438988,0.000022099,0.000022099,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,4,LowerTrunk,0.710482,6.90E-05,20.05,50.74351872,15.73689383,20.59965324,0.000312431,0.000312431,1.52,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,4,branch2,0.057463,1.07E-06,5.15,33.57993256,10.57229483,88.77853902,0.000006277,0.000006277,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,4,branch5,0.120051,1.28E-05,6.6,49.45385157,13.14399669,42.84774653,0.000011767,0.000011767,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,4,branch6,0.053076,3.93E-06,4.66,33.38771304,12.31827952,87.51953506,0.000005194,0.000005194,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Anacardium excelsum,diffuse-porous,Panama,4,branch7,0.398651,3.39E-05,9.15,43.65397187,13.17122742,53.20725886,0.000033837,0.000033837,,9,-80,TropSF,Anacardaceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,1,branch2,0.044199,7.50E-05,13.35,55.12891006,18.91634191,44.80892944,0.000115063,0.000115063,,9,-80,TropSF,Moraceae,EA,FW,3
+Ficus insipida,diffuse-porous,Panama,1,branch3,0.037803,1.58E-05,8.34,40.82592392,10.86669168,121.367185,4.30E-05,4.30E-05,,9,-80,TropSF,Moraceae,EA,FW,3
+Ficus insipida,diffuse-porous,Panama,1,branch4,0.347257,9.70E-06,6.65,44.95043564,12.07736339,37.74458059,2.84E-05,2.84E-05,,9,-80,TropSF,Moraceae,EA,FW,3
+Ficus insipida,diffuse-porous,Panama,1,branch6,0.466632,5.42E-05,10.15,56.10821533,18.41322938,100.7977295,7.34E-05,7.34E-05,,9,-80,TropSF,Moraceae,EA,FW,3
+Ficus insipida,diffuse-porous,Panama,1,branch7,0.328044,1.08E-04,11.8,61.56651688,19.13930566,23.29577192,0.000103633,0.000103633,,9,-80,TropSF,Moraceae,EA,FW,3
+Ficus insipida,diffuse-porous,Panama,1,LowerTrunk,2.144678,3.10E-03,25.4,97.49494171,21.13472825,11.61858273,0.000462529,0.000462529,3.4,9,-80,TropSF,Moraceae,EA,FW,3
+Ficus insipida,diffuse-porous,Panama,2,branch1,0.468434,8.28E-05,7.2,66.11925507,20.94974343,34.20564651,4.59E-05,4.59E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,2,branch2,0.3119,2.13E-04,8.25,75.27747345,24.21219074,28.49667295,8.57E-05,8.57E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,2,branch3,0.193223,6.69E-06,11.1,77.56721497,21.39013068,26.94177691,7.21E-05,7.21E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,2,branch4,,9.61E-06,11.1,52.25551987,14.70737558,57.99364217,3.05E-05,3.05E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,2,LowerTrunk,1.130892,2.70E-03,24.95,99.19521332,29.61550209,10.34566307,0.000409901,0.000409901,4.1,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,3,branch1,0.416678,3.45E-05,10.8,51.60480118,11.34194089,21.15248235,6.22E-05,6.22E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,3,branch2,0.294147,7.65E-05,9.65,57.5623436,16.69890855,36.63314056,6.51E-05,6.51E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,3,branch3,0.363667,3.41E-04,13.85,71.82643127,18.68151609,20.0312322,0.000140478,0.000140478,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,3,branch4,0.256976,1.35E-04,11,61.90270615,16.72473463,22.20804342,8.49E-05,8.49E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,3,branch5,0.290445,1.17E-04,10.1,64.94326019,19.2395655,34.47509384,6.76E-05,6.76E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,3,LowerTrunk,1.621913,1.46E-03,24.98,85.1010437,27.05171761,11.49803575,0.000428435,0.000428435,2.48,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,5,branch1,0.128439,5.39E-05,6.69,57.23403931,15.38093193,28.72247171,3.52E-05,3.52E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,5,branch2,0.151532,1.40E-06,8.64,44.68762207,13.93534492,121.0267995,4.61E-05,4.61E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,5,branch4,0.316151,1.45E-06,9,53.26534653,11.64202901,70.17460505,5.24E-05,5.24E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,5,branch5,0.129905,2.45E-06,8.9,56.817276,10.52538349,49.56200918,5.88E-05,5.88E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,5,branch6,0.100397,2.66E-06,8.95,42.38599014,10.87577299,104.3396428,5.29E-05,5.29E-05,,9,-80,TropSF,Moraceae,EA,FW,2
+Ficus insipida,diffuse-porous,Panama,5,LowerTrunk,0.937315,2.53E-03,25,103.303093,23.5189984,6.497993787,0.000450385,0.000450385,4.5,9,-80,TropSF,Moraceae,EA,FW,2
+Luehea seemannii,diffuse-porous,Panama,1,branch1,0.09232,,5.14,41.74050014,12.43886747,51.80251694,0.000008805,0.000008805,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,1,branch2,0.184511,1.27E-06,7.32,56.69347763,13.86097878,30.68483734,1.59E-05,1.59E-05,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,1, branch4,0.028525,,5.45,25.67823601,7.51913245,280.2609253,0.000001621,0.000001621,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,1,branch5,0.247981,9.26E-06,7.24,52.17113876,17.43790438,36.89820862,0.000016207,0.000016207,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,1,LowerTrunk,0.568009,3.96E-04,27.5,74.28087616,22.45057822,13.59684086,0.00059219,0.00059219,4.05,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,2,branch1,0.042208,,2.9,23.18579292,8.176237432,327.6767578,1.27E-06,1.27E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,2,branch3,0.330939,3.08E-06,7.45,52.1375351,18.77069853,53.16479111,0.000013416,0.000013416,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,2,branch4,0.168962,3.40E-06,4,37.20035934,14.46890425,93.45168304,0.000006097,0.000006097,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,2,branch5,0.057058,,3.95,26.22415924,7.684945122,199.0588074,2.07E-06,2.07E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,2,branch7,0.010587,,4.5,31.9105072,10.20698083,163.4876862,3.14E-06,3.14E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,2,branch9,0.008347,2.06E-06,5.03,40.95108795,13.13606503,104.5006638,3.99E-06,3.99E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,2,LowerTrunk,0.820635,2.49E-04,23.69,48.58458328,15.54705711,16.35024071,0.000428392,0.000428392,1.97,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,3,branch2,0.040171,,4.3,28.13359833,11.32563729,131.5288391,2.33E-06,2.33E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,3,branch8,0.071618,,5.2,27.92830467,14.31943091,191.4298553,3.30E-06,3.30E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,3,branch11,0.021232,,3.1,22.02181816,8.446723087,327.6416931,1.01E-06,1.01E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,3,branch10,0.026111,,3.4,25.75024986,9.871867272,62.37763214,1.57E-06,1.57E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,3,LowerTrunk,0.269615,5.41E-05,15.95,40.33414841,12.4418177,32.85238647,0.000199022,0.000199022,1.84,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,4,branch2,0.024596,,,24.04541016,6.588750726,304.3817444,1.60E-06,1.60E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,4,branch3,0.025384,,,23.50260544,8.027826389,345.1522217,2.27E-06,2.27E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,4,branch4,0.107599,1.86E-06,6.42,24.65255356,8.128292019,344.6758423,5.27E-06,5.27E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,4,branch7,0.138894,1.19E-06,6.35,28.92542839,7.585034238,140.5739899,0.00000661,0.00000661,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,4,branch12,0.078415,2.03E-06,5.08,28.82957649,10.0957823,256.9041748,3.95E-06,3.95E-06,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,4,branch14,0.196593,1.97E-05,7.33,40.66956711,13.73621301,85.46722412,0.00001161,0.00001161,,9,-80,TropSF,Malvaceae,EA,FW,3
+Luehea seemannii,diffuse-porous,Panama,4,LowerTrunk,0.835706,4.71E-04,24.9,41.47409439,12.70013479,19.55846977,0.000484685,0.000484685,2.56,9,-80,TropSF,Malvaceae,EA,FW,3
