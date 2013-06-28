@@ -1,0 +1,46 @@
+Questions about the study:  Sterck0000 
+
+Please look at the attached html report  Sterck0000.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER: add, before Centre for Ecosystem Studies, Forest Ecology and Forest Management Group
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: correct, unpublished results.
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: there are 15 records (corresponding with 15 trees), not 33.
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: Ede Bos (Ede,Netherlands) N 52 3 11.3, E 5 40 42, TempF (closed 30 m tall beech forest (Fagus sylvatica))
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: not yet on map, but probably because the answer to question 4 were still missing.
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: MAT = 9.2 C, MAP 782 mm/yr, growing condition: I think this should be PM for the five tall trees, but we never call our forest stand plantations, but they were planten in monoculture and managed. (maybe check Remko). The ten smaller trees are natural regeneration, FW? Status: 3 for 5 big trees, and 0 for saplings.
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: Fagus sylvatica, Fagaceae, DA
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: I have tried to complete this. Nr 10 seems not relevant for this study, so maybe remove.
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: for some surface area plots, the data are clear outliers, but apparantly because similar combinations of traits were not available for studies with large trees (and large surface areas....)?
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: yes
+
+11. Could you please specify the species in this dataset?
+ANSWER: Fagus sylvatica, Fagaceae, DA

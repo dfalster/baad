@@ -1,0 +1,22 @@
+Questions about the study:  Kohyama1994
+
+1. Could you please categorize the species from your study according to our categories for plant functional type (pft) and family? pft categories: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm 
+
+2. Could you also classify your plant stands (or species) according to our status categories? status categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed) 
+
+                 species  family     pft
+1       Cleyera japonica missing missing
+2  Rhododendron tashiroi missing missing
+3      Camellia sasanqua missing missing
+4       Camellia japonia missing missing
+5         Eurya japonica missing missing
+6       Symplocos glauca missing missing
+7   Symplocos purnifolia missing missing
+8      Symplocos tanakae missing missing
+9        Podocarpus nagi missing missing
+10   Distylium racemosum missing missing
+11    Illicium anisatsum missing missing
+12      Myrsine seguinii missing missing
+13      Litsea acuminata missing missing
+14   Neolitsea aciculata missing missing
+

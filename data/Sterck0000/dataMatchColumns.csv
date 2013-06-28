@@ -7,7 +7,7 @@
 "LMA (g.cm-2)",NA,"g.cm2","ma.ilf",NA
 "WD (g.cm3)",NA,"g.cm3","r.st",NA
 "Individual",NA,NA,NA,NA
-"Type (1=tree; 2=sapling shade; 3=sapling light)",NA,NA,NA,NA
+"Type (1=tree; 2=sapling shade; 3=sapling light)",NA,NA,status,NA
 "# shoots",NA,NA,NA,NA
 "Current-year wood biomass (g.yr-1)",NA,NA,NA,NA
 "Leaf biomass (g.yr-1)",NA,NA,NA,NA

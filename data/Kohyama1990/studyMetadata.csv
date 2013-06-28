@@ -1,10 +1,10 @@
-Topic, Description
-Sampling strategy, "Please a brief description of the sampling strategy used in this paper (up to 4 sentences)"
-Leaf area, "Please provide ..."
-Stem cross sectional area,"Please provide ..."
-Height,"Please provide ..."
-Crown area,"Please provide ..."
-Biomass,"Please provide ..."
-traits,"Please provide ..."
-Growth environment,"Please provide ..."
-Other variables,"Please provide ..."
+Topic,Description
+Sampling strategy,"Abundant/representing species with high sapling(seedling) density under closed canopy were selected, based on the permanent plot censuses in primary forest. Chosen individuals were apparently seed origin and without obvious sign of past stem breakage."
+Leaf area,"The outline of the entire leaf(let)-brade (excluding petiole/rachis) was traced by thin tracing paper. The traced  leaf brades were cut, weighed, and converted to area from unit-area weight of used paper."
+Stem cross sectional area,"Two perpendicular diameters were measured for the main stem at 1/10 of top height using a calliper, and cross-section area was obtained as that of ellipsoid with two diameters."
+Height,"the vertical distance from the base on soil surface to the highest leaf, measured by a pole or a convex steal measure tape."
+Crown area,"Two horizontal widths of crowns were obtained with a convex steel measure tape. The maximum width was obtained first, and the other was the maximum one along the perpendicular angle to the first one. Crown projection area was calculated from these two widths as an ellipsoid area."
+Biomass,"Entire samples were put into electric oven at 80C over a couple of days to yield oven-dry weight, measured with an electric balance."
+traits, 
+Growth environment,"All samples were from fully closed-canopy stands, or they were not grown under canopy gaps. Tropical foothill rain forest."
+Other variables,
