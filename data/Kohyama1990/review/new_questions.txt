@@ -1,0 +1,17 @@
+Questions about the study:  Kohyama1990 
+
+1. Could you please categorize the species from your study according to our categories for plant functional type (pft) and family? pft categories: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm 
+
+2. Could you also classify your plant stands (or species) according to our status categories? status categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed) 
+
+                   species  family     pft
+1      Diospyrus sumatrana missing missing
+2      Gonystylus forbesii missing missing
+3           Grewia florida missing missing
+4     Hopea dryobalanoides missing missing
+5      Mastixia trichotoma missing missing
+6 Nephelium juglandifolium missing missing
+7 Cleistanthus glandulosus missing missing
+8         Shorea sumatrana missing missing
+9      Swintonia schwenkii missing missing
+
