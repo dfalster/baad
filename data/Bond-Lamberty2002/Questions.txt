@@ -1,1 +1,0 @@
-As you can see, some of the plots involving height contain outliers for your dataset. The height column in the data you sent seems to have a mix of units (cm, m). Could you please review the data and send us a copy with a single unit?

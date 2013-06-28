@@ -6,14 +6,9 @@
 "TotFol","m3","g","m.lf",NA
 "Sapwood","q","cm2","a.ssbh",NA
 "Root","m4","g","m.rc",NA
-"Site",NA,NA,status,NA
-"longitude",NA,NA,NA,NA
-"latitude",NA,NA,NA,NA
-"BurnYear",NA,NA,NA,NA
-"HarvestYear",NA,NA,NA,NA
-"Edaphic",NA,NA,NA,NA
+"Long",NA,NA,longitude,NA
+"Lat",NA,NA,latitude,NA
 "Species",NA,NA,"species",NA
-"Number",NA,NA,NA,NA
 "D10",NA,NA,NA,NA
 "DWT",NA,NA,NA,NA
 "TotWood",NA,NA,NA,NA
