@@ -1,6 +1,5 @@
 manipulate <- function(raw) {
- 
-
+   
   raw
 }
 
