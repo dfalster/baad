@@ -1,2 +1,14 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-NA,NA,"species","????????","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+,,species,Fagus sylvatica,DBarneche[from_author_reply]
+,,family,Fagaceae,DBarneche[from_author_reply]
+,,pft,DA,DBarneche[from_author_reply]
+,,location,"Ede Bos (Ede, Netherlands)",DBarneche[from_author_reply]
+,,latitude,52.05314,DBarneche[from_author_reply]
+,,longitude,5.678333,DBarneche[from_author_reply]
+,,vegetation,TempF,DBarneche[from_author_reply]
+status,1,growingCondition,PM,DBarneche[from_author_reply]
+status,2,growingCondition,FW,DBarneche[from_author_reply]
+status,3,growingCondition,FW,DBarneche[from_author_reply]
+status,1,status,3,DBarneche[from_author_reply]
+status,2,status,0,DBarneche[from_author_reply]
+status,3,status,0,DBarneche[from_author_reply]
