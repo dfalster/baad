@@ -1,5 +1,7 @@
 library(knitr, quietly=TRUE)
-library(multicore, quietly=TRUE)
+
+if("multicore" %in% .packages(TRUE))
+  library(multicore, quietly=TRUE)
 
 
 dir.Emails    <-  "output/email"
