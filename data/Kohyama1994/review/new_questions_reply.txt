@@ -1,0 +1,24 @@
+Questions about the study:  Kohyama1994
+
+1. Could you please categorize the species from your study according to our categories for plant functional type (pft) and family? pft categories: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm 
+
+2. Could you also classify your plant stands (or species) according to our status categories? status categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed) 
+
+RE: sampled seedlings are all from closed canopy stands so that I put category 0; their maximum stature is also shown.
+
+                 species  family     pft
+1       Cleyera japonica Theaceae EA 0. subcanopy
+2  Rhododendron tashiroi Ericaceae EA 0, understory
+3      Camellia sasanqua Theaceae EA 0, subcanpy
+4       Camellia japonia Theaceae EA 0, subcanpy
+5         Eurya japonica Theaceae EA 0, understorey
+6       Symplocos glauca Symplocaceae EA 0, subcanopy
+7   Symplocos purnifolia Symplocaceae EA 0, canopy
+8      Symplocos tanakae Symplocaceae EA 0, subcanopy
+9        Podocarpus nagi Podocarpaceae EG 0, subcanpy
+10   Distylium racemosum Hamameridaceae EA 0, canpy
+11    Illicium anisatsum Illicid\aceae EA 0, canopy
+12      Myrsine seguinii Myrsinaceae EA 0, understorey
+13      Litsea acuminata Lauraceae EA 0, canopy
+14   Neolitsea aciculata missing missing
+

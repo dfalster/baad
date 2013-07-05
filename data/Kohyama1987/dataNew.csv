@@ -1,20 +1,62 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-"species","Cs","species","Camellia sasanqua","from paper[D Barneche]"
-"species","Cj","species","Camellia japonia","from paper[D Barneche]"
-"species","Na","species","Neolitsea aciculata","from paper[D Barneche]"
-"species","Sg","species","Symplocos glauca","from paper[D Barneche]"
-"species","Pn","species","Podocarpus nagi","from paper[D Barneche]"
-"species","Ia","species","Illicium anisatsum","from paper[D Barneche]"
-"species","Dr","species","Distylium racemosum","from paper[D Barneche]"
-"species","Ms","species","Myrsine seguinii","from paper[D Barneche]"
-"species","St","species","Symplocos tanakae","from paper[D Barneche]"
-"species","Sp","species","Symplocos purnifolia","from paper[D Barneche]"
-"species","Rt","species","Rhododendron tashiroi","from paper[D Barneche]"
-"species","La","species","Litsea acuminata","from paper[D Barneche]"
-"species","Cl","species","Cleyera japonica","from paper[D Barneche]"
-"species","Ej","species","Eurya japonica","from paper[D Barneche]"
-"","","latitude","30.31667","from paper[D Barneche]"
-"","","longitude","130.4333","from paper[D Barneche]"
-"","","location","Ohkou River, Yakushima Island, Kyushu, Japan","from paper[D Barneche]"
-"","","growingCondition","FW","from paper[D Barneche]"
-"","","vegetation","TempRF","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+species,Cs,pft,EA,DBarneche[from_author_reply]
+species,Cj,pft,EA,DBarneche[from_author_reply]
+species,Na,pft,EA,DBarneche[from_author_reply]
+species,Sg,pft,EA,DBarneche[from_author_reply]
+species,Pn,pft,EG,DBarneche[from_author_reply]
+species,Ia,pft,EA,DBarneche[from_author_reply]
+species,Dr,pft,EA,DBarneche[from_author_reply]
+species,Ms,pft,EA,DBarneche[from_author_reply]
+species,St,pft,EA,DBarneche[from_author_reply]
+species,Sp,pft,EA,DBarneche[from_author_reply]
+species,Rt,pft,EA,DBarneche[from_author_reply]
+species,La,pft,EA,DBarneche[from_author_reply]
+species,Cl,pft,EA,DBarneche[from_author_reply]
+species,Ej,pft,EA,DBarneche[from_author_reply]
+species,Cs,family,Theaceae,DBarneche[from_author_reply]
+species,Cj,family,Theaceae,DBarneche[from_author_reply]
+species,Na,family,Lauraceae,DBarneche[from_author_reply]
+species,Sg,family,Symplocaceae,DBarneche[from_author_reply]
+species,Pn,family,Podocarpaceae,DBarneche[from_author_reply]
+species,Ia,family,Illicidaceae,DBarneche[from_author_reply]
+species,Dr,family,Hamamelidaceae,DBarneche[from_author_reply]
+species,Ms,family,Myrsinaceae,DBarneche[from_author_reply]
+species,St,family,Symplocaceae,DBarneche[from_author_reply]
+species,Sp,family,Symplocaceae,DBarneche[from_author_reply]
+species,Rt,family,Ericaceae,DBarneche[from_author_reply]
+species,La,family,Lauraceae,DBarneche[from_author_reply]
+species,Cl,family,Theaceae,DBarneche[from_author_reply]
+species,Ej,family,Theaceae,DBarneche[from_author_reply]
+species,Cs,status,0,DBarneche[from_author_reply]
+species,Cj,status,0,DBarneche[from_author_reply]
+species,Na,status,0,DBarneche[from_author_reply]
+species,Sg,status,0,DBarneche[from_author_reply]
+species,Pn,status,0,DBarneche[from_author_reply]
+species,Ia,status,0,DBarneche[from_author_reply]
+species,Dr,status,0,DBarneche[from_author_reply]
+species,Ms,status,0,DBarneche[from_author_reply]
+species,St,status,0,DBarneche[from_author_reply]
+species,Sp,status,0,DBarneche[from_author_reply]
+species,Rt,status,0,DBarneche[from_author_reply]
+species,La,status,0,DBarneche[from_author_reply]
+species,Cl,status,0,DBarneche[from_author_reply]
+species,Ej,status,0,DBarneche[from_author_reply]
+species,Cs,species,Camellia sasanqua,from paper[D Barneche]
+species,Cj,species,Camellia japonia,from paper[D Barneche]
+species,Na,species,Neolitsea aciculata,from paper[D Barneche]
+species,Sg,species,Symplocos glauca,from paper[D Barneche]
+species,Pn,species,Podocarpus nagi,from paper[D Barneche]
+species,Ia,species,Illicium anisatsum,from paper[D Barneche]
+species,Dr,species,Distylium racemosum,from paper[D Barneche]
+species,Ms,species,Myrsine seguinii,from paper[D Barneche]
+species,St,species,Symplocos tanakae,from paper[D Barneche]
+species,Sp,species,Symplocos purnifolia,from paper[D Barneche]
+species,Rt,species,Rhododendron tashiroi,from paper[D Barneche]
+species,La,species,Litsea acuminata,from paper[D Barneche]
+species,Cl,species,Cleyera japonica,from paper[D Barneche]
+species,Ej,species,Eurya japonica,from paper[D Barneche]
+,,latitude,30.31667,from paper[D Barneche]
+,,longitude,130.4333,from paper[D Barneche]
+,,location,"Ohkou River, Yakushima Island, Kyushu, Japan",from paper[D Barneche]
+,,growingCondition,FW,from paper[D Barneche]
+,,vegetation,TempRF,from paper[D Barneche]
