@@ -1,2 +1,9 @@
 "lookupVariable","lookupValue","newVariable","newValue","source"
-,,vegetation, NA, Daniel Falster - no vegetation type for plantations
+location,MG14U,location,Mogi Guacu,DBarneche[from_paper]
+location,NS24U,location,Mogi Guacu,DBarneche[from_paper]
+location,BR171,location,Brotas,DBarneche[from_paper]
+location,BR183U,location,Brotas,DBarneche[from_paper]
+location,BR89,location,Brotas,DBarneche[from_paper]
+location,BR178U,location,Brotas,DBarneche[from_paper]
+location,BR43E,location,Brotas,DBarneche[from_paper]
+,,family,Myrtaceae,DBarneche[from_author_reply]

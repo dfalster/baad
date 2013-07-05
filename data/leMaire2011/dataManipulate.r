@@ -1,5 +1,5 @@
 manipulate <- function(raw) {
-  raw[["group"]]  <-  paste(raw[["Variable.Unit"]], sep="; ")
+  raw[["group"]]  <-  paste(raw[["Variable"]], sep="; ")
   
   raw
 }

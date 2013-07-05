@@ -1,10 +1,10 @@
 Topic, Description
-Sampling strategy, "Please a brief description of the sampling strategy used in this paper (up to 4 sentences)"
-Leaf area, "Please provide ..."
-Stem cross sectional area,"Please provide ..."
-Height,"Please provide ..."
-Crown area,"Please provide ..."
-Biomass,"Please provide ..."
-traits,"Please provide ..."
-Growth environment,"Please provide ..."
-Other variables,"Please provide ..."
+Sampling strategy, "Six to ten trees were sampled for each stand at each date. Before each sampling campaign height and DBH were measured on three permanent plots. The diameter distribution was divided into 6-10 classes, and one tree per class was randomly selected outside the permanent plots."
+Leaf area, "Destructive measurements: All leaves of each of three crown sections (lower, middle and upper) were removed, and weighed. Twenty-five leaves were randomly  selected in each section, and their fresh mass and area were immediately measured. These leaves were then dried at 65.8C to constant weight, and their dry weights were used in conjunction with their measured area to calculate specific leaf area for each crown section. The foliage dry weight of each crown section was calculated from the foliage fresh weight and the dry to fresh weight ratio of the sub-samples. The leaf area of each crown section was calculated as the product of foliage dry weight and specific leaf area. Tree leaf area was obtained by summing the leaf area of the three crown sections."
+Stem cross sectional area, "Stem cross sectional area of each tree was calculated from circumference at breast height measurement."
+Height,Sampled trees were felled and measured for total height.
+Crown area,
+Biomass,"Only the living branches and leaves mass was measured. Fresh mass of each component was measured on the field. Component biomass was sub-sampled to evaluate the dry matter content: about 25% of branch compartment and 25 leaves by level within the crown (bottom, middle, top). Aliquots were weighed before and after drying at 65.8C to constant weight. The dry weight of each component was calculated from measured fresh weight and the dry to fresh weight ratio of the sub-samples."
+traits,"wood density was measured with trunk disks, see method in [Marsden, C., le Maire, G., Stape, J.-L., Seen, D.L., Roupsard, O., Cabral, O., Epron, D., Lima, A.M.N., & Nouvellon, Y. (2010). Relating MODIS vegetation index time-series with structure, light absorption and stem production of fast-growing Eucalyptus plantations. Forest Ecology and Management, 259, 1741-1753]. Sapwood area were visually delimited on thin trunk disks at tree base."
+Growth environment;Meteorological variables (rainfall, air temperature and relative humidity, wind speed and direction, radiation) were measured on automatic wether stations close to the fields. Inside each plots, the 6-10 sampled trees were selected in function of their size to cover the entire DBH range: the DBH is therefore a criteria of dominance. Inventory data of the distributions of tree sizes in the stand are available upon request
+Other variables,"See le Maire et al. 2011 and [Marsden, C., le Maire, G., Stape, J.-L., Seen, D.L., Roupsard, O., Cabral, O., Epron, D., Lima, A.M.N., & Nouvellon, Y. (2010). Relating MODIS vegetation index time-series with structure, light absorption and stem production of fast-growing Eucalyptus plantations. Forest Ecology and Management, 259, 1741-1753]."
