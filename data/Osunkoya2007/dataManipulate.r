@@ -3,6 +3,9 @@ manipulate <- function(raw) {
   
   raw[raw == "#NULL!"] <- NA
   
+  # Two bad values in crown area ("" and "0")
+  raw$crown_sil_area[raw$crown_sil_area %in% c("0","")] <- NA
+  
   raw
 }
 
