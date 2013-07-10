@@ -1,11 +1,26 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-"species","Ci","species","Cinnamomum japonicum","from paper[D Barneche]"
-"species","Sb","species","Syzygium buxifolium","from paper[D Barneche]"
-"species","Daph.","species","Daphne kiusiana","from paper[D Barneche]"
-"species","Ardis.","species","Ardisia crenata","from paper[D Barneche]"
-"species","Sarca.","species","Sarcandra glabra","from paper[D Barneche]"
-"","","latitude","30.34678","from paper[D Barneche]"
-"","","longitude","130.5164","from paper[D Barneche]"
-"","","growingCondition","FW","from paper[D Barneche]"
-"","","vegetation","TempRF","from paper[D Barneche]"
-"","","location","Yakushima Island, Kyushu, Japan","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+species,Ci,family,Lauraceae,from paper[D Barneche]
+species,Sb,family,Mirtaceae,from paper[D Barneche]
+species,Daph.,family,Thymelaeaceae,from paper[D Barneche]
+species,Ardis.,family,Myrsinaceae,from paper[D Barneche]
+species,Sarca.,family,Chloranthaceae,from paper[D Barneche]
+species,Ci,status,0,from paper[D Barneche]
+species,Sb,status,0,from paper[D Barneche]
+species,Daph.,status,0,from paper[D Barneche]
+species,Ardis.,status,0,from paper[D Barneche]
+species,Sarca.,status,0,from paper[D Barneche]
+species,Ci,pft,EA,from paper[D Barneche]
+species,Sb,pft,EA,from paper[D Barneche]
+species,Daph.,pft,EA,from paper[D Barneche]
+species,Ardis.,pft,EA,from paper[D Barneche]
+species,Sarca.,pft,EA,from paper[D Barneche]
+species,Ci,species,Cinnamomum japonicum,from paper[D Barneche]
+species,Sb,species,Syzygium buxifolium,from paper[D Barneche]
+species,Daph.,species,Daphne kiusiana,from paper[D Barneche]
+species,Ardis.,species,Ardisia crenata,from paper[D Barneche]
+species,Sarca.,species,Sarcandra glabra,from paper[D Barneche]
+,,latitude,30.34678,from paper[D Barneche]
+,,longitude,130.5164,from paper[D Barneche]
+,,growingCondition,FW,from paper[D Barneche]
+,,vegetation,TempRF,from paper[D Barneche]
+,,location,"Yakushima Island, Kyushu, Japan",from paper[D Barneche]

@@ -1,0 +1,14 @@
+Questions about the study:  Kohyama0000 
+
+1. Could you please categorize the species from your study according to our categories for plant functional type (pft) and family? pft categories: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm 
+
+2. Could you also classify your plant stands (or species) according to our status categories? status categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed) 
+
+               species  family     pft
+1 Cinnamomum japonicum Lauraceae EA 0, subcanpy
+2  Syzygium buxifolium Mirtaceae EA 0, subcanpy
+3      Daphne kiusiana Thymelaeaceae EA 0, shrub
+4      Ardisia crenata Myrsinaceae EA 0, shrub
+5     Sarcandra glabra Chloranthaceae EA 0, shrubw
+
+
