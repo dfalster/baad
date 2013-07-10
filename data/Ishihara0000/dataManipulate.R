@@ -25,6 +25,13 @@ manipulate <- function(raw) {
   raw$Forest.type[raw$Forest.type == "S?"] <- "S"
   
   raw$Ref2 <- paste("Ishihara0000", raw$Ref, sep="-")
+  
+  # One observation with zero m.lf, a.lf, and all other variables missing (except d.bh = 0.005).
+  # Set to missing.
+  raw[["WL"]][raw$WL == 0] <- NA
+  raw[["LA"]][raw$LA == 0] <- NA
+  
+  
   raw
 }
 
