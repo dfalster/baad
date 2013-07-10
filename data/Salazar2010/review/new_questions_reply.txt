@@ -1,0 +1,14 @@
+Questions about the study:  Salazar2010 
+
+1. In your former reply you indicated that your Metadata file was OK but in fact it is still empty. Could you please fill it in (it was sent in the first email) and send it beack to us?
+
+2. What was the main vegetation type of your study? Please answer using one of the following categories:    Wo = Woodland. 
+3. Could you please indicate the taxonomic family of each of your studies species?
+Quercus pyrenaica Willd: Fagaceae, Castanea sativa Mill.:Fagaceae, Ilex aquifolium L. :Aquifoliaceae, Aconitum napellus ssp. castellanum L.:Umbelliferae, Actaea spicata L.:Ranunculaceae, Monotropa hypopitys L. :Monotropaceae, Atropa belladona L.:
+Solanaceae, Hypericum montanum L.:Hypericaceae, Neottia nidus-avis Rich.:Orchidaceae, Paris quadrifólia L.:Liliaceae, Corylus avellana L.Fagaceae.
+
+4. What about the functional type of each species? Please answer using one of the following categories: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
+Quercus pyrenaica Willd: DA, Castanea sativa Mill.DA.
+5. Could you please indicate the status (in terms of shading) of your sampled stands? Please answer using one of the following categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed)
+Quercus pyrenaica Willd: 3, Castanea sativa Mill.:3
+6. What is the name of the sampled location? For example: "Parque Nacional ...."La Honfría", Linares de Riofrío, Salamanca, Spain
