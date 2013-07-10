@@ -8,6 +8,11 @@ manipulate <- function(raw) {
   raw[["total N heartwood"]]  <-  (raw[["total N heartwood"]]/1000)/raw[["total heartwood"]]
   raw[["N fine roots"]]       <-  (raw[["N fine roots"]]/1000)/raw[["fine roots mass"]]
   raw$NcoarseRoots            <-  ((raw[["N medium roots"]] + raw[["N coarse roots"]])/1000)/raw$coarse_root_mass
+  
+  # zero value in total sapwood, set to NA
+  nm <- "total sapwood"
+  raw[[nm]][raw[[nm]] == 0] <- NA
+  
   raw
 }
 
