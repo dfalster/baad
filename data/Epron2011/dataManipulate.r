@@ -8,6 +8,10 @@ manipulate <- function(raw) {
   raw[["h.t"]][i] <- raw[["h.t"]][i]/100
   raw[["h.c"]][i] <- raw[["h.c"]][i]/100
   
+  # Zero values in a.ss and a.sh, set to NA
+  raw$a.ss[raw$a.ss==0] <- NA
+  raw$a.sh[raw$a.sh==0] <- NA
+  
   raw
 }
 
