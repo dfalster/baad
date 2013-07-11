@@ -8,6 +8,9 @@ csvCompare <- function(data1, data2, outfile="datacompare.xlsx", colour="red", .
   r <- require(xlsx)
   if(!r)stop("Install the 'xlsx' package first!")
   
+  if(Sys.info()["sysname"] == "Darwin")
+    .jcall("java/lang/System","S","setProperty","java.awt.headless","true")
+  
   getDat <- function(dat){
     if(is.character(dat) && file.exists(dat))
       return(read.csv(dat, ...))
