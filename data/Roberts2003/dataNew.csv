@@ -7,3 +7,4 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,latitude,33.235,found on map
 ,,longitude,-89.05,found on map
 ,,location,"Winston County, Mississippi USA",datafile
+,,vegetation,TempF,DBarneche[from_Remko]
