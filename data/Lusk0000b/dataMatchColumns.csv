@@ -8,7 +8,7 @@
 "Country",NA,NA,NA,NA
 "Forest.type",NA,NA,NA,NA
 "Species",NA,NA,"species",NA
-"Family",NA,NA,NA,NA
+"Family",NA,NA,family,NA
 "lf.sz",NA,NA,NA,NA
 "a.cs",NA,NA,NA,NA
 "h.c",NA,NA,NA,NA
