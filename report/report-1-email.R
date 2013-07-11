@@ -82,7 +82,7 @@ This email contains a report for the following study, for which you are listed a
 
 Please note, to view the report you should first download it, then open in your web browser. If you open it directly from a web-based email program the plots may not display.
 
-To assist us in preparing the data for publication, we ask that you review the attached report of your data and provide answers to ALL of the questions listed in the file 'report1-questions.txt' attached. We require all questions be answered for a study to be included in the final dataset. Please type your answers directly into the attached files, as instructed.  By returning the requested information in this way, you are assisting us in handling a large number of files and corrections.
+To assist us in preparing the data for publication, we ask that you review the attached report of your data and provide answers to ALL of the questions listed in the file 'report1-questions.txt' attached. We require all questions be answered for a study to be included in the final dataset. Please type your answers directly into the attached files, as instructed.  By returning the requested information in this way, you are assisting us in handling a large number of files and corrections. Also, if you have modifications to make in your data, please do so in the original data.csv file and return it to us together with your reply, as we prefer to keep track of changes from the original file and not its final product.
 
 We look forward to hearing from you. If you could reply within the next 2 weeks that would be much appreciated. If you are unable to reply within this time period, please send us a quick reply to let us know when we can expect to hear from you. 
 
@@ -97,6 +97,7 @@ Please find the following files attached to this email:
 \t ", paste0(study, ".csv"), ": is a cleaned data file, with units used in our data paper
 \t variableDefinitions.csv: provides names, units and definitions used in our data paper. \n\n\n"
     )
+    print(paste0("argument updateStage ignored for ", study, " as this study will be automatically updated to stage 2"))
     new.stage  <-  updateStage(study, stage+1, print.only=print.only)
   }
   
