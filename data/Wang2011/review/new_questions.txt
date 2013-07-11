@@ -1,0 +1,11 @@
+Questions about the study:  Wang2011 
+
+1. Could you please indicate the status (in terms of shading) of your sampled stands? Please answer using one of the following categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed). We'd appreciate if you could ansewr in this file and return it to us.
+
+2. Could you please provide a short description of the methods used to collect Leaf Area?
+
+3. Could you please provide a short description of the methods used to collect plant Height?
+
+4. Could you please provide a short description of the methods used to collect plant Biomass?
+
+5. What was the main vegetation type of your study? Please answer using one of the following categories: Sav = Savannah; TropRF = Tropical rainforest; TempRF = temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temp forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert

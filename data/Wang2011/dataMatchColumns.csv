@@ -9,6 +9,6 @@
 "Dry mass of branches (g)","m0","g","m.br",NA
 "Total leaf fresh mass (g)","","","",NA
 "Total leaf dry mass (g)","m0","g","m.lf",NA
-"Total leaf area(cm2)","","cm2","a.lf",NA
+"Total leaf area(cm2)","r2","cm2","a.lf",NA
 "Individual",NA,NA,NA,NA
-"Age",NA,NA,NA,NA
+"Age",NA,yr,age,NA

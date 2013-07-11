@@ -1,0 +1,81 @@
+Questions about the study:  Wang2011 
+
+Please look at the attached html report  Wang2011.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER: Yes, but not complete, 
+        Email: wangfeng@caf.ac.cn or wangfeng.cau@gmail.com
+        Address: Institute of Desertification Studies
+                 Chinese Academy of Forestry
+                 Beijing, 100091, China 
+
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: Yes.
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: Yes.
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: inaccurate,
+        location                                      longitude latitude vegetation
+Zhanggutai, Zhangwu County, Liaoning Province, China  122.3667    42.72    missing
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: Yes.
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER:  No.   
+ location                                                  growingCondition  status
+Zhanggutai, Zhangwu County, Liaoning Province, China       PM                Young/Plantation
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: not complete.
+                          species  family pft
+ Pinus sylvestris var. mongolica  Pinus  EG
+
+
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: no.
+
+Sampling strategy:  Samples of 1-, 2-, 3-, 5- and 6-year-old trees were also taken for destructive measurements of biomass and geometry with four replications for each tree age. To prevent water loss during measurement, plants were dug up with their roots and soil and transported to the laboratory.
+
+Leaf area:  Yes
+
+Stem cross sectional area: We have provide the "Stem diameter at base(d)", then the stem cross sectional area(S) can be calculated as equation S=pi/4*d^2.
+
+Height: Yes
+
+Crown area: No. Because the pine tree is very small, we hadn't measure the crown area.
+
+Biomass: Yes.
+
+traits: Please provide ...
+
+Growth environment: Long-term (1953®C2006) mean annual precipitation is 505.9 mm, concentrated mainly between May and October. Mean annual temperature is 6.0°„C with monthly mean temperatures ranging from -12.1C in January to 24.1C in July. The soil type is classified as arenosols according to the Food and Agriculture Organisation (FAO) classification. Pines were planted in 1 m (between-row)*1 m (withinrow)spacing in the study plot, and the understory is bare sandy land.
+
+Other variables: Please provide ...
+
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: I think this leaf dry mass for plants of age 1 is outliers. Please ignore it.
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: Yes.
+
+11. Can you please check the data you have on Total leaf dry mass, for plants of age 1? For these plants the ratio of dry to fresh mass is about 0.02, whereas in it is around 0.35-0.45 for the remaining plants. The latter value is much more realistic. 
+ANSWER: I think this leaf dry mass for plants of age 1 is outliers. Please ignore it.
+
+12. For leaf area of conifers, was this measured as projected or all-sided (or half-all-sided) area?
+ANSWER: All-sided area.

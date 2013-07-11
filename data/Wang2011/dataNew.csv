@@ -1,9 +1,10 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-NA,NA,"species","Pinus sylvestris var. mongolica","from paper[D Barneche]"
-NA,NA,"growingCondition","PM","from paper[D Barneche]"
-NA,NA,"location","Liaoning Sand Stabilization and Afforestation Institute in Zhanggutai, China","from paper[D Barneche]"
-NA,NA,"pft","EG","from paper[D Barneche]"
-NA,NA,"latitude","42.72","from paper[D Barneche]"
-NA,NA,"longitude","122.3667","from paper[D Barneche]"
-NA,NA,"map","505.9","from paper[D Barneche]"
-NA,NA,"mat","6","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+,,species,Pinus sylvestris var. mongolica,from paper[D Barneche]
+,,family,Pinaceae,DBarneche[from_author_reply]
+,,growingCondition,PM,from paper[D Barneche]
+,,location,"Zhanggutai, Zhangwu County, Liaoning Province, China",from paper[D Barneche]
+,,pft,EG,from paper[D Barneche]
+,,latitude,42.72,from paper[D Barneche]
+,,longitude,122.3667,from paper[D Barneche]
+,,map,505.9,from paper[D Barneche]
+,,mat,6,from paper[D Barneche]

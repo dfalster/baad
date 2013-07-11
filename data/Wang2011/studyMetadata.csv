@@ -1,10 +1,10 @@
 Topic, Description
-Sampling strategy, "Please a brief description of the sampling strategy used in this paper (up to 4 sentences)"
+Sampling strategy, "Samples of 1-, 2-, 3-, 5- and 6-year-old trees were also taken for destructive measurements of biomass and geometry with four replications for each tree age. To prevent water loss during measurement, plants were dug up with their roots and soil and transported to the laboratory."
 Leaf area, "Please provide ..."
-Stem cross sectional area,"Please provide ..."
+Stem cross sectional area,"We have provide the 'Stem diameter at base(d)', then the stem cross sectional area(S) can be calculated as equation S=pi/4*d^2."
 Height,"Please provide ..."
-Crown area,"Please provide ..."
+Crown area,
 Biomass,"Please provide ..."
-traits,"Please provide ..."
-Growth environment,"Please provide ..."
-Other variables,"Please provide ..."
+traits,
+Growth environment,"Long-term (1953-2006) mean annual precipitation is 505.9 mm, concentrated mainly between May and October. Mean annual temperature is 6.0oC with monthly mean temperatures ranging from -12.1C in January to 24.1C in July. The soil type is classified as arenosols according to the Food and Agriculture Organisation (FAO) classification. Pines were planted in 1 m (between-row)*1 m (withinrow)spacing in the study plot, and the understory is bare sandy land."
+Other variables,
