@@ -1,0 +1,48 @@
+Questions about the study:  Lusk2012 
+
+Please look at the attached html report  Lusk2012.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please revise the information in the attached studyContact.csv file and send it to us?
+ANSWER: Yes
+
+2. Is your reference information correct?
+	If not, could you please revise the information in the attached studyRef.bib file and send it to us?
+ANSWER: Yes
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: Yes
+
+4. Is 'Location data' complete?
+	 If not, could you please provide the missing information in the attached file dataNew.csv. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: No. Firstly, "mat" is missing from the table, showing as "????". Secondly, the data in this paper actually come from 5 sites (4 in Chile, 1 in New Zealand), not all from the single site shown on the map.
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with update locationcation data.
+ANSWER: See above. The data come from 5 sites, not one.
+
+6. Is the 'Stand description' complete?
+	 If not, could you please fill in the missing information in dataNew.csv? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.  
+ANSWER: No. There is only this message: "Error: undefined columns selected"
+
+7. Is the 'Species data' correct? What about plant functional type (pft)?  
+	 If not, please correct the data in dataNew.csv and check the relevant codes for pft in Variable.definition.csv. The dataNew.csv allows us to incorporate your changes into our dataset using a lookup table. The columns of this file are as follows
+		lookupVariable is the name of the variable in the parent data we want to match against. If left blank, change all rows.
+		lookupValue is the value of lookupVariable to match against
+		newVariable is the variable to be changed
+		newValue is the value of newVariable for matched rows
+		source includes any notes about where the data came from (e.g., who made the change).
+ANSWER: Families are not given for any species, but PFTs are all correctly identified. "dataNew.csv" is empty!
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing infomration in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of each of the items listed. Additional items not listed in the report are not needed, but if you judge it really important add it to 'Other variables'.
+ANSWER: Yes
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all iformation is correct.
+ANSWER: Looks pretty good to me.
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+Please indicate that you understand what this means and agree to this by answering 'I agree' here
+ANSWER: Yes.

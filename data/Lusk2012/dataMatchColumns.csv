@@ -10,7 +10,7 @@
 "a.cp","","m2","a.cp",NA
 "d.ba","d","m","d.ba",NA
 "dataset",NA,NA,NA,NA
-"Country",NA,NA,NA,NA
+"Country",NA,NA,location,NA
 "Forest.type",NA,NA,NA,NA
 "Species",NA,NA,"species",NA
-"Family",NA,NA,NA,NA
+"Family",NA,NA,family,NA
