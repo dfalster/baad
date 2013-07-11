@@ -5,7 +5,7 @@
 "CP_Idx","cpidx","-","light",NA
 "Dbh","","cm","d.bh",NA
 "Height","","m","h.t",NA
-"Location",NA,NA,NA,NA
+"Location",NA,NA,location,NA
 "Indonesian_name",NA,NA,NA,NA
 "Species",NA,NA,"species",NA
 "Low_Wd",NA,NA,NA,NA
