@@ -1,0 +1,9 @@
+Questions about the study:  Peri0000 
+
+1. In your former reply you returned a Word file containing a general description of your study. While we appreciate your effort, it would be much more effective if you could reply each of the questions within the initial file report1-email.txt and return it to us attached in the email. We have to process many studies at the same time, and this way you will be assisting us to process studies quicker and more reliably.
+
+2. Could you also do the same for the studyMetadata.csv file? 
+
+3. What is the name of the sampled location? For example: "Parque Nacional ...."
+
+4. It was not clear from your reply whether the biomass measurements in your data are fresh or dry. 
