@@ -11,7 +11,6 @@ source('R/plotting.R')
 source('R/formatBib.R')
 
 
-
 #creates html reports using knitr
 emailReport <- function(alldata, study,
                         contentFile ="report/report-1-email.R",

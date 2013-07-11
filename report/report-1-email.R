@@ -1,3 +1,31 @@
+sendReminder<- function(alldata, study){
+  dat    <-  extractStudy(alldata, study)
+  
+  email.text  =  paste0("Dear ", paste0(dat$contact$name, collapse = " and "),",
+
+We recently contacted you regarding the biomass and allometry database we are developing, and for which we plan to submit a data paper to Ecology.
+
+You kindly contributed data from the publication: ", formatBib(dat$ref$filename)[[1]],".
+
+On Jun 7th we sent a report on your contribution, with some questions to be answered. As it is now one month since we sent that email, we are sending you a gentle reminder to please have a look at the report and send us your response as asson as possible.
+
+We have now heard back from most of the data contributors and eagerly await your response.  
+
+With best regards,
+Daniel Falster, Remko Duursma, Diego Barneche\n")
+  
+email(content =   email.text,
+        subject = paste("RE:",generateEmailSubject(study)),
+        to =  dat$contact$email, 
+        from="daniel.falster@mq.edu.au",  
+        bcc= character(0), 
+        cc= c("remkoduursma@gmail.com", "barnechedr@gmail.com", "daniel.falster@mq.edu.au"), 
+        files = character(0),
+        send=FALSE
+  )
+}  
+
+
 getEmailDetails <- function(alldata, study, updateStage=TRUE, reprocess=FALSE, print.only=FALSE){
   
   dat                =  extractStudy(alldata, study)
