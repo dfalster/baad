@@ -37,5 +37,8 @@ lapply(chosen.st, function(x)emailReport(dat, x, updateStage=TRUE, print.only=FA
 chosen.st  <-  processedStudies$study[processedStudies$update_with_email=="y2"]
 lapply(chosen.st, function(x)emailReport(dat, x, updateStage=FALSE, print.only=FALSE))
 
+# Send reminder
+sendReminder(alldata=dat, "Baltzer2007")
+
 
 
