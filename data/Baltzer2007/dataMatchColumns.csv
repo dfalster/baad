@@ -16,10 +16,10 @@
 "Status",NA,NA,NA,NA
 "Light",NA,NA,NA,NA
 "Other notes about growing conditions",NA,NA,NA,NA
-"Location",NA,NA,NA,NA
+"Location",NA,NA,location,NA
 "Lat",NA,NA,NA,NA
 "Long",NA,NA,NA,NA
-"Vegetation",NA,NA,NA,NA
+"Vegetation",NA,NA,vegetation,NA
 "map",NA,NA,NA,NA
 "mat",NA,NA,NA,NA
 "reference",NA,NA,NA,NA
