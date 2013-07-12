@@ -8,3 +8,5 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,longitude,122.3667,from paper[D Barneche]
 ,,map,505.9,from paper[D Barneche]
 ,,mat,6,from paper[D Barneche]
+,,status,0,DBarneche[from_author_reply]
+,,vegetation,Sav,DBarneche[from_author_reply]

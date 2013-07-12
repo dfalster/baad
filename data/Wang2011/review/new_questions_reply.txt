@@ -1,0 +1,26 @@
+Questions about the study:  Wang2011 
+
+1. Could you please indicate the status (in terms of shading) of your sampled stands? Please answer using one of the following categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed). We'd appreciate if you could ansewr in this file and return it to us.
+
+   >>0
+
+2. Could you please provide a short description of the methods used to collect Leaf Area?
+ 
+   >>A needle area is computed from its length L and diameter R based on the allometric relationship provided for Mongolian Scots pine.
+S=2.57*R(L-0.1167)  (Jiao, 1982)
+I random sampled more than 20 needles in the experiments. I didn't take the samples for each individual and didn't consider the position of leaves in the plant.
+The specific leaf area can be fitted by leaves area and biomass of these samples. Finally, the Leaf Area was calculated by their biomass and specific leaf area.
+
+You can find more details in the Support Information in Wang et al. (2012).
+[1]    Jiao SR (1982) A method for estimating surface area of Mongolian Scots pine plantations needles. Liaoning Forest Science and Technology 189: 21-23. (in Chinese)
+[2]  Wang F, Letort V, Lu Q, Bai X, Guo Y, et al. (2012) A Functional and Structural Mongolian Scots Pine (Pinus sylvestris var. mongolica) Model Integrating Architecture, Biomass and Effects of Precipitation. PLoS ONE 7(8): e43531. doi:10.1371/journal.pone.0043531
+
+3. Could you please provide a short description of the methods used to collect plant Height?
+  >>Because trees are young, the heights of most samples are less than one meter. We directly measured the tree height by tape.
+
+4. Could you please provide a short description of the methods used to collect plant Biomass? 
+  >>Samples were taken for destructive measurements of biomass and geometry. To prevent water loss during measurement, plants were dug up with their roots and soil and transported to the laboratory.
+
+5. What was the main vegetation type of your study? Please answer using one of the following categories: Sav = Savannah; TropRF = Tropical rainforest; TempRF = temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temp forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
+
+  >>Sav

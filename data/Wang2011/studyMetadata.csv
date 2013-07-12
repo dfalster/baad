@@ -1,10 +1,10 @@
 Topic, Description
 Sampling strategy, "Samples of 1-, 2-, 3-, 5- and 6-year-old trees were also taken for destructive measurements of biomass and geometry with four replications for each tree age. To prevent water loss during measurement, plants were dug up with their roots and soil and transported to the laboratory."
-Leaf area, "Please provide ..."
+Leaf area, "A needle area is computed from its length L and diameter R based on the allometric relationship provided for Mongolian Scots pine. S=2.57*R(L-0.1167)  (Jiao, 1982). I randomly sampled more than 20 needles in the experiments. I didn't take the samples for each individual and didn't consider the position of leaves in the plant. The specific leaf area can be fitted by leaves area and biomass of these samples. Finally, the Leaf Area was calculated by their biomass and specific leaf area."
 Stem cross sectional area,"We have provide the 'Stem diameter at base(d)', then the stem cross sectional area(S) can be calculated as equation S=pi/4*d^2."
-Height,"Please provide ..."
+Height,"Because trees are young, the heights of most samples are less than one meter. We directly measured the tree height by tape."
 Crown area,
-Biomass,"Please provide ..."
+Biomass,"Samples were taken for destructive measurements of biomass and geometry. To prevent water loss during measurement, plants were dug up with their roots and soil and transported to the laboratory."
 traits,
 Growth environment,"Long-term (1953-2006) mean annual precipitation is 505.9 mm, concentrated mainly between May and October. Mean annual temperature is 6.0oC with monthly mean temperatures ranging from -12.1C in January to 24.1C in July. The soil type is classified as arenosols according to the Food and Agriculture Organisation (FAO) classification. Pines were planted in 1 m (between-row)*1 m (withinrow)spacing in the study plot, and the understory is bare sandy land."
 Other variables,
