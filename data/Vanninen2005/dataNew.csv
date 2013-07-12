@@ -1,2 +1,9 @@
 lookupVariable,lookupValue,newVariable,newValue,source
 ,,pft,EG,
+,,species,Pinus sylvestris,
+,,family,Pinaceae,
+,,location,Finland,
+,,latitude,61.33,Coarse map average
+,,longitude,25.0,Coarse map average
+,,growingCondition,PM,
+,,vegetation,BorF,
