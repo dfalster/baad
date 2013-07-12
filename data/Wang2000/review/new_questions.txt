@@ -1,0 +1,5 @@
+Questions about the study:  Wang2000
+
+1. Could you please indicate the status (in terms of shading) of your sampled stands? Please answer using one of the following categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed). We'd appreciate if you could ansewr in this file and return it to us.
+
+2. Could you please provide family information for both species in the study?

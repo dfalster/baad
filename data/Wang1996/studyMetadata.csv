@@ -1,10 +1,10 @@
 Topic, Description
-Sampling strategy, "Please a brief description of the sampling strategy used in this paper (up to 4 sentences)"
-Leaf area, "Please provide ..."
-Stem cross sectional area,"Please provide ..."
-Height,"Please provide ..."
-Crown area,"Please provide ..."
-Biomass,"Please provide ..."
-traits,"Please provide ..."
-Growth environment,"Please provide ..."
-Other variables,"Please provide ..."
+Sampling strategy,"Sample trees are collected from an age chronosequency of Betula papyrifera natural stands. The sampled stands represent the whole range of site conditions of the species distribution; i.e. from poor to medium and good site productivity. All sample trees were dominant trees."
+Leaf area,"Leaf area was not measured. However, we can calculate the leaf area by using specific leaf area of Populus tremuloides to convert the leaf biomass data into leaf area data."
+Stem cross sectional area,"We can calculate stem cross sectional area by using the diameter at breast height."
+Height,"Because all sample trees were at different ages, they have different height."
+Crown area,
+Biomass,
+traits,
+Growth environment,
+Other variables,

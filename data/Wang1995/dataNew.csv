@@ -1,7 +1,10 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-NA,NA,"species","Populus tremuloides Michx.","from paper[D Barneche]"
-NA,NA,"growingCondition","FW","from paper[D Barneche]"
-NA,NA,"vegetation","BorF","from paper[D Barneche]"
-NA,NA,"pft","DA","from paper[D Barneche]"
-NA,NA,"location","Dawson Creek, Forest District of northeastern British Columbia, CA","from paper[D Barneche]"
-NA,NA,"map","450","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+,,species,Populus tremuloides Michx.,from paper[D Barneche]
+,,family,Salicaceae,DBarneche[from_author_reply]
+,,growingCondition,FW,from paper[D Barneche]
+,,vegetation,BorF,from paper[D Barneche]
+,,latitude,53.5,DBarneche[from_author_reply]
+,,longitude,-125,DBarneche[from_author_reply]
+,,pft,DA,from paper[D Barneche]
+,,location,"Dawson Creek, Forest District of northeastern British Columbia, CA",from paper[D Barneche]
+,,map,450,from paper[D Barneche]
