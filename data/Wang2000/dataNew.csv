@@ -1,6 +1,10 @@
 lookupVariable,lookupValue,newVariable,newValue,source
 species,Abies lasiocarpa,pft,EG,from paper[D Barneche]
 species,Betula papyrifera,pft,DA,from paper[D Barneche]
+species,Abies lasiocarpa,family,Pinaceae,DBarneche[from_author_reply]
+species,Betula papyrifera,family,Betulaceae,DBarneche[from_author_reply]
+species,Abies lasiocarpa,status,2,DBarneche[from_author_reply]
+species,Betula papyrifera,status,3,DBarneche[from_author_reply]
 ,,growingCondition,FW,from paper[D Barneche]
 ,,vegetation,BorF,from paper[D Barneche]
 ,,location,"24 km east of Prince George, British Columbia, CA",from paper[D Barneche]
