@@ -3,7 +3,7 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,family,Pinaceae,
 ,,pft,EG,
 ,,species,Pinus taeda,
-,,growingCondition,PM,
+,,growingCondition,FE,
 ,,latitude,32.414,found on map
 ,,longitude,-89.114,found on map
 ,,location,"Newton County, Mississippi USA",datafile
