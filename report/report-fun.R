@@ -30,7 +30,7 @@ emailReport <- function(alldata, study,
 }  
   
 
-printAllStudyReports <- function(data, studynames= getStudyNames(), reprocess=FALSE, progressbar=TRUE){
+printAllStudyReports <- function(data, studynames= dataMashR:::getStudyNames(), reprocess=FALSE, progressbar=TRUE){
   
   message("Generating ", length(studynames), " markdown reports.")
   if(progressbar){
@@ -60,7 +60,7 @@ printStudyReport <- function(alldata, study=NULL, RmdFile ="report/report-1.Rmd"
     name <- "all"
   
   knitThis(RmdFile = RmdFile, path=path, name=name, delete=TRUE, reprocess=reprocess, 
-           predefined=list(.study = study, alldata=alldata, .dat = extractStudy(alldata, study))) 
+           predefined=list(.study = study, alldata=alldata, .dat = dataMashR:::extractStudy(alldata, study))) 
 }
 
 
