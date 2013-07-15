@@ -1,0 +1,22 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+NA,NA,vegetation,TropRF,from paper[D.A. King]
+NA,NA,pft,EA,from paper[D.A. King]
+NA,NA,growingCondition,FW,from paper[D.A. King]
+NA,NA,location,"La Selva Biological Station, Costa Rica",from paper[D.A. King]
+NA,NA,latitude,10.4321,Location found on google maps (RAD)
+NA,NA,longitude,-84.003,Location found on google maps (RAD)
+NA,NA,map,4000,from paper[D.A. King]
+species,Anaxagorea crassipetala,family,Annonaceae,
+species,Casearia arborea,family,Salicaceae,
+species,Dipteryx panamensis,family,Fabaceae,
+species,Goethalsia meiantha,family,Malvaceae,
+species,Laetia procera,family,Salicaceae,
+species,Lecythis ampla,family,Lecythidaceae,
+species,Ocotea attirhensis,family,Lauraceae,
+species,Ocotea dendrodaphne,family,Lauraceae,
+species,Ocotea hartshorniana,family,Lauraceae,
+species,Ocotea meziana,family,Lauraceae,
+species,Pentaclethra macroloba,family,Fabaceae,
+species,Pouroma bicolor,family,Urticaceae,
+species,Rinorea deflexiflora,family,Violaceae,
+species,Virola sebifera,family,Myristicaceae,

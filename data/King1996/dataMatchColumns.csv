@@ -1,0 +1,8 @@
+var_in,method,unit_in,var_out,notes
+Species,NA,NA,species,NA
+Tree #,NA,NA,NA,NA
+Height (m),NA,m,h.t,NA
+D1.10,"I,x,a1",cm,d.ba,NA
+Crown width (m),"a,d",m,d.cr,NA
+Lowest leaf height (m),u,m,h.c,NA
+Ave Leaf Height (m),NA,NA,NA,NA
