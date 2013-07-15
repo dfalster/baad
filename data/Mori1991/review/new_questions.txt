@@ -1,0 +1,3 @@
+Questions about the study:  Mori1991
+
+1. In your former reply you indicated that your Metadata file was OK but in fact it is still missing the item SAMPLING STRATEGY. Could you please provide it below?

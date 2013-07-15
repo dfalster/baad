@@ -1,0 +1,13 @@
+Questions about the study:  SantaRegina0000
+
+1. In your former reply you indicated that your Metadata file was OK but in fact it is still missing the item SAMPLING STRATEGY. Could you please provide it below?
+
+2. What was the main vegetation type of your study? Please answer using one of the following categories: Sav = Savannah; TropRF = Tropical rainforest; TempRF = temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temp forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
+
+3. Could you please indicate the taxonomic family of each of your studies species?
+
+4. What about the functional type of each species? Please answer using one of the following categories: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
+
+5. Could you please indicate the status (in terms of shading) of your sampled stands? Please answer using one of the following categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed)
+
+6. What is the name of the sampled location? For example: "Parque Nacional ...."
