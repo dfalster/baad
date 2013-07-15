@@ -1,6 +1,8 @@
 lookupVariable,lookupValue,newVariable,newValue,source
 species,Fagus sylvatica,pft,DA,from paper[D Barneche]
 species,Pinus sylvestris,pft,EG,from paper[D Barneche]
+species,Fagus sylvatica,family,Fagaceae,DBarneche[from_author_reply]
+species,Pinus sylvestris,family,Pinaceae,DBarneche[from_author_reply]
 ,,growingCondition,FW,from paper[D Barneche]
 ,,location,"Sierra de la Demanda, Spain",from paper[D Barneche]
 ,,vegetation,TempF,from paper[D Barneche]
@@ -8,3 +10,4 @@ species,Pinus sylvestris,pft,EG,from paper[D Barneche]
 ,,longitude,-3.183,DBarneche[from_author_reply]
 ,,mat,12.4,from paper[D Barneche]
 ,,map,895,from paper[D Barneche]
+,,status,3,DBarneche[from_author_reply]
