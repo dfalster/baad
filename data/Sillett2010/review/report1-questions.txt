@@ -1,0 +1,54 @@
+Questions about the study:  Sillett2010 
+
+Please look at the attached html report  Sillett2010.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER: Yes
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: 
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: Yes
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: Yes
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: Yes
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: Status for both species should be listed as 2 and 3.
+
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: Eucalyptus regnans family = Myrtaceae, pft = EA
+Sequoia sempervirens family = Cupressaceae, oft = EG
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: I think you should have been able to derive this information from the Methods sections of the publications you are including!
+Leaf area was quantified by a hierarchical subsampling procedure involving 100 % inventory of all branches on the tree. This was accomplished by climbing trees and mapping their crowns. A random sample of branches stratified by height and diameter was then destructively sampled and equations were developed to predict whole-branch quantities using data obtained during crown mapping. Leaf mass was converted to leaf area by scanning subsamples of leaves to determine SLA.
+Stem cross sectional areas were measured at multiple heights via tape during crown mapping. Increment cores collected from the trunks yielded data on bark, sapwood, and heartwood radii.
+Height was measured directly by lowering a fiberglass tape from highest leaves to average ground level.
+Crown area was determined from 8 crown radii per tree.
+Biomass was determined by hierarchical sampling beginning with 100% inventory of all aboveground structures followed by subsampling. 3D computer models ensured that there were no errors in XYZ coordinates of all woody elements in the tree. Destructive sampling, including increment coring, yielded bark, sapwood, and heartwood radii for all woody components. Subsamples were measured fresh and then dried and weighed to determine densities.
+I do not know what information about traits, growth environment, and other variables you are seeking.
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: No! You seem to have plotted our aboveground mass data in the wrong units. We reported Mg, where 1 Mg = 1000 kg. Either you got the units wrong or you plotted the standard errors.
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: Yes
+
+11. It seems that the units you provided for bark area might be wrong. You provided m2 but we suspect it may be cm2. Could you please double-check this information? We couldn't find it in the original paper.
+ANSWER: No, you are incorrect. We reported the units correctly. These are values for whole trees, including all the branches and twigs! These numbers represent the total surface area of the tree covered with bark.

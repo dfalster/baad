@@ -1,0 +1,12 @@
+Questions about the study:  Sillett2010
+
+1. In the studyMetadata file you provided some of the items but seemed confused about others. We agree that most information should be easily be extracted from publications, we are sorry about that. However, we hope you understand that we have to process many different studies and having the authors write the metadata makes the process much more reliable, quicker and easier.
+
+For the outstanding items that we still need for your metadata:
+A. Sampling strategy; A quick summary of how the stands and individuals were chosen and sampled.
+B. traits (if applicable); Are there any other measured plant traits (e.g. SLA) in your data that you judge important reporting? If not, then leave it blank.
+C. Other variables (if applicacble); Same as above for traits.
+
+
+2. Would it be possible for you to indicate in the attached data the individual status (in terms of shading) of your sampled trees? Please answer using one of the following categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed). 
+
