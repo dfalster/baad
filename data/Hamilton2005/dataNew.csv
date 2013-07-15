@@ -1,0 +1,9 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+NA,NA,vegetation,TempF,from paper[S.D. Hamilton]
+NA,NA,pft,EA,from paper[S.D. Hamilton]
+NA,NA,growingCondition,FW,from paper[S.D. Hamilton]
+NA,NA,location,"Dookie Bushland Reserve, University of Melbourne, Dookie, Victoria, Australia",from paper[S.D. Hamilton]
+NA,NA,latitude,-36,from paper[S.D. Hamilton]
+NA,NA,longitude,145,from paper[S.D. Hamilton]
+NA,NA,map,556,from paper[S.D. Hamilton]
+NA,NA,family,Myrtaceae,from paper[S.D. Hamilton]

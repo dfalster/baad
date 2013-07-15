@@ -1,0 +1,16 @@
+var_in,method,unit_in,var_out,notes
+Species,NA,NA,species,NA
+Stem,NA,NA,NA,NA
+No. of stems on tree,NA,NA,NA,NA
+dbh (cm),e,cm,d.bh,NA
+D30 (cm),NA,NA,NA,NA
+Height (m),NA,m,h.t,NA
+Width (m),NA,m,d.cr,NA
+Stem wood (kg),NA,NA,NA,NA
+Stem bark (kg),NA,NA,NA,NA
+Leaves (kg),m5,kg,m.lf,NA
+branchmass,m5,kg,m.br,NA
+Branch bark (kg),NA,NA,NA,NA
+Twigs (kg),NA,NA,NA,NA
+Total biomass (kg),m5,kg,m.to,NA
+barkmass,m5,kg,m.sb,
