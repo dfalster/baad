@@ -32,11 +32,11 @@
 "LAI","","m2.m2","lai",NA
 "Reference publication",NA,NA,NA,NA
 "Species",NA,NA,"species",NA
-"Family",NA,NA,NA,NA
+"Family",NA,NA,family,NA
 "Height of crown",NA,NA,NA,NA
 "pft",NA,NA,NA,NA
 "growingCondition",NA,NA,NA,NA
-"Position inforest canopy",NA,NA,NA,NA
+"Position inforest canopy",NA,NA,status,NA
 "vegetation",NA,NA,NA,NA
 "light",NA,NA,NA,NA
 "location",NA,NA,NA,NA
