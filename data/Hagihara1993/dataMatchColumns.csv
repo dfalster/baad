@@ -1,0 +1,15 @@
+var_in,method,unit_in,var_out,notes
+Species,NA,NA,species,NA
+Site,NA,NA,NA,NA
+Age (yr),NA,yr,age,NA
+D (cm),e,cm,d.bh,NA
+D0.1 (cm),i,cm,d.ba,NA
+DB (cm),NA,NA,NA,NA
+H (m),NA,m,h.t,NA
+HB (m),NA,m,h.c,NA
+wS (kg),m5,kg,m.st,NA
+wB (kg),m5,kg,m.br,NA
+wL (kg),m5,kg,m.lf,NA
+wR (kg),m5,kg,m.rt,NA
+vS (dm3),NA,NA,NA,NA
+u (m2),"b,c,2",m2,a.lf,NA

@@ -1,0 +1,8 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+NA,NA,vegetation,TempF,from paper[A. Hagihara]
+NA,NA,pft,EG,from paper[A. Hagihara]
+NA,NA,growingCondition,FW,from paper[A. Hagihara]
+NA,NA,location,"Aichi Prefecture, central Japan",from paper[A. Hagihara]
+NA,NA,latitude,35,from paper[A. Hagihara]
+NA,NA,longitude,137,from paper[A. Hagihara]
+NA,NA,family,Cupressaceae,from paper[A. Hagihara]
