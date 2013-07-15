@@ -1,0 +1,8 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+NA,NA,vegetation,TropRF,from paper[T. Yamakura]
+NA,NA,pft,EA,from paper[T. Yamakura]
+NA,NA,growingCondition,FW,from paper[T. Yamakura]
+NA,NA,location,"Sebulu, East Kalimantan Province, Indonesia",from paper[T. Yamakura]
+NA,NA,latitude,-1.5,from paper[T. Yamakura]
+NA,NA,longitude,117,from paper[T. Yamakura]
+NA,NA,map,1862,from paper[T. Yamakura]

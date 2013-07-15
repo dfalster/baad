@@ -1,0 +1,18 @@
+var_in,method,unit_in,var_out,notes
+Species,NA,NA,species,NA
+Tree No.,NA,NA,NA,NA
+D (cm),e,cm,d.bh,NA
+DBut (cm),NA,NA,NA,NA
+D0 (cm),d,cm,d.ba,NA
+D30 (cm),NA,NA,NA,NA
+D0.1 (cm),i,NA,NA,NA
+DB (cm),NA,NA,NA,NA
+H (m),NA,m,h.t,NA
+HBut (m),NA,NA,NA,NA
+HB (m),NA,m,h.c,NA
+R (m),NA,m,d.cr,NA
+V (m3),NA,NA,NA,NA
+WS (kg),m5,kg,m.st,NA
+WB (kg),m5,kg,m.br,NA
+WL (kg),m5,kg,m.lf,NA
+U (m2),c,m2,a.lf,NA
