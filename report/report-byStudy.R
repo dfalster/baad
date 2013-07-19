@@ -7,7 +7,7 @@ source('report/report-1-email.R')
 dat <- loadStudies(reprocess=TRUE)
 
 # single study
-printStudyReport(dat, "Aiba2007", reprocess=FALSE)
+printStudyReport(dat, "Sillett2010", reprocess=TRUE)
 printStudyReport(dat, "Ishihara0000", reprocess=TRUE)
 
 # All reports:
@@ -16,7 +16,7 @@ reportPaths <- mclapply(getStudyNames(), printStudyReport, alldata=dat, reproces
 
 
 # Reprocess one study
-tmp <- loadStudy("Martin1998", reprocess= TRUE)
+tmp <- loadStudy("Sillett2010", reprocess= TRUE)
 dat <- loadStudies(reprocess=FALSE)
 
 #Email report
@@ -26,7 +26,7 @@ lapply(getStudyNames() ,emailReport, alldata=dat)
 emailReport(dat, "Selaya2008")
 
 
-emailReport(dat, "Martin1998", updateStage=TRUE, print.only=FALSE)
+emailReport(dat, "Sillett2010", updateStage=TRUE, print.only=FALSE)
 
 #batch update - done
 processedStudies  <-  read.csv("config/processed_studies.csv", h=TRUE, stringsAsFactors=FALSE)
