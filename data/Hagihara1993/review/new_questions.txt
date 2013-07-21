@@ -1,0 +1,4 @@
+Questions about the study:  Hagihara1993
+
+1. Would it be possible for you to indicate in the attached data the individual status (in terms of shading) of your sampled trees? Please answer using one of the following categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed). 
+
