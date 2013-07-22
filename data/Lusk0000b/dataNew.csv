@@ -1,4 +1,6 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-NA,NA,"growingCondition","GH","from paper[D Barneche]"
-NA,NA,"pft","EA","from paper[D Barneche]"
-NA,NA,"location","Glasshouse in New Zealand","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+,,growingCondition,GH,from paper[D Barneche]
+,,pft,EA,from paper[D Barneche]
+,,location,Glasshouse in New Zealand,from paper[D Barneche]
+,,latitude,-37.7869,DBarneche[from_author_reply]
+,,longitude,175.3139,DBarneche[from_author_reply]
