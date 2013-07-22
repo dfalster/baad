@@ -1,0 +1,101 @@
+Questions about the study:  Osunkoya2007 
+
+Please look at the attached html report  Osunkoya2007.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER: 
+
+PRESENT ADDRESS:
+ Dept of Agriculture, Fisheries & Forestry, Invasive Plant & Animal sciences Unit 
+Ecosciences Precinct, 41 Boggo Rd, Dutton Park, QLD 4102, AUSTRALIA 
+Tel:+61-7-3255-4474; Fax:+61-7-38466371;Email:Olusegun.Osunkoya@daff.qld.gov.au; 
+
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: YES
+
+
+
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: YES
+
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: lOCATION IS BRUNEI, ON BORNEO ISLAND. BRUNEI IS SANDWISHED BETWEEN THE TWO MALAYSINA STATES OF SARAWAK AND SABAH AS INDICATED IN YOUR MAP
+
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: YES
+
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: YES
+
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+
+ANSWER: The families of thE studied species are missing. These  are provided below:
+
+                      species  family pft						Family
+1  Horsfieldia polyspherulaa missing  EA						Myristicaceae
+2           Knema ashitoniia missing  EA						Myristicaceae
+3         Litsea ferrugiinea missing  EA						Lauraceae
+4                  Payena sp missing  EA						Sapotaceae
+5          Shorea parvifolia missing  EA						Dipterocarpaceae
+6               Syzygium sp. missing  EA						Myritaceae
+7          Syzygium caudatum missing  EA						Myritaceae
+8       Dacryodes apiculatae missing  EA						Burseraceae
+9           Dillenia excelsa missing  EA						Dilleniaceae
+10      Diospyros borneensis missing  EA						Ebanaceae
+11              Mallotus sp. missing  EA						Euphorbiaceae
+12    Noescortechinia kingii missing  EA						Euphorbiaceae
+13           Aporusa elemeri missing  EA						Euphorbiaceae
+14     Aporusa grandistipula missing  EA						Euphorbiaceae
+15        Aporusa subcaudata missing  EA						Euphorbiaceae
+16     Chionanthus spicatusi missing  EA						Oleaceae
+17                Fordia sp. missing  EA						Fabaceae
+18     Fordia splendidissima missing  EA						Fabaceae
+19         Ixora grandifolia missing  EA						Rubiaceae
+20        Mallotus eucaustus missing  EA						Euphorbiaceae
+21            Mallotus wreyi missing  EA						Euphorbiaceae
+22       Urophyllum arboreum missing  EA						Rubiaceae
+
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: NOT APPLICABLE
+
+
+Topic	Decription
+Sampling strategy: 	      All trees > 5 cm in diameter in a 1 ha permamant plot were sampled 
+Leaf area:            	      Not applicable
+Stem cross sectional area:    Tree diameter at breast height determined,  using diameter tapes
+Height:                       Tree height determined using clinometers
+Crown area:                    Crown diameter  were measured in four directions, and crown projection area estimated
+	                       as a function of tree fork and crown heights and crown width; see Osunkoya et al 2007 for detals
+Biomass				Not applicable
+traits				Not applicable
+Growth environment		Mixed dipterocarp rainforest
+Other variables	Not applicable
+
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: ALL ATTEMPT TO EXAMINE THIS FAILED (NO GRAPH COULD BE SEEN), EVEN THOUGH I FOLLOWED YOUR INSTRUCTIONS OF SAVING BEFORE OPENING THE FILE/S!; PERHAPS YOU COUDL SEND ME THE PLOTS
+
+
+
+
+
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: YES

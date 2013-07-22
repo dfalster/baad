@@ -1,30 +1,53 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-"species","Horsfiel_polysph","species","Horsfieldia polyspherulaa","from paper[D Barneche]"
-"species","Knema_ashiton","species","Knema ashitoniia","from paper[D Barneche]"
-"species","Litsea_ferrugi","species","Litsea ferrugiinea","from paper[D Barneche]"
-"species","Payena_unknown","species","Payena sp","from paper[D Barneche]"
-"species","Shorea_parvifol","species","Shorea parvifolia","from paper[D Barneche]"
-"species","Syz_sp_2","species","Syzygium sp.","from paper[D Barneche]"
-"species","syzy_caudatumn","species","Syzygium caudatum","from paper[D Barneche]"
-"species","Dacryo_apicul","species","Dacryodes apiculatae","from paper[D Barneche]"
-"species","Dill_excelsa","species","Dillenia excelsa","from paper[D Barneche]"
-"species","Diosp_borneensis","species","Diospyros borneensis","from paper[D Barneche]"
-"species","Mal_sp_1","species","Mallotus sp.","from paper[D Barneche]"
-"species","Noescor_kingi","species","Noescortechinia kingii","from paper[D Barneche]"
-"species","Ap_elemeri","species","Aporusa elemeri","from paper[D Barneche]"
-"species","Apo_grandi","species","Aporusa grandistipula","from paper[D Barneche]"
-"species","Apo_nitida","species","Aporusa subcaudata","from paper[D Barneche]"
-"species","Chionan_curvic","species","Chionanthus spicatusi","from paper[D Barneche]"
-"species","Ford_sp_3","species","Fordia sp.","from paper[D Barneche]"
-"species","Ford_splendid","species","Fordia splendidissima","from paper[D Barneche]"
-"species","Ixora_grandif","species","Ixora grandifolia","from paper[D Barneche]"
-"species","Mal_ecaustus","species","Mallotus eucaustus","from paper[D Barneche]"
-"species","Mal_wrayei","species","Mallotus wreyi","from paper[D Barneche]"
-"species","Urophyl_arboret","species","Urophyllum arboreum","from paper[D Barneche]"
-"","","latitude","4.5","from paper[D Barneche]"
-"","","longitude","115.1667","from paper[D Barneche]"
-"","","map","5080","from paper[D Barneche]"
-"","","mat","30","from paper[D Barneche]"
-"","","growingCondition","FW","from paper[D Barneche]"
-"","","vegetation","TropRF","from paper[D Barneche]"
-"","","pft","EA","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+species,Horsfiel_polysph,family,Myristicaceae,from paper[D Barneche]
+species,Knema_ashiton,family,Myristicaceae,from paper[D Barneche]
+species,Litsea_ferrugi,family,Lauraceae,from paper[D Barneche]
+species,Payena_unknown,family,Sapotaceae,from paper[D Barneche]
+species,Shorea_parvifol,family,Dipterocarpaceae,from paper[D Barneche]
+species,Syz_sp_2,family,Myritaceae.,from paper[D Barneche]
+species,syzy_caudatumn,family,Myritaceae,from paper[D Barneche]
+species,Dacryo_apicul,family,Burseraceae,from paper[D Barneche]
+species,Dill_excelsa,family,Dilleniaceae,from paper[D Barneche]
+species,Diosp_borneensis,family,Ebanaceae,from paper[D Barneche]
+species,Mal_sp_1,family,Euphorbiaceae,from paper[D Barneche]
+species,Noescor_kingi,family,Euphorbiaceae,from paper[D Barneche]
+species,Ap_elemeri,family,Euphorbiaceae,from paper[D Barneche]
+species,Apo_grandi,family,Euphorbiaceae,from paper[D Barneche]
+species,Apo_nitida,family,Euphorbiaceae,from paper[D Barneche]
+species,Chionan_curvic,family,Oleaceae,from paper[D Barneche]
+species,Ford_sp_3,family,Fabaceae,from paper[D Barneche]
+species,Ford_splendid,family,Fabaceae,from paper[D Barneche]
+species,Ixora_grandif,family,Rubiaceae,from paper[D Barneche]
+species,Mal_ecaustus,family,Euphorbiaceae,from paper[D Barneche]
+species,Mal_wrayei,family,Euphorbiaceae,from paper[D Barneche]
+species,Urophyl_arboret,family,Rubiaceae,from paper[D Barneche]
+species,Horsfiel_polysph,species,Horsfieldia polyspherulaa,from paper[D Barneche]
+species,Knema_ashiton,species,Knema ashitoniia,from paper[D Barneche]
+species,Litsea_ferrugi,species,Litsea ferrugiinea,from paper[D Barneche]
+species,Payena_unknown,species,Payena sp,from paper[D Barneche]
+species,Shorea_parvifol,species,Shorea parvifolia,from paper[D Barneche]
+species,Syz_sp_2,species,Syzygium sp.,from paper[D Barneche]
+species,syzy_caudatumn,species,Syzygium caudatum,from paper[D Barneche]
+species,Dacryo_apicul,species,Dacryodes apiculatae,from paper[D Barneche]
+species,Dill_excelsa,species,Dillenia excelsa,from paper[D Barneche]
+species,Diosp_borneensis,species,Diospyros borneensis,from paper[D Barneche]
+species,Mal_sp_1,species,Mallotus sp.,from paper[D Barneche]
+species,Noescor_kingi,species,Noescortechinia kingii,from paper[D Barneche]
+species,Ap_elemeri,species,Aporusa elemeri,from paper[D Barneche]
+species,Apo_grandi,species,Aporusa grandistipula,from paper[D Barneche]
+species,Apo_nitida,species,Aporusa subcaudata,from paper[D Barneche]
+species,Chionan_curvic,species,Chionanthus spicatusi,from paper[D Barneche]
+species,Ford_sp_3,species,Fordia sp.,from paper[D Barneche]
+species,Ford_splendid,species,Fordia splendidissima,from paper[D Barneche]
+species,Ixora_grandif,species,Ixora grandifolia,from paper[D Barneche]
+species,Mal_ecaustus,species,Mallotus eucaustus,from paper[D Barneche]
+species,Mal_wrayei,species,Mallotus wreyi,from paper[D Barneche]
+species,Urophyl_arboret,species,Urophyllum arboreum,from paper[D Barneche]
+,,latitude,4.5,from paper[D Barneche]
+,,longitude,115.1667,from paper[D Barneche]
+,,map,5080,from paper[D Barneche]
+,,mat,30,from paper[D Barneche]
+,,growingCondition,FW,from paper[D Barneche]
+,,vegetation,TropRF,from paper[D Barneche]
+,,pft,EA,from paper[D Barneche]
+,,location,"Brunei, Borneo",DBarneche[from_author_reply]
