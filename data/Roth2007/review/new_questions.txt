@@ -1,0 +1,19 @@
+Questions about the study:  Roth2007 
+
+1. In the attached data, could you please fill in the 'remarks' column with either 'Spodosol' or 'Ultisol' for the species Pinus elliottii var. elliottii? This way we will be able to reconstruct the location information you provided.
+
+1. In your former reply you indicated some variable descriptions for the Metadata but there are some items we would like you to clarify if possible. Could you please describe how you measured:
+a)Leaf area:
+b)Stem cross sectional area:
+c)Crown area:
+
+2. What was the main vegetation type of each of your study areas? Please answer using one of the following categories: Sav = Savannah; TropRF = Tropical rainforest; TempRF = temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temp forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
+
+3. What about the functional type of each species? Please answer using one of the following categories: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
+
+4. Would it be possible for you to include in the attached data a column contianing the status (in terms of shading) of your sampled stands? Please answer using one of the following categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed)
+
+5. According to the categories below, how would you classify the growth environment of your stands:
+PM- plantation managed
+PU- plantation unmanaged
+FE- field experimental
