@@ -1,0 +1,33 @@
+Questions about the study:  Roth2007 
+
+1. In the attached data, could you please fill in the 'remarks' column with either 'Spodosol' or 'Ultisol' for the species Pinus elliottii var. elliottii? This way we will be able to reconstruct the location information you provided.
+I've attached the original data set for you.  I have filled in the appropriate columns for each destructively sampled tree for biomass (age, species, soil type, Lat/Long., name of town, etc....  Please note the the data also include root biomass data and specific designations on the family identity and the planting density and silvicultural treatment (high vs. operational nutrition)
+1. In your former reply you indicated some variable descriptions for the Metadata but there are some items we would like you to clarify if possible. Could you please describe how you measured:
+a)Leaf area: In the age 2 data, we used the foliage biomass data and specific needle area data to calculate all sided leaf area/tree.   In the paper we calculated leaf area at the stand level using litterfall data and SNA.
+b)Stem cross sectional area: we measured dbh at 1.37 m and at ground level. Stem cross sectional area can be calculated.   
+c)Crown area:We provided Crown Width in two directions, total height and height to the base of the live crown.  You can calculate crown area from these data (we did not)
+
+2. What was the main vegetation type of each of your study areas? Please answer using one of the following categories: Sav = Savannah; TropRF = Tropical rainforest; TempRF = temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temp forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
+Included in the data sets I sent.  All of the trees came from TempF.
+3. What about the functional type of each species? Please answer using one of the following categories: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
+The functional type of all trees sampled were EG.
+4. Would it be possible for you to include in the attached data a column contianing the status (in terms of shading) of your sampled stands? Please answer using one of the following categories: 0 = supressed, 1 = intermediate, 2 = codominant (crown partly exposed), 3 = dominant (crown fully exposed)
+As these were young plantations - ages 2 and 5 years, we did not classify a shading status.  In the 2 year old trees there was little or no differentiation of crown classes. At age 5 years, one could guess the crown classes, but we did not classify at each tree at time of harvest.
+5. According to the categories below, how would you classify the growth environment of your stands:
+PM- plantation managed
+PU- plantation unmanaged
+FE- field experimental
+All of the trees were harvested from a FE (field experiment; treated border trees).  The stands were planted pine stands and the original densities are shown on the spread sheet.
+
+
+
+Email msg from author:
+Dear Diego,
+I guess I was confused a bit when filling out the information previously.  In the paper, we present stand level data (e.g, Aboveground biomass, LAI, etc..).  However, the destructively harvested data set used to develop the allometric equations were from young stands (ages 2, and 5 ) of loblolly and slash pine.   These were the data that I originally shared with Remko.  For your convenience, I have again attached the raw data in two excel files.  For each tree, I have now assigned the soil type, latitude and longitude, vegetation type, functional type, environment, genetic family identity, original spacing,  and level of silvicultural inputs.    As these were largely open-grown trees (young), we did not classify their crown class/shading status at the time of harvest.    At age 2, we calculated leaf area/tree using the foliage biomass data and measured SNA.  We did not calculate this at age 5, but one could using assumed SNA values from the literature.   SNA was based on a volume –displacement method.  Therefore, the age 2 leaf area/tree estimates were all-sided.  Remko had picked up on that earlier and I mistakenly assumed that he was talking about some stand level estimates that we made for these experiments that were calculated using litterfall data, etc… and reported as projected.    
+ 
+We did not calculate crown area in the original data set, but I did supply the crown length and crown width measures (2 directions) that could be used for this purpose.  You are welcome to make those calculations from the data supplied.
+ 
+I hope this provides better clarification.   Let me know if you need anything else.
+ 
+Sincerely,
+Eric

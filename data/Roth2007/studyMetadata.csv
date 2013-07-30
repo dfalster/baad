@@ -1,6 +1,6 @@
 Topic, Description
 Sampling strategy, "Within each harvest year, sample trees free of damage and disease, were selected at random from across the diameter distribution representative of each treatment and site. Prior to harvest, an inventory was completed on each sample tree consisting of HT, DBH, diameter at ground line, and crown width at the widest point parallel to, and perpendicular to the planting bed. Sample trees were felled at ground line using a hand saw, placed on a tarp and separated into four aboveground components: foliage, branches, stem and dead branches."
-Leaf area, ""
+Leaf area, "In the age 2 data, we used the foliage biomass data and specific needle area data to calculate all sided leaf area/tree.   In the paper we calculated leaf area at the stand level using litterfall data and SNA."
 Stem cross sectional area,""
 Height,"Total height (HT) was measured on every tree at ages 2 and 3, but was limited to a representative 20% sub-sample at age 5. Individual tree HT at age 5 was determined from site and treatment specific HT versus DBH relationships developed from this sub-sample."
 Crown area,""
