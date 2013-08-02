@@ -1,6 +1,16 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-NA,NA,"longitude","-79.05222","from paper[D Barneche]"
-NA,NA,"latitude","9.325","from paper[D Barneche]"
-NA,NA,"growingCondition","FE","from paper[D Barneche]"
-NA,NA,"vegetation","TropRF","from paper[D Barneche]"
-NA,NA,"location","Sardinilla, Buena Vista region, Panama","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+,,longitude,-79.05222,from paper[D Barneche]
+,,latitude,9.325,from paper[D Barneche]
+,,growingCondition,PM,from paper[D Barneche]
+,,vegetation,TropSF,DBarneche[from_author_reply]
+,,location,"Sardinilla, Bue Vista region, Pama", from paper[D Barneche]
+,,status,2,DBarneche[from_author_reply]
+species,Cedrela odorata,family,Meliaceae,DBarneche[from_author_reply]
+species,Tabebuia rosea,family,Bignonaceae,DBarneche[from_author_reply]
+species,Enterolobium cyclocarpum,family,Leguminoseae,DBarneche[from_author_reply]
+species,Hura crepitans,family,Euphorbiaceae,DBarneche[from_author_reply]
+species,Sterculia apetala,family,Malvaceae,DBarneche[from_author_reply]
+species,Antirrhoea trichantha,family,Rubiaceae,DBarneche[from_author_reply]
+species,Luehea seemannii,family,Tiliaceae,DBarneche[from_author_reply]
+species,Cordia alliodora,family,Boraginaceae,DBarneche[from_author_reply]
+	

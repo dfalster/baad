@@ -1,0 +1,51 @@
+Questions about the study:  Coll2008 
+
+Please look at the attached html report  Coll2008.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER:  NO, it is not.
+- My name should be written: Lluís
+- The address of my institution: Forest Sciences Centre of Catalonia (CTFC), Ctra. Sant Llorenç de Morunys, km 2, 25280, Solsona, Spain
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: YES it is!
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: YES it is. But please see comment on question 9.
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+
+ANSWER: NO, it is not. The vegetation type is "TropSF".
+We have also complete the climatic information (mean annual rainfall and temperature). See revised Excel file attached
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: YES, they do.
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: NO, it is not
+- Growing conditions are PM (Plantation managed)
+- The status is now provided (see revised Excel file)
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: Further detail about the family and pft of the species is now provided in the revised Excel file.
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+
+ANSWER: The Growth Environment is PM (plantation managed)
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+
+ANSWER: IMPORTANT! In my view you should not include in the plots our data about individual leaf area and mass because we just provided ONE mean value per species..not one value per tree..Actually the individual leaf area and weight was obtained from another study, but we DO NOT have information about the size (and biomass of compartments) of the trees from which the leaves were collected...
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: I AGREE.
