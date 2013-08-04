@@ -1,0 +1,14 @@
+Further questions about the study: Coll2008
+
+1. Could you please indicate the functional type of each species? Please answer using one of the following categories: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
+
+All the species are decidous angiosperms (DA).
+
+- Cedrela odorata: DA
+- Tabebuia rosea: DA
+- Enterolobium cyclocarpum: DA
+- Hura crepitans: DA 
+- Sterculia apetala: DA
+- Antirrhoea trichantha: DA
+- Luehea seemannii: DA
+- Cordia alliodora: DA 
