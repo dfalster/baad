@@ -1,9 +1,15 @@
 manipulate <- function(raw) {
 
-  raw$grouping <- makeGroups(raw, "sitequal")
+  # some bad missing values
+  raw[raw == "#N/A"] <- NA
   
-  # h_c was crownlength, should be height to crown base
-  raw$h_c <- with(raw, h_t - h_c)
+  # Missing growingCondition ("?") denotes trees grown on
+  # edge of road. Set to FW as well, still fitting.
+  raw$growingCondition[raw$growingCondition == "?"] <- "FW"
+  
+  # dont use a.cp or a.cs, both calculated from d.cr
+  raw$a.cs <- NULL
+  raw$a.cp <- NULL
   
   raw
 }
