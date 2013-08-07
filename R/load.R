@@ -9,5 +9,6 @@ if(length(newStudies) > 0){
 if(length(newStudies) > 0){
   lapply(newStudies, setUpFiles, quiet=FALSE)
 }
+
 #process all studies
 d <- loadStudies(reprocess=TRUE)
