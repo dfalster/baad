@@ -1,10 +1,10 @@
-Topic,Description,
-Sampling strategy,"Fourteen tree species found at La Selva Biological Station were sampled to determine allometric relationships between crown dimensions, tree height and diameter.  Measurements included total height of individual trees, diameter at 1/10 of tree height and the minimum and maximum leaf height.    ",
-Leaf area,,
-Stem cross sectional area,Stem diameter was measured at 1/10 the height of each individual tree.  ,
-Height,Height was measured as the vertical distance from the ground surface to the highest apex of each tree.  ,
-Crown area,"Crown width was projected from the ground level in two different directions, including the widest projection.",
-Biomass,,
-traits,,
-Growth environment,"Field, wild.",
-Other variables,,
+Topic, Description
+Sampling strategy,
+Leaf area,"Leaf bade length x width (spanning pinnae of compound leaves) multiplied by species specific conversion factors (near to 2/3 for most simple leaved species)."
+Stem cross sectional area,"Measured at 4 or 5 nonstandardized regularly speced heights at smooth sections of the stem. Caliper-measured diameters in two perpendicular directions x pi/4 yields the areas, which were used only to calculate stem volumes."
+Height,"Height from stem base to highest stem tip, usually that of the central stem."
+Crown area,"Width in two perpendicular directions x pi/4/."
+Biomass,"Estimated from plant part dimensional measurements to get volume (stem, and branches if present), or leaf area, which were in turn multipied by species-specific measuremnts of stem density or leaf mass per unt area, respectively."
+traits,
+Growth environment,"Understory or gaps in tropical forests. Nearly all trees were in old-growth tropcal forest."
+Other variables,

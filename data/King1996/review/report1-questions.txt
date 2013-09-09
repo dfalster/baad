@@ -1,0 +1,50 @@
+Questions about the study:  King1996 
+
+Please look at the attached html report  King1996.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information. 
+ANSWER: Currently correct.  Add yahoo email address: dkingaz@yahoo.com
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: Yes
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: Yes.
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: Yes
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: Yes.
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: Yes
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?  
+	 If not, please provide details where possible.
+ANSWER: I assume that putting Casearia and Laetia in Salicaceae and Pourouma in Urticaceae is in keeping with modern taxonomy. They were in Flacourtaceae and Cecropoidiaceae or Moraceae, respectively, when I studied them. 
+
+8. Is the 'Methods' information complete and accurate? 
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: Have added to environment that nearly all measured trees were in old-growth tropical forest.
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers? 
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER:  See answer to question 11. Note that the height to crown base (defined as lowest leaf ht) can be very low if trees have epicormic sprouts near the trunk base,as was the case for some of my trees.
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: yes
+
+11. You actually provided us with scanned data sheets for this study, but we have now had the data transcribed. We were able to interpret most of the variables, but wonder if we have made a mistake for the variable "lowest leaf" for the following species: Anaxagorea crassipetala, Dipteryx panamensis. In those species, the measure for lowest leaf is lower than the average leaf height. Is it possible that for those species you measured crown depth, whereas you measured height of lowest leaf for other species?
+ANSWER: 
+
+  For some of the data sheets I had reported only crown length, but not lowest leaf height and for these you mistook these values for lowest leaf height.
+  For these cases I cut and pasted your values in the additional column "crown length" and then calculated lowest leaf height as height - crown length, putting these values back in the lowest leaf height column.  These changes affected some or all of the lowest leaf height values for Anaxagorea, Dipteryx, Pentaclethra, Rinorea and Virola.
+   I also corrected several typos in lowest leaf height.  See data_corrected.csv for these changes.
