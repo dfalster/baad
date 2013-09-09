@@ -1,0 +1,14 @@
+Questions about the study:  Kantola2004 
+
+1. In your former reply you indicated that your study covers three locations (former question 4), however we need it to be more specific. 
+Could you please indicate in your original data file which individuals were sampled in each of the localities?
+
+I have now revised the original data (as attached exel -file).
+
+
+
+
+2. Could you please provide the standardised growth environment based on the variable definitions file 
+(FW = field wild; FE =field experimental; GH = glasshouse; PU = plantation unmanaged; PM = plantation managed; GC = growth chamber; CG = common garden)?
+
+FE
