@@ -1,18 +1,17 @@
 Variable,Units,Group,Type,methodsVariable,essential,label,Description
-dataset,-,study,character,FALSE,TRUE,dataset,first author and year of relevant paper, e.g. Falster2012
-grouping,-,stand,character,FALSE,FALSE,grouping,note any information about other information about growing environment of sampled plant, we will determine appropriate categories once we see what information is available
+dataset,-,study,character,FALSE,TRUE,dataset,first author and year of relevant paper e.g. Falster2012
 location,-,site,character,FALSE,TRUE,location,name of location where sampled
 latitude,deg,site,character,FALSE,TRUE,latitude,latitude of location where sampled (-90 to 90 deg South to North)
 longitude,deg,site,character,FALSE,TRUE,longitude,longitude of location where sampled (-180 to 180 West to East)
-vegetation,-,site,character,FALSE,TRUE,vegetation,vegetation type where sampled if grown in field: leave blank for plantations / glasshouse / common garden; Sav = Savannah; TropRF = Tropical rainforest; TempRF = temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temp forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
-lai,m2.m2,site,numeric,TRUE,FALSE,lai,leaf area of index of vegetation
+vegetation,-,site,character,FALSE,TRUE,vegetation,vegetation type where sampled if grown in field (leave blank for plantations / glasshouse / common garden): Sav = Savannah; TropRF = Tropical rainforest; TempRF = temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temp forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
 map,mm,site,numeric,FALSE,FALSE,map,mean annual rainfall (wild grown plants only)
-mat,deg,site,numeric,FALSE,FALSE,mat,mean annual temperature
-family,-,species,character,FALSE,FALSE,family,family
+mat,deg,site,numeric,FALSE,FALSE,mat,mean annual temperature (wild grown plants only)
+grouping,-,stand,character,FALSE,FALSE,grouping, "any information about growing environment of sampled plant such as treatment or subplot"
 species,-,species,character,FALSE,TRUE,species,latin name of species (genus species)
+family,-,species,character,FALSE,FALSE,family,family
 pft,-,species,character,FALSE,TRUE,pft,plant functional type: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
-age,yr,tree,numeric,TRUE,FALSE,age,age of plant expressed as decimal, e.g. 3months =0.25years
-a.lf,m2,tree,numeric,TRUE,FALSE,leaf area,leaf area
+age,yr,tree,numeric,TRUE,FALSE,age,age of plant expressed as decimal -> e.g. 3months = 0.25years
+a.lf,m2,tree,numeric,TRUE,FALSE,leaf area,leaf area of whole plant
 a.ssba,m2,tree,numeric,TRUE,FALSE,sapwood area at base,area of sapwood cross section at base
 a.ssbh,m2,tree,numeric,TRUE,FALSE,sapwood area at breast height,area of sapwood cross section at breast height
 a.ssbc,m2,tree,numeric,TRUE,FALSE,sapwood area at crown base,area of sapwood cross section at base of crown
@@ -25,19 +24,19 @@ a.sbbc,m2,tree,numeric,TRUE,FALSE,bark area at crown base,area of bark cross sec
 a.stba,m2,tree,numeric,TRUE,FALSE,stem area at base,area of total stem cross-section at base of the plant
 a.stbh,m2,tree,numeric,TRUE,FALSE,stem area at breast height,area of total stem cross-section at breast height
 a.stbc,m2,tree,numeric,TRUE,FALSE,stem area at crown base,area of total stem cross-section at base of the crown
-a.cp,m2,tree,numeric,TRUE,FALSE,crown area,projected crown area, as seen from above
+a.cp,m2,tree,numeric,TRUE,FALSE,crown area,projected crown area as seen from above
 a.cs,m2,tree,numeric,TRUE,FALSE,crown surface area,surface area of whole crown
-h.t,m,tree,numeric,TRUE,FALSE,height,total height of plant, from ground to highest leaf
+h.t,m,tree,numeric,TRUE,FALSE,height,total height of plant from ground to highest leaf
 h.c,m,tree,numeric,TRUE,FALSE,height to crown base,height to crown base
 d.ba,m,tree,numeric,TRUE,FALSE,basal diameter,diameter of stem at base
 d.bh,m,tree,numeric,TRUE,FALSE,dbh,diameter of stem at breast height (~1.35cm)
 d.cr,m,tree,numeric,TRUE,FALSE,crown width,diameter or width of crown
 c.d,m,tree,numeric,TRUE,FALSE,crown depth,crown depth
 m.lf,kg,tree,numeric,TRUE,FALSE,leaf mass,leaf mass
-m.ss,kg,tree,numeric,TRUE,FALSE,sapwood mass,sapwood mass, including branches
-m.sh,kg,tree,numeric,TRUE,FALSE,heartwood mass,heartwood mass, including branches
-m.sb,kg,tree,numeric,TRUE,FALSE,bark mass,bark mass, including branches
-m.st,kg,tree,numeric,TRUE,FALSE,total stem mass,mass of all stem tissue, including branches (=m.ss + m.sh + m.sb)
+m.ss,kg,tree,numeric,TRUE,FALSE,sapwood mass,sapwood mass including branches
+m.sh,kg,tree,numeric,TRUE,FALSE,heartwood mass,heartwood mass including branches
+m.sb,kg,tree,numeric,TRUE,FALSE,bark mass,bark mass including branches
+m.st,kg,tree,numeric,TRUE,FALSE,total stem mass,mass of all stem tissue including branches (=m.ss + m.sh + m.sb)
 m.so,kg,tree,numeric,TRUE,FALSE,aboveground mass,mass of all above-ground structures (=m.lf + m.st)
 m.br,kg,tree,numeric,TRUE,FALSE,branch mass,branch mass
 m.rf,kg,tree,numeric,TRUE,FALSE,fine root mass,fine root mass
@@ -58,4 +57,4 @@ n.rf,kg.kg,tree,numeric,TRUE,FALSE,fine root [nitrogen],nitrogen content of fine
 n.rc,kg.kg,tree,numeric,TRUE,FALSE,coarse root [nitrogen],nitrogen content of coarse roots
 growingCondition,-,tree,character,FALSE,TRUE,growing environment,growing environment of sampled plant: FW = field wild; FE =field experimental; GH = glasshouse; PU = plantation unmanaged; PM = plantation managed; GC = growth chamber; CG = common garden
 status,-,tree,character,FALSE,TRUE,crown status,position in forest canopy (wild grown plants only): 0 = supressed; 1 = intermediate; 2 = codominant (crown partly exposed); 3 = dominant (crown fully exposed)
-light,-,tree,character,TRUE,FALSE,light environment,note any information about light environment of sampled plant, we will determine appropriate categories once we see what information is available
+light,-,tree,character,TRUE,FALSE,light environment,note any information about light environment of sampled plant; we will determine appropriate categories once we see what information is available
