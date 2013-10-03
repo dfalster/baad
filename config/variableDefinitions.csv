@@ -7,6 +7,7 @@ vegetation,-,site,character,FALSE,TRUE,vegetation,vegetation type where sampled 
 map,mm,site,numeric,FALSE,FALSE,map,mean annual rainfall (wild grown plants only)
 mat,deg,site,numeric,FALSE,FALSE,mat,mean annual temperature (wild grown plants only)
 grouping,-,stand,character,FALSE,FALSE,grouping, "any information about growing environment of sampled plant such as treatment or subplot"
+lai,m2.m2,stand,numeric,TRUE,FALSE,lai,leaf area index of vegetation (wild pants only)
 species,-,species,character,FALSE,TRUE,species,latin name of species (genus species)
 family,-,species,character,FALSE,FALSE,family,family
 pft,-,species,character,FALSE,TRUE,pft,plant functional type: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
