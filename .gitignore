@@ -1,4 +1,3 @@
-website
 output
 .Rapp.history
 .Rproj.user
@@ -12,4 +11,5 @@ talk/slides.fls
 talk/slides.fdb*
 talk/slides.nav
 talk/figures/
-website
+website/index.md
+website/index.html

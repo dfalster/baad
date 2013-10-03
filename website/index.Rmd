@@ -1,0 +1,51 @@
+
+```{r, results="hide", echo=FALSE, warnings=FALSE}
+opts_chunk$set(warnings = FALSE)
+```
+
+# A Biomass and Allometry Database for Woody Plants
+
+# Invitation to participate
+Thank you for showing interest in our project. Our aim is to submit a co-authored 'Data paper' to the journal Ecology. You are hereby invited to contribute. Your contribution will help build an important resource for the research on plant growth, ecosystem dynamics and carbon cycling in the worlds vegetation.
+
+Below follows:
+
+* a draft abstract for a co-authored "data paper" to Ecology. A data paper consists of an abstract, metadata and data. An example can be found [here](A Biomass and Allometry Database for Woody Plants).
+* instructions for contributing data, with further details regarding participation and information on focal variables.
+
+Any questions or correspondence should be directed to:
+
+Dr Daniel Falster - daniel.falster@mq.edu.au - ARC Postdoctoral Research Fellow, Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109, Australia
+
+Dr Remko Duursma - remkoduursma@gmail.com - Lecturer, Hawkesbury Institue for the Environment, University of Western Sydney
+
+# Draft abstract
+
+The allocation of primary production (biomass) between different plant tissues (leaf, sapwood, bark, roots, reproductive material) determines the nature of plant growth, the outcome of competitive interactions and the flow of energy in the terrestrial biosphere. Biomass allocation is thought to change along environmental gradients and also to differ among coexisting species, such that individuals within a species exhibit a typical trajectory of biomass deployment through ontogeny. Despite decades of interest in the allometry of plant growth, few data sets enable the growth-trajectories of different species to be compared with one another.
+
+Here we present an individual-level data set capturing ontogenetic growth trajectories in woody plant species from across the globe. The data were compiled from published and unpublished sources, focusing on studies where: i) measurements were for individual plants rather than whole stands; ii) individuals spanning a range of sizes were measured, ideally from seed to mature plant; and iii) size was measured directly, i.e. all biomass measurements involve a complete or partial destructive harvest. We included both plants grown in their natural habitat and in artificial plantings. The data set contains the following variables: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; total plant height; height of crown base; projected crown area; lateral crown surface area; and total dry mass of leaf, stem, branch, sapwood, heartwood, bark, coarse root and fine root tissues. We also report other properties of individuals, where available (plant age, mean leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (status, light, experimental treatment, site leaf area index, vegetation type, mean annual rainfall). Overall, the data set contains xxx measurements, from xxx individuals, xxx species, and xxx sites.
+
+Our size and biomass data set represents a vast, untapped scientific resource characterising the growth trajectories of  xxxx woody plant species from across the globe. We hope that compiling this data set and making it available will advance our understanding of plant growth, ecosystem dynamics and carbon cycling in the worlds vegetation.
+
+# Instructions
+
+This study aims to characterise the typical growth trajectory of a species through ontogeny. We are interested in a number of variables (see table below), but as a minimum:
+ - you must have recorded ALL of i) total leaf area or mass, ii) plant height, and iii) stem diameter (or cross sectional area) at base, breast height or base of crown.
+ - variables must have been measured directly and compiled through partial or complete destructive harvest, i.e. no allometric equations.
+ - variables exist for a number of individuals spanning a range of sizes for each species.
+ - individuals sampled for each species come from the same area of forest or experiment.
+
+The following table outlines all the  variables we are collecting, and any equivalent (related) variables. You do not need all of these to participate, indeed we expect only a few papers will have the complete set, but the more the better.
+
+If your data does not have the same units or variable names, simply send the data in the units as they appear in your paper. We will later convert it to these preferred dimensions.
+
+## List of variables included in the study
+
+```{r,results="hide",echo=FALSE}
+	data <- read.csv("../config/variableDefinitions.csv", stringsAsFactors=FALSE)
+	data$Units <- gsub(".", "/", data$Units, fixed = TRUE)
+	text <- ascii(data[, c("Variable","Units", "Description")] , include.rownames = FALSE)
+```
+```{r,results="asis",echo=FALSE}
+	print(text, type = 'pandoc')
+```
