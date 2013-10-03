@@ -1,6 +1,11 @@
 "lookupVariable","lookupValue","newVariable","newValue","source"
-NA,NA,"latitude","36.78333","from paper[D Barneche]"
-NA,NA,"longitude","-96.41667","from paper[D Barneche]"
+NA,NA,"latitude","36.65","email from Myster"
+NA,NA,"longitude","-97.4667","email from Myster"
 NA,NA,"map","820","from paper[D Barneche]"
 NA,NA,"vegetation","TempF","from paper[D Barneche]"
 NA,NA,"growingCondition","PM","from paper[D Barneche]"
+species,Ulmus parrifolia,family,Ulmaceae,email from Myster 2013.06.08
+species,Maclura pomifera,family,Moraceae,email from Myster 2013.06.08
+species,Cercis canadensis,family,Fabaceae,email from Myster 2013.06.08
+species,Cornus drummondii,family,Cornaceae,email from Myster 2013.06.08
+species,Quercus shumardii,family,Fagaceae,email from Myster 2013.06.08

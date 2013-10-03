@@ -1,1 +1,0 @@
-Could you please confirm the units of your variables?	t.leaf.area = cm2 ?	t.height = cm ?	t.leaf.mass = g ?	t.stem.mass = g ?	t.root.mass = g ?
