@@ -1,15 +1,15 @@
+website
 output
 .Rapp.history
 .Rproj.user
 .Rhistory
-
 figure
 xtra
 slidify
-
 talk/slides.snm
 talk/slides.pdf
 talk/slides.fls
 talk/slides.fdb*
 talk/slides.nav
 talk/figures/
+website
