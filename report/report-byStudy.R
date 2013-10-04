@@ -26,13 +26,13 @@ tmp <- loadStudy("Sillett2010", reprocess= TRUE)
 dat <- loadStudies(reprocess=FALSE)
 
 #Email report
-emailReport(dat, "Ishihara0000", updateStage=TRUE, print.only=FALSE)
+emailReport(dat, "Yamakura1986", updateStage=TRUE, print.only=FALSE)
 emailReport(dat, "Myster2009", updateStage=FALSE)
 lapply(getStudyNames() ,emailReport, alldata=dat)
 emailReport(dat, "Selaya2008", updateStage=FALSE)
 
 
-emailReport(dat, "Yamakura1986", updateStage=TRUE, print.only=FALSE)
+emailReport(dat, "Yamakura1986", updateStage=TRUE, print.only=TRUE)
 
 #batch update - done
 processedStudies  <-  read.csv("config/processed_studies.csv", h=TRUE, stringsAsFactors=FALSE)
