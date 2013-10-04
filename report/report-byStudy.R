@@ -15,7 +15,7 @@ printStudyReport(dat, "Kantola2004", reprocess=TRUE)
 
 # All reports:
 reportPaths <- printAllStudyReports(dat, reprocess=TRUE)
-reportPaths <- lapply(c("Baraloto2006", "Ishihara0000", "Kantola2004", "King1996", "Utsugi0000", "Utsugi2004", "Yoda1978"), printStudyReport, alldata=dat, reprocess=TRUE)
+reportPaths <- lapply(c("Ando1988","Ishihara0000","Nishioka1982", "Utsugi0000", "Utsugi2004", "Yoda1978"), printStudyReport, alldata=dat, reprocess=TRUE)
 
 
 bibfile<- dat$ref$filename[1]
@@ -26,10 +26,10 @@ tmp <- loadStudy("Sillett2010", reprocess= TRUE)
 dat <- loadStudies(reprocess=FALSE)
 
 #Email report
-emailReport(dat, "Myster2006", updateStage=TRUE, print.only=TRUE)
-emailReport(dat, "Baraloto2006", updateStage=TRUE)
+emailReport(dat, "Ishihara0000", updateStage=TRUE, print.only=FALSE)
+emailReport(dat, "Myster2009", updateStage=FALSE)
 lapply(getStudyNames() ,emailReport, alldata=dat)
-emailReport(dat, "Selaya2008")
+emailReport(dat, "Selaya2008", updateStage=FALSE)
 
 
 emailReport(dat, "Yamakura1986", updateStage=TRUE, print.only=FALSE)

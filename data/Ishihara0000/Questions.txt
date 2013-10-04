@@ -1,0 +1,3 @@
+The dbh for some of the points in your collection seem to be in cm, whereas the remainder are in m. Specifically, the points on lines 1976-2011 of the dataset you sent are outliers. We can correct the units, but perhaps you would like to make the correction in your own file and send us an updated version?
+
+We should include the original references for this compilation. Can you please add the reference details in a single column called "Notes"?
