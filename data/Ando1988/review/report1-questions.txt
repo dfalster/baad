@@ -1,0 +1,50 @@
+Questions about the study:  Ando1988
+
+Please look at the attached html report  Ando1988.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER:  Yes.
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: No. Volume number is missing. Correct referece is as follows:
+Kawanabe S., Ando M. 1988. Studies on the regeneration of natural forest on lower limit of cool temperate deciduous broad-leaved forest V. Biomass and growth in natural forest of Cryptomeria japonica [in Japanese with English abstract]. Bulletin of the Kyoto University Forests. 60:67-76
+
+In abstract, please correct superscript of units (eg. m2ha-1) to proper form.
+
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: Yes.
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: Vegetation_type is TempF.
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: Yes.
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: Yes.
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?
+	 If not, please provide details where possible.
+ANSWER: No. Species name and family names were based on APG II but may not be consistent with the latest APG phylogeny. Therefore, we have changed species and family name according to the following reference.
+Satake Y, Hara H (1989a) Wild flower of Japan Woody plants I (in Japanese). Heibonsha, Tokyo
+Satake Y, Hara H (1989b) Wild flower of Japan Woody plants II (in Japanese). Heibonsha, Tokyo
+
+8. Is the 'Methods' information complete and accurate?
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: Yes.
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers?
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: The outlier in height to crown base (red colored point, Ilex sugerokii with d.bh=0.039) is probably due to opportunistic layering caused by snow pressure.
+The data is correct.
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: Yes.

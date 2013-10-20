@@ -9,9 +9,24 @@ source('report/report-1-email.R')
 # Load all data
 dat <- loadStudies(reprocess=TRUE)
 
+
+# Reprocess one study
+S <- "Yoda1978"
+tmp <- loadStudy(S, reprocess= TRUE)
+dat <- loadStudies(reprocess=FALSE)
+printStudyReport(dat, S, reprocess=TRUE)
+
+emailReport(dat, S, updateStage=TRUE)
+
+lapply(list.files(file.path("data",S,"review"), full.names=TRUE), cleanLineEndings)
+
+cleanLineEndings <- function (x){
+	txt <- readLines(x)
+	writeLines(txt, x)
+}
+
 # single study
-printStudyReport(dat, "Ishihara0000", reprocess=TRUE)
-printStudyReport(dat, "Kantola2004", reprocess=TRUE)
+printStudyReport(dat, "Kantola2004", reprocess=FALSE)
 
 # All reports:
 reportPaths <- printAllStudyReports(dat, reprocess=TRUE)
