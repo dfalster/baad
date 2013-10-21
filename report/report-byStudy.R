@@ -11,12 +11,12 @@ dat <- loadStudies(reprocess=TRUE)
 
 
 # Reprocess one study
-S <- "Yoda1978"
+S <- "Ishihara0000"
 tmp <- loadStudy(S, reprocess= TRUE)
 dat <- loadStudies(reprocess=FALSE)
 printStudyReport(dat, S, reprocess=TRUE)
 
-emailReport(dat, S, updateStage=TRUE)
+emailReport(dat, S, updateStage=FALSE)
 
 lapply(list.files(file.path("data",S,"review"), full.names=TRUE), cleanLineEndings)
 
