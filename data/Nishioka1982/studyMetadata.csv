@@ -3,8 +3,7 @@ Sampling strategy,"All trees on the 10 m × 10 m sampling plot were cut at groun
 Leaf area,"Leaf area was estimated from fresh weight of leaves and leaf area/leaf weight ratios obtained from subsamples (Nishioka et al. 1982)."
 Stem cross sectional area,"Estimated from stem diameter."
 Height,"Measured by measuring tape."
-Crown area,
 Biomass,"Fresh weights of leaves, branches and stem were measured separately for each layer and tree (Nishioka et al. 1982). Subsamples of each organ were taken and oven-dried at 85oC for one week. The fresh-to-dry weight ratios of these subsamples were used to calculate total dry weight of each tree component."
-traits,
-Growth environment,
-Other variables,
+Other variables,"Species name and family names according to the following references:
+- Satake Y, Hara H (1989a) Wild flower of Japan Woody plants I (in Japanese). Heibonsha, Tokyo
+- Satake Y, Hara H (1989b) Wild flower of Japan Woody plants II (in Japanese). Heibonsha, Tokyo."
