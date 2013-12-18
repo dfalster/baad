@@ -1,0 +1,3 @@
+[submodule "dataMashR"]
+	path = dataMashR
+	url = git@github.com:dfalster/dataMashR.git

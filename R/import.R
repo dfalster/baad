@@ -11,11 +11,11 @@ checkPackage  <-  function(package.name){
 sapply(c('bibtex', 'devtools', 'maps', 'mapdata', 'gdata', 'smatr'), checkPackage)
 rm(checkPackage)
 
-if("dataMashR" %in% .packages(all.available=TRUE)){
-  library(dataMashR)  
-} else {
-  library(devtools)
-  install_github("dataMashR","dfalster")
-  library(dataMashR)
+
+.libPaths(c("lib", .libPaths()))  # will cause us to use local version of dataMashR
+
+if(!file.exists("lib/dataMashR")){
+	stop("Install dataMashR in local directory before proceeding")
 }
 
+library(dataMashR)

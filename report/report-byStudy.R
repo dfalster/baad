@@ -1,8 +1,5 @@
 rm(list=ls())
 
-#library("devtools")
-#install_github("dataMashR","dfalster")
-
 source('report/report-fun.R')
 source('report/report-1-email.R')
 
