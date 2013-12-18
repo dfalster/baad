@@ -1,10 +1,18 @@
-rm(list=ls())
-
 source('report/report-fun.R')
 source('report/report-1-email.R')
 
+# Process one new study
+s <- "Holdaway2008"
+tmp <- loadStudy(s, reprocess= TRUE)
+dat <- loadStudies(reprocess=FALSE)
+printStudyReport(dat, s, reprocess=TRUE)
+
+#Email report
+emailReport(dat, s, updateStage=FALSE, print.only=TRUE)
+emailReport(dat, s, updateStage=TRUE, print.only=FALSE)
+
 # Load all data
-dat <- loadStudies(reprocess=TRUE)
+dat <- loadStudies(reprocess=FALSE)
 
 
 # Reprocess one study
@@ -34,7 +42,7 @@ bibfile<- dat$ref$filename[1]
 formatBib(bibfile)
 
 # Reprocess one study
-tmp <- loadStudy("Sillett2010", reprocess= TRUE)
+tmp <- loadStudy("Holdaway2008", reprocess= TRUE)
 dat <- loadStudies(reprocess=FALSE)
 
 #Email report
