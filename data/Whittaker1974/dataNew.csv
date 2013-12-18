@@ -1,0 +1,4 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+grouping,L ,grouping,550-630 m elevation band,from paper[R. Whittaker]
+grouping,M,grouping,630-710 m elevation band,from paper[R. Whittaker]
+grouping,H,grouping ,710-785 m elevation band,from paper[R. Whittaker]

@@ -1,0 +1,94 @@
+dataset,location,latitude,longitude,vegetation,map,mat,grouping,species,family,pft,age,h.t,d.bh,m.lf,m.st,m.so,m.br,m.rt,m.to,growingCondition
+Whittaker1974,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Acer saccharum ,Aceraceae,DA,54,18.73,0.139,1.169,78.284,79.453,4.944,17.3,95.584,FW
+Whittaker1975,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Acer saccharum ,Aceraceae,DA,49,20.07,0.231,5.401,278.095,283.496,49.185,56.101,334.196,FW
+Whittaker1976,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Acer saccharum ,Aceraceae,DA,49,17.85,0.218,5.831,258.835,264.666,66.265,45.056,303.891,FW
+Whittaker1977,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Acer saccharum ,Aceraceae,DA,57,13.05,0.107,1.13,38.783,39.913,3.883,7.085,45.868,FW
+Whittaker1978,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Acer saccharum ,Aceraceae,DA,53,18.39,0.157,1.772,115.309,117.081,11.789,27.403,142.712,FW
+Whittaker1979,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer saccharum ,Aceraceae,DA,50,12.08,0.102,1.392,38.675,40.067,6.875,10.15,48.825,FW
+Whittaker1980,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer saccharum ,Aceraceae,DA,55,16.25,0.223,6.353,310.402,316.755,95.332,43.849,354.251,FW
+Whittaker1981,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer saccharum ,Aceraceae,DA,59,13.86,0.297,9.89,356.112,366.002,118.902,87.564,470.676,FW
+Whittaker1982,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer saccharum ,Aceraceae,DA,77,10.84,0.155,2.655,82.645,85.3,16.865,18.43,101.075,FW
+Whittaker1983,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Acer saccharum ,Aceraceae,DA,60,8.4,0.064,0.31,8.009,8.319,0.619,2.029,10.038,FW
+Whittaker1984,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Acer saccharum ,Aceraceae,DA,30,4.13,0.019,0.078,0.657,0.735,0.093,0.263,0.92,FW
+Whittaker1985,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Acer saccharum ,Aceraceae,DA,56,24.56,0.297,8.064,544.174,552.238,89.664,97.214,641.388,FW
+Whittaker1986,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Acer saccharum ,Aceraceae,DA,95,26.08,0.47,19.045,1479.13,1498.175,375.33,239.94,1719.07,FW
+Whittaker1987,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Acer saccharum ,Aceraceae,DA,150,21.52,0.437,24.498,1353.16,1377.658,539.06,249.573,1602.733,FW
+Whittaker1988,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer saccharum ,Aceraceae,DA,185,16.61,0.44,22.67,1651.98,1674.65,885.88,294.366,1946.346,FW
+Whittaker1989,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Acer saccharum ,Aceraceae,DA,200,28.3,0.66,40.002,3387.36,3427.362,1219.56,505,3932.362,FW
+Whittaker1990,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Acer saccharum ,Aceraceae,DA,170,23.28,0.508,35.468,1926.1,1961.568,695.3,324,2285.568,FW
+Whittaker1991,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Acer saccharum ,Aceraceae,DA,52,20.05,0.287,10.737,501.883,512.62,122.653,121.76,634.38,FW
+Whittaker1992,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Acer saccharum ,Aceraceae,DA,31,6,0.032,0.111,1.943,2.054,0.116,0.892,2.946,FW
+Whittaker1993,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer saccharum ,Aceraceae,DA,23,4.45,0.019,0.039,0.66,0.699,0.029,0.234,0.933,FW
+Whittaker1994,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer saccharum ,Aceraceae,DA,29,8.3,0.058,0.419,8.681,9.1,0.861,2.535,11.635,FW
+Whittaker1995,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Betula alleghaniensis ,Betulaceae,DA,52,21.68,0.215,3.187,228.923,232.11,31.023,37.848,269.958,FW
+Whittaker1996,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Betula alleghaniensis ,Betulaceae,DA,41,14.42,0.108,0.678,37.294,37.972,4.124,6.504,44.476,FW
+Whittaker1997,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Betula alleghaniensis ,Betulaceae,DA,40,14.12,0.117,0.64,43.386,44.026,6.036,7.105,51.131,FW
+Whittaker1998,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Betula alleghaniensis ,Betulaceae,DA,51,15.96,0.302,6.113,365.232,371.345,137.932,95.737,467.082,FW
+Whittaker1999,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Betula alleghaniensis ,Betulaceae,DA,61,15.5,0.165,3.101,151.516,154.617,54.486,49.496,204.113,FW
+Whittaker2000,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Betula alleghaniensis ,Betulaceae,DA,110,24.42,0.34,7.918,615.242,623.16,122.342,151.191,774.351,FW
+Whittaker2001,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Betula alleghaniensis ,Betulaceae,DA,137,13.46,0.325,11.645,645.186,656.831,289.286,152.688,809.519,FW
+Whittaker2002,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Betula alleghaniensis ,Betulaceae,DA,28,11.15,0.152,3.204,77.741,80.945,25.041,19.308,100.253,FW
+Whittaker2003,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Betula alleghaniensis ,Betulaceae,DA,38,8.68,0.061,0.198,9.771,9.969,0.691,2.635,12.604,FW
+Whittaker2004,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Betula alleghaniensis ,Betulaceae,DA,19,3.01,0.013,0.031,0.311,0.342,0.06,0.126,0.468,FW
+Whittaker2005,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Betula alleghaniensis ,Betulaceae,DA,139,21.18,0.432,25.06,1175.26,1200.32,549.06,278.111,1478.431,FW
+Whittaker2006,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Betula alleghaniensis ,Betulaceae,DA,79,19.47,0.432,16.36,1123.58,1139.94,496.18,267,1406.94,FW
+Whittaker2007,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Betula alleghaniensis ,Betulaceae,DA,155,13.28,0.38,14.343,707.867,722.21,316.967,157.215,879.425,FW
+Whittaker2008,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Betula alleghaniensis ,Betulaceae,DA,104,23.65,0.51,54.067,2813.44,2867.507,1755.64,387.514,3255.021,FW
+Whittaker2009,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Betula alleghaniensis ,Betulaceae,DA,90,20.54,0.5,24.398,2181.63,2206.028,1369.13,473.129,2679.157,FW
+Whittaker2010,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Betula alleghaniensis ,Betulaceae,DA,52,18.13,0.221,3.846,266.747,270.593,78.247,39.388,309.981,FW
+Whittaker2011,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Betula alleghaniensis ,Betulaceae,DA,40,5.5,0.034,0.188,2.181,2.369,0.543,0.484,2.853,FW
+Whittaker2012,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Betula alleghaniensis ,Betulaceae,DA,69,13.99,0.24,7.185,245.382,252.567,83.682,51.165,303.732,FW
+Whittaker2013,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Betula alleghaniensis ,Betulaceae,DA,48,11.97,0.106,1.31,37.045,38.355,6.995,10.305,48.66,FW
+Whittaker2014,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Betula alleghaniensis ,Betulaceae,DA,260,15.5,0.515,20.932,1865.79,1886.722,869.89,248.907,2135.629,FW
+Whittaker2015,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Betula alleghaniensis ,Betulaceae,DA,32,5.87,0.028,0.181,1.442,1.623,0.325,0.318,1.941,FW
+Whittaker2016,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Fagus grandifolia ,Fagaceae,DA,78,13.49,0.13,1.639,63.504,65.143,15.254,13.9,79.043,FW
+Whittaker2017,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Fagus grandifolia ,Fagaceae,DA,82,20.88,0.185,2.698,200.388,203.086,43.168,48.607,251.693,FW
+Whittaker2018,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Fagus grandifolia ,Fagaceae,DA,105,22.8,0.282,7.56,564.7,572.26,197,110.195,682.455,FW
+Whittaker2019,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Fagus grandifolia ,Fagaceae,DA,50,15.63,0.167,2.436,127.835,130.271,34.225,30.4,160.671,FW
+Whittaker2020,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Fagus grandifolia ,Fagaceae,DA,52,11.79,0.097,1.189,26.439,27.628,5.889,10.742,38.37,FW
+Whittaker2021,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Fagus grandifolia ,Fagaceae,DA,42,10.6,0.104,0.814,30.231,31.045,4.241,8.152,39.197,FW
+Whittaker2022,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Fagus grandifolia ,Fagaceae,DA,121,12.51,0.196,5.138,162.734,167.872,59.894,20.99,188.862,FW
+Whittaker2023,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Fagus grandifolia ,Fagaceae,DA,58,9.64,0.137,1.823,57.115,58.938,16.125,13.774,72.712,FW
+Whittaker2024,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Fagus grandifolia ,Fagaceae,DA,115,15.24,0.332,15.875,557.462,573.337,215.562,125.736,699.073,FW
+Whittaker2025,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Fagus grandifolia ,Fagaceae,DA,34,9.75,0.062,0.583,10.304,10.887,2.344,2.169,13.056,FW
+Whittaker2026,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Fagus grandifolia ,Fagaceae,DA,65,3.51,0.018,0.072,0.576,0.648,0.163,0.23,0.878,FW
+Whittaker2027,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Fagus grandifolia ,Fagaceae,DA,122,16.18,0.292,5.94,442.91,448.85,162.41,71.364,520.214,FW
+Whittaker2028,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Fagus grandifolia ,Fagaceae,DA,205,22.89,0.412,12.75,1230.74,1243.49,438.04,213.264,1456.754,FW
+Whittaker2029,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Fagus grandifolia ,Fagaceae,DA,183,17.42,0.385,8.721,860.176,868.897,321.876,228.425,1097.322,FW
+Whittaker2030,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Fagus grandifolia ,Fagaceae,DA,138,16.8,0.391,23.672,1033.12,1056.792,501.32,230.316,1287.108,FW
+Whittaker2031,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,L,Fagus grandifolia ,Fagaceae,DA,180,27.3,0.495,29.18,3125.99,3155.17,1571.19,353.546,3508.716,FW
+Whittaker2032,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Fagus grandifolia ,Fagaceae,DA,200,20.62,0.518,17.137,1750.78,1767.917,619.38,343,2110.917,FW
+Whittaker2033,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Fagus grandifolia ,Fagaceae,DA,55,19.08,0.204,3.598,224.527,228.125,40.437,39.633,267.758,FW
+Whittaker2034,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,M,Fagus grandifolia ,Fagaceae,DA,35,3.2,0.019,0.109,0.735,0.844,0.2,0.435,1.278,FW
+Whittaker2035,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Fagus grandifolia ,Fagaceae,DA,210,14.28,0.59,8.363,921.87,930.233,182.07,245.361,1175.594,FW
+Whittaker2036,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Fagus grandifolia ,Fagaceae,DA,30,3.8,0.023,0.09,1.201,1.291,0.208,0.465,1.757,FW
+Whittaker2037,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,65,6.25,0.09,1.043,11.308,12.351,1.978,3.665,16.016,FW
+Whittaker2038,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,73,11.56,0.24,10.756,169.14,179.896,58.84,43.38,223.276,FW
+Whittaker2039,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,215,16.45,0.376,31.101,398.69,429.791,122.09,185.28,615.071,FW
+Whittaker2040,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,105,11.63,0.2,8.804,118.14,126.944,40.03,43.76,170.704,FW
+Whittaker2041,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,82,6.3,0.071,1.013,8.74,9.753,1.76,3.507,13.26,FW
+Whittaker2042,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,78,13,0.183,7.01,94.654,101.664,25.864,28.65,130.314,FW
+Whittaker2043,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,61,7.87,0.11,1.743,17.026,18.769,1.926,7.13,25.899,FW
+Whittaker2044,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,70,7.55,0.094,1.963,13.591,15.554,3.131,5.21,20.764,FW
+Whittaker2045,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,60,2.54,0.029,0.49,1.681,2.171,0.491,0.831,3.002,FW
+Whittaker2046,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,45,2.84,0.031,0.346,1.465,1.811,0.245,0.537,2.348,FW
+Whittaker2047,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,56,10.3,0.127,2.93,34.787,37.717,8.287,12.77,50.487,FW
+Whittaker2048,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,57,12.62,0.158,7.504,67.043,74.547,17.353,22.88,97.427,FW
+Whittaker2049,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,61,3.07,0.034,0.475,2.302,2.777,0.642,1.273,4.05,FW
+Whittaker2050,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,122,10.66,0.187,7.685,95.544,103.229,27.934,37.2,140.429,FW
+Whittaker2051,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Picea rubens ,Pinaceae,EG,126,13.25,0.247,11.52,182.78,194.3,52.98,75.19,269.49,FW
+Whittaker2052,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,7.81,0.063,0.568,8.81,9.378,2.444,2.917,12.295,FW
+Whittaker2053,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,4.8,0.028,0.045,1.329,1.373,0.206,0.489,1.862,FW
+Whittaker2054,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,8.65,0.07,1.831,16.552,18.383,8.6,3.501,21.883,FW
+Whittaker2055,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,2.8,0.014,0.005,0.273,0.277,0.015,0.24,0.517,FW
+Whittaker2056,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,6,0.041,0.149,3.48,3.629,1.304,1.462,5.091,FW
+Whittaker2057,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,2.75,0.013,0.006,0.218,0.223,0.025,0.183,0.406,FW
+Whittaker2058,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,3,0.019,0.025,0.44,0.465,0.149,0.327,0.792,FW
+Whittaker2059,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,9.1,0.074,0.456,13.64,14.096,3.475,5.214,19.31,FW
+Whittaker2060,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,8.95,0.086,1.03,23.205,24.235,9.721,7.631,31.866,FW
+Whittaker2061,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,7.67,0.057,0.242,6.128,6.37,1.737,0.96,7.33,FW
+Whittaker2062,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,4.4,0.021,0.027,0.632,0.658,0.165,0.51,1.168,FW
+Whittaker2063,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,5.25,0.034,0.113,1.969,2.082,0.488,0.567,2.649,FW
+Whittaker2064,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,3.32,0.015,0.01,0.267,0.276,0.033,0.291,0.567,FW
+Whittaker2065,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,10.3,0.093,1.114,24.76,25.874,7.284,7.094,32.968,FW
+Whittaker2066,Hubbard Brook Experimental Forest,44,-72,TempF,1300,6,H,Acer pensylvanicum,Aceraceae,DA,,9.3,0.089,1.343,25.293,26.636,10.173,6.753,33.389,FW
