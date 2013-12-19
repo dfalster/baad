@@ -47,12 +47,6 @@ dat <- loadStudies(reprocess=FALSE)
 
 #Email report
 emailReport(dat, "Yamakura1986", updateStage=TRUE, print.only=FALSE)
-emailReport(dat, "Myster2009", updateStage=FALSE)
-lapply(getStudyNames() ,emailReport, alldata=dat)
-emailReport(dat, "Selaya2008", updateStage=FALSE)
-
-
-emailReport(dat, "Yamakura1986", updateStage=TRUE, print.only=TRUE)
 
 #batch update - done
 processedStudies  <-  read.csv("config/processed_studies.csv", h=TRUE, stringsAsFactors=FALSE)
@@ -66,5 +60,6 @@ lapply(chosen.st, function(x)emailReport(dat, x, updateStage=FALSE, print.only=F
 # Send reminder
 sendReminder(alldata=dat, "Baltzer2007")
 
-
-
+# Send Update
+dat <- loadStudies(reprocess=TRUE)
+lapply(getStudyNames(), sendUpdate, alldata=dat)

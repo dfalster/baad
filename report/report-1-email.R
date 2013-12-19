@@ -1,3 +1,32 @@
+sendUpdate<- function(alldata, study){
+  dat    <-  extractStudy(alldata, study)
+
+  email.text  =  paste0("Dear ", paste0(dat$contact$name, collapse = " and "),",
+
+We previously contacted you regarding a biomass and allometry database we are developing, which we plan to submit as a 'data paper' to the journal Ecology.
+
+You kindly contributed data from the publication: ", formatBib(dat$ref$filename)[[1]],".
+
+I am just writing to let you know that the paper is progressing. After 1.5yrs, we have finally finished collecting new data. In total we have data from 107 studies, with information for 19752 individuals from 259 locations, covering 645 species. We are certain this dataset will be a widely used resource and thank you for your contribution.
+
+We plan to send you a draft of paper to review early in the new year.
+
+In the mean time we wish you the best for an enjoyable christams break.
+
+With best regards,
+Daniel Falster, Remko Duursma, Diego Barneche\n")
+
+email(content =   email.text,
+        subject = "Update on Biomass and allometry database",
+        to =  dat$contact$email,
+        from="daniel.falster@mq.edu.au",
+        bcc= character(0),
+        cc= character(0),
+        files = character(0),
+        send=FALSE
+  )
+}
+
 sendReminder<- function(alldata, study){
   dat    <-  extractStudy(alldata, study)
   
