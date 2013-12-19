@@ -1,0 +1,12 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+,,latitude,19,from paper[A Saldana-Acosta]
+,,longitude,-104,from paper[A Saldana-Acosta]
+,,map,1609,from paper[A Saldana-Acosta]
+,,vegetation,TempF,from paper[A Saldana-Acosta]
+,,growingCondition,GH,from paper[A Saldana-Acosta]
+species,Fraxinus uhdei,pft,DA,from paper[A Saldana-Acosta]
+species,Juglans major,pft,DA,from paper[A Saldana-Acosta]
+light,a,light,3-5% of PAR,from paper[A Saldana-Acosta]
+light,b,light,8-10% of PAR,from paper[A Saldana-Acosta]
+light,c,light,18-20% of PAR,from paper[A Saldana-Acosta]
+light,d,light,55-60% of PAR,from paper[A Saldana-Acosta]
