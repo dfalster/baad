@@ -1,0 +1,10 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+,,latitude,35,from paper[S Naidu]
+,,longitude,-79,from paper[S Naidu]
+,,vegetation,TempF,from paper[S Naidu]
+,,growingCondition,PU,from paper[S Naidu]
+,,pft,EG,from paper[S Naidu]
+,,family,Pinaceae,from paper[S Naidu]
+,,species,Pinus taeda,from paper[S Naidu]
+CAT,d,status,3,from paper[S Naidu]
+CAT,s,status,0,from paper[S Naidu]
