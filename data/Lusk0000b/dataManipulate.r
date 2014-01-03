@@ -1,6 +1,0 @@
-manipulate <- function(raw) {
-  
-  
-  raw
-}
-

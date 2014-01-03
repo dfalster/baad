@@ -2,7 +2,7 @@ source('report/report-fun.R')
 source('report/report-1-email.R')
 
 # Process one new study
-s <- "Holdaway2008"
+s <- "Lusk2013"
 tmp <- loadStudy(s, reprocess= TRUE)
 dat <- loadStudies(reprocess=FALSE)
 printStudyReport(dat, s, reprocess=TRUE)
