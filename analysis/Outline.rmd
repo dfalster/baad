@@ -16,6 +16,7 @@ if(!file.exists("../cache/allomdata.rds")){
 } else {
   data <- readRDS("../cache/allomdata.rds")
 }
+data$dataset_species <- as.factor(paste(data$dataset, data$species, sep="-"))
 
 ```
 
@@ -54,18 +55,27 @@ Goal: Establish foundations for modelling plant growth through ontogeny, emphasi
 dfr <- subset(data, !is.na(m.rf) & !is.na(m.lf) & pft != "")
 dfr$pft <- as.factor(dfr$pft)
 
-palette(rich.colors(4))
-with(dfr, plot(log10(m.lf), log10(m.rf),
+sm <- lapply(split(dfr, dfr$pft), function(x){
+      sma(log10(m.rf) ~ log10(m.lf)*dataset_species, 
+           data=x)
+      })
+
+  
+palette(alpha(rich.colors(4),0.5))
+with(dfr, plot(log10(m.lf), log10(m.rf), 
                axes=FALSE,
-               xlab="Leaf biomass (kg)",
-               ylab="Fine root biomass (kg)",
-               pch=19,
-               col=pft))
-zs <- c(0.05, 0.25, 0.5, 0.75,1)
-for(z in zs)abline(log10(z),1)
-legend("bottomright", levels(dfr$pft), pch=19, col=palette())
+               xlab="Aboveground biomass (kg)",
+               ylab="Foliage mass (kg)",
+               type='n',col=pft, panel.first={
+                 for(z in c(0.05, 0.25, 0.5, 0.75, 1))abline(log10(z),1)
+               }))
 magaxis(side=c(1,2), unlog='xy', tcl=-0.4)
+for(i in 1:3)plot(sm[[i]], add=TRUE, col=palette()[i], type='l', lwd=2)
 box()
+legend("bottomright", levels(dfr$pft), fill=alpha(palette(),1))
+
+
+
 ```
 Figure X. Lines are with exponent of 1, and represent fixed ratios between fine root biomass and leaf biomass (from top to bottom: 1, 0.75, 0.5, 0.25, 0.05).
 
@@ -76,7 +86,7 @@ Figure X. Lines are with exponent of 1, and represent fixed ratios between fine 
 
 ## Leaf mass fraction
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 # subset/refine data.
 dfr <- droplevels(subset(data, !is.na(m.st) & !is.na(m.lf) & pft != "" & m.lf > 0))
 dfr <- within(dfr, {
@@ -96,11 +106,11 @@ with(dfr, plot(log_m.so, log_m.lf.fraction, axes=FALSE,
 magaxis(side=c(1,2), unlog='xy', tcl=-0.4)
 box()
 legend("topright", levels(dfr$pft), pch=19, col=palette())
+#Figure X. Much higher leaf mass fraction for evergreen gymnosperms at a given total aboveground plant biomass.
 ```
-Figure X. Much higher leaf mass fraction for evergreen gymnosperms at a given total aboveground plant biomass.
 
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 dfr <- droplevels(subset(data, !is.na(m.st) & !is.na(m.lf) & !is.na(m.rt) & 
                            m.lf > 0 & m.rt > 0 & pft != "" & 
                            m.st < m.to))
@@ -136,6 +146,39 @@ plot(1, type='n', ann=FALSE, axes=FALSE)
 legend("left", c("Root","Root+Leaf","Root+Leaf+Stem"), pch=c(19,19,-1),
                  lty=c(-1,-1,1), col=c("red","blue","forestgreen"), cex=0.8)
 ```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+ 
+dfr <- droplevels(subset(data, !is.na(m.so) & !is.na(m.lf) & pft != "" &
+                           m.lf > 0 & m.so > 0))
+dfr$pft <- as.factor(dfr$pft)
+                           
+
+sm <- lapply(split(dfr, dfr$pft), function(x){
+      sma(log10(m.lf) ~ log10(m.so)*dataset_species, 
+           data=x)
+      })
+
+  
+palette(alpha(rich.colors(4), 0.4))
+with(dfr, plot(log10(m.so), log10(m.lf), 
+               axes=FALSE,
+               xlab="Aboveground biomass (kg)",
+               ylab="Foliage mass (kg)",
+               type='n',col=pft, panel.first={
+                 for(z in c(-2,-1,0))abline(z,1)
+                 
+               }))
+magaxis(side=c(1,2), unlog='xy', tcl=-0.4)
+for(i in 1:4)plot(sm[[i]], add=TRUE, col=palette()[i], type='l')
+box()
+legend("bottomright", levels(dfr$pft), fill=alpha(palette(),1))
+
+
+```
+
 
 ## Equations for total biomass
 
