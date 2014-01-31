@@ -1,0 +1,12 @@
+lookupVariable,lookupValue,newVariable,newValue,source
+,,latitude,59,from paper[A Portsmuth]
+,,longitude,24,from paper[A Portsmuth]
+,,vegetation,TempF,from paper[A Portsmuth]
+,,growingCondition,GH,from paper[A Portsmuth]
+species,Betula pendula,pft,DA,from paper[A Portsmuth]
+species,Betula pubescens,pft,DA,from paper[A Portsmuth]
+light conditions,1,light,100% of PAR,from paper[A Portsmuth]
+light conditions,2,light,34% of PAR,from paper[A Portsmuth]
+light conditions,3,light,10% of PAR,from paper[A Portsmuth]
+light conditions,4,light,5% of PAR,from paper[A Portsmuth]
+,,location,"Institute of Ecology, Tallinn Station, Estonia"
