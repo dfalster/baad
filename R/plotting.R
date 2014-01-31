@@ -106,40 +106,19 @@ bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.trans
   if(legend)
     bivarPlot.Legend(out)
   
+  fit <- NA
   if(type %in% c("o","b", "l"))
-     add.sma(data, xvar, yvar, colorBy, out, from=from, to=to,...)   
+     fit <- add.sma(data, xvar, yvar, colorBy, out, from=from, to=to,add=TRUE,...)
   
-  invisible(out)
+  invisible(list(colours=out, fit=fit))
 }    
 
 add.sma <-function (data, xvar, yvar, colorBy, colours, from=NA, to=NA,...){
 
   i <- findPositive(data, xvar, yvar)
   fit <- sma(data[i,yvar]~data[i,xvar]*colorBy[i], log="xy")
-  
-  out<- fit$groupsummary
-
-  ngrps<-length(out[,1])
-    
-  #add lines to plot
-  for(i in 1:ngrps){
-    #coefficients
-    a <- fit$groupsummary$Int[i]
-    B <-  fit$groupsummary$Slope[i]
-    if(is.na(from)) 
-      From <- as.numeric(fit$from[i])  
-    else
-      From <- from  
-    if(is.na(to)) 
-      To <- as.numeric(fit$to[i])
-    else
-      To <- to  
-    col <- colours$col [ match(as.character(fit$groupsummary$group[i]), as.character(colours$group))]
-    
-    #choose line according to log-trsnaformation used in fitting data, even if different transformation used for axes
-    curve(10^a*x^B, From, To, add=TRUE,col = col, lty= "solid",...)    
-    }
-  invisible(out)
+  plot(fit, type='l',...)
+  invisible(fit)
 } 
 
 bivarPlot.Legend <- function(tmp, location="topleft", text.col = "black", lwd=0, bty ="n"){
