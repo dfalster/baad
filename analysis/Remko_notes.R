@@ -120,9 +120,20 @@ abline(h=0.75, col="red")
 #---------------------------------------------------------------------------------------------#
 
 # functional balance.
+dfr <- subset(data, !is.na(m.rf) & !is.na(m.lf) & pft != "")
+dfr$pft <- as.factor(dfr$pft)
 
-
-
-
+palette(rich.colors(4))
+with(dfr, plot(log10(m.lf), log10(m.rf),
+               axes=FALSE,
+               xlab="Leaf biomass (kg)",
+               ylab="Fine root biomass (kg)",
+               pch=19,
+               col=pft))
+zs <- c(0.05, 0.25, 0.5, 0.75,1)
+for(z in zs)abline(log10(z),1)
+legend("bottomright", levels(dfr$pft), pch=19, col=palette())
+magaxis(side=c(1,2), unlog='xy', tcl=-0.4)
+box()
 
 
