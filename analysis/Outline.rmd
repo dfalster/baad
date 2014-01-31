@@ -1,5 +1,23 @@
-% How to build a plant
-% Daniel Falster; Remko Duursma; Diego Barneche
+How to build a plant
+=======================
+Daniel Falster, Remko Duursma, Diego Barneche
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+source("../R/fillDerivedVariables.R")
+source("../R/import.R")
+library(gplots)
+library(scales)
+library(magicaxis)
+
+if(!file.exists("../cache/allomdata.rds")){
+  dat <- loadStudies(reprocess=FALSE)
+  data <- fillDerivedVariables(dat$data)
+  saveRDS(data, file="cache/allomdata.rds")
+} else {
+  data <- readRDS("../cache/allomdata.rds")
+}
+
+```
 
 Goal: Establish foundations for modelling plant growth through ontogeny, emphasising simple hypotheses, areas where important differences lie (e.g. between species, between vegetation, light env)
 
@@ -40,6 +58,29 @@ Goal: Establish foundations for modelling plant growth through ontogeny, emphasi
 
 ## Leaf mass fraction
 
+```{r echo=FALSE}
+# subset/refine data.
+dfr <- droplevels(subset(data, !is.na(m.st) & !is.na(m.lf) & pft != "" & m.lf > 0))
+dfr <- within(dfr, {
+  dataset <- as.factor(dataset)
+  species <- as.factor(species)
+  pft <- as.factor(pft)
+  m.lf.fraction <- with(dfr, m.lf / m.so)
+  log_m.so <- log10(m.so)
+  log_m.lf.fraction <- log10(m.lf.fraction)
+})
+
+with(dfr, plot(log_m.so, log_m.lf.fraction, axes=FALSE,
+               xlab="Aboveground biomass (kg)",
+               ylab="Leaf mass fraction (-)",
+               pch=19, col=pft
+))
+magaxis(side=c(1,2), unlog='xy', tcl=-0.4)
+box()
+legend("topright", levels(dfr$pft), pch=19, col=palette())
+
+
+```
 
 ## Equations for total biomass
 
