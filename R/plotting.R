@@ -80,7 +80,7 @@ highlightStudies <- function(data, xvar, yvar, group, studies, col = niceColors(
   invisible(leg)
 }
 
-bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.transparent(niceColors(), 0.5), pch=1, add = FALSE, legend=FALSE, from=NA, to=NA,...){ 
+bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col=niceColors(1), pch=1, add = FALSE, legend=FALSE, from=NA, to=NA,...){
   
   colorBy <- data[[group]]
   
@@ -91,12 +91,12 @@ bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.trans
   colours <- col[as.factor(colorBy)]
   nans <- is.na(colorBy) | (colorBy== "")
   nanMarker <- "xxxxx"
-  colours[nans] <- "grey" 
+  colours[nans] <- "grey"
   colorBy[nans] = nanMarker
   
   i <- order(colorBy, decreasing = TRUE)
   
-  bivarPlot(data[i,], xvar, yvar, xlab =getLabel(xvar), ylab = getLabel(yvar), col= make.transparent(colours[i], 0.5), add = add, type=type, pch=pch, ...)
+  bivarPlot(data[i,], xvar, yvar, xlab =getLabel(xvar), ylab = getLabel(yvar), col= colours[i], add=add, type=type, pch=pch, ...)
   
   #Return color by group, in order
   i <- !duplicated(colorBy)
@@ -108,16 +108,16 @@ bivarPlotColorBy <- function(data, xvar, yvar, group, type='b', col = make.trans
   
   fit <- NA
   if(type %in% c("o","b", "l"))
-     fit <- add.sma(data, xvar, yvar, colorBy, out, from=from, to=to,add=TRUE,...)
+     fit <- add.sma(data, xvar, yvar, colorBy, col=out$col, from=from, to=to,add=TRUE,...)
   
   invisible(list(colours=out, fit=fit))
 }    
 
-add.sma <-function (data, xvar, yvar, colorBy, colours, from=NA, to=NA,...){
+add.sma <-function (data, xvar, yvar, colorBy, col, from=NA, to=NA,...){
 
   i <- findPositive(data, xvar, yvar)
   fit <- sma(data[i,yvar]~data[i,xvar]*colorBy[i], log="xy")
-  plot(fit, type='l',...)
+  plot(fit, type='l',col=col,p.lines.transparent=0.1,...)
   invisible(fit)
 } 
 
@@ -138,17 +138,8 @@ findPositive<-function(data, xvar, yvar){
 
 bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, type='p', col= make.transparent("grey", 0.5), pch=1, add = FALSE, zeroWarning = FALSE, ...){
   
-  #check for negative values  
-  i <- findPositive(data, xvar, yvar)
-  
-  if(zeroWarning  & (length(i) < length(data[,1]))){
-    warning("values <= 0 omitted from logarithmic plot")
-    id =c("dataset", "species")
-    print(data[-i, c(id, xvar, yvar)])
-  }
-  
   if(!add){
-    plot(data[i,xvar], data[i,yvar],  type= 'n', log="xy", las=1, yaxt="n", xaxt="n", xlab=xlab, ylab=ylab,  ...)
+    plot(data[,xvar], data[,yvar],  type= 'n', log="xy", las=1, yaxt="n", xaxt="n", xlab=xlab, ylab=ylab,  ...)
     #add nice log axes
     axis.log10(1) 
     axis.log10(2)    
@@ -156,8 +147,7 @@ bivarPlot <- function(data, xvar, yvar, xlab=xvar, ylab=yvar, type='p', col= mak
   
   #add data
   if(type %in% c("o","b", "p"))
-    points(data[i,xvar], data[i,yvar],  type= 'p', col = col[i], pch=pch, ...)  
-  
+    points(data[,xvar], data[,yvar],  type= 'p', col = col, pch=pch, ...)
 }  
 
 whichStudies <- function(alldata, var, value){
