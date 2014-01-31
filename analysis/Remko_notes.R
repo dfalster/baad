@@ -96,13 +96,13 @@ legend("left", c("Root","Root+Leaf","Root+Leaf+Stem"), pch=c(19,19,-1),
 # 3/4 scaling
 
 data$dataset_species <- as.factor(paste(data$dataset, data$species, sep="-"))
-# 
-# dfr <- droplevels(subset(data, !is.na(d.cr) & !is.na(h.c) & !is.na(m.lf) &
-#                                         m.lf > 0 & h.c > 0 & d.cr > 0))
+ 
+dfr <- droplevels(subset(data, !is.na(m.so) & !is.na(m.lf) & pft != "" &
+                           m.lf > 0 & m.so > 0))
+dfr$pft <- as.factor(dfr$pft)
 
-
-sm <- sma(m.lf ~ m.to * dataset_species, data=data, log='xy')
-plot(sm)
+sm <- sma(m.lf ~ m.so * dataset_species, data=data, log='xy')
+plot(sm,p.lines.transparent=0.1, type=' [')
 for(x in -2:0)abline(x,1)
 
 
@@ -110,12 +110,37 @@ p <- coef(sm)
 p$dataset_species <- rownames(p)
 rownames(p) <- NULL
 
-meansize <- aggregate(m.to ~ dataset_species, FUN=mean, na.rm=TRUE, data=data)
+meansize <- aggregate(m.so ~ dataset_species, FUN=mean, na.rm=TRUE, data=data)
 p <- merge(p, meansize, all=FALSE)
 
-with(p, plot(log10(m.to), slope, ylim=c(0,2)))
-abline(lm(slope ~ log10(m.to), data=p))
+with(p, plot(log10(m.so), slope, ylim=c(0,2)))
+abline(lm(slope ~ log10(m.so), data=p))
 abline(h=0.75, col="red")
+
+
+# with(subset(dfr, pft=="EG" & growingCondition == "FW"),
+#      plot(log10(m.so), log10(m.lf)))
+# with(subset(dfr, pft=="EG" & growingCondition == "PM"),
+#      points(log10(m.so), log10(m.lf), col="red"))
+
+sm1 <- sma(log10(m.lf) ~ log10(m.so)*dataset_species, 
+           data=subset(dfr, pft==levels(pft)[1]))
+sm2 <- sma(log10(m.lf) ~ log10(m.so)*dataset_species, 
+           data=subset(dfr, pft==levels(pft)[2]))
+sm3 <- sma(log10(m.lf) ~ log10(m.so)*dataset_species, 
+           data=subset(dfr, pft==levels(pft)[3]))
+sm4 <- sma(log10(m.lf) ~ log10(m.so)*dataset_species, 
+           data=subset(dfr, pft==levels(pft)[4]))
+
+palette(alpha(rich.colors(4), 0.4))
+with(dfr, plot(log10(m.so), log10(m.lf), 
+               type='n',col=pft))
+
+plot(sm1, add=TRUE, col=palette()[1], type='l')
+plot(sm2, add=TRUE, col=palette()[2], type='l')
+plot(sm3, add=TRUE, col=palette()[3], type='l')
+plot(sm4, add=TRUE, col=palette()[4], type='l')
+
 
 #---------------------------------------------------------------------------------------------#
 
