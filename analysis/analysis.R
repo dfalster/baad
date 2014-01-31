@@ -6,6 +6,10 @@ source('report/report-fun.R')
 dat <- loadStudies(reprocess=FALSE)
 data <- dat$data
 
+saveRDS(data, file="cache/allomdata.rds")
+
+
+
 getAttributeByStudy <- function(data, var, studies){
   i <- !is.na(data[[var]])
   data[c("dataset", var)][!duplicated(paste( data[["dataset"]], data[[var]])),]
