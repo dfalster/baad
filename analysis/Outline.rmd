@@ -64,8 +64,8 @@ sm <- lapply(split(dfr, dfr$pft), function(x){
 palette(alpha(rich.colors(4),0.5))
 with(dfr, plot(log10(m.lf), log10(m.rf), 
                axes=FALSE,
-               xlab="Aboveground biomass (kg)",
-               ylab="Foliage mass (kg)",
+               xlab="Leaf mass (kg)",
+               ylab="Fine root mass (kg)",
                type='n',col=pft, panel.first={
                  for(z in c(0.05, 0.25, 0.5, 0.75, 1))abline(log10(z),1)
                }))
@@ -86,7 +86,7 @@ Figure X. Lines are with exponent of 1, and represent fixed ratios between fine 
 
 ## Leaf mass fraction
 
-```{r echo=FALSE, eval=FALSE}
+```{r echo=FALSE, eval=TRUE}
 # subset/refine data.
 dfr <- droplevels(subset(data, !is.na(m.st) & !is.na(m.lf) & pft != "" & m.lf > 0))
 dfr <- within(dfr, {
@@ -106,9 +106,9 @@ with(dfr, plot(log_m.so, log_m.lf.fraction, axes=FALSE,
 magaxis(side=c(1,2), unlog='xy', tcl=-0.4)
 box()
 legend("topright", levels(dfr$pft), pch=19, col=palette())
-#Figure X. Much higher leaf mass fraction for evergreen gymnosperms at a given total aboveground plant biomass.
-```
 
+```
+Figure X. Much higher leaf mass fraction for evergreen gymnosperms at a given total aboveground plant biomass. 
 
 ```{r echo=FALSE, eval=FALSE}
 dfr <- droplevels(subset(data, !is.na(m.st) & !is.na(m.lf) & !is.na(m.rt) & 
