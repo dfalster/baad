@@ -3,6 +3,8 @@ How to build a plant
 Daniel Falster, Remko Duursma, Diego Barneche
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+if(packageVersion("smatr") < "3.4-4")
+  stop("Please update smatr! We use the new quiet argument.")
 source("../R/fillDerivedVariables.R")
 source("../R/import.R")
 library(gplots)
@@ -56,7 +58,7 @@ dfr <- subset(data, !is.na(m.rf) & !is.na(m.lf) & pft != "")
 dfr$pft <- as.factor(dfr$pft)
 
 sm <- lapply(split(dfr, dfr$pft), function(x){
-      sma(log10(m.rf) ~ log10(m.lf)*dataset_species, 
+      sma(log10(m.rf) ~ log10(m.lf)*dataset_species, quiet=TRUE,
            data=x)
       })
 
@@ -157,7 +159,7 @@ dfr$pft <- as.factor(dfr$pft)
                            
 
 sm <- lapply(split(dfr, dfr$pft), function(x){
-      sma(log10(m.lf) ~ log10(m.so)*dataset_species, 
+      sma(log10(m.lf) ~ log10(m.so)*dataset_species, quiet=TRUE,
            data=x)
       })
 
