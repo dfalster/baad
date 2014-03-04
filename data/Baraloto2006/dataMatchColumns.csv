@@ -6,8 +6,8 @@
 "Lf","m2","g","m.lf",NA
 "Stem","m2","g","m.st",NA
 "Root","m2","g","m.rt",NA
-"Sht","m2","g","m.so",NA
-"Tot","m2","g","m.to",NA
+"Sht","m2","g",NA,NA
+"Tot","m2","g",NA,NA
 "Soil",NA,NA,NA,NA
 "H2O",NA,NA,NA,NA
 "P",NA,NA,NA,NA
