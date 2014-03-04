@@ -12,3 +12,7 @@ if(length(newStudies) > 0){
 
 #process all studies
 d <- loadStudies(reprocess=TRUE)
+
+
+# To make sure variable types are the same as in the config/variableDefinitions file, do;
+#d$data <- fixType(d$data)
