@@ -1,5 +1,5 @@
 
-fixType <- function(df, cfg="config/variableDefinitions.csv"){
+fixType <- function(dfr, cfg="config/variableDefinitions.csv"){
   
   
   cfg <- read.csv(cfg, stringsAsFactors=FALSE)
