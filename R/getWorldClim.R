@@ -2,10 +2,7 @@
 
 getWorldClim <- function(longitude, latitude, varname, worldclim_dataloc = "c:/data/worldclim"){
   
-  library(raster)
-  library(dismo)
-  library(XML)
-  library(rgdal)
+
   
   here <- data.frame(lon=longitude,lat=latitude)
   coordinates(here) <- c("lon", "lat")
@@ -32,20 +29,7 @@ getWorldClim <- function(longitude, latitude, varname, worldclim_dataloc = "c:/d
   
   tmeans <- extractVar(varname, coors)
   
-return(matrix(tmeans, ncol=12)/10)
+return(matrix(tmeans, ncol=12))
 }
-
-
-source("R/fixtype.R")
-dfr <- d$data[,c("latitude","longitude")]
-dfr$longitude <- as.numeric(dfr$longitude)
-dfr$latitude <- as.numeric(dfr$latitude)
-
-dfr <- dfr[!duplicated(paste(dfr$latitude,dfr$longitude)),]
-dfr <- dfr[complete.cases(dfr),]
-MAT <- getWorldClim(dfr$longitude, dfr$latitude, "tmean")
-MAP <- getWorldClim(dfr$longitude, dfr$latitude, "prec")
-
-dfr$MAT <- apply(MAT,1,mean, na.rm=T)
 
 
