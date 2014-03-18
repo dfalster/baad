@@ -1,12 +1,12 @@
 Variable,Units,Group,Type,methodsVariable,essential,label,Description
 dataset,-,study,character,FALSE,TRUE,dataset,first author and year of relevant paper e.g. Falster2012
 location,-,site,character,FALSE,TRUE,location,name of location where sampled
-latitude,deg,site,character,FALSE,TRUE,latitude,latitude of location where sampled (-90 to 90 deg South to North)
-longitude,deg,site,character,FALSE,TRUE,longitude,longitude of location where sampled (-180 to 180 West to East)
+latitude,deg,site,numeric,FALSE,TRUE,latitude,latitude of location where sampled (-90 to 90 deg South to North)
+longitude,deg,site,numeric,FALSE,TRUE,longitude,longitude of location where sampled (-180 to 180 West to East)
 vegetation,-,site,character,FALSE,TRUE,vegetation,vegetation type where sampled if grown in field (leave blank for plantations / glasshouse / common garden): Sav = Savannah; TropRF = Tropical rainforest; TempRF = temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temp forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
 map,mm,site,numeric,FALSE,FALSE,map,mean annual rainfall (wild grown plants only)
 mat,deg,site,numeric,FALSE,FALSE,mat,mean annual temperature (wild grown plants only)
-grouping,-,stand,character,FALSE,FALSE,grouping, "any information about growing environment of sampled plant such as treatment or subplot"
+grouping,-,stand,character,FALSE,FALSE,grouping," ""any information about growing environment of sampled plant such as treatment or subplot"""
 lai,m2.m2,stand,numeric,TRUE,FALSE,lai,leaf area index of vegetation (wild pants only)
 species,-,species,character,FALSE,TRUE,species,latin name of species (genus species)
 family,-,species,character,FALSE,FALSE,family,family
