@@ -78,7 +78,11 @@ with(datEA, plot(log10(d.bh), log10(m.so), pch=19,cex=0.8, col=TempTrop))
 with(datEA, plot(log10(h.t), log10(m.so), pch=19,cex=0.8, col=TempTrop))
 with(datEA, plot(log10(m.so), log10(m.lf/m.so), pch=19,cex=0.8, col=TempTrop))
 with(datEA, plot(log10(m.so), log10(a.lf/m.so), pch=19,cex=0.8, col=TempTrop))
+with(datEA, plot(log10(m.rt), log10(m.so), pch=19,cex=0.8, col=TempTrop))
+with(datEA, plot(log10(m.rt), log10(m.lf), pch=19,cex=0.8, col=TempTrop))
 dev.off()
+
+
 
 
 #-------------------------------------------------------------------------------------------#
