@@ -6,9 +6,11 @@ removeNAcols <- function(dfr){
 } 
 
 
-studyWithVars <- function(allom, hasVars){
+studyWithVars <- function(allom, hasVars, returnwhat=c("list","dataframe")){
   
-  
+  r <- require(plyr)
+  if(!r)stop("Install plyr package first.")
+  returnwhat <- match.arg(returnwhat)
   l <- split(allom, allom$dataset)
   l <- lapply(l, removeNAcols)
   ihasvars <- sapply(l, function(x) all(hasVars %in% names(x)))
@@ -18,7 +20,10 @@ studyWithVars <- function(allom, hasVars){
     return(NA)
   } else {
     message("Your query returned ",sum(ihasvars)," studies.")
-    return(l[ihasvars])
+    if(returnwhat=="list")
+      return(l[ihasvars])
+    else
+      return(rbind.fill(l[ihasvars]))
   }
 
 }
