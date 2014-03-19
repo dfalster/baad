@@ -1,5 +1,6 @@
 
-dat <- readRDS("cache/allomdata_post.rds")
+source("R/plotting.R")
+# dat <- readRDS("cache/allomdata_post.rds")
 
 # Sample size
 nrow(dat)
@@ -10,7 +11,7 @@ length(unique(dat$species))
 
 
 # User supplied MAP (mm) and MAT (degC) vs. values obtained from Worldclim.
-pdf(file="analysis/output/figures/MAP_MAT_Worldclim_user.pdf", width=8, height=4)
+to.pdf(
 with(dat,{
   
   par(mfrow=c(1,2))
@@ -19,8 +20,7 @@ with(dat,{
   plot(MAT, mat, xlab="MAT - WorldClim", ylab="MAT - User supplied")
   abline(0,1)
   
-})
-dev.off()
+}), file="analysis/output/figures/MAP_MAT_Worldclim_user.pdf", width=8, height=4)
 
 
 
@@ -68,7 +68,7 @@ datEA <- datEA[sample(nrow(datEA)),]
 
 palette(c("blue","red"))
 # some quick plots
-pdf("analysis/output/figures/Trop_vs_temp_plots.pdf")
+to.pdf({
 with(datEA, plot(log10(m.st), log10(m.lf), pch=19,cex=0.8, col=TempTrop))
 legend("topleft", levels(datEA$TempTrop), pch=19, col=palette())
 with(datEA, plot(log10(h.t), log10(m.lf), pch=19,cex=0.8, col=TempTrop))
@@ -78,14 +78,48 @@ with(datEA, plot(log10(d.bh), log10(m.so), pch=19,cex=0.8, col=TempTrop))
 with(datEA, plot(log10(h.t), log10(m.so), pch=19,cex=0.8, col=TempTrop))
 with(datEA, plot(log10(m.so), log10(m.lf/m.so), pch=19,cex=0.8, col=TempTrop))
 with(datEA, plot(log10(m.so), log10(a.lf/m.so), pch=19,cex=0.8, col=TempTrop))
+with(datEA, plot(log10(m.so), log10(a.lf/m.lf), pch=19,cex=0.8, col=TempTrop))
 with(datEA, plot(log10(m.rt), log10(m.so), pch=19,cex=0.8, col=TempTrop))
 with(datEA, plot(log10(m.rt), log10(m.lf), pch=19,cex=0.8, col=TempTrop))
-dev.off()
 
+},"analysis/output/figures/Trop_vs_temp_plots.pdf",width=7,height=7)
 
 
 
 #-------------------------------------------------------------------------------------------#
+
+
+# Allometry plot as in Wolf
+
+x <- studyWithVars(dat, c("m.st","m.lf","h.t"))
+
+# how many species per study
+nspecies <- sapply(x, function(arg)length(unique(arg$species)))
+this1 <- nspecies==1
+
+y <- x[[this1[1]]]
+y <- y[complete.cases(y),]
+
+
+sm_mlf <- sma(m.lf ~ h.t, log="xy", data=y)
+sm_mst <- sma(m.st ~ h.t, log="xy", data=y)
+
+p_mlf <- coef(sm_mlf)
+p_mst <- coef(sm_mst)
+
+r <- range(y$h.t)
+ht <- seq(r[1],r[2],length=101)
+
+mlfs <- 10^(p_mlf[1] + p_mlf[2]*ht)
+msts <- 10^(p_mst[1] + p_mst[2]*ht)
+mtot <- mlfs+msts
+
+plot(ht, mlfs/mtot, type='l', ylim=c(0,1))
+points(ht, (mlfs+msts)/mtot, type='l')
+
+
+
+
 
 
 
