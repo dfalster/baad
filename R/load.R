@@ -15,9 +15,9 @@ if(length(newStudies) > 0){
 d <- loadStudies(reprocess=TRUE)
 
 
-# Post-process.
-source('R/remko_functions.R')
-dat <- postProcessAllom(d$data)
+# Post-process - Optional for now.
+# source('R/remko_functions.R')
+# dat <- postProcessAllom(d$data)
 #saveRDS(dat, "cache/allomdata_post.rds")
 
 

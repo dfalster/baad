@@ -13,4 +13,3 @@ if(!file.exists("lib/dataMashR")){
 
 library(dataMashR)
 
-source("R/postProcessAllom.R")
