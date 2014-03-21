@@ -6,6 +6,9 @@ manipulate <- function(raw) {
   names(raw)[names(raw) == "group..7."] <- "grouping"
   raw$grouping <- makeGroups(raw, "grouping")
   
+  # Massive outlier : wrong stem area measurement
+  raw$a.st[raw$a.st > 0.2] <- NA
+  
   raw
 }
 
