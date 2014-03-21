@@ -6,6 +6,9 @@ manipulate <- function(raw) {
   raw$h.c <- with(raw, h.t - h.c)
   raw$h.c[raw$h.c < 0] <- 0
   
+  # grouping
+  raw$grouping <- makeGroups(raw, "treatment")
+  
   raw
 }
 
