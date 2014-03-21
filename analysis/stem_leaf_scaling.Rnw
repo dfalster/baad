@@ -92,30 +92,34 @@ l <- lapply(1:nrow(P), function(i){
 
 @
 
+
+
+\section{By plant functional type}
+
 <<plotting, echo=FALSE>>=
-# natural scale
-plot(1, xlim=c(0,50), ylim=c(0,1), type='n',
-     xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)")
-for(i in 1:length(l))points(l[[i]]$h, l[[i]]$wfrel, type='l')
+# # natural scale
+# plot(1, xlim=c(0,50), ylim=c(0,1), type='n',
+#      xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)")
+# for(i in 1:length(l))points(l[[i]]$h, l[[i]]$wfrel, type='l')
+# 
+# # log-log scale
+# plot(1, xlim=c(-3,2), ylim=c(-3,0), type='n',
+#      xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
+#      axes=FALSE)
+# addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015)
+# for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$wfrel), type='l')
+# 
+# # log-natural scale
+# plot(1, xlim=c(-3,2), ylim=c(0,1), type='n',
+#      xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
+#      axes=FALSE)
+# addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015,addY=F)
+# axis(2)
+# for(i in 1:length(l))points(log10(l[[i]]$h), l[[i]]$wfrel, type='l')
 
-# log-log scale
-plot(1, xlim=c(-3,2), ylim=c(-3,0), type='n',
-     xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
-     axes=FALSE)
-addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015)
-for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$wfrel), type='l')
-
-# log-natural scale
-plot(1, xlim=c(-3,2), ylim=c(0,1), type='n',
-     xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
-     axes=FALSE)
-addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015,addY=F)
-axis(2)
-for(i in 1:length(l))points(log10(l[[i]]$h), l[[i]]$wfrel, type='l')
 
 
 
-# Coloured by pft
 
 # log-log scale
 palette(c("blue","royalblue","red","darkorange"))
@@ -174,5 +178,68 @@ legend("topleft", c("Deciduous angiosperm","Deciduous gymnosperm",
 @
 
 
+\section{Tropical vs. temperate evergreens}
+
+<<echo=FALSE>>=
+ii <- which(P$pft == "EA" & P$vegetation %in% c("TempF","TempRF","TropRF","TropSF"))
+l <- l[ii]
+P <- P[ii,]
+
+P$TempTrop <- as.factor(ifelse(P$vegetation %in% c("TempF","TempRF"), "Temp", "Trop"))
+palette(c("blue","red"))
+
+
+@
+
+
+<<plotEA, echo=FALSE>>=
+
+
+# log-log scale
+plot(1, xlim=c(-3,2), ylim=c(0,1), type='n',
+     xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
+     axes=FALSE)
+addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015,addY=F)
+axis(2)
+for(i in 1:length(l)){
+  points(log10(l[[i]]$h), l[[i]]$wfrel, type='l',
+         col=P$TempTrop[i])
+}
+legend("bottomleft", c("Temperate evergreen angiosperm",
+                       "Tropical evergreen angiosperm"), fill=palette())
+       
+
+plot(1, xlim=c(-3,2), ylim=c(-7,5), type='n',
+     xlab="Plant height (m)", ylab="Leaf mass (kg)",
+     axes=FALSE)
+magaxis(side=1:2, unlog='xy',box=TRUE)
+for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$mlf), type='l',
+                            col=P$TempTrop[i])
+legend("topleft", c("Temperate evergreen angiosperm",
+                       "Tropical evergreen angiosperm"), fill=palette(),inset=0.03)
+
+plot(1, xlim=c(-3,2), ylim=c(-7,5), type='n',
+     xlab="Plant height (m)", ylab="Above-ground woody mass (kg)",
+     axes=FALSE)
+magaxis(side=1:2, unlog='xy',box=TRUE)
+for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$mst), type='l',
+                            col=P$TempTrop[i])
+legend("topleft", c("Temperate evergreen angiosperm",
+                       "Tropical evergreen angiosperm"), fill=palette(),inset=0.03)
+
+@
+
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
