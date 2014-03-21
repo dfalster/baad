@@ -1,5 +1,6 @@
 
 source("R/plotting.R")
+source("R/remko_functions.R")
 # dat <- readRDS("cache/allomdata_post.rds")
 
 # Sample size
@@ -89,33 +90,6 @@ with(datEA, plot(log10(m.rt), log10(m.lf), pch=19,cex=0.8, col=TempTrop))
 #-------------------------------------------------------------------------------------------#
 
 
-# Allometry plot as in Wolf
-
-x <- studyWithVars(dat, c("m.st","m.lf","h.t"))
-
-# how many species per study
-nspecies <- sapply(x, function(arg)length(unique(arg$species)))
-this1 <- nspecies==1
-
-y <- x[[this1[1]]]
-y <- y[complete.cases(y),]
-
-
-sm_mlf <- sma(m.lf ~ h.t, log="xy", data=y)
-sm_mst <- sma(m.st ~ h.t, log="xy", data=y)
-
-p_mlf <- coef(sm_mlf)
-p_mst <- coef(sm_mst)
-
-r <- range(y$h.t)
-ht <- seq(r[1],r[2],length=101)
-
-mlfs <- 10^(p_mlf[1] + p_mlf[2]*ht)
-msts <- 10^(p_mst[1] + p_mst[2]*ht)
-mtot <- mlfs+msts
-
-plot(ht, mlfs/mtot, type='l', ylim=c(0,1))
-points(ht, (mlfs+msts)/mtot, type='l')
 
 
 

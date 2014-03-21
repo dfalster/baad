@@ -1,0 +1,178 @@
+\documentclass{article}
+
+
+\begin{document}
+
+\title{Scaling of leaf and above-ground woody biomass}
+\maketitle
+
+
+<<load, echo=FALSE, message=FALSE>>=
+setwd("..//")
+dat <- readRDS("cache/allomdata_post.rds")
+
+library(smatr)
+#library(tables)
+library(magicaxis)
+#library(Hmisc)
+#library(MIfuns)
+source("R/remko_functions.R")
+source("R/plotting.R")
+@
+
+
+<<prep, echo=FALSE>>=
+# Stem-leaf scaling
+
+# Select datasets that have stem, leaf biomass, and height
+x <- suppressMessages(studyWithVars(dat, c("m.st","m.lf","h.t")))
+x$dataset_species <- paste0(x$dataset,"_",x$species)
+
+# clean
+x <- subset(x, m.lf > 0 & m.st > 0 & !is.na(m.lf) & !is.na(m.st) & !is.na(h.t))
+
+# Keep only dataset_species with at least 20 observations
+tab <- table(x$dataset_species)
+x <- x[x$dataset_species %in% names(tab)[tab>19],]
+@
+
+The selected data has \Sexpr{nrow(x)} rows, and \Sexpr{length(unique(x$dataset_species))} unique dataset-species combinations. 
+
+<<echo=FALSE>>=
+xtabs(~ pft + vegetation,data=x)
+@
+
+
+<<analysis, echo=FALSE>>=
+sm_mlf <- sma(m.lf ~ h.t * dataset_species, log="xy", data=x)
+sm_mst <- sma(m.st ~ h.t * dataset_species, log="xy", data=x)
+
+# sma coefficients
+makedfr <- function(z){
+  z$dataset_species <- rownames(z)
+  as.data.frame(z)
+}
+p_mlf <- coef(sm_mlf)
+names(p_mlf) <- c("b0_mlf","b1_mlf")
+p_mst <- coef(sm_mst)
+names(p_mst) <- c("b0_mst","b1_mst")
+p <- merge(makedfr(p_mlf),makedfr(p_mst))
+
+# Find ranges for h.t
+r <- t(sapply(p$dataset_species, function(lev){
+    range(x$h.t[x$dataset_species==lev], na.rm=TRUE)
+}))
+colnames(r) <- c("ht_min","ht_max")
+
+# P is a dataframe with leaf, stem scaling, and ranges of h.t
+P <- cbind(p,r)
+rownames(P) <- NULL
+
+# Add some metadata
+dfr <- dat[,c("dataset","species","pft","vegetation")]
+dfr$dataset_species <- with(dfr, paste0(dataset,"_",species))
+dfr <- dfr[!duplicated(dfr$dataset_species),]
+P <- merge(P, dfr)
+P$pft <- as.factor(P$pft)
+P$vegetation <- as.factor(P$vegetation)
+
+
+# Plot : save predictions in a list
+l <- lapply(1:nrow(P), function(i){
+  h <- seq(P$ht_min[i], P$ht_max[i], length=101)
+  a <- 10^(P$b0_mlf[i])
+  b <- P$b1_mlf[i]
+  c <- 10^(P$b0_mst[i])
+  d <- P$b1_mst[i]
+  wfrel <- a*h^b/(a*h^b + c*h^d)
+  mst <- c*h^d
+  mlf <- a*h^b
+  return(data.frame(h=h,wfrel=wfrel,mlf=mlf,mst=mst))
+})
+
+@
+
+<<plotting, echo=FALSE>>=
+# natural scale
+plot(1, xlim=c(0,50), ylim=c(0,1), type='n',
+     xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)")
+for(i in 1:length(l))points(l[[i]]$h, l[[i]]$wfrel, type='l')
+
+# log-log scale
+plot(1, xlim=c(-3,2), ylim=c(-3,0), type='n',
+     xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
+     axes=FALSE)
+addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015)
+for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$wfrel), type='l')
+
+# log-natural scale
+plot(1, xlim=c(-3,2), ylim=c(0,1), type='n',
+     xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
+     axes=FALSE)
+addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015,addY=F)
+axis(2)
+for(i in 1:length(l))points(log10(l[[i]]$h), l[[i]]$wfrel, type='l')
+
+
+
+# Coloured by pft
+
+# log-log scale
+palette(c("blue","royalblue","red","darkorange"))
+plot(1, xlim=c(-3,2), ylim=c(-3,0), type='n',
+     xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
+     axes=FALSE)
+addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015)
+for(i in 1:length(l)){
+  points(log10(l[[i]]$h), log10(l[[i]]$wfrel), type='l',
+         col=P$pft[i])
+}
+legend("bottomleft", c("Deciduous angiosperm","Deciduous gymnosperm",
+                       "Evergreen angiosperm","Evergreen gymnosperm"),
+       fill=palette())
+# dev.copy2pdf(file="analysis/output/figures/LMF_height_loglog.pdf")
+
+
+# log-log scale
+plot(1, xlim=c(-3,2), ylim=c(0,1), type='n',
+     xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
+     axes=FALSE)
+addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015,addY=F)
+axis(2)
+for(i in 1:length(l)){
+  points(log10(l[[i]]$h), l[[i]]$wfrel, type='l',
+         col=P$pft[i])
+}
+legend("bottomleft", c("Deciduous angiosperm","Deciduous gymnosperm",
+                       "Evergreen angiosperm","Evergreen gymnosperm"),
+       fill=palette())
+# dev.copy2pdf(file="analysis/output/figures/LMF_height_lognat.pdf")
+
+
+# m.lf, m.st vs. h.t by pft.
+plot(1, xlim=c(-3,2), ylim=c(-7,5), type='n',
+     xlab="Plant height (m)", ylab="Leaf mass (kg)",
+     axes=FALSE)
+magaxis(side=1:2, unlog='xy',box=TRUE)
+for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$mlf), type='l',
+                            col=P$pft[i])
+legend("topleft", c("Deciduous angiosperm","Deciduous gymnosperm",
+                       "Evergreen angiosperm","Evergreen gymnosperm"),
+       fill=palette(), inset=0.04)
+# dev.copy2pdf(file="analysis/output/figures/MF_height_loglog.pdf")
+
+plot(1, xlim=c(-3,2), ylim=c(-7,5), type='n',
+     xlab="Plant height (m)", ylab="Above-ground woody mass (kg)",
+     axes=FALSE)
+magaxis(side=1:2, unlog='xy',box=TRUE)
+for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$mst), type='l',
+                            col=P$pft[i])
+legend("topleft", c("Deciduous angiosperm","Deciduous gymnosperm",
+                    "Evergreen angiosperm","Evergreen gymnosperm"),
+       fill=palette(), inset=0.04)
+# dev.copy2pdf(file="analysis/output/figures/MS_height_loglog.pdf")
+@
+
+
+
+\end{document}
