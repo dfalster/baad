@@ -1,6 +1,8 @@
 manipulate <- function(raw) {
-  raw$stem_mass         <-  raw[["total sapwood"]] + raw[["Total bark mass"]] + raw[["total heartwood"]]
-  raw$branch_mass       <-  raw[["branches sapwood mass"]] + raw[["branches bark mass"]] + raw[["branches heartwood mass"]]
+  raw$stem_mass         <-  raw[["total sapwood"]] + raw[["Total bark mass"]] + 
+    raw[["total heartwood"]]
+  raw$branch_mass       <-  raw[["branches sapwood mass"]] + raw[["branches bark mass"]] + 
+    raw[["branches heartwood mass"]]
   raw$coarse_root_mass  <-  raw[["medium roots mass"]] + raw[["coarse roots mass"]]
   
   raw[["total N sapwood"]]    <-  (raw[["total N sapwood"]]/1000)/raw[["total sapwood"]]
@@ -13,10 +15,12 @@ manipulate <- function(raw) {
   nm <- "total sapwood"
   raw[[nm]][raw[[nm]] == 0] <- NA
   
-  
   # zero d_bh is NA (note: zero dbh is possible when h.c < 1.4 or 1.3).
   d0 <- raw[["DBH (cm)"]] == 0
   raw[["DBH (cm)"]][d0] <- NA
+  
+  # grouping
+  raw$grouping <- makeGroups(raw, "grouping")
   
   
   raw
