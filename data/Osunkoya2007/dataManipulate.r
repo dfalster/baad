@@ -4,7 +4,7 @@ manipulate <- function(raw) {
   raw$status[which(raw$growth_form=="subcanopy")] <- 1
   raw$status[which(raw$growth_form=="understorey")] <- 0
   
-  raw$grouping  <-  makeGroups(raw, c("Tree_no","growth_form"))
+  raw$grouping  <-  makeGroups(raw, "growth_form")
   
   raw[raw == "#NULL!"] <- NA
   
