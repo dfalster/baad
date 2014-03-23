@@ -4,12 +4,10 @@ postProcessAllom <- function(allomdata){
   
   # To make sure variable types are the same as in the config/variableDefinitions file, do;
   message("Fixing variable type")
-  source("R/fixType.R")
   dat <- fixType(allomdata)
   
   # Fill missing derived variables (e.g. m.so= m.st+m.lf, etc.)
   message("Filling derived variables")
-  source("R/fillDerivedVariables.R")
   dat <- fillDerivedVariables(dat)
   
   # Add fixed species name. These were generated in R/checkSpeciesNames. 
@@ -34,8 +32,6 @@ postProcessAllom <- function(allomdata){
   # I have the worldclim layers downloaded locally; it is many times faster that way.
   # Only have to do this once anyway.
   if(!usecache){
-    source("R/getWorldClim.R")
-    source("R/checkPackage.R")
     sapply(c("raster","dismo","XML","rgdal"),checkPackage)
     
     # Dataframe with unique lat-long's.
@@ -72,7 +68,6 @@ postProcessAllom <- function(allomdata){
   })
   
   # reorder
-  source("R/moveme.R")
   dat<- dat[moveme(names(dat), "MAP after map; MAT after mat; dataset first; species_Fixed after species")]
   return(dat)
 }
