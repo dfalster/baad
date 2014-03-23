@@ -33,6 +33,10 @@ ftable(xtabs(~ vegetation + pft, data=dat))
 
 #
 
+# map with studies; bubble size by nr of observations
+
+
+
 
 # Comparisons to be made:
 #-------------------------------------------------------------------------------------------#
@@ -48,6 +52,38 @@ ftable(xtabs(~ family + vegetation, data=dat5fam))
 
 # But note,
 sum(is.na(dat$family)) # 1342
+
+
+#-------------------------------------------------------------------------------------------#
+# status; does it affect LMF
+
+
+#-------------------------------------------------------------------------------------------#
+# crown ratio; effect on LMF
+
+d <- studyWithVars(dat, c("h.c","h.t","m.lf"))
+
+# why not the same?
+with(d, plot(h.t-h.c, c.d))
+
+
+#-------------------------------------------------------------------------------------------#
+# Does SLA affect leaf/stem/root scaling?
+
+
+x <- studyWithVars(dat, c("m.st","m.lf","a.lf","h.t"))
+x$dataset_species <- paste0(x$dataset,"_",x$species)
+
+x$SLA <- with(x, a.lf / m.lf)
+with(x, plot(log10(SLA), log(m.lf/(m.lf+m.st))))
+
+
+
+
+z <- studyWithVars(dat, c("status","m.lf","m.st"))
+with(z[sample(nrow(z)),],
+     plot(log10(m.lf) ~ log10(m.st), pch=19, col=as.factor(status)))
+
 
 
 
@@ -70,33 +106,22 @@ datEA <- datEA[sample(nrow(datEA)),]
 palette(c("blue","red"))
 # some quick plots
 to.pdf({
-with(datEA, plot(log10(m.st), log10(m.lf), pch=19,cex=0.8, col=TempTrop))
+with(datEA, {
+plot(log10(m.st), log10(m.lf), pch=19,cex=0.8, col=TempTrop)
 legend("topleft", levels(datEA$TempTrop), pch=19, col=palette())
-with(datEA, plot(log10(h.t), log10(m.lf), pch=19,cex=0.8, col=TempTrop))
-with(datEA, plot(log10(d.bh), log10(m.lf), pch=19,cex=0.8, col=TempTrop))
-with(datEA, plot(log10(d.bh), log10(h.t), pch=19,cex=0.8, col=TempTrop))
-with(datEA, plot(log10(d.bh), log10(m.so), pch=19,cex=0.8, col=TempTrop))
-with(datEA, plot(log10(h.t), log10(m.so), pch=19,cex=0.8, col=TempTrop))
-with(datEA, plot(log10(m.so), log10(m.lf/m.so), pch=19,cex=0.8, col=TempTrop))
-with(datEA, plot(log10(m.so), log10(a.lf/m.so), pch=19,cex=0.8, col=TempTrop))
-with(datEA, plot(log10(m.so), log10(a.lf/m.lf), pch=19,cex=0.8, col=TempTrop))
-with(datEA, plot(log10(m.rt), log10(m.so), pch=19,cex=0.8, col=TempTrop))
-with(datEA, plot(log10(m.rt), log10(m.lf), pch=19,cex=0.8, col=TempTrop))
+plot(log10(h.t), log10(m.lf), pch=19,cex=0.8, col=TempTrop)
+plot(log10(d.bh), log10(m.lf), pch=19,cex=0.8, col=TempTrop)
+plot(log10(d.bh), log10(h.t), pch=19,cex=0.8, col=TempTrop)
+plot(log10(d.bh), log10(m.so), pch=19,cex=0.8, col=TempTrop)
+plot(log10(h.t), log10(m.so), pch=19,cex=0.8, col=TempTrop)
+plot(log10(m.so), log10(m.lf/m.so), pch=19,cex=0.8, col=TempTrop)
+plot(log10(m.so), log10(a.lf/m.so), pch=19,cex=0.8, col=TempTrop)
+plot(log10(m.so), log10(a.lf/m.lf), pch=19,cex=0.8, col=TempTrop)
+plot(log10(m.rt), log10(m.so), pch=19,cex=0.8, col=TempTrop)
+plot(log10(m.rt), log10(m.lf), pch=19,cex=0.8, col=TempTrop)
+})
 
 },"analysis/output/figures/Trop_vs_temp_plots.pdf",width=7,height=7)
-
-
-
-#-------------------------------------------------------------------------------------------#
-
-
-
-
-
-
-
-
-
 
 
 
