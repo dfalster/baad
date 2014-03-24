@@ -81,7 +81,8 @@ removeNAcols <- function(dfr){
 } 
 
 
-studyWithVars <- function(allom, hasVars, returnwhat=c("dataframe","list")){
+studyWithVars <- function(allom, hasVars, returnwhat=c("dataframe","list"),
+                          complete.cases=FALSE){
   
   r <- require(plyr)
   if(!r)stop("Install plyr package first.")
@@ -95,10 +96,16 @@ studyWithVars <- function(allom, hasVars, returnwhat=c("dataframe","list")){
     return(NA)
   } else {
     message("Your query returned ",sum(ihasvars)," studies.")
-    if(returnwhat=="list")
+    if(returnwhat=="list"){
+      if(complete.cases)warning("complete.cases=TRUE ignored when list is returned.")
       return(l[ihasvars])
-    else
-      return(rbind.fill(l[ihasvars]))
+    }else{
+      dfr <- rbind.fill(l[ihasvars])
+      if(complete.cases){
+        dfr <- dfr[complete.cases(dfr[,hasVars]),]
+      }
+      return(dfr)
+    }
   }
   
 }
