@@ -185,25 +185,57 @@ prepMapInfo<-function(data, study=NA){
   data  
 }  
 
-drawWorldPlot  <-  function(data){
+drawWorldPlot  <-  function(data, horlines=TRUE, sizebyn=FALSE, add=FALSE, 
+                            pchcol="red", 
+                            legend=TRUE){
   
-  map('world',col="grey80",bg="white",lwd=0.5,fill=TRUE,resolution=0,wrap=TRUE, border="grey80")
-  map('world',col="black",boundary=TRUE,lwd=0.2,interior=FALSE,fill=FALSE,add=TRUE,resolution=0,wrap=TRUE)
-  lines(c(-180,180),c(-100,-100), lty="dashed", xpd=TRUE, lwd=2)
-  lines(c(-180,180),c(100,100), lty="dashed", xpd=TRUE, lwd=2)
+  if(!add){
+    map('world',col="grey80",bg="white",lwd=0.5,fill=TRUE,resolution=0,wrap=TRUE, border="grey80")
+    map('world',col="black",boundary=TRUE,lwd=0.2,interior=FALSE,fill=FALSE,add=TRUE,resolution=0,wrap=TRUE)
+  }
   
-  j  <-  !is.na(data$lat) & !is.na(data$lon) & data$loc != "NA" | is.na(data$loc)
+  if(horlines){
+    lines(c(-180,180),c(-100,-100), lty="dashed", xpd=TRUE, lwd=2)
+    lines(c(-180,180),c(100,100), lty="dashed", xpd=TRUE, lwd=2)
+  }
   
-  if(length(j)==length(j[j==FALSE])){
+  # Remove all duplicates (increases speed and minimizes file size)
+  latlon <- with(data, paste(latitude, longitude))
+  lat <- data$latitude[!duplicated(latlon)]
+  lon <- data$longitude[!duplicated(latlon)]
+  
+  j  <-  !is.na(lat) & !is.na(lon)  
+  # Location only sometimes missing - but lat/lon can still be in dataset anyway.
+  # & data$loc != "NA" | is.na(data$loc)
+  
+  if(!any(j)){
     polygon(c(-100,95,95,-100), c(-10,-10,15,15), col=rgb(0,0,0,240,maxColorValue=255))
     text(-100, 0, expression(paste(bold("Missing coordinate/location"))), col="red", xpd=TRUE, pos=4, cex=0.8)
   } else {
-    if( any(j) ){
-      points(data$lon[j], data$lat[j], pch=19, col="red", bg="red", cex=0.6)
+    
+    if(!sizebyn){
+      points(lon,lat, pch=19, col=pchcol, bg=pchcol, cex=0.6)
+    } else {
+      n <- table(latlon)
+      symbols(lon,lat, circles=log10(n), inches=0.1, fg="black", bg=pchcol, add=TRUE)
+      
+      if(legend){
+        ns <- c(10,100,1000)
+        X <- rep(-170,3)
+        Y <- seq(-30,-10,by=10)
+        rect(xleft=-200, xright=-120, ybottom=-50, ytop=10, col="white", border=NA)
+        symbols(x=X, y=Y, circles=log10(ns), inches=0.1,
+                fg="black", bg=pchcol, add=TRUE)
+        text(x=X+5, y=Y, labels=as.character(ns),pos=4)
+        text(x=X+5, y=Y[3]+10, labels=expression(italic(n)), pos=4)
+      }
+      
     }
+  
   }
   
 }
+
 
 repMissingInfo  <-  function(data){
   j    <-  !is.na(data$lat) & !is.na(data$lon) & data$loc != "NA" | is.na(data$loc)
