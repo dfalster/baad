@@ -1,6 +1,6 @@
 var_in,method,unit_in,var_out,notes
 TREE,,,,
-CAT,,,,
+CAT,,,status,
 DBH,e,cm,d.bh,
 SWarea (BH),,cm2,a.ssbh,
 dBLC,,cm,,

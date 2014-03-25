@@ -14,6 +14,7 @@ dat <- readRDS("cache/allomdata_post.rds")
 library(smatr)
 #library(tables)
 library(magicaxis)
+library(scales)
 #library(Hmisc)
 #library(MIfuns)
 source("R/remko_functions.R")
@@ -44,8 +45,13 @@ xtabs(~ pft + vegetation,data=x)
 
 
 <<analysis, echo=FALSE>>=
+
+# sma by dataset_species
 sm_mlf <- sma(m.lf ~ h.t * dataset_species, log="xy", data=x)
 sm_mst <- sma(m.st ~ h.t * dataset_species, log="xy", data=x)
+
+# quadratic across all data
+
 
 # sma coefficients
 makedfr <- function(z){
@@ -122,7 +128,9 @@ l <- lapply(1:nrow(P), function(i){
 
 
 # log-log scale
-palette(c("blue","royalblue","red","darkorange"))
+# windows(7,6)
+# par(mar=c(5,5,2,2), cex.lab=1.2)
+palette(alpha(c("blue","royalblue","red","darkorange"),0.4))
 plot(1, xlim=c(-3,2), ylim=c(-3,0), type='n',
      xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
      axes=FALSE)
@@ -133,9 +141,21 @@ for(i in 1:length(l)){
 }
 legend("bottomleft", c("Deciduous angiosperm","Deciduous gymnosperm",
                        "Evergreen angiosperm","Evergreen gymnosperm"),
-       fill=palette())
-# dev.copy2pdf(file="analysis/output/figures/LMF_height_loglog.pdf")
+       fill=alpha(palette(),0.9))
 
+# Some flourishes for pdf in a presentation
+# l_eve <- rbind.fill(l[P$pft %in% c("EA","EG")])
+# l_dec <- rbind.fill(l[P$pft %in% c("DA","DG")])
+# 
+# library(plantecophys)
+# l_eve$logwfrel <- log10(l_eve$wfrel)
+# l_eve$logh <- log10(l_eve$h)
+# l_dec$logwfrel <- log10(l_dec$wfrel)
+# l_dec$logh <- log10(l_dec$h)
+# gamplot("logh","logwfrel",dfr=l_eve,linecolor="red",add=TRUE)
+# gamplot("logh","logwfrel",dfr=l_dec,linecolor="blue",add=TRUE)
+# 
+# dev.copy2pdf(file="analysis/output/figures/LMF_height_loglog.pdf")
 
 # log-log scale
 plot(1, xlim=c(-3,2), ylim=c(0,1), type='n',

@@ -6,6 +6,6 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,pft,EG,from paper[S Naidu]
 ,,family,Pinaceae,from paper[S Naidu]
 ,,species,Pinus taeda,from paper[S Naidu]
-CAT,d,status,3,from paper[S Naidu]
-CAT,s,status,0,from paper[S Naidu]
+status,d,status,3,from paper[S Naidu]
+status,s,status,0,from paper[S Naidu]
 ,,location,"Blackwood and Durham divisions of Duke Forest in the Piedmont region of North Carolina", email [S Naidu]
