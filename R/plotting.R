@@ -217,7 +217,10 @@ drawWorldPlot  <-  function(data, horlines=TRUE, sizebyn=FALSE, add=FALSE,
       points(lon,lat, pch=19, col=pchcol, bg=pchcol, cex=0.6)
     } else {
       n <- table(latlon)
-      symbols(lon,lat, circles=log10(n), inches=0.1, fg="black", bg=pchcol, add=TRUE)
+      # sort so that small circles will be plotted on top of large ones.
+      ii <- order(n, decreasing=TRUE)
+      
+      symbols(lon[ii],lat[ii], circles=log10(n[ii]), inches=0.1, fg="black", bg=pchcol, add=TRUE)
       
       if(legend){
         ns <- c(10,100,1000)
