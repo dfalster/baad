@@ -258,7 +258,7 @@ fixType <- function(dfr, cfg="config/variableDefinitions.csv"){
     dfr[,v] <- typeFun(dfr[,v])
     post_nrNA <- sum(is.na(dfr[,v]))
     if(post_nrNA > pre_nrNA)
-      message("Variable : ",v," now contains ", post_nrNA, " missing values.")
+      message("Variable : ",v," now contains ", post_nrNA, " missing values, was ", pre_nrNA)
     
   }
   
@@ -282,6 +282,10 @@ fillDerivedVariables <- function(x){
     # Height to crown base if tree height and crown depth are OK.
     ii <- is.na(h.c) & !is.na(c.d) & !is.na(h.t)
     h.c[ii] <- h.t[ii] - c.d[ii]
+    
+    # Crown depth if tree height and height to crown base are OK
+    ii <- is.na(c.d) & !is.na(h.t) & !is.na(h.c)
+    c.d[ii] <- h.t[ii] - h.c[ii]
     
     # Stem area  / DBH at breast height or base.
     ii <- is.na(a.stbh) & !is.na(d.bh)

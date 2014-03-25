@@ -33,7 +33,32 @@ ftable(xtabs(~ vegetation + pft, data=dat))
 
 #
 
+
 # map with studies; bubble size by nr of observations
+to.pdf(drawWorldPlot(dat, horlines=FALSE, sizebyn=TRUE),
+       "analysis/output/figures/worldplot_sizebyn.pdf", width=10, height=7)
+
+# Maps by vegetation type; separately.
+plotveg <- function(veg, main, pchcol){
+
+  fn <- paste0("analysis/output/figures/worldplot_sizebyn_",veg,".pdf")
+  
+  data <- subset(dat, vegetation == veg)
+  
+  to.pdf({
+    drawWorldPlot(data, horlines=FALSE, sizebyn=TRUE, pchcol=pchcol)
+    title(main=main)
+  },
+  fn, width=10, height=7)
+}
+
+plotveg("BorF","Boreal Forest","blue")
+plotveg("Sav","Savannah","brown")
+plotveg("TempF","Temperate forest","forestgreen")
+plotveg("TempRF", "Temperate rainforest", "darkolivegreen3")
+plotveg("TropRF", "Tropical rainforest", "dodgerblue2")
+plotveg("TropSF", "Tropical seasonal forest", "navajowhite4")
+plotveg("Wo", "Woodland", "lightgoldenrod3")
 
 
 
@@ -61,10 +86,19 @@ sum(is.na(dat$family)) # 1342
 #-------------------------------------------------------------------------------------------#
 # crown ratio; effect on LMF
 
-d <- studyWithVars(dat, c("h.c","h.t","m.lf"))
+dh <- studyWithVars(dat, c("h.c","h.t","m.lf","c.d"))
+dh$dataset_species <- with(dh, paste(dataset,species,sep="_"))
 
-# why not the same?
-with(d, plot(h.t-h.c, c.d))
+# now select only rows that have h.t as well as c.d
+dh <- subset(dh, !is.na(h.t) & !is.na(c.d) & c.d > 0)
+
+
+sm1 <- sma(m.lf ~ c.d * dataset_species, data=dh, log='xy')
+sm2 <- sma(m.lf ~ h.t * dataset_species, data=dh, log='xy')
+
+plot(sm1, type='l', col="black")
+plot(sm2, type='l', col="black")
+
 
 
 #-------------------------------------------------------------------------------------------#
@@ -83,6 +117,34 @@ with(x, plot(log10(SLA), log(m.lf/(m.lf+m.st))))
 z <- studyWithVars(dat, c("status","m.lf","m.st"))
 with(z[sample(nrow(z)),],
      plot(log10(m.lf) ~ log10(m.st), pch=19, col=as.factor(status)))
+
+#-------------------------------------------------------------------------------------------#
+# MAT effects on LMF?
+
+require(nlme)
+dataset <- studyWithVars(dat, c("m.lf", "m.so", "MAT"))
+dataset <- subset(dataset, m.lf > 0 & m.so > 0 & !is.na(MAT) & !is.na(m.lf) & !is.na(m.so))
+dataset$dataset_species <- as.factor(with(dataset, paste(dataset,species,sep="_")))
+lme1 <- lme(log10(m.lf) ~ log10(m.so), data=dataset, 
+            random=~1|dataset_species, na.action=na.omit, method="ML")
+lme2 <- lme(log10(m.lf) ~ log10(m.so)*MAT, data=dataset, 
+            random=~1|dataset_species, na.action=na.omit, method="ML")
+
+# MAT is significant (but so what?)
+anova(lme2)
+
+
+# Fit all datasets with common slope, use coefficient as indicator of size-corrected LMF.
+Slope <- fixed.effects(lme1)[[2]]
+dfr <- as.data.frame(do.call(rbind, lapply(split(dataset, dataset$dataset_species), function(x){
+  
+  a <- x$m.lf/(x$m.so^Slope)
+  mat <- mean(x$MAT)
+  return(c(b0=mean(a), MAT=mat))
+  
+})))
+
+
 
 
 
