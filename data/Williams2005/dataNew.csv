@@ -32,3 +32,14 @@ location,GT,location,Rocky,DBarneche[from_paper]
 location,HC,latitude,-23.1,DBarneche[from_paper]
 location,HC,longitude,147,DBarneche[from_paper]
 location,HC,location,Mit,DBarneche[from_paper]
+location,Humpty Doo,vegetation,Sav,from_paper
+location,Katherine Research Station,vegetation,Sav,from_paper
+location,Katherine,vegetation,Sav,from_paper
+location,Manbulloo,vegetation,Sav,from_paper
+location,Kidman Springs,vegetation,Sav,from_paper
+location,Kiauroo,vegetation,Wo,from_paper
+location,Mitchel,vegetation,Wo,from_paper
+location,Mit,vegetation,Wo,from_paper
+location,Rocky,vegetation,Wo,from_paper
+location,Summerdell,vegetation,Wo,from_paper
+location,Oakvale,vegetation,Wo,from_paper
