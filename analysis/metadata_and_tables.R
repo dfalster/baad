@@ -6,6 +6,7 @@
 
 source("R/plotting.R")
 source("R/remko_functions.R")
+library(scales)
 # dat <- readRDS("cache/allomdata_post.rds")
 
 # Sample size
@@ -69,20 +70,22 @@ to.pdf(drawWorldPlot(dat, horlines=FALSE, sizebyn=TRUE),
 # plotveg("TropSF", "Tropical seasonal forest", "navajowhite4")
 # plotveg("Wo", "Woodland", "lightgoldenrod3")
 
-windows(10,7)
+
 # Colored by vegetation type
-cols <- c("blue","brown","forestgreen","darkorange","dodgerblue2","navajowhite4","lightgoldenrod3")
+cols <- alpha(c("blue","brown","forestgreen","darkorange","dodgerblue2","navajowhite4","lightgoldenrod3","lavender"),0.67)
 vegs <- c("BorF","Sav","TempF","TempRF","TropRF","TropSF","Wo")
 vegs_labels <- c("Boreal forest","Savannah","Temperate forest","Temperate rainforest","Tropical rainforest",
-                 "Tropical seasonal forest","Woodland")
+                 "Tropical seasonal forest","Woodland","Glasshouse")
 to.pdf({
   drawWorldPlot(dat[dat$vegetation == vegs[1],], horlines=FALSE, sizebyn=TRUE, pchcol=cols[1])
   for(i in 2:length(vegs)){
     drawWorldPlot(dat[dat$vegetation == vegs[i],], horlines=FALSE, sizebyn=TRUE, pchcol=cols[i], add=TRUE)
   }
+  drawWorldPlot(dat[dat$growingCondition == "GH",], horlines=FALSE, sizebyn=TRUE, 
+                pchcol=cols[8], add=TRUE)
   par(xpd=NA)
-  legend(-160, -100, vegs_labels[1:3], fill=cols[1:3], bty='n')
-  legend(-90, -100, vegs_labels[4:7], fill=cols[4:7], bty='n')
+  legend(-160, -100, vegs_labels[1:4], fill=cols[1:4], bty='n')
+  legend(-80, -100, vegs_labels[5:8], fill=cols[5:8], bty='n')
   
 }, "analysis/output/figures/worldmap_coloredbyveg.pdf", width=10, height=7)
 
@@ -97,5 +100,7 @@ nrdf <- data.frame(Variable=vars, nobs=unname(sapply(vars,nr)))
 
 nrdf <- merge(nrdf, cfg[,c("Variable","label")])
 write.csv(nrdf, "analysis/output/data/nrobstable.csv")
+
+
 
 
