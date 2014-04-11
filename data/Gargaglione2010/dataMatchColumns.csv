@@ -25,7 +25,7 @@ total N sapwood,NA,kg.kg,n.ss,NA
 Total N bark,NA,kg.kg,n.sb,NA
 total N heartwood,NA,kg.kg,n.sh,NA
 total N rotten wood,NA,NA,NA,NA
-N leaf,NA,NA,NA,NA
+N leaf,NA,,,NA
 N small branches,NA,NA,NA,NA
 Total aerial N,NA,NA,NA,NA
 N fine roots,NA,kg.kg,n.rf,NA
@@ -52,7 +52,7 @@ total areal mass,NA,NA,NA,NA
 fine roots mass,NA,kg,m.rf,NA
 medium roots mass,NA,NA,NA,NA
 coarse roots mass,NA,NA,NA,NA
-total underground mass,NA,NA,NA,NA
+total underground mass,NA,kg,m.rt,NA
 total mass/tree,NA,NA,NA,NA
 stem_mass,NA,kg,m.st,NA
 branch_mass,NA,kg,m.br,NA
