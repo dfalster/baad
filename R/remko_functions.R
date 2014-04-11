@@ -20,7 +20,7 @@ postProcessAllom <- function(allomdata){
   specdfr$species_Fixed[ii] <- specdfr$species_new_taxize[ii]
   specdfr <- specdfr[,c("species_old","species_Fixed")]
   names(specdfr)[1] <- "species"
-  dat <- merge(dat, specdfr, all=TRUE)
+  dat <- merge(dat, specdfr, all.x=TRUE)
   
   # Get MAT and MAP from Worldclim
   message("Looking up MAP and MAT from WorldClim")
@@ -59,7 +59,7 @@ postProcessAllom <- function(allomdata){
   
   # Merge
   dat$latlongkey <- with(dat, paste(latitude, longitude))
-  dat <- merge(dat, dfr[,c("latlongkey","MAP","MAT")], all=TRUE) 
+  dat <- merge(dat, dfr[,c("latlongkey","MAP","MAT")], all.x=TRUE) 
   
   # Delete some garbage
   dat <- within(dat,{
