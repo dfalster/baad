@@ -3,7 +3,7 @@ species,,,species,
 family,,,family,
 Time ,,,,
 light level,,,light,see dataNew
-SLA (cm2 g-1),,,,
+SLA (cm2 g-1),,cm2.g,ma.ilf,
 Leaf biomass (g),m5,g,m.lf,
 Stem biomass (g),m5,g,m.st,
 Root biomass (g),m5,g,m.rt,
