@@ -6,6 +6,10 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,growingCondition,GH,from paper[A Saldana-Acosta]
 species,Fraxinus uhdei,pft,DA,from paper[A Saldana-Acosta]
 species,Juglans major,pft,DA,from paper[A Saldana-Acosta]
+species,Persea hintonii,pft,EA,RAD lookup
+species,Dendropanax arboreus,EA,RAD lookup
+species,Symplococarpon purpusii,pft,EA,RAD lookup
+species,Quercus salicifolia,pft,DA,RAD lookup
 light,a,light,3-5% of PAR,from paper[A Saldana-Acosta]
 light,b,light,8-10% of PAR,from paper[A Saldana-Acosta]
 light,c,light,18-20% of PAR,from paper[A Saldana-Acosta]
