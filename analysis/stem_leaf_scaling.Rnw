@@ -75,11 +75,12 @@ P <- cbind(p,r)
 rownames(P) <- NULL
 
 # Add some metadata
-dfr <- dat[,c("dataset","species","pft","vegetation")]
+dfr <- dat[,c("dataset","species","pft","vegetation","growingCondition")]
 dfr$dataset_species <- with(dfr, paste0(dataset,"_",species))
 dfr <- dfr[!duplicated(dfr$dataset_species),]
 P <- merge(P, dfr)
 P$pft <- as.factor(P$pft)
+P$vegetation[is.na(P$vegetation)] <- "GH"
 P$vegetation <- as.factor(P$vegetation)
 
 
@@ -103,46 +104,24 @@ l <- lapply(1:nrow(P), function(i){
 \section{By plant functional type}
 
 <<plotting, echo=FALSE>>=
-# # natural scale
-# plot(1, xlim=c(0,50), ylim=c(0,1), type='n',
-#      xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)")
-# for(i in 1:length(l))points(l[[i]]$h, l[[i]]$wfrel, type='l')
-# 
-# # log-log scale
-# plot(1, xlim=c(-3,2), ylim=c(-3,0), type='n',
-#      xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
-#      axes=FALSE)
-# addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015)
-# for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$wfrel), type='l')
-# 
-# # log-natural scale
-# plot(1, xlim=c(-3,2), ylim=c(0,1), type='n',
-#      xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
-#      axes=FALSE)
-# addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015,addY=F)
-# axis(2)
-# for(i in 1:length(l))points(log10(l[[i]]$h), l[[i]]$wfrel, type='l')
 
+# nonfield <- union(which(P$vegetation == "GH"), which(P$dataset == "Poorter1999"))
+nonfield <- which(P$growingCondition %in% c("CG","GH"))
+field <- setdiff(1:nrow(P), nonfield)
 
-
-
-
-# log-log scale
-# windows(7,6)
-# par(mar=c(5,5,2,2), cex.lab=1.2)
+# Non-glasshouse
 palette(alpha(c("blue","royalblue","red","darkorange"),0.4))
 plot(1, xlim=c(-3,2), ylim=c(-3,0), type='n',
      xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
-     axes=FALSE)
+     axes=FALSE, main="Field grown")
 addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015)
-for(i in 1:length(l)){
+for(i in field){
   points(log10(l[[i]]$h), log10(l[[i]]$wfrel), type='l',
          col=P$pft[i])
 }
 legend("bottomleft", c("Deciduous angiosperm","Deciduous gymnosperm",
                        "Evergreen angiosperm","Evergreen gymnosperm"),
        fill=alpha(palette(),0.9))
-
 # Some flourishes for pdf in a presentation
 # l_eve <- rbind.fill(l[P$pft %in% c("EA","EG")])
 # l_dec <- rbind.fill(l[P$pft %in% c("DA","DG")])
@@ -157,20 +136,18 @@ legend("bottomleft", c("Deciduous angiosperm","Deciduous gymnosperm",
 # 
 # dev.copy2pdf(file="analysis/output/figures/LMF_height_loglog.pdf")
 
-# log-log scale
-plot(1, xlim=c(-3,2), ylim=c(0,1), type='n',
+palette(alpha(c("blue","royalblue","red","darkorange"),0.4))
+plot(1, xlim=c(-3,2), ylim=c(-3,0), type='n',
      xlab="Plant height (m)", ylab="Leaf mass / aboveground mass (-)",
-     axes=FALSE)
-addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015,addY=F)
-axis(2)
-for(i in 1:length(l)){
-  points(log10(l[[i]]$h), l[[i]]$wfrel, type='l',
+     axes=FALSE, main="Glasshouse and Common garden")
+addlogaxes(10^-3, 10^2, 10^-3, 10^0, tck1=-0.03, tck2=-0.015)
+for(i in nonfield){
+  points(log10(l[[i]]$h), log10(l[[i]]$wfrel), type='l',
          col=P$pft[i])
 }
 legend("bottomleft", c("Deciduous angiosperm","Deciduous gymnosperm",
                        "Evergreen angiosperm","Evergreen gymnosperm"),
-       fill=palette())
-# dev.copy2pdf(file="analysis/output/figures/LMF_height_lognat.pdf")
+       fill=alpha(palette(),0.9))
 
 
 # m.lf, m.st vs. h.t by pft.
@@ -183,7 +160,6 @@ for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$mlf), type='l',
 legend("topleft", c("Deciduous angiosperm","Deciduous gymnosperm",
                        "Evergreen angiosperm","Evergreen gymnosperm"),
        fill=palette(), inset=0.04)
-# dev.copy2pdf(file="analysis/output/figures/MF_height_loglog.pdf")
 
 plot(1, xlim=c(-3,2), ylim=c(-7,5), type='n',
      xlab="Plant height (m)", ylab="Above-ground woody mass (kg)",
@@ -194,7 +170,6 @@ for(i in 1:length(l))points(log10(l[[i]]$h), log10(l[[i]]$mst), type='l',
 legend("topleft", c("Deciduous angiosperm","Deciduous gymnosperm",
                     "Evergreen angiosperm","Evergreen gymnosperm"),
        fill=palette(), inset=0.04)
-# dev.copy2pdf(file="analysis/output/figures/MS_height_loglog.pdf")
 @
 
 
