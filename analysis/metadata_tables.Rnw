@@ -17,11 +17,9 @@ source("../R/plotting.R")
 @
 
 
-\section{Tables}
-
 <<results='asis', echo=FALSE>>=
 
-# Family
+# Top 15 families
 topfam <- names(sort(table(dat$family),T)[1:15])
 datx <- droplevels(subset(dat, family %in% topfam))
 datx$family <- with(datx, reorder(as.factor(family),family,function(x)1/length(x)))
@@ -31,14 +29,40 @@ famtab <- xtable(xtabs(~ family, data=datx), digits=0,
                  label="table:familytable")
 print(famtab, caption.placement="top",table.placement="h")
 
+
+# Top 15 species
+topspec <- names(sort(table(dat$species_Fixed),T)[1:15])
+datx <- droplevels(subset(dat, species_Fixed %in% topspec))
+datx$Species <- with(datx, reorder(as.factor(species_Fixed),species_Fixed,
+                                   function(x)1/length(x)))
+  
+spectab <- xtable(xtabs(~ Species, data=datx), digits=0,
+                 caption="Most represented species (number of observations).",
+                 label="table:spectable")
+print(spectab, caption.placement="top",table.placement="h")
+
+dat_pft <- within(dat, {
+  pft[is.na(pft) | pft == ""] <- "None"
+  growingCondition[is.na(growingCondition) | growingCondition == ""] <- "None"
+  vegetation[is.na(vegetation) | vegetation == ""] <- "None"
+  
+  pft <- relevel(as.factor(pft), "None")
+  growingCondition <- relevel(as.factor(growingCondition), "None")
+  vegetation <- relevel(as.factor(vegetation), "None")
+})
+
+
+
 # Vegetation and plant functional type
-vegpfttab <- xtable(xtabs(~ vegetation + pft, data=subset(dat, !is.na(pft) & pft != "")), digits=0,
+vegpfttab <- xtable(addmargins(xtabs(~ vegetation + pft, data=dat_pft)), 
+                    digits=0,
                     caption="Number of observations by family and plant functional type.",
                     label="table:vegpfttab")
 print(vegpfttab, caption.placement="top",table.placement="h")
 
 # growinCondition and plant functional type
-gcpfttab <- xtable(xtabs(~ growingCondition + pft, data=subset(dat, !is.na(pft) & pft != "")), digits=0,
+gcpfttab <- xtable(addmargins(xtabs(~ growingCondition + pft, data=dat_pft)), 
+                   digits=0,
                     caption="Number of observations by growing condition and plant functional type.",
                     label="table:gcpfttab")
 print(gcpfttab, caption.placement="top",table.placement="h")
@@ -52,17 +76,15 @@ vars <- c("m.st","m.so","m.lf","a.lf","m.rt","h.t","c.d","d.bh", "ma.ilf","r.st"
 nrdf <- data.frame(Variable=vars, nobs=unname(sapply(vars,nr)))
 
 nrdf <- merge(nrdf, cfg[,c("Variable","label")])
-nrdf <- nrdf[order(nrdf$nobs),]
-nrdftab <- xtable(nrdf, caption = "Number of observations by variable.", 
+nrdf <- nrdf[order(nrdf$nobs,decreasing=TRUE),]
+nrdftab <- xtable(nrdf, caption = "Number of observations by selected variables.", 
                   label = "nrdftable")
 print(nrdftab,caption.placement = "top", include.rownames= FALSE, table.placement = "h")
 @
 
 
-\section{Maps}
-
-
-<<echo=FALSE,  out.width='1.3\\linewidth', out.height='1.3\\linewidth'>>=
+%,  out.width='1.3\\linewidth', out.height='1.3\\linewidth'>>=
+<<echo=FALSE, fig.cap="Global distribution of datasets by vegetation type and sample size.",out.width='1.1\\linewidth'>>=  
 # Colored by vegetation type
 cols <- alpha(c("blue","brown","forestgreen","darkorange","dodgerblue2",
                 "navajowhite4","lightgoldenrod3","lavender"),0.67)
