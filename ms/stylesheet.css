@@ -1,0 +1,15 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 80%;
+}
+
+h1 {
+    padding: .1em;
+    padding-top: .2em;
+    padding-left: 0.6em;
+    line-height: 120%;
+}
+
+a:hover {
+    text-decoration: none;
+}

@@ -1,22 +1,21 @@
 # *Ecological Archives* Exxxxx
 # Falster D.S. *et al* BAAD: a Biomass And Allometry Database for woody plants.*Ecology* xxxx
 
-
 ```{r, results="hide", echo=FALSE, message=FALSE}
 library(knitr, quietly=TRUE)
-knitr:::opts_chunk$set(tidy=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.cap="", cache=TRUE)
+knitr::opts_chunk$set(tidy=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.cap="")
+```
 
-setwd("..")
-source('R/import.R')
-source("R/MS-fun.R")
-dat <- loadData(reprocess=FALSE)
+```{r, results="hide", echo=FALSE, message=FALSE}
+source("MS-fun.R")
 
-vars  <-  mashrDetail("var.def")$Variable[mashrDetail("var.def")$Type=="numeric"]
-vars <- vars[-c(match(c("map","mat","lai","age"),vars))]
+baad <- readRDS("../output/baad.rds")
+data <- baad$data
 
-library(plyr)
-
-data  <-  dat$data
+var.def <- read.csv("../config/variableDefinitions.csv",
+                    stringsAsFactors=FALSE)
+vars <- var.def$Variable[var.def$Type == "numeric"]
+vars <- setdiff(vars, c("map","mat","lai","age"))
 ```
 
 ## INTRODUCTION
@@ -35,7 +34,7 @@ BAAD: a Biomass And Allometry Database for woody plants
 ### C. DATA SET DESCRIPTORS:
 **1. Originators**: The study was initiated by Daniel Falster and Remko Duursma. Diego Barneche, Rich FitzJohn and Angelica Vårhammar assisted with literature searching, data compilation, and coding. All other authors are involved because they contributed data to the project.
 
-**2. Abstract**: The allocation of primary production between different plant tissues (leaf, sapwood, bark, roots, reproductive material) determines the nature of plant growth, the outcome of competitive interactions, and the flow of energy in the terrestrial biosphere. Allocation patterns can differ widely among coexisting species in any single forest. Large-scale shifts with environment are also evident, e.g. between tropical versus temperate stands. The effect of allocation differences on the performance of individual plants and whole forest stands can now be studied using new vegetation models that trace growth across the entire life cycle from seed to adult tree. The success of such models, however, requires suitable datasets to validate model assumptions, parameterise equations, and test predictions about plant growth and development. Here we describe an individual-level data set capturing ontogenetic profiles of biomass allocation in woody plant species from biomes across the globe. The data were compiled from published and unpublished sources, focussing on studies where: i) measurements were for individual plants rather than whole stands; ii) individuals spanning a range of sizes were measured; and iii) size was estimated directly, i.e. not indirectly via allometric equations. We included both wild and artificially grown plants. The dataset contains the following size metrics: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; height of plant and crown base, crown area and surface area; and the dry mass of leaf, stem, branches, sapwood, heartwood, bark, coarse roots and fine root tissues. We also report other properties of individuals (age, maximum height, leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (status, light, experimental treatment, site leaf area index, vegetation type, mean annual rainfall) where available. Overall, the dataset contains `r sum(!is.na(dat$data[,vars]))` measurements collected in `r length(unique(dat$data$dataset))` different studies, from `r nrow(dat$data)` individuals across `r length(unique(dat$data$species))` species. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the worlds vegetation.
+**2. Abstract**: The allocation of primary production between different plant tissues (leaf, sapwood, bark, roots, reproductive material) determines the nature of plant growth, the outcome of competitive interactions, and the flow of energy in the terrestrial biosphere. Allocation patterns can differ widely among coexisting species in any single forest. Large-scale shifts with environment are also evident, e.g. between tropical versus temperate stands. The effect of allocation differences on the performance of individual plants and whole forest stands can now be studied using new vegetation models that trace growth across the entire life cycle from seed to adult tree. The success of such models, however, requires suitable datasets to validate model assumptions, parameterise equations, and test predictions about plant growth and development. Here we describe an individual-level data set capturing ontogenetic profiles of biomass allocation in woody plant species from biomes across the globe. The data were compiled from published and unpublished sources, focussing on studies where: i) measurements were for individual plants rather than whole stands; ii) individuals spanning a range of sizes were measured; and iii) size was estimated directly, i.e. not indirectly via allometric equations. We included both wild and artificially grown plants. The dataset contains the following size metrics: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; height of plant and crown base, crown area and surface area; and the dry mass of leaf, stem, branches, sapwood, heartwood, bark, coarse roots and fine root tissues. We also report other properties of individuals (age, maximum height, leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (status, light, experimental treatment, site leaf area index, vegetation type, mean annual rainfall) where available. Overall, the dataset contains `r sum(!is.na(data[,vars]))` measurements collected in `r length(unique(data$dataset))` different studies, from `r nrow(data)` individuals across `r length(unique(data$species))` species. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the worlds vegetation.
 
 ### D. Key words
 
@@ -46,8 +45,8 @@ model; carbon; growth; wood
 
 ### B. SPECIFIC SUBPROJECT DESCRIPTION
 
-```{r,results="asis",echo=FALSE}
-setwd("..")
+```{r,results="asis",echo=FALSE, message=FALSE}
+library(plyr)
 details2B  <-  daply(data, .(dataset), function(x)class2Bdetails(x))
 writeLines(details2B,sep="\n\n")
 ```

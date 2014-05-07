@@ -1,8 +1,7 @@
-source('R/import.R')
-library(plyr)
-
-d     <- loadData(reprocess=TRUE)
-data  <-  d$data
+## Mimic dataMashR function here, but relative to *this* directory.
+data.path <- function(...) {
+  file.path("../data", ...)
+}
 
 pasteAndCollapse  <-  function(values, binder) {
 	paste0(unique(values), collapse=binder)
@@ -45,9 +44,3 @@ class2Bdetails  <-  function(data) {
 		   '\ta. Field Laboratory ', '\n\t\t',              getMetadataMethods(unique(data$dataset)),              '\n',
 		   '\t4. Project personnel: ',                      getPersonell(unique(data$dataset)),                    '\n')	
 }
-
-details2B  <-  daply(data, .(dataset), function(x)class2Bdetails(x))
-
-#test to check it out
-test  <-  pasteAndCollapse(details2B, '\n\n')
-write(test, '~/Desktop/test.md')

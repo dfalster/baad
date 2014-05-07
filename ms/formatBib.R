@@ -1,4 +1,3 @@
-
 library(gdata, quietly=TRUE)
 library(bibtex, quietly=TRUE)
 
@@ -87,6 +86,3 @@ formatBib <- function(bibfile,
   
 return(f)
 }
-
-
-
