@@ -1,6 +1,8 @@
-source('R/load.R')
+source('R/import.R')
+library(plyr)
 
-data     <-  d$data
+d     <- loadData(reprocess=TRUE)
+data  <-  d$data
 
 pasteAndCollapse  <-  function(values, binder) {
 	paste0(unique(values), collapse=binder)
@@ -44,7 +46,6 @@ class2Bdetails  <-  function(data) {
 		   '\t4. Project personnel: ',                      getPersonell(unique(data$dataset)),                    '\n')	
 }
 
-library(plyr)
 details2B  <-  daply(data, .(dataset), function(x)class2Bdetails(x))
 
 #test to check it out

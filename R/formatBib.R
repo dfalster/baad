@@ -1,18 +1,17 @@
 
+library(gdata, quietly=TRUE)
+library(bibtex, quietly=TRUE)
+
 bibGetElement <- function(bibfile, element = "doi", i=1){
   bibs <- read.bib(bibfile)
   unclass(bibs[[i]])[[1]][[element]]
 }
 
-
 formatBib <- function(bibfile,
                       initialSep=".",
                       fieldSep=". "
                       ){
-  
-  library(gdata, quietly=TRUE)
-  library(bibtex, quietly=TRUE)
-  
+
   bibs <- read.bib(bibfile)
   
   
