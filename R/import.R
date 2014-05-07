@@ -1,7 +1,7 @@
 
 
 source("R/checkPackage.R")
-sapply(c('bibtex', 'devtools', 'maps', 'mapdata', 'gdata', 'smatr'), checkPackage)
+sapply(c('bibtex', 'devtools', 'maps', 'mapdata', 'gdata', 'smatr', 'plyr'), checkPackage)
 rm(checkPackage)
 
 # Use local dataMashR if it exists
