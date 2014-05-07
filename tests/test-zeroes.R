@@ -4,7 +4,7 @@ context("Zeroes")
 
 test_that("zeroes", {
 
-  dat <- loadStudies(reprocess=FALSE)
+  dat <- loadData(reprocess=FALSE)
 
   vars  <-  mashrDetail("var.def")$Variable[mashrDetail("var.def")$Type=="numeric"]
 
