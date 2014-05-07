@@ -1,5 +1,7 @@
-source('R/import.R')
+source('ms/MS-fun.R')
+source('R/build-baad-fun.R')
 library(plyr)
+library(dataMashR)
 
 numberOfPoints  <-  function(data, wanted) {
 	contrib  <-  as.numeric(unlist(data[ , colnames(data) != 'dataset']))
@@ -17,6 +19,7 @@ expandData <-  function(data) {
 	}
 }
 
+data.path  <-  dataMashR::data.path
 
 data    <-  loadData(reprocess=TRUE)$data
 vardef  <-  .mashrConfig$var.def
@@ -27,7 +30,6 @@ conts   <-  daply(data,  .(dataset), function(x)getPersonell(unique(x$dataset)))
 dbles   <-  sapply(conts, function(x)length(strsplit(x, ';')[[1]]))
 npts    <-  daply(sdata, .(dataset), numberOfPoints)
 allPt   <-  data.frame(study=sort(unique(data$dataset)), contacts=conts, contribution=npts, duplicates=dbles, row.names=NULL, stringsAsFactors=FALSE)
-
 correctedData  <-  ddply(allPt, .(study), expandData)
 contributions  <-  sort(tapply(correctedData$contribution, correctedData$contacts, sum), decreasing=TRUE)
 
