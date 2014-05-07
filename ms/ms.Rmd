@@ -1,0 +1,105 @@
+# *Ecological Archives* Exxxxx
+# Falster D.S. *et al* BAAD: a Biomass And Allometry Database for woody plants.*Ecology* xxxx
+
+
+```{r, results="hide", echo=FALSE, message=FALSE}
+library(knitr, quietly=TRUE)
+knitr:::opts_chunk$set(tidy=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.cap="", cache=TRUE)
+
+setwd("..")
+source('R/import.R')
+source("R/MS-fun.R")
+dat <- loadData(reprocess=FALSE)
+
+vars  <-  mashrDetail("var.def")$Variable[mashrDetail("var.def")$Type=="numeric"]
+vars <- vars[-c(match(c("map","mat","lai","age"),vars))]
+
+library(plyr)
+
+data  <-  dat$data
+```
+
+## INTRODUCTION
+
+motivation text.
+
+## METHODS
+
+## METADATA CLASS I. DATA SET DESCRIPTORS
+
+### A. DATA SET IDENTITY
+BAAD: a Biomass And Allometry Database for woody plants
+
+### B. DATA SET IDENTIFICATION CODE:
+
+### C. DATA SET DESCRIPTORS:
+**1. Originators**: The study was initiated by Daniel Falster and Remko Duursma. Diego Barneche, Rich FitzJohn and Angelica Vårhammar assisted with literature searching, data compilation, and coding. All other authors are involved because they contributed data to the project.
+
+**2. Abstract**: The allocation of primary production between different plant tissues (leaf, sapwood, bark, roots, reproductive material) determines the nature of plant growth, the outcome of competitive interactions, and the flow of energy in the terrestrial biosphere. Allocation patterns can differ widely among coexisting species in any single forest. Large-scale shifts with environment are also evident, e.g. between tropical versus temperate stands. The effect of allocation differences on the performance of individual plants and whole forest stands can now be studied using new vegetation models that trace growth across the entire life cycle from seed to adult tree. The success of such models, however, requires suitable datasets to validate model assumptions, parameterise equations, and test predictions about plant growth and development. Here we describe an individual-level data set capturing ontogenetic profiles of biomass allocation in woody plant species from biomes across the globe. The data were compiled from published and unpublished sources, focussing on studies where: i) measurements were for individual plants rather than whole stands; ii) individuals spanning a range of sizes were measured; and iii) size was estimated directly, i.e. not indirectly via allometric equations. We included both wild and artificially grown plants. The dataset contains the following size metrics: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; height of plant and crown base, crown area and surface area; and the dry mass of leaf, stem, branches, sapwood, heartwood, bark, coarse roots and fine root tissues. We also report other properties of individuals (age, maximum height, leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (status, light, experimental treatment, site leaf area index, vegetation type, mean annual rainfall) where available. Overall, the dataset contains `r sum(!is.na(dat$data[,vars]))` measurements collected in `r length(unique(dat$data$dataset))` different studies, from `r nrow(dat$data)` individuals across `r length(unique(dat$data$species))` species. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the worlds vegetation.
+
+### D. Key words
+
+allometry; trait; leaf area; height; size; architecture; vegetation
+model; carbon; growth; wood
+
+## METADATA CLASS II. RESEARCH ORIGIN DESCRIPTORS
+
+### B. SPECIFIC SUBPROJECT DESCRIPTION
+
+```{r,results="asis",echo=FALSE}
+setwd("..")
+details2B  <-  daply(data, .(dataset), function(x)class2Bdetails(x))
+writeLines(details2B,sep="\n\n")
+```
+
+## CLASS III. DATA SET STATUS AND ACCESSIBILITY
+
+### A. Status
+
+**Latest update**: xx for all data files.
+
+**Metadata status**: Metadata are complete to last update and are stored
+with data.
+
+**Data verification**:
+
+### B. Accessibility
+
+**1. Storage location and medium**: The data published here is the first release from the Biomass and allometry database stored at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/). The version of the data made available for this publication is available here XXXXX. For scientific analyses, we suggest you use this version.
+
+Development versions of the dataset will continue to be available at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/).
+
+If you notice any problem with the dataset, please list an issue [here](https://github.com/dfalster/baad/issues/new).
+
+**Contact persons**: Queries about individual specific data points can be directed to the contributing author for that study. For queries about the entire dataset, please contact either
+
+-  Daniel Falster, email: Daniel.Falster@mq.edu.au, tel:
+  +61-2-98509258, Biological Sciences, Macquarie University NSW 2109,
+  Australia
+-  Remko Duursma, email: remkoduursma@gmail.com, tel: +61-2-4570 1806,
+  Centre for Plants and the Environment, University of Western Sydney,
+  NSW 1797, Australia.
+
+**Copyright restrictions**: The dataset is released under the [Creative Commons CC0 license](http://creativecommons.org/choose/zero/?lang=en). As such, it may be freely used and redistributed. When using the dataset, we ask that you cite the original article, recognising the hard work that went into collecting the data and the author's willingness to make it publicly available.
+
+**Costs**: None. You are kindly requested to cite this paper when using these data if possible.
+
+## CLASS IV. DATA STRUCTURAL DESCRIPTORS
+
+### A. Data Set Files
+
+Identity: allData.txt
+Size:
+Format and storage mode: ASCII text, comma delimited. Missing values
+are denoted as 'NA'.
+Header information:
+
+### B. Variable definitions
+
+## CLASS V. SUPPLEMENTAL DESCRIPTORS
+
+## ACKNOWLEDGMENTS
+
+D.S. Falster, A. Vårhammer and D. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to Duursma.
+
+## LITERATURE CITED
