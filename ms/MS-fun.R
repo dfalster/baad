@@ -44,3 +44,56 @@ class2Bdetails  <-  function(data) {
 		   '\ta. Field Laboratory ', '\n\t\t',              getMetadataMethods(unique(data$dataset)),              '\n',
 		   '\t4. Project personnel: ',                      getPersonell(unique(data$dataset)),                    '\n')	
 }
+
+numberOfPoints  <-  function(data, wanted) {
+	sum(apply(data[ , colnames(data) != 'dataset'], 2, function(x)length(x[!is.na(x)])))
+}
+
+expandData <-  function(data) {
+	if(data$duplicates > 1) {
+		newnames       <-  strsplit(data$contacts, '; ')[[1]]
+		data           <-  data[rep(1, data$duplicates), ] 
+		data$contacts  <-  newnames
+		data
+	} else {
+		data
+	}
+}
+
+contributionColumns  <-  function() {
+	vardef  <-  .mashrConfig$var.def
+	wanted  <-  unique(vardef$Variable[vardef$Type=='numeric'])
+	wanted[!(wanted %in% c('map', 'mat'))]
+}
+
+filterData4Contributions  <-  function(data, contributionCols) {
+	data[, c('dataset', contributionCols)]
+}
+
+listContacts  <-  function(data) {
+	daply(data,  .(dataset), function(x)getPersonell(unique(x$dataset)))
+}
+
+numberOfContacts  <-  function(data) {
+	sapply(data, function(x)length(strsplit(x, ';')[[1]]))
+}
+
+numberOfcontributions  <-  function(data) {
+	daply(data, .(dataset), numberOfPoints)
+}
+
+correctData  <-  function(data) {
+	ddply(data, .(study), expandData)
+}
+
+getContributions  <-  function(data, ...) {
+	sdata   <-  filterData4Contributions(data, ...)
+	conts   <-  listContacts(data)
+	dbles   <-  numberOfContacts(conts)
+	npts    <-  numberOfcontributions(sdata)
+	
+	allPt   <-  data.frame(study=sort(unique(data$dataset)), contacts=conts, contribution=npts, duplicates=dbles, row.names=NULL, stringsAsFactors=FALSE)
+	
+	correctedData  <-  correctData(allPt)
+	sort(tapply(correctedData$contribution, correctedData$contacts, sum), decreasing=TRUE)
+}
