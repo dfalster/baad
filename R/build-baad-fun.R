@@ -1,18 +1,12 @@
-# Use local dataMashR if it exists
-if(!file.exists("lib/dataMashR")){
-	warning("We recommend you install dataMashR in local directory before proceeding (to ensure you have correct version)")
-} else {
-  .libPaths(c("lib", .libPaths()))  # will cause us to use local version of dataMashR
-}
-
-library(dataMashR)
+suppressMessages(library(dataMashR))
 
 loadData <- function(...){
-	dat <- loadStudies(...)
-	dat$data <- postProcess(dat$data)
-	dat
+  dat <- loadStudies(...)
+  dat$data <- postProcess(dat$data)
+  dat
 }
 
+## This is checking that is specific to the baad data set
 postProcess <- function(data){
 
   # To make sure variable types are the same as in the config/variableDefinitions file, do;
@@ -126,4 +120,3 @@ fillDerivedVariables <- function(x){
 
   x
 }
-
