@@ -1,0 +1,123 @@
+Dear Daniel,
+
+
+You will find below my answer to each question.
+
+
+Questions about the study:  Epron2011
+
+Please look at the attached html report  Epron2011.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+
+ANSWER: Incomplete. My address is indicated below.
+
+Data contributor: Jean-Paul Laclau.
+Email: jean-paul.laclau@cirad.fr.
+Address: CIRAD, UMR Eco&Sols, 2 place Viala, Bat. 12, 34060 Montpellier cedex 2, France
+
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: No
+
+The correct reference is:
+Epron D., Laclau J.-P., Almeida J.C.R., Gonìalves J.L.M., Ponton S., Sette Jr C.R., Delgado-Rojas J.S., Bouillet J.-P., Nouvellon Y., 2012. Do changes in carbon allocation account for the growth response to potassium and sodium applications in tropical Eucalyptus plantations? Tree Physiology 32:667-679
+
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+
+ANSWER: Yes
+
+Overview of data provided
+Data for 216 individuals from 1 locations covering 1 species.
+The dataset includes 1 species belonging to 1 family(ies), presenting 1 functional type(s), growing in 1 condition(s) within 1 major type(s) of habitat:
+In fact, Eucalyptus is a genus and the family should be « Myrtaceae ». This information has been corrected in the file « Epron 2012_cor JPL.csv ».
+
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: No
+Location data
+location 		longitude     		latitude 	 vegetation
+Itatinga, E102    	48°37'47.91"O	23° 2'41.50"S 	 missing
+
+Vegetation missing: Wo
+
+It might be better to indicate « Tropical forest plantation » but this variable is not in the file « Variable.definition.csv »
+
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+
+ANSWER: Yes.
+
+
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+
+ANSWER: ok.
+
+It might also be FE (= field experimental).
+Growing conditions have been briefly described in the file « studyMetadata_JPL.csv ».
+
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?
+	 If not, please provide details where possible.
+ANSWER: No
+
+Species: Eucalyptus  grandis (W. Hill ex Maiden)
+Family: Myrtaceae
+Pft : EA
+
+This information has been corrected in the file « Epron 2012_cor JPL.csv ».
+
+8. Is the 'Methods' information complete and accurate?
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+
+ANSWER: This information has been added in the file « studyMetadata_JPL.csv » attached.
+
+
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers?
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+
+ANSWER: Everything seems correct, except some units that I have corrected in the file « Epron 2012_cor JPL.csv ». Moreover, I have removed the values of fine root biomass in this file. Indeed the fine root biomass was measured down to a depth of 3 m in Epron et al. (2012) and a recent study in an adjacent experiment showed that the fine root biomass below a depth of 3 m is large. The total fine root biomass was therefore understimated in Epron et al. (2012) and it is better to remove this information from the database.
+
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+
+ANSWER: yes
+
+
+11. At what height the cross-section measurements for sapwood, heartwood, bark and total stem were taken (soil, breast height, crown base)?
+
+ANSWER: sapwood, heartwood:  measurements at breast height. The name of the variable in « Epron 2012_cor JPL.csv » has been modified.
+Wood, bark and total stem biomasses were measured for the whole stem, not at a specific height (trees were cut and the whole stem was weighed).
+
+
+
+12. Could you please confirm if what you call h.c is crown depth or height of the plant to the first bearing leaf?
+
+ANSWER: The name of the variables h.c and c.d has been modified in « Epron 2012_cor JPL.csv ».
+h.c is is now height to the first bearing leaf.
+c.d is now crown depth.
+
+
+
+13. It seems that the units you provided for crown.area (a.cp) might be wrong. You provided m2 but we suspect there is a wrong calculation in the original excel file. Could you please double-check this information?
+
+ANSWER: Sorry, the unit was wrong and the values have been corrected. There are now expressed in m2.
+
+The variable « d.bh » has been added in the file « data_cor JPL.csv ».
+
+
+I hope that my reply was clear. Do not hesitate to contact me by email if you need more information. I will be on vacation in July but I’ll remail my email every 2-3 days.
+
+With best regards,
+
+Jean-Paul
