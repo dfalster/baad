@@ -86,8 +86,7 @@ expandData <-  function(data) {
 	}
 }
 
-contributionColumns  <-  function() {
-	vardef  <-  .mashrConfig$var.def
+contributionColumns  <-  function(vardef) {
 	wanted  <-  unique(vardef$Variable[vardef$Type=='numeric'])
 	wanted[!(wanted %in% c('map', 'mat'))]
 }
@@ -123,3 +122,15 @@ getContributions  <-  function(data, ...) {
 	correctedData  <-  correctData(allPt)
 	sort(tapply(correctedData$contribution, correctedData$contacts, sum), decreasing=TRUE)
 }
+
+lisOfAuthors  <-  function(alphabetical=TRUE, ...) {
+	wanted         <-  contributionColumns(...)
+	contributions  <-  getContributions(data, wanted)
+	firstAuthors   <-  'Daniel Falster, Remko Duursma, Diego R. Barneche, Rich Fitzjohn, Angelica Vårhammar'
+	if(alphabetical) {
+		pasteAndCollapse(c(firstAuthors, sort(names(contributions))), ', ')
+	} else {
+		pasteAndCollapse(c(firstAuthors, names(contributions)), ', ')
+	}
+}
+

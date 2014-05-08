@@ -18,6 +18,11 @@ vars <- var.def$Variable[var.def$Type == "numeric"]
 vars <- setdiff(vars, c("map","mat","lai","age"))
 ```
 
+```{r,results="asis",echo=FALSE, message=FALSE}
+library(plyr)
+lisOfAuthors(vardef=var.def)
+```
+
 ## INTRODUCTION
 
 Quantifying the amount of mass or energy invested in plant tissues is of fundamental interest across a range of disciplines, including ecology, forestry, ecosystem science, and climate change science. While many thousands of trees have been harvested in the name of science, most of this data has only been made available in the form of summary tables or plots included in reports and publications, the raw data residing piecemeal on the hard drives of individual scientists spread around the world. Several researchers have gathered together the fitted equations within the data; yet few have attempted to liberate the raw data underpinning these relationships. Gathered together such data would have enormous value and represent an important resource for the community.
@@ -104,6 +109,6 @@ Header information:
 
 ## ACKNOWLEDGMENTS
 
-D.S. Falster, A. Vårhammer and D. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to Duursma. R FitzJohn was employed on a XXXXXX.
+D.S. Falster, A. Vårhammer and D. R. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to Duursma. R FitzJohn was employed on a XXXXXX.
 
 ## LITERATURE CITED
