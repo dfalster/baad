@@ -123,14 +123,19 @@ getContributions  <-  function(data, ...) {
 	sort(tapply(correctedData$contribution, correctedData$contacts, sum), decreasing=TRUE)
 }
 
+orderByLastName  <-  function(authorNames) {
+	sapply(authorNames, function(x){a<-strsplit(x,' ')[[1]];a[length(a)]})
+}
+
 lisOfAuthors  <-  function(alphabetical=TRUE, ...) {
 	wanted         <-  contributionColumns(...)
 	contributions  <-  getContributions(data, wanted)
 	firstAuthors   <-  'Daniel Falster, Remko Duursma, Diego R. Barneche, Rich Fitzjohn, Angelica Vårhammar'
 	if(alphabetical) {
-		pasteAndCollapse(c(firstAuthors, sort(names(contributions))), ', ')
+		pasteAndCollapse(c(firstAuthors, names(contributions)[order(orderByLastName(names(contributions)))]), ', ')
 	} else {
 		pasteAndCollapse(c(firstAuthors, names(contributions)), ', ')
 	}
 }
+
 
