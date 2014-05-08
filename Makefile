@@ -1,15 +1,17 @@
-TARGETS=output/baad.rds
+all: baad ms
 
 baad: output/baad.rds
 
-ms: output/baad.rds
+ms: ms/ms.html
+
+ms/ms.html: output/baad.rds
 	make -C ms
 
 output/baad.rds:
 	Rscript build-baad.R
 
 clean:
-	rm $(TARGETS)
+	rm output/baad.rds
 	make -C ms clean
 
 install-dataMashR:
