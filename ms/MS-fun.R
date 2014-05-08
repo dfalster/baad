@@ -21,7 +21,7 @@ getMetadataMethods  <-  function(studyName) {
 	metadata  <-  readStudyFile(studyName, "studyMetadata.csv")
 	if(nrow(metadata) > 0) {
 		metadata  <-  metadata[!is.na(metadata$Description) & !(tolower(metadata$Topic) %in% c('sampling strategy', 'age', 'growth environment')),]
-		pasteAndCollapse(paste0(metadata$Topic, ': ', metadata$Description), '\n\t\t')
+		pasteAndCollapse(paste0(metadata$Topic, ': ', metadata$Description), '\n\t\t\t')
 	}
 }
 
@@ -31,18 +31,44 @@ getPersonell  <-  function(studyName) {
 
 
 class2Bdetails  <-  function(data) {
-	paste0('## ', unique(data$dataset), '\n',
-		   '\t1. Site description \n',
-		   '\ta. Site(s) type(s) ', '\n\t\t',               pasteAndCollapse(unique(data$vegetation),' ; '),       '\n',
-		   '\tb. Geography ',       '\n\t\tlongitude(s): ', pasteAndCollapse(unique(data$longitude),' ; '),        '\n',
-		                            '\t\tlatitude(s): ',    pasteAndCollapse(unique(data$latitude),' ; '),         '\n',
-		   '\tc. Site(s) history ', '\n\t\t',               pasteAndCollapse(unique(data$growingCondition),' ; '), '\n',
-		   '\t2. Experimental or sampling design \n',
-		   '\ta. Design characteristics ', '\n\t\t',        getMetadataDesign(unique(data$dataset)),               '\n',
-		   '\tb. Data collection period, frequency: \n',
-		   '\t3. Research methods \n',
-		   '\ta. Field Laboratory ', '\n\t\t',              getMetadataMethods(unique(data$dataset)),              '\n',
-		   '\t4. Project personnel: ',                      getPersonell(unique(data$dataset)),                    '\n')	
+
+	template <-
+    	c('## {{studyName}}',
+      	'\t1. Site Description',
+      	'\t\ta. Site(s) type(s)',
+      	'\t\t{{siteType}}',
+      	'\t\tb. Geography',
+      	'\t\t\tlongitude(s):',
+		'\t\t\t\t{{lon}}',
+      	'\t\t\tlatitudes(s):',
+		'\t\t\t\t{{lat}}',
+		'\t\tc. Site(s) history',
+		'\t\t\t{{siteHistory}}',
+ 	    '\t2. Experimental or sampling design',
+		'\t\ta. Design characteristics',
+		'\t\t\t{{metadataDesign}}',
+		'\t\tb. Data collection period, frequency:',
+		'\t\t\t{{collection}}',
+ 	    '\t3. Research methods',
+		'\t\ta. Field Laboratory',
+		'\t\t\t{{lab}}',
+		'\t4. Project personnel:',
+		'\t\t{{personell}}'
+      	)
+  	
+  	template <- paste(template, collapse="\n") # might not be needed
+  	whisker.render(template,
+                 list(studyName=unique(data$dataset),
+                      siteType=pasteAndCollapse(unique(data$vegetation),' ; '),
+                 	  lon=pasteAndCollapse(unique(data$longitude),' ; '),
+                 	  lat=pasteAndCollapse(unique(data$latitude),' ; '),
+           	          siteHistory=pasteAndCollapse(unique(data$growingCondition),' ; '),
+           	          metadataDesign=getMetadataDesign(unique(data$dataset)),
+           	          collection='',
+           	          lab=getMetadataMethods(unique(data$dataset)),
+           	          personell=getPersonell(unique(data$dataset))
+                 ))
+
 }
 
 numberOfPoints  <-  function(data, wanted) {
