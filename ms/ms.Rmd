@@ -47,6 +47,7 @@ model; carbon; growth; wood
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
 library(plyr)
+library(whisker)
 details2B  <-  daply(data, .(dataset), function(x)class2Bdetails(x))
 writeLines(details2B,sep="\n\n")
 ```
