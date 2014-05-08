@@ -20,7 +20,18 @@ vars <- setdiff(vars, c("map","mat","lai","age"))
 
 ## INTRODUCTION
 
-motivation text.
+Quantifying the amount of mass or energy invested in plant tissues is of fundamental interest across a range of disciplines, including ecology, forestry, ecosystem science, and climate change science. While many thousands of trees have been harvested in the name of science, most of this data has only been made available in the form of summary tables or plots included in reports and publications, the raw data residing piecemeal on the hard drives of individual scientists spread around the world. Several researchers have gathered together the fitted equations within the data; yet few have attempted to liberate the raw data underpinning these relationships. Gathered together such data would have enormous value and represent an important resource for the community.
+
+We (D Falster, R Duursma) set out to create such a resource, contacting the authors of publications to see if they would make their raw data files available, with the help of D Barneche, A Vårhammer and R FitzJohn. The response was overwhelming: nearly everyone we contacted was interested to contribute. As a result, we are happy to release BAAD: a Biomass And Allometry Database for woody plants, comprising data collected in `r length(unique(data$dataset))` different studies.
+
+Combining data from many different studies, each using it's own set of terms and units is no trivial task. This compilation would not have been possible without several new technologies. In particular,
+
+1. Our entire workflow is scripted, using the program `R`. The database can be rebuilt in an instant from the raw datafiles, using a single command.
+1. We wrote a new R package [dataMashR](https://github.com/dfalster/dataMashR) for merging data from different studies in a transparent and reproducible fashion. While it was written with BAAD in mind, the package could easily be deployed for new compilations.
+3. We used version control and the code sharing website [github](www.github.com) to track the evolution of the database over time. Datasets inevitably contain errors and modifications are made. All of these changes have been tracked and can thus be traced to particular sources and modification dates.
+3. We used the package `knitr` within the program `R` to produce reports comparing the data provided from a single study to the rest of the database. These reports, which were also sent to data contributors, made it easy to identify errors within the dataset.
+
+Until recently, scientific publications in biology, by their nature have mostly been concerned with `small data`. Datasets arrive in small parcels, corresponding to the work of an individual study. It is exciting to be able to put these small packages together, to create something bigger. We hope other people will use this dataset and build on it. See [https://github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
 
 ## METHODS
 
@@ -32,9 +43,9 @@ BAAD: a Biomass And Allometry Database for woody plants
 ### B. DATA SET IDENTIFICATION CODE:
 
 ### C. DATA SET DESCRIPTORS:
-**1. Originators**: The study was initiated by Daniel Falster and Remko Duursma. Diego Barneche, Rich FitzJohn and Angelica Vårhammar assisted with literature searching, data compilation, and coding. All other authors are involved because they contributed data to the project.
+**1. Originators**: The study was initiated by Daniel Falster and Remko Duursma. Diego Barneche, Rich FitzJohn and Angelica Vårhammar assisted with literature searching, data compilation, and coding. All other authors  contributed data to the project.
 
-**2. Abstract**: The allocation of primary production between different plant tissues (leaf, sapwood, bark, roots, reproductive material) determines the nature of plant growth, the outcome of competitive interactions, and the flow of energy in the terrestrial biosphere. Allocation patterns can differ widely among coexisting species in any single forest. Large-scale shifts with environment are also evident, e.g. between tropical versus temperate stands. The effect of allocation differences on the performance of individual plants and whole forest stands can now be studied using new vegetation models that trace growth across the entire life cycle from seed to adult tree. The success of such models, however, requires suitable datasets to validate model assumptions, parameterise equations, and test predictions about plant growth and development. Here we describe an individual-level data set capturing ontogenetic profiles of biomass allocation in woody plant species from biomes across the globe. The data were compiled from published and unpublished sources, focussing on studies where: i) measurements were for individual plants rather than whole stands; ii) individuals spanning a range of sizes were measured; and iii) size was estimated directly, i.e. not indirectly via allometric equations. We included both wild and artificially grown plants. The dataset contains the following size metrics: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; height of plant and crown base, crown area and surface area; and the dry mass of leaf, stem, branches, sapwood, heartwood, bark, coarse roots and fine root tissues. We also report other properties of individuals (age, maximum height, leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (status, light, experimental treatment, site leaf area index, vegetation type, mean annual rainfall) where available. Overall, the dataset contains `r sum(!is.na(data[,vars]))` measurements collected in `r length(unique(data$dataset))` different studies, from `r nrow(data)` individuals across `r length(unique(data$species))` species. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the worlds vegetation.
+**2. Abstract**: Understanding how different plants are plant constructed -- i.e. how key size dimensions and the amount of mass invested in different tissues varies among individuals -- is essential for modelling plant growth, estimating carbon stocks, and mapping the flow of energy in the terrestrial biosphere. Allocation patterns can differ widely through ontogeny, but also among coexisting species, and among species adapted to or grown in different environments. While a variety of models dealing with allocation exist, a synethtic understanding about plant allocation is lacking, in part due to the lack of suitable datasets for validating and parametrising models. To that end, we present the Biomass And Allometry Database (BAAD) for woody plants. BAAD contains `r sum(!is.na(data[,vars]))` measurements collected in `r length(unique(data$dataset))` different studies, from `r nrow(data)` individuals across `r length(unique(data$species))` species. Most of this data is associated with an existing publication, however, mostly raw data files were not released at time of publication. Thus BAAD contains individual level data from different studies, transformed into standard units and variable names. The transformations were achieved using a new R package dataMashR.  Other features which distinguish BAAD are that we focussed on studies where: i) measurements were for individual plants rather than stand averages; ii) individuals spanning a range of sizes were measured; iii) inclusion of plants from 0.01-100m in height; and iii) biomass was estimated directly, i.e. not indirectly via allometric equations (with one exception for trees > 60m). We included both wild and artificially grown plants. The dataset contains the following size metrics: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; height of plant and crown base, crown area and surface area; and the dry mass of leaf, stem, branches, sapwood, heartwood, bark, coarse roots and fine root tissues. We also report other properties of individuals (age, leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (location, status, light, experimental treatment, vegetation type) where available. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the worlds vegetation.
 
 ### D. Key words
 
@@ -71,18 +82,11 @@ Development versions of the dataset will continue to be available at [https://gi
 
 If you notice any problem with the dataset, please list an issue [here](https://github.com/dfalster/baad/issues/new).
 
-**Contact persons**: Queries about individual specific data points can be directed to the contributing author for that study. For queries about the entire dataset, please contact either
+**Contact persons**: Queries about individual specific data points can be directed to the contributing author for that study. For queries about the entire dataset, please contact either Daniel Falster or Remko Duursma. Contact details for all authors are available in the attached table.
 
--  Daniel Falster, email: Daniel.Falster@mq.edu.au, tel:
-  +61-2-98509258, Biological Sciences, Macquarie University NSW 2109,
-  Australia
--  Remko Duursma, email: remkoduursma@gmail.com, tel: +61-2-4570 1806,
-  Centre for Plants and the Environment, University of Western Sydney,
-  NSW 1797, Australia.
+**Copyright restrictions**: The dataset is released under the [Creative Commons CC0 license](http://creativecommons.org/choose/zero/?lang=en). As such, it may be freely used and redistributed. When using the dataset, we kindly request that you cite this article, recognising the hard work that went into collecting the data and the author's willingness to make it publicly available.
 
-**Copyright restrictions**: The dataset is released under the [Creative Commons CC0 license](http://creativecommons.org/choose/zero/?lang=en). As such, it may be freely used and redistributed. When using the dataset, we ask that you cite the original article, recognising the hard work that went into collecting the data and the author's willingness to make it publicly available.
-
-**Costs**: None. You are kindly requested to cite this paper when using these data if possible.
+**Costs**: None.
 
 ## CLASS IV. DATA STRUCTURAL DESCRIPTORS
 
@@ -100,6 +104,6 @@ Header information:
 
 ## ACKNOWLEDGMENTS
 
-D.S. Falster, A. Vårhammer and D. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to Duursma.
+D.S. Falster, A. Vårhammer and D. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to Duursma. R FitzJohn was employed on a XXXXXX.
 
 ## LITERATURE CITED
