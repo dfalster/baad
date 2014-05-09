@@ -1,5 +1,7 @@
 all: baad ms
 
+BAAD=output/baad.rds
+
 baad: ${BAAD}
 
 ms: ms/ms.html
