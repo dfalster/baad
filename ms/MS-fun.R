@@ -130,7 +130,8 @@ orderByLastName  <-  function(authorNames) {
 lisOfAuthors  <-  function(alphabetical=TRUE, ...) {
 	wanted         <-  contributionColumns(...)
 	contributions  <-  getContributions(data, wanted)
-	firstAuthors   <-  'Daniel Falster, Remko Duursma, Diego R. Barneche, Rich Fitzjohn, Angelica Vårhammar'
+	firstAuthors   <-  c('Daniel Falster', 'Remko Duursma', 'Diego R. Barneche', 'Rich Fitzjohn', 'Angelica Vårhammar')
+	contributions  <-  contributions[!(names(contributions) %in% firstAuthors)]
 	if(alphabetical) {
 		pasteAndCollapse(c(firstAuthors, names(contributions)[order(orderByLastName(names(contributions)))]), ', ')
 	} else {
