@@ -1,6 +1,3 @@
-# The database itself
-BAAD=output/baad.rds
-
 all: baad ms
 
 baad: ${BAAD}
@@ -14,7 +11,7 @@ ${BAAD}:
 	Rscript build-baad.R
 
 clean:
-	rm ${BAAD}
+	rm -fr output/baad.rds output/cache output/baad
 	make -C ms clean
 
 install-dataMashR:
