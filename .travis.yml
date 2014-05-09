@@ -2,6 +2,8 @@ language: c
 
 script: 
     - make
+    - make test
+    - make check-eol
 
 before_install:
     - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
@@ -18,4 +20,4 @@ after_success:
 
 env:
   global:
-    - BOOTSTRAP_LATEX="1"    
+    - BOOTSTRAP_LATEX="1"
