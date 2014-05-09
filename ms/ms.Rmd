@@ -30,15 +30,7 @@ library(knitcitations)
 
 ## INTRODUCTION
 
-```{r, eval=FALSE, echo=FALSE}
-#these commands below from package knitcitations work if you knit the file from within RStudio (being in the right ms directory), but they do not work when you generate the file using make.
-#not working
-#citep(c(Falster2011="10.1111/j.1365-2745.2010.01735.x"))
-#citep(citation("base"))
-#r citet("https://github.com/dfalster/dataMashR")
-```
-
-Quantifying the amount of mass or energy invested in plant tissues is of fundamental interest across a range of disciplines, including ecology, forestry, ecosystem science, and climate change science. The allocation of net primary production into different plant components is an important process affecting the lifetime of carbon in ecosystems, and resource use and productivity by plants. While many studies in have destructively harvested woody plants in the name of science, most of these data have only been made available in the form of summary tables or figures included in publications, or as totals for a forest plot. Until now, much of the raw data resides piecemeal on the hard drives of individual scientists spread around the world. 
+Quantifying the amount of mass or energy invested in plant tissues is of fundamental interest across a range of disciplines, including ecology, forestry, ecosystem science, and climate change science `r citep(c(Falster2011="10.1111/j.1365-2745.2010.01735.x"))`. The allocation of net primary production into different plant components is an important process affecting the lifetime of carbon in ecosystems, and resource use and productivity by plants. While many studies in have destructively harvested woody plants in the name of science, most of these data have only been made available in the form of summary tables or figures included in publications, or as totals for a forest plot. Until now, much of the raw data resides piecemeal on the hard drives of individual scientists spread around the world. 
 
 Several studies have gathered together the fitted (allometric) equations for separate datasets, yet few have attempted to organize and share the raw individual plant data underpinning these equations. Gathered together, such data would be invaluable and represent an important resource for the community.
 
@@ -46,8 +38,8 @@ We (D. Falster and R. Duursma, with the help of D Barneche, A Vårhammer and R F
 
 Combining data from many different studies, each using its own set of terms and units, and quirks, is no trivial task. This compilation would not have been possible without several new technologies. In particular,
 
-1. Our entire workflow is scripted, using the R computing environment. The database can be rebuilt in an instant from the raw datafiles, using a single command. When a single data contribution has been modified, the final master dataset is thus easily recreated.
-2. We wrote a new `R` package [dataMashR](https://github.com/dfalster/dataMashR) for merging data from different studies in a transparent and reproducible fashion. While it was written with BAAD in mind, the package is designed to be easily  deployed for other compilations.
+1. Our entire workflow is scripted, using the R computing environment `r citep(citation("base"))`. The database can be rebuilt in an instant from the raw datafiles, using a single command. When a single data contribution has been modified, the final master dataset is thus easily recreated.
+2. We wrote a new `R` package [dataMashR](https://github.com/dfalster/dataMashR) `r citet("https://github.com/dfalster/dataMashR")` for merging data from different studies in a transparent and reproducible fashion. While it was written with BAAD in mind, the package is designed to be easily  deployed for other compilations.
 3. We used version control and the code sharing website [github](www.github.com) to track the evolution of the database and the code to process the raw data. Datasets as well as processing methods inevitably contain errors. With version control, we are able to trace these errors to the source. 
 4. We used the package `knitr` within `R` to automatically produce reports comparing the raw data provided by a single study to the rest of the database. These reports were sent to data contributors for verification, and allowed easy identification of errors in the raw data or processing.
 
