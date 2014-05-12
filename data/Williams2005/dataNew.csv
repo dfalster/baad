@@ -3,6 +3,8 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,growingCondition,FW,from paper[R Williams]
 ,,pft,EA,from paper[R Williams]
 ,,family,Myrtaceae,from paper[R Williams]
+species,Erythrophleum chlorstachys,family,Fabaceae,D Falster[via R Williams]
+species,Terminalia ferdinandiana,family,Combretaceae,D Falster[via R Williams]
 location,humptydoo,latitude,-12.5,DBarneche[from_paper]
 location,humptydoo,longitude,131.3,DBarneche[from_paper]
 location,humptydoo,location,Humpty Doo,DBarneche[from_paper]
