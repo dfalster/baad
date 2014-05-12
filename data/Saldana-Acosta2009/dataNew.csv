@@ -10,6 +10,8 @@ species,Persea hintonii,pft,EA,RAD lookup
 species,Dendropanax arboreus,pft,EA,RAD lookup
 species,Symplococarpon purpusii,pft,EA,RAD lookup
 species,Quercus salicifolia,pft,DA,RAD lookup
+species,Citharexylum mocinnii,pft,EA,RAD lookup
+species,Magnolia iltisiana,pft,EA,Vazquez-G 1994 Brittonia 46:1-23
 light,a,light,3-5% of PAR,from paper[A Saldana-Acosta]
 light,b,light,8-10% of PAR,from paper[A Saldana-Acosta]
 light,c,light,18-20% of PAR,from paper[A Saldana-Acosta]
