@@ -1,1 +1,1 @@
-Depends: gdata, bibtex, knitr, plyr, mvbutils, whisker
+Depends: gdata, bibtex, knitr, plyr, mvbutils, whisker, knitcitations
