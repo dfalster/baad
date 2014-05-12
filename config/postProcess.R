@@ -77,7 +77,7 @@ postProcess <- function(data){
     lookupWhich <- match.arg(lookupWhich)
     
     r1 <- require(Taxonstand)
-    r2 <- require(taxize)
+    r2 <- suppressPackageStartupMessages(require(taxize))
     r3 <- require(jsonlite)
     
     if(!all(r1,r2,r3)){
