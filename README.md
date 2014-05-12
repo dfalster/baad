@@ -70,3 +70,33 @@ When installing git-scm, make sure the setting
     Checkout Windows-style, commit unix-style line endings
 
 is checked (the default).
+
+
+# Rebuilding the database
+
+The database can be rebuilt using the Makefile. Simply run,
+
+    make
+
+This will rebuild the database, stored in `output/baad.rds`. To read this dataframe in `R`, use `readRDS`,
+
+    dat <- readRDS('output/baad.rds')
+
+**Windows users** must install a bundle of Unix-like tools (otherwise `make` is not available). These are conveniently wrapped in [Rtools](http://cran.r-project.org/bin/windows/Rtools/) (select the newest version and install).
+
+The database is stored as a list with components `data`, `contact` and `ref`. These contain the data (as a dataframe), contact information for the data providers, and references to publications (where available).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
