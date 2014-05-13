@@ -1,0 +1,90 @@
+```{r, echo=FALSE}
+source('report-fun.R')
+```
+
+# Report for study: `r .study`
+
+## Contact Information
+
+**Data contributor:** `r .dat$contact$name`.
+
+**Email:** `r .dat$contact$email`.
+
+**Address:** `r .dat$contact$address`.
+
+## Citation
+Information about the primary reference for the data you provided.
+
+**Reference:** `r .dat$references$citation`
+
+**DOI:** `r  bibGetElement(.dat$bib, element = "doi")`
+
+**Abstract:** `r  bibGetElement(.dat$bib, element = "abstract")`
+
+## Overview of data provided
+
+Data for `r length(.dat$data$dataset)` individuals from `r length(unique(.dat$data$location))` locations covering `r length(unique(.dat$data$species))` species.
+
+The dataset includes `r length(unique(.dat$data$species))` species belonging to `r length(unique(.dat$data$family))` family(ies), presenting `r length(unique(.dat$data$pft))` functional type(s), growing in `r length(unique(.dat$data$growingCondition))` condition(s) within `r length(unique(.dat$data$vegetation))` major type(s) of habitat:
+
+
+### Number of records for each variable
+
+```{r echo=FALSE, comment=''}
+counts  <-  apply(!is.na(.dat$data), MARGIN=2, FUN = sum)
+counts  <-  counts[counts>0]  #only include no zeros
+counts  <-  counts[names(counts)%in%.dat$dictionary$Variable[.dat$dictionary$Group=="tree"]]
+cbind(counts)
+```
+
+
+## Study details
+
+### Location
+
+**Location data**
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+options(width =160)
+locLevelInfo(.dat$data)
+```
+
+**Global map**
+
+```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE, warning=FALSE}
+prepdata  <-  prepMapInfo(alldata$data, .study)
+drawWorldPlot (prepdata)
+```
+
+**Country map**
+
+```{r echo=FALSE, fig.width=8, fig.height=6, message=FALSE, warning=FALSE}
+repMissingInfo(prepdata)
+drawCountryPlot(prepdata)
+```
+
+**Stand description**
+Information about the growing condition of plants in your study, i.e. their local environment.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment='', results="asis"}
+kable(standLevelInfo(.dat$data))
+```
+
+### Species data
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment='',results="asis"}
+kable(spLevelInfo(.dat$data))
+```
+
+### Methods
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment='', results="asis"}
+metaTable  <-  getMeta(.study)
+writeLines(paste0(metaTable[,1], ": ", metaTable[,2], "\n"))
+```
+
+## Plots of data
+
+This is how the study `r .study` (each colour represents a species) fits in the entire dataset (grey).
+
+```{r fig.height=8, fig.width=8, echo=FALSE, warning=FALSE, message=FALSE}
+makePlotPanel(alldata, .dat)
+```
