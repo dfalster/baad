@@ -4,51 +4,43 @@
 ```{r, results="hide", echo=FALSE, message=FALSE}
 library(knitr, quietly=TRUE)
 knitr::opts_chunk$set(tidy=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.cap="")
+
+library(plyr)
+library(bibtex)
+library(knitcitations)
+source("MS-fun.R")
 ```
 
 ```{r, results="hide", echo=FALSE, message=FALSE}
-source("MS-fun.R")
 
 baad <- readRDS("../output/baad.rds")
 data <- baad$data
 
 var.def <- read.csv("../config/variableDefinitions.csv",
                     stringsAsFactors=FALSE)
-vars <- var.def$Variable[var.def$Type == "numeric"]
-vars <- setdiff(vars, c("map","mat","lai","age"))
+vars <- setdiff(var.def$Variable[var.def$Type == "numeric"], c("map","mat","lai","age"))
 ```
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
-library(plyr)
-lisOfAuthors(vardef=var.def)
-```
-
-```{r, results="hide", warnings=FALSE, echo=FALSE, message=FALSE}
-library(bibtex)
-library(knitcitations)
+writeLines(paste("**List of Authors:**", lisOfAuthors(vardef=var.def)))
 ```
 
 ## INTRODUCTION
 
-Quantifying the amount of mass or energy invested in plant tissues is of fundamental interest across a range of disciplines, including ecology, forestry, ecosystem science, and climate change science `r citep(c(Falster2011="10.1111/j.1365-2745.2010.01735.x"))`. The allocation of net primary production into different plant components is an important process affecting the lifetime of carbon in ecosystems, and resource use and productivity by plants. While many studies in have destructively harvested woody plants in the name of science, most of these data have only been made available in the form of summary tables or figures included in publications, or as totals for a forest plot. Until now, much of the raw data resides piecemeal on the hard drives of individual scientists spread around the world. 
+Quantifying the amount of mass or energy invested in plant tissues is of fundamental interest across a range of disciplines, including ecology, forestry, ecosystem science, and climate change science `r citep(c(Falster2011="10.1111/j.1365-2745.2010.01735.x"))`. The allocation of net primary production into different plant components is an important process affecting the lifetime of carbon in ecosystems, and resource use and productivity by plants. While many studies in have destructively harvested woody plants in the name of science, most of these data have only been made available in the form of summary tables or figures included in publications, or as totals for a forest plot. Until now, much of the raw data resides piecemeal on the hard drives of individual scientists spread around the world.
 
 Several studies have gathered together the fitted (allometric) equations for separate datasets, yet few have attempted to organize and share the raw individual plant data underpinning these equations. Gathered together, such data would be invaluable and represent an important resource for the community.
 
 We (D. Falster and R. Duursma, with the help of D Barneche, A Vårhammer and R FitzJohn) set out to create such a resource, by asking authors directly whether they would be willing to make their raw data files freely available. The response was overwhelming: nearly everyone we contacted was interested to contribute their raw data. As a result, we present BAAD: a Biomass And Allometry Database for woody plants, comprising data collected in `r length(unique(data$dataset))` different published and unpublished studies.
 
-Combining data from many different studies, each using its own set of terms and units, and quirks, is no trivial task. This compilation would not have been possible without several new technologies. In particular,
+Combining data from many different studies, each using its own set of terms and units, and quirks, is no trivial task `r citep(c(Michener1997="10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2", Kandel2011="10.1145/1978942.1979444"))`. This compilation would not have been possible without several new technologies. In particular,
 
 1. Our entire workflow is scripted, using the R computing environment `r citep(citation("base"))`. The database can be rebuilt in an instant from the raw datafiles, using a single command. When a single data contribution has been modified, the final master dataset is thus easily recreated.
 2. We wrote a new `R` package [dataMashR](https://github.com/dfalster/dataMashR) `r citet("https://github.com/dfalster/dataMashR")` for merging data from different studies in a transparent and reproducible fashion. While it was written with BAAD in mind, the package is designed to be easily  deployed for other compilations.
-3. We used version control and the code sharing website [github](www.github.com) to track the evolution of the database and the code to process the raw data. Datasets as well as processing methods inevitably contain errors. With version control, we are able to trace these errors to the source. 
-4. We used the package `knitr` within `R` to automatically produce reports comparing the raw data provided by a single study to the rest of the database. These reports were sent to data contributors for verification, and allowed easy identification of errors in the raw data or processing.
+3. We used version control and the code sharing website [github](www.github.com) to track the evolution of the database and the code to process the raw data. Datasets as well as processing methods inevitably contain errors. With version control, we are able to trace these errors to the source.
+4. We used the package `knitr` within `R` to automatically produce reports comparing the raw data provided by a single study to the rest of the database `r citep(citation("knitr"))`. These reports were sent to data contributors for verification, and allowed easy identification of errors in the raw data or processing.
 
-Until recently, scientific publications in biology have mostly been concerned with `small data`. Datasets arrive in small parcels, corresponding to the work of an individual study, or perhaps a handful of studies. It is exciting to be able to put these parcels together, to create something larger. We hope other people will use this dataset and build on it. See [https://github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
-
-## REFERENCES
-```{r, echo=FALSE, results='asis'}
-bibliography(ordering = c("authors", "year", "title", "journal", "volume", "number", "pages", "url"))
-```
+Until recently, scientific publications in biology have mostly been concerned with "small data" `r citep(c(VanNoorden2013="10.1038/nj7461-243a"))`. Datasets arrive in small parcels, corresponding to the work of an individual study, or perhaps a handful of studies. It is exciting to be able to put these parcels together, to create something larger. We hope other people will use this dataset and build on it. See [https://github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
 
 ## METHODS
 
@@ -62,7 +54,7 @@ BAAD: a Biomass And Allometry Database for woody plants
 ### C. DATA SET DESCRIPTORS:
 **1. Originators**: The study was initiated by Daniel Falster and Remko Duursma. Diego Barneche, Rich FitzJohn and Angelica Vårhammar assisted with literature searching, data compilation, and coding. All other authors  contributed data to the project.
 
-**2. Abstract**: Understanding how different plants are plant constructed -- i.e. how key size dimensions and the amount of mass invested in different tissues varies among individuals -- is essential for modelling plant growth, estimating carbon stocks, and mapping the flow of energy in the terrestrial biosphere. Allocation patterns can differ widely through ontogeny, but also among coexisting species, and among species adapted to or grown in different environments. While a variety of models dealing with allocation exist, a syntethic understanding about plant allocation is lacking. This is partly due to the lack of suitable datasets for validating and parametrising models. To that end, we present the Biomass And Allometry Database (BAAD) for woody plants. BAAD contains `r sum(!is.na(data[,vars]))` measurements collected in `r length(unique(data$dataset))` different studies, from `r nrow(data)` individuals across `r length(unique(data$species))` species. Most of this data is associated with an existing publication, however, mostly raw data files were not released at time of publication. Thus BAAD contains individual level data from different studies, transformed into standard units and variable names. The transformations were achieved using a new R package dataMashR.  Other features which distinguish BAAD are that we focussed on studies where: i) measurements were for individual plants rather than stand averages; ii) individuals spanning a range of sizes were measured; iii) inclusion of plants from 0.01-100m in height; and iii) biomass was estimated directly, i.e. not indirectly via allometric equations (with one exception for trees > 60m). We included both wild and artificially grown plants. The dataset contains the following size metrics: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; height of plant and crown base, crown area and surface area; and the dry mass of leaf, stem, branches, sapwood, heartwood, bark, coarse roots and fine root tissues. We also report other properties of individuals (age, leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (location, status, light, experimental treatment, vegetation type) where available. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the worlds vegetation.
+**2. Abstract**: Understanding how different plants are plant constructed -- i.e. how key size dimensions and the amount of mass invested in different tissues varies among individuals -- is essential for modelling plant growth, estimating carbon stocks, and mapping the flow of energy in the terrestrial biosphere. Allocation patterns can differ widely through ontogeny, but also among coexisting species, and among species adapted to or grown in different environments. While a variety of models dealing with allocation exist, a synthetic understanding about plant allocation is lacking. This is partly due to the lack of suitable datasets for validating and parametrising models. To that end, we present the Biomass And Allometry Database (BAAD) for woody plants. BAAD contains `r sum(!is.na(data[,vars]))` measurements collected in `r length(unique(data$dataset))` different studies, from `r nrow(data)` individuals across `r length(unique(data$species))` species. Most of this data is associated with an existing publication, however, mostly raw data files were not released at time of publication. Thus BAAD contains individual level data from different studies, transformed into standard units and variable names. The transformations were achieved using a new R package dataMashR.  Other features which distinguish BAAD are that we focussed on studies where: i) measurements were for individual plants rather than stand averages; ii) individuals spanning a range of sizes were measured; iii) inclusion of plants from 0.01-100m in height; and iii) biomass was estimated directly, i.e. not indirectly via allometric equations (with one exception for trees > 60m). We included both wild and artificially grown plants. The dataset contains the following size metrics: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; height of plant and crown base, crown area and surface area; and the dry mass of leaf, stem, branches, sapwood, heartwood, bark, coarse roots and fine root tissues. We also report other properties of individuals (age, leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (location, status, light, experimental treatment, vegetation type) where available. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the worlds vegetation.
 
 ### D. Key words
 
@@ -109,7 +101,7 @@ If you notice any problem with the dataset, please list an issue [here](https://
 
 ### A. Data Set Files
 
-Identity: allData.txt
+Identity:
 Size:
 Format and storage mode: ASCII text, comma delimited. Missing values
 are denoted as 'NA'.
@@ -117,10 +109,23 @@ Header information:
 
 ### B. Variable definitions
 
-## CLASS V. SUPPLEMENTAL DESCRIPTORS
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment='', results="asis"}
+x <-daply(var.def, 1, function(x)
+		paste0("* ", x$Variable,
+		"\n\t- Label: ", x$label,
+		"\n\t- Description: ", x$Description,
+		"\n\t- Type: ", x$Type,
+		"\n\t- Units: ", gsub(".","/", x$Units, fixed=TRUE)
+		))
 
+writeLines(x[var.def$Variable])
+```
 ## ACKNOWLEDGMENTS
 
 D.S. Falster, A. Vårhammer and D. R. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to Duursma. R FitzJohn was employed on a XXXXXX.
 
-## LITERATURE CITED
+## REFERENCES
+```{r, echo=FALSE, results='asis'}
+bibliography(ordering = c("authors", "year", "title", "journal", "volume", "number", "pages", "url"))
+```
+

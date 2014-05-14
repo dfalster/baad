@@ -3,12 +3,13 @@ data.path <- function(...) {
   file.path("../data", ...)
 }
 
-pasteAndCollapse  <-  function(values, binder) {
+#Paste and collapse
+pasteC  <-  function(values, binder="\n") {
 	paste0(unique(values), collapse=binder)
 }
 
 readStudyFile  <-  function(studyName, File) {
-	read.csv(data.path(studyName, File), header = TRUE, 
+	read.csv(data.path(studyName, File), header = TRUE,
         na.strings = c(NA,''), stringsAsFactors = FALSE, strip.white = TRUE)
 }
 
@@ -21,52 +22,79 @@ getMetadataMethods  <-  function(studyName) {
 	metadata  <-  readStudyFile(studyName, "studyMetadata.csv")
 	if(nrow(metadata) > 0) {
 		metadata  <-  metadata[!is.na(metadata$Description) & !(tolower(metadata$Topic) %in% c('sampling strategy', 'age', 'growth environment')),]
-		pasteAndCollapse(paste0(metadata$Topic, ': ', metadata$Description), '\n\t\t\t')
+		pasteC(paste0(metadata$Topic, ': ', metadata$Description), '\n\t- ')
 	}
 }
 
 getPersonell  <-  function(studyName) {
-	pasteAndCollapse(unique(readStudyFile(studyName, "studyContact.csv")$name), '; ')
+	pasteC(unique(readStudyFile(studyName, "studyContact.csv")$name), ', ')
 }
 
+getSiteHistory <-function(code){
+	llply(code, function(x)
+		switch(x,
+			FW = "field wild",
+			FE = "field experimental",
+			GH = "glasshouse",
+			PU = "plantation unmanaged",
+			PM = "plantation managed",
+			GC = "growth chamber",
+			CG = "common garden",
+			""
+			)
+		)
+}
+
+getVegType <-function(code){
+	llply(code, function(x)
+		switch(x,
+			Sav = "Savannah",
+			TropRF = "Tropical rainforest",
+			TempRF = "Temperate rainforest",
+			TropSF = "Tropical seasonal forest",
+			TempF = "Temperate forest",
+			BorF = "Boreal forest",
+			Wo = "Woodland",
+			Gr = "Grassland",
+			Sh = "Shrubland",
+			De = "Desert",
+			""
+			)
+		)
+}
 
 class2Bdetails  <-  function(data) {
 
 	template <-
     	c('## {{studyName}}',
-      	'\t1. Site Description',
-      	'\t\ta. Site(s) type(s)',
-      	'\t\t{{siteType}}',
-      	'\t\tb. Geography',
-      	'\t\t\tlongitude(s):',
-		'\t\t\t\t{{lon}}',
-      	'\t\t\tlatitudes(s):',
-		'\t\t\t\t{{lat}}',
-		'\t\tc. Site(s) history',
-		'\t\t\t{{siteHistory}}',
- 	    '\t2. Experimental or sampling design',
-		'\t\ta. Design characteristics',
-		'\t\t\t{{metadataDesign}}',
-		'\t\tb. Data collection period, frequency:',
-		'\t\t\t{{collection}}',
- 	    '\t3. Research methods',
-		'\t\ta. Field Laboratory',
-		'\t\t\t{{lab}}',
-		'\t4. Project personnel:',
-		'\t\t{{personell}}'
+    	'Data from: {{citation}}\n',
+      	'1. Site Description',
+      	'\t- Site(s) type(s): {{siteType}}',
+      	'\t- Geography',
+      	'\t\t- longitude(s): {{lon}}',
+      	'\t\t- latitudes(s): {{lat}}',
+		'\t- Site(s) history: {{siteHistory}}',
+ 	    '2. Experimental or sampling design',
+		'\t- Design characteristics: {{metadataDesign}}',
+		'\t- Data collection period, frequency: {{collection}}',
+ 	    '3. Research methods',
+		'\t- {{lab}}',
+		'4. Study contacts: {{personell}}'
       	)
-  	
-  	template <- paste(template, collapse="\n") # might not be needed
+
+  	template <- paste(template, collapse="\n")
   	whisker.render(template,
                  list(studyName=unique(data$dataset),
-                      siteType=pasteAndCollapse(unique(data$vegetation),' ; '),
-                 	  lon=pasteAndCollapse(unique(data$longitude),' ; '),
-                 	  lat=pasteAndCollapse(unique(data$latitude),' ; '),
-           	          siteHistory=pasteAndCollapse(unique(data$growingCondition),' ; '),
+                      siteType=pasteC(getVegType(unique(data$vegetation)),'; '),
+                 	  lon=pasteC(unique(format(data$longitude, digits=4)),' ; '),
+                 	  lat=pasteC(unique(format(data$latitude, digits=4)),' ; ')
+,
+           	          siteHistory=pasteC(getSiteHistory(unique(data$growingCondition)),'; '),
            	          metadataDesign=getMetadataDesign(unique(data$dataset)),
            	          collection='',
            	          lab=getMetadataMethods(unique(data$dataset)),
-           	          personell=getPersonell(unique(data$dataset))
+           	          personell=getPersonell(unique(data$dataset)),
+           	          citation=baad$references$citation[baad$references$dataset==data$dataset[1]]
                  ))
 
 }
@@ -78,7 +106,7 @@ numberOfPoints  <-  function(data, wanted) {
 expandData <-  function(data) {
 	if(data$duplicates > 1) {
 		newnames       <-  strsplit(data$contacts, '; ')[[1]]
-		data           <-  data[rep(1, data$duplicates), ] 
+		data           <-  data[rep(1, data$duplicates), ]
 		data$contacts  <-  newnames
 		data
 	} else {
@@ -116,9 +144,9 @@ getContributions  <-  function(data, ...) {
 	conts   <-  listContacts(data)
 	dbles   <-  numberOfContacts(conts)
 	npts    <-  numberOfcontributions(sdata)
-	
+
 	allPt   <-  data.frame(study=sort(unique(data$dataset)), contacts=conts, contribution=npts, duplicates=dbles, row.names=NULL, stringsAsFactors=FALSE)
-	
+
 	correctedData  <-  correctData(allPt)
 	sort(tapply(correctedData$contribution, correctedData$contacts, sum), decreasing=TRUE)
 }
@@ -133,9 +161,9 @@ lisOfAuthors  <-  function(alphabetical=TRUE, ...) {
 	firstAuthors   <-  c('Daniel Falster', 'Remko Duursma', 'Diego R. Barneche', 'Rich Fitzjohn', 'Angelica Vårhammar')
 	contributions  <-  contributions[!(names(contributions) %in% firstAuthors)]
 	if(alphabetical) {
-		pasteAndCollapse(c(firstAuthors, names(contributions)[order(orderByLastName(names(contributions)))]), ', ')
+		pasteC(c(firstAuthors, names(contributions)[order(orderByLastName(names(contributions)))]), ', ')
 	} else {
-		pasteAndCollapse(c(firstAuthors, names(contributions)), ', ')
+		pasteC(c(firstAuthors, names(contributions)), ', ')
 	}
 }
 
