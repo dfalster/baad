@@ -179,8 +179,26 @@ postProcess <- function(data){
     }
     
     dfr <- species_dfr[,c("species","speciesMatched")]
+    
+    # Some cleaning up:
+    # 'unknown' species
+    unk <- c(grep("unknown",dfr$species,ignore.case=TRUE),
+             grep("unidentified",dfr$species,ignore.case=TRUE))
+    dfr$speciesMatched[unk] <- "Unknown"
+    
+    # sp. is dropped in speciesMatched
+    nc <- sapply(strsplit(dfr$speciesMatched, " "),length)
+    dfr$speciesMatched[nc==1 & dfr$speciesMatched != "Unknown"] <-
+      paste(dfr$speciesMatched[nc==1 & dfr$speciesMatched != "Unknown"], "sp.")
+
+    # Find hybrids; don't match names
+    hyb <- c(grep("[*]", dfr$species),
+             grep(" x ", dfr$species))
+    dfr$speciesMatched[hyb] <- dfr$species[hyb]
+    
+    # Merge onto full dataset
     names(dfr)[2] <- newVarName 
-    data <- merge(data, dfr)
+    data <- merge(data, dfr, by="species", all=TRUE)
     
     # Reshuffle; new species next to species
     s <- match("species",names(data))
@@ -196,7 +214,7 @@ postProcess <- function(data){
   # Add matched species name.
   data <- checkSpeciesNames(data, lookupWhich="none")
   # or
-  # data3 <- checkSpeciesNames(data, lookupWhich="all")
+  # data <- checkSpeciesNames(data, lookupWhich="all")
   # lookupWhich="missing" not implemented yet
   
   return(data)  
