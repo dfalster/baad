@@ -208,26 +208,26 @@ drawWorldPlot <- function(data, horlines = TRUE, sizebyn = FALSE, add = FALSE, p
 }
 
 repMissingInfo <- function(data) {
-    j <- !is.na(data$lat) & !is.na(data$lon) & data$loc != "NA" | is.na(data$loc)
+    j <- !is.na(data$latitude) & !is.na(data$longitude) & data$location != "NA" | is.na(data$location)
     sj <- data[!j, ]
 
     # location Info
-    k <- !is.na(sj$loc) & is.na(sj$lon)
+    k <- !is.na(sj$location) & is.na(sj$longitude)
     if (length(k[k == TRUE]) > 0) {
         cat("Please notice that there are no coordinates for the following location(s):")
         return(cbind(sj$loc[k]))
     }
     # coordinate Info
-    k <- !is.na(sj$lon) & is.na(sj$loc) | sj$loc == "NA"
+    k <- !is.na(sj$longitude) & is.na(sj$location) | sj$loc == "NA"
     if (any(k)) {
         cat("Please notice that there is no location information for the following coordinate(s):")
         return(cbind(lon = sj$lon[k], lat = sj$lat[k]))
     }
     # country Info
-    k <- !is.na(sj$loc) & is.na(sj$country)
+    k <- !is.na(sj$location) & is.na(sj$country)
     if (any(k)) {
         cat("Please notice that there is no country information for the following location(s):")
-        return(cbind(sj$loc[k]))
+        return(cbind(sj$location[k]))
         cat("The most likely reason is either a missing or wrong coordinate, please revise")
     }
 }
@@ -255,12 +255,12 @@ drawCountryPlot <- function(data) {
                 map("worldHires", g)
             }
             title(g)
-            subC$group <- as.numeric(as.factor(paste0(subC$lon, subC$lat)))
+            subC$group <- as.numeric(as.factor(paste0(subC$longitude, subC$latitude)))
             subC$cpoint <- cpoint[match(subC$group, 1:10)]
             subC$ppoint <- ppoint[match(subC$group, 1:10)]
             for (d in unique(subC$group)) {
                 subD <- subC[subC$group == d, ]
-                points(subD$lon[1], subD$lat[1], pch = subD$ppoint[1], col = "black",
+                points(subD$longitude[1], subD$latitude[1], pch = subD$ppoint[1], col = "black",
                   bg = subD$cpoint[1], cex = 0.8)
             }
 
@@ -270,7 +270,7 @@ drawCountryPlot <- function(data) {
             for (i in c(10:1)[1:nrow(subC)]) {
                 points(0, i, pch = subC$ppoint[which(c(10:1) == i)], col = "black",
                   bg = subC$cpoint[which(c(10:1) == i)])
-                text(0.3, i, subC$loc[which(c(10:1) == i)], pos = 4, xpd = TRUE,
+                text(0.3, i, subC$location[which(c(10:1) == i)], pos = 4, xpd = TRUE,
                   cex = 0.8)
             }
 
@@ -286,12 +286,12 @@ drawCountryPlot <- function(data) {
                   map("worldHires", g)
                 }
                 title(g)
-                subK$group <- as.numeric(as.factor(paste0(subK$lon, subK$lat)))
+                subK$group <- as.numeric(as.factor(paste0(subK$longitude, subK$latitude)))
                 subK$cpoint <- cpoint[match(subK$group, 1:10)]
                 subK$ppoint <- ppoint[match(subK$group, 1:10)]
                 for (d in unique(subK$group)) {
                   subD <- subK[subK$group == d, ]
-                  points(subD$lon[1], subD$lat[1], pch = subD$ppoint[1], col = "black",
+                  points(subD$longitude[1], subD$latitude[1], pch = subD$ppoint[1], col = "black",
                     bg = subD$cpoint[1], cex = 0.8)
                 }
 
@@ -301,7 +301,7 @@ drawCountryPlot <- function(data) {
                 for (i in c(10:1)[1:nrow(subK)]) {
                   points(0, i, pch = subK$ppoint[which(c(10:1) == i)], col = "black",
                     bg = subK$cpoint[which(c(10:1) == i)])
-                  text(0.3, i, subK$loc[which(c(10:1) == i)], pos = 4, xpd = TRUE,
+                  text(0.3, i, subK$location[which(c(10:1) == i)], pos = 4, xpd = TRUE,
                     cex = 0.8)
                 }
             }
