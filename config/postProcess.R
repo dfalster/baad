@@ -198,7 +198,7 @@ postProcess <- function(data){
     
     # Merge onto full dataset
     names(dfr)[2] <- newVarName 
-    data <- merge(data, dfr, by="species", all=TRUE)
+    data <- merge(data, dfr, by="species")
     
     # Reshuffle; new species next to species
     s <- match("species",names(data))
