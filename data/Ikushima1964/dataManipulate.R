@@ -5,5 +5,8 @@ manipulate  <-  function(raw){
 
 	raw <- subset(raw, !(species %in% vines))
 
+  # zero fix
+  raw$a.lf[raw$a.lf == 0] <- NA
+  
 	raw
 }
