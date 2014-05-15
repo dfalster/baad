@@ -1,6 +1,6 @@
 
 ## This is checking that is specific to the baad data set
-postProcess <- function(data){
+postProcess <- function(data, lookupSpecies="none"){
   
   fillDerivedVariables <- function(x){
     
@@ -212,10 +212,8 @@ postProcess <- function(data){
   data <- fillDerivedVariables(data)
   
   # Add matched species name.
-  data <- checkSpeciesNames(data, lookupWhich="none")
-  # or
-  # data <- checkSpeciesNames(data, lookupWhich="all")
-  # lookupWhich="missing" not implemented yet
+  data <- checkSpeciesNames(data, lookupWhich=lookupSpecies)
+  
   
   return(data)  
 }
