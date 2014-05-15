@@ -6,6 +6,10 @@ manipulate <- function(raw) {
   
   # crown width in mixed units
   raw$CW[raw$CW < 10] <- 100*raw$CW[raw$CW < 10]
+  
+  # zero fix
+  raw$CW[raw$Cwalong == 0] <- NA
+  
   # Species. 
   raw$speciesfix <- "Pinus taeda"
   raw$speciesfix[raw$Species2 == "S"] <- "Pinus elliottii"
