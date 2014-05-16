@@ -12,6 +12,7 @@ manipulate <- function(raw) {
 
   # fix zero
   raw$a.ssbh[raw$a.ssbh == 0] <- NA
+  raw$a.sbbh[raw$a.ssbh == 0] <- NA
   
   raw
 }
