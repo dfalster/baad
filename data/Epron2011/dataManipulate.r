@@ -10,6 +10,9 @@ manipulate <- function(raw) {
   raw$fertilization <- gsub("Destructive, Laclau, ","", raw$grouping)
   raw$grouping <- makeGroups(raw, "fertilization")
 
+  # fix zero
+  raw$a.ssbh[raw$a.ssbh == 0] <- NA
+  
   raw
 }
 
