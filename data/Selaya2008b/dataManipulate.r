@@ -11,7 +11,6 @@ manipulate <- function(raw) {
   
   # Zero
   raw$a.st[raw$a.st == 0] <- NA
-  raw$d.bh[raw$d.bh == 0] <- NA
   
   raw
 }

@@ -1,6 +1,8 @@
 manipulate <- function(raw) {
 
-  raw
-  
+ 
+  # Zero c.d
+  raw$c.d[raw$c.d == 0] <- NA
 
+raw
 }
