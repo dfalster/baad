@@ -6,7 +6,8 @@ manipulate <- function(raw) {
   names(raw)[names(raw) == "group..7."] <- "grouping"
   raw$grouping <- makeGroups(raw, "grouping")
   
-  
+  # Mistake in original processing
+  raw$h.c <- raw$h.t - raw$h.c
   
   raw
 }

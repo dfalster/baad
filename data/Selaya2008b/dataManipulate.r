@@ -12,6 +12,10 @@ manipulate <- function(raw) {
   # Zero
   raw$a.st[raw$a.st == 0] <- NA
   
+  # Mistake in original processing and a zero fix
+  raw$h.c <- raw$h.t - raw$h.c
+  raw$h.c[raw$h.c > raw$h.t] <- NA
+  
   raw
 }
 
