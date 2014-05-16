@@ -7,6 +7,9 @@ manipulate <- function(raw) {
   names(raw)[names(raw) == "group..7."] <- "grouping"
   raw$grouping <- makeGroups(raw, "grouping")
   
+  # zeroes
+  raw$a.st[raw$a.st == 0] <- NA
+  raw$d.bh[raw$d.bh == 0] <- NA
   
   raw
 }

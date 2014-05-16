@@ -9,6 +9,10 @@ manipulate <- function(raw) {
   # Massive outlier : wrong stem area measurement
   raw$a.st[raw$a.st > 0.2] <- NA
   
+  # Zero
+  raw$a.st[raw$a.st == 0] <- NA
+  raw$d.bh[raw$d.bh == 0] <- NA
+  
   raw
 }
 
