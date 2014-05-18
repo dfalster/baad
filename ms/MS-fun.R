@@ -105,7 +105,7 @@ numberOfPoints  <-  function(data, wanted) {
 
 expandData <-  function(data) {
 	if(data$duplicates > 1) {
-		newnames       <-  strsplit(data$contacts, '; ')[[1]]
+		newnames       <-  strsplit(data$contacts, ', ')[[1]]
 		data           <-  data[rep(1, data$duplicates), ]
 		data$contacts  <-  newnames
 		data
@@ -128,7 +128,7 @@ listContacts  <-  function(data) {
 }
 
 numberOfContacts  <-  function(data) {
-	sapply(data, function(x)length(strsplit(x, ';')[[1]]))
+	sapply(data, function(x)length(strsplit(x, ',')[[1]]))
 }
 
 numberOfcontributions  <-  function(data) {
