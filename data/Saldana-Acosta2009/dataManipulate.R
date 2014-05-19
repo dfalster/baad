@@ -15,6 +15,8 @@ manipulate <- function(raw) {
   ii <- raw[["Root biomass (g)"]] == 0
   raw[["Root biomass (g)"]][ii] <- NA
   
+  ii <- raw[["SLA (cm2 g-1)"]] == 0
+  raw[["SLA (cm2 g-1)"]][ii] <- NA
   
   raw
 }
