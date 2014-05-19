@@ -215,10 +215,10 @@ repMissingInfo <- function(data) {
     k <- !is.na(sj$location) & is.na(sj$longitude)
     if (length(k[k == TRUE]) > 0) {
         cat("Please notice that there are no coordinates for the following location(s):")
-        return(cbind(sj$loc[k]))
+        return(cbind(sj$location[k]))
     }
     # coordinate Info
-    k <- !is.na(sj$longitude) & is.na(sj$location) | sj$loc == "NA"
+    k <- !is.na(sj$longitude) & is.na(sj$location) | sj$location == "NA"
     if (any(k)) {
         cat("Please notice that there is no location information for the following coordinate(s):")
         return(cbind(lon = sj$lon[k], lat = sj$lat[k]))
