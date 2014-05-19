@@ -9,6 +9,9 @@ manipulate <- function(raw) {
   # h.c was defined as crown length, should be height to base of crown
   raw$h.c <- with(raw, h.t - h.c)
   
+  # zero m.rt indicates it was not measured
+  raw$m.rt[raw$m.rt == 0] <- NA
+  
   raw
 }
 
