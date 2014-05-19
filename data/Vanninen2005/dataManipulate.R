@@ -22,6 +22,8 @@ manipulate <- function(raw) {
                           "scoarce roots (0,5-20 cm)",
                           "tap root")],1,sum,na.rm=TRUE)
   
+  raw$m.rc[raw$m.rc == 0] <- NA
+  
   raw
 }
 
