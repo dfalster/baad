@@ -6,5 +6,8 @@ manipulate  <-  function(raw){
 
 	raw <- subset(raw, !(species %in% vines))
 
+  # A missing species. Set to 'Unknown'
+  raw$species[is.na(raw$species)] <- "Unknown"
+  
 	raw
 }
