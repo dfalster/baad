@@ -1,5 +1,7 @@
 manipulate <- function(raw) {
-  raw[["m.rc"]]       <-  raw[["Lrg. Root"]] + raw[["Med. Root"]]
+  raw$m.rc       <-  raw[["Lrg. Root"]] + raw[["Med. Root"]]
+  raw$m.rc[raw$m.rc == 0] <- NA
+  
   raw[["Stem Wood"]]  <-  raw[["Stem Wood"]] + raw[["Stem Bark"]]
 
   # zero d_bh is NA (note: zero dbh is possible when h.c < 1.4 or 1.3).
