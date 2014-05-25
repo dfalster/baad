@@ -4,6 +4,8 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,map,1609,from paper[A Saldana-Acosta]
 ,,vegetation,TempF,from paper[A Saldana-Acosta]
 ,,growingCondition,GH,from paper[A Saldana-Acosta]
+,,location,"Las Joyas Scientific Station,Sierra
+de Manantla«n Biosphere Reserve, Jalisco State, western Mexico",from author[A Saldana-Acosta]
 species,Fraxinus uhdei,pft,DA,from paper[A Saldana-Acosta]
 species,Juglans major,pft,DA,from paper[A Saldana-Acosta]
 species,Persea hintonii,pft,EA,RAD lookup
