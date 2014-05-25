@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
 "Age","","yr","age",NA
 "LeafArea","c,1","cm2","a.lf",NA
-"Diam at colar height","","cm","d.bh",NA
+"Diam at colar height","","cm","d.ba",NA
 "CrownWidth","","cm","d.cr",NA
 "h.t","","cm","h.t",NA
 "h.c","","cm","h.c",NA
