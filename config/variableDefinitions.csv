@@ -34,6 +34,7 @@ h.t,m,tree,numeric,TRUE,FALSE,height,>0,,,total height of plant from ground to h
 h.c,m,tree,numeric,TRUE,FALSE,height to crown base,0,,,height to crown base
 d.ba,m,tree,numeric,TRUE,FALSE,basal diameter,>0,,,diameter of stem at base
 d.bh,m,tree,numeric,TRUE,FALSE,dbh,>0,,,diameter of stem at breast height (~1.35cm)
+h.bh,m,tree,numeric,FALSE,FALSE,height of d.bh measurement,>0,,,height at which diameter at breast height (d.bh) is measured
 d.cr,m,tree,numeric,TRUE,FALSE,crown width,>0,,,diameter or width of crown
 c.d,m,tree,numeric,TRUE,FALSE,crown depth,>0,,,crown depth
 m.lf,kg,tree,numeric,TRUE,FALSE,leaf mass,>0,,,leaf mass
