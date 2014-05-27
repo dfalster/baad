@@ -1,5 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
-"DBH","","cm","d.bh",NA
+"Stem.diameter.at.10.percent.Height","","cm","d.bh",NA
+"h.bh","","cm","h.bh","variable description"
 "Height","","cm","h.t",NA
 "Crown.depth","","cm","c.d",NA
 "Crown.Projection.Area","a","m2","a.cp",NA
@@ -17,7 +18,6 @@
 "species",NA,NA,NA,NA
 "Tree.No.",NA,NA,NA,NA
 "Individual.leaf.mass",NA,NA,NA,NA
-"Stem.diameter.at.10.percent.Height",NA,NA,NA,NA
 "pft",NA,NA,NA,NA
 "growingCondition",NA,NA,NA,NA
 "location",NA,NA,NA,NA
