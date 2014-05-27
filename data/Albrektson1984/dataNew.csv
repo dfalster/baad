@@ -6,3 +6,4 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,latitude,60,PDF
 ,,longitude,16,PDF
 ,,location,Central Sweden,
+,,h.bh,1.3,default

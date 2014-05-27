@@ -7,3 +7,4 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,longitude,25.0,Coarse map average
 ,,growingCondition,PM,
 ,,vegetation,BorF,
+,,h.bh,1.3,default
