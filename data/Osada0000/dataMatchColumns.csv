@@ -1,5 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
 "DBH","","cm","d.bh",NA
+"h.bh","","m","h.bh","meta-data"
 "Height","","m","h.t",NA
 "Crown.depth","","m","c.d",NA
 "Crown.Projection.Area","","m2","a.cp",NA
@@ -7,8 +8,7 @@
 "Total.leaf.mass","","g","m.lf",NA
 "Total.leaf.area","","m2","a.lf",NA
 "Individual.leaf.area","","cm2","a.ilf",NA
-"SLA","","cm2.g",NA,NA
-"LMA","","g.m2","ma.ilf",NA
+"SLA","","cm2.g","ma.ilf",NA
 "LAI","","m2.m2","lai",NA
 "D0","","cm","d.ba",NA
 "light.ISF","li4","-","light",NA
