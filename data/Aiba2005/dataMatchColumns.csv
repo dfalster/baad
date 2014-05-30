@@ -1,12 +1,13 @@
-"var_in","method","unit_in","var_out","notes"
-"root mass (g)","m1","g","m.rt",NA
-"trunk mass (g)","m1","g","m.st",NA
-"branch mass (g)","m1","g","m.br",NA
-"leaf mass (g)","m1","g","m.lf",NA
-"total leaf area (cm^2)","","cm2","a.lf",NA
-"individual leaf area (cm^2)","b","cm2","a.ilf",NA
-"crown depth (cm)","","cm","c.d",NA
-"crown area (cm^2)","a","cm2","a.cp",NA
-"height (cm)","","cm","h.t",NA
-"stem diameter (mm)","d","mm","d.ba",NA
-"species","","","species",NA
+var_in,method,unit_in,var_out,notes
+root mass (g),m1,g,m.rt,NA
+trunk mass (g),m1,g,m.st,NA
+branch mass (g),m1,g,m.br,NA
+leaf mass (g),m1,g,m.lf,NA
+total leaf area (cm^2),,cm2,a.lf,NA
+individual leaf area (cm^2),b,cm2,a.ilf,NA
+crown depth (cm),,cm,c.d,NA
+crown area (cm^2),a,cm2,a.cp,NA
+height (cm),,cm,h.t,NA
+stem diameter (mm),d,mm,d.ba,NA
+Species,NA,NA,species,NA
+Genus,NA,NA,NA,NA
