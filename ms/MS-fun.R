@@ -86,10 +86,9 @@ class2Bdetails  <-  function(data) {
   	whisker.render(template,
                  list(studyName=unique(data$dataset),
                       siteType=pasteC(getVegType(unique(data$vegetation)),'; '),
-                 	  lon=pasteC(unique(format(data$longitude, digits=4)),' ; '),
-                 	  lat=pasteC(unique(format(data$latitude, digits=4)),' ; ')
-,
-           	          siteHistory=pasteC(getSiteHistory(unique(data$growingCondition)),'; '),
+                      lon=pasteC(sprintf("%3.1f", as.numeric(unique(data$longitude))),' ; '),
+                      lat=pasteC(sprintf("%3.1f", as.numeric(unique(data$latitude))),' ; '),
+                      siteHistory=pasteC(getSiteHistory(unique(data$growingCondition)),'; '),
            	          metadataDesign=getMetadataDesign(unique(data$dataset)),
            	          collection='',
            	          lab=getMetadataMethods(unique(data$dataset)),
@@ -154,7 +153,7 @@ getContributions  <-  function(data, ...) {
 lisOfAuthors  <-  function(alphabetical=TRUE, ...) {
 	wanted         <-  contributionColumns(...)
 	contributions  <-  getContributions(data, wanted)
-	firstAuthors   <-  c('Daniel Falster', 'Remko Duursma', 'Masae Ishihara', 'Diego R. Barneche', 'Rich FitzJohn', 'Angelica Vårhammar')
+	firstAuthors   <-  c('Daniel Falster', 'Remko A. Duursma', 'Masae Ishihara', 'Diego R. Barneche', 'Rich FitzJohn', 'Angelica Vårhammar')
 	contributions  <-  contributions[!(names(contributions) %in% firstAuthors)]
 
 	getLastName  <-  function(authorNames) {

@@ -35,7 +35,7 @@ We (D. Falster and R. Duursma, with the help of D. Barneche, R. FitzJohn and A. 
 
 Combining data from many different studies, each using its own set of terms and units, and quirks, is no trivial task `r citep(c(Michener1997="10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2", Kandel2011="10.1145/1978942.1979444"))`. This compilation would not have been possible without several new technologies. In particular,
 
-1. Our entire work flow is scripted, using the R computing environment `r citep(citation("base"))`. The database can be rebuilt in an instant from the raw datafiles, using a single command. When a single data contribution has been modified, the final master dataset is thus easily recreated.
+1. Our entire work flow is scripted, using the R computing environment. The database can be rebuilt in an instant from the raw datafiles, using a single command. When a single data contribution has been modified, the final master dataset is thus easily recreated.
 2. We wrote a new `R` package [dataMashR](https://github.com/dfalster/dataMashR) `r citet("https://github.com/dfalster/dataMashR")` for merging data from different studies in a transparent and reproducible fashion. While it was written with BAAD in mind, the package is designed to be easily  deployed for other compilations.
 3. We used version control and the code sharing website [github](www.github.com) to track the evolution of the database and the code to process the raw data. Datasets as well as processing methods inevitably contain errors. With version control, we are able to trace these errors to the source.
 4. We used the package `knitr` within `R` to automatically produce reports comparing the raw data provided by a single study to the rest of the database `r citep(citation("knitr"))`. These reports were sent to data contributors for verification, and allowed easy identification of errors in the raw data or processing.
@@ -120,9 +120,10 @@ x <-daply(var.def, 1, function(x)
 
 writeLines(x[var.def$Variable])
 ```
+
 ## ACKNOWLEDGMENTS
 
-D.S. Falster, A. Vårhammer and D. R. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to Duursma. R FitzJohn was employed on a XXXXXX.
+D.S. Falster, A. Vårhammer and D. R. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to R.A. Duursma. R FitzJohn was employed on a XXXXXX.
 
 ## REFERENCES
 ```{r, echo=FALSE, results='asis'}
