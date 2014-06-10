@@ -115,7 +115,7 @@ x <-daply(var.def, 1, function(x)
 		"\n\t- Label: ", x$label,
 		"\n\t- Description: ", x$Description,
 		"\n\t- Type: ", x$Type,
-		"\n\t- Units: ", gsub(".","/", x$Units, fixed=TRUE)
+		"\n\t- Units: ", gsub(".","/", x$UnitsMD, fixed=TRUE)
 		))
 
 writeLines(x[var.def$Variable])

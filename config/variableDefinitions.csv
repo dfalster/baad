@@ -1,62 +1,62 @@
-Variable,Units,Group,Type,methodsVariable,essential,label,minValue,maxValue,allowableValues,Description
-dataset,-,study,character,FALSE,TRUE,dataset,,,,first author and year of relevant paper e.g. Falster2012
-location,-,site,character,FALSE,TRUE,location,,,,name of location where sampled
-latitude,deg,site,numeric,FALSE,TRUE,latitude,-90,90,,latitude of location where sampled (-90 to 90 deg South to North)
-longitude,deg,site,numeric,FALSE,TRUE,longitude,-180,180,,longitude of location where sampled (-180 to 180 West to East)
-vegetation,-,site,character,FALSE,TRUE,vegetation,,,,vegetation type where sampled if grown in field (leave blank for plantations / glasshouse / common garden): Sav = Savannah; TropRF = Tropical rainforest; TempRF = Temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temperate forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
-map,mm,site,numeric,FALSE,FALSE,map,100,Inf,,mean annual rainfall (wild grown plants only)
-mat,deg,site,numeric,FALSE,FALSE,mat,-20,Inf,,mean annual temperature (wild grown plants only)
-grouping,-,stand,character,FALSE,FALSE,grouping,,,,any information about growing environment of sampled plant such as treatment or subplot
-lai,m2.m2,stand,numeric,TRUE,FALSE,lai,1e-20,Inf,,leaf area index of vegetation (wild plants only)
-species,-,species,character,FALSE,TRUE,species,,,,latin name of species (genus species)
-family,-,species,character,FALSE,FALSE,family,,,,family
-pft,-,species,character,FALSE,TRUE,pft,,,"EA,DA,EG,DG",plant functional type: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
-growingCondition,-,tree,character,FALSE,TRUE,growing environment,,,"FW,FE,GH,PU,PM,GC,CG",growing environment of sampled plant: FW = field wild; FE =field experimental; GH = glasshouse; PU = plantation unmanaged; PM = plantation managed; GC = growth chamber; CG = common garden
-status,-,tree,character,FALSE,TRUE,crown status,,,"0,1,2,3",position in forest canopy (wild grown plants only): 0 = supressed; 1 = intermediate; 2 = codominant (crown partly exposed); 3 = dominant (crown fully exposed)
-light,-,tree,character,TRUE,FALSE,light environment,,,,note any information about light environment of sampled plant; we will determine appropriate categories once we see what information is available
-age,yr,tree,numeric,TRUE,FALSE,age,1e-20,Inf,,age of plant expressed as decimal -> e.g. 3months = 0.25years
-a.lf,m2,tree,numeric,TRUE,FALSE,leaf area,1e-20,Inf,,leaf area of whole plant
-a.ssba,m2,tree,numeric,TRUE,FALSE,sapwood area at base,1e-20,Inf,,area of sapwood cross section at base
-a.ssbh,m2,tree,numeric,TRUE,FALSE,sapwood area at breast height,1e-20,Inf,,area of sapwood cross section at breast height
-a.ssbc,m2,tree,numeric,TRUE,FALSE,sapwood area at crown base,1e-20,Inf,,area of sapwood cross section at base of crown
-a.shba,m2,tree,numeric,TRUE,FALSE,heartwood area at base,0,Inf,,area of heartwood cross section at base
-a.shbh,m2,tree,numeric,TRUE,FALSE,heartwood area at breast height,0,Inf,,area of heartwood cross section at breast height
-a.shbc,m2,tree,numeric,TRUE,FALSE,heartwood area at crown base,0,Inf,,area of heartwood cross section at base of crown
-a.sbba,m2,tree,numeric,TRUE,FALSE,bark area at base,1e-20,Inf,,area of bark cross section at base
-a.sbbh,m2,tree,numeric,TRUE,FALSE,bark area at breast height,1e-20,Inf,,area of bark cross section at breast height
-a.sbbc,m2,tree,numeric,TRUE,FALSE,bark area at crown base,1e-20,Inf,,area of bark cross section at base of crown
-a.stba,m2,tree,numeric,TRUE,FALSE,stem area at base,1e-20,Inf,,area of total stem cross-section at base of the plant
-a.stbh,m2,tree,numeric,TRUE,FALSE,stem area at breast height,1e-20,Inf,,area of total stem cross-section at breast height
-a.stbc,m2,tree,numeric,TRUE,FALSE,stem area at crown base,1e-20,Inf,,area of total stem cross-section at base of the crown
-a.cp,m2,tree,numeric,TRUE,FALSE,crown area,1e-20,Inf,,projected crown area as seen from above
-a.cs,m2,tree,numeric,TRUE,FALSE,crown surface area,1e-20,Inf,,surface area of whole crown
-h.t,m,tree,numeric,TRUE,FALSE,height,1e-20,Inf,,total height of plant from ground to highest leaf
-h.c,m,tree,numeric,TRUE,FALSE,height to crown base,0,Inf,,height to crown base
-d.ba,m,tree,numeric,TRUE,FALSE,basal diameter,1e-20,Inf,,diameter of stem at base
-d.bh,m,tree,numeric,TRUE,FALSE,dbh,1e-20,Inf,,diameter of stem at breast height (~1.35cm)
-h.bh,m,tree,numeric,FALSE,FALSE,height of d.bh measurement,1e-20,Inf,,height at which diameter at breast height (d.bh) is measured
-d.cr,m,tree,numeric,TRUE,FALSE,crown width,1e-20,Inf,,diameter or width of crown
-c.d,m,tree,numeric,TRUE,FALSE,crown depth,1e-20,Inf,,crown depth
-m.lf,kg,tree,numeric,TRUE,FALSE,leaf mass,1e-20,Inf,,leaf mass
-m.ss,kg,tree,numeric,TRUE,FALSE,sapwood mass,1e-20,Inf,,sapwood mass including branches
-m.sh,kg,tree,numeric,TRUE,FALSE,heartwood mass,0,Inf,,heartwood mass including branches
-m.sb,kg,tree,numeric,TRUE,FALSE,bark mass,1e-20,Inf,,bark mass including branches
-m.st,kg,tree,numeric,TRUE,FALSE,total stem mass,1e-20,Inf,,mass of all stem tissue including branches (=m.ss + m.sh + m.sb)
-m.so,kg,tree,numeric,TRUE,FALSE,aboveground mass,1e-20,Inf,,mass of all above-ground structures (=m.lf + m.st)
-m.br,kg,tree,numeric,TRUE,FALSE,branch mass,0,Inf,,branch mass
-m.rf,kg,tree,numeric,TRUE,FALSE,fine root mass,1e-20,Inf,,fine root mass
-m.rc,kg,tree,numeric,TRUE,FALSE,coarse root mass,0,Inf,,coarse root mass
-m.rt,kg,tree,numeric,TRUE,FALSE,total root mass,1e-20,Inf,,total root mass (=m.rf+m.rc)
-m.to,kg,tree,numeric,TRUE,FALSE,total mass,1e-20,Inf,,total mass (=m.rt+m.so)
-a.ilf,m2,tree,numeric,TRUE,FALSE,area of individual leaf,1e-20,Inf,,leaf size (average area of individual leaves across entire plant)
-ma.ilf,kg.m2,tree,numeric,TRUE,FALSE,leaf mass per area,1e-20,Inf,,leaf mass per area (average across entire plant or sample taken from top of plant; = m.lf/a.lf)
-r.st,kg.m3,tree,numeric,TRUE,FALSE,wood density,1e-20,Inf,,average density of all stem tissue (wood density)
-r.ss,kg.m3,tree,numeric,TRUE,FALSE,sapwood density,1e-20,Inf,,density of stem sapwood
-r.sb,kg.m3,tree,numeric,TRUE,FALSE,bark density,1e-20,Inf,,density of stem bark
-r.sh,kg.m3,tree,numeric,TRUE,FALSE,heartwood density,1e-20,Inf,,density of stem heartwood
-n.lf,kg.kg,tree,numeric,TRUE,FALSE,leaf nitrogen,1e-20,Inf,,leaf nitrogen (average across entire plant or sample taken from top of plant)
-n.ss,kg.kg,tree,numeric,TRUE,FALSE,sapwood [nitrogen],1e-20,Inf,,nitrogen content of sapwood
-n.sb,kg.kg,tree,numeric,TRUE,FALSE,bark [nitrogen],1e-20,Inf,,nitrogen content of bark
-n.sh,kg.kg,tree,numeric,TRUE,FALSE,heartwood [nitrogen],1e-20,Inf,,nitrogen content of heartwood
-n.rf,kg.kg,tree,numeric,TRUE,FALSE,fine root [nitrogen],1e-20,Inf,,nitrogen content of fine roots
-n.rc,kg.kg,tree,numeric,TRUE,FALSE,coarse root [nitrogen],1e-20,Inf,,nitrogen content of coarse roots
+Variable,Units,UnitsMD,Group,Type,methodsVariable,essential,label,minValue,maxValue,allowableValues,Description
+dataset,-,-,study,character,FALSE,TRUE,dataset,,,,first author and year of relevant paper e.g. Falster2012
+location,-,-,site,character,FALSE,TRUE,location,,,,name of location where sampled
+latitude,deg,deg,site,numeric,FALSE,TRUE,latitude,-90,90,,latitude of location where sampled (-90 to 90 deg South to North)
+longitude,deg,deg,site,numeric,FALSE,TRUE,longitude,-180,180,,longitude of location where sampled (-180 to 180 West to East)
+vegetation,-,-,site,character,FALSE,TRUE,vegetation,,,,vegetation type where sampled if grown in field (leave blank for plantations / glasshouse / common garden): Sav = Savannah; TropRF = Tropical rainforest; TempRF = Temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temperate forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
+map,mm,mm,site,numeric,FALSE,FALSE,map,100,Inf,,mean annual rainfall (wild grown plants only)
+mat,deg,deg,site,numeric,FALSE,FALSE,mat,-20,Inf,,mean annual temperature (wild grown plants only)
+grouping,-,-,stand,character,FALSE,FALSE,grouping,,,,any information about growing environment of sampled plant such as treatment or subplot
+lai,m2.m2,m<sup>2</sup> m<sup>-2</sup>,stand,numeric,TRUE,FALSE,lai,1.00E-20,Inf,,leaf area index of vegetation (wild plants only)
+species,-,-,species,character,FALSE,TRUE,species,,,,latin name of species (genus species)
+family,-,-,species,character,FALSE,FALSE,family,,,,family
+pft,-,-,species,character,FALSE,TRUE,pft,,,"EA,DA,EG,DG",plant functional type: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
+growingCondition,-,-,tree,character,FALSE,TRUE,growing environment,,,"FW,FE,GH,PU,PM,GC,CG",growing environment of sampled plant: FW = field wild; FE =field experimental; GH = glasshouse; PU = plantation unmanaged; PM = plantation managed; GC = growth chamber; CG = common garden
+status,-,-,tree,character,FALSE,TRUE,crown status,,,"0,1,2,3",position in forest canopy (wild grown plants only): 0 = supressed; 1 = intermediate; 2 = codominant (crown partly exposed); 3 = dominant (crown fully exposed)
+light,-,-,tree,character,TRUE,FALSE,light environment,,,,note any information about light environment of sampled plant; we will determine appropriate categories once we see what information is available
+age,yr,yr,tree,numeric,TRUE,FALSE,age,1.00E-20,Inf,,age of plant expressed as decimal -> e.g. 3months = 0.25years
+a.lf,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,leaf area,1.00E-20,Inf,,leaf area of whole plant
+a.ssba,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,sapwood area at base,1.00E-20,Inf,,area of sapwood cross section at base
+a.ssbh,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,sapwood area at breast height,1.00E-20,Inf,,area of sapwood cross section at breast height
+a.ssbc,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,sapwood area at crown base,1.00E-20,Inf,,area of sapwood cross section at base of crown
+a.shba,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,heartwood area at base,0,Inf,,area of heartwood cross section at base
+a.shbh,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,heartwood area at breast height,0,Inf,,area of heartwood cross section at breast height
+a.shbc,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,heartwood area at crown base,0,Inf,,area of heartwood cross section at base of crown
+a.sbba,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,bark area at base,1.00E-20,Inf,,area of bark cross section at base
+a.sbbh,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,bark area at breast height,1.00E-20,Inf,,area of bark cross section at breast height
+a.sbbc,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,bark area at crown base,1.00E-20,Inf,,area of bark cross section at base of crown
+a.stba,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,stem area at base,1.00E-20,Inf,,area of total stem cross-section at base of the plant
+a.stbh,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,stem area at breast height,1.00E-20,Inf,,area of total stem cross-section at breast height
+a.stbc,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,stem area at crown base,1.00E-20,Inf,,area of total stem cross-section at base of the crown
+a.cp,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,crown area,1.00E-20,Inf,,projected crown area as seen from above
+a.cs,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,crown surface area,1.00E-20,Inf,,surface area of whole crown
+h.t,m,m,tree,numeric,TRUE,FALSE,height,1.00E-20,Inf,,total height of plant from ground to highest leaf
+h.c,m,m,tree,numeric,TRUE,FALSE,height to crown base,0,Inf,,height to crown base
+d.ba,m,m,tree,numeric,TRUE,FALSE,basal diameter,1.00E-20,Inf,,diameter of stem at base
+d.bh,m,m,tree,numeric,TRUE,FALSE,dbh,1.00E-20,Inf,,diameter of stem at breast height (~1.35cm)
+h.bh,m,m,tree,numeric,FALSE,FALSE,height of d.bh measurement,1.00E-20,Inf,,height at which diameter at breast height (d.bh) is measured
+d.cr,m,m,tree,numeric,TRUE,FALSE,crown width,1.00E-20,Inf,,diameter or width of crown
+c.d,m,m,tree,numeric,TRUE,FALSE,crown depth,1.00E-20,Inf,,crown depth
+m.lf,kg,kg,tree,numeric,TRUE,FALSE,leaf mass,1.00E-20,Inf,,leaf mass
+m.ss,kg,kg,tree,numeric,TRUE,FALSE,sapwood mass,1.00E-20,Inf,,sapwood mass including branches
+m.sh,kg,kg,tree,numeric,TRUE,FALSE,heartwood mass,0,Inf,,heartwood mass including branches
+m.sb,kg,kg,tree,numeric,TRUE,FALSE,bark mass,1.00E-20,Inf,,bark mass including branches
+m.st,kg,kg,tree,numeric,TRUE,FALSE,total stem mass,1.00E-20,Inf,,mass of all stem tissue including branches (=m.ss + m.sh + m.sb)
+m.so,kg,kg,tree,numeric,TRUE,FALSE,aboveground mass,1.00E-20,Inf,,mass of all above-ground structures (=m.lf + m.st)
+m.br,kg,kg,tree,numeric,TRUE,FALSE,branch mass,0,Inf,,branch mass
+m.rf,kg,kg,tree,numeric,TRUE,FALSE,fine root mass,1.00E-20,Inf,,fine root mass
+m.rc,kg,kg,tree,numeric,TRUE,FALSE,coarse root mass,0,Inf,,coarse root mass
+m.rt,kg,kg,tree,numeric,TRUE,FALSE,total root mass,1.00E-20,Inf,,total root mass (=m.rf+m.rc)
+m.to,kg,kg,tree,numeric,TRUE,FALSE,total mass,1.00E-20,Inf,,total mass (=m.rt+m.so)
+a.ilf,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,area of individual leaf,1.00E-20,Inf,,leaf size (average area of individual leaves across entire plant)
+ma.ilf,kg.m2,kg m<sup>-2</sup>,tree,numeric,TRUE,FALSE,leaf mass per area,1.00E-20,Inf,,leaf mass per area (average across entire plant or sample taken from top of plant; = m.lf/a.lf)
+r.st,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,wood density,1.00E-20,Inf,,average density of all stem tissue (wood density)
+r.ss,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,sapwood density,1.00E-20,Inf,,density of stem sapwood
+r.sb,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,bark density,1.00E-20,Inf,,density of stem bark
+r.sh,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,heartwood density,1.00E-20,Inf,,density of stem heartwood
+n.lf,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,leaf nitrogen,1.00E-20,Inf,,leaf nitrogen (average across entire plant or sample taken from top of plant)
+n.ss,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,sapwood [nitrogen],1.00E-20,Inf,,nitrogen content of sapwood
+n.sb,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,bark [nitrogen],1.00E-20,Inf,,nitrogen content of bark
+n.sh,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,heartwood [nitrogen],1.00E-20,Inf,,nitrogen content of heartwood
+n.rf,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,fine root [nitrogen],1.00E-20,Inf,,nitrogen content of fine roots
+n.rc,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,coarse root [nitrogen],1.00E-20,Inf,,nitrogen content of coarse roots
