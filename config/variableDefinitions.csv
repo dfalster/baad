@@ -38,25 +38,25 @@ h.bh,m,m,tree,numeric,FALSE,FALSE,height of d.bh measurement,1.00E-20,50,,height
 d.cr,m,m,tree,numeric,TRUE,FALSE,crown width,1.00E-20,100,,diameter or width of crown
 c.d,m,m,tree,numeric,TRUE,FALSE,crown depth,1.00E-20,100,,crown depth
 m.lf,kg,kg,tree,numeric,TRUE,FALSE,leaf mass,1.00E-20,10000,,leaf mass
-m.ss,kg,kg,tree,numeric,TRUE,FALSE,sapwood mass,1.00E-20,,,sapwood mass including branches
-m.sh,kg,kg,tree,numeric,TRUE,FALSE,heartwood mass,0,Inf,,heartwood mass including branches
-m.sb,kg,kg,tree,numeric,TRUE,FALSE,bark mass,1.00E-20,Inf,,bark mass including branches
-m.st,kg,kg,tree,numeric,TRUE,FALSE,total stem mass,1.00E-20,Inf,,mass of all stem tissue including branches (=m.ss + m.sh + m.sb)
-m.so,kg,kg,tree,numeric,TRUE,FALSE,aboveground mass,1.00E-20,Inf,,mass of all above-ground structures (=m.lf + m.st)
-m.br,kg,kg,tree,numeric,TRUE,FALSE,branch mass,0,Inf,,branch mass
-m.rf,kg,kg,tree,numeric,TRUE,FALSE,fine root mass,1.00E-20,Inf,,fine root mass
-m.rc,kg,kg,tree,numeric,TRUE,FALSE,coarse root mass,0,Inf,,coarse root mass
-m.rt,kg,kg,tree,numeric,TRUE,FALSE,total root mass,1.00E-20,Inf,,total root mass (=m.rf+m.rc)
-m.to,kg,kg,tree,numeric,TRUE,FALSE,total mass,1.00E-20,Inf,,total mass (=m.rt+m.so)
-a.ilf,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,area of individual leaf,1.00E-20,Inf,,leaf size (average area of individual leaves across entire plant)
-ma.ilf,kg.m2,kg m<sup>-2</sup>,tree,numeric,TRUE,FALSE,leaf mass per area,1.00E-20,Inf,,leaf mass per area (average across entire plant or sample taken from top of plant; = m.lf/a.lf)
-r.st,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,wood density,1.00E-20,Inf,,average density of all stem tissue (wood density)
-r.ss,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,sapwood density,1.00E-20,Inf,,density of stem sapwood
-r.sb,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,bark density,1.00E-20,Inf,,density of stem bark
-r.sh,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,heartwood density,1.00E-20,Inf,,density of stem heartwood
-n.lf,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,leaf nitrogen,1.00E-20,Inf,,leaf nitrogen (average across entire plant or sample taken from top of plant)
-n.ss,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,sapwood [nitrogen],1.00E-20,Inf,,nitrogen content of sapwood
-n.sb,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,bark [nitrogen],1.00E-20,Inf,,nitrogen content of bark
-n.sh,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,heartwood [nitrogen],1.00E-20,Inf,,nitrogen content of heartwood
-n.rf,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,fine root [nitrogen],1.00E-20,Inf,,nitrogen content of fine roots
-n.rc,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,coarse root [nitrogen],1.00E-20,Inf,,nitrogen content of coarse roots
+m.ss,kg,kg,tree,numeric,TRUE,FALSE,sapwood mass,1.00E-20,1.00E+07,,sapwood mass including branches
+m.sh,kg,kg,tree,numeric,TRUE,FALSE,heartwood mass,0,1.00E+07,,heartwood mass including branches
+m.sb,kg,kg,tree,numeric,TRUE,FALSE,bark mass,1.00E-20,1.00E+07,,bark mass including branches
+m.st,kg,kg,tree,numeric,TRUE,FALSE,total stem mass,1.00E-20,1.00E+07,,mass of all stem tissue including branches (=m.ss + m.sh + m.sb)
+m.so,kg,kg,tree,numeric,TRUE,FALSE,aboveground mass,1.00E-20,1.00E+07,,mass of all above-ground structures (=m.lf + m.st)
+m.br,kg,kg,tree,numeric,TRUE,FALSE,branch mass,0,1.00E+07,,branch mass
+m.rf,kg,kg,tree,numeric,TRUE,FALSE,fine root mass,1.00E-20,1.00E+07,,fine root mass
+m.rc,kg,kg,tree,numeric,TRUE,FALSE,coarse root mass,0,1.00E+07,,coarse root mass
+m.rt,kg,kg,tree,numeric,TRUE,FALSE,total root mass,1.00E-20,1.00E+07,,total root mass (=m.rf+m.rc)
+m.to,kg,kg,tree,numeric,TRUE,FALSE,total mass,1.00E-20,1.00E+07,,total mass (=m.rt+m.so)
+a.ilf,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,area of individual leaf,1.00E-20,100000,,leaf size (average area of individual leaves across entire plant)
+ma.ilf,kg.m2,kg m<sup>-2</sup>,tree,numeric,TRUE,FALSE,leaf mass per area,1.00E-20,10,,leaf mass per area (average across entire plant or sample taken from top of plant; = m.lf/a.lf)
+r.st,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,wood density,1.00E-20,2000,,average density of all stem tissue (wood density)
+r.ss,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,sapwood density,1.00E-20,2000,,density of stem sapwood
+r.sb,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,bark density,1.00E-20,2000,,density of stem bark
+r.sh,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,heartwood density,1.00E-20,2000,,density of stem heartwood
+n.lf,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,leaf nitrogen,1.00E-20,0.1,,leaf nitrogen (average across entire plant or sample taken from top of plant)
+n.ss,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,sapwood [nitrogen],1.00E-20,0.1,,nitrogen content of sapwood
+n.sb,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,bark [nitrogen],1.00E-20,0.1,,nitrogen content of bark
+n.sh,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,heartwood [nitrogen],1.00E-20,0.1,,nitrogen content of heartwood
+n.rf,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,fine root [nitrogen],1.00E-20,0.1,,nitrogen content of fine roots
+n.rc,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,coarse root [nitrogen],1.00E-20,0.1,,nitrogen content of coarse roots
