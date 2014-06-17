@@ -1,0 +1,57 @@
+Questions about the study:  Poorter1999
+
+Please look at the attached html report  Poorter1999.html  and answer the following questions. Type your answers directly into this file, or into the other files as indicated.
+
+1. Is your contact information correct?
+	If not, could you please provide correct information.
+ANSWER: YES
+
+2. Is your reference information correct?
+	If not, could you please provide correct information.
+ANSWER: YES
+
+3. Does the number of records for each variable seem reasonable based on the datafile you provided?
+	 For your interest, the raw data file you originally sent us and the cleaned data file are both attached.
+ANSWER: YES
+
+4. Is 'Location data' complete?
+	 If not, could you please provide any items marked 'missing' here. The codes and legends for Vegetation_type are provided in the file Variable.definition.csv, also attached.
+ANSWER: YES
+
+5. Do your locations fall in the right spot in both world and country map?
+	 If not, please outline the issues here and provide us with updated longitude and latitude data.
+ANSWER: YES
+
+6. Is the 'Stand description' complete?
+	 If not, could you please provide more information? Codes and legends for Growing_condition and Status are found within Variable.definition.csv file attached.
+ANSWER: YES
+
+7. Is the 'Species data' correct, i.e. name, family, plant functional type (pft)?
+	 If not, please provide details where possible.
+ANSWER: YES
+
+8. Is the 'Methods' information complete and accurate?
+	 If not, could you please provide the missing information in Metadata.csv file attached? These Metadata should be a short description (up to 4 lines) of the methods used for each of the items listed. Additional items not listed in the report are not needed, but if you judge it important, add it to 'Other variables'.
+ANSWER: YES
+
+9. Please review the plots showing how your data compares to other data in the study. Does your data fall well within the rest of the dataset?  Are there outliers?
+	 If so, could you please review the original data file you provided us with and verify that all information is correct.
+ANSWER: IN YOUR PLOT ON AREA OF INDIVIDUAL LEAF THERE ARE MANY WITH A LEAF AREA <1.10-4M2. THIS IS <1CM2, ISN'T IT? IN THE INITIAL DATASET THAT I PROVIDED A.ILF WAS EXPRESSED IN CM2, AND THERE WERE ONLY 4 INDIVIDUALS WITH AN INDIVIDUAL LEAF AREA OF 1CM2, AND NOTHING WITH LESS. SO MAYBE YOU OR I MADE A MISTAKE IN THE CONVERSION?
+
+DF response: Actually there are a nine values between 0.3-1cm2 in the original file.
+
+IN YOUR FILE POORTER1999.CSV THERE ARE TWO INDIVIDUALS WITH NEGATIVE CROWN DIAMETERS. PELASE REMOVE THOSE VALUES
+
+DF response: done.
+
+10. The data archived with the publication will be archived under the  Creative Commons Zero (CC0) licence (http://creativecommons.org/about/cc0). This is the same license used by a number of data repositories, such as datadryad (http://datadryad.org/pages/policies).
+	 Please indicate that you understand what this means and agree to this by answering 'yes' or 'I agree' here
+ANSWER: YES
+
+11. You listed units for the variable a.lf (leaf area) as 'g' which is clearly wrong, we're guessing it it be m2 (the plots shown in the report use m2)?
+ANSWER: I AM NOT SURE WHAT YOU REFER TO? PLEASE FIND THE ORIGINAL DATAFILE I SENT YOU. THERE IT SAYS THAT A.LF IS IN M2 AND NOT IN G
+
+DF response: Correct - original says m2, our mistake sorry.
+
+12. There were two variables called total mass (m.to) in the spreadsheet you sent. The first looks to be correct (i.e. is sum of other variables) so we have used that. What is the second variable (now renamed to m.to2)?
+ANSWER: I AM SORRY FOR THE MISTAKE. THE FIRST ONE (MY EXCEL DATA COLUMN N) IS CORRECT, THE SECOND ONE (COLUMN Q) IS WRONG. WHAT HAPPENED IS THAT I INSERTED FOR YOU AN ADDITIONAL COLUMN WITH TOTAL ABOVEGROUND BIOMASS IN THE EXCEL SHEET. THE SECOND COLUMN Q WAS THE ONE THAT I USED BEFORE FOR TOTAL BIOMASS. IT SUMMED UP THE BIOMASS VALUES IN CONTIGUOUS COLUMNS. BECAUSE I INSERTED A COLUMN WITH ABOVEGROUND BIOMASS, THAT VALUE WAS ERRONEOUSLY ADDED AGAIN TO THE TOTAL BIOMASS. SO JUST DELETE THE SECOND COLUMN.
