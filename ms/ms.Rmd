@@ -8,6 +8,9 @@ knitr::opts_chunk$set(tidy=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig
 library(plyr)
 library(bibtex)
 library(knitcitations)
+library(Hmisc)
+# library(pander)
+
 source("MS-fun.R")
 ```
 
@@ -120,6 +123,27 @@ x <-daply(var.def, 1, function(x)
 
 writeLines(x[var.def$Variable])
 ```
+
+### C. Number of observations by variable
+
+```{r echo=FALSE, message=FALSE}
+
+thesevars <- setdiff(var.def$Variable[var.def$Type=="numeric"], 
+                     c("map","mat","lai"))
+Labels <- capitalize(var.def$label[var.def$Variable %in% thesevars])
+
+Count <- function(x)length(data[[x]][!is.na(data[[x]])])
+N <- sapply(thesevars, Count)
+
+dfr <- data.frame(Variable=Labels, N=N)
+dfr <- dfr[dfr$N > 0,]
+rownames(dfr) <- NULL
+```
+
+```{r results='asis', echo=FALSE}
+kable(dfr, "html", align="l")
+```
+
 
 ## ACKNOWLEDGMENTS
 
