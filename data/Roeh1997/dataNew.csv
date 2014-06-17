@@ -1,5 +1,6 @@
-"lookupVariable","lookupValue","newVariable","newValue","source"
-NA,NA,"growingCondition","PU","from paper[D Barneche]"
-NA,NA,"vegetation","TempF","from paper[D Barneche]"
+lookupVariable,lookupValue,newVariable,newValue,source
+,,growingCondition,PM,from paper[D Barneche]
+,,vegetation,TempF,from paper[D Barneche]
 ,,pft,EG,
-,,h.bh,1.3,default
+,,h.bh,1.37,Cf. other Maguire studies
+,,family,Pinaceae,
