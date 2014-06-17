@@ -1,4 +1,9 @@
 lookupVariable,lookupValue,newVariable,newValue,source
 ,,pft,EG,
 ,,growingCondition,PM,
-,,h.bh,1.3,default
+,,vegetation,TempF,
+,,h.bh,1.37,paper[RAD]
+,,family,Pinaceae,
+,,location,Pringle Butte and Lookout Mountain,paper[RAD]
+,,latitude,43.78,mean of two sites in paper
+,,longitude,-121.65,mean of two sites in paper
