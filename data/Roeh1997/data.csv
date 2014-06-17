@@ -10,19 +10,19 @@ h.t,m.lf,a.lf,a.ssbh,a.ssbc,species,pft,Installation,Plot,Dbh (cm),Crown length 
 19.4,40.43,221.66,0.039198,0.020865,Pseudotsuga menziesii,EG,805,2,30.3,12.28,"Pilchuck Bridge, WA, USA",48.3,-121.9
 14.33,3.58,25.86,0.008633,0.00391,Pseudotsuga menziesii,EG,805,2,13.8,7.89,"Pilchuck Bridge, WA, USA",48.3,-121.9
 15.8,7.13,49.19,0.012159,0.008214,Pseudotsuga menziesii,EG,805,2,17,9.86,"Pilchuck Bridge, WA, USA",48.3,-121.9
-22.5,12.76,71.74,0.014225,0.009481,Pseudotsuga menziesii,EG,806,1,20.7,10.19,Elk Creek,,
-24.84,27.91,150.86,0.033089,0.021328,Pseudotsuga menziesii,EG,806,1,30.2,14.84,Elk Creek,,
-26.3,44.07,233.41,0.048041,0.025284,Pseudotsuga menziesii,EG,806,1,38.4,14.72,Elk Creek,,
-23.9,31.33,168.89,0.038368,0.017215,Pseudotsuga menziesii,EG,806,1,35.4,12.76,Elk Creek,,
-20.3,6.02,34.93,0.00841,0.004356,Pseudotsuga menziesii,EG,806,1,15.6,9.52,Elk Creek,,
-19.42,9.91,56.65,0.016794,0.006719,Pseudotsuga menziesii,EG,806,1,24,10.2,Elk Creek,,
-22.6,10.88,62.35,0.020018,0.007824,Pseudotsuga menziesii,EG,806,4,23,11.6,Elk Creek,,
-25.8,48.84,256.74,0.049856,0.024588,Pseudotsuga menziesii,EG,806,4,37.4,16.5,Elk Creek,,
-20.55,9.58,55.37,0.01024,0.005991,Pseudotsuga menziesii,EG,806,4,15.4,11.6,Elk Creek,,
-25.8,30.45,164.88,0.030321,0.01862,Pseudotsuga menziesii,EG,806,4,28.3,18.08,Elk Creek,,
-23.08,5.95,36.58,0.017166,0.005565,Pseudotsuga menziesii,EG,806,4,20.8,8.45,Elk Creek,,
-21.62,6.8,40.22,0.009731,0.005006,Pseudotsuga menziesii,EG,806,4,17.6,9.21,Elk Creek,,
-17.85,15.22,83.17,0.010945,0.008898,Pseudotsuga menziesii,EG,810,1,17.1,11.65,Robertson Main,,
-20.57,13.5,76.22,0.018788,0.013173,Pseudotsuga menziesii,EG,810,1,23,11.52,Robertson Main,,
-14.43,4.12,25.14,0.003735,0.002048,Pseudotsuga menziesii,EG,810,1,9.9,9.67,Robertson Main,,
-24.25,22.89,123.73,0.056585,0.023002,Pseudotsuga menziesii,EG,810,1,32.4,13.2,Robertson Main,,
+22.5,12.76,71.74,0.014225,0.009481,Pseudotsuga menziesii,EG,806,1,20.7,10.19,Elk Creek,48.7,-124.2
+24.84,27.91,150.86,0.033089,0.021328,Pseudotsuga menziesii,EG,806,1,30.2,14.84,Elk Creek,48.7,-124.2
+26.3,44.07,233.41,0.048041,0.025284,Pseudotsuga menziesii,EG,806,1,38.4,14.72,Elk Creek,48.7,-124.2
+23.9,31.33,168.89,0.038368,0.017215,Pseudotsuga menziesii,EG,806,1,35.4,12.76,Elk Creek,48.7,-124.2
+20.3,6.02,34.93,0.00841,0.004356,Pseudotsuga menziesii,EG,806,1,15.6,9.52,Elk Creek,48.7,-124.2
+19.42,9.91,56.65,0.016794,0.006719,Pseudotsuga menziesii,EG,806,1,24,10.2,Elk Creek,48.7,-124.2
+22.6,10.88,62.35,0.020018,0.007824,Pseudotsuga menziesii,EG,806,4,23,11.6,Elk Creek,48.7,-124.2
+25.8,48.84,256.74,0.049856,0.024588,Pseudotsuga menziesii,EG,806,4,37.4,16.5,Elk Creek,48.7,-124.2
+20.55,9.58,55.37,0.01024,0.005991,Pseudotsuga menziesii,EG,806,4,15.4,11.6,Elk Creek,48.7,-124.2
+25.8,30.45,164.88,0.030321,0.01862,Pseudotsuga menziesii,EG,806,4,28.3,18.08,Elk Creek,48.7,-124.2
+23.08,5.95,36.58,0.017166,0.005565,Pseudotsuga menziesii,EG,806,4,20.8,8.45,Elk Creek,48.7,-124.2
+21.62,6.8,40.22,0.009731,0.005006,Pseudotsuga menziesii,EG,806,4,17.6,9.21,Elk Creek,48.7,-124.2
+17.85,15.22,83.17,0.010945,0.008898,Pseudotsuga menziesii,EG,810,1,17.1,11.65,Robertson Main,46.054,-123.063
+20.57,13.5,76.22,0.018788,0.013173,Pseudotsuga menziesii,EG,810,1,23,11.52,Robertson Main,46.054,-123.063
+14.43,4.12,25.14,0.003735,0.002048,Pseudotsuga menziesii,EG,810,1,9.9,9.67,Robertson Main,46.054,-123.063
+24.25,22.89,123.73,0.056585,0.023002,Pseudotsuga menziesii,EG,810,1,32.4,13.2,Robertson Main,46.054,-123.063
