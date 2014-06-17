@@ -15,7 +15,7 @@ m.so,m1,g,m.so,
 m.to,m1,g,m.to,
 m.lf,m1,g,m.lf,
 m.br,m1,g,m.br,
-m.to2,,,,
+m.to2,,,,Poorter says to ignore this column as it contains errors
 a.lf,b,m2,a.lf,
 ma.ilf,"b,m1",kg.m2,ma.ilf,
 a.ilf,b,cm2,a.ilf,
