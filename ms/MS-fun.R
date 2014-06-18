@@ -27,7 +27,7 @@ getMetadataMethods  <-  function(studyName) {
 }
 
 getPersonell  <-  function(studyName) {
-	pasteC(unique(readStudyFile(studyName, "studyContact.csv")$name), ', ')
+	readStudyFile(studyName, "studyContact.csv")[,"name", drop=TRUE]
 }
 
 getSiteHistory <-function(code){
@@ -92,82 +92,26 @@ class2Bdetails  <-  function(data) {
            	          metadataDesign=getMetadataDesign(unique(data$dataset)),
            	          collection='',
            	          lab=getMetadataMethods(unique(data$dataset)),
-           	          personell=getPersonell(unique(data$dataset)),
+           	          personell=pasteC(getPersonell(unique(data$dataset))),
            	          citation=baad$references$citation[baad$references$dataset==data$dataset[1]]
                  ))
 
 }
 
-numberOfPoints  <-  function(data, wanted) {
-	sum(apply(data[ , colnames(data) != 'dataset'], 2, function(x)length(x[!is.na(x)])))
-}
 
-expandData <-  function(data) {
-	if(data$duplicates > 1) {
-		newnames       <-  strsplit(data$contacts, ', ')[[1]]
-		data           <-  data[rep(1, data$duplicates), ]
-		data$contacts  <-  newnames
-		data
-	} else {
-		data
-	}
-}
-
-contributionColumns  <-  function(vardef) {
-	wanted  <-  unique(vardef$Variable[vardef$Type=='numeric'])
-	wanted[!(wanted %in% c('map', 'mat'))]
-}
-
-filterData4Contributions  <-  function(data, contributionCols) {
-	data[, c('dataset', contributionCols)]
-}
-
-listContacts  <-  function(data) {
-	daply(data,  .(dataset), function(x)getPersonell(unique(x$dataset)))
-}
-
-numberOfContacts  <-  function(data) {
-	sapply(data, function(x)length(strsplit(x, ',')[[1]]))
-}
-
-numberOfcontributions  <-  function(data) {
-	daply(data, .(dataset), numberOfPoints)
-}
-
-correctData  <-  function(data) {
-	ddply(data, .(study), expandData)
-}
-
-getContributions  <-  function(data, ...) {
-	sdata   <-  filterData4Contributions(data, ...)
-	conts   <-  listContacts(data)
-	dbles   <-  numberOfContacts(conts)
-	npts    <-  numberOfcontributions(sdata)
-
-	allPt   <-  data.frame(study=sort(unique(data$dataset)), contacts=conts, contribution=npts, duplicates=dbles, row.names=NULL, stringsAsFactors=FALSE)
-
-	correctedData  <-  correctData(allPt)
-	sort(tapply(correctedData$contribution, correctedData$contacts, sum), decreasing=TRUE)
-}
-
-lisOfAuthors  <-  function(alphabetical=TRUE, ...) {
-	wanted         <-  contributionColumns(...)
-	contributions  <-  getContributions(data, wanted)
-	firstAuthors   <-  c('Daniel Falster', 'Remko A. Duursma', 'Masae Ishihara', 'Diego R. Barneche', 'Rich FitzJohn', 'Angelica Vårhammar')
-	contributions  <-  contributions[!(names(contributions) %in% firstAuthors)]
-
-	getLastName  <-  function(authorNames) {
+getLastName  <-  function(authorNames) {
 		sapply(authorNames, function(x){
-									a <- strsplit(x,' ')[[1]]
+									a <- strsplit(x,' ', useBytes=TRUE)[[1]]
 									a[length(a)]
 							})
 	}
 
-	if(alphabetical) {
-		pasteC(c(firstAuthors, names(contributions)[order(getLastName(names(contributions)))]), ', ')
-	} else {
-		pasteC(c(firstAuthors, names(contributions)), ', ')
-	}
+lisOfAuthors  <-  function(data) {
+	firstAuthors   <-  c('Daniel Falster', 'Remko A. Duursma', 'Masae Ishihara', 'Diego R. Barneche', 'Rich FitzJohn', 'Angelica Vårhammar')
+	dataAuthors <- unique(do.call(c, lapply(unique(data$dataset), getPersonell)))
+
+	dataAuthors <- dataAuthors[!dataAuthors %in% firstAuthors]
+	pasteC(c(firstAuthors, dataAuthors[order(getLastName(dataAuthors))]), ', ')
 }
 
 

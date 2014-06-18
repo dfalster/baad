@@ -25,7 +25,7 @@ vars <- setdiff(var.def$Variable[var.def$Type == "numeric"], c("map","mat","lai"
 ```
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
-writeLines(paste("**List of Authors:**", lisOfAuthors(vardef=var.def)))
+writeLines(paste("**List of Authors:**", lisOfAuthors(baad$contact)))
 ```
 
 ## INTRODUCTION
@@ -128,7 +128,7 @@ writeLines(x[var.def$Variable])
 
 ```{r echo=FALSE, message=FALSE}
 
-thesevars <- setdiff(var.def$Variable[var.def$Type=="numeric"], 
+thesevars <- setdiff(var.def$Variable[var.def$Type=="numeric"],
                      c("map","mat","lai"))
 Labels <- capitalize(var.def$label[var.def$Variable %in% thesevars])
 
