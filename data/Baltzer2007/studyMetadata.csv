@@ -4,6 +4,6 @@ Leaf area,"Fresh leaves from each harvest were measured for area individual and 
 Stem cross sectional area,"Stem diameter measured at base."
 Height,"Total height measured along the stem, from base to apical bud."
 Biomass,"Seedlings were divided into roots, stems and leaves which were then oven dried for 5 days at 60 oC to constant weight and weighted."
-traits,"age (months), total height (cm), stem diameter at base (mm), leaf area (cm^2), total leaf mass (g), total root mass (g), stem mass (g), Single leaf area (cm^2), leaf mass per area (g/cm^2)."
+Traits,"age (months), total height (cm), stem diameter at base (mm), leaf area (cm^2), total leaf mass (g), total root mass (g), stem mass (g), Single leaf area (cm^2), leaf mass per area (g/cm^2)."
 Growth environment,"GH"
 Other variables,"In the final harvest fresh leaf area of leaves measured for gas-exchange was determined for calculation of leaf mass per area; Photon flux density (PFD) was measured using Hobo Weather Stations (Onset Computer, Bourne, Mass.)."

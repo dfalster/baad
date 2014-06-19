@@ -2,7 +2,7 @@ Topic, Description
 Sampling strategy, "In August and September of 2001, a total of 94 trees was selected for destructive sampling in close proximity to each of the study sites. Trees were selected to match the range in local density, age, size,
 and species composition corresponding to trees on the study plots and to be mostly free of A. americanum"
 Leaf area, "A random subsample of approximately 100 fresh needles was removed in
-proportion to age class representation on the sample branch. Samples were frozen until measured for projected area (A. grandis) or all-sided area (Pinus species)." 
+proportion to age class representation on the sample branch. Samples were frozen until measured for projected area (A. grandis) or all-sided area (Pinus species)."
 Stem cross sectional area,"From diameter outside bark at breast height (1.37 m), DBH (to the nearest 0.1 cm)"
 Height,"Total tree height measured to the nearest 0.01m"
 Crown area,"Crown diameter estimated from sample branches. The crown was divided into thirds, and basal
@@ -10,6 +10,4 @@ diameter, BD (nearest mm), and height of each live branch (nearest 0.01 m) were 
 branches that were free of A. americanum, and one interwhorl branch (A. grandis only), were selected at
 random from each crown third and removed by cutting flush with the bole."
 Biomass,"Observed foliage distribution was characterized on the measured plot trees by dividing the crown into 10 segments of equal length and summing the foliage within that segment using branch-level equations."
-traits,"Leaf mass per area was determined for a subsample of foliage as described above under Leaf Area."
-Growth environment,""
-Other variables,""
+Traits,"Leaf mass per area was determined for a subsample of foliage as described above under Leaf Area."

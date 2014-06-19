@@ -3,8 +3,5 @@ Sampling strategy,"One-hundred and nintey-one trees were felled, and their total
 Leaf area,"Leaf area for each stratum was calculated by multipling total leaf weight by the corresponding specific leaf area of subsampled leaves, and then the leaf area values of all of the strata were added to obtain leaf area per tree.  "
 Stem cross sectional area,"Stem diameter was measured at multiple points along the tree (0.0, 1/10 the height of the tree, 130 cm aboveground, just below the lowest living branch, and at 5.0 m intervals along the full height of the tree).  "
 Height,Height was measured as the vertical distance from the ground surface to the highest apex of each tree.
-Crown area,
 Biomass,"Trees were separated into stems, branches and leaves, and then weighed. Sub-samples of the total fresh weight were taken for fresh mass/dry mass estimates. The fresh biomass was converted into dry biomass estimates of stem, branches and leaves per tree using the respective dry/fresh mass ratios.   "
-traits,
 Growth environment,"Field, wild."
-Other variables,

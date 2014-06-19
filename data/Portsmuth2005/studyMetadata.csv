@@ -3,8 +3,6 @@ Sampling strategy,"2005 paper 'Biomass allocation and growth rates in Pinus sylv
 Leaf area,"Total leaf area for each needle age-class was further calculated as the total dry mass of the needles in a specific age class divided by the age-class specific estimate of LMA."
 Stem cross sectional area,"trunk diameter from soil level cm measured with caliper"
 Height,"trunk height cm from soil level to the trunk top"
-Crown area,
 Biomass,"ALL DRY MASS at least 48 H at 75oC"
-traits,"projected leaf area from above (cm2) - measured from photograph taken above the tree; projected leaf area from side (cm2) measured from the photograph taken from the side of the tree; projected trunk area from above (cm2)-measured from photograph taken above the tree; projected trunk area from side (cm2) measured from the photograph taken from the side of the tree; projected crown area from above (cm2) measured from photograph taken above the tree leaves and woody parts together; projected crown area from side (cm2) measured from the photograph taken from the side of the tree -leaves and woody parts together; coarse root N% - method described in paper."
+Traits,"projected leaf area from above (cm2) - measured from photograph taken above the tree; projected leaf area from side (cm2) measured from the photograph taken from the side of the tree; projected trunk area from above (cm2)-measured from photograph taken above the tree; projected trunk area from side (cm2) measured from the photograph taken from the side of the tree; projected crown area from above (cm2) measured from photograph taken above the tree leaves and woody parts together; projected crown area from side (cm2) measured from the photograph taken from the side of the tree -leaves and woody parts together; coarse root N% - method described in paper."
 Growth environment,"Field, wild"
-Other variables,
