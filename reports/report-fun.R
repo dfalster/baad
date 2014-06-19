@@ -3,7 +3,8 @@ library(maps, quietly = TRUE)
 library(mapdata, quietly = TRUE)
 suppressPackageStartupMessages(library(gdata))
 
-printAllStudyReports <- function(data = readRDS("../output/baad.rds"), studynames = unique(data$data$dataset),
+printAllStudyReports <- function(data = readRDS("../output/baad.rds"), 
+                                 studynames = unique(data$data$studyName),
     progressbar = TRUE, ...) {
     message("Generating ", length(studynames), " markdown reports.")
     if (progressbar) {
@@ -75,7 +76,7 @@ knitThis <- function(RmdFile = "reportmd.Rmd", path = "output/report-per-study",
 }
 
 extractStudy <- function(alldata, study) {
-    for (var in c("data", "contact", "references")) alldata[[var]] <- alldata[[var]][alldata[[var]]$dataset ==
+    for (var in c("data", "contact", "references")) alldata[[var]] <- alldata[[var]][alldata[[var]]$studyName ==
         study, ]
 
     alldata[["bib"]] <- alldata[["bib"]][[study]]
@@ -131,12 +132,12 @@ makePlot <- function(data, subset, xvar, yvar, xlab, ylab, main = "", maincol = 
 prepMapInfo <- function(data, study = NA) {
 
     if (!is.na(study))
-        data <- data[data$dataset %in% study, ]
+        data <- data[data$studyName %in% study, ]
 
     # Remove duplicate locations
-    keep <- c("dataset", "latitude", "longitude", "location")
+    keep <- c("studyName", "latitude", "longitude", "location")
 
-    data <- data[!duplicated(paste0(data$dataset, ";", data$latitude, ";", data$longitude,
+    data <- data[!duplicated(paste0(data$studyName, ";", data$latitude, ";", data$longitude,
         ";", data$location)), keep]
 
     i <- !is.na(data$latitude) | !is.na(data$longitude)
