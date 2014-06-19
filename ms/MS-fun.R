@@ -129,7 +129,7 @@ getLastName  <-  function(authorNames) {
 	}
 
 lisOfAuthors  <-  function(data) {
-	firstAuthors   <-  c('Daniel Falster', 'Remko A. Duursma', 'Masae Ishihara', 'Diego R. Barneche', 'Rich FitzJohn', 'Angelica Vårhammar')
+	firstAuthors   <-  c('Daniel S. Falster', 'Remko A. Duursma', 'Masae Ishihara', 'Diego R. Barneche', 'Rich G. FitzJohn', 'Angelica Vårhammar')
 	dataAuthors <- unique(do.call(c, lapply(unique(data$studyName), getPersonell)))
 
 	dataAuthors <- dataAuthors[!dataAuthors %in% firstAuthors]
