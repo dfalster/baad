@@ -1,6 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
 "Species",NA,NA,"species",NA
-"Site",NA,NA,NA,NA
+"Site",NA,NA,"location",NA
 "Age (yr)",NA,"yr","age",NA
 "D (cm)","e","cm","d.bh",NA
 "D0.1 (cm)","i","cm","d.ba",NA

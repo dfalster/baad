@@ -2,8 +2,9 @@ lookupVariable,lookupValue,newVariable,newValue,source
 NA,NA,vegetation,TempF,from paper[A. Hagihara]
 NA,NA,pft,EG,from paper[A. Hagihara]
 NA,NA,growingCondition,FW,from paper[A. Hagihara]
-NA,NA,location,"Aichi Prefecture, central Japan",from paper[A. Hagihara]
-NA,NA,latitude,35,from paper[A. Hagihara]
-NA,NA,longitude,137,from paper[A. Hagihara]
-NA,NA,family,Cupressaceae,from paper[A. Hagihara]
+location,Nagoya,latitude,35,from paper[A. Hagihara]
+location,Nagoya,longitude,137,from paper[A. Hagihara]
+location,Nagoya,location,"Nagoya university forest, Aichi Prefecture, central Japan",from paper[A. Hagihara]
+location,Japan-Inabu Nagoya University Forest-,latitude,35.2,from paper[A. Hagihara]
+location,Japan-Inabu Nagoya University Forest-,longitude,137.57,from paper[A. Hagihara]
 ,,h.bh,1.3,default
