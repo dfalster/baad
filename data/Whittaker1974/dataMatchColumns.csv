@@ -9,8 +9,8 @@
 "species",NA,"-","species",NA
 "family",NA,"-","family",NA
 "pft",NA,"-","pft",NA
-"age",NA,"yr","age",NA
-"h.t",NA,"m","h.t",NA
+"age","?","yr","age",NA
+"h.t","?","m","h.t",NA
 "d.bh","e","m","d.bh",NA
 "m.lf","m5","kg","m.lf",NA
 "m.st","m5","kg","m.st",NA

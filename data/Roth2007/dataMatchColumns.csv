@@ -1,21 +1,21 @@
 "var_in","method","unit_in","var_out","notes"
 "Site",NA,NA,"location",NA
 "speciesfix",NA,NA,"species",NA
-"Age yrs",NA,"yr","age",NA
+"Age yrs","?","yr","age",NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "Veg Type",NA,NA,"vegetation",NA
 "Functional type",NA,NA,"pft",NA
 "grouping",NA,"-","grouping",NA
-"DBH",NA,"cm","d.bh",NA
-"CW",NA,"cm","d.cr",NA
-"GLD",NA,"cm","d.ba",NA
-"HT",NA,"m","h.t",NA
-"Foliage",NA,"kg","m.lf",NA
-"Branches",NA,"kg","m.br",NA
-"Bole",NA,"kg","m.st",NA
-"Bark",NA,"kg","m.sb",NA
-"coarseroot",NA,"kg","m.rc",NA
-"HCB",NA,"m","h.c",NA
-"SNA",NA,"cm2.g","ma.ilf",NA
+"DBH","?","cm","d.bh",NA
+"CW","?","cm","d.cr",NA
+"GLD","?","cm","d.ba",NA
+"HT","?","m","h.t",NA
+"Foliage","?","kg","m.lf",NA
+"Branches","?","kg","m.br",NA
+"Bole","?","kg","m.st",NA
+"Bark","?","kg","m.sb",NA
+"coarseroot","?","kg","m.rc",NA
+"HCB","?","m","h.c",NA
+"SNA","?","cm2.g","ma.ilf",NA
 "LEAFAREA","r2","m2","a.lf",NA

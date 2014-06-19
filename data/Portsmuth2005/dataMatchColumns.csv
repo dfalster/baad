@@ -6,9 +6,9 @@
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "trunk diameter from soil level cm",NA,"cm",NA,NA
-"trunk diameter from soil level m",NA,"m","d.ba",NA
+"trunk diameter from soil level m","?","m","d.ba",NA
 "trunk height cm",NA,"cm",NA,NA
-"trunk height m",NA,"m","h.t",NA
+"trunk height m","?","m","h.t",NA
 "sub ground trunk length cm",NA,NA,NA,NA
 "coarse root length cm",NA,NA,NA,NA
 "longest root cm",NA,NA,NA,NA

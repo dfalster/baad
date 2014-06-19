@@ -1,8 +1,8 @@
 "var_in","method","unit_in","var_out","notes"
-"Dia. (mm)",NA,"mm","d.ba",NA
-"D.B.H.(mm)",NA,"mm","d.bh",NA
-"Hieght (cm)",NA,"cm","h.t",NA
-"Branch (cm)",NA,"cm","h.c",NA
+"Dia. (mm)","?","mm","d.ba",NA
+"D.B.H.(mm)","?","mm","d.bh",NA
+"Hieght (cm)","?","cm","h.t",NA
+"Branch (cm)","?","cm","h.c",NA
 "Foliage","m1","g","m.lf",NA
 "Branch","m1","g","m.br",NA
 "Dead Branch",NA,NA,NA,NA

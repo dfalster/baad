@@ -11,5 +11,5 @@
 "Mean leaf angle (deg)",NA,NA,NA,NA
 "STARbar (m2.m2)",NA,NA,NA,NA
 "Crown Volume (m3)",NA,NA,NA,NA
-"Crown surface area (m2)",NA,"m2","a.cs",NA
-"Crown width (m)",NA,"m","d.cr",NA
+"Crown surface area (m2)","?","m2","a.cs",NA
+"Crown width (m)","?","m","d.cr",NA

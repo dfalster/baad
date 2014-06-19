@@ -1,9 +1,9 @@
 "var_in","method","unit_in","var_out","notes"
-"Dbh_2004",NA,"cm","d.bh",NA
-"tree_ht",NA,"m","h.t",NA
-"Fork_ht",NA,"m","h.c",NA
-"crown_depth",NA,"m","c.d",NA
-"cr_width",NA,"m","d.cr",NA
+"Dbh_2004","?","cm","d.bh",NA
+"tree_ht","?","m","h.t",NA
+"Fork_ht","?","m","h.c",NA
+"crown_depth","?","m","c.d",NA
+"cr_width","?","m","d.cr",NA
 "crown_sil_area","a","m2","a.cp",NA
 "Tree_no",NA,NA,NA,NA
 "Family",NA,NA,NA,NA

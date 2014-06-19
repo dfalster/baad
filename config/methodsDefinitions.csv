@@ -18,6 +18,7 @@ p,scaling up from branches to crown
 q,core sample at DBH
 r,Conifers : projected leaf area
 r2,Conifers : all-sided leaf area
+r3,Conifers : half all-sided leaf area
 s,Adelaide Technique = visually count units then take sample of units and calc area and scale up
 t,scaling from branch to canopy
 u,at base of crown

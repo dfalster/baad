@@ -2,16 +2,16 @@
 "Tree",NA,NA,NA,NA
 "species",NA,"-","species",NA
 "family",NA,"-","family",NA
-"light conditions",NA,NA,"light","see dataNew"
+"light conditions","?",NA,"light","see dataNew"
 "NUTRITION",NA,NA,NA,NA
 "growing year",NA,NA,NA,NA
-"trunk height cm",NA,"cm","h.t",NA
+"trunk height cm","?","cm","h.t",NA
 "trunk dry mass g","m5","g","m.st",NA
 "Coarse root length cm",NA,NA,NA,NA
 "coarse root dry mass g","m5","g","m.rc",NA
 "fine root length cm",NA,NA,NA,NA
 "fine root dry mass g","m5","g","m.rf",NA
-"trunk diameter at soil level cm",NA,"cm","d.ba",NA
+"trunk diameter at soil level cm","?","cm","d.ba",NA
 "leaves fresh mass g","m6","g",NA,NA
 "total leaves dry mass g","m5","g","m.lf",NA
 "total leaves area cm 2","b,1","cm2","a.lf",NA

@@ -1,19 +1,19 @@
 "var_in","method","unit_in","var_out","notes"
-"Age",NA,"yr","age",NA
+"Age","?","yr","age",NA
 "LeafArea","c,1","cm2","a.lf",NA
-"Diam at colar height",NA,"cm","d.ba",NA
-"CrownWidth",NA,"cm","d.cr",NA
-"h.t",NA,"cm","h.t",NA
-"h.c",NA,"cm","h.c",NA
+"Diam at colar height","?","cm","d.ba",NA
+"CrownWidth","?","cm","d.cr",NA
+"h.t","?","cm","h.t",NA
+"h.c","?","cm","h.c",NA
 "m.lf","m1","g","m.lf",NA
 "m.st","m1","g","m.st",NA
 "m.br","m1","g","m.br",NA
 "m.rf","m1","g","m.rf",NA
 "m.rc","m1","g","m.rc",NA
 "m.rt","m1","g","m.rt",NA
-"lf.ma",NA,"g.m2","ma.ilf",NA
-"d.st",NA,"kg.l","r.st",NA
-"n.lf",NA,"g.g","n.lf",NA
+"lf.ma","?","g.m2","ma.ilf",NA
+"d.st","?","kg.l","r.st",NA
+"n.lf","?","g.g","n.lf",NA
 "Light","li3","-","light",NA
 "Contributor",NA,NA,NA,NA
 "Family",NA,NA,NA,NA

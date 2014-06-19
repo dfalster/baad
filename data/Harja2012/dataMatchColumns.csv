@@ -1,10 +1,10 @@
 "var_in","method","unit_in","var_out","notes"
-"Wd",NA,"kg.m3","r.st",NA
+"Wd","?","kg.m3","r.st",NA
 "Cw_Avg","a","m","d.cr",NA
-"Hcb",NA,"m","h.c",NA
+"Hcb","?","m","h.c",NA
 "CP_Idx","cpidx","-","light",NA
-"Dbh",NA,"cm","d.bh",NA
-"Height",NA,"m","h.t",NA
+"Dbh","?","cm","d.bh",NA
+"Height","?","m","h.t",NA
 "Location",NA,NA,"location",NA
 "Indonesian_name",NA,NA,NA,NA
 "Species",NA,NA,"species",NA

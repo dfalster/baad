@@ -1,20 +1,20 @@
 "var_in","method","unit_in","var_out","notes"
-"age",NA,"yr","age",NA
-"H",NA,"m","h.t",NA
-"dbh",NA,"cm","d.bh",NA
+"age","?","yr","age",NA
+"H","?","m","h.t",NA
+"dbh","?","cm","d.bh",NA
 "a.ssbh","j","cm2","a.ssbh",NA
 "a.lf","c,1,2","m2","a.lf",NA
-"m.lf",NA,"kg","m.lf",NA
-"LMA",NA,"kg.m2","ma.ilf",NA
-"RHO",NA,"kg.m3","r.st",NA
+"m.lf","?","kg","m.lf",NA
+"LMA","?","kg.m2","ma.ilf",NA
+"RHO","?","kg.m3","r.st",NA
 "m.tot","m1","kg","m.so",NA
 "m.ht","m1","kg","m.sh",NA
 "m.sa","m1","kg","m.ss",NA
 "m.ba","m1","kg","m.sb",NA
 "m.st","m1","kg","m.st",NA
-"N.sa",NA,"per","n.ss",NA
-"N.ht",NA,"per","n.sh",NA
-"N.ba",NA,"per","n.sb",NA
-"N.lf",NA,"kg.kg","n.lf","transformed the original percentage to proportion in R"
+"N.sa","?","per","n.ss",NA
+"N.ht","?","per","n.sh",NA
+"N.ba","?","per","n.sb",NA
+"N.lf","?","kg.kg","n.lf","transformed the original percentage to proportion in R"
 "spp",NA,NA,"species",NA
 "Filter",NA,NA,NA,NA

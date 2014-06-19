@@ -8,17 +8,17 @@
 "class",NA,NA,NA,NA
 "DBH","e","cm","d.bh",NA
 "AGB","m1, m3, j","kg","m.so",NA
-"Ht",NA,"m","h.t",NA
+"Ht","?","m","h.t",NA
 "source",NA,NA,NA,NA
 "CD",NA,NA,NA,NA
 "BD",NA,NA,NA,NA
-"crown height",NA,"m","h.c",NA
+"crown height","?","m","h.c",NA
 "height below branch",NA,NA,NA,NA
 "volume",NA,NA,NA,NA
 "biomass wood","m1,m3,j","kg","m.st",NA
 "biomass bark","m1","kg","m.sb",NA
 "biomass branch","m1,m3,j","kg","m.br",NA
 "biomass leaf","m1","kg","m.lf",NA
-"leaf area",NA,"m2","a.lf",NA
+"leaf area","?","m2","a.lf",NA
 "Sample",NA,NA,NA,NA
 "Soil",NA,NA,NA,NA

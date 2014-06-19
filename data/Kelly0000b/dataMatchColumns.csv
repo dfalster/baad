@@ -15,8 +15,8 @@
 "Coarse root mass (g)","m1","g","m.rc",NA
 "Fine root mass (g)","m1","g","m.rf",NA
 "Whole root mass (g)","m1","g","m.rt",NA
-"Height (m)",NA,"m","h.t",NA
-"Basal diameter (mm)",NA,"mm","d.ba",NA
+"Height (m)","?","m","h.t",NA
+"Basal diameter (mm)","?","mm","d.ba",NA
 "Total biomass (Leaves, stems and roots (g))","m1","g","m.to",NA
 "Root_shoot ratio (g.g)",NA,NA,NA,NA
 "Crown width (m)","a","m","d.cr",NA

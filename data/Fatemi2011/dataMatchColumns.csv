@@ -9,10 +9,10 @@
 "species",NA,"-","species",NA
 "family",NA,"-","family",NA
 "ID",NA,NA,NA,NA
-"stand age",NA,"yr","age",NA
+"stand age","?","yr","age",NA
 "d.ba","i","m","d.ba",NA
 "d.bh","e","m","d.bh",NA
-"h.t",NA,"m","h.t",NA
+"h.t","?","m","h.t",NA
 "m.so","m1,j","kg","m.so",NA
 "m.s.t.",NA,NA,NA,NA
 "m.br","m1,j","kg","m.br",NA

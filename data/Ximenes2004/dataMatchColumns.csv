@@ -3,16 +3,16 @@
 "Tree No",NA,NA,NA,NA
 "Log products",NA,NA,NA,NA
 "Species",NA,NA,"species",NA
-"DBH (cm)",NA,"cm","d.bh",NA
+"DBH (cm)","?","cm","d.bh",NA
 "Tree length (m)",NA,NA,NA,NA
 "Stump height (cm)",NA,NA,NA,NA
 "Stump diameter (cm)",NA,NA,NA,NA
 "Stump weight (kg)",NA,NA,NA,NA
 "Stump oven-dry weight (kg)",NA,NA,NA,NA
 "Bark weight (kg)",NA,NA,NA,NA
-"Bark oven-dry weight (kg)",NA,"kg","m.sb",NA
+"Bark oven-dry weight (kg)","?","kg","m.sb",NA
 "Wood weight (kg)",NA,NA,NA,NA
 "Wood oven-dry weight (kg)",NA,NA,NA,NA
 "Tree weight (kg)",NA,NA,NA,NA
-"Tree oven-dry weight (kg)",NA,"kg","m.so",NA
-"h.t",NA,"m","h.t",NA
+"Tree oven-dry weight (kg)","?","kg","m.so",NA
+"h.t","?","m","h.t",NA

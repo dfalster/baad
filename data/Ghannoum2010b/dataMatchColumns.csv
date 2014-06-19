@@ -5,10 +5,10 @@
 "grouping",NA,"-","grouping",NA
 "Potnum",NA,NA,NA,NA
 "LA","b,o,1","cm2","a.lf",NA
-"Height",NA,"cm","h.t",NA
+"Height","?","cm","h.t",NA
 "Basaldia","d","mm","d.ba",NA
 "LeafDW","m1","g","m.lf",NA
 "StemDW","m1","g","m.st",NA
 "RootDW","m1","g","m.rt",NA
-"LMA",NA,"g.m2","ma.ilf",NA
+"LMA","?","g.m2","ma.ilf",NA
 "LAR",NA,NA,NA,NA

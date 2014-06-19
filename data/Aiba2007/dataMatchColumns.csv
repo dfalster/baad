@@ -3,12 +3,12 @@
 "total stem mass (g)",NA,NA,NA,NA
 "branch mass (g)","m0","g","m.br",NA
 "total leaf mass (g)","m0","g","m.lf",NA
-"total leaf area (cm^2)",NA,"cm2","a.lf",NA
+"total leaf area (cm^2)","?","cm2","a.lf",NA
 "individual leaf area (cm^2)","b","cm2","a.ilf",NA
-"height (cm)",NA,"cm","h.t",NA
-"crown area (cm^2)",NA,"cm2","a.cp",NA
-"crown height (cm)",NA,"cm","h.c",NA
-"base diameter (mm)",NA,"mm","d.ba",NA
+"height (cm)","?","cm","h.t",NA
+"crown area (cm^2)","?","cm2","a.cp",NA
+"crown height (cm)","?","cm","h.c",NA
+"base diameter (mm)","?","mm","d.ba",NA
 "genus",NA,NA,NA,NA
 "species",NA,"-","species",NA
 "branch mass + stem mass (g)","m0","g","m.st",NA

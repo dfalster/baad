@@ -1,8 +1,8 @@
 "var_in","method","unit_in","var_out","notes"
-"Diam",NA,"mm","d.ba",NA
-"Ht",NA,"cm","h.t",NA
-"SF",NA,"cm2","a.lf",NA
-"SLA",NA,"m2.kg","ma.ilf",NA
+"Diam","?","mm","d.ba",NA
+"Ht","?","cm","h.t",NA
+"SF","?","cm2","a.lf",NA
+"SLA","?","m2.kg","ma.ilf",NA
 "Lf","m2","g","m.lf",NA
 "Stem","m2","g","m.st",NA
 "Root","m2","g","m.rt",NA

@@ -9,7 +9,7 @@
 "family",NA,"-","family",NA
 "individual",NA,NA,NA,NA
 "pft",NA,"-","pft",NA
-"age (yr)",NA,"yr","age",NA
+"age (yr)","?","yr","age",NA
 "a.lf","b","cm2","a.lf",NA
 "a.stba","i","mm2","a.stba",NA
 "a.stbc","u","mm2","a.stbc",NA
@@ -24,7 +24,7 @@
 "m.to","m1","g","m.to",NA
 "a.ilf","a1","cm2","a.ilf",NA
 "ma.ilf","a1","g.m2","ma.ilf",NA
-"r.st",NA,"g.cm3","r.st",NA
+"r.st","?","g.cm3","r.st",NA
 "growingCondition",NA,"-","growingCondition",NA
 "status",NA,"-","status",NA
-"light",NA,"-","light",NA
+"light","?","-","light",NA

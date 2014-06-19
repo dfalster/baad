@@ -8,10 +8,10 @@
 "D30 (cm)",NA,NA,NA,NA
 "D0.1 (cm)","i",NA,NA,NA
 "DB (cm)",NA,NA,NA,NA
-"H (m)",NA,"m","h.t",NA
+"H (m)","?","m","h.t",NA
 "HBut (m)",NA,NA,NA,NA
-"HB (m)",NA,"m","h.c",NA
-"R (m)",NA,"m","d.cr",NA
+"HB (m)","?","m","h.c",NA
+"R (m)","?","m","d.cr",NA
 "V (m3)",NA,NA,NA,NA
 "WS (kg)","m5","kg","m.st",NA
 "WB (kg)","m5","kg","m.br",NA

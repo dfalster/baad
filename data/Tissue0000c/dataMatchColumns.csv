@@ -6,7 +6,7 @@
 "grouping",NA,"-","grouping",NA
 "StemDW","m1","g","m.st",NA
 "LeafDW","m1","g","m.lf",NA
-"LMA",NA,"g.m2","ma.ilf",NA
-"Nmass",NA,"g.g","n.lf",NA
+"LMA","?","g.m2","ma.ilf",NA
+"Nmass","?","g.g","n.lf",NA
 "Temp",NA,NA,NA,NA
 "CO2",NA,NA,NA,NA

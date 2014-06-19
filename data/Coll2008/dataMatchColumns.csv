@@ -1,14 +1,14 @@
 "var_in","method","unit_in","var_out","notes"
 "individual.leaf.area.cm2",NA,NA,NA,NA
 "specific.leaf.area.cm2/g",NA,NA,NA,NA
-"diameter.cm",NA,"cm","d.ba","10cm from the ground"
-"height.cm",NA,"cm","h.t",NA
-"branch.biomass.g",NA,"g","m.br",NA
-"total.leaf.biomass.g",NA,"g","m.lf",NA
-"total.aboveground.biomass.g",NA,"g","m.so",NA
-"total.belowground.biomass.g",NA,"g","m.rt",NA
-"total.plant.biomass.g",NA,"g","m.to",NA
-"stem.biomass.g",NA,"g","m.st",NA
+"diameter.cm","?","cm","d.ba","10cm from the ground"
+"height.cm","?","cm","h.t",NA
+"branch.biomass.g","?","g","m.br",NA
+"total.leaf.biomass.g","?","g","m.lf",NA
+"total.aboveground.biomass.g","?","g","m.so",NA
+"total.belowground.biomass.g","?","g","m.rt",NA
+"total.plant.biomass.g","?","g","m.to",NA
+"stem.biomass.g","?","g","m.st",NA
 "species",NA,"-","species",NA
 "tree",NA,NA,NA,NA
 "sampled.leaves.#",NA,NA,NA,NA

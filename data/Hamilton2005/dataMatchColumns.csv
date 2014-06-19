@@ -4,8 +4,8 @@
 "No. of stems on tree",NA,NA,NA,NA
 "dbh (cm)","e","cm","d.bh",NA
 "D30 (cm)",NA,NA,NA,NA
-"Height (m)",NA,"m","h.t",NA
-"Width (m)",NA,"m","d.cr",NA
+"Height (m)","?","m","h.t",NA
+"Width (m)","?","m","d.cr",NA
 "Stem wood (kg)",NA,NA,NA,NA
 "Stem bark (kg)",NA,NA,NA,NA
 "Leaves (kg)","m5","kg","m.lf",NA

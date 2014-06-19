@@ -4,7 +4,7 @@
 "family",NA,"-","family",NA
 "pft",NA,"-","pft",NA
 "growth period",NA,NA,NA,NA
-"age",NA,"yr","age",NA
+"age","?","yr","age",NA
 "growingCondition",NA,"-","growingCondition",NA
 "light","li3","-","light",NA
 "plant #",NA,NA,NA,NA
@@ -19,10 +19,10 @@
 "a.lf","b","m2","a.lf",NA
 "ma.ilf","b,m1","kg.m2","ma.ilf",NA
 "a.ilf","b","cm2","a.ilf",NA
-"c.d",NA,"cm","c.d",NA
-"h.t",NA,"cm","h.t",NA
+"c.d","?","cm","c.d",NA
+"h.t","?","cm","h.t",NA
 "d.ba","i","cm","d.ba",NA
 "d.cr","a","cm","d.cr",NA
 "d.cr2",NA,NA,NA,NA
-"a.cp",NA,"m2","a.cp",NA
-"r.st",NA,"g.cm3","r.st",NA
+"a.cp","?","m2","a.cp",NA
+"r.st","?","g.cm3","r.st",NA
