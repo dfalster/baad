@@ -1,14 +1,14 @@
 "var_in","method","unit_in","var_out","notes"
-"DBH..Diameter.at.1.3m.height.","","cm","d.bh",NA
-"Tree.Heigh","","m","h.t",NA
+"DBH..Diameter.at.1.3m.height.",NA,"cm","d.bh",NA
+"Tree.Heigh",NA,"m","h.t",NA
 "Stem.weight","m0","kg","m.st",NA
 "Root.weight","m0","kg","m.rt",NA
 "Branch.weight","m0","kg","m.br",NA
 "Leaf.weight","m0","kg","m.lf",NA
 "Leaf.area","b,1","m2","a.lf",NA
 "crown.projection.area.calculated.by.crown.diameter..A.B","z","m2","a.cp",NA
-"crown.diameter.A","","m","d.cr",NA
-"crown.diameter.B","","m",NA,NA
+"crown.diameter.A",NA,"m","d.cr",NA
+"crown.diameter.B",NA,"m",NA,NA
 "hinoki..Chamaecyparis.obtusa.",NA,NA,NA,NA
 "clear.bole.length.",NA,NA,NA,NA
 "Diameter.at.clear.bole.length",NA,NA,NA,NA
@@ -16,4 +16,4 @@
 "Root.weight.fresh",NA,NA,NA,NA
 "Branch.weight.fresh",NA,NA,NA,NA
 "Leaf.weight.fresh",NA,NA,NA,NA
-status,,,,
+"status",NA,"-","status",NA

@@ -1,81 +1,81 @@
-var_in,method,unit_in,var_out,notes
-plant nr,,,,
-species,,,species,
-family,,,family,
-growth location,,,location,
-latitude,,,latitude,
-longitude,,,longitude,
-trunk diameter from soil level cm,,cm,,
-trunk diameter from soil level m,,m,d.ba,
-trunk height cm,,cm,,
-trunk height m,,m,h.t,
-sub ground trunk length cm,,,,
-coarse root length cm,,,,
-longest root cm,,,,
-longest root m,,,,
-age years,,,,
-above ground woody dry mass g,m5,g,m.st,
-total needles mass g,m5,g,m.lf,
-cone mass g,m5,g,,
-coarse root dry mass g,m5,g,m.rc,
-fine root dry mass g,m5,g,m.rf,
-total root dry mass g,m5,g,m.rt,
-above ground total dry mass g,m5,g,m.so,
-projected leaf area from above (cm2),,,,
-projected leaf area from side (cm2),,,,
-projected trunk area from above (cm2),,,,
-projected trunk area from side(cm2),,,,
-projected crone area from above (cm2),,,,
-projected cone area from side (cm2),,,,
-coarse root N%,m5,g.g,n.rc,
-I year needles N%,m5,g.g,,
-II year needles N%,m5,g.g,,
-III year needles N%,m5,g.g,n.lf,
-trunk N%,m5,g.g,,
-weighed average N%,m5,g.g,,
-this year seedling mass,m5,g,,
-last year seedling mas,m5,g,,
-2 years ago seedling mass,m5,g,,
-total needle area mm2,"b,r,1",mm2,,
- total needle area cm2( mm /100),"b,r,1",cm2,,
-total needle area m2 (mm / 1000000),"b,r,1",m2,a.lf,
-total dry mass g,m5,g,m.to,
-LMA g m-2,"b,r,1,m5",g.m2,ma.ilf,
-S/R kg kg-1,,,,
-LAR m2 kg-1,,,,
-LWR kg kg-1,,,,
-SWR kg kg -1,,,,
-RWR g g-1,,,,
-fine root/ coarse root kg kg-1,,,,
-RGR 1 statistika tabelis,,,,
-RGR2 statistika tabelis,,,,
-FISH EYE PICS,,,,
-pooripaev,,,,
-pooripaev +30,,,,
-pooripaev +60,,,,
-diffuse,,,,
-1? M=Iba*(Ms+Mcr*(Mcr/Mtuvi)),,,,
-2? M=Iba*(Ms+Mcr*(Mcr/Mtuvi)),,,,
-3? M=Iba*(Ms+Mcr*(Mcr/Mtuvi)),,,,
-1 2 3 mean? M=Iba*(Mtuvi+Mjjuur/Mtuvi),,,,
-1 ?Ms=Iba*Ms,,,,
-2 ?Ms=Iba*Ms,,,,
-3 ?Ms=Iba*Ms,,,,
-1 2 3 mean ?Ms=Iba*Ms,,,,
-RGR AASTA KOHTA Ln ((Ms+Mr)/aastatega)),,,,
-RGR=LN (Mr+Ms)-Ln (Mr+Ms-?M1),,,,
-RGR=LN (Mr+Ms)-Ln (Mr+Ms-?M2),,,,
-RGR=LN (Mr+Ms)-Ln (Mr+Ms-?M3),,,,
-RGR=LN (Mr+Ms)-Ln (Mr+Ms-?M1 2 3 mean),,,,
-RGR=Ln Ms-Ln (Ms-?Ms1),,,,
-RGR=Ln Ms-Ln (Ms-?Ms2),,,,
-RGR=Ln Ms-Ln (Ms-?Ms3),,,,
-RGR=Ln Ms-Ln (Ms-?Ms1 2 3 mean),,,,
-LA (Ml/Ml+?M1),,,,
-LA (Ml/Ml+?M2),,,,
-LA (Ml/Ml+?M3),,,,
-LA (Ml/Ml+?M1 2 3 mean),,,,
-Naverage in LEAVES N %,,,,
-King artikkel 2003,,,,
-King artikkel 2003,,,,
-average 1 needle area: average of 4 year needles each year 5 needles average mm2,,,,
+"var_in","method","unit_in","var_out","notes"
+"plant nr",NA,NA,NA,NA
+"species",NA,"-","species",NA
+"family",NA,"-","family",NA
+"growth location",NA,NA,"location",NA
+"latitude",NA,"deg","latitude",NA
+"longitude",NA,"deg","longitude",NA
+"trunk diameter from soil level cm",NA,"cm",NA,NA
+"trunk diameter from soil level m",NA,"m","d.ba",NA
+"trunk height cm",NA,"cm",NA,NA
+"trunk height m",NA,"m","h.t",NA
+"sub ground trunk length cm",NA,NA,NA,NA
+"coarse root length cm",NA,NA,NA,NA
+"longest root cm",NA,NA,NA,NA
+"longest root m",NA,NA,NA,NA
+"age years",NA,NA,NA,NA
+"above ground woody dry mass g","m5","g","m.st",NA
+"total needles mass g","m5","g","m.lf",NA
+"cone mass g","m5","g",NA,NA
+"coarse root dry mass g","m5","g","m.rc",NA
+"fine root dry mass g","m5","g","m.rf",NA
+"total root dry mass g","m5","g","m.rt",NA
+"above ground total dry mass g","m5","g","m.so",NA
+"projected leaf area from above (cm2)",NA,NA,NA,NA
+"projected leaf area from side (cm2)",NA,NA,NA,NA
+"projected trunk area from above (cm2)",NA,NA,NA,NA
+"projected trunk area from side(cm2)",NA,NA,NA,NA
+"projected crone area from above (cm2)",NA,NA,NA,NA
+"projected cone area from side (cm2)",NA,NA,NA,NA
+"coarse root N%","m5","g.g","n.rc",NA
+"I year needles N%","m5","g.g",NA,NA
+"II year needles N%","m5","g.g",NA,NA
+"III year needles N%","m5","g.g","n.lf",NA
+"trunk N%","m5","g.g",NA,NA
+"weighed average N%","m5","g.g",NA,NA
+"this year seedling mass","m5","g",NA,NA
+"last year seedling mas","m5","g",NA,NA
+"2 years ago seedling mass","m5","g",NA,NA
+"total needle area mm2","b,r,1","mm2",NA,NA
+"total needle area cm2( mm /100)","b,r,1","cm2",NA,NA
+"total needle area m2 (mm / 1000000)","b,r,1","m2","a.lf",NA
+"total dry mass g","m5","g","m.to",NA
+"LMA g m-2","b,r,1,m5","g.m2","ma.ilf",NA
+"S/R kg kg-1",NA,NA,NA,NA
+"LAR m2 kg-1",NA,NA,NA,NA
+"LWR kg kg-1",NA,NA,NA,NA
+"SWR kg kg -1",NA,NA,NA,NA
+"RWR g g-1",NA,NA,NA,NA
+"fine root/ coarse root kg kg-1",NA,NA,NA,NA
+"RGR 1 statistika tabelis",NA,NA,NA,NA
+"RGR2 statistika tabelis",NA,NA,NA,NA
+"FISH EYE PICS",NA,NA,NA,NA
+"pooripaev",NA,NA,NA,NA
+"pooripaev +30",NA,NA,NA,NA
+"pooripaev +60",NA,NA,NA,NA
+"diffuse",NA,NA,NA,NA
+"1? M=Iba*(Ms+Mcr*(Mcr/Mtuvi))",NA,NA,NA,NA
+"2? M=Iba*(Ms+Mcr*(Mcr/Mtuvi))",NA,NA,NA,NA
+"3? M=Iba*(Ms+Mcr*(Mcr/Mtuvi))",NA,NA,NA,NA
+"1 2 3 mean? M=Iba*(Mtuvi+Mjjuur/Mtuvi)",NA,NA,NA,NA
+"1 ?Ms=Iba*Ms",NA,NA,NA,NA
+"2 ?Ms=Iba*Ms",NA,NA,NA,NA
+"3 ?Ms=Iba*Ms",NA,NA,NA,NA
+"1 2 3 mean ?Ms=Iba*Ms",NA,NA,NA,NA
+"RGR AASTA KOHTA Ln ((Ms+Mr)/aastatega))",NA,NA,NA,NA
+"RGR=LN (Mr+Ms)-Ln (Mr+Ms-?M1)",NA,NA,NA,NA
+"RGR=LN (Mr+Ms)-Ln (Mr+Ms-?M2)",NA,NA,NA,NA
+"RGR=LN (Mr+Ms)-Ln (Mr+Ms-?M3)",NA,NA,NA,NA
+"RGR=LN (Mr+Ms)-Ln (Mr+Ms-?M1 2 3 mean)",NA,NA,NA,NA
+"RGR=Ln Ms-Ln (Ms-?Ms1)",NA,NA,NA,NA
+"RGR=Ln Ms-Ln (Ms-?Ms2)",NA,NA,NA,NA
+"RGR=Ln Ms-Ln (Ms-?Ms3)",NA,NA,NA,NA
+"RGR=Ln Ms-Ln (Ms-?Ms1 2 3 mean)",NA,NA,NA,NA
+"LA (Ml/Ml+?M1)",NA,NA,NA,NA
+"LA (Ml/Ml+?M2)",NA,NA,NA,NA
+"LA (Ml/Ml+?M3)",NA,NA,NA,NA
+"LA (Ml/Ml+?M1 2 3 mean)",NA,NA,NA,NA
+"Naverage in LEAVES N %",NA,NA,NA,NA
+"King artikkel 2003",NA,NA,NA,NA
+"King artikkel 2003",NA,NA,NA,NA
+"average 1 needle area: average of 4 year needles each year 5 needles average mm2",NA,NA,NA,NA

@@ -1,6 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
-"Dbh","","cm","d.bh",NA
-"Total_height","","m","h.t",NA
+"Dbh",NA,"cm","d.bh",NA
+"Total_height",NA,"m","h.t",NA
 "Sapwood_area","j","cm2","a.ssbh",NA
 "Leaf_area","r,c,t","m2","a.lf",NA
 "Branches","m5","kg","m.br",NA
@@ -9,9 +9,9 @@
 "Bark","m5","kg","m.sb",NA
 "Fine_roots","m5","kg","m.rf",NA
 "Coarse_roots","m5","kg","m.rc",NA
-"SLA_Lower_third","","","",NA
-"SLA_Middle_Third","","","",NA
-"SLA_Upper_third","","","",NA
+"SLA_Lower_third",NA,NA,NA,NA
+"SLA_Middle_Third",NA,NA,NA,NA
+"SLA_Upper_third",NA,NA,NA,NA
 "Crown_class",NA,NA,"status",NA
 "Number Tree",NA,NA,NA,NA
 "Twigs",NA,NA,NA,NA

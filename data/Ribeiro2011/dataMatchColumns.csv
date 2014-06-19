@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
-"Wood.density..g.cm-3.","","g.cm3","r.st",NA
-"dbh..cm.","","cm","d.bh",NA
-"Total.height..m.","","m","h.t",NA
+"Wood.density..g.cm-3.",NA,"g.cm3","r.st",NA
+"dbh..cm.",NA,"cm","d.bh",NA
+"Total.height..m.",NA,"m","h.t",NA
 "Wood.mass..kg........bole.+.branches.","m5","kg","m.st",NA
 "Leaf.mass..kg.","m1","kg","m.lf",NA
 "ID",NA,NA,NA,NA

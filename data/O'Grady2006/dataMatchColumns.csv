@@ -1,9 +1,9 @@
 "var_in","method","unit_in","var_out","notes"
-"height (cm)","","cm","h.t",NA
-"Diameter (base)","","cm","d.ba",NA
-"S/wood area (BD)","","m2","a.ssba",NA
-"Diameter (cm)","","cm","d.bh",NA
-"S/wood area (1.3)","","m2","a.ssbh",NA
+"height (cm)",NA,"cm","h.t",NA
+"Diameter (base)",NA,"cm","d.ba",NA
+"S/wood area (BD)",NA,"m2","a.ssba",NA
+"Diameter (cm)",NA,"cm","d.bh",NA
+"S/wood area (1.3)",NA,"m2","a.ssbh",NA
 "Leaf area",NA,NA,NA,NA
 "stem","m1","g","m.st",NA
 "branch","m1","g","m.br",NA

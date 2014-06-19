@@ -1,25 +1,25 @@
-var_in,method,unit_in,var_out,notes
-TREE,,,,
-CAT,,,status,
-DBH,e,cm,d.bh,
-SWarea (BH),,cm2,a.ssbh,
-dBLC,,cm,,
-SWarea (BLC),,cm2,a.ssbc,
-ht.,,cm,h.t,
-Bole,j,g,,
-Branch,j,g,m.br,
-Bole+Brn,j,g,m.st,
-Needles,,g,m.lf,
-Roots,,g,m.rt,
-Sht Mass,,g,m.so,
-Tot Mass,,g,m.to,
-SWmass,j,g,m.ss,
-SWvol,j,cm3,,
-SWvol/yr,,cm3/yr,,
-Proj lf area,"k,r",,,
-Surf lf area,,cm2,a.lf,
-SW Mass/,,,,
-SW Vol/,,,,
-SW Mass/,,,,
-Root/,,,,
-het/aut,,,,
+"var_in","method","unit_in","var_out","notes"
+"TREE",NA,NA,NA,NA
+"CAT",NA,NA,"status",NA
+"DBH","e","cm","d.bh",NA
+"SWarea (BH)",NA,"cm2","a.ssbh",NA
+"dBLC",NA,"cm",NA,NA
+"SWarea (BLC)",NA,"cm2","a.ssbc",NA
+"ht.",NA,"cm","h.t",NA
+"Bole","j","g",NA,NA
+"Branch","j","g","m.br",NA
+"Bole+Brn","j","g","m.st",NA
+"Needles",NA,"g","m.lf",NA
+"Roots",NA,"g","m.rt",NA
+"Sht Mass",NA,"g","m.so",NA
+"Tot Mass",NA,"g","m.to",NA
+"SWmass","j","g","m.ss",NA
+"SWvol","j","cm3",NA,NA
+"SWvol/yr",NA,"cm3/yr",NA,NA
+"Proj lf area","k,r",NA,NA,NA
+"Surf lf area",NA,"cm2","a.lf",NA
+"SW Mass/",NA,NA,NA,NA
+"SW Vol/",NA,NA,NA,NA
+"SW Mass/",NA,NA,NA,NA
+"Root/",NA,NA,NA,NA
+"het/aut",NA,NA,NA,NA

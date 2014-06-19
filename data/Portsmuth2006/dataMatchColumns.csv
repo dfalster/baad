@@ -1,42 +1,42 @@
-var_in,method,unit_in,var_out,notes
-Tree ,NA,NA,NA,NA
-species,NA,NA,species,NA
-family,NA,NA,family,NA
-light conditions,NA,NA,light,see dataNew
-NUTRITION,NA,NA,NA,NA
-growing year,NA,NA,NA,NA
-trunk height cm,NA,cm,h.t,NA
-trunk dry mass g,m5,g,m.st,NA
-Coarse root length cm,NA,NA,NA,NA
-coarse root dry mass g,m5,g,m.rc,NA
-fine root length cm,NA,NA,NA,NA
-fine root dry mass g,m5,g,m.rf,NA
-trunk diameter at soil level cm,NA,cm,d.ba,NA
-leaves fresh mass g,m6,g,NA,NA
-total leaves dry mass g,m5,g,m.lf,NA
-total leaves area cm 2,"b,1",cm2,a.lf,NA
-above ground dry mass g ,m5,g,m.so,NA
-below ground dry mass g ,m5,g,m.rt,NA
-total dry mass g,m5,g,m.to,NA
-Leaf mass per area :LMA*100 g cm-2,"1,m5",g.cm2,ma.ilf,NA
-Shoot/ root: S/R g g-1,NA,NA,NA,NA
-Leaf area ratio: LAR cm2 g-1,NA,NA,NA,NA
-Leaf weigh ratio: LWR g g-1,NA,NA,NA,NA
-Shoot weigh ratio: SWR g g -1,NA,NA,NA,NA
-Root weigh ratio: RWR g g-1,NA,NA,NA,NA
-fine root/ coarse root g g-1,NA,NA,NA,NA
-average minimum weight at the beginning of the experiment,NA,NA,NA,NA
-Relative growth rate RGR la (l?ppkaal)-ln(algkaal)/63,NA,NA,NA,NA
-log total dry mass,NA,NA,NA,NA
-ln total dry mass,NA,NA,NA,NA
-P (mg/g) in leaves ,NA,NA,NA,NA
-C (%) in leaves,NA,NA,NA,NA
-N (%) in leaves,m5,g.g,n.lf,NA
-C/N in leaves,NA,NA,NA,NA
-P % in leaves,NA,NA,NA,NA
-all data together P % in leaves ,NA,NA,NA,NA
-NAR=RGR/LAR,NA,NA,NA,NA
-leaves % of total dry mass,NA,NA,NA,NA
-stem% of total dry mass,NA,NA,NA,NA
-fine roots % of total dry mass,NA,NA,NA,NA
-coarse roots % of total dry mass,NA,NA,NA,NA
+"var_in","method","unit_in","var_out","notes"
+"Tree",NA,NA,NA,NA
+"species",NA,"-","species",NA
+"family",NA,"-","family",NA
+"light conditions",NA,NA,"light","see dataNew"
+"NUTRITION",NA,NA,NA,NA
+"growing year",NA,NA,NA,NA
+"trunk height cm",NA,"cm","h.t",NA
+"trunk dry mass g","m5","g","m.st",NA
+"Coarse root length cm",NA,NA,NA,NA
+"coarse root dry mass g","m5","g","m.rc",NA
+"fine root length cm",NA,NA,NA,NA
+"fine root dry mass g","m5","g","m.rf",NA
+"trunk diameter at soil level cm",NA,"cm","d.ba",NA
+"leaves fresh mass g","m6","g",NA,NA
+"total leaves dry mass g","m5","g","m.lf",NA
+"total leaves area cm 2","b,1","cm2","a.lf",NA
+"above ground dry mass g","m5","g","m.so",NA
+"below ground dry mass g","m5","g","m.rt",NA
+"total dry mass g","m5","g","m.to",NA
+"Leaf mass per area :LMA*100 g cm-2","1,m5","g.cm2","ma.ilf",NA
+"Shoot/ root: S/R g g-1",NA,NA,NA,NA
+"Leaf area ratio: LAR cm2 g-1",NA,NA,NA,NA
+"Leaf weigh ratio: LWR g g-1",NA,NA,NA,NA
+"Shoot weigh ratio: SWR g g -1",NA,NA,NA,NA
+"Root weigh ratio: RWR g g-1",NA,NA,NA,NA
+"fine root/ coarse root g g-1",NA,NA,NA,NA
+"average minimum weight at the beginning of the experiment",NA,NA,NA,NA
+"Relative growth rate RGR la (l?ppkaal)-ln(algkaal)/63",NA,NA,NA,NA
+"log total dry mass",NA,NA,NA,NA
+"ln total dry mass",NA,NA,NA,NA
+"P (mg/g) in leaves",NA,NA,NA,NA
+"C (%) in leaves",NA,NA,NA,NA
+"N (%) in leaves","m5","g.g","n.lf",NA
+"C/N in leaves",NA,NA,NA,NA
+"P % in leaves",NA,NA,NA,NA
+"all data together P % in leaves",NA,NA,NA,NA
+"NAR=RGR/LAR",NA,NA,NA,NA
+"leaves % of total dry mass",NA,NA,NA,NA
+"stem% of total dry mass",NA,NA,NA,NA
+"fine roots % of total dry mass",NA,NA,NA,NA
+"coarse roots % of total dry mass",NA,NA,NA,NA

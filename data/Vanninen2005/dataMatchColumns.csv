@@ -1,13 +1,13 @@
-var_in,method,unit_in,var_out,notes
-tree age,,yr,age,
-D13,,mm,d.bh,
-tree height CM,,cm,h.t,
-hcb,,cm,h.c,
-branch mass,,kg,m.br,
-needle mass ,,kg,m.lf,
-m.ss,,kg,m.ss,
-m.sh,,kg,m.sh,
-stem mass,,kg,m.st,
-needle area cm^2,r2,cm2,a.lf,
-m.rc,,kg,m.rc,
-"fineroots (< 0,2 mm) estim.",,kg,m.rf,
+"var_in","method","unit_in","var_out","notes"
+"tree age",NA,"yr","age",NA
+"D13",NA,"mm","d.bh",NA
+"tree height CM",NA,"cm","h.t",NA
+"hcb",NA,"cm","h.c",NA
+"branch mass",NA,"kg","m.br",NA
+"needle mass",NA,"kg","m.lf",NA
+"m.ss",NA,"kg","m.ss",NA
+"m.sh",NA,"kg","m.sh",NA
+"stem mass",NA,"kg","m.st",NA
+"needle area cm^2","r2","cm2","a.lf",NA
+"m.rc",NA,"kg","m.rc",NA
+"fineroots (< 0,2 mm) estim.",NA,"kg","m.rf",NA

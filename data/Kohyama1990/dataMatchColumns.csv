@@ -1,9 +1,9 @@
 "var_in","method","unit_in","var_out","notes"
-"H.cm","","cm","h.t",NA
-"Hl.cm","","cm","h.c",NA
+"H.cm",NA,"cm","h.t",NA
+"Hl.cm",NA,"cm","h.c",NA
 "Ac.cm2","a","cm2","a.cp",NA
 "Al.cm2","c","cm2","a.lf",NA
-"SLA.cm2.g","","cm2.g","ma.ilf",NA
+"SLA.cm2.g",NA,"cm2.g","ma.ilf",NA
 "Wbs.g","m5","g","m.br",NA
 "Wl.g","m5","g","m.lf",NA
 "Ws.g","m5","g","m.st",NA

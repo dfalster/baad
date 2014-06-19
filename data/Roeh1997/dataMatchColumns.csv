@@ -1,11 +1,11 @@
-var_in,method,unit_in,var_out,notes
-h.t,,m,h.t,
-Crown length (m),,m,c.d,
-Dbh (cm),,cm,d.bh,
-m.lf,,kg,m.lf,
-a.lf,r,m2,a.lf,
-a.ssbh,,m2,a.ssbh,
-a.ssbc,,m2,a.ssbc,
-location,,,location,From Maguire1991b cited in paper
-latitude,,,latitude,From Maguire1991b cited in paper
-longitude,,,longitude,From Maguire1991b cited in paper
+"var_in","method","unit_in","var_out","notes"
+"h.t",NA,"m","h.t",NA
+"Crown length (m)",NA,"m","c.d",NA
+"Dbh (cm)",NA,"cm","d.bh",NA
+"m.lf",NA,"kg","m.lf",NA
+"a.lf","r","m2","a.lf",NA
+"a.ssbh",NA,"m2","a.ssbh",NA
+"a.ssbc",NA,"m2","a.ssbc",NA
+"location",NA,"-","location","From Maguire1991b cited in paper"
+"latitude",NA,"deg","latitude","From Maguire1991b cited in paper"
+"longitude",NA,"deg","longitude","From Maguire1991b cited in paper"

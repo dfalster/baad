@@ -1,8 +1,8 @@
-var_in,method,unit_in,var_out,notes
-dbh,,cm,d.bh,
-hite_m,,m,h.t,
-ht_blc,,m,h.c,
-cw_avg,,m,d.cr,
-stem,,g,m.st,
-crn_wood,,g,m.br,
-foliage,,g,m.lf,
+"var_in","method","unit_in","var_out","notes"
+"dbh",NA,"cm","d.bh",NA
+"hite_m",NA,"m","h.t",NA
+"ht_blc",NA,"m","h.c",NA
+"cw_avg",NA,"m","d.cr",NA
+"stem",NA,"g","m.st",NA
+"crn_wood",NA,"g","m.br",NA
+"foliage",NA,"g","m.lf",NA

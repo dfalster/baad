@@ -1,11 +1,11 @@
 "var_in","method","unit_in","var_out","notes"
-"H.cm","","cm","h.t",NA
-"Hl.cm","","cm","h.c",NA
+"H.cm",NA,"cm","h.t",NA
+"Hl.cm",NA,"cm","h.c",NA
 "CW1.cm","a","cm","d.cr",NA
 "CW2.cm","a","cm",NA,NA
 "m.st","m5","g","m.st",NA
 "Wbs.g","m5","g","m.br",NA
-"La.cm2","","cm2","a.lf",NA
+"La.cm2",NA,"cm2","a.lf",NA
 "leaf.mass","m5","g","m.lf",NA
 "SpecCode",NA,NA,"species",NA
 "No",NA,NA,NA,NA

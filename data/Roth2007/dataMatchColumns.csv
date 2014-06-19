@@ -1,21 +1,21 @@
-var_in,method,unit_in,var_out,notes
-Site,,,location,
-speciesfix,,,species,
-"Age yrs",,yr,age,
-latitude,,,latitude,
-longitude,,,longitude,
-"Veg Type",,,vegetation,
-"Functional type",,,pft,
-grouping,,,grouping,
-DBH,,cm,d.bh,
-CW,,cm,d.cr,
-GLD,,cm,d.ba,
-HT,,m,h.t,
-Foliage,,kg,m.lf,
-Branches,,kg,m.br,
-Bole,,kg,m.st,
-Bark,,kg,m.sb,
-coarseroot,,kg,m.rc,
-HCB,,m,h.c,
-SNA,,cm2.g,ma.ilf,
-LEAFAREA,r2,m2,a.lf,
+"var_in","method","unit_in","var_out","notes"
+"Site",NA,NA,"location",NA
+"speciesfix",NA,NA,"species",NA
+"Age yrs",NA,"yr","age",NA
+"latitude",NA,"deg","latitude",NA
+"longitude",NA,"deg","longitude",NA
+"Veg Type",NA,NA,"vegetation",NA
+"Functional type",NA,NA,"pft",NA
+"grouping",NA,"-","grouping",NA
+"DBH",NA,"cm","d.bh",NA
+"CW",NA,"cm","d.cr",NA
+"GLD",NA,"cm","d.ba",NA
+"HT",NA,"m","h.t",NA
+"Foliage",NA,"kg","m.lf",NA
+"Branches",NA,"kg","m.br",NA
+"Bole",NA,"kg","m.st",NA
+"Bark",NA,"kg","m.sb",NA
+"coarseroot",NA,"kg","m.rc",NA
+"HCB",NA,"m","h.c",NA
+"SNA",NA,"cm2.g","ma.ilf",NA
+"LEAFAREA","r2","m2","a.lf",NA
