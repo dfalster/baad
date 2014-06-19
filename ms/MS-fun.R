@@ -84,16 +84,16 @@ class2Bdetails  <-  function(data) {
 
   	template <- paste(template, collapse="\n")
   	whisker.render(template,
-                 list(studyName=unique(data$dataset),
+                 list(studyName=unique(data$studyName),
                       siteType=pasteC(getVegType(unique(data$vegetation)),'; '),
                       lon=pasteC(sprintf("%3.1f", as.numeric(unique(data$longitude))),' ; '),
                       lat=pasteC(sprintf("%3.1f", as.numeric(unique(data$latitude))),' ; '),
                       siteHistory=pasteC(getSiteHistory(unique(data$growingCondition)),'; '),
-           	          metadataDesign=getMetadataDesign(unique(data$dataset)),
+           	          metadataDesign=getMetadataDesign(unique(data$studyName)),
            	          collection='',
-           	          lab=getMetadataMethods(unique(data$dataset)),
-           	          personell=pasteC(getPersonell(unique(data$dataset))),
-           	          citation=baad$references$citation[baad$references$dataset==data$dataset[1]]
+           	          lab=getMetadataMethods(unique(data$studyName)),
+           	          personell=pasteC(getPersonell(unique(data$studyName))),
+           	          citation=baad$references$citation[baad$references$studyName==data$studyName[1]]
                  ))
 
 }
@@ -108,7 +108,7 @@ getLastName  <-  function(authorNames) {
 
 lisOfAuthors  <-  function(data) {
 	firstAuthors   <-  c('Daniel Falster', 'Remko A. Duursma', 'Masae Ishihara', 'Diego R. Barneche', 'Rich FitzJohn', 'Angelica Vårhammar')
-	dataAuthors <- unique(do.call(c, lapply(unique(data$dataset), getPersonell)))
+	dataAuthors <- unique(do.call(c, lapply(unique(data$studyName), getPersonell)))
 
 	dataAuthors <- dataAuthors[!dataAuthors %in% firstAuthors]
 	pasteC(c(firstAuthors, dataAuthors[order(getLastName(dataAuthors))]), ', ')
