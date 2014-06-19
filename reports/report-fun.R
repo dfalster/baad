@@ -3,7 +3,7 @@ library(maps, quietly = TRUE)
 library(mapdata, quietly = TRUE)
 suppressPackageStartupMessages(library(gdata))
 
-printAllStudyReports <- function(data = readRDS("../output/baad.rds"), 
+printAllStudyReports <- function(data = readRDS("../output/baad.rds"),
                                  studynames = unique(data$data$studyName),
     progressbar = TRUE, ...) {
     message("Generating ", length(studynames), " markdown reports.")
@@ -76,8 +76,8 @@ knitThis <- function(RmdFile = "reportmd.Rmd", path = "output/report-per-study",
 }
 
 extractStudy <- function(alldata, study) {
-    for (var in c("data", "contact", "references")) alldata[[var]] <- alldata[[var]][alldata[[var]]$studyName ==
-        study, ]
+    for (var in c("data", "contacts", "references"))
+        alldata[[var]] <- alldata[[var]][alldata[[var]]$studyName ==study, ]
 
     alldata[["bib"]] <- alldata[["bib"]][[study]]
 

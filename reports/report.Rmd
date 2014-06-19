@@ -6,11 +6,11 @@ source('report-fun.R')
 
 ## Contact Information
 
-**Data contributor:** `r .dat$contact$name`.
+**Data contributor:** `r .dat$contacts$name`.
 
-**Email:** `r .dat$contact$email`.
+**Email:** `r .dat$contacts$email`.
 
-**Address:** `r .dat$contact$address`.
+**Address:** `r .dat$contacts$address`.
 
 ## Citation
 Information about the primary reference for the data you provided.
@@ -23,7 +23,7 @@ Information about the primary reference for the data you provided.
 
 ## Overview of data provided
 
-Data for `r length(.dat$data$dataset)` individuals from `r length(unique(.dat$data$location))` locations covering `r length(unique(.dat$data$species))` species.
+Data for `r length(.dat$data$studyName)` individuals from `r length(unique(.dat$data$location))` locations covering `r length(unique(.dat$data$species))` species.
 
 The dataset includes `r length(unique(.dat$data$species))` species belonging to `r length(unique(.dat$data$family))` family(ies), presenting `r length(unique(.dat$data$pft))` functional type(s), growing in `r length(unique(.dat$data$growingCondition))` condition(s) within `r length(unique(.dat$data$vegetation))` major type(s) of habitat:
 
