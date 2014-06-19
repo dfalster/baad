@@ -63,7 +63,31 @@ getVegType <-function(code){
 		)
 }
 
-class2Bdetails  <-  function(data) {
+getCitation <-  function(studyName) {
+	i <- baad$references$studyName==studyName
+	citation <- baad$references$citation[i]
+
+	if(baad$references$doi[i] !=""){
+		citation <- paste0(citation, " DOI: [", baad$references$doi[i], "](http://doi.org/",baad$references$doi[i],").")
+	} else if( baad$references$url[i] != ""){
+		citation <- paste0(citation, " [Link](", baad$references$url[i],").")
+	}
+	citation
+}
+
+removeNAcols <- function(dfr, exclude = c("empty")){
+
+  out <- dfr[, !names(dfr)%in% exclude]
+  out[,sapply(out, function(x)!all(is.na(x)))]
+
+}
+
+getLatLon <- function(data){
+	uniquesites <- data[-duplicated(paste(data$longitude, data$latitude))]
+	pasteC(sprintf("%3.2f, %3.2f", as.numeric(uniquesites$latitude), as.numeric(uniquesites$longitude)),';  ')
+}
+
+studyDetails  <-  function(data) {
 
 	template <-
     	c('## {{studyName}}',
@@ -71,12 +95,11 @@ class2Bdetails  <-  function(data) {
       	'1. Site Description',
       	'\t- Site(s) type(s): {{siteType}}',
       	'\t- Geography',
-      	'\t\t- longitude(s): {{lon}}',
-      	'\t\t- latitudes(s): {{lat}}',
+      	'\t\t- latitudes, longitude: {{latlon}}',
 		'\t- Site(s) history: {{siteHistory}}',
  	    '2. Experimental or sampling design',
 		'\t- Design characteristics: {{metadataDesign}}',
-		'\t- Data collection period, frequency: {{collection}}',
+ 	    '\t- Variables included: {{vars}}',
  	    '3. Research methods',
 		'\t- {{lab}}',
 		'4. Study contacts: {{personell}}'
@@ -84,18 +107,17 @@ class2Bdetails  <-  function(data) {
 
   	template <- paste(template, collapse="\n")
   	whisker.render(template,
-                 list(studyName=unique(data$studyName),
+                 list(studyName=data$studyName[1],
                       siteType=pasteC(getVegType(unique(data$vegetation)),'; '),
-                      lon=pasteC(sprintf("%3.1f", as.numeric(unique(data$longitude))),' ; '),
-                      lat=pasteC(sprintf("%3.1f", as.numeric(unique(data$latitude))),' ; '),
+                      latlon=getLatLon(data),
                       siteHistory=pasteC(getSiteHistory(unique(data$growingCondition)),'; '),
            	          metadataDesign=getMetadataDesign(unique(data$studyName)),
-           	          collection='',
            	          lab=getMetadataMethods(unique(data$studyName)),
            	          personell=pasteC(getPersonell(unique(data$studyName))),
-           	          citation=baad$references$citation[baad$references$studyName==data$studyName[1]]
+           	          citation=getCitation(data$studyName[1]),
+           	          vars=pasteC(names(removeNAcols(data,
+           	          	exclude = c("studyName","species","speciesMatched","location", "latitude","longitude","vegetation","map","mat","family","pft","growingCondition", "grouping"))), ", ")
                  ))
-
 }
 
 

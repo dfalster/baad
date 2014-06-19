@@ -72,7 +72,9 @@ model; carbon; growth; wood
 ### B. SPECIFIC SUBPROJECT DESCRIPTION
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
-details2B  <-  daply(data, .(studyName), function(x)class2Bdetails(x))
+library(plyr)
+library(whisker)
+details2B  <-  daply(data, .(studyName), function(x) studyDetails(x))
 writeLines(details2B,sep="\n\n")
 ```
 
