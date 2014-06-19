@@ -1,40 +1,40 @@
-"dataset","location","latitude","longitude","vegetation","map","mat","grouping","lai","species","family","pft","age","a.lf","a.ssba","a.ssbh","a.ssbc","a.shba","a.shbh","a.shbc","a.sbba","a.sbbh","a.sbbc","a.stba","a.stbh","a.stbc","a.cp","a.cs","h.t","h.c","d.ba","d.bh","d.cr","c.d","m.lf","m.ss","m.sh","m.sb","m.st","m.so","m.br","m.rf","m.rc","m.rt","m.to","a.ilf","ma.ilf","r.st","r.ss","r.sb","r.sh","n.lf","n.ss","n.sb","n.sh","n.rf","n.rc","growingCondition","status","light"
-"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,9.3,NA,NA,0.054,NA,NA,0.043,NA,NA,NA,2.513,2.865,0.309,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,11.3,NA,NA,0.093,NA,NA,0.457,NA,NA,NA,8.664,11.635,2.514,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,15.7,NA,NA,0.11,NA,NA,0.564,NA,NA,NA,16.862,19.128,1.702,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,18,NA,NA,0.138,NA,NA,1.333,NA,NA,NA,32.542,37.961,4.086,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,18.7,NA,NA,0.158,NA,NA,1.416,NA,NA,NA,46.254,53.058,5.388,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,18.8,NA,NA,0.184,NA,NA,1.652,NA,NA,NA,65.371,74.252,7.229,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,18.3,NA,NA,0.205,NA,NA,4.455,NA,NA,NA,77.042,104.845,23.348,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,20,NA,NA,0.12,NA,NA,0.219,NA,NA,NA,33.988,34.852,0.645,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,19.9,NA,NA,0.139,NA,NA,0.834,NA,NA,NA,39.813,44.601,3.954,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,21.5,NA,NA,0.174,NA,NA,0.656,NA,NA,NA,64.292,73.452,8.504,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,28.2,NA,NA,0.23,NA,NA,1.509,NA,NA,NA,131.905,155.57,22.156,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,31,NA,NA,0.247,NA,NA,2.279,NA,NA,NA,262.758,277.081,12.044,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,29.5,NA,NA,0.318,NA,NA,3.539,NA,NA,NA,342.706,382.65,36.405,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,"Albizia falcata",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,33.6,NA,NA,0.361,NA,NA,9.604,NA,NA,NA,450.587,533.299,73.108,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,4.3,NA,NA,0.041,NA,NA,0.537,NA,NA,NA,1.583,2.682,0.562,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,7.6,NA,NA,0.06,NA,NA,0.474,NA,NA,NA,4.256,5.495,0.765,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,7.3,NA,NA,0.062,NA,NA,0.845,NA,NA,NA,5.231,8.588,2.512,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,6.6,NA,NA,0.073,NA,NA,1.479,NA,NA,NA,5.22,7.096,0.397,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,7.3,NA,NA,0.1,NA,NA,1.579,NA,NA,NA,10.538,23.78,11.663,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,13.2,NA,NA,0.16,NA,NA,7.999,NA,NA,NA,34.238,58.175,15.938,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF",NA,NA,NA,NA,"Gmelina arborea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,7.3,NA,NA,0.08,NA,NA,0.34,NA,NA,NA,7.751,9.384,1.293,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF",NA,NA,NA,NA,"Gmelina arborea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,14.2,NA,NA,0.106,NA,NA,0.087,NA,NA,NA,22.725,23.389,0.577,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF",NA,NA,NA,NA,"Gmelina arborea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,16.1,NA,NA,0.147,NA,NA,0.637,NA,NA,NA,45.026,51.435,5.772,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF",NA,NA,NA,NA,"Gmelina arborea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,15.3,NA,NA,0.172,NA,NA,0.752,NA,NA,NA,55.845,69.227,12.63,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF",NA,NA,NA,NA,"Gmelina arborea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,23.3,NA,NA,0.225,NA,NA,2.477,NA,NA,NA,150.116,167.172,14.579,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF",NA,NA,NA,NA,"Gmelina arborea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,23.9,NA,NA,0.264,NA,NA,1.659,NA,NA,NA,198.958,232.192,31.575,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF",NA,NA,NA,NA,"Gmelina arborea",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,25,NA,NA,0.314,NA,NA,3.241,NA,NA,NA,272.876,306.008,29.891,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF",NA,NA,NA,NA,"Swietenia macrophylla",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,5.6,NA,NA,0.067,NA,NA,0.696,NA,NA,NA,5.307,7.247,1.244,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF",NA,NA,NA,NA,"Swietenia macrophylla",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,8.8,NA,NA,0.112,NA,NA,2.69,NA,NA,NA,24.385,32.614,5.539,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF",NA,NA,NA,NA,"Swietenia macrophylla",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,11.8,NA,NA,0.16,NA,NA,5.434,NA,NA,NA,50.223,80.332,24.675,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF",NA,NA,NA,NA,"Swietenia macrophylla",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,19.7,NA,NA,0.24,NA,NA,9.716,NA,NA,NA,169.425,212.737,33.596,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF",NA,NA,NA,NA,"Swietenia macrophylla",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,18.9,NA,NA,0.26,NA,NA,12.247,NA,NA,NA,228.452,314.61,73.911,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"PM",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF",NA,NA,NA,NA,"Dipterocarp sp.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,7.9,NA,NA,0.073,NA,NA,0.291,NA,NA,NA,6.254,6.85,0.305,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF",NA,NA,NA,NA,"Dipterocarp sp.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,10.5,NA,NA,0.105,NA,NA,1.698,NA,NA,NA,15.792,20.303,2.813,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF",NA,NA,NA,NA,"Dipterocarp sp.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,16.3,NA,NA,0.142,NA,NA,1.218,NA,NA,NA,42.539,46.15,2.393,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF",NA,NA,NA,NA,"Dipterocarp sp.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,19.8,NA,NA,0.19,NA,NA,4.589,NA,NA,NA,85.284,98.382,8.509,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF",NA,NA,NA,NA,"Dipterocarp sp.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,23,NA,NA,0.249,NA,NA,4.695,NA,NA,NA,192.074,212.186,15.417,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF",NA,NA,NA,NA,"Dipterocarp sp.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,21.5,NA,NA,0.304,NA,NA,6.901,NA,NA,NA,263.515,286.964,16.548,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
-"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF",NA,NA,NA,NA,"Dipterocarp sp.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,26.9,NA,NA,0.34,NA,NA,7.29,NA,NA,NA,434.289,472.822,31.243,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
+"dataset","location","latitude","longitude","vegetation","species","h.t","d.bh","m.lf","m.st","m.so","m.br","growingCondition"
+"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF","Albizia falcata",9.3,0.054,0.043,2.513,2.865,0.309,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF","Albizia falcata",11.3,0.093,0.457,8.664,11.635,2.514,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF","Albizia falcata",15.7,0.11,0.564,16.862,19.128,1.702,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF","Albizia falcata",18,0.138,1.333,32.542,37.961,4.086,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF","Albizia falcata",18.7,0.158,1.416,46.254,53.058,5.388,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF","Albizia falcata",18.8,0.184,1.652,65.371,74.252,7.229,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A2",9,126,"TropRF","Albizia falcata",18.3,0.205,4.455,77.042,104.845,23.348,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF","Albizia falcata",20,0.12,0.219,33.988,34.852,0.645,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF","Albizia falcata",19.9,0.139,0.834,39.813,44.601,3.954,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF","Albizia falcata",21.5,0.174,0.656,64.292,73.452,8.504,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF","Albizia falcata",28.2,0.23,1.509,131.905,155.57,22.156,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF","Albizia falcata",31,0.247,2.279,262.758,277.081,12.044,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF","Albizia falcata",29.5,0.318,3.539,342.706,382.65,36.405,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF","Albizia falcata",33.6,0.361,9.604,450.587,533.299,73.108,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,4.3,0.041,0.537,1.583,2.682,0.562,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,7.6,0.06,0.474,4.256,5.495,0.765,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,7.3,0.062,0.845,5.231,8.588,2.512,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,6.6,0.073,1.479,5.22,7.096,0.397,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,7.3,0.1,1.579,10.538,23.78,11.663,"PM"
+"Kawahara1981","The Philippines-Aras-asan-A4",9,126,"TropRF",NA,13.2,0.16,7.999,34.238,58.175,15.938,"PM"
+"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF","Gmelina arborea",7.3,0.08,0.34,7.751,9.384,1.293,"PM"
+"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF","Gmelina arborea",14.2,0.106,0.087,22.725,23.389,0.577,"PM"
+"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF","Gmelina arborea",16.1,0.147,0.637,45.026,51.435,5.772,"PM"
+"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF","Gmelina arborea",15.3,0.172,0.752,55.845,69.227,12.63,"PM"
+"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF","Gmelina arborea",23.3,0.225,2.477,150.116,167.172,14.579,"PM"
+"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF","Gmelina arborea",23.9,0.264,1.659,198.958,232.192,31.575,"PM"
+"Kawahara1981","The Philippines-Aras-asan-G3",9,126,"TropRF","Gmelina arborea",25,0.314,3.241,272.876,306.008,29.891,"PM"
+"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF","Swietenia macrophylla",5.6,0.067,0.696,5.307,7.247,1.244,"PM"
+"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF","Swietenia macrophylla",8.8,0.112,2.69,24.385,32.614,5.539,"PM"
+"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF","Swietenia macrophylla",11.8,0.16,5.434,50.223,80.332,24.675,"PM"
+"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF","Swietenia macrophylla",19.7,0.24,9.716,169.425,212.737,33.596,"PM"
+"Kawahara1981","The Philippines-Aras-asan-S",9,126,"TropRF","Swietenia macrophylla",18.9,0.26,12.247,228.452,314.61,73.911,"PM"
+"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF","Dipterocarp sp.",7.9,0.073,0.291,6.254,6.85,0.305,"FW"
+"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF","Dipterocarp sp.",10.5,0.105,1.698,15.792,20.303,2.813,"FW"
+"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF","Dipterocarp sp.",16.3,0.142,1.218,42.539,46.15,2.393,"FW"
+"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF","Dipterocarp sp.",19.8,0.19,4.589,85.284,98.382,8.509,"FW"
+"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF","Dipterocarp sp.",23,0.249,4.695,192.074,212.186,15.417,"FW"
+"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF","Dipterocarp sp.",21.5,0.304,6.901,263.515,286.964,16.548,"FW"
+"Kawahara1981","The Philippines-Aras-asan-D",9,126,"TropRF","Dipterocarp sp.",26.9,0.34,7.29,434.289,472.822,31.243,"FW"

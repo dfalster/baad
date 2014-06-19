@@ -1,5 +1,5 @@
-"dataset","location","latitude","longitude","vegetation","map","mat","grouping","lai","species","family","pft","age","a.lf","a.ssba","a.ssbh","a.ssbc","a.shba","a.shbh","a.shbc","a.sbba","a.sbbh","a.sbbc","a.stba","a.stbh","a.stbc","a.cp","a.cs","h.t","h.c","d.ba","d.bh","d.cr","c.d","m.lf","m.ss","m.sh","m.sb","m.st","m.so","m.br","m.rf","m.rc","m.rt","m.to","a.ilf","ma.ilf","r.st","r.ss","r.sb","r.sh","n.lf","n.ss","n.sb","n.sh","n.rf","n.rc","growingCondition","status","light"
-"Muro2006","Japan-Hita city-",33.25,131.03,"TempF",NA,NA,NA,NA,"Quercus acutissima","Fagaceae","DA",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,117.465,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
-"Muro2006","Japan-Hita city-",33.25,131.03,"TempF",NA,NA,NA,NA,"Quercus acutissima","Fagaceae","DA",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.195,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,45.585,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
-"Muro2006","Japan-Hita city-",33.25,131.03,"TempF",NA,NA,NA,NA,"Quercus acutissima","Fagaceae","DA",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.146,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,16.183,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
-"Muro2006","Japan-Hita city-",33.25,131.03,"TempF",NA,NA,NA,NA,"Quercus acutissima","Fagaceae","DA",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.094,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,6.082,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"FW",NA,NA
+"dataset","location","latitude","longitude","vegetation","species","family","pft","d.bh","m.rt","growingCondition"
+"Muro2006","Japan-Hita city-",33.25,131.03,"TempF","Quercus acutissima","Fagaceae","DA",0.29,117.465,"FW"
+"Muro2006","Japan-Hita city-",33.25,131.03,"TempF","Quercus acutissima","Fagaceae","DA",0.195,45.585,"FW"
+"Muro2006","Japan-Hita city-",33.25,131.03,"TempF","Quercus acutissima","Fagaceae","DA",0.146,16.183,"FW"
+"Muro2006","Japan-Hita city-",33.25,131.03,"TempF","Quercus acutissima","Fagaceae","DA",0.094,6.082,"FW"
