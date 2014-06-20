@@ -4,7 +4,7 @@ manipulate <- function(raw) {
   
   # Set height to crown base > plant height to NA
   i <- raw[["crown height (cm)"]] > raw[["height (cm)"]]
-  rawraw[["crown height (cm)"]][i] <- NA
+  raw[["crown height (cm)"]][i] <- NA
 
   raw
 }
