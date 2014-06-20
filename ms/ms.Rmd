@@ -132,22 +132,39 @@ writeLines(x[var.def$Variable])
 
 **Number of observations by variable**
 
+
 ```{r echo=FALSE, message=FALSE}
 
 thesevars <- setdiff(var.def$Variable[var.def$Type=="numeric"],
                      c("map","mat","lai"))
 Labels <- capitalize(var.def$label[var.def$Variable %in% thesevars])
 
-Count <- function(x)length(data[[x]][!is.na(data[[x]])])
-N <- sapply(thesevars, Count)
+Count_obs <- function(x)length(data[[x]][!is.na(data[[x]])])
+N <- sapply(thesevars, Count_obs)
 
+Count_studies <- function(x)length(unique(data[["studyName"]][!is.na(data[[x]])]))
+Nstud <- sapply(thesevars, Count_studies)
+
+df <- rbind.fill(apply(data[,thesevars], 2, function(x)data.frame(Min=min(x, na.rm=T),Max=max(x, na.rm=T),Median=median(x, na.rm=T))))
+    
+      
 dfr <- data.frame(Variable=Labels, N=N)
+dfr <- cbind(dfr,df)
+
 dfr <- dfr[dfr$N > 0,]
 rownames(dfr) <- NULL
+
+f <- function(x)formatC(x, digits=2, format="fg")
+dfr$Min <- f(dfr$Min)
+dfr$Max <- f(dfr$Max)
+dfr$Median <- f(dfr$Median)
+
 ```
 
+
 ```{r results='asis', echo=FALSE}
-kable(dfr, "html", align="l")
+options(digits=9)
+kable(dfr, "markdown", align="l", padding=10)
 ```
 
 
