@@ -113,11 +113,21 @@ makePlotPanel <- function(data_all, data_study, dir = "report-per-study") {
             }
         }
     }
+  
+    # In last plot, add a species legend
+    nspec <- length(unique(data_study$data$species))
+    if(nspec > 1 & nspec < 20){
+      plot(1, type='n', ann=FALSE, axes=FALSE)
+      legend("topleft", levels(as.factor(data_study$data$species)), pch=19, 
+             col=niceColors(), cex=0.8, pt.cex=1)
+    }
+    
 }
 
 makePlot <- function(data, subset, xvar, yvar, xlab, ylab, main = "", maincol = make.transparent("grey",
     0.5), studycol = "red", pch = 19) {
 
+  
     plot(data[, xvar], data[, yvar], log = "xy", col = maincol, xlab = xlab, ylab = ylab,
         main = main, las = 1, yaxt = "n", xaxt = "n", pch = pch)
 
@@ -127,6 +137,7 @@ makePlot <- function(data, subset, xvar, yvar, xlab, ylab, main = "", maincol = 
 
     # add data for select study, highlighted in red
     points(subset[, xvar], subset[, yvar], col = studycol, pch = pch)
+    
 }
 
 prepMapInfo <- function(data, study = NA) {
