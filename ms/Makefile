@@ -6,7 +6,7 @@ ms.md: ms.Rmd MS-fun.R
 	Rscript -e 'library(methods); knitr::knit("$<", output = "$@")'
 
 %.html: %.md
-	Rscript -e 'markdown::markdownToHTML("$<", "$@", stylesheet="stylesheet.css")'
+	Rscript -e 'rmarkdown::render("$<", "html_document")'
 
 clean:
 	rm -f $(TARGETS)
