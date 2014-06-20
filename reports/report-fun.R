@@ -415,6 +415,8 @@ standLevelInfo <- function(data) {
         sta <- sta[, -which(names(sta) == "grouping")]
 
     sta[is.na(sta) | sta == "" | sta == "NA"] <- "missing"
+    rownames(sta) <- NULL
+    
   sta
 }
 

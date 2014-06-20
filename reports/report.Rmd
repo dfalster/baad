@@ -30,11 +30,11 @@ The dataset includes `r length(unique(.dat$data$species))` species belonging to 
 
 ### Number of records for each variable
 
-```{r echo=FALSE, comment=''}
+```{r echo=FALSE, comment='',results='asis'}
 counts  <-  apply(!is.na(.dat$data), MARGIN=2, FUN = sum)
 counts  <-  counts[counts>0]  #only include no zeros
 counts  <-  counts[names(counts)%in%.dat$dictionary$Variable[.dat$dictionary$Group=="tree"]]
-cbind(counts)
+kable(cbind(counts))
 ```
 
 
@@ -43,9 +43,9 @@ cbind(counts)
 ### Location
 
 **Location data**
-```{r echo=FALSE, message=FALSE, warning=FALSE, comment=''}
+```{r echo=FALSE, message=FALSE, warning=FALSE, comment='',results='asis'}
 options(width =160)
-locLevelInfo(.dat$data)
+kable(locLevelInfo(.dat$data))
 ```
 
 **Global map**
