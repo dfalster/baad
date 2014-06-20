@@ -33,16 +33,16 @@ vars <- setdiff(var.def$Variable[var.def$Type == "numeric"], c("map","mat","lai"
 ```
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
-writeLines(paste("**List of Authors:**", lisOfAuthors(baad$contact)))
+writeLines(paste("**List of Authors:**", pasteC(listOfAuthors(baad$contact), ', ')))
 ```
 
 ## INTRODUCTION
 
-Quantifying the amount of mass or energy invested in plant tissues is of fundamental interest across a range of disciplines, including ecology, forestry, ecosystem science, and climate change science `r citep(list(bib["niklas_plant_1994"],bib["chave_tree_2005"], "10.1111/j.1365-2745.2010.01735.x"))`. The allocation of net primary production into different plant components is an important process affecting the lifetime of carbon in ecosystems, and resource use and productivity by plants  `r citep(list(bib["cannell_carbon_1994"],bib["litton_carbon_2007"],bib["poorter_biomass_2012"]))`. While many studies in have destructively harvested woody plants in the name of science, most of these data have only been made available in the form of summary tables or figures included in publications. Until now, the raw data has resided piecemeal on the hard drives of individual scientists spread around the world. Several studies have gathered together the fitted (allometric) equations for separate datasets `r citep(list("10.1016/S0378-1127(97)00019-4",bib["jenkins_national-scale_2003"],bib["zianis_biomass_2005"],"10.3832/ifor0901-006"))`, but none have previously attempted to organize and share the raw individual plant data underpinning these equations on a large scale. Gathered together, such data would represent an important resource for the community, meeting a widely recognised need for rich, open data resources to solve ecological problems `r citep(c("10.1016/j.tree.2013.05.002","10.1007/s13595-014-0375-3","10.1038/505160a"))`.
+Quantifying the amount of mass or energy invested in plant tissues is of fundamental interest across a range of disciplines, including ecology, forestry, ecosystem science, and climate change science `r citep(list(bib["niklas_plant_1994"],bib["chave_tree_2005"], "10.1111/j.1365-2745.2010.01735.x"))`. The allocation of net primary production into different plant components is an important process affecting the lifetime of carbon in ecosystems, and resource use and productivity by plants  `r citep(list(bib["cannell_carbon_1994"],bib["litton_carbon_2007"],bib["poorter_biomass_2012"]))`. While many studies in have destructively harvested woody plants in the name of science, most of these data have only been made available in the form of summary tables or figures included in publications. Until now, the raw data has resided piecemeal on the hard drives of individual scientists spread around the world. Several studies have gathered together the fitted (allometric) equations for separate datasets `r citep(list("10.1016/S0378-1127(97)00019-4",bib["jenkins_national-scale_2003"],bib["zianis_biomass_2005"],"10.3832/ifor0901-006"))`, but none have previously attempted to organize and share the raw individual plant data underpinning these equations on a large scale. Gathered together, such data would represent an important resource for the community, meeting a widely recognised need for rich, open data resources to solve ecological problems `r citep(c("10.1016/j.tree.2013.05.002","10.1007/s13595-014-0375-3","10.1038/505160a", "10.1016/j.tree.2013.05.002"))`.
 
 We (D.S. Falster and R.A. Duursma, with the help of D.R. Barneche, R.G. FitzJohn and A. Vårhammer) set out to create such a resource, by asking authors directly whether they would be willing to make their raw data files freely available. The response was overwhelming: nearly everyone we contacted was interested to contribute their raw data. Moreover, we were invited to incorporate another compilation led by M. Ishihara and focussing on Japanese literature. As a result, we present BAAD: a Biomass And Allometry Database for woody plants, comprising data collected in `r length(unique(data$studyName))` different published and unpublished studies.
 
-Combining data from many different studies, each using its own set of terms and units, and quirks, is no trivial task `r citep(c("10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2","10.12688/f1000research.4518"))`. This compilation would not have been possible without several new technologies. In particular,
+Combining data from many different studies, each using its own set of terms and units, and quirks, is no trivial task `r citep(c("10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2","10.12688/f1000research.4518","10.1016/j.tree.2011.11.016"))`. This compilation would not have been possible without several new technologies. In particular,
 
 1. Our entire work flow is scripted, using the R computing environment. The database can be rebuilt in an instant from the raw datafiles, using a single command. When a single data contribution has been modified, the final master dataset is thus easily recreated.
 2. We wrote a new `R` package [dataMashR](https://github.com/dfalster/dataMashR) `r citet("https://github.com/dfalster/dataMashR")` for merging data from different studies in a transparent and reproducible fashion. While it was written with BAAD in mind, the package is designed to be easily  deployed for other compilations.
@@ -53,41 +53,41 @@ Until recently, scientific publications in biology have mostly been concerned wi
 
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=6}
-drawWorldPlot  <-  function(data, horlines=TRUE, sizebyn=FALSE, add=FALSE, 
-                            pchcol="red", 
+drawWorldPlot  <-  function(data, horlines=TRUE, sizebyn=FALSE, add=FALSE,
+                            pchcol="red",
                             legend=TRUE){
-  
+
   if(!add){
     map('world',col="grey80",bg="white",lwd=0.5,fill=TRUE,resolution=0,wrap=TRUE, border="grey80")
     map('world',col="black",boundary=TRUE,lwd=0.2,interior=FALSE,fill=FALSE,add=TRUE,resolution=0,wrap=TRUE)
   }
-  
+
   if(horlines){
     lines(c(-180,180),c(-100,-100), lty="dashed", xpd=TRUE, lwd=2)
     lines(c(-180,180),c(100,100), lty="dashed", xpd=TRUE, lwd=2)
   }
-  
+
   # Remove all duplicates (increases speed and minimizes file size)
   latlon <- with(data, paste(latitude, longitude))
   lat <- data$latitude[!duplicated(latlon)]
   lon <- data$longitude[!duplicated(latlon)]
-  
+
   j  <-  !is.na(lat) & !is.na(lon)
-  
+
   # Location only sometimes missing - but lat/lon can still be in dataset anyway.
   # & data$loc != "NA" | is.na(data$loc)
-  
+
   if(!any(j)){
     polygon(c(-100,95,95,-100), c(-10,-10,15,15), col=rgb(0,0,0,240,maxColorValue=255))
     text(-100, 0, expression(paste(bold("Missing coordinate/location"))), col="red", xpd=TRUE, pos=4, cex=0.8)
   } else {
-    
+
     if(!sizebyn){
       points(lon,lat, pch=19, col=alpha("blue",0.5), cex=1.6)
     } else {
       n <- table(latlon)
       symbols(lon,lat, circles=log10(n), inches=0.1, fg="black", bg=pchcol, add=TRUE)
-      
+
       if(legend){
         ns <- c(10,100,1000)
         X <- rep(-170,3)
@@ -98,13 +98,13 @@ drawWorldPlot  <-  function(data, horlines=TRUE, sizebyn=FALSE, add=FALSE,
         text(x=X+5, y=Y, labels=as.character(ns),pos=4)
         text(x=X+5, y=Y[3]+10, labels=expression(italic(n)), pos=4)
       }
-      
+
     }
-  
+
   }
-  
+
 }
-  
+
 # Colored by vegetation type
   cols <- alpha(c("blue","brown","forestgreen","darkorange","dodgerblue2",
                     "navajowhite4","lightgoldenrod3","lavender"),0.67)
@@ -112,14 +112,14 @@ drawWorldPlot  <-  function(data, horlines=TRUE, sizebyn=FALSE, add=FALSE,
   vegs_labels <- c("Boreal forest","Savannah","Temperate forest",
                    "Temperate rainforest","Tropical rainforest",
                    "Tropical seasonal forest","Woodland","Glasshouse / Common garden")
-  
-  drawWorldPlot(data[data$vegetation == vegs[1],], horlines=FALSE, 
+
+  drawWorldPlot(data[data$vegetation == vegs[1],], horlines=FALSE,
                 sizebyn=TRUE, pchcol=cols[1])
   for(i in 2:length(vegs)){
-    drawWorldPlot(data[data$vegetation == vegs[i],], horlines=FALSE, 
+    drawWorldPlot(data[data$vegetation == vegs[i],], horlines=FALSE,
                   sizebyn=TRUE, pchcol=cols[i], add=TRUE)
   }
-  drawWorldPlot(data[data$growingCondition == "GH",], horlines=FALSE, sizebyn=TRUE, 
+  drawWorldPlot(data[data$growingCondition == "GH",], horlines=FALSE, sizebyn=TRUE,
                 pchcol=cols[8], add=TRUE)
   par(xpd=NA)
   legend(-160, -100, vegs_labels[1:4], fill=cols[1:4], bty='n')
@@ -168,7 +168,7 @@ writeLines(details2B,sep="\n\n")
 **Metadata status**: Metadata are complete to last update and are stored
 with data.
 
-**Data verification**: The raw data passed through several rounds of review, to ensure units were correct, raw data was approppriately matched to variables in BAAD, and to minimize outliers. 
+**Data verification**: The raw data passed through several rounds of review, to ensure units were correct, raw data was approppriately matched to variables in BAAD, and to minimize outliers.
 
 i) Initial analysis by data contributors. The majority of studies have been published and as such have gone through quality assurance by the data contributor.
 ii) Review by compilers of database. We have gone through extensive data verification by checking cross-correlations, credible ranges, and outliers of all variables in the database.
@@ -229,9 +229,8 @@ Count_studies <- function(x)length(unique(data[["studyName"]][!is.na(data[[x]])]
 Nstud <- sapply(thesevars, Count_studies)
 
 df <- rbind.fill(apply(data[,thesevars], 2, function(x)data.frame(Min=min(x, na.rm=T),Max=max(x, na.rm=T),Median=median(x, na.rm=T))))
-    
-      
-dfr <- data.frame(Variable=Labels, N=N, Nstudies=Nstud)
+
+dfr <- data.frame(Variable=Labels, N=N)
 dfr <- cbind(dfr,df)
 
 dfr <- dfr[dfr$N > 0,]
