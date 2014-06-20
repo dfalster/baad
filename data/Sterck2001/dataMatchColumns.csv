@@ -2,8 +2,7 @@
 "Diam","?","cm","d.bh",NA
 "Ht","?","m","h.t","height (m) using a measurement tape, and thus by climbing neigbouring trees for the larger focal trees"
 "Ht2","?","m","h.c","height of the lowest leaf, but considered part of the crown, so not a single leaf sprouting from the stem base while the rest of the leafy crown starts at 20 m."
-"CW1","?","m","d.cr",NA
-"CW2",NA,NA,NA,NA
+"CW","?","m","d.cr",NA
 "TLA","c1","m2","a.lf","total leaf area (m2) is calculated by multiplying the number of leaves with the mean leaf area of a random leaf sample (20 leaves for taller individuals, but smaller samples for small individuals)"
 "LA","?","cm2","a.ilf","leaf area (cm2) is the average area of a single leaf, based on the average area of a leaf sample of 20 leaves."
 "SLA","?","cm2.g","ma.ilf",NA
