@@ -1,3 +1,6 @@
+---
+output: html_document
+---
 # *Ecological Archives* Exxxxx
 # Falster D.S. *et al* BAAD: a Biomass And Allometry Database for woody plants. *Ecology* xxxx
 
@@ -62,8 +65,8 @@ BAAD: a Biomass And Allometry Database for woody plants
 
 ### D. Key words
 
-allometry; trait; leaf area; height; size; architecture; vegetation
-model; carbon; growth; wood
+plant traits; biomass allocation; biomass partitioning; plant allometry; allometric equations; global carbon cycle
+
 
 ## METADATA CLASS II. RESEARCH ORIGIN DESCRIPTORS
 
