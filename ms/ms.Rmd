@@ -14,6 +14,8 @@ library(bibtex)
 library(knitcitations)
 library(Hmisc)
 library(whisker)
+library(scales)
+library(maps)
 
 bib <- read.bibtex("refs.bib")
 
@@ -48,6 +50,84 @@ Combining data from many different studies, each using its own set of terms and 
 4. We used the package `knitr` within `R` to automatically produce reports comparing the raw data provided by a single study to the rest of the database `r citep(citation("knitr"))`. These reports were sent to data contributors for verification, and allowed easy identification of errors in the raw data or processing.
 
 Until recently, scientific publications in biology have mostly been concerned with "small data" `r citep("10.1038/nj7461-243a")`. Datasets arrive in small parcels, corresponding to the work of an individual study, or perhaps a handful of studies. It is exciting to be able to put these parcels together, to create something larger. We hope others will use this dataset and build on it. See [https://github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=6}
+drawWorldPlot  <-  function(data, horlines=TRUE, sizebyn=FALSE, add=FALSE, 
+                            pchcol="red", 
+                            legend=TRUE){
+  
+  if(!add){
+    map('world',col="grey80",bg="white",lwd=0.5,fill=TRUE,resolution=0,wrap=TRUE, border="grey80")
+    map('world',col="black",boundary=TRUE,lwd=0.2,interior=FALSE,fill=FALSE,add=TRUE,resolution=0,wrap=TRUE)
+  }
+  
+  if(horlines){
+    lines(c(-180,180),c(-100,-100), lty="dashed", xpd=TRUE, lwd=2)
+    lines(c(-180,180),c(100,100), lty="dashed", xpd=TRUE, lwd=2)
+  }
+  
+  # Remove all duplicates (increases speed and minimizes file size)
+  latlon <- with(data, paste(latitude, longitude))
+  lat <- data$latitude[!duplicated(latlon)]
+  lon <- data$longitude[!duplicated(latlon)]
+  
+  j  <-  !is.na(lat) & !is.na(lon)
+  
+  # Location only sometimes missing - but lat/lon can still be in dataset anyway.
+  # & data$loc != "NA" | is.na(data$loc)
+  
+  if(!any(j)){
+    polygon(c(-100,95,95,-100), c(-10,-10,15,15), col=rgb(0,0,0,240,maxColorValue=255))
+    text(-100, 0, expression(paste(bold("Missing coordinate/location"))), col="red", xpd=TRUE, pos=4, cex=0.8)
+  } else {
+    
+    if(!sizebyn){
+      points(lon,lat, pch=19, col=alpha("blue",0.5), cex=1.6)
+    } else {
+      n <- table(latlon)
+      symbols(lon,lat, circles=log10(n), inches=0.1, fg="black", bg=pchcol, add=TRUE)
+      
+      if(legend){
+        ns <- c(10,100,1000)
+        X <- rep(-170,3)
+        Y <- seq(-30,-10,by=10)
+        rect(xleft=-200, xright=-120, ybottom=-50, ytop=10, col="white", border=NA)
+        symbols(x=X, y=Y, circles=log10(ns), inches=0.1,
+                fg="black", bg=pchcol, add=TRUE)
+        text(x=X+5, y=Y, labels=as.character(ns),pos=4)
+        text(x=X+5, y=Y[3]+10, labels=expression(italic(n)), pos=4)
+      }
+      
+    }
+  
+  }
+  
+}
+  
+# Colored by vegetation type
+  cols <- alpha(c("blue","brown","forestgreen","darkorange","dodgerblue2",
+                    "navajowhite4","lightgoldenrod3","lavender"),0.67)
+  vegs <- c("BorF","Sav","TempF","TempRF","TropRF","TropSF","Wo")
+  vegs_labels <- c("Boreal forest","Savannah","Temperate forest",
+                   "Temperate rainforest","Tropical rainforest",
+                   "Tropical seasonal forest","Woodland","Glasshouse / Common garden")
+  
+  drawWorldPlot(data[data$vegetation == vegs[1],], horlines=FALSE, 
+                sizebyn=TRUE, pchcol=cols[1])
+  for(i in 2:length(vegs)){
+    drawWorldPlot(data[data$vegetation == vegs[i],], horlines=FALSE, 
+                  sizebyn=TRUE, pchcol=cols[i], add=TRUE)
+  }
+  drawWorldPlot(data[data$growingCondition == "GH",], horlines=FALSE, sizebyn=TRUE, 
+                pchcol=cols[8], add=TRUE)
+  par(xpd=NA)
+  legend(-160, -100, vegs_labels[1:4], fill=cols[1:4], bty='n')
+  legend(-40, -100, vegs_labels[5:8], fill=cols[5:8], bty='n')
+
+```
+
+**Figure 1** Global distribution of studies included in BAAD. Symbols are sized relative to the number of individual plants in each dataset.
 
 ## METHODS
 
@@ -151,7 +231,7 @@ Nstud <- sapply(thesevars, Count_studies)
 df <- rbind.fill(apply(data[,thesevars], 2, function(x)data.frame(Min=min(x, na.rm=T),Max=max(x, na.rm=T),Median=median(x, na.rm=T))))
     
       
-dfr <- data.frame(Variable=Labels, N=N)
+dfr <- data.frame(Variable=Labels, N=N, Nstudies=Nstud)
 dfr <- cbind(dfr,df)
 
 dfr <- dfr[dfr$N > 0,]
