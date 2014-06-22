@@ -1,3 +1,3 @@
 "dataset","location","latitude","longitude","vegetation","species","family","pft","age","a.stbc","h.t","h.c","d.ba","d.bh","m.so","m.rt","m.to","growingCondition"
-"Komiyama2003","Japan-Experimental Forest of Gifu University-",36,137.2,"TempF","Quercus crispula","Fagaceae","DA",32,0.013273229,8.3,2.7,0.254,0.128,44.71,11.05,55.76,"FW"
-"Komiyama2003","Japan-Experimental Forest of Gifu University-",36,137.2,"TempF","Chamaecyparis obtusa","Cupressaceae","EG",48,0.009160884,11.9,6.1,0.395,0.142,60.41,11.13,71.54,"PM"
+"Komiyama2003","Japan-Experimental Forest of Gifu University-",36,137.2,"TempF","Quercus crispula","Fagaceae","DA",32,0.013273229,8.3,2.7,0.254,0.128,44.71,NA,55.76,"FW"
+"Komiyama2003","Japan-Experimental Forest of Gifu University-",36,137.2,"TempF","Chamaecyparis obtusa","Cupressaceae","EG",48,0.009160884,11.9,6.1,0.395,0.142,60.41,NA,71.54,"PM"
