@@ -1,8 +1,5 @@
 Topic,Description
-Sampling strategy,"The data were collected from 65 publications. By searching reference database (Web of Web of Science, Folis: http://www2.ffpri.affrc.go.jp/folis21/folis-hp-j.html, and CiNii: http://ci.nii.ac.jp/en), we tried to collect all publications 1) that report biomass of individual tree measured directly by destructive harvest, 2) that were conducted in forests that regenerated naturally in Japan. We also included some data of plantations or those collected in India and the Philippines that we found during database search. "
-Leaf area,"For leaf area of conifers in reference no. = 37 and 40, probably projected area was measured. For those in reference no. = 9, 15, 28, 31, 52, and 60, projected area was measured."
-Stem cross sectional area,"Estimated from stem diameter."
-Height,"Measured by measuring tape."
-Crown area,"Crown area was estimated only in reference no. = 29 and 51. In reference no. = 29, crown area was estimated from a crown projection map. In reference no. = 51, crown area was estimated from crown diameter."
-Biomass,"Measured fresh weight was converted to dry weight from the ratio of dry to fresh weights. The ratio was estimated from subsamples taken at each study site. Exception is the leaf mass (m.lf) of reference no. = 29 (Japan-Takaragawa forest hydrological station-), where dry mass was estimated to be 0.463 * fresh weight (Morisawa and Taira 1957)."
-Other variables,"Species name and family names according to the following references: Satake Y, Hara H (1989a) Wild flower of Japan Woody plants I (in Japanese). Heibonsha, Tokyo; Satake Y, Hara H (1989b) Wild flower of Japan Woody plants II (in Japanese). Heibonsha, Tokyo."
+Sampling strategy,"Harvest was conducted in a 31-year-old Chamaecyparis obtusa forest in August 1983 (Karizumi and Terada 1984). Sample trees were selected to represent each diameter class. Roots were excavated, separated into soil depth and into very large (diameter >= 5 cm), large (2-5 cm), medium (0.5-2 cm), small (0.2-0.5 cm), fine (< 0.2 cm) roots, and weighted. Fine and small roots were estimated by soil block sampling method."
+Height,"Method not reported in Karizumi and Terada (1984) "
+Biomass,"Method not reported in Karizumi and Terada (1984),"
+Other variables,"Species name and family names were converted by M. Ishihara according to the following references: Satake Y, Hara H (1989a) Wild flower of Japan Woody plants I (in Japanese). Heibonsha, Tokyo; Satake Y, Hara H (1989b) Wild flower of Japan Woody plants II (in Japanese). Heibonsha, Tokyo."
