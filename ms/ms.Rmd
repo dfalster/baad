@@ -6,29 +6,16 @@ output: html_document
 
 
 ```{r, results="hide", echo=FALSE, message=FALSE}
-library(knitr, quietly=TRUE)
+source("MS-fun.R")
+
 knitr::opts_chunk$set(tidy=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.cap="")
 
-library(plyr)
-library(bibtex)
-library(knitcitations)
-library(Hmisc)
-library(whisker)
-library(scales)
-library(maps)
-
 bib <- read.bibtex("refs.bib")
-
-source("MS-fun.R")
-```
-
-```{r, results="hide", echo=FALSE, message=FALSE}
-
 baad <- readRDS("../output/baad.rds")
 data <- baad$data
-
 var.def <- read.csv("../config/variableDefinitions.csv",
                     stringsAsFactors=FALSE)
+
 vars <- setdiff(var.def$Variable[var.def$Type == "numeric"], c("map","mat","lai","age"))
 ```
 
@@ -52,78 +39,26 @@ Combining data from many different studies, each using its own set of terms and 
 Until recently, scientific publications in biology have mostly been concerned with "small data" `r citep("10.1038/nj7461-243a")`. Datasets arrive in small parcels, corresponding to the work of an individual study, or perhaps a handful of studies. It is exciting to be able to put these parcels together, to create something larger. We hope others will use this dataset and build on it. See [https://github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
 
 
-```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=6}
-drawWorldPlot  <-  function(data, horlines=TRUE, sizebyn=FALSE, add=FALSE,
-                            pchcol="red",
-                            legend=TRUE){
+```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height8}
 
-  if(!add){
-    map('world',col="grey80",bg="white",lwd=0.5,fill=TRUE,resolution=0,wrap=TRUE, border="grey80")
-    map('world',col="black",boundary=TRUE,lwd=0.2,interior=FALSE,fill=FALSE,add=TRUE,resolution=0,wrap=TRUE)
-  }
+# World plot colored by vegetation type
+cols <- make.transparent(c(
+    "blue","brown","forestgreen","darkorange","dodgerblue2",
+    "navajowhite4","lightgoldenrod3","lavender"),0.67)
+vegs <- c("BorF","Sav","TempF","TempRF","TropRF","TropSF","Wo")
+vegs_labels <- c("Boreal forest","Savannah","Temperate forest",
+                 "Temperate rainforest","Tropical rainforest",
+                 "Tropical seasonal forest","Woodland","Glasshouse / Common garden")
 
-  if(horlines){
-    lines(c(-180,180),c(-100,-100), lty="dashed", xpd=TRUE, lwd=2)
-    lines(c(-180,180),c(100,100), lty="dashed", xpd=TRUE, lwd=2)
-  }
-
-  # Remove all duplicates (increases speed and minimizes file size)
-  latlon <- with(data, paste(latitude, longitude))
-  lat <- data$latitude[!duplicated(latlon)]
-  lon <- data$longitude[!duplicated(latlon)]
-
-  j  <-  !is.na(lat) & !is.na(lon)
-
-  # Location only sometimes missing - but lat/lon can still be in dataset anyway.
-  # & data$loc != "NA" | is.na(data$loc)
-
-  if(!any(j)){
-    polygon(c(-100,95,95,-100), c(-10,-10,15,15), col=rgb(0,0,0,240,maxColorValue=255))
-    text(-100, 0, expression(paste(bold("Missing coordinate/location"))), col="red", xpd=TRUE, pos=4, cex=0.8)
-  } else {
-
-    if(!sizebyn){
-      points(lon,lat, pch=19, col=alpha("blue",0.5), cex=1.6)
-    } else {
-      n <- table(latlon)
-      symbols(lon,lat, circles=log10(n), inches=0.1, fg="black", bg=pchcol, add=TRUE)
-
-      if(legend){
-        ns <- c(10,100,1000)
-        X <- rep(-170,3)
-        Y <- seq(-30,-10,by=10)
-        rect(xleft=-200, xright=-120, ybottom=-50, ytop=10, col="white", border=NA)
-        symbols(x=X, y=Y, circles=log10(ns), inches=0.1,
-                fg="black", bg=pchcol, add=TRUE)
-        text(x=X+5, y=Y, labels=as.character(ns),pos=4)
-        text(x=X+5, y=Y[3]+10, labels=expression(italic(n)), pos=4)
-      }
-
-    }
-
-  }
-
+drawWorldPlot(data[data$vegetation == vegs[1],], sizebyn=TRUE, pchcol=cols[1])
+for(i in 2:length(vegs)){
+  drawWorldPlot(data[data$vegetation == vegs[i],], sizebyn=TRUE, pchcol=cols[i], add=TRUE)
 }
-
-# Colored by vegetation type
-  cols <- alpha(c("blue","brown","forestgreen","darkorange","dodgerblue2",
-                    "navajowhite4","lightgoldenrod3","lavender"),0.67)
-  vegs <- c("BorF","Sav","TempF","TempRF","TropRF","TropSF","Wo")
-  vegs_labels <- c("Boreal forest","Savannah","Temperate forest",
-                   "Temperate rainforest","Tropical rainforest",
-                   "Tropical seasonal forest","Woodland","Glasshouse / Common garden")
-
-  drawWorldPlot(data[data$vegetation == vegs[1],], horlines=FALSE,
-                sizebyn=TRUE, pchcol=cols[1])
-  for(i in 2:length(vegs)){
-    drawWorldPlot(data[data$vegetation == vegs[i],], horlines=FALSE,
-                  sizebyn=TRUE, pchcol=cols[i], add=TRUE)
-  }
-  drawWorldPlot(data[data$growingCondition == "GH",], horlines=FALSE, sizebyn=TRUE,
-                pchcol=cols[8], add=TRUE)
-  par(xpd=NA)
-  legend(-160, -100, vegs_labels[1:4], fill=cols[1:4], bty='n')
-  legend(-40, -100, vegs_labels[5:8], fill=cols[5:8], bty='n')
+drawWorldPlot(data[data$growingCondition == "GH",], sizebyn=TRUE,
+              pchcol=cols[8], add=TRUE)
+par(xpd=NA)
+legend(-160, -100, vegs_labels[1:4], fill=cols[1:4], bty='n')
+legend(-40, -100, vegs_labels[5:8], fill=cols[5:8], bty='n')
 
 ```
 
@@ -194,19 +129,23 @@ If you notice any problem with the dataset, please list an issue [here](https://
 
 ### A. Data Set Files
 
-Identity:
-Size:
-Format and storage mode: ASCII text, comma delimited. Missing values
-are denoted as 'NA'.
+BAAD contains the following files:
 
-### B. Variable definitions
+- `dictionary.csv`: a table of variable definitions
+- `data.csv`: amalgamated dataset, with columns as defined in `dictionary.csv`
+- `references.bib`: bibtex entries containing the primary source for each study
+- `references.csv`: summary of bibtex file, giving DOI, URL and citation of  the primary source for each study
+- `contacts.csv`: list of contacts and affiliations for each study
+
+
+### B. Variable definitions for data.csv
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment='', results="asis"}
 x <-daply(var.def, 1, function(x)
 		paste0("* ", x$Variable,
+    "\n\t- Type: ", x$Type,
 		"\n\t- Label: ", x$label,
 		"\n\t- Description: ", x$Description,
-		"\n\t- Type: ", x$Type,
 		"\n\t- Units: ", gsub(".","/", x$UnitsMD, fixed=TRUE)
 		))
 
@@ -215,38 +154,9 @@ writeLines(x[var.def$Variable])
 
 **Number of observations by variable**
 
-
-```{r echo=FALSE, message=FALSE}
-
-thesevars <- setdiff(var.def$Variable[var.def$Type=="numeric"],
-                     c("map","mat","lai"))
-Labels <- capitalize(var.def$label[var.def$Variable %in% thesevars])
-
-Count_obs <- function(x)length(data[[x]][!is.na(data[[x]])])
-N <- sapply(thesevars, Count_obs)
-
-Count_studies <- function(x)length(unique(data[["studyName"]][!is.na(data[[x]])]))
-Nstud <- sapply(thesevars, Count_studies)
-
-df <- rbind.fill(apply(data[,thesevars], 2, function(x)data.frame(Min=min(x, na.rm=T),Max=max(x, na.rm=T),Median=median(x, na.rm=T))))
-
-dfr <- data.frame(Variable=Labels, N=N)
-dfr <- cbind(dfr,df)
-
-dfr <- dfr[dfr$N > 0,]
-rownames(dfr) <- NULL
-
-f <- function(x)formatC(x, digits=2, format="fg")
-dfr$Min <- f(dfr$Min)
-dfr$Max <- f(dfr$Max)
-dfr$Median <- f(dfr$Median)
-
-```
-
-
-```{r results='asis', echo=FALSE}
+```{r results='asis', echo=FALSE, warning=FALSE}
 options(digits=9)
-kable(dfr, "markdown", align="l", padding=10)
+kable(summaryTable(data, var.def), "markdown", align="l", padding=10)
 ```
 
 
