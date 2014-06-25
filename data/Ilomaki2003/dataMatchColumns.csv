@@ -10,7 +10,7 @@
 "stem+bark mass kg",NA,NA,NA,NA
 "stem+bark mass inside crown kg",NA,NA,NA,NA
 "branch mass kg","?","kg","m.br",NA
-"foliage mass kg","?","kg","m.lf",NA
+"foliage mass kg","m1,7","kg","m.lf",NA
 "woody mass inside crown kg",NA,NA,NA,NA
 "woody mass of tree kg","?","kg","m.st",NA
 "grouping",NA,"-","grouping",NA

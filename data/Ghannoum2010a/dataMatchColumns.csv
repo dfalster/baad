@@ -4,12 +4,12 @@
 "Temp",NA,NA,NA,NA
 "Water",NA,NA,NA,NA
 "Potnum",NA,NA,NA,NA
-"LeafDW","m1","g","m.lf",NA
+"LeafDW","m5,6","g","m.lf",NA
 "StemDW","m1","g","m.st",NA
 "RootDW","m1","g","m.rt",NA
 "RootShoot",NA,NA,NA,NA
-"LMA","?","g.m2","ma.ilf",NA
-"LA","b,o,1","cm2","a.lf",NA
+"LMA","m5,b,6","g.m2","ma.ilf",NA
+"LA","b","cm2","a.lf",NA
 "Leafnum",NA,NA,NA,NA
 "LAR",NA,NA,NA,NA
 "Basaldia1","d","mm","d.ba",NA

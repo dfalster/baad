@@ -1,6 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
 "Age","?","yr","age",NA
-"Total leaf area","r2,c,t","m2","a.lf",NA
+"Total leaf area","r,r4,c,t","m2","a.lf",NA
 "Individual leaf size_equals_projected AREA","b,1","m2","a.ilf",NA
 "Area of sapwood cross section","j","m2","a.ssbh",NA
 "Area of heartwood cross section","?","m2","a.shbh",NA
@@ -9,7 +9,7 @@
 "Crown surface area","?","m2","a.cs",NA
 "Height to crown base","?","m","h.c",NA
 "Total height of plant","?","m","h.t",NA
-"Total leaf mass","?","kg","m.lf",NA
+"Total leaf mass","m1,7","kg","m.lf",NA
 "Stem mass","?","kg","m.st",NA
 "Sapwood mass","?","kg","m.ss",NA
 "Heartwood mass","?","kg","m.sh",NA
@@ -18,7 +18,7 @@
 "Fine root mass","?","kg","m.rf",NA
 "Coarse root mass","?","kg","m.rc",NA
 "Total root mass","?","kg","m.rt",NA
-"Leaf mass per area","?","kg.m2","ma.ilf",NA
+"Leaf mass per area","m1,r,r4,7","kg.m2","ma.ilf",NA
 "Density of stem sapwood","?","g.cm3","r.ss",NA
 "Density of stem heartwood","?","g.cm3","r.sh",NA
 "Density of stem tissue","?","g.cm3","r.st",NA

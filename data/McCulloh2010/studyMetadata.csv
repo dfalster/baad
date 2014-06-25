@@ -1,6 +1,6 @@
 Topic, Description
 Sampling strategy,Saplings were selected that were 1-4 m in height. All saplings of a species came from similar light environments.
-Leaf area,"For angiosperms, leaf area was measured on all leaves with either a leaf area meter (li-3100C; Li-Cor Biosciences, Lincoln, NE USA) or a flatbed scanner and the images were then analyzed using ImageJ (National Institutes of Health, Bethesda, MD, USA)."
+Leaf area,"For angiosperms, leaf area was measured on all leaves with either a leaf area meter (li-3100C; Li-Cor Biosciences, Lincoln, NE USA) or a flatbed scanner and the images were then analyzed using ImageJ (National Institutes of Health, Bethesda, MD, USA). For conifers, subsamples were dried for 3d in 60degC and measured using a flatbed scanner. The areas were then doubled to account for the more vertical positioning of the needles. The weights and areas were also used to calculate SLA and total leaf area."
 Stem cross sectional area,Stem cross-sectional area was measured on de-barked samples.
 Height,Height was determined by measuring the length between the ground and the highest leaf.
 Traits,Hydraulic conductivity was determined by measuring the volume flow rate of water divided by the pressure gradient inducing flow in saturated stems. Xylem vessel and tracheid diameters were also measured on cross-sections of the trunks and branches.

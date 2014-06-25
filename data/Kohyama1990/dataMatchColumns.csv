@@ -3,9 +3,9 @@
 "Hl.cm","?","cm","h.c",NA
 "Ac.cm2","a","cm2","a.cp",NA
 "Al.cm2","c","cm2","a.lf",NA
-"SLA.cm2.g","?","cm2.g","ma.ilf",NA
+"SLA.cm2.g","m5,b,7","cm2.g","ma.ilf",NA
 "Wbs.g","m5","g","m.br",NA
-"Wl.g","m5","g","m.lf",NA
+"Wl.g","m5,6","g","m.lf",NA
 "Ws.g","m5","g","m.st",NA
 "W.g","m5","g","m.so",NA
 "Year",NA,NA,NA,NA

@@ -19,6 +19,8 @@ q,core sample at DBH
 r,Conifers : projected leaf area
 r2,Conifers : all-sided leaf area
 r3,Conifers : half all-sided leaf area
+r4,Conifers : projected leaf area multiplied with converstion factor to all-sided leaf area
+rx,Conifers: unknown method used to estimate leaf area
 s,Adelaide Technique = visually count units then take sample of units and calc area and scale up
 t,scaling from branch to canopy
 u,at base of crown
@@ -49,5 +51,7 @@ li2,percentage relative to 50mol/m2/d
 li3,(%)PPFD
 li4,values in proportion; light measured with three hemispherical photographs
 i2,measured at 1/10 of height for individuals smaller than 30cm
+6,All material measured
+7,Subsample of material measured
 br1,includes petioles biomass
 c1,total leaf area (m2) is calculated by multiplying the number of leaves with the mean leaf area of a random leaf sample (20 leaves for taller individuals but smaller samples for small individuals)

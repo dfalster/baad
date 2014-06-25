@@ -9,8 +9,8 @@
 "h_t","?","m","h.t",NA
 "h_c","?","m","h.c",NA
 "cw","?","m","d.cr",NA
-"m_lf","?","kg","m.lf",NA
-"a_lf","r","m2","a.lf",NA
+"m_lf","m1,7,t","kg","m.lf",NA
+"a_lf","r,t","m2","a.lf",NA
 "wbr","?","kg","m.br",NA
 "m_st","?","kg","m.st",NA
 "a_cs","?","m2","a.cs",NA

@@ -8,7 +8,7 @@
 "Width (m)","?","m","d.cr",NA
 "Stem wood (kg)",NA,NA,NA,NA
 "Stem bark (kg)",NA,NA,NA,NA
-"Leaves (kg)","m5","kg","m.lf",NA
+"Leaves (kg)","m5,7","kg","m.lf",NA
 "branchmass","m5","kg","m.br",NA
 "Branch bark (kg)",NA,NA,NA,NA
 "Twigs (kg)",NA,NA,NA,NA

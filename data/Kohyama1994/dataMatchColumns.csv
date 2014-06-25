@@ -2,11 +2,11 @@
 "H.cm","?","cm","h.t",NA
 "CW1.cm","?","cm","d.cr",NA
 "CW2.cm",NA,"cm",NA,NA
-"Al.cm2","?","cm2","a.lf",NA
-"Wl.mg","m5","mg","m.lf",NA
+"Al.cm2","b","cm2","a.lf",NA
+"Wl.mg","m5,6","mg","m.lf",NA
 "Ws.mg","m5","mg","m.st",NA
 "Wr.mg","m5","mg","m.rt",NA
-"SLA.cm2.g","?","cm2.g","ma.ilf",NA
+"SLA.cm2.g","m5,b,6","cm2.g","ma.ilf",NA
 "SpecCode",NA,NA,"species",NA
 "No",NA,NA,NA,NA
 "RD.cm",NA,NA,NA,NA

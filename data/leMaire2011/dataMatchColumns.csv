@@ -6,9 +6,9 @@
 "a.cp","w","cm","d.cr",NA
 "h.t","?","m","h.t",NA
 "h.c","?","m","h.c",NA
-"m.lf","m1","kg","m.lf",NA
+"m.lf","m1,6,7","kg","m.lf",NA
 "m.br","m1","kg","m.br",NA
-"lf.ma","?","kg.m2","ma.ilf",NA
+"lf.ma","m1,7","kg.m2","ma.ilf",NA
 "d.st","?","g.cm3","r.st",NA
 "lai","y","m2.m2","lai",NA
 "Variable",NA,NA,NA,NA

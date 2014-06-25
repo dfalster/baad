@@ -5,9 +5,9 @@
 "Delta t (days)",NA,NA,NA,NA
 "Wood1 (g)","?","g","m.st",NA
 "Delta wood (g)",NA,NA,NA,NA
-"Leaf1 (g)","?","g","m.lf",NA
+"Leaf1 (g)","m1,7","g","m.lf",NA
 "Delta leaf (g)",NA,NA,NA,NA
-"Leaf area1 (cm2)","?","cm2","a.lf",NA
+"Leaf area1 (cm2)","k","cm2","a.lf",NA
 "Leaf area2 (cm2)",NA,NA,NA,NA
 "Area/leaf (cm2)","?","cm2","a.ilf",NA
 "ISF","li","-","light",NA

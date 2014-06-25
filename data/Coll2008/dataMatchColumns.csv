@@ -4,7 +4,7 @@
 "diameter.cm","?","cm","d.ba","10cm from the ground"
 "height.cm","?","cm","h.t",NA
 "branch.biomass.g","?","g","m.br",NA
-"total.leaf.biomass.g","?","g","m.lf",NA
+"total.leaf.biomass.g","m0,6","g","m.lf",NA
 "total.aboveground.biomass.g","?","g","m.so",NA
 "total.belowground.biomass.g","?","g","m.rt",NA
 "total.plant.biomass.g","?","g","m.to",NA

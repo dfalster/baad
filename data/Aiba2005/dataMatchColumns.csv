@@ -2,8 +2,8 @@
 "root mass (g)","m1","g","m.rt",NA
 "trunk mass (g)","m1","g","m.st",NA
 "branch mass (g)","m1","g","m.br",NA
-"leaf mass (g)","m1","g","m.lf",NA
-"total leaf area (cm^2)","?","cm2","a.lf",NA
+"leaf mass (g)","m1,6","g","m.lf",NA
+"total leaf area (cm^2)","b","cm2","a.lf",NA
 "individual leaf area (cm^2)","b","cm2","a.ilf",NA
 "crown depth (cm)","?","cm","c.d",NA
 "crown area (cm^2)","a","cm2","a.cp",NA

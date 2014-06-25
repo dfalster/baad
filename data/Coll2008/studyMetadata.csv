@@ -1,9 +1,9 @@
-Topic,"Description"
+Topic,Description
 Sampling strategy,"In August 2001, intensive allometric measurements were initiated. Saplings/trees from each of the eight species were grouped in five size class categories based on their height. The height range for each species in July 2001 was as follows: Luehea (0.56-4.42 m), Cordia (1.9-3.32 m), Sterculia (0.58-5.15 m), Antirrhoea (0.57-2.77 m), Enterolobium (1.66-2.48 m), Cedrela (0.56-3.57 m), Tabebuia (0.37-3.18 m) and Hura (0.76-4.85 m). Care was taken to sample a similar height range from all species. Differences in total height among individuals were caused by differences in growth caused by micro-scale variations in topography. All sampled individuals were healthy. Within each size category, one individual per species was randomly selected for allometric and biomass measurements. Sample size was thus five trees per species for a total of forty saplings. Each of the experimental saplings was harvested and the following traits were measured: (1) diameter at 10 cm from the ground; (2) height; (3) number, length and biomass of branches; and (4) trunk biomass. All leaves from the saplings were harvested and dried to provide total leaf biomass."
-Leaf area,"Specific leaf area (SLA) calculated from another study (Delagrange et al. 2008) was used to scale up biomass of leaves to total leaf area per tree. SLA values were obtained from fifteen to twenty-five leaves per species where the leaf area had been measured with a leaf area meter (Li-Cor 3100) before being dried and weighed."
-Stem cross sectional area,"Stem diameter was measured at 10cm from the soil surface."
-Height,"Height was measured on each individual."
-Biomass,"dry mass."
-Traits,"specific leaf area (cm2/g)."
+Leaf area,Specific leaf area (SLA) calculated from another study (Delagrange et al. 2008) was used to scale up biomass of leaves to total leaf area per tree. SLA values were obtained from fifteen to twenty-five leaves per species where the leaf area had been measured with a leaf area meter (Li-Cor 3100) before being dried and weighed.
+Stem cross sectional area,Stem diameter was measured at 10cm from the soil surface.
+Height,Height was measured on each individual.
+Biomass,Dry mass of all material.
+Traits,specific leaf area (cm2/g).
 Growth environment,"Plantation, managed."
 Other variables,"branch biomass (g), total leaf biomass (g), total aboveground biomass (g), total belowground biomass (g), total plant biomass (g), stem.biomass (g); Vegetation type - Tropical Rainforest."

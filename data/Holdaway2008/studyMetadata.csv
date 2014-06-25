@@ -1,7 +1,7 @@
 Topic,Description
 Sampling strategy,"Leaf area and weight data collected for 87 Nothofagus solandri individuals at Craigieburn, South Island, New Zealand. Data collected January to April 2007 from three distinct age classes (25, 40 and 135 years old). All stands were located on similar slopes, aspects and altitudes"
-Leaf area,"For each tree, total leaf area, and average individual leaf area were measured using ImageJ software to analyse scanned images "
-Leaf biomass,Total leaf biomass was determined by seperating the leaf component (including petioles) and drying it at 60 degrees for at least three days
+Leaf area,Each tree was divided into 1m height classes. A subsample of 100 fresh leaves from each height class was used for determination of leaf area using ImageJ software and specific leaf area was used to estimate total leaf area per height class and per tree.
+Leaf biomass,For each height class leaf biomass was determined by drying the leaf component (including petioles) at 60 degC for at least three days  and weighing all material per height class. Sor some the leaf biomass was determined through weighing branches with leaves still attached and calculating the leaf biomass through a known leaf to branch ratio. Total leaf biomass was attaind by summation of all height classes.
 Leaf mass per area,LMA calculated as the average across the entire plant
 Individaul leaf area,Average leaf area for an individual leaf was aceraged across the entire plant
 Growth environment,Natural forest

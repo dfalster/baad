@@ -5,8 +5,8 @@
 "CW2.cm","a","cm",NA,NA
 "m.st","m5","g","m.st",NA
 "Wbs.g","m5","g","m.br",NA
-"La.cm2","?","cm2","a.lf",NA
-"leaf.mass","m5","g","m.lf",NA
+"La.cm2","c","cm2","a.lf",NA
+"leaf.mass","m5,6","g","m.lf",NA
 "SpecCode",NA,NA,"species",NA
 "No",NA,NA,NA,NA
 "D1.cm",NA,NA,NA,NA
