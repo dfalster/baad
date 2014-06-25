@@ -19,7 +19,7 @@ You kindly contributed data from the publication: ", dat$references$citation[1],
 
 We are delighted to be (finally) sharing a draft of the paper with you for comment. Without a doubt, this compilation has also emerged as an extraordinary resource of which we can all be rightly very proud.
 
-To assist us in communicating with 85 co-authors, we are asking that you return your comments on the paper by filling out this form within the next 2 weeks: https://docs.google.com/forms/d/1TD_UV8Zj1mRBas14C_EH4F0wSxLyVCLpFMF5STptgE4/viewform?usp=send_form
+To assist us in communicating with 85 co-authors, we are asking that you return your comments on the paper by filling out this form within the next 2 weeks: http://bit.ly/BAAD-feedback
 If you cannot reply within this time please indicate when you will be able to respond.
 
 We look forwards to hearing from you shortly.
