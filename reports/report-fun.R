@@ -1,6 +1,8 @@
 library(knitr, quietly = TRUE)
 library(maps, quietly = TRUE)
 library(mapdata, quietly = TRUE)
+library(plyr, quietly = TRUE)
+
 suppressPackageStartupMessages(library(gdata))
 
 printAllStudyReports <- function(data = readRDS("../output/baad.rds"),
@@ -27,15 +29,8 @@ printAllStudyReports <- function(data = readRDS("../output/baad.rds"),
 printStudyReport <- function(alldata, study, RmdFile = "report.Rmd", path = "output/report-by-study",
     name = study, delete = TRUE, reprocess = FALSE) {
 
-    knitThis(RmdFile = RmdFile, path = path, name = name, delete = TRUE, reprocess = reprocess,
-        predefined = list(.study = study, alldata = alldata, .dat = extractStudy(alldata,
-            study)))
-}
-
-# creates html reports using knitr, copies output file to desired location and
-# renames as required
-knitThis <- function(RmdFile = "reportmd.Rmd", path = "output/report-per-study",
-    name = "study", delete = TRUE, reprocess = TRUE, ..., predefined = list(...)) {
+    predefined = list(.study = study, alldata = alldata, .dat = extractStudy(alldata,
+            study))
 
     outputfile <- paste0(path, "/", name, ".html")
 
@@ -52,7 +47,8 @@ knitThis <- function(RmdFile = "reportmd.Rmd", path = "output/report-per-study",
         }
 
         # knit
-        suppressMessages(knit2html(RmdFile, quiet = TRUE, envir = e))
+         knit(RmdFile, quiet = TRUE, envir = e)
+         rmarkdown::render(sub("Rmd", "md", RmdFile), "html_document")
 
         # copy html file to output dir
         if (!file.exists(path))
@@ -79,7 +75,7 @@ extractStudy <- function(alldata, study) {
     for (var in c("data", "contacts", "references"))
         alldata[[var]] <- alldata[[var]][alldata[[var]]$studyName ==study, ]
 
-    alldata[["bib"]] <- alldata[["bib"]][[study]]
+    alldata[["bibtex"]] <- alldata[["bibtex"]][[study]]
 
     alldata
 }
@@ -113,21 +109,21 @@ makePlotPanel <- function(data_all, data_study, dir = "report-per-study") {
             }
         }
     }
-  
+
     # In last plot, add a species legend
     nspec <- length(unique(data_study$data$species))
     if(nspec > 1 & nspec < 20){
       plot(1, type='n', ann=FALSE, axes=FALSE)
-      legend("topleft", levels(as.factor(data_study$data$species)), pch=19, 
+      legend("topleft", levels(as.factor(data_study$data$species)), pch=19,
              col=niceColors(), cex=0.8, pt.cex=1)
     }
-    
+
 }
 
 makePlot <- function(data, subset, xvar, yvar, xlab, ylab, main = "", maincol = make.transparent("grey",
     0.5), studycol = "red", pch = 19) {
 
-  
+
     plot(data[, xvar], data[, yvar], log = "xy", col = maincol, xlab = xlab, ylab = ylab,
         main = main, las = 1, yaxt = "n", xaxt = "n", pch = pch)
 
@@ -137,7 +133,7 @@ makePlot <- function(data, subset, xvar, yvar, xlab, ylab, main = "", maincol = 
 
     # add data for select study, highlighted in red
     points(subset[, xvar], subset[, yvar], col = studycol, pch = pch)
-    
+
 }
 
 prepMapInfo <- function(data, study = NA) {
@@ -160,7 +156,7 @@ prepMapInfo <- function(data, study = NA) {
     data
 }
 
-drawWorldPlot <- function(data, horlines = TRUE, sizebyn = FALSE, add = FALSE, pchcol = "red",
+drawWorldPlot <- function(data, sizebyn = FALSE, add = FALSE, pchcol = "red",
     legend = TRUE) {
 
     if (!add) {
@@ -168,11 +164,6 @@ drawWorldPlot <- function(data, horlines = TRUE, sizebyn = FALSE, add = FALSE, p
             wrap = TRUE, border = "grey80")
         map("world", col = "black", boundary = TRUE, lwd = 0.2, interior = FALSE,
             fill = FALSE, add = TRUE, resolution = 0, wrap = TRUE)
-    }
-
-    if (horlines) {
-        lines(c(-180, 180), c(-100, -100), lty = "dashed", xpd = TRUE, lwd = 2)
-        lines(c(-180, 180), c(100, 100), lty = "dashed", xpd = TRUE, lwd = 2)
     }
 
     # Remove all duplicates (increases speed and minimizes file size)
@@ -403,6 +394,26 @@ locLevelInfo <- function(data) {
   vars <- c("location", "longitude", "latitude", "vegetation")
   loc <- data[!duplicated(data[, vars]), vars]
   loc[is.na(loc) | loc == "" | loc == "NA"] <- "missing"
+  rownames(loc) <- NULL
+
+  loc$vegetation <-
+    sapply(loc$vegetation, function(x)
+        switch(x,
+            Sav = "Savannah",
+            TropRF = "Tropical rainforest",
+            TempRF = "Temperate rainforest",
+            TropSF = "Tropical seasonal forest",
+            TempF = "Temperate forest",
+            BorF = "Boreal forest",
+            Wo = "Woodland",
+            Gr = "Grassland",
+            Sh = "Shrubland",
+            De = "Desert",
+            ""
+            )
+        )
+
+  names(loc) <- capitalize(names(loc))
   loc
 }
 
@@ -416,7 +427,21 @@ standLevelInfo <- function(data) {
 
     sta[is.na(sta) | sta == "" | sta == "NA"] <- "missing"
     rownames(sta) <- NULL
-    
+
+
+    sta[["growingCondition"]] <- sapply(sta[["growingCondition"]] , function(x)
+        switch(x,
+            FW = "field wild",
+            FE = "field experimental",
+            GH = "glasshouse",
+            PU = "plantation unmanaged",
+            PM = "plantation managed",
+            GC = "growth chamber",
+            CG = "common garden",
+            ""
+            )
+        )
+  names(sta) <- capitalize(names(sta))
   sta
 }
 
@@ -433,9 +458,53 @@ spLevelInfo <- function(data) {
     if (any(j)) {
         spec$species[j] <- "missing"
     }
+    rownames(spec) <- NULL
+
+    spec$pft <- sapply(spec$pft , function(x)
+        switch(x,
+            EA = "vergreen angiosperm",
+            DA = "deciduous angiosperm",
+            EG = "evergreen gymnosperm",
+            DG = "deciduous gymnosperm",
+            ""
+            )
+        )
+  names(spec) <- capitalize(names(spec))
+
     spec
 }
 
 getMeta <- function(study) {
     read.csv(paste0("../data/", study, "/studyMetadata.csv"), h = TRUE, stringsAsFactors = FALSE)
+}
+
+summaryTable <- function(data, var.def, digits = 2){
+
+    thesevars <- setdiff(var.def$Variable[var.def$Type=="numeric"], c("map","mat","lai"))
+
+    N <- sapply(thesevars, function(x)length(data[[x]][!is.na(data[[x]])]))
+
+
+    df <- rbind.fill(apply(data[,thesevars], 2, function(x)data.frame(Min=min(x, na.rm=TRUE),Max=max(x, na.rm=TRUE),Median=median(x, na.rm=TRUE))))
+    dfr <- data.frame(Variable=thesevars, N=N)
+
+    dfr <- cbind(dfr,df)
+
+    for(v in c("Min", "Max", "Median"))
+        dfr[[v]] <- formatC(dfr[[v]], digits=digits, format="fg")
+
+    dfr[["Units"]] <- var.def$Units[match(thesevars, var.def$Variable)]
+    dfr[["Variable"]] <- var.def$Variable[match(thesevars, var.def$Variable)]
+    dfr[["Label"]] <- capitalize(var.def$label[match(thesevars, var.def$Variable)])
+
+    dfr <- dfr[dfr$N > 0,c("Variable",  "Label", "Units", "N", "Min","Median","Max")]
+    rownames(dfr) <- NULL
+    dfr
+}
+
+capitalize <- function (string) {
+    capped <- grep("^[^A-Z]*$", string, perl = TRUE)
+    substr(string[capped], 1, 1) <- toupper(substr(string[capped],
+        1, 1))
+    string
 }
