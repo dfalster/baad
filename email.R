@@ -11,7 +11,7 @@ extractStudy <- function(alldata, study) {
 sendEmail<- function(alldata, study){
   dat    <-  extractStudy(alldata, study)
 
-  email.text  =  paste0("Dear ", paste0(dat$contacts$name, collapse = " , "),",
+  email.text  =  paste0("Dear ", paste0(dat$contacts$name, collapse = ", "),",
 
 We previously contacted you regarding a biomass and allometry database we are developing, which we plan to submit as a 'data paper' to the journal 'Ecology'.
 
@@ -20,9 +20,9 @@ You kindly contributed data from the publication: ", dat$references$citation[1],
 We are delighted to be (finally) sharing a draft of the paper with you for comment. Without a doubt, this compilation has also emerged as an extraordinary resource of which we can all be rightly very proud.
 
 To assist us in communicating with 85 co-authors, we are asking that you return your comments on the paper by filling out this form within the next 2 weeks: http://bit.ly/BAAD-feedback
-If you cannot reply within this time please indicate when you will be able to respond.
+Please list your repsonses for this study under the name: ", study,".
 
-We look forwards to hearing from you shortly.
+We look forwards to hearing from you shortly. If you cannot reply within 2 weeks please indicate when you will be able to respond.
 
 With best regards,
 Daniel Falster and Remko Duursma
@@ -59,4 +59,14 @@ email(content =   email.text,
 
 baad <- readRDS("output/baad.rds")
 
-sendEmail(baad, "Albrektson1984")
+# Exclude studies by "Masae Ishihara", except those when Hagihara is involved
+exclude <- setdiff(unique(baad$contacts$studyName[baad$contacts$name == "Masae Ishihara"]), unique(baad$contacts$studyName[baad$contacts$name == "Akio Hagihara"]))
+
+for (d in setdiff(unique(baad$contacts$studyName), exclude))
+  sendEmail(baad, d)
+
+
+# compile attachments for Ishihara's team
+
+for (d in exclude)
+  file.copy(file.path("output/reports", paste0(d, ".html")), file.path("output/Ishihara", paste0(d, ".html")))
