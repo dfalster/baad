@@ -11,8 +11,8 @@
 "h.t","?","m","h.t",NA
 "h.c","?","m","h.c",NA
 "d.bh","?","m","d.bh",NA
-"m.lf","?","kg","m.lf",NA
-"m.st","?","kg","m.st",NA
+"m.lf","m5","kg","m.lf",NA
+"m.st","m3,m5","kg","m.st",NA
 "m.so","?","kg","m.so",NA
-"m.br","?","kg","m.br",NA
+"m.br","m5","kg","m.br",NA
 "growingCondition",NA,"-","growingCondition",NA
