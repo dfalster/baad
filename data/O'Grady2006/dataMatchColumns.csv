@@ -7,7 +7,7 @@
 "Leaf area",NA,NA,NA,NA
 "stem","m1","g","m.st",NA
 "branch","m1","g","m.br",NA
-"leaf","m1","g","m.lf",NA
+"leaf","m1,7","g","m.lf",NA
 "Total",NA,NA,NA,NA
 "m.rf","m1","g","m.rf",NA
 "m.rc","m1","g","m.rc",NA
@@ -16,7 +16,7 @@
 "treatment",NA,NA,NA,NA
 "seedling",NA,NA,NA,NA
 "underbark D",NA,NA,NA,NA
-"X","b","m2","a.lf",NA
+"X","b,7,c","m2","a.lf",NA
 "branch dead",NA,NA,NA,NA
 "5-Oct",NA,NA,NA,NA
 "Oct-15",NA,NA,NA,NA
