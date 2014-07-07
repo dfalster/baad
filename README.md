@@ -1,3 +1,4 @@
+![baad logo](https://github.com/dfalster/baad/raw/master/extra/baad.png)
 
 # Setup
 
