@@ -85,11 +85,11 @@ makePlotPanel <- function(data_all, data_study, dir = "report-per-study") {
     dict <- data_all$dictionary
 
     labels <- as.list(paste0(dict$label, " (", dict$Units, ")"))
-    names(labels) <- dict$Variable
+    names(labels) <- dict$variable
 
     # determine variables to plot
-    plot.vars <- dict$Variable[dict$Group == "tree" & dict$Type == "numeric" & colSums(!is.na(data_study$data[,
-        dict$Variable])) > 0]
+    plot.vars <- dict$variable[dict$group == "tree" & dict$type == "numeric" & colSums(!is.na(data_study$data[,
+        dict$variable])) > 0]
 
     # set up a vector of colors, each species with different color
     species <- as.numeric(as.factor(data_study$data$species))
@@ -480,7 +480,7 @@ getMeta <- function(study) {
 
 summaryTable <- function(data, var.def, digits = 2){
 
-    thesevars <- setdiff(var.def$Variable[var.def$Type=="numeric"], c("map","mat","lai"))
+    thesevars <- setdiff(var.def$variable[var.def$type=="numeric"], c("map","mat","lai"))
 
     N <- sapply(thesevars, function(x)length(data[[x]][!is.na(data[[x]])]))
 
@@ -493,9 +493,9 @@ summaryTable <- function(data, var.def, digits = 2){
     for(v in c("Min", "Max", "Median"))
         dfr[[v]] <- formatC(dfr[[v]], digits=digits, format="fg")
 
-    dfr[["Units"]] <- var.def$Units[match(thesevars, var.def$Variable)]
-    dfr[["Variable"]] <- var.def$Variable[match(thesevars, var.def$Variable)]
-    dfr[["Label"]] <- capitalize(var.def$label[match(thesevars, var.def$Variable)])
+    dfr[["Units"]] <- var.def$Units[match(thesevars, var.def$variable)]
+    dfr[["Variable"]] <- var.def$variable[match(thesevars, var.def$variable)]
+    dfr[["Label"]] <- capitalize(var.def$label[match(thesevars, var.def$variable)])
 
     dfr <- dfr[dfr$N > 0,c("Variable",  "Label", "Units", "N", "Min","Median","Max")]
     rownames(dfr) <- NULL

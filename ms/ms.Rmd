@@ -16,7 +16,7 @@ data <- baad$data
 var.def <- read.csv("../config/variableDefinitions.csv",
                     stringsAsFactors=FALSE)
 
-vars <- setdiff(var.def$Variable[var.def$Type == "numeric"], c("map","mat","lai","age"))
+vars <- setdiff(var.def$variable[var.def$type == "numeric"], c("map","mat","lai","age"))
 ```
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
@@ -142,14 +142,14 @@ BAAD contains the following files:
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment='', results="asis"}
 x <-daply(var.def, 1, function(x)
-		paste0("* ", x$Variable,
-    "\n\t- Type: ", x$Type,
+		paste0("* ", x$variable,
+    "\n\t- Type: ", x$type,
 		"\n\t- Label: ", x$label,
-		"\n\t- Description: ", x$Description,
-		"\n\t- Units: ", gsub(".","/", x$UnitsMD, fixed=TRUE)
+		"\n\t- Description: ", x$description,
+		"\n\t- Units: ", gsub(".","/", x$unitsMD, fixed=TRUE)
 		))
 
-writeLines(x[var.def$Variable])
+writeLines(x[var.def$variable])
 ```
 
 **Number of observations by variable**
