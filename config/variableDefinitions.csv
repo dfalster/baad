@@ -1,4 +1,4 @@
-variable,units,unitsMD,group,type,methodsVariable,essential,label,minValue,maxValue,allowableValues,description
+variable,units,unitsMD,group,type,methods,essential,label,minValue,maxValue,allowableValues,description
 location,-,-,site,character,FALSE,TRUE,location,,,,name of location where sampled
 latitude,deg,deg,site,character,FALSE,TRUE,latitude,-90,90,,latitude of location where sampled (-90 to 90 deg South to North)
 longitude,deg,deg,site,character,FALSE,TRUE,longitude,-180,180,,longitude of location where sampled (-180 to 180 West to East)
