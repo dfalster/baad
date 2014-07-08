@@ -2,7 +2,7 @@ TARGETS = ms.md ms.html
 
 all: $(TARGETS)
 
-ms.md: ms.Rmd MS-fun.R
+ms.md: ms.Rmd MS-fun.R ../output/baad.rds
 	Rscript -e 'library(methods); knitr::knit("$<", output = "$@")'
 
 %.html: %.md
