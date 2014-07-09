@@ -5,8 +5,8 @@
 "Crown.depth","?","cm","c.d",NA
 "Crown.Projection.Area","a","m2","a.cp",NA
 "Stem.mass","?","g","m.st",NA
-"Total.leaf.mass","?","g","m.lf",NA
-"Total.leaf.area","c","cm2","a.lf",NA
+"Total.leaf.mass","m1,7","g","m.lf",NA
+"Total.leaf.area","b,7,c","cm2","a.lf",NA
 "Individual.leaf.area","b,1","cm2","a.ilf",NA
 "SLA","?","cm2.g","ma.ilf",NA
 "LAI","?","m2.m2","lai",NA
