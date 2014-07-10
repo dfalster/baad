@@ -13,12 +13,12 @@
 "fine root dry mass g","m5","g","m.rf",NA
 "trunk diameter at soil level cm","?","cm","d.ba",NA
 "leaves fresh mass g","m6","g",NA,NA
-"total leaves dry mass g","m5","g","m.lf",NA
-"total leaves area cm 2","b,1","cm2","a.lf",NA
+"total leaves dry mass g","m5,6","g","m.lf",NA
+"total leaves area cm 2","b,6","cm2","a.lf",NA
 "above ground dry mass g","m5","g","m.so",NA
 "below ground dry mass g","m5","g","m.rt",NA
 "total dry mass g","m5","g","m.to",NA
-"Leaf mass per area :LMA*100 g cm-2","1,m5","g.cm2","ma.ilf",NA
+"Leaf mass per area :LMA*100 g cm-2","b,m5,6","g.cm2","ma.ilf",NA
 "Shoot/ root: S/R g g-1",NA,NA,NA,NA
 "Leaf area ratio: LAR cm2 g-1",NA,NA,NA,NA
 "Leaf weigh ratio: LWR g g-1",NA,NA,NA,NA
