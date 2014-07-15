@@ -118,7 +118,7 @@ studyDetails  <-  function(data) {
                       siteHistory=pasteC(getSiteHistory(unique(data$growingCondition)),'; '),
            	          metadataDesign=getMetadataDesign(unique(data$studyName)),
            	          lab=getMetadataMethods(unique(data$studyName)),
-           	          personell=pasteC(getPersonell(unique(data$studyName))),
+           	          personell=pasteC(getPersonell(unique(data$studyName)),", "),
            	          citation=getCitation(data$studyName[1]),
            	          vars=pasteC(names(removeNAcols(data,
            	          	exclude = c("studyName","species","speciesMatched","location", "latitude","longitude","vegetation","map","mat","family","pft","growingCondition", "grouping"))), ", ")

@@ -107,9 +107,8 @@ with data.
 
 i) Initial analysis by data contributors. The majority of studies have been published and as such have gone through quality assurance by the data contributor.
 ii) Review by compilers of database. We have gone through extensive data verification by checking cross-correlations, credible ranges, and outliers of all variables in the database.
-iii) All species names were matched against online databases with the Taxonstand R package, `r citet("10.1111/j.2041-210X.2012.00232.x")`and the taxize R package, `r citet(bib["chamberlain2013taxize"])`.
-iv) Additional review by contributors using automated repots. For each study, we generated automated reports using the dataMashR R package (XXXX). In these reports, we summarized species, locations (latitude, longitude and maps), plant functional type, meta-data provided by the contributor, and pair-wise plots of all numeric variables in the dataset (and a comparison to all data in the database). Each contributor checked the reports for problems, which allowed us to improve data quality in many cases.
-
+iii) All species names were matched against online databases with the Taxonstand R package, `r citet("10.1111/j.2041-210X.2012.00232.x")` and the taxize R package, `r citet(bib["chamberlain2013taxize"])`.
+iv) Additional review by contributors using reports generated from the data.  In these reports, we summarized species, locations (latitude, longitude and maps), plant functional type, meta-data provided by the contributor, and pair-wise plots of all numeric variables in the dataset (and a comparison to all data in the database). Each contributor checked the reports for problems, which allowed us to improve data quality in many cases.
 
 ### B. Accessibility
 
