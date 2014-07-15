@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
 "DBH (cm)","?","cm","d.bh",NA
 "HEIGHT (m)","?","m","h.t",NA
-"LEAF (kg)","m1","kg","m.lf",NA
+"LEAF (kg)","m1,7","kg","m.lf",NA
 "BRANCH (kg)","m1","kg","m.br",NA
 "STEMWOOD (kg)","m1","kg","m.st",NA
 "STEMBARK (kg)","m1","kg","m.sb",NA
