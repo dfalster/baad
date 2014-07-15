@@ -90,6 +90,12 @@ plant traits; biomass allocation; biomass partitioning; plant allometry; allomet
 ```{r,results="asis",echo=FALSE, message=FALSE}
 library(plyr)
 library(whisker)
+
+## for debugging
+# for(s in unique(data$studyName)){
+#  cat(s)
+#  studyDetails(data[data$studyName==s,])}
+
 details2B  <-  daply(data, .(studyName), function(x) studyDetails(x))
 writeLines(details2B,sep="\n\n")
 ```
