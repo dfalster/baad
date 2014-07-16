@@ -1,7 +1,7 @@
 Topic,Description
 grouping,trees were sampled in three elevation bands west of watershed 6 at the Hubbard Brook Experimental Forest.  L = 550-630m; M = 630-710m; H = 710-785m.
 age,age was determined by counting growth rings on the stump or butt log.
-m.lf,leaf mass includes current-year twig growth
+m.lf,The crown was divided into 5 height ranges and a random living branch  was chosen from each section. Freshweight of livind wood, dead wood, current twigs with leaves and older leaves were weighed fresh in the field then dried at 105oC to obtain dry weight.
 m.br,branch mass includes both dead and live branches
 m.rt,"total belowground mass, including the root crown (see Vadeboncoeur et al. 2007 Can. J. For. Res. 37:1777-1783."
 Growth environment,"Field, wild."
