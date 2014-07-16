@@ -1,45 +1,45 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","d.bh","m.lf","m.st","m.so","m.br","m.rt","m.to","growingCondition"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Picea glehnii","Pinaceae","EG",0.395,NA,384.62,676.31,144.26,102.99,779.3,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Betula ermanii","Betulaceae","DA",0.22,7.49,141.01,195.37,46.87,41.95,237.32,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Betula ermanii","Betulaceae","DA",0.18,NA,82.22,NA,36.19,20,NA,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Betula ermanii","Betulaceae","DA",0.07,0.27,8.54,10.31,1.5,2.45,12.76,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Hydrangea paniculata","Saxifragaceae","DA",0.018,0.05,0.78,1.92,1.09,NA,NA,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.327,NA,267.77,469.33,103.36,44.57,513.9,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Picea jezoensis","Pinaceae","EG",0.052,NA,3.05,5.77,1.03,2.37,8.14,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.204,NA,101.62,147.46,18.34,28.97,176.43,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.067,NA,5.84,8.86,1.68,7.69,16.55,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.069,NA,4.04,7.49,0.75,2.29,9.78,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.041,NA,2.38,NA,0.19,1.05,NA,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Betula ermanii","Betulaceae","DA",0.141,0.87,NA,NA,6.38,18.92,NA,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Betula ermanii","Betulaceae","DA",0.054,NA,4.88,5.022,0.14,2.32,7.342,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Betula ermanii","Betulaceae","DA",0.038,0.08,2.1,2.53,0.35,0.86,3.39,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.248,NA,100.76,189.82,39.54,65.51,255.33,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.022,NA,0.44,0.72,0.06,0.16,0.88,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Sorbus commixta","Rosaceae","DA",0.218,4.23,121.97,179.41,53.21,72.18,251.59,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Sorbus commixta","Rosaceae","DA",0.119,0.65,30.11,41.37,10.61,NA,NA,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Hydrangea paniculata","Saxifragaceae","DA",0.02,0.047,0.39,0.597,0.16,NA,NA,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Viburnum furcatum","Caprifoliaceae","DA",0.006,0.02,0.1,0.22,0.1,0.096,0.316,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Acanthopanax sciadophylloides","Araliaceae","DA",0.1,0.74,18.32,25.1,6.04,10.79,35.89,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Acer mono","Aceraceae","DA",0.104,1.03,23.19,30.87,6.65,7.89,38.76,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Quercus crispula","Fagaceae","DA",0.465,27.54,595.87,1269.37,645.96,429.93,1699.3,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.029,NA,0.81,1.4,0.12,0.52,1.92,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Acer mono","Aceraceae","DA",0.057,0.26,5.76,7.3,1.28,2.7,10,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.063,NA,4.18,6.57,0.39,2.41,8.98,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Betula ermanii","Betulaceae","DA",0.12,1.12,45.41,49.11,2.58,9.11,58.22,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Betula ermanii","Betulaceae","DA",0.126,1.05,57.04,64.71,6.62,19.86,84.57,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Acer mono","Aceraceae","DA",0.031,0.11,1.61,2.05,0.33,1.77,3.82,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.089,NA,8.9,22.39,2.43,3.94,26.33,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.057,NA,2.83,5.1,0.39,1.29,6.39,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.049,NA,2.8,4.5,0.5,1.67,6.17,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.024,NA,0.62,1,0.09,0.35,1.35,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.041,NA,1.16,2.05,0.3,0.35,2.4,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.162,NA,37.83,69.28,18.65,16.53,85.81,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Quercus crispula","Fagaceae","DA",0.491,NA,954.76,NA,NA,287.89,NA,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.052,NA,2.99,4.42,0.41,0.92,5.34,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Acanthopanax sciadophylloides","Araliaceae","DA",0.089,0.41,12.47,15.41,2.53,3.78,19.19,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.075,NA,7.5,10.86,0.63,2.55,13.41,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.039,NA,1.8,2.32,0.19,1.9,4.22,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.035,NA,1.1,NA,0.19,NA,NA,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Acanthopanax sciadophylloides","Araliaceae","DA",0.07,0.37,7.4,9.14,1.37,0.5,9.64,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Abies sachalinensis","Pinaceae","EG",0.016,NA,0.3,0.5,0.05,0.22,0.72,"FW"
-"Suzuki2012","Japan-Teshio Experimental Forest of Hokkaido University-",45,142,"BorF","Viburnum furcatum","Caprifoliaceae","DA",0.015,0.07,1.3,1.73,0.36,NA,NA,"FW"
+dataset,location,latitude,longitude,vegetation,species,family,pft,d.bh,h.t,m.lf,m.st,m.so,m.br,m.rt,m.to,growingCondition
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Picea glehnii,Pinaceae,EG,0.395,18.06 ,NA,384.62,676.31,144.26,102.99,779.3,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Betula ermanii,Betulaceae,DA,0.220,16.11 ,7.49,141.01,195.37,46.87,41.95,237.32,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Betula ermanii,Betulaceae,DA,0.180,12.93 ,NA,82.22,NA,36.19,20.00,NA,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Betula ermanii,Betulaceae,DA,0.070,2.30 ,0.27,8.54,10.31,1.50,2.45,12.76,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Hydrangea paniculata,Saxifragaceae,DA,0.018,3.30 ,0.05,0.78,1.92,1.09,NA,NA,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.327,14.95 ,NA,267.77,469.33,103.36,44.57,513.9,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Picea jezoensis,Pinaceae,EG,0.052,2.85 ,NA,3.05,5.77,1.03,2.37,8.14,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.204,13.07 ,NA,101.62,147.46,18.34,28.97,176.43,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.067,4.24 ,NA,5.84,8.86,1.68,7.69,16.55,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.069,4.18 ,NA,4.04,7.49,0.75,2.29,9.78,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.041,3.18 ,NA,2.38,NA,0.19,1.05,NA,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Betula ermanii,Betulaceae,DA,0.141,10.40 ,0.87,NA,NA,6.38,18.92,NA,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Betula ermanii,Betulaceae,DA,0.054,4.80 ,NA,4.88,5.022,0.14,2.32,7.342,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Betula ermanii,Betulaceae,DA,0.038,5.67 ,0.08,2.10,2.53,0.35,0.86,3.39,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.248,9.75 ,NA,100.76,189.82,39.54,65.51,255.33,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.022,1.53 ,NA,0.44,0.72,0.06,0.16,0.88,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Sorbus commixta,Rosaceae,DA,0.218,11.90 ,4.23,121.97,179.41,53.21,72.18,251.59,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Sorbus commixta,Rosaceae,DA,0.119,9.20 ,0.65,30.11,41.37,10.61,NA,NA,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Hydrangea paniculata,Saxifragaceae,DA,0.020,3.30 ,0.047,0.39,0.597,0.16,NA,NA,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Viburnum furcatum,Caprifoliaceae,DA,0.006,1.63 ,0.02,0.10,0.22,0.10,0.096,0.316,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Acanthopanax sciadophylloides,Araliaceae,DA,0.100,9.50 ,0.74,18.32,25.10,6.04,10.79,35.89,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Acer mono,Aceraceae,DA,0.104,8.50 ,1.03,23.19,30.87,6.65,7.89,38.76,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Quercus crispula,Fagaceae,DA,0.465,18.30,27.54,595.87,1269.37,645.05.96,429.93,1699.3,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.029,2.39 ,NA,0.81,1.40,0.12,0.52,1.92,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Acer mono,Aceraceae,DA,0.057,5.70 ,0.26,5.76,7.30,1.28,2.70,10.00,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.063,5.25 ,NA,4.18,6.57,0.39,2.41,8.98,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Betula ermanii,Betulaceae,DA,0.120,13.18 ,1.12,45.05.41,49.11,2.58,9.11,58.22,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Betula ermanii,Betulaceae,DA,0.126,13.15 ,1.05,57.04,64.71,6.62,19.86,84.57,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Acer mono,Aceraceae,DA,0.031,4.50 ,0.11,1.61,2.05,0.33,1.77,3.82,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.089,6.70 ,NA,8.90,22.39,2.43,3.94,26.33,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.057,3.39 ,NA,2.83,5.10,0.39,1.29,6.39,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.049,4.10 ,NA,2.80,4.50,0.50,1.67,6.17,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.024,1.75 ,NA,0.62,1.00,0.09,0.35,1.35,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.041,4.36 ,NA,1.16,2.05,0.30,0.35,2.40,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.162,11.20 ,NA,37.83,69.28,18.65,16.53,85.81,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Quercus crispula,Fagaceae,DA,0.491,19.70 ,NA,954.76,NA,NA,287.89,NA,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.052,3.55 ,NA,2.99,4.42,0.41,0.92,5.34,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Acanthopanax sciadophylloides,Araliaceae,DA,0.089,8.56 ,0.41,12.47,15.41,2.53,3.78,19.19,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.075,3.57 ,NA,7.50,10.86,0.63,2.55,13.41,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.039,3.56 ,NA,1.80,2.32,0.19,1.90,4.22,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.035,2.27 ,NA,1.10,NA,0.19,NA,NA,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Acanthopanax sciadophylloides,Araliaceae,DA,0.070,7.95 ,0.37,7.40,9.14,1.37,0.50,9.64,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Abies sachalinensis,Pinaceae,EG,0.016,1.52 ,NA,0.30,0.50,0.05,0.22,0.72,FW
+Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,BorF,Viburnum furcatum,Caprifoliaceae,DA,0.015,3.74 ,0.07,1.30,1.73,0.36,NA,NA,FW
