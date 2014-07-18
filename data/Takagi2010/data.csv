@@ -1,4 +1,4 @@
-dataset,location,latitude,longitude,vegetation,species,family,pft,h.t,d.bh,d.cr,m.lf,m.st,m.so,m.br,m.rt,m.to,growingCondition
+dataset,location,latitude,longitude,vegetation,species,family,pft,h.t,d.bh,d.cr,m.lf,m.st,m.so,m.br,m.rc,m.to,growingCondition
 Takagi2010,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.1166667,BorF,Abies sachalinensis,Pinaceae,EG,21.35,0.5016,8.705,117.04,695.41,1278.61,465.35,315.31,1593.92,FW
 Takagi2010,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.1166667,BorF,Abies sachalinensis,Pinaceae,EG,18.50,0.3748,9.325,88.25,324.01,732.77,312.44,189.86,922.63,FW
 Takagi2010,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.1166667,BorF,Abies sachalinensis,Pinaceae,EG,16.40,0.3180,8.45,49.78,259.10,496.92,187.85,119.06,615.98,FW
