@@ -1,4 +1,4 @@
-dataset,location,latitude,longitude,vegetation,species,family,pft,d.bh,h.t,m.lf,m.st,m.so,m.br,m.rt,m.to,growingCondition
+dataset,location,latitude,longitude,vegetation,species,family,pft,d.bh,h.t,m.lf,m.st,m.so,m.br,m.rc,m.to,growingCondition
 Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,TempF,Picea glehnii,Pinaceae,EG,0.395,18.06 ,NA,384.62,676.32,NA,102.99,779.3,FW
 Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,TempF,Betula ermanii,Betulaceae,DA,0.220,16.11 ,7.49,141.01,195.37,46.87,41.95,237.33,FW
 Suzuki2012,Japan-Teshio Experimental Forest of Hokkaido University-,45.05,142.12,TempF,Betula ermanii,Betulaceae,DA,0.180,12.93 ,NA,82.22,NA,36.19,20.00,NA,FW
