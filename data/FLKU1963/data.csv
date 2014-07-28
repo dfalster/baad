@@ -1,136 +1,136 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","age","a.lf","a.stbc","h.t","h.c","d.bh","m.lf","m.st","m.so","m.br","m.rt","m.to","growingCondition"
-"FLKU1963","Japan-Usuda National Forest-106",36,138,"TempF","Larix kaempferi","Pinaceae","DG",48,NA,0.019855651,19.5,9.2,0.239,6.345,189.655,221.708,25.708,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-106",36,138,"TempF","Larix kaempferi","Pinaceae","DG",49,NA,0.039408138,24.1,13.2,0.326,7.976,426.845,472.504,37.683,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-106",36,138,"TempF","Larix kaempferi","Pinaceae","DG",51,NA,0.009852035,17.6,8.75,0.159,1.955,75.441,83.403,6.007,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-106",36,138,"TempF","Larix kaempferi","Pinaceae","DG",49,NA,0.007238229,17.6,12.25,0.195,3.129,100.948,112.316,8.239,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-108",36,138,"TempF","Larix kaempferi","Pinaceae","DG",11,NA,0.008171282,6.85,0.45,0.08,2.434,6.851,14.014,4.729,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-108",36,138,"TempF","Larix kaempferi","Pinaceae","DG",11,NA,0.002290221,4.3,0.4,0.044,0.74,1.407,3.584,1.437,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-108",36,138,"TempF","Larix kaempferi","Pinaceae","DG",11,NA,0.004778362,6.3,0.29,0.07,1.352,3.991,8.354,3.011,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-108",36,138,"TempF","Larix kaempferi","Pinaceae","DG",11,NA,0.005808805,5.85,0.23,0.064,1.8,4.093,9.722,3.829,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-108",36,138,"TempF","Larix kaempferi","Pinaceae","DG",11,NA,0.004778362,6.7,0.78,0.071,1.538,4.995,10.511,3.978,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-104, Ni",36,138,"TempF","Larix kaempferi","Pinaceae","DG",56,NA,0.086569727,26.7,5.35,0.359,17.59,588.221,703.094,97.283,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-104, Ro",36,138,"TempF","Larix kaempferi","Pinaceae","DG",29,NA,0.015174678,15.75,7.2,0.186,5.039,92.142,113.86,16.679,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-104, Ro",36,138,"TempF","Larix kaempferi","Pinaceae","DG",30,NA,0.007542964,13.75,5.75,0.125,2.057,36.085,43.31,5.168,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-104, Ro",36,138,"TempF","Larix kaempferi","Pinaceae","DG",30,NA,0.001963495,8.8,4.4,0.072,0.445,7.576,9.093,1.072,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-104, Ro",36,138,"TempF","Larix kaempferi","Pinaceae","DG",30,NA,0.00664761,12.75,4.85,0.118,1.557,29.053,36.087,5.477,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-104, Ro",36,138,"TempF","Larix kaempferi","Pinaceae","DG",30,NA,0.017203361,16.3,7.25,0.205,6.23,110.089,132.983,16.664,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-104, Ro",36,138,"TempF","Larix kaempferi","Pinaceae","DG",24,NA,0.005026548,11,4.4,0.098,2.057,20.354,27.929,5.518,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-104, Ro",36,138,"TempF","Larix kaempferi","Pinaceae","DG",30,NA,0.002290221,14.7,12.4,0.147,2.84,52.382,63.96,8.738,NA,NA,"PM"
-"FLKU1963","Japan-Usuda National Forest-104, Ro",36,138,"TempF","Larix kaempferi","Pinaceae","DG",30,NA,0.003216991,11.5,6.3,0.087,1.192,16.896,20.792,2.704,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Sugadaira 71",36,138,"TempF","Larix kaempferi","Pinaceae","DG",42,NA,0.010935884,18.05,11.9,0.196,4.124,123.571,139.573,11.878,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Sugadaira 71",36,138,"TempF","Larix kaempferi","Pinaceae","DG",44,NA,0.00664761,18.05,12.05,0.158,2.625,85.723,94.664,6.316,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Sugadaira 71",36,138,"TempF","Larix kaempferi","Pinaceae","DG",38,NA,0.002042821,17.08,12.8,0.126,0.476,37.38,39.216,1.36,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Sugadaira 71",36,138,"TempF","Larix kaempferi","Pinaceae","DG",38,NA,0.003421194,17,12.85,0.15,1.056,61.452,64.885,2.377,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Sugadaira 71",36,138,"TempF","Larix kaempferi","Pinaceae","DG",43,NA,0.0254469,20.98,11.35,0.243,6.871,226.977,263.565,29.717,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Sugadaira 71",36,138,"TempF","Larix kaempferi","Pinaceae","DG",43,NA,0.014957123,19.7,12.05,0.22,5.643,164.089,183.415,13.683,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",19,NA,0.00090792,4.79,2.15,0.04,0.184,1.684,2.306,0.438,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.014313882,11.6,1.4,0.137,4.516,33.563,49.241,11.162,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.013069811,11.85,2.2,0.138,3.958,33.163,46.59,9.469,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",19,NA,0.007853982,8.7,1.77,0.105,2.314,14.751,23.504,6.439,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.011882289,9.3,1.64,0.127,3.159,20.534,35.026,11.333,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.010935884,9.65,1.15,0.112,2.939,19.79,32.637,9.908,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.007088218,8.45,2.5,0.098,1.522,12.299,18.956,5.135,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.017436625,11.5,2.42,0.164,4.41,38.509,57.016,14.097,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.006939778,8.6,1.67,0.095,2.215,12.511,21.34,6.614,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",19,NA,0.004656626,8.6,1.7,0.08,1.176,8.411,12.558,2.971,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.001734945,5.7,2.14,0.064,0.408,3.953,5.438,1.077,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.007697687,8.1,1.1,0.092,1.983,11.379,18.703,5.341,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",17,NA,0.005808805,8.75,2.43,0.094,2.07,11.799,18.357,4.488,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.002123717,6.27,1.8,0.055,0.62,3.629,5.756,1.507,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.012271846,10.8,1.8,0.129,3.831,27.478,41.631,10.322,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Wada 137",36,138,"TempF","Larix kaempferi","Pinaceae","DG",18,NA,0.014957123,11.2,1.4,0.139,6.459,32.2,59.519,20.86,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Daimon 121",36,138,"TempF","Larix kaempferi","Pinaceae","DG",11,NA,0.005281017,8.12,1.1,0.08,1.605,8.282,13.027,3.14,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Daimon 121",36,138,"TempF","Larix kaempferi","Pinaceae","DG",11,NA,0.008659015,8.13,0.5,0.096,2.816,9.274,17.67,5.58,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Daimon 121",36,138,"TempF","Larix kaempferi","Pinaceae","DG",11,NA,0.002375829,6.44,1.18,0.054,0.902,3.283,6.257,2.072,NA,NA,"PM"
-"FLKU1963","Japan-Ueda National Forest-Daimon 121",36,138,"TempF","Larix kaempferi","Pinaceae","DG",11,NA,0.014526724,8.3,0.5,0.118,2.977,15.122,25.764,7.665,NA,NA,"PM"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",38,19.61,0.004417865,11.3,7,0.116,2.279,36.704,45.919,6.936,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",25,3.64,0.00090792,9.85,7.15,0.064,0.423,9.52,10.442,0.499,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",38,43.1,0.011882289,12.5,7.3,0.156,5.009,71.888,91.394,14.497,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",34,10.56,0.003318307,11.2,8.25,0.101,1.227,34.07,39.165,3.868,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",30,2.05,0.000855299,10.3,8,0.075,0.238,13.662,14.635,0.735,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",37,14.08,0.003959192,11.8,8.4,0.098,1.636,32.806,38.971,4.529,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",38,24.84,0.008171282,13.7,7,0.143,2.887,62.969,81.66,15.804,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",25,2.198,0.001963495,9.3,6.9,0.069,0.255,11.354,12.658,1.049,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",21,2.774,0.000706858,8.7,7.2,0.069,0.322,11.254,12.181,0.605,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",9,0.599,0.000176715,2.3,1.25,0.015,0.07,0.248,0.403,0.085,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",9,0.649,0.000176715,2.7,1.25,0.013,0.075,0.133,0.262,0.054,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",11,1.099,0.000254469,3.2,1.6,0.02,0.128,0.392,0.64,0.12,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",35,15.23,0.003318307,11.3,8.25,0.108,1.771,29.102,33.191,2.318,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",28,5.012,0.002123717,9.6,7.4,0.087,0.582,19.078,21.19,1.53,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",38,63.94,0.016286016,12,6.8,0.187,7.43,104.455,138.129,26.244,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Distylium racemosum","Hamamelidaceae","EA",30,8.904,0.001017876,6.7,2.6,0.043,1.035,3.669,5.669,0.965,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",29,3.946,0.000804248,4.9,2.6,0.043,0.459,2.416,3.737,0.862,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",27,2.098,0.001017876,10.8,7.9,0.077,0.244,14.979,16.18,0.957,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Quercus spp.","Fagaceae","EA",35,20.51,0.003216991,10.9,7.1,0.101,2.384,26.986,34.804,5.434,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",33,2.148,0.000615752,5.8,3.15,0.039,0.25,2.497,3.24,0.493,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Cleyera japonica","Theaceae","EA",25,2.967,0.000452389,4.1,1.9,0.03,0.345,1.021,1.744,0.378,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Distylium racemosum","Hamamelidaceae","EA",15,0.899,9.5e-05,3.3,2.6,0.019,0.104,0.484,0.684,0.096,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Quercus spp.","Fagaceae","EA",22,3.13,0.001385442,9.1,5.8,0.066,0.364,10.289,11.518,0.865,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-6",32.2,130.8,"TempF","Cinnamomum japonicum","Lauraceae","EA",34,8.248,0.002733971,9.3,5.65,0.08,0.959,13.608,16.885,2.318,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-3",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",12,26.35,0.007088218,8,1.7,0.097,3.062,13.405,21.997,5.53,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-3",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",12,4.48,0.001017876,6.85,2.65,0.043,0.521,2.82,4.061,0.72,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-3",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",12,2.53,0.000254469,5.6,3.1,0.03,0.295,1.611,2.263,0.357,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-3",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",12,8.89,0.002042821,7.3,3.2,0.059,1.033,5.908,8.402,1.461,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-3",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",12,14.88,0.002290221,8,4.15,0.077,1.73,9.844,14.22,2.646,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-3",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",10,1.18,0.000283529,5.8,3.7,0.028,0.137,1.107,1.386,0.142,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-3",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",8,0.44,0.000153938,4.25,2.6,0.019,0.051,0.426,0.528,0.051,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-3",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",12,1.52,0.000314159,4.2,2.1,0.026,0.176,0.707,1.084,0.201,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",8,0.2964,0.000132732,3.1,2,0.013,0.034,0.24,0.309,0.035,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",7,0.1465,3.85e-05,2.3,1.6,0.01,0.017,0.134,0.175,0.024,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",11,0.5728,0.000132732,2.6,1.25,0.012,0.067,0.303,0.464,0.094,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",NA,1.465,0.000283529,3.2,1.45,0.021,0.17,0.456,0.858,0.232,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",NA,0.2564,0.000153938,3.05,1.6,0.016,0.03,0.321,0.429,0.078,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",12,0.333,9.5e-05,3.2,2.15,0.018,0.039,0.409,0.523,0.075,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,0.1698,3.85e-05,2,0.55,0.006,0.02,0.031,0.063,0.012,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,2.747,0.000572555,4.5,2.1,0.032,0.319,1.241,2.07,0.51,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",9,1.209,0.000283529,4.3,1.5,0.02,0.14,0.664,0.997,0.193,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",10,0.4062,9.5e-05,2.3,1.03,0.009,0.054,0.114,0.21,0.042,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",NA,0.5994,0.00022698,3.2,2.25,0.024,0.07,0.698,0.933,0.165,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",NA,0.1132,5.03e-05,2.25,1.05,0.008,0.013,0.073,0.098,0.012,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",9,0.7126,0.000132732,2.85,0.95,0.012,0.083,0.153,0.299,0.063,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",NA,NA,5.03e-05,2.2,1.6,0.008,0.012,0.096,0.12,0.012,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",NA,0.0866,9.5e-05,2.1,0.95,0.01,0.01,0.109,0.135,0.016,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,0.1066,2.83e-05,1.5,0.35,0.003,0.012,0.018,0.036,0.006,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Quercus myrsinaefolia","Fagaceae","EA",NA,0.2431,7.85e-05,2,0.45,0.005,0.028,0.052,0.108,0.028,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,NA,1.26e-05,0.85,0.31,NA,0.006,0.005,0.014,0.003,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,0.0899,1.96e-05,1.25,0.53,NA,0.01,0.02,0.04,0.01,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,0.0533,1.26e-05,1.1,0.54,NA,0.006,0.012,0.023,0.005,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,NA,7.07e-06,0.5,0.18,NA,0.002,0.002,0.005,0.001,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,NA,NA,0.9,NA,NA,0.003,0.007,0.013,0.003,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,NA,NA,0.75,NA,NA,8e-04,0.004,0.0058,0.001,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Eurya japonica","Theaceae","EA",NA,NA,NA,1.45,NA,0.003,2e-04,0.023,0.0242,0.001,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,NA,NA,1.1,NA,NA,0.004,0.007,0.013,0.002,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,NA,NA,0.8,NA,NA,0.0011,0.003,0.0081,0.004,NA,NA,"FW"
-"FLKU1963","Japan-Sumitomo Forestry Co. Forest-7",32.2,130.8,"TempF","Castanopsis cuspidata","Fagaceae","EA",NA,NA,NA,0.7,NA,NA,0.003,0.002,0.006,0.001,NA,NA,"FW"
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",70,7.8264,NA,6.1,NA,0.08,0.353,11.987,13.934,1.594,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",71,2.1995,NA,5.8,NA,0.045,0.198,3.898,4.574,0.478,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",NA,0.2358,NA,1.47,NA,0.003,0.0043,0.0404,0.0503,0.0056,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",NA,NA,NA,2.4,NA,0.008,0.0142,0.15,0.1905,0.0263,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",NA,0.6305,NA,2.4,1.2,0.009,0.0153,0.2008,0.2583,0.0422,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",NA,0.6385,NA,1.55,0.8,0.008,0.0254,0.2478,0.3651,0.0919,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",NA,1.113,NA,3.2,1.45,0.017,0.0258,0.5011,0.6262,0.0993,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",58,5.2947,NA,4.73,2,0.03,0.1039,1.6233,2.0557,0.3285,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",51,2.0067,NA,3.05,1.6,0.024,0.0819,0.8478,1.1213,0.1916,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",NA,1.9725,NA,4.7,2.6,0.032,0.0758,1.5799,1.9533,0.2976,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",46,1.8709,NA,3.3,2.1,0.023,0.0489,0.7772,0.9824,0.1563,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",157,29.287,NA,11.5,4.3,0.116,2.0032,43.3209,54.9576,9.6335,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",65,14.198,NA,8.45,4.3,0.096,0.7266,18.6043,23.2075,3.8766,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",185,72.0606,NA,19.2,11,0.294,4.707,413.575,505.812,87.53,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",233,302.8942,NA,23.8,12.9,0.599,23.645,1813.547,2362.115,524.923,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",146,342.8525,NA,20.5,NA,0.404,NA,692.178,NA,263.73,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",90,8.2939,NA,4.8,1.9,0.0521,0.394,5.79,7.568,1.384,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",NA,NA,NA,1.9,1.25,0.01,0.0159,0.1092,0.1506,0.0255,NA,NA,""
-"FLKU1963","Japan-Naeba-86",36.9,138.8,"TempF","Fagus crenata","Fagaceae","DA",144,43.98,NA,16.8,9.3,0.192,3.4252,152.4504,191.0792,35.2036,NA,NA,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",15,NA,0.001963495,6.78,3.94,0.08,0.723,7.43,9.081,0.928,1.09,10.171,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",14,NA,0.002827433,7.85,4.23,0.096,1.106,12.11,15.998,2.782,2.33,18.328,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",16,NA,0.000615752,6.67,4.52,0.05,0.185,3.59,3.972,0.197,0.485,4.457,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",14,NA,0.001385442,7.2,4.23,0.057,0.423,4.5,5.434,0.511,0.603,6.037,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",15,NA,0.000706858,6.87,4.83,0.053,0.286,3.89,4.478,0.302,0.486,4.964,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",14,NA,0.004071504,6.72,3.52,0.106,1.702,12.09,16.524,2.732,2.87,19.394,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",13,NA,0.001520531,6.8,4.11,0.064,0.839,5.73,7.176,0.607,0.89,8.066,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",15,NA,0.003421194,7.15,3.87,0.1,1.396,12.04,15.429,1.993,2.89,18.319,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",15,NA,0.003019071,7.16,3.73,0.087,0.952,9.55,11.8315,1.3295,1.48,13.3115,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",13,NA,0.002123717,7.58,4.02,0.071,0.98,7.72,9.998,1.298,1.35,11.348,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",14,NA,0.000314159,4.89,3.25,0.03,0.05,1.11,1.227,0.067,0.195,1.422,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",NA,NA,NA,3.42,NA,0.018,0.011,0.255,0.275,0.009,NA,NA,""
-"FLKU1963","Japan-Chiba Forest of Tokyo University-17-n",35.2,140.1,"TempF","Pinus densiflora","Pinaceae","EG",13,NA,0.001520531,6.88,3.08,0.053,0.472,3.98,5.161,0.709,0.476,5.637,""
+dataset,location,latitude,longitude,vegetation,species,family,pft,age,a.lf,a.stbc,h.t,h.c,d.bh,m.lf,m.st,m.so,m.br,m.rt,m.to,growingCondition
+FLKU1963,Japan-Usuda National Forest-106,36,138,TempF,Larix kaempferi,Pinaceae,DG,48,NA,0.019855651,19.5,9.2,0.239,6.345,189.655,221.708,25.708,NA,NA,PM
+FLKU1963,Japan-Usuda National Forest-106,36,138,TempF,Larix kaempferi,Pinaceae,DG,49,NA,0.039408138,24.1,13.2,0.326,7.976,426.845,472.504,37.683,NA,NA,PM
+FLKU1963,Japan-Usuda National Forest-106,36,138,TempF,Larix kaempferi,Pinaceae,DG,51,NA,0.009852035,17.6,8.75,0.159,1.955,75.441,83.403,6.007,NA,NA,PM
+FLKU1963,Japan-Usuda National Forest-106,36,138,TempF,Larix kaempferi,Pinaceae,DG,49,NA,0.007238229,17.6,12.25,0.195,3.129,100.948,112.316,8.239,NA,NA,PM
+FLKU1963,Japan-Usuda National Forest-108,36,138,TempF,Larix kaempferi,Pinaceae,DG,11,NA,0.008171282,6.85,0.45,0.080,2.434,6.851,14.014,4.729,NA,NA,PM
+FLKU1963,Japan-Usuda National Forest-108,36,138,TempF,Larix kaempferi,Pinaceae,DG,11,NA,0.002290221,4.3,0.4,0.044,0.74,1.407,3.584,1.437,NA,NA,PM
+FLKU1963,Japan-Usuda National Forest-108,36,138,TempF,Larix kaempferi,Pinaceae,DG,11,NA,0.004778362,6.3,0.29,0.070,1.352,3.991,8.354,3.011,NA,NA,PM
+FLKU1963,Japan-Usuda National Forest-108,36,138,TempF,Larix kaempferi,Pinaceae,DG,11,NA,0.005808805,5.85,0.23,0.064,1.8,4.093,9.722,3.829,NA,NA,PM
+FLKU1963,Japan-Usuda National Forest-108,36,138,TempF,Larix kaempferi,Pinaceae,DG,11,NA,0.004778362,6.7,0.78,0.071,1.538,4.995,10.511,3.978,NA,NA,PM
+FLKU1963,"Japan-Usuda National Forest-104, Ni",36,138,TempF,Larix kaempferi,Pinaceae,DG,56,NA,0.086569727,26.7,5.35,0.359,17.59,588.221,703.094,97.283,NA,NA,PM
+FLKU1963,"Japan-Usuda National Forest-104, Ro",36,138,TempF,Larix kaempferi,Pinaceae,DG,29,NA,0.015174678,15.75,7.2,0.186,5.039,92.142,113.86,16.679,NA,NA,PM
+FLKU1963,"Japan-Usuda National Forest-104, Ro",36,138,TempF,Larix kaempferi,Pinaceae,DG,30,NA,0.007542964,13.75,5.75,0.125,2.057,36.085,43.31,5.168,NA,NA,PM
+FLKU1963,"Japan-Usuda National Forest-104, Ro",36,138,TempF,Larix kaempferi,Pinaceae,DG,30,NA,0.001963495,8.8,4.4,0.072,0.445,7.576,9.093,1.072,NA,NA,PM
+FLKU1963,"Japan-Usuda National Forest-104, Ro",36,138,TempF,Larix kaempferi,Pinaceae,DG,30,NA,0.00664761,12.75,4.85,0.118,1.557,29.053,36.087,5.477,NA,NA,PM
+FLKU1963,"Japan-Usuda National Forest-104, Ro",36,138,TempF,Larix kaempferi,Pinaceae,DG,30,NA,0.017203361,16.3,7.25,0.205,6.23,110.089,132.983,16.664,NA,NA,PM
+FLKU1963,"Japan-Usuda National Forest-104, Ro",36,138,TempF,Larix kaempferi,Pinaceae,DG,24,NA,0.005026548,11.0,4.4,0.098,2.057,20.354,27.929,5.518,NA,NA,PM
+FLKU1963,"Japan-Usuda National Forest-104, Ro",36,138,TempF,Larix kaempferi,Pinaceae,DG,30,NA,0.002290221,14.7,12.4,0.147,2.84,52.382,63.96,8.738,NA,NA,PM
+FLKU1963,"Japan-Usuda National Forest-104, Ro",36,138,TempF,Larix kaempferi,Pinaceae,DG,30,NA,0.003216991,11.5,6.3,0.087,1.192,16.896,20.792,2.704,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Sugadaira 71,36,138,TempF,Larix kaempferi,Pinaceae,DG,42,NA,0.010935884,18.05,11.9,0.196,4.124,123.571,139.573,11.878,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Sugadaira 71,36,138,TempF,Larix kaempferi,Pinaceae,DG,44,NA,0.00664761,18.05,12.05,0.158,2.625,85.723,94.664,6.316,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Sugadaira 71,36,138,TempF,Larix kaempferi,Pinaceae,DG,38,NA,0.002042821,17.08,12.8,0.126,0.476,37.38,39.216,1.36,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Sugadaira 71,36,138,TempF,Larix kaempferi,Pinaceae,DG,38,NA,0.003421194,17.0,12.85,0.15,1.056,61.452,64.885,2.377,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Sugadaira 71,36,138,TempF,Larix kaempferi,Pinaceae,DG,43,NA,0.0254469,20.98,11.35,0.243,6.871,226.977,263.565,29.717,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Sugadaira 71,36,138,TempF,Larix kaempferi,Pinaceae,DG,43,NA,0.014957123,19.7,12.05,0.220,5.643,164.089,183.415,13.683,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,19,NA,0.00090792,4.79,2.15,0.040,0.184,1.684,2.306,0.438,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.014313882,11.6,1.4,0.137,4.516,33.563,49.241,11.162,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.013069811,11.85,2.2,0.138,3.958,33.163,46.59,9.469,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,19,NA,0.007853982,8.7,1.77,0.105,2.314,14.751,23.504,6.439,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.011882289,9.3,1.64,0.127,3.159,20.534,35.026,11.333,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.010935884,9.65,1.15,0.112,2.939,19.79,32.637,9.908,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.007088218,8.45,2.5,0.098,1.522,12.299,18.956,5.135,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.017436625,11.5,2.42,0.164,4.41,38.509,57.016,14.097,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.006939778,8.6,1.67,0.095,2.215,12.511,21.34,6.614,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,19,NA,0.004656626,8.6,1.7,0.080,1.176,8.411,12.558,2.971,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.001734945,5.7,2.14,0.064,0.408,3.953,5.438,1.077,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.007697687,8.1,1.1,0.092,1.983,11.379,18.703,5.341,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,17,NA,0.005808805,8.75,2.43,0.094,2.07,11.799,18.357,4.488,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.002123717,6.27,1.8,0.055,0.62,3.629,5.756,1.507,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.012271846,10.8,1.8,0.129,3.831,27.478,41.631,10.322,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Wada 137,36,138,TempF,Larix kaempferi,Pinaceae,DG,18,NA,0.014957123,11.2,1.4,0.139,6.459,32.2,59.519,20.86,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Daimon 121,36,138,TempF,Larix kaempferi,Pinaceae,DG,11,NA,0.005281017,8.12,1.1,0.080,1.605,8.282,13.027,3.14,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Daimon 121,36,138,TempF,Larix kaempferi,Pinaceae,DG,11,NA,0.008659015,8.13,0.5,0.096,2.816,9.274,17.67,5.58,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Daimon 121,36,138,TempF,Larix kaempferi,Pinaceae,DG,11,NA,0.002375829,6.44,1.18,0.054,0.902,3.283,6.257,2.072,NA,NA,PM
+FLKU1963,Japan-Ueda National Forest-Daimon 121,36,138,TempF,Larix kaempferi,Pinaceae,DG,11,NA,0.014526724,8.3,0.5,0.118,2.977,15.122,25.764,7.665,NA,NA,PM
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,38,19.61,0.004417865,11.3,7.0,0.116,2.279,36.704,45.919,6.936,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,25,3.64,0.00090792,9.85,7.15,0.064,0.423,9.52,10.442,0.499,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,38,43.1,0.011882289,12.5,7.3,0.156,5.009,71.888,91.394,14.497,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,34,10.56,0.003318307,11.2,8.25,0.101,1.227,34.07,39.165,3.868,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,30,2.05,0.000855299,10.3,8.0,0.075,0.238,13.662,14.635,0.735,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,37,14.08,0.003959192,11.8,8.4,0.098,1.636,32.806,38.971,4.529,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,38,24.84,0.008171282,13.7,7.0,0.143,2.887,62.969,81.66,15.804,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,25,2.198,0.001963495,9.3,6.9,0.069,0.255,11.354,12.658,1.049,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,21,2.774,0.000706858,8.7,7.2,0.069,0.322,11.254,12.181,0.605,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,9,0.599,0.000176715,2.3,1.25,0.015,0.07,0.248,0.403,0.085,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,9,0.649,0.000176715,2.7,1.25,0.013,0.075,0.133,0.262,0.054,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,11,1.099,0.000254469,3.2,1.6,0.020,0.128,0.392,0.64,0.12,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,35,15.23,0.003318307,11.3,8.25,0.108,1.771,29.102,33.191,2.318,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,28,5.012,0.002123717,9.6,7.4,0.087,0.582,19.078,21.19,1.53,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,38,63.94,0.016286016,12.0,6.8,0.187,7.43,104.455,138.129,26.244,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Distylium racemosum,Hamamelidaceae,EA,30,8.904,0.001017876,6.7,2.6,0.043,1.035,3.669,5.669,0.965,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,29,3.946,0.000804248,4.9,2.6,0.043,0.459,2.416,3.737,0.862,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,27,2.098,0.001017876,10.8,7.9,0.077,0.244,14.979,16.18,0.957,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Quercus spp.,Fagaceae,EA,35,20.51,0.003216991,10.9,7.1,0.101,2.384,26.986,34.804,5.434,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,33,2.148,0.000615752,5.8,3.15,0.039,0.25,2.497,3.24,0.493,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Cleyera japonica,Theaceae,EA,25,2.967,0.000452389,4.1,1.9,0.030,0.345,1.021,1.744,0.378,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Distylium racemosum,Hamamelidaceae,EA,15,0.899,9.5e-05,3.3,2.6,0.019,0.104,0.484,0.684,0.096,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Quercus spp.,Fagaceae,EA,22,3.13,0.001385442,9.1,5.8,0.066,0.364,10.289,11.518,0.865,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-6,32.2,130.8,TempF,Cinnamomum japonicum,Lauraceae,EA,34,8.248,0.002733971,9.3,5.65,0.080,0.959,13.608,16.885,2.318,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-3,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,12,26.35,0.007088218,8.0,1.7,0.097,3.062,13.405,21.997,5.53,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-3,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,12,4.48,0.001017876,6.85,2.65,0.043,0.521,2.82,4.061,0.72,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-3,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,12,2.53,0.000254469,5.6,3.1,0.030,0.295,1.611,2.263,0.357,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-3,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,12,8.89,0.002042821,7.3,3.2,0.059,1.033,5.908,8.402,1.461,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-3,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,12,14.88,0.002290221,8.0,4.15,0.077,1.73,9.844,14.22,2.646,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-3,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,10,1.18,0.000283529,5.8,3.7,0.028,0.137,1.107,1.386,0.142,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-3,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,8,0.44,0.000153938,4.25,2.6,0.019,0.051,0.426,0.528,0.051,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-3,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,12,1.52,0.000314159,4.2,2.1,0.026,0.176,0.707,1.084,0.201,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,8,0.2964,0.000132732,3.1,2.0,0.013,0.034,0.24,0.309,0.035,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,7,0.1465,3.85e-05,2.3,1.6,0.010,0.017,0.134,0.175,0.024,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,11,0.5728,0.000132732,2.6,1.25,0.012,0.067,0.303,0.464,0.094,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,NA,1.465,0.000283529,3.2,1.45,0.021,0.17,0.456,0.858,0.232,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,NA,0.2564,0.000153938,3.05,1.6,0.016,0.03,0.321,0.429,0.078,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,12,0.333,9.5e-05,3.2,2.15,0.018,0.039,0.409,0.523,0.075,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,0.1698,3.85e-05,2.0,0.55,0.006,0.02,0.031,0.063,0.012,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,2.747,0.000572555,4.5,2.1,0.032,0.319,1.241,2.07,0.51,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,9,1.209,0.000283529,4.3,1.5,0.020,0.14,0.664,0.997,0.193,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,10,0.4062,9.5e-05,2.3,1.03,0.009,0.054,0.114,0.21,0.042,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,NA,0.5994,0.00022698,3.2,2.25,0.024,0.07,0.698,0.933,0.165,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,NA,0.1132,5.03e-05,2.25,1.05,0.008,0.013,0.073,0.098,0.012,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,9,0.7126,0.000132732,2.85,0.95,0.012,0.083,0.153,0.299,0.063,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,NA,NA,5.03e-05,2.2,1.6,0.008,0.012,0.096,0.12,0.012,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,NA,0.0866,9.5e-05,2.1,0.95,0.01,0.01,0.109,0.135,0.016,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,0.1066,2.83e-05,1.5,0.35,0.003,0.012,0.018,0.036,0.006,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Quercus myrsinaefolia,Fagaceae,EA,NA,0.2431,7.85e-05,2.0,0.45,0.005,0.028,0.052,0.108,0.028,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,NA,1.26e-05,0.85,0.31,NA,0.006,0.005,0.014,0.003,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,0.0899,1.96e-05,1.25,0.53,NA,0.01,0.02,0.04,0.01,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,0.0533,1.26e-05,1.1,0.54,NA,0.006,0.012,0.023,0.005,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,NA,7.07e-06,0.5,0.18,NA,0.002,0.002,0.005,0.001,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,NA,NA,0.9,NA,NA,0.003,0.007,0.013,0.003,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,NA,NA,0.75,NA,NA,8e-04,0.004,0.0058,0.001,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Eurya japonica,Theaceae,EA,NA,NA,NA,1.45,NA,0.003,2e-04,0.023,0.0242,0.001,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,NA,NA,1.1,NA,NA,0.004,0.007,0.013,0.002,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,NA,NA,0.8,NA,NA,0.0011,0.003,0.0081,0.004,NA,NA,FW
+FLKU1963,Japan-Sumitomo Forestry Co. Forest-7,32.2,130.8,TempF,Castanopsis cuspidata,Fagaceae,EA,NA,NA,NA,0.7,NA,NA,0.003,0.002,0.006,0.001,NA,NA,FW
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,70,7.8264,NA,6.1,NA,0.080,0.353,11.987,13.934,1.594,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,71,2.1995,NA,5.8,NA,0.045,0.198,3.898,4.574,0.478,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,NA,0.2358,NA,1.47,NA,0.003,0.0043,0.0404,0.0503,0.0056,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,NA,NA,NA,2.4,NA,0.008,0.0142,0.15,0.1905,0.0263,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,NA,0.6305,NA,2.4,1.2,0.009,0.0153,0.2008,0.2583,0.0422,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,NA,0.6385,NA,1.55,0.8,0.008,0.0254,0.2478,0.3651,0.0919,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,NA,1.113,NA,3.2,1.45,0.017,0.0258,0.5011,0.6262,0.0993,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,58,5.2947,NA,4.73,2.0,0.030,0.1039,1.6233,2.0557,0.3285,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,51,2.0067,NA,3.05,1.6,0.024,0.0819,0.8478,1.1213,0.1916,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,NA,1.9725,NA,4.7,2.6,0.032,0.0758,1.5799,1.9533,0.2976,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,46,1.8709,NA,3.3,2.1,0.023,0.0489,0.7772,0.9824,0.1563,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,157,29.287,NA,11.5,4.3,0.116,2.0032,43.3209,54.9576,9.6335,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,65,14.198,NA,8.45,4.3,0.096,0.7266,18.6043,23.2075,3.8766,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,185,72.0606,NA,19.2,11.0,0.294,4.707,413.575,505.812,87.53,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,233,302.8942,NA,23.8,12.9,0.599,23.645,1813.547,2362.115,524.923,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,146,342.8525,NA,20.5,NA,0.404,NA,692.178,NA,263.73,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,90,8.2939,NA,4.8,1.9,0.0521,0.394,5.79,7.568,1.384,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,NA,NA,NA,1.9,1.25,0.010,0.0159,0.1092,0.1506,0.0255,NA,NA,
+FLKU1963,Japan-Naeba-86,36.9,138.8,TempF,Fagus crenata,Fagaceae,DA,144,43.98,NA,16.8,9.3,0.192,3.4252,152.4504,191.0792,35.2036,NA,NA,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,15,NA,0.001963495,6.78,3.94,0.080,0.723,7.43,9.081,0.928,1.09,10.171,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,14,NA,0.002827433,7.85,4.23,0.096,1.106,12.11,15.998,2.782,2.33,18.328,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,16,NA,0.000615752,6.67,4.52,0.050,0.185,3.59,3.972,0.197,0.485,4.457,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,14,NA,0.001385442,7.2,4.23,0.057,0.423,4.5,5.434,0.511,0.603,6.037,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,15,NA,0.000706858,6.87,4.83,0.053,0.286,3.89,4.478,0.302,0.486,4.964,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,14,NA,0.004071504,6.72,3.52,0.106,1.702,12.09,16.524,2.732,2.87,19.394,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,13,NA,0.001520531,6.8,4.11,0.064,0.839,5.73,7.176,0.607,0.89,8.066,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,15,NA,0.003421194,7.15,3.87,0.100,1.396,12.04,15.429,1.993,2.89,18.319,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,15,NA,0.003019071,7.16,3.73,0.087,0.952,9.55,11.8315,1.3295,1.48,13.3115,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,13,NA,0.002123717,7.58,4.02,0.071,0.98,7.72,9.998,1.298,1.35,11.348,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,14,NA,0.000314159,4.89,3.25,0.030,0.05,1.11,1.227,0.067,0.195,1.422,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,NA,NA,NA,3.42,NA,0.018,0.011,0.255,0.275,0.009,NA,NA,
+FLKU1963,Japan-Chiba Forest of Tokyo University-17-n,35.2,140.1,TempF,Pinus densiflora,Pinaceae,EG,13,NA,0.001520531,6.88,3.08,0.053,0.472,3.98,5.161,0.709,0.476,5.637,
