@@ -4,7 +4,7 @@
 "bh.sap","?","cm2","a.ssbh",NA
 "cb.sap","?","cm2","a.ssbc",NA
 "num.of.branches",NA,NA,NA,NA
-"leaf.area","?","m2","a.lf",NA
+"leaf.area","r","m2","a.lf",NA
 "dbh","?","cm","d.bh",NA
 "hgt.crown.base.","?","m","h.c",NA
 "basal.diameter","?","cm","d.ba",NA

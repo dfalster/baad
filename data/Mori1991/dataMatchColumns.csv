@@ -5,7 +5,7 @@
 "Root.weight","m0","kg","m.rt",NA
 "Branch.weight","m0","kg","m.br",NA
 "Leaf.weight","m6,7","kg","m.lf",NA
-"Leaf.area","c","m2","a.lf",NA
+"Leaf.area","c,r","m2","a.lf",NA
 "crown.projection.area.calculated.by.crown.diameter..A.B","z","m2","a.cp",NA
 "crown.diameter.A","?","m","d.cr",NA
 "crown.diameter.B",NA,"m",NA,NA
