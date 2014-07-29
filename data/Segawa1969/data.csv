@@ -1,16 +1,16 @@
 dataset,location,latitude,longitude,vegetation,species,family,pft,age,a.lf,h.t,h.c,d.bh,m.lf,m.st,m.so,m.br,growingCondition
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,371.6,17.83,5.4,0.236,12.479,248.932,345.683,83.222,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,243.8,17.75,7.1,0.204,8.186,189.268,244.651,46.777,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,128.9,16.2,8.5,0.188,4.317,133.618,172.383,34.359,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,37,104.9,17.75,10.3,0.162,3.523,114.675,133.325,15.127,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,41.0,17.15,10.5,0.149,1.378,79.693,87.224,6.153,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,35,21.8,12.3,7.3,0.10,0.722,19.567,23.642,3.353,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,38,271.3,18.75,6.35,0.245,9.111,227.405,299.779,62.33,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,39,340.3,17.8,7.7,0.233,11.428,209.142,283.868,62.286,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,37,94.3,17.75,9.5,0.205,3.167,161.190,193.633,29.074,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,38,160.1,18.3,11.4,0.186,5.375,119.473,144.304,19.202,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,37,61.6,16.3,10.05,0.159,2.068,92.810,105.476,10.331,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,40,90.0,17.1,10.9,0.152,3.022,96.963,114.671,14.434,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,49.4,16.3,10.3,0.139,1.659,70.384,88.206,16.068,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,35,21.1,15.3,10.65,0.124,0.708,52.974,57.267,3.551,FW
-Segawa1969,Japan-Kouma Experimental Forest-Quercus stand,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,35,11.8,15.3,11.4,0.104,0.397,43.004,45.499,2.047,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 4,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,371.6,17.83,5.4,0.236,12.479,248.932,345.683,83.222,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 4,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,243.8,17.75,7.1,0.204,8.186,189.268,244.651,46.777,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 4,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,128.9,16.2,8.5,0.188,4.317,133.618,172.383,34.359,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 4,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,37,104.9,17.75,10.3,0.162,3.523,114.675,133.325,15.127,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 4,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,41,17.15,10.5,0.149,1.378,79.693,87.224,6.153,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 4,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,35,21.8,12.3,7.3,0.1,0.722,19.567,23.642,3.353,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 5,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,38,271.3,18.75,6.35,0.245,9.111,227.405,299.779,62.33,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 5,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,39,340.3,17.8,7.7,0.233,11.428,209.142,283.868,62.286,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 5,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,37,94.3,17.75,9.5,0.205,3.167,161.19,193.633,29.074,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 5,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,38,160.1,18.3,11.4,0.186,5.375,119.473,144.304,19.202,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 5,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,37,61.6,16.3,10.05,0.159,2.068,92.81,105.476,10.331,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 5,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,40,90,17.1,10.9,0.152,3.022,96.963,114.671,14.434,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 5,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,36,49.4,16.3,10.3,0.139,1.659,70.384,88.206,16.068,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 5,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,35,21.1,15.3,10.65,0.124,0.708,52.974,57.267,3.551,FW
+Segawa1969,Japan-Kouma Experimental Forest-Quercus stand 5,39.87,141.15,TempF,Quercus serrata,Fagaceae,DA,35,11.8,15.3,11.4,0.104,0.397,43.004,45.499,2.047,FW
