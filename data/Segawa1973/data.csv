@@ -1,10 +1,10 @@
-"dataset","location","latitude","longitude","vegetation","species","pft","a.lf","h.t","h.c","d.bh","m.lf","m.st","m.so","m.br","growingCondition"
-"Segawa1973","Japan-Nishine town, Terada Experimental Site-",40,141.1,"TempF","Populus x euramericana","DA",160.924,22.1,3.8,0.283,11.249,143.706,193.42,38.465,"PM"
-"Segawa1973","Japan-Nishine town, Terada Experimental Site-",40,141.1,"TempF","Populus x euramericana","DA",106.826,21.2,7,0.235,7.562,108.248,142.26,26.45,"PM"
-"Segawa1973","Japan-Nishine town, Terada Experimental Site-",40,141.1,"TempF","Populus x euramericana","DA",76.962,20.7,7.4,0.223,5.649,99.594,124.627,19.384,"PM"
-"Segawa1973","Japan-Nishine town, Terada Experimental Site-",40,141.1,"TempF","Populus x euramericana","DA",68.188,21,9.3,0.249,4.921,127.817,158.805,26.067,"PM"
-"Segawa1973","Japan-Nishine town, Terada Experimental Site-",40,141.1,"TempF","Populus x euramericana","DA",20.463,17.8,8.2,0.217,1.789,78.574,87.814,7.451,"PM"
-"Segawa1973","Japan-Nishine town, Terada Experimental Site-",40,141.1,"TempF","Populus x euramericana","DA",30.895,16.8,9.1,0.184,2.312,56.912,68.723,9.499,"PM"
-"Segawa1973","Japan-Nishine town, Terada Experimental Site-",40,141.1,"TempF","Populus x euramericana","DA",79.457,19,5.2,0.221,6.745,93.429,133.26,33.086,"PM"
-"Segawa1973","Japan-Nishine town, Terada Experimental Site-",40,141.1,"TempF","Populus x euramericana","DA",40.855,18.9,8.5,0.198,3.426,68.509,82.59,10.655,"PM"
-"Segawa1973","Japan-Nishine town, Terada Experimental Site-",40,141.1,"TempF","Populus x euramericana","DA",15.656,15.8,7.8,0.163,1.466,44.317,51.105,5.322,"PM"
+dataset,location,latitude,longitude,vegetation,species,pft,a.lf,h.t,h.c,d.bh,m.lf,m.st,m.so,m.br,growingCondition
+Segawa1973,"Japan-Nishine town, Terada Experimental Site-",40.0,141.1,TempF,Populus x euramericana,DA,160.924,22.1,3.8,0.283,11.249,143.706,193.42,38.465,PM
+Segawa1973,"Japan-Nishine town, Terada Experimental Site-",40.0,141.1,TempF,Populus x euramericana,DA,106.826,21.2,7.0,0.235,7.562,108.248,142.26,26.45,PM
+Segawa1973,"Japan-Nishine town, Terada Experimental Site-",40.0,141.1,TempF,Populus x euramericana,DA,76.962,20.7,7.4,0.223,5.649,99.594,124.627,19.384,PM
+Segawa1973,"Japan-Nishine town, Terada Experimental Site-",40.0,141.1,TempF,Populus x euramericana,DA,68.188,21.0,9.3,0.249,4.921,127.817,158.805,26.067,PM
+Segawa1973,"Japan-Nishine town, Terada Experimental Site-",40.0,141.1,TempF,Populus x euramericana,DA,20.463,17.8,8.2,0.217,1.789,78.574,87.814,7.451,PM
+Segawa1973,"Japan-Nishine town, Terada Experimental Site-",40.0,141.1,TempF,Populus x euramericana,DA,30.895,16.8,9.1,0.184,2.312,56.912,68.723,9.499,PM
+Segawa1973,"Japan-Nishine town, Terada Experimental Site-",40.0,141.1,TempF,Populus x euramericana,DA,79.457,19.0,5.2,0.221,6.745,93.429,133.26,33.086,PM
+Segawa1973,"Japan-Nishine town, Terada Experimental Site-",40.0,141.1,TempF,Populus x euramericana,DA,40.855,18.9,8.5,0.198,3.426,68.509,82.59,10.655,PM
+Segawa1973,"Japan-Nishine town, Terada Experimental Site-",40.0,141.1,TempF,Populus x euramericana,DA,15.656,15.8,7.8,0.163,1.466,44.317,51.105,5.322,PM
