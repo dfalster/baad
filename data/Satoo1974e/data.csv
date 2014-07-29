@@ -1,0 +1,12 @@
+dataset,location,latitude,longitude,vegetation,species,family,pft,age,h.t,d.bh,m.lf,m.st,m.so,m.br,growingCondition
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, 87-E",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,26,11.6,0.180,15.5,53.1,90.0,21.4,PM
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, 87-E",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,26,10.8,0.178,13.5,45.2,74.8,16.1,PM
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, 87-E",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,26,11.2,0.140,6.3,31.6,44.6,6.7,PM
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, 87-E",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,26,10.8,0.138,3.7,29.8,38.7,5.2,PM
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, 87-E",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,26,10.4,0.138,5.8,28.9,40.6,5.9,PM
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, 87-E",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,26,6.7,0.081,1.5,6.0,8.5,1.0,PM
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, 87-E",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,26,9.0,0.087,1.6,10.1,13.1,1.4,PM
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, old-growth",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,98,23.8,0.500,71.5,809.2,1143.9,263.2,FW
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, old-growth",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,114,21.6,0.396,70.0,581.1,823.7,172.6,FW
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, old-growth",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,111,24.6,0.520,66.0,1000.2,1408.6,342.4,FW
+Satoo1974c,"Japan-Tokyo University Forest in Hokkaido-Yamabe, old-growth",43.22,142.38,TempF,Abies sachalinensis,Pinaceae,EG,119,24.6,0.456,64.5,673.4,987.2,249.3,FW
