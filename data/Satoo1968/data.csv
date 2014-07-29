@@ -1,16 +1,16 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","age","a.lf","h.t","d.bh","m.lf","m.st","m.so","m.br","growingCondition"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,1.36,7.1,0.054,0.136,6.3,6.961,0.525,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,2.3,7.4,0.062,0.173,8.5,9.763,1.09,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,5.5,7.6,0.062,0.391,7.9,9.721,1.43,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,9.16,12.2,0.106,0.788,40.8,47.198,5.61,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,6.96,13.7,0.106,0.662,40,43.252,2.59,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,4.83,12.7,0.109,0.481,37.9,42.441,4.06,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,14.1,15.4,0.148,1.35,59.1,67.45,7,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,15.1,14.1,0.149,1.55,79.6,91.45,10.3,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,15.3,13,0.158,1.52,60.5,70.83,8.81,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,35.3,18.5,0.195,3.82,177,202.92,22.1,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,24.5,18.2,0.197,2.25,127,149.75,20.5,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,35.2,16,0.2,3.48,156,200.18,40.7,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,97.7,19.3,0.259,9.95,265,344.55,69.6,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,92,19.6,0.265,9.51,268,341.51,64,"PM"
-"Satoo1968","Japan-Chiba Forest of Tokyo University-Compartment 17-b",35.2,140.1,"TempF","Cinnamomum camphora","Lauraceae","EA",46,168,18.9,0.29,12.9,293,450.9,145,"PM"
+dataset,location,latitude,longitude,vegetation,species,family,pft,a.lf,h.t,d.bh,m.lf,m.st,m.so,m.br,growingCondition
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,1.36,7.1,0.054,0.136,6.30,6.96,0.525,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,2.30,7.4,0.062,0.173,8.50,9.76,1.09,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,5.50,7.6,0.062,0.391,7.90,9.72,1.43,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,9.16,12.2,0.106,0.788,40.8,47.2,5.61,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,6.96,13.7,0.106,0.662,40.0,43.3,2.59,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,4.83,12.7,0.109,0.481,37.9,42.4,4.06,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,14.1,15.4,0.148,1.35,59.1,67.5,7.00,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,15.1,14.1,0.149,1.55,79.6,91.5,10.3,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,15.3,13.0,0.158,1.52,60.5,70.8,8.81,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,35.3,18.5,0.195,3.82,177,202.9,22.1,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,24.5,18.2,0.197,2.25,127,149.8,20.5,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,35.2,16.0,0.200,3.48,156,200.2,40.7,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,97.7,19.3,0.259,9.95,265,344.6,69.6,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,92.0,19.6,0.265,9.51,268,341.5,64.0,PM
+Satoo1968,Japan-Chiba Forest of Tokyo University-Compartment 17-b,35.2,140.1,TempF,Cinnamomum camphora,Lauraceae,EA,168,18.9,0.290,12.9,293,451,145,PM
