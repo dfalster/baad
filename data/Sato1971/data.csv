@@ -1,8 +1,8 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","h.t","h.c","d.bh","m.lf","m.st","m.so","m.br","growingCondition"
-"Sato1971","Japan-Higashiyamamatsu Pinus densiflora Experimental Stand-",39,141,"TempF","Pinus densiflora","Pinaceae","EG",30.6,14.3,0.392,24.5,701.9,805.3,78.9,"FW"
-"Sato1971","Japan-Higashiyamamatsu Pinus densiflora Experimental Stand-",39,141,"TempF","Pinus densiflora","Pinaceae","EG",32.7,22.6,0.435,27,879.7,987.4,80.7,"FW"
-"Sato1971","Japan-Higashiyamamatsu Pinus densiflora Experimental Stand-",39,141,"TempF","Pinus densiflora","Pinaceae","EG",33.3,18.1,0.473,35,1185.9,1381.7,160.8,"FW"
-"Sato1971","Japan-Higashiyamamatsu Pinus densiflora Experimental Stand-",39,141,"TempF","Pinus densiflora","Pinaceae","EG",35.4,15.9,0.609,30,1510.9,1655.5,114.6,"FW"
-"Sato1971","Japan-Higashiyamamatsu Pinus densiflora Experimental Stand-",39,141,"TempF","Pinus densiflora","Pinaceae","EG",33.4,19.9,0.544,35.3,1401.3,1660,223.4,"FW"
-"Sato1971","Japan-Higashiyamamatsu Pinus densiflora Experimental Stand-",39,141,"TempF","Pinus densiflora","Pinaceae","EG",35.7,22.1,0.492,34.1,1214.7,1372.1,123.3,"FW"
-"Sato1971","Japan-Higashiyamamatsu Pinus densiflora Experimental Stand-",39,141,"TempF","Pinus densiflora","Pinaceae","EG",29.1,17.8,0.34,14.2,468.6,525.9,43.1,"FW"
+dataset,location,latitude,longitude,vegetation,species,family,pft,h.t,h.c,d.bh,m.lf,m.st,m.so,m.br,growingCondition
+Sato1971,Japan-Touzanmatsu Experimental Stand-,39,141,TempF,Pinus densiflora,Pinaceae,EG,30.6,14.3,0.392,24.5,701.9,805.3,78.9,FW
+Sato1971,Japan-Touzanmatsu Experimental Stand-,39,141,TempF,Pinus densiflora,Pinaceae,EG,32.7,22.6,0.435,27.0,879.7,987.4,80.7,FW
+Sato1971,Japan-Touzanmatsu Experimental Stand-,39,141,TempF,Pinus densiflora,Pinaceae,EG,33.3,18.1,0.473,35.0,1185.9,1381.7,160.8,FW
+Sato1971,Japan-Touzanmatsu Experimental Stand-,39,141,TempF,Pinus densiflora,Pinaceae,EG,35.4,15.9,0.609,30.0,1510.9,1655.5,114.6,FW
+Sato1971,Japan-Touzanmatsu Experimental Stand-,39,141,TempF,Pinus densiflora,Pinaceae,EG,33.4,19.9,0.544,35.3,1401.3,1660.0,223.4,FW
+Sato1971,Japan-Touzanmatsu Experimental Stand-,39,141,TempF,Pinus densiflora,Pinaceae,EG,35.7,22.1,0.492,34.1,1214.7,1372.1,123.3,FW
+Sato1971,Japan-Touzanmatsu Experimental Stand-,39,141,TempF,Pinus densiflora,Pinaceae,EG,29.1,17.8,0.340,14.2,468.6,525.9,43.1,FW
