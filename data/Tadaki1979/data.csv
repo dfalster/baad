@@ -1,25 +1,25 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","h.t","d.bh","m.lf","m.st","m.so","m.br","m.rt","m.to","growingCondition"
-"Tadaki1979","Japan-Masuko town-P-A sparse stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",9.6,0.155,6.4,39.4,62.45,16.65,24.7,87.15,"PM"
-"Tadaki1979","Japan-Masuko town-P-A sparse stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",9.4,0.146,7.53,36.2,60.42,16.69,NA,NA,"PM"
-"Tadaki1979","Japan-Masuko town-P-A sparse stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",9,0.133,5.93,33.7,52.6,12.97,16,68.6,"PM"
-"Tadaki1979","Japan-Masuko town-P-A sparse stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",8.75,0.126,5.52,28.3,47.67,13.85,NA,NA,"PM"
-"Tadaki1979","Japan-Masuko town-P-A sparse stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",9.15,0.11,4.11,23.3,35.29,7.88,11.1,46.39,"PM"
-"Tadaki1979","Japan-Masuko town-P-A sparse stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",8.1,0.106,3.35,17.2,26.07,5.52,7,33.07,"PM"
-"Tadaki1979","Japan-Masuko town-P-A sparse stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",9.4,0.135,5.55,33.4,55.12,16.17,NA,NA,"PM"
-"Tadaki1979","Japan-Masuko town-P-A sparse stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",7.5,0.122,2.98,25.5,36.21,7.73,12.9,49.11,"PM"
-"Tadaki1979","Japan-Masuko town-P-B 1000 trees/ha stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",10.5,0.141,3.88,36.8,47.54,6.86,13.8,61.34,"PM"
-"Tadaki1979","Japan-Masuko town-P-B 1000 trees/ha stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",8.35,0.107,2.28,18.5,24.64,3.86,NA,NA,"PM"
-"Tadaki1979","Japan-Masuko town-P-B 1000 trees/ha stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",8.4,0.078,1.24,11.5,14.9,2.16,NA,NA,"PM"
-"Tadaki1979","Japan-Masuko town-P-B 1000 trees/ha stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",7.1,0.07,0.65,7.6,9.26,1.01,2.5,11.76,"PM"
-"Tadaki1979","Japan-Masuko town-P-B 1000 trees/ha stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",5.9,0.064,0.99,6.2,8.75,1.56,2.3,11.05,"PM"
-"Tadaki1979","Japan-Masuko town-P-B 1000 trees/ha stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",7.3,0.06,0.44,6.3,7.45,0.71,2.7,10.15,"PM"
-"Tadaki1979","Japan-Masuko town-P-B 1000 trees/ha stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",7.5,0.049,0.32,4.2,4.92,0.4,0.9,5.82,"PM"
-"Tadaki1979","Japan-Masuko town-P-B 1000 trees/ha stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",4.7,0.04,0.13,1.9,2.23,0.2,NA,NA,"PM"
-"Tadaki1979","Japan-Masuko town-P-C control stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",10.3,0.134,4.55,37.7,51.51,9.26,NA,NA,"FW"
-"Tadaki1979","Japan-Masuko town-P-C control stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",9.6,0.096,0.91,17.4,19.99,1.68,4.5,24.49,"FW"
-"Tadaki1979","Japan-Masuko town-P-C control stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",8.8,0.087,1.37,14.3,17.86,2.19,4.4,22.26,"FW"
-"Tadaki1979","Japan-Masuko town-P-C control stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",7.2,0.066,0.84,7.4,10.04,1.8,2.6,12.64,"FW"
-"Tadaki1979","Japan-Masuko town-P-C control stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",7.9,0.056,0.35,5.6,6.09,0.14,NA,NA,"FW"
-"Tadaki1979","Japan-Masuko town-P-C control stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",6.5,0.053,0.33,3.9,4.84,0.61,1.2,6.04,"FW"
-"Tadaki1979","Japan-Masuko town-P-C control stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",5.65,0.039,0.14,2.1,2.47,0.23,NA,NA,"FW"
-"Tadaki1979","Japan-Masuko town-P-C control stand",36.45,140.11,"TempF","Pinus densiflora","Pinaceae","EG",4.9,0.029,0.09,0.9,1.13,0.14,0.2,1.33,"FW"
+dataset,location,latitude,longitude,vegetation,species,family,pft,h.t,d.bh,m.lf,m.st,m.so,m.br,m.rt,m.to,growingCondition
+Tadaki1979,Japan-Masuko town-P-A sparse stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,9.6,0.155,6.40,39.4,62.45,16.65,24.7,87.15,PM
+Tadaki1979,Japan-Masuko town-P-A sparse stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,9.4,0.146,7.53,36.2,60.42,16.69,NA,NA,PM
+Tadaki1979,Japan-Masuko town-P-A sparse stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,9.0,0.133,5.93,33.7,52.6,12.97,16,68.6,PM
+Tadaki1979,Japan-Masuko town-P-A sparse stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,8.75,0.126,5.52,28.3,47.67,13.85,NA,NA,PM
+Tadaki1979,Japan-Masuko town-P-A sparse stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,9.15,0.11,4.11,23.3,35.29,7.88,11.1,46.39,PM
+Tadaki1979,Japan-Masuko town-P-A sparse stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,8.1,0.106,3.35,17.2,26.07,5.52,7,33.07,PM
+Tadaki1979,Japan-Masuko town-P-A sparse stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,9.4,0.135,5.55,33.4,55.12,16.17,NA,NA,PM
+Tadaki1979,Japan-Masuko town-P-A sparse stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,7.5,0.122,2.98,25.5,36.21,7.73,12.9,49.11,PM
+Tadaki1979,Japan-Masuko town-P-B 1000 trees/ha stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,10.5,0.141,3.88,36.8,47.54,6.86,13.8,61.34,PM
+Tadaki1979,Japan-Masuko town-P-B 1000 trees/ha stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,8.35,0.107,2.28,18.5,24.64,3.86,NA,NA,PM
+Tadaki1979,Japan-Masuko town-P-B 1000 trees/ha stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,8.4,0.078,1.24,11.5,14.9,2.16,NA,NA,PM
+Tadaki1979,Japan-Masuko town-P-B 1000 trees/ha stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,7.1,0.07,0.65,7.6,9.26,1.01,2.5,11.76,PM
+Tadaki1979,Japan-Masuko town-P-B 1000 trees/ha stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,5.9,0.064,0.99,6.2,8.75,1.56,2.3,11.05,PM
+Tadaki1979,Japan-Masuko town-P-B 1000 trees/ha stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,7.3,0.06,0.44,6.3,7.45,0.71,2.7,10.15,PM
+Tadaki1979,Japan-Masuko town-P-B 1000 trees/ha stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,7.5,0.049,0.32,4.2,4.92,0.40,0.9,5.82,PM
+Tadaki1979,Japan-Masuko town-P-B 1000 trees/ha stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,4.7,0.04,0.13,1.9,2.23,0.20,NA,NA,PM
+Tadaki1979,Japan-Masuko town-P-C control stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,10.3,0.134,4.55,37.7,51.51,9.26,NA,NA,FW
+Tadaki1979,Japan-Masuko town-P-C control stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,9.6,0.096,0.91,17.4,19.99,1.68,4.5,24.49,FW
+Tadaki1979,Japan-Masuko town-P-C control stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,8.8,0.087,1.37,14.3,17.86,2.19,4.4,22.26,FW
+Tadaki1979,Japan-Masuko town-P-C control stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,7.2,0.066,0.84,7.4,10.04,1.80,2.6,12.64,FW
+Tadaki1979,Japan-Masuko town-P-C control stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,7.9,0.056,0.35,5.6,6.09,0.14,NA,NA,FW
+Tadaki1979,Japan-Masuko town-P-C control stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,6.5,0.053,0.33,3.9,4.84,0.61,1.2,6.04,FW
+Tadaki1979,Japan-Masuko town-P-C control stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,5.65,0.039,0.14,2.1,2.47,0.23,NA,NA,FW
+Tadaki1979,Japan-Masuko town-P-C control stand,36.45,140.11,TempF,Pinus densiflora,Pinaceae,EG,4.9,0.029,0.09,0.9,1.13,0.14,0.2,1.33,FW
