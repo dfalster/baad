@@ -1,17 +1,17 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","age","h.t","d.bh","m.lf","m.st","m.so","m.br","growingCondition"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",9,2.4,0.015,0.16,0.39,0.62,0.07,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",12,2.5,0.017,0.07,0.79,1.03,0.17,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",14,4.4,0.04,0.6,3.02,4.75,1.13,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",12,5.3,0.041,0.27,3.3,4.18,0.61,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",18,5.4,0.045,0.28,4.15,5.42,0.99,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,5.3,0.051,0.79,5.51,7.96,1.66,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",17,5.8,0.06,1.41,7.88,11.18,1.89,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",16,5.4,0.074,1.68,10.66,16.29,3.95,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",19,4.9,0.099,2.66,21.05,30.91,7.2,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",19,7.1,0.099,3.62,28.29,38.09,6.18,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",20,8.1,0.118,6.24,44.29,61.96,11.43,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",22,8.5,0.134,7.49,61.74,82.89,13.66,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",20,9.1,0.134,7.79,62.84,88.49,17.86,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",26,8.5,0.148,13.92,79.47,103.64,10.25,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",31,10.2,0.156,13.66,95.66,127.87,18.55,"PM"
-"Yasui1970","Japan-Hirose town-",35.35,133.15,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,10.2,0.185,33.26,135.73,197.36,28.37,"PM"
+dataset,location,latitude,longitude,vegetation,species,family,pft,age,h.t,d.bh,m.lf,m.st,m.so,m.br,growingCondition
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,9,2.4,0.015,0.16,0.39,0.62,0.07,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,12,2.5,0.017,0.07,0.79,1.03,0.17,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,14,4.4,0.04,0.6,3.02,4.75,1.13,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,12,5.3,0.041,0.27,3.3,4.18,0.61,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,18,5.4,0.045,0.28,4.15,5.42,0.99,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,5.3,0.051,0.79,5.51,7.96,1.66,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,17,5.8,0.060,1.41,7.88,11.18,1.89,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,16,5.4,0.074,1.68,10.66,16.29,3.95,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,19,4.9,0.099,2.66,21.05,30.91,7.2,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,19,7.1,0.099,3.62,28.29,38.09,6.18,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,20,8.1,0.118,6.24,44.29,61.96,11.43,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,22,8.5,0.134,7.49,61.74,82.89,13.66,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,20,9.1,0.134,7.79,62.84,88.49,17.86,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,26,8.5,0.148,13.92,79.47,103.64,10.25,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,31,10.2,0.156,13.66,95.66,127.87,18.55,PM
+Yasui1970,Japan-Hirose town-,35.35,133.15,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,10.2,0.185,33.26,135.73,197.36,28.37,PM

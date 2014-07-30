@@ -1,40 +1,40 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","age","h.t","d.bh","m.lf","m.st","m.so","m.br","growingCondition"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF",NA,NA,"EA",8,3.3,0.014,0.05,0.27,0.38,0.06,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,3,0.015,0.03,0.28,0.35,0.04,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,4.1,0.021,0.17,1.06,1.53,0.3,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,4.7,0.022,0.2,1.12,1.76,0.44,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,4.5,0.023,0.2,0.95,1.29,0.14,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,4.7,0.023,0.14,1.35,1.77,0.28,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,6.1,0.026,0.12,1.51,1.81,0.18,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,5,0.032,0.2,2.05,2.59,0.34,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,6.1,0.036,0.41,3.2,4.6,0.99,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,6.3,0.045,0.95,4.64,7,1.41,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot 1",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",8,6.6,0.057,1.14,8.05,11.7,2.51,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,4,0.012,0.06,0.37,0.46,0.03,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,4.6,0.018,0.04,0.76,0.88,0.08,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,6.2,0.021,0.07,1.35,1.57,0.15,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,6,0.024,0.09,1.62,1.92,0.21,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,7.5,0.034,0.19,3.31,3.84,0.34,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,7.4,0.034,0.32,3.61,4.34,0.41,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,8.9,0.041,0.25,4.34,5.21,0.62,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,8.6,0.047,0.44,7.64,8.99,0.91,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,8.3,0.053,0.76,9.76,11.98,1.46,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,7.8,0.063,0.69,9.15,11.72,1.88,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,8.3,0.073,1.26,15.92,21.98,4.8,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot2",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",15,8.5,0.087,1.99,19.13,28.82,7.7,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,3.9,0.016,0.03,0.47,0.58,0.08,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,4.6,0.017,0.04,0.46,0.63,0.13,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,4.2,0.019,0.02,0.46,0.53,0.05,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,5.6,0.026,0.05,1.22,1.39,0.12,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,5.3,0.029,0.12,1.31,1.68,0.25,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,7.2,0.033,0.09,1.91,2.22,0.22,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,6.3,0.036,0.12,2.32,2.82,0.38,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,6.3,0.045,0.14,3.12,3.82,0.56,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,7.6,0.054,0.43,5.69,7.26,1.14,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,7.9,0.055,0.43,7.36,9.28,1.49,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,8.4,0.063,0.78,9.48,12.15,1.89,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,9,0.08,1.08,14.88,18.52,2.56,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,9.5,0.094,0.97,19.47,27.13,6.69,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,9.7,0.096,1.16,23.88,28.99,3.95,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,10.7,0.103,3.18,42.47,56.49,10.84,"PM"
-"Yasui1971","Japan-Takae, Hakuta village-Plot3",35.31,133.27,"TempF","Quercus myrsinaefolia","Fagaceae","EA",25,10.5,0.137,3.5,47.4,74.08,23.18,"PM"
+dataset,location,latitude,longitude,vegetation,species,family,pft,age,h.t,d.bh,m.lf,m.st,m.so,m.br,growingCondition
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,3.3,0.014,0.05,0.27,0.38,0.06,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,3,0.015,0.03,0.28,0.35,0.04,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,4.1,0.021,0.17,1.06,1.53,0.3,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,4.7,0.022,0.2,1.12,1.76,0.44,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,4.5,0.023,0.2,0.95,1.29,0.14,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,4.7,0.023,0.14,1.35,1.77,0.28,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,6.1,0.026,0.12,1.51,1.81,0.18,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,5,0.032,0.2,2.05,2.59,0.34,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,6.1,0.036,0.41,3.2,4.6,0.99,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,6.3,0.045,0.95,4.64,7,1.41,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot 1",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,8,6.6,0.057,1.14,8.05,11.7,2.51,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,4,0.012,0.06,0.37,0.46,0.03,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,4.6,0.018,0.04,0.76,0.88,0.08,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,6.2,0.021,0.07,1.35,1.57,0.15,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,6,0.024,0.09,1.62,1.92,0.21,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,7.5,0.034,0.19,3.31,3.84,0.34,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,7.4,0.034,0.32,3.61,4.34,0.41,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,8.9,0.041,0.25,4.34,5.21,0.62,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,8.6,0.047,0.44,7.64,8.99,0.91,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,8.3,0.053,0.76,9.76,11.98,1.46,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,7.8,0.063,0.69,9.15,11.72,1.88,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,8.3,0.073,1.26,15.92,21.98,4.8,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot2",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,15,8.5,0.087,1.99,19.13,28.82,7.7,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,3.9,0.016,0.03,0.47,0.58,0.08,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,4.6,0.017,0.04,0.46,0.63,0.13,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,4.2,0.019,0.02,0.46,0.53,0.05,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,5.6,0.026,0.05,1.22,1.39,0.12,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,5.3,0.029,0.12,1.31,1.68,0.25,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,7.2,0.033,0.09,1.91,2.22,0.22,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,6.3,0.036,0.12,2.32,2.82,0.38,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,6.3,0.045,0.14,3.12,3.82,0.56,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,7.6,0.054,0.43,5.69,7.26,1.14,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,7.9,0.055,0.43,7.36,9.28,1.49,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,8.4,0.063,0.78,9.48,12.15,1.89,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,9,0.08,1.08,14.88,18.52,2.56,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,9.5,0.094,0.97,19.47,27.13,6.69,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,9.7,0.096,1.16,23.88,28.99,3.95,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,10.7,0.103,3.18,42.47,56.49,10.84,PM
+Yasui1971,"Japan-Takae, Hakuta village-Plot3",35.31,133.27,TempF,Quercus myrsinaefolia,Fagaceae,EA,25,10.5,0.137,3.5,47.4,74.08,23.18,PM

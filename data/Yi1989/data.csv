@@ -1,10 +1,10 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","h.t","d.bh","m.lf","m.st","m.so","m.br","growingCondition"
-"Yi1989","Japan-Ikunomatsubara, Kyusyu University Forest-",33.58,130.3,"TempF","Pinus thunbergii","Pinaceae","EG",7.8,0.07,1.711,11.036,15.154,2.407,"PM"
-"Yi1989","Japan-Ikunomatsubara, Kyusyu University Forest-",33.58,130.3,"TempF","Pinus thunbergii","Pinaceae","EG",13.9,0.173,8.691,94.127,115.702,10.855,"PM"
-"Yi1989","Japan-Ikunomatsubara, Kyusyu University Forest-",33.58,130.3,"TempF","Pinus thunbergii","Pinaceae","EG",16.3,0.298,35.342,345.223,440.296,55.277,"PM"
-"Yi1989","Japan-Ikunomatsubara, Kyusyu University Forest-",33.58,130.3,"TempF","Pinus thunbergii","Pinaceae","EG",19.95,0.413,35.149,501.22,675.95,133.561,"PM"
-"Yi1989","Japan-Ikunomatsubara, Kyusyu University Forest-",33.58,130.3,"TempF","Pinus thunbergii","Pinaceae","EG",11.84,0.117,4.818,33.714,49.254,10.646,"PM"
-"Yi1989","Japan-Ikunomatsubara, Kyusyu University Forest-",33.58,130.3,"TempF","Pinus thunbergii","Pinaceae","EG",5.3,0.039,0.406,2.35,3.517,0.716,"PM"
-"Yi1989","Japan-Ikunomatsubara, Kyusyu University Forest-",33.58,130.3,"TempF","Pinus thunbergii","Pinaceae","EG",18.36,0.237,2.204,227.657,243.094,12.884,"PM"
-"Yi1989","Japan-Ikunomatsubara, Kyusyu University Forest-",33.58,130.3,"TempF","Pinus thunbergii","Pinaceae","EG",11.48,0.216,2.583,99.799,117.543,14.725,"PM"
-"Yi1989","Japan-Ikunomatsubara, Kyusyu University Forest-",33.58,130.3,"TempF","Pinus thunbergii","Pinaceae","EG",15,0.224,7.09,147.922,193.085,38.073,"PM"
+dataset,location,latitude,longitude,vegetation,species,family,pft,h.t,d.bh,m.lf,m.st,m.so,m.br,growingCondition
+Yi1989,"Japan-Ikunomatsubara, Kyushu University Forest-",33.58,130.3,TempF,Pinus thunbergii,Pinaceae,EG,7.8,0.07,1.711,11.036,15.154,2.407,PM
+Yi1989,"Japan-Ikunomatsubara, Kyushu University Forest-",33.58,130.3,TempF,Pinus thunbergii,Pinaceae,EG,13.9,0.173,8.691,94.127,115.702,10.855,PM
+Yi1989,"Japan-Ikunomatsubara, Kyushu University Forest-",33.58,130.3,TempF,Pinus thunbergii,Pinaceae,EG,16.3,0.298,35.342,345.223,440.296,55.277,PM
+Yi1989,"Japan-Ikunomatsubara, Kyushu University Forest-",33.58,130.3,TempF,Pinus thunbergii,Pinaceae,EG,19.95,0.413,35.149,501.22,675.95,133.561,PM
+Yi1989,"Japan-Ikunomatsubara, Kyushu University Forest-",33.58,130.3,TempF,Pinus thunbergii,Pinaceae,EG,11.84,0.117,4.818,33.714,49.254,10.646,PM
+Yi1989,"Japan-Ikunomatsubara, Kyushu University Forest-",33.58,130.3,TempF,Pinus thunbergii,Pinaceae,EG,5.3,0.039,0.406,2.35,3.517,0.716,PM
+Yi1989,"Japan-Ikunomatsubara, Kyushu University Forest-",33.58,130.3,TempF,Pinus thunbergii,Pinaceae,EG,18.36,0.237,2.204,227.657,243.094,12.884,PM
+Yi1989,"Japan-Ikunomatsubara, Kyushu University Forest-",33.58,130.3,TempF,Pinus thunbergii,Pinaceae,EG,11.48,0.216,2.583,99.799,117.543,14.725,PM
+Yi1989,"Japan-Ikunomatsubara, Kyushu University Forest-",33.58,130.3,TempF,Pinus thunbergii,Pinaceae,EG,15.0,0.224,7.09,147.922,193.085,38.073,PM
