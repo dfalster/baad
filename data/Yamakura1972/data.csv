@@ -1,7 +1,7 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","age","m.lf","m.st","m.so","m.br","m.rt","m.to","growingCondition"
-"Yamakura1972","Japan-Mt. Watamuki-",35,136.33,"TempF","Chamaecyparis obtusa","Cupressaceae","EG",30,3.079,28.9,34.649,2.67,8.12,42.769,"PM"
-"Yamakura1972","Japan-Mt. Watamuki-",35,136.33,"TempF","Chamaecyparis obtusa","Cupressaceae","EG",30,5.655,54.669,67.638,7.314,18.3,85.938,"PM"
-"Yamakura1972","Japan-Mt. Watamuki-",35,136.33,"TempF","Chamaecyparis obtusa","Cupressaceae","EG",30,3.061,27.523,32.591,2.007,7.1,39.691,"PM"
-"Yamakura1972","Japan-Mt. Watamuki-",35,136.33,"TempF","Chamaecyparis obtusa","Cupressaceae","EG",30,3.987,42.768,51.294,4.539,13.53,64.824,"PM"
-"Yamakura1972","Japan-Mt. Watamuki-",35,136.33,"TempF","Chamaecyparis obtusa","Cupressaceae","EG",30,2.302,20.137,24.009,1.57,5.8,29.809,"PM"
-"Yamakura1972","Japan-Mt. Watamuki-",35,136.33,"TempF","Chamaecyparis obtusa","Cupressaceae","EG",30,2.158,16.575,20.171,1.438,4.54,24.711,"PM"
+dataset,location,latitude,longitude,vegetation,species,family,pft,m.lf,m.st,m.so,m.br,m.rt,m.to,growingCondition
+Yamakura1972,Japan-Mt. Watamuki-,35.00,136.33,TempF,Chamaecyparis obtusa,Cupressaceae,EG,3.079,28.900,34.649,2.670,8.12,42.769,PM
+Yamakura1972,Japan-Mt. Watamuki-,35.00,136.33,TempF,Chamaecyparis obtusa,Cupressaceae,EG,5.655,54.669,67.638,7.314,18.3,85.938,PM
+Yamakura1972,Japan-Mt. Watamuki-,35.00,136.33,TempF,Chamaecyparis obtusa,Cupressaceae,EG,3.061,27.523,32.591,2.007,7.10,39.691,PM
+Yamakura1972,Japan-Mt. Watamuki-,35.00,136.33,TempF,Chamaecyparis obtusa,Cupressaceae,EG,3.987,42.768,51.294,4.539,13.53,64.824,PM
+Yamakura1972,Japan-Mt. Watamuki-,35.00,136.33,TempF,Chamaecyparis obtusa,Cupressaceae,EG,2.302,20.137,24.009,1.570,5.80,29.809,PM
+Yamakura1972,Japan-Mt. Watamuki-,35.00,136.33,TempF,Chamaecyparis obtusa,Cupressaceae,EG,2.158,16.575,20.171,1.438,4.54,24.711,PM
