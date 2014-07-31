@@ -6,7 +6,7 @@ longitude,NA,deg,longitude,NA
 vegetation,NA,-,vegetation,NA
 species,NA,-,species,NA
 h.t,?,m,h.t,NA
-d.bh,?,m,d.bh,NA
+d.bh,e,m,d.bh,NA
 m.lf,m1,kg,m.lf,NA
 m.st,"m1,m3",kg,m.st,NA
 m.so,m1,kg,m.so,NA

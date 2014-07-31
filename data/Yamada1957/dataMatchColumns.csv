@@ -10,7 +10,7 @@ pft,NA,-,pft,NA
 age,?,yr,age,NA
 h.c,?,m,h.c,NA
 h.t,?,m,h.t,NA
-d.bh,?,m,d.bh,NA
+d.bh,e,m,d.bh,NA
 m.lf,m0,kg,m.lf,NA
 m.st,m0,kg,m.st,NA
 m.so,m0,kg,m.so,NA

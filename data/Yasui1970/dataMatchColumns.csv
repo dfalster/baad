@@ -9,7 +9,7 @@ species,NA,-,species,NA
 pft,NA,-,pft,NA
 age,?,yr,age,NA
 h.t,?,m,h.t,NA
-d.bh,?,m,d.bh,NA
+d.bh,e,m,d.bh,NA
 m.lf,"m5,1",kg,m.lf,NA
 m.st,"m3,m5,j",kg,m.st,NA
 m.so,m5,kg,m.so,NA

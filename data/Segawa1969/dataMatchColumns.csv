@@ -11,7 +11,7 @@ age,?,yr,age,NA
 a.lf,"c,1",m2,a.lf,NA
 h.t,?,m,h.t,NA
 h.c,?,m,h.c,NA
-d.bh,?,m,d.bh,NA
+d.bh,d,m,d.bh,NA
 m.lf,"m5,1",kg,m.lf,NA
 m.st,"j,m3,m5",kg,m.st,NA
 m.so,m5,kg,m.so,NA

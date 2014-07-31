@@ -7,10 +7,10 @@ vegetation,NA,-,vegetation,NA
 family,NA,-,family,NA
 species,NA,-,species,NA
 pft,NA,-,pft,NA
-m.lf,?,kg,m.lf,NA
-m.st,?,kg,m.st,NA
-m.so,?,kg,m.so,NA
-m.br,?,kg,m.br,NA
-m.rt,?,kg,m.rt,NA
-m.to,?,kg,m.to,NA
+m.lf,m5,kg,m.lf,NA
+m.st,m5,kg,m.st,NA
+m.so,m5,kg,m.so,NA
+m.br,m5,kg,m.br,NA
+m.rt,m5,kg,m.rt,NA
+m.to,m5,kg,m.to,NA
 growingCondition,NA,-,growingCondition,NA
