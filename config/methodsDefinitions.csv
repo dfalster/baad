@@ -24,6 +24,7 @@ rx,Conifers: unknown method used to estimate leaf area
 s,Adelaide Technique = visually count units then take sample of units and calc area and scale up
 t,scaling from branch to canopy
 u,at base of crown
+u1,at base of tree
 v,volume displacement method
 x,from circumference
 w,average between row and inter-row diameter
