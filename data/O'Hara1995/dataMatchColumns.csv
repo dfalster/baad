@@ -1,9 +1,9 @@
-"var_in","method","unit_in","var_out","notes"
-"height","?","m","h.t",NA
-"dbh","?","cm","d.bh",NA
-"hcb","?","m","h.c",NA
-"socialclass",NA,NA,"status",NA
-"sapbh","?","cm2","a.ssbh",NA
-"la","c,r2","m2","a.lf",NA
-"grouping",NA,"-","grouping",NA
-"site",NA,NA,"location",NA
+var_in,method,unit_in,var_out,notes
+height,destructive sampling,m,h.t,NA
+dbh,destructive sampling,cm,d.bh,NA
+hcb,destructive sampling,m,h.c,NA
+socialclass,NA,NA,status,NA
+sapbh,from disk,cm2,a.ssbh,NA
+la,"c,r2",m2,a.lf,NA
+grouping,NA,-,grouping,NA
+site,NA,NA,location,NA

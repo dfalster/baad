@@ -1,12 +1,12 @@
-"var_in","method","unit_in","var_out","notes"
-"tree",NA,NA,NA,NA
-"base.sap","?","cm2","a.ssba",NA
-"bh.sap","?","cm2","a.ssbh",NA
-"cb.sap","?","cm2","a.ssbc",NA
-"num.of.branches",NA,NA,NA,NA
-"leaf.area","?","m2","a.lf",NA
-"dbh","?","cm","d.bh",NA
-"hgt.crown.base.","?","m","h.c",NA
-"basal.diameter","?","cm","d.ba",NA
-"Basal.cross.sectional.area","?","cm2","a.stba",NA
-"height","?","m","h.t",NA
+var_in,method,unit_in,var_out,notes
+tree,NA,NA,NA,NA
+base.sap,destructive sampling,cm2,a.ssba,NA
+bh.sap,destructive sampling,cm2,a.ssbh,NA
+cb.sap,destructive sampling,cm2,a.ssbc,NA
+num.of.branches,NA,NA,NA,NA
+leaf.area,bcr,m2,a.lf,NA
+dbh,destructive sampling,cm,d.bh,NA
+hgt.crown.base.,destructive sampling,m,h.c,NA
+basal.diameter,destructive sampling,cm,d.ba,NA
+Basal.cross.sectional.area,destructive sampling,cm2,a.stba,NA
+height,destructive sampling,m,h.t,NA

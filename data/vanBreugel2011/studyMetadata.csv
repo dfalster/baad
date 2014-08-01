@@ -1,7 +1,6 @@
 Topic,Description
-Sampling strategy,"Out of >350 tree and shrub species that were occur across secondary forest in STRI's Agua Salud area, 26 of the most abundant species in terms of basal area were selected for destructive sampling .  A total of 236 saplings of various sizes (basal diameter range: 0.85-29 cm) were sampled to determine dry weight of leaves, branches and stems and allometric relationships. Saplings grew under a range of canopy conditions; from understory conditions to fully exposed crowns. Data collection took place "
-Stem cross sectional area,A total of 244 trees were selected in the areas adjacent to the study plots.
-Height,Height was measured as the vertical distance from the ground to the highest apex.
+Sampling strategy,"Out of >350 tree and shrub species that were occur across secondary forest in STRI's Agua Salud area, 26 of the most abundant species in terms of basal area were selected for destructive sampling .  A total of 236 saplings of various sizes (basal diameter range: 0.85-29 cm) were sampled to determine dry weight of leaves, branches and stems and allometric relationships. Saplings grew under a range of canopy conditions; from understory conditions to fully exposed crowns, and were selected in areas adjacent to Agua Salud's Secondary Forest Dynamics Study plots . "
+Height,"Tree height was measured as stem length, measured linearly from base to top after felling."
 Crown area,Crown width was measured at two perpendicular angles including the widest width. Projected area and volume were estimated by assuming an ellipse/ellipsoid.
-Biomass,"Saplings were divided into stem, branches and leaves (including petioles). Each compartment was oven-dried at 70degC to constant weight and weighed"
-Growth environment,1-30 year old naturally regenerating secondary forests on abandoned pasture land and agricultural fields
+Biomass,"Saplings were divided into stem, branches (grouped in three size classes), petioles and leaves. All compartments were weighed directly after harvest.
+Subsamples for each compartment were oven-dried at 70degC to constant weight and weighed to calculate fresh to dry weight ratios (for small saplings all biomass was dried). Fresh to dry weight ratios were used to calculate dry weights for each compartment. Given leaf weights include petioles and leaves."

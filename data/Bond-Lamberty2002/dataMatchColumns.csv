@@ -8,9 +8,9 @@
 "Species",NA,NA,"species",NA
 "Number",NA,NA,NA,NA
 "Height","?","cm","h.t",NA
-"D0","?","cm","d.ba",NA
+"D0","xx5","cm","d.ba",NA
 "D10",NA,NA,NA,NA
-"DBH","?","cm","d.bh",NA
+"DBH","xx5","cm","d.bh",NA
 "DWT",NA,NA,NA,NA
 "TotWood",NA,NA,NA,NA
 "TotBranch",NA,NA,NA,NA
@@ -24,5 +24,5 @@
 "Sapwood","q","cm2","a.ssbh",NA
 "Root","m4","g","m.rc",NA
 "stemMass","m3","g","m.st",NA
-"age","?","yr","age",NA
+"age","xx6","yr","age",NA
 "grouping",NA,"-","grouping",NA

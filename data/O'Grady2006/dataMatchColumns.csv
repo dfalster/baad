@@ -1,24 +1,24 @@
-"var_in","method","unit_in","var_out","notes"
-"height (cm)","?","cm","h.t",NA
-"Diameter (base)","?","cm","d.ba",NA
-"S/wood area (BD)","?","m2","a.ssba",NA
-"Diameter (cm)","?","cm","d.bh",NA
-"S/wood area (1.3)","?","m2","a.ssbh",NA
-"Leaf area",NA,NA,NA,NA
-"stem","m1","g","m.st",NA
-"branch","m1","g","m.br",NA
-"leaf","m1","g","m.lf",NA
-"Total",NA,NA,NA,NA
-"m.rf","m1","g","m.rf",NA
-"m.rc","m1","g","m.rc",NA
-"Harvested",NA,NA,NA,NA
-"plot",NA,NA,NA,NA
-"treatment",NA,NA,NA,NA
-"seedling",NA,NA,NA,NA
-"underbark D",NA,NA,NA,NA
-"X","b","m2","a.lf",NA
-"branch dead",NA,NA,NA,NA
-"5-Oct",NA,NA,NA,NA
-"Oct-15",NA,NA,NA,NA
-"15 - 20",NA,NA,NA,NA
-"20  + stump",NA,NA,NA,NA
+var_in,method,unit_in,var_out,notes
+height (cm),?,cm,h.t,NA
+Diameter (base),e,cm,d.ba,NA
+S/wood area (BD),?,m2,a.ssba,NA
+Diameter (cm),?,cm,d.bh,NA
+S/wood area (1.3),?,m2,a.ssbh,NA
+Leaf area,NA,NA,NA,NA
+stem,m1,g,m.st,NA
+branch,m1,g,m.br,NA
+leaf,m1,g,m.lf,NA
+Total,NA,NA,NA,NA
+m.rf,m1,g,m.rf,NA
+m.rc,m1,g,m.rc,NA
+Harvested,NA,NA,NA,NA
+plot,NA,NA,NA,NA
+treatment,NA,NA,NA,NA
+seedling,NA,NA,NA,NA
+underbark D,NA,NA,NA,NA
+X,b,m2,a.lf,NA
+branch dead,NA,NA,NA,NA
+5-Oct,NA,NA,NA,NA
+Oct-15,NA,NA,NA,NA
+15 - 20,NA,NA,NA,NA
+20  + stump,NA,NA,NA,NA

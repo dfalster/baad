@@ -1,16 +1,16 @@
-"var_in","method","unit_in","var_out","notes"
-"No.",NA,NA,NA,NA
-"ht1 (cm)","?","cm","h.t",NA
-"ht2 (cm)",NA,NA,NA,NA
-"Delta t (days)",NA,NA,NA,NA
-"Wood1 (g)","?","g","m.st",NA
-"Delta wood (g)",NA,NA,NA,NA
-"Leaf1 (g)","m1,7","g","m.lf",NA
-"Delta leaf (g)",NA,NA,NA,NA
-"Leaf area1 (cm2)","k","cm2","a.lf",NA
-"Leaf area2 (cm2)",NA,NA,NA,NA
-"Area/leaf (cm2)","?","cm2","a.ilf",NA
-"ISF","li","-","light",NA
-"Wood2 (g)",NA,NA,NA,NA
-"Leaf2 (g)",NA,NA,NA,NA
-"species",NA,"-","species",NA
+var_in,method,unit_in,var_out,notes
+No.,NA,NA,NA,NA
+ht1 (cm),Folding rule used to measure heights,cm,h.t,NA
+ht2 (cm),NA,NA,NA,NA
+Delta t (days),NA,NA,NA,NA
+Wood1 (g),Wood density from harvested saplings from nearby site,g,m.st,NA
+Delta wood (g),NA,NA,NA,NA
+Leaf1 (g),"m1,7",g,m.lf,NA
+Delta leaf (g),NA,NA,NA,NA
+Leaf area1 (cm2),k,cm2,a.lf,NA
+Leaf area2 (cm2),NA,NA,NA,NA
+Area/leaf (cm2),Leaf width x length x conversion factor derived from harvested leaves,cm2,a.ilf,NA
+ISF,li,-,light,NA
+Wood2 (g),NA,NA,NA,NA
+Leaf2 (g),NA,NA,NA,NA
+species,NA,-,species,NA

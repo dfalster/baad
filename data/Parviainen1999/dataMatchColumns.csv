@@ -1,11 +1,11 @@
-"var_in","method","unit_in","var_out","notes"
-"Tree",NA,NA,NA,NA
-"Height m","?","m","h.t",NA
-"Crown base m","?","m","h.c",NA
-"age yrs","?","yr","age",NA
-"D13 cm","?","cm","d.bh",NA
-"D Crown base cm",NA,NA,NA,NA
-"Crown width m","?","m","d.cr",NA
-"foliage mass kg","?","kg","m.lf",NA
-"woody mass kg","?","kg","m.st",NA
-"branch mass kg","?","kg","m.br",NA
+var_in,method,unit_in,var_out,notes,added
+Tree,NA,NA,NA,NA,
+Height m,dx,m,h.t,NA,x
+Crown base m,dx,m,h.c,NA,x
+age yrs,dy,yr,age,NA,x
+D13 cm,e,cm,d.bh,NA,
+D Crown base cm,NA,NA,NA,NA,
+Crown width m,a,m,d.cr,NA,
+foliage mass kg,p m1,kg,m.lf,NA,
+woody mass kg,dz j,kg,m.st,NA,
+branch mass kg,p m1,kg,m.br,NA,

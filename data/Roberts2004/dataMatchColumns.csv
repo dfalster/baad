@@ -1,8 +1,8 @@
-"var_in","method","unit_in","var_out","notes"
-"DBH","?","cm","d.bh",NA
-"Hite_m","?","m","h.t",NA
-"Ht BLC","?","m","h.c",NA
-"cw","?","m","d.cr",NA
-"stem_wood","?","g","m.st",NA
-"crown_wood","?","g","m.br",NA
-"tot_fol","?","g","m.lf",NA
+var_in,method,unit_in,var_out,notes
+DBH,e3,cm,d.bh,NA
+Hite_m,d,m,h.t,NA
+Ht BLC,d,m,h.c,NA
+cw,a2,m,d.cr,NA
+stem_wood,m8,g,m.st,NA
+crown_wood,m8,g,m.br,NA
+tot_fol,m8,g,m.lf,NA

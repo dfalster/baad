@@ -3,5 +3,4 @@ grouping,trees were sampled in three elevation bands west of watershed 6 at the 
 age,age was determined by counting growth rings on the stump or butt log.
 m.lf,leaf mass includes current-year twig growth
 m.br,branch mass includes both dead and live branches
-m.rt,"total belowground mass, including the root crown (see Vadeboncoeur et al. 2007 Can. J. For. Res. 37:1777-1783."
-Growth environment,"Field, wild."
+m.rt,"total belowground mass, including the root crown; as described in Vadeboncoeur et al. 2007 Can. J. For. Res. 37: 1777-1783. DOI:  10.1139/X07-032"
