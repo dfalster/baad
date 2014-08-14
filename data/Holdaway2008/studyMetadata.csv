@@ -1,10 +1,11 @@
 Topic,Description
 Sampling strategy,"Leaf area and weight data collected for 87 Nothofagus solandri individuals at Craigieburn, South Island, New Zealand. Data collected January to April 2007 from three distinct age classes (25, 40 and 135 years old). All stands were located on similar slopes, aspects and altitudes"
 Leaf area,Each tree was divided into 1m height classes. A subsample of 100 fresh leaves from each height class was used for determination of leaf area using ImageJ software and specific leaf area was used to estimate total leaf area per height class and per tree.
-Leaf biomass,For each height class leaf biomass was determined by drying the leaf component (including petioles) at 60 degC for at least three days  and weighing all material per height class. Sor some the leaf biomass was determined through weighing branches with leaves still attached and calculating the leaf biomass through a known leaf to branch ratio. Total leaf biomass was attaind by summation of all height classes.
+Leaf biomass,For each height class leaf biomass was determined by drying the leaf component (including petioles) at 60 degC for at least three days  and weighing all material per height class. Sor some the leaf biomass was determined through weighing branches with leaves still attached and calculating the leaf biomass through a known leaf to branch ratio. Total leaf biomass was attained by summation of all height classes.
 Leaf mass per area,LMA calculated as the average across the entire plant
-Individaul leaf area,Average leaf area for an individual leaf was aceraged across the entire plant
+Individual leaf area,Average leaf area for an individual leaf was aceraged across the entire plant
 Growth environment,Natural forest
 Stem cross sectional area,"Stem diameter was measured at ground using calliper at right angles, and at breast height (1.35m) using stem diameter tape"
 Height,Height was measured as the vertical distance from the ground to the highest apex.
 Other variables,Further data exist on the stand development sequence from which these data were obtained. See Holdaway et al. 2008 Functional Ecology 22: 460-469 and references therein.
+"Year collected","2007"

@@ -4,3 +4,4 @@ Leaf area,"A needle area is computed from its length L and diameter R based on t
 Stem cross sectional area,"We have provide the 'Stem diameter at base(d)', then the stem cross sectional area(S) can be calculated as equation S=pi/4*d^2."
 Height,"Because trees are young, the heights of most samples are less than one meter. We directly measured the tree height by tape."
 Biomass,"Samples were taken for destructive measurements of biomass and geometry. To prevent water loss during measurement, plants were dug up with their roots and soil and transported to the laboratory."
+"Year collected","2006-2007"

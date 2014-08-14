@@ -1,8 +1,9 @@
 Topic, Description
 Sampling strategy,
 Leaf area,Leaf bade length x width (spanning pinnae of compound leaves) multiplied by species specific conversion factors (near to 2/3 for most simple leaved species). 1.42 cm diameter discs punched from mature leaves (avoiding major veins) were used for determination of leaf mass per area.
-Stem cross sectional area,"Measured at 4 or 5 nonstandardized regularly spaced heights at smooth sections of the stem. Caliper-measured diameters in two perpendicular directions x pi/4 yields the areas, which were used only to calculate stem volumes."
+Stem cross sectional area,"Measured at 4 or 5 non-standardized regularly spaced heights at smooth sections of the stem. Caliper-measured diameters in two perpendicular directions x pi/4 yields the areas, which were used only to calculate stem volumes."
 Height,"Height from stem base to highest stem tip, usually that of the central stem."
 Crown area,Width in two perpendicular directions x pi/4
-Biomass,"Estimated from plant part dimensional measurements to get volume (stem, and branches if present), or leaf area, which were in turn multipied by species-specific measurements of stem density or leaf mass per unt area, respectively. "
+Biomass,"Estimated from plant part dimensional measurements to get volume (stem, and branches if present), or leaf area, which were in turn multiplied by species-specific measurements of stem density or leaf mass per unt area, respectively. "
 Growth environment,Understory or gaps in tropical forests
+"Year collected","1990-1991"

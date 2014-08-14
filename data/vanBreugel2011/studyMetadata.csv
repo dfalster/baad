@@ -4,3 +4,4 @@ Height,"Tree height was measured as stem length, measured linearly from base to 
 Crown area,Crown width was measured at two perpendicular angles including the widest width. Projected area and volume were estimated by assuming an ellipse/ellipsoid.
 Biomass,"Saplings were divided into stem, branches (grouped in three size classes), petioles and leaves. All compartments were weighed directly after harvest.
 Subsamples for each compartment were oven-dried at 70degC to constant weight and weighed to calculate fresh to dry weight ratios (for small saplings all biomass was dried). Fresh to dry weight ratios were used to calculate dry weights for each compartment. Given leaf weights include petioles and leaves."
+"Year collected","2009"
