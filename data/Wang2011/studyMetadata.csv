@@ -1,5 +1,5 @@
 Topic, Description
-Sampling strategy,"Samples of 1-, 2-, 3-, 5- and 6-year-old trees were also taken for destructive measurements of biomass and geometry with four replications for each tree age. To prevent water loss during measurement, plants were dug up with their roots and soil and transported to the laboratory."
+Sampling strategy,"Samples of 1-, 2-, 3-, 5- and 6-year-old trees were also taken for destructive measurements of biomass and geometry with four replications for each tree age."
 Leaf area,"A needle area is computed from its length L and diameter R based on the allometric relationship provided for Mongolian Scots pine. S=2.57*R(L-0.1167)  (Jiao, 1982). I randomly sampled more than 20 needles in the experiments. I didn't take the samples for each individual and didn't consider the position of leaves in the plant. The specific leaf area can be fitted by leaves area and biomass of these samples. Finally, the Leaf Area was calculated by their biomass and specific leaf area."
 Stem cross sectional area,"We have provide the 'Stem diameter at base(d)', then the stem cross sectional area(S) can be calculated as equation S=pi/4*d^2."
 Height,"Because trees are young, the heights of most samples are less than one meter. We directly measured the tree height by tape."
