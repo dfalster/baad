@@ -5,6 +5,7 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,vegetation,TropSF,DBarneche[from_author_reply]
 ,,location,"Sardinilla, Bue Vista region, Pama", from paper[D Barneche]
 ,,status,2,DBarneche[from_author_reply]
+,,age,3,DBarneche[from_author_reply]
 species,Cedrela odorata,family,Meliaceae,DBarneche[from_author_reply]
 species,Tabebuia rosea,family,Bignonaceae,DBarneche[from_author_reply]
 species,Enterolobium cyclocarpum,family,Leguminoseae,DBarneche[from_author_reply]
