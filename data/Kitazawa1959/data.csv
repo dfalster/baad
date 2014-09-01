@@ -1,0 +1,10 @@
+dataset,location,latitude,longitude,family,species,pft,a.lf,h.t,d.bh,m.lf,m.so,growingCondition
+Kitazawa1959,Japan-Mt. Arase,31.2,130.9,Fagaceae,Quercus salicina,EA,972,21,72,141,3671,FW
+Kitazawa1959,Japan-Mt. Arase,31.2,130.9,Hamamelidaceae,Distylium racemosum,EA,163,NA,38,27.5,NA,FW
+Kitazawa1959,Japan-Mt. Arase,31.2,130.9,Daphniphyllaceae,Daphniphyllum macropodum,EA,55.2,16,31,7.52,408,FW
+Kitazawa1959,Japan-Mt. Arase,31.2,130.9,Theaceae,Camellia japonica,EA,17.5,10,13,2.51,53.8,FW
+Kitazawa1959,Japan-Mt. Arase,31.2,130.9,Lauraceae,Cinnamomum japonicum,EA,10.1,5.5,6,1.32,9.37,FW
+Kitazawa1959,Japan-Mt. Arase,31.2,130.9,Illiciaceae,Illicium anisatum,EA,3.01,NA,4.7,0.326,NA,FW
+Kitazawa1959,Japan-Mt. Arase,31.2,130.9,Lauraceae,Machilus japonica,EA,4.77,NA,4.5,0.425,4.46,FW
+Kitazawa1959,Japan-Mt. Arase,31.2,130.9,Theaceae,Cleyera japonica,EA,1.9,NA,2.8,0.189,NA,FW
+Kitazawa1959,Japan-Mt. Arase,31.2,130.9,Hamamelidaceae,Distylium racemosum,EA,0.505,3,1.5,0.085,0.51,FW
