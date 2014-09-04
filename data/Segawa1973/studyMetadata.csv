@@ -1,8 +1,7 @@
-Topic,Description
-Sampling strategy,"The data were collected from 65 publications. By searching reference database (Web of Web of Science, Folis: http://www2.ffpri.affrc.go.jp/folis21/folis-hp-j.html, and CiNii: http://ci.nii.ac.jp/en), we tried to collect all publications 1) that report biomass of individual tree measured directly by destructive harvest, 2) that were conducted in forests that regenerated naturally in Japan. We also included some data of plantations or those collected in India and the Philippines that we found during database search. "
-Leaf area,"For leaf area of conifers in reference no. = 37 and 40, probably projected area was measured. For those in reference no. = 9, 15, 28, 31, 52, and 60, projected area was measured."
+﻿Topic,Description
+Sampling strategy,"Sample trees were hybrid poplar of three strains (first three trees are Kamabuchi, second three are I-154, and last three are I-214) planted in Terada Experimental Site, Iwate, Japan (340 m a.s.l.) 14 years befores. Sample trees were selected to represent size classes. Sample trees were then treated with the stratified clip technique by cutting them into parts contained in horizontal layers and separated into stem, branches, and leaves."
+Leaf area,"Total leaf area was estimated from fresh mass and the ratio of leaf area to fresh mass. Thirty leaves were  selected randomly from the upper, middle and lower crown and their leaf areas were measured by the automatic planimeter."
 Stem cross sectional area,"Estimated from stem diameter."
-Height,"Measured by measuring tape."
-Crown area,"Crown area was estimated only in reference no. = 29 and 51. In reference no. = 29, crown area was estimated from a crown projection map. In reference no. = 51, crown area was estimated from crown diameter."
-Biomass,"Measured fresh weight was converted to dry weight from the ratio of dry to fresh weights. The ratio was estimated from subsamples taken at each study site. Exception is the leaf mass (m.lf) of reference no. = 29 (Japan-Takaragawa forest hydrological station-), where dry mass was estimated to be 0.463 * fresh weight（Morisawa and Taira 1957)."
-Other variables,"Species name and family names according to the following references: Satake Y, Hara H (1989a) Wild flower of Japan Woody plants I (in Japanese). Heibonsha, Tokyo; Satake Y, Hara H (1989b) Wild flower of Japan Woody plants II (in Japanese). Heibonsha, Tokyo."
+Height,"Method not reported."
+Biomass,"Measured fresh mass of each component was converted to dry mass from the ratio of dry to fresh mass. The ratio was estimated from subsamples taken from each layer. Stem discs were collected from each layer as subsamples. Subsamples were oven-dried at 82 deg C."
+Other variables,"M. Ishihara, H. Utsugi, H. Tanouchi, and T. Hiura conducted formal search of reference databases and digitized raw data from Segawa et al. (1969). Based on this reference, meta data was also created by M. Ishihara"

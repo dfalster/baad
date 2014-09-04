@@ -9,6 +9,14 @@ manipulate <- function(raw) {
   ii <- raw[["Leaf biomass (g)"]] == 0
   raw[["Leaf biomass (g)"]][ii] <- NA
   
+  ii <- raw[["leafbiomass_fixed"]] == 0
+  raw[["leafbiomass_fixed"]][ii] <- NA
+  
+  # Data flagged as problematic, but no errors found.
+  # Set leaf mass to NA - there must be a problem here.
+  ii <- raw[["leafmassproblem"]] == "y"
+  raw[["leafbiomass_fixed"]][ii] <- NA
+  
   ii <- raw[["Stem biomass (g)"]] == 0
   raw[["Stem biomass (g)"]][ii] <- NA
   

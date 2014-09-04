@@ -1,10 +1,10 @@
 Topic,Description
-"Sampling strategy","A growth experiment was carried out using 15 rainforest tree species. The species were grown in shade houses representing 6 light levels (3, 6, 12, 25, 50 and 100% of full light) in Riberalta, Bolivia (11 degrees S, 66 degrees W). Seedlings were germinated from seed, or collected as wildings in the forest. The seedlings were aclimated for 15 weeks (range 2-36) to the shade house before a first harvest (on average 8 seedlings per species) was carried out. A second harvest (on average 10 seedlings per species) was carried out after 23 weeks (range (12-29). The experiment was carried out in 3 batches. Plants were grown in 5 l bags"
-"Leaf area","For each sapling, the total leaf area and average individual leaf area were measured using photocopied images or a leaf area meter"
-Stem cross sectional area,Stem diameter was measured at the stem base using a calliper
+"Sampling strategy","A growth experiment was carried out using 15 rainforest tree species. The species were grown in shade houses representing 6 light levels (3, 6, 12, 25, 50 and 100% of full light) in Riberalta, Bolivia (11 degrees S, 66 degrees W). Seedlings were germinated from seed, or collected as wildings in the forest. The seedlings were aclimated for 15 weeks (range 2-36) to the shade house before a first harvest (on average 8 seedlings per species) was carried out. A second harvest (on average 10 seedlings per species) was carried out after 23 weeks (range (12-29). The experiment was carried out in 3 batches. Plants were grown in 5 l bags."
+"Leaf area","For each sapling, the total leaf area and average individual leaf area were measured using photocopied images or a leaf area meter."
+Stem cross sectional area,Stem diameter was measured at the stem base using a calliper.
 Height,Height was measured as the vertical distance from the ground to the highest apex.
 Crown area,Crown width was measured at perpendicular right angles including the widest width. Projected area and volume were estimated by assuming a circle and using the average crown diameter.
-Crown length,Crown length was measured as the difference between the height and the insertion point of the lowest leaf
+Crown length,Crown length was measured as the difference between the height and the insertion point of the lowest leaf.
 "Biomass","Saplings were divided into root, stem, branches and petioles, and leaf lamina. Each compartment was dried to constant weight and weighed. Leaf petioles were not included in Total leaf mass. All parts of the saplings were weighed after being oven-dried at 70degC for at least 48 h."
-"Traits","LMA was calculated using a flatbed scanner or video imaged photocopies, for all leaves, wood density was calculated as (stem + branch [if present]+ petiole mass) over stem volume"
+"Traits","LMA was calculated using a flatbed scanner or video imaged photocopies, for all leaves, wood density was calculated as (stem + branch [if present]+ petiole mass) over stem volume."
 "Year collected","1994-1996"

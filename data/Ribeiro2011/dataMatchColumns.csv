@@ -3,8 +3,8 @@
 "dbh..cm.","x","cm","d.bh",NA
 "Total.height..m.","vs","m","h.t",NA
 "Wood.mass..kg........bole.+.branches.","m5","kg","m.st",NA
-"Leaf.mass..kg.","m1","kg","m.lf",NA
-ID,NA,NA,NA,NA
+"Leaf.mass..kg.","m1,7","kg","m.lf",NA
+"ID",NA,NA,NA,NA
 "Species",NA,NA,"species",NA
 "Botanical.family",NA,NA,"family",NA
 "Basal.area..m2.",NA,NA,NA,NA

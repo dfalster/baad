@@ -1,11 +1,11 @@
-"dataset","location","latitude","longitude","vegetation","species","family","pft","age","h.t","d.bh","m.lf","m.st","m.so","m.br","growingCondition"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",53,17.5,0.391,31.1,814.4,1009,163.5,"PM"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",53,18.7,0.285,11.6,410.4,469.9,47.9,"PM"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",53,15.7,0.238,10.9,234,285.9,41,"PM"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",53,14.7,0.176,5.7,134.7,151.9,11.5,"PM"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",53,12.2,0.173,4.9,111.2,129.5,13.4,"PM"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",48,9.5,0.158,3.3,62.5,76.1,10.3,"PM"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",53,11.7,0.154,3.4,69.1,84,11.5,"PM"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",53,11.3,0.139,4.4,65.4,76.1,6.3,"PM"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",50,8.8,0.162,3.8,62.6,82,15.6,"PM"
-"Yamada1957","Japan-Sasakami village-",37.8,139.3,"TempF","Pinus densiflora","Pinaceae","EG",47,7.5,0.111,3.5,40.2,51.2,7.5,"PM"
+dataset,location,latitude,longitude,vegetation,species,family,pft,age,h.c,h.t,d.bh,m.lf,m.st,m.so,m.br,growingCondition
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,53,6.9,17.5,0.391,31.1,814.4,1009,163.5,PM
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,53,7.7,18.7,0.285,11.6,410.4,469.9,47.9,PM
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,53,8.5,15.7,0.238,10.9,234,285.9,41.0,PM
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,53,8.7,14.7,0.176,5.7,134.7,151.9,11.5,PM
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,53,6.7,12.2,0.173,4.9,111.2,129.5,13.4,PM
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,48,5.1,9.5,0.158,3.3,62.5,76.1,10.3,PM
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,53,6.3,11.7,0.154,3.4,69.1,84.0,11.5,PM
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,53,6.2,11.3,0.139,4.4,65.4,76.1,6.3,PM
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,50,3.1,8.8,0.162,3.8,62.6,82.0,15.6,PM
+Yamada1957,Japan-Sasakami village-,37.8,139.3,TempF,Pinus densiflora,Pinaceae,EG,47,4.5,7.5,0.111,3.5,40.2,51.2,7.5,PM

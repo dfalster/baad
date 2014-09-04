@@ -11,7 +11,7 @@
 "CW","?","cm","d.cr",NA
 "GLD","?","cm","d.ba",NA
 "HT","?","m","h.t",NA
-"Foliage","?","kg","m.lf",NA
+"Foliage","m1,7","kg","m.lf",NA
 "Branches","?","kg","m.br",NA
 "Bole","?","kg","m.st",NA
 "Bark","?","kg","m.sb",NA

@@ -15,7 +15,7 @@
 "longest root m",NA,NA,NA,NA
 "age years",NA,NA,NA,NA
 "above ground woody dry mass g","m5","g","m.st",NA
-"total needles mass g","m5","g","m.lf",NA
+"total needles mass g","m5,6","g","m.lf",NA
 "cone mass g","m5","g",NA,NA
 "coarse root dry mass g","m5","g","m.rc",NA
 "fine root dry mass g","m5","g","m.rf",NA
@@ -38,9 +38,9 @@
 "2 years ago seedling mass","m5","g",NA,NA
 "total needle area mm2","b,r,1","mm2",NA,NA
 "total needle area cm2( mm /100)","b,r,1","cm2",NA,NA
-"total needle area m2 (mm / 1000000)","b,r,1","m2","a.lf",NA
+"total needle area m2 (mm / 1000000)","k,r,7","m2","a.lf",NA
 "total dry mass g","m5","g","m.to",NA
-"LMA g m-2","b,r,1,m5","g.m2","ma.ilf",NA
+"LMA g m-2","k,r,m5,7","g.m2","ma.ilf",NA
 "S/R kg kg-1",NA,NA,NA,NA
 "LAR m2 kg-1",NA,NA,NA,NA
 "LWR kg kg-1",NA,NA,NA,NA

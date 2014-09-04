@@ -18,7 +18,7 @@
 "biomass wood","m1,m3,j","kg","m.st",NA
 "biomass bark","m1","kg","m.sb",NA
 "biomass branch","m1,m3,j","kg","m.br",NA
-"biomass leaf","m1","kg","m.lf",NA
-"leaf area","?","m2","a.lf",NA
+"biomass leaf","m1,7","kg","m.lf",NA
+"leaf area","h","m2","a.lf",NA
 "Sample",NA,NA,NA,NA
 "Soil",NA,NA,NA,NA

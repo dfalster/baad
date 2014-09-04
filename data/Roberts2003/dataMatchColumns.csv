@@ -5,4 +5,5 @@ ht_blc,d,m,h.c,NA
 cw_avg,a2,m,d.cr,NA
 stem,m8,g,m.st,NA
 crn_wood,m8,g,m.br,NA
-foliage,m8,g,m.lf,NA
+foliage,"m5,7",g,m.lf,NA
+treela,r,m2,a.lf,NA

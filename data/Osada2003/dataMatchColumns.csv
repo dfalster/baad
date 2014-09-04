@@ -4,11 +4,11 @@
 "Crown.depth","?","m","c.d",NA
 "Crown.Projection.Area","?","m2","a.cp",NA
 "Stem.mass","?","g","m.st",NA
-"Total.leaf.mass","?","g","m.lf",NA
-"Total.leaf.area","?","m2","a.lf",NA
-"Individual.leaf.area","b,1","cm2","a.ilf",NA
+"Total.leaf.mass","m1,7","g","m.lf",NA
+"Total.leaf.area","b,7","m2","a.lf",NA
+"Individual.leaf.area","b","cm2","a.ilf",NA
 "SLA",NA,"cm2.g",NA,NA
-"LMA","?","g.m2","ma.ilf",NA
+"LMA","m1,b,7","g.m2","ma.ilf",NA
 "LAI","?","m2.m2","lai",NA
 "D0","?","mm","d.ba",NA
 "light.ISF","li4","-","light",NA

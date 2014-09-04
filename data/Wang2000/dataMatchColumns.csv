@@ -3,7 +3,7 @@
 "D.B.H.(mm)","?","mm","d.bh",NA
 "Hieght (cm)","?","cm","h.t",NA
 "Branch (cm)","?","cm","h.c",NA
-"Foliage","m1","g","m.lf",NA
+"Foliage","m1,7","g","m.lf",NA
 "Branch","m1","g","m.br",NA
 "Dead Branch",NA,NA,NA,NA
 "Stem Wood","m1","g","m.st",NA

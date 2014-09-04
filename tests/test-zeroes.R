@@ -7,7 +7,7 @@ test_that("zeroes", {
 
   var.def <- read.csv("../config/variableDefinitions.csv",
                       stringsAsFactors=FALSE)
-  vars <- var.def$Variable[var.def$Type == "numeric"]
+  vars <- var.def$variable[var.def$type == "numeric"]
 
   for(v in vars){
     # This function finds its things via lexical scope, which is

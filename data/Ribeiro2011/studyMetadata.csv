@@ -1,4 +1,5 @@
 Topic, Description
+<<<<<<< HEAD
 "Sampling strategy","Ten plots of 20 m x 25 m (0.05 ha) were established in a systematic grid over the forest area. The plots were separated 200 m from each other along two transect lines. On these sample plots, for all trees with DBH >5 cm the girth was tape measured, the tree height was visually estimated by experienced field crews in 0.5 m classes and species was identified."
 "Leaf area", "Leaf area was not measured in this study."
 "Stem cross sectional area", "The stem cross sectional area (g) was calculated as follows:  g=(PI * DAP2)/40000, where dbh is in cm and g in m2."
@@ -9,3 +10,13 @@ Topic, Description
 "Wood mass", "Stem and branches were cut in appropriately sized pieces and weighed together using a standard balance of 150 kg capacity and 100 g division. A stem wood disk was taken from each harvested tree to determine fresh weight to dry weight relation."
 "Leaf mass", "All leaves of single trees were collected manually and fresh weight was recorded. A composite sample of leaves was manually collected for each individual and weighed to determine fresh weight to dry weight relation."
 "Year collected","2009"
+=======
+Sampling strategy, "Ten plots of 20 m x 25 m (0.05 ha) were established in a systematic grid over the forest area. The plots were separated 200 m from each other along two transect lines. On these sample plots, for all trees with DBH >5 cm the girth was tape measured, the tree height was visually estimated by experienced field crews in 0.5 m classes and species was identified."
+Leaf area, "Leaf area was not measured in this study."
+Stem cross sectional area, "The stem cross sectional area (g) was calculated as follows:  g=(PI * DAP2)/40000, where dbh is in cm and g in m2."
+Height, "Total tree height was visually estimated by experienced field crews in 0.5 m classes."
+Crown area, "Crown area was not calculated in this study."
+Biomass, "Selection of sample trees for aboveground biomass determination was prepared on the basis of data from the inventory, proportional to the species contribution to total basal area. A number of 120 trees from 18 species were destructively sampled and partitioned into the components: leaves, branches and bole. Belowground biomass was estimated per area by subsampling on 10 sample plots. Fresh weight and dryweight after drying at 70oC were recoded"
+Traits, "I didn't understand what I should write here."
+Growth environment, "The Cerrado remnant where this study took place can be classified as cerrado sensu stricto tipico. This phytophisionomy is characterized by high species richness of shrubs and trees with mean height of about 3-6 m and tree cover of 20-50%. In the whole study site there was no clear evidence of any recent anthropogenic disturbance."
+>>>>>>> master

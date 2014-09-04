@@ -2,10 +2,10 @@ var_in,method,unit_in,var_out,notes
 dbh,destructive sampling,cm,d.bh,NA
 hgt,destructive sampling,m,h.t,NA
 hgt crown base,destructive sampling,m,h.c,NA
-foliage mass,weighing,kg,m.lf,NA
+foliage mass,"m6",kg,m.lf,NA
 BH Sapwood area,from disk,cm2,a.ssbh,NA
 BLC sapwood area,from disk,cm2,a.ssbc,NA
-Leaf Area,scan,m2,a.lf,NA
+Leaf Area,"b,r,7",m2,a.lf,NA
 tree,NA,NA,NA,NA
 stratum,NA,NA,NA,NA
 crown class,NA,NA,status,NA

@@ -10,11 +10,11 @@ species,NA,-,species,NA
 family,NA,-,family,NA
 pft,NA,-,pft,NA
 a.cp,y,m2,a.cp,NA
-h.t,ht,m,h.t,NA
+h.t,?,m,h.t,NA
 h.c,u,m,h.c,NA
 d.ba,x,cm,d.ba,NA
 d.bh,e,cm,d.bh,NA
-m.lf,m1,kg,m.lf,NA
+m.lf,"m1,7",kg,m.lf,NA
 m.st,m1,kg,m.st,NA
 m.so,m1,kg,m.so,NA
 m.br,m1,kg,m.br,NA
