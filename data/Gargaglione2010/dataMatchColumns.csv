@@ -1,7 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
 "Age","?","yr","age",NA
 "pft",NA,"-","pft",NA
-"family",NA,"-","family",NA
 "species",NA,"-","species",NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
@@ -9,7 +8,7 @@
 "vegetation",NA,"-","vegetation",NA
 "grouping",NA,"-","grouping",NA
 "location",NA,"-","location",NA
-"status",NA,"-","status",NA
+"Status",NA,"-","status",NA
 "DBH (cm)","?","cm","d.bh",NA
 "Height (m)","?","m","h.t",NA
 "N bole",NA,NA,NA,NA
