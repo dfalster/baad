@@ -3,7 +3,7 @@
 "HEIGHT (m)","?","m","h.t",NA
 "LEAF (kg)","m1,7","kg","m.lf",NA
 "BRANCH (kg)","m1","kg","m.br",NA
-"STEMWOOD (kg)","m1","kg","m.st",NA
+"mst","m1","kg","m.st",NA
 "STEMBARK (kg)","m1","kg","m.sb",NA
 "TOTAL_ABOVE (kg)","m1","kg","m.so",NA
 "TREE_NO",NA,NA,NA,NA
