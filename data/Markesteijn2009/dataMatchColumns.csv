@@ -9,7 +9,7 @@ species,NA,-,species,NA
 family,NA,-,family,NA
 individual,NA,NA,NA,NA
 pft,NA,-,pft,NA
-age (yr),h1,yr,age,NA
+age (yr),,,,NA
 a.lf,c,cm2,a.lf,NA
 a.stba,i,mm2,a.stba,NA
 a.stbc,u,mm2,a.stbc,NA
