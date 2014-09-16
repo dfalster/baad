@@ -11,10 +11,11 @@
 "Year",NA,NA,NA,NA
 "#",NA,NA,NA,NA
 "SpecCode",NA,NA,"species",NA
-"D.cm",NA,NA,NA,NA
+"D.cm",NA,cm,d.bh,NA
 "DDH.cm3",NA,NA,NA,NA
 "Ll.cm",NA,NA,NA,NA
 "Nb",NA,NA,NA,NA
 "Wtl.g",NA,NA,NA,NA
 "Wbl.g",NA,NA,NA,NA
 "Wts.g",NA,NA,NA,NA
+"h.bh",NA,"cm","h.bh","diameter measured at 1/10th of tree height"
