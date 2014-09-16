@@ -21,7 +21,7 @@
 "group",NA,NA,NA,NA
 "location",NA,"-","location",NA
 "latitude",NA,"deg","latitude",NA
-"longiture",NA,NA,"longitude",NA
+"longiture",NA,"deg","longitude",NA
 "vegetation",NA,"-","vegetation",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA

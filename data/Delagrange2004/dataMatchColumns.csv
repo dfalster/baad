@@ -21,8 +21,8 @@
 "pft",NA,"-","pft",NA
 "growingCondition",NA,"-","growingCondition",NA
 "Location",NA,NA,"location",NA
-"Latitude",NA,NA,"latitude",NA
-"Longitude",NA,NA,"longitude",NA
+"Latitude",NA,"deg","latitude",NA
+"Longitude",NA,"deg","longitude",NA
 "Vegetation",NA,NA,"vegetation",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
