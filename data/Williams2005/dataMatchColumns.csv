@@ -15,7 +15,7 @@
 "crown height","?","m","h.c",NA
 "height below branch",NA,NA,NA,NA
 "volume",NA,NA,NA,NA
-"biomass wood","m1,m3,j","kg","m.st",NA
+"m.st","m1,m3,j","kg","m.st",NA
 "biomass bark","m1","kg","m.sb",NA
 "biomass branch","m1,m3,j","kg","m.br",NA
 "biomass leaf","m1,7","kg","m.lf",NA
