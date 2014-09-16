@@ -14,6 +14,10 @@ postProcess <- function(data, lookupSpecies="none"){
       ii <- is.na(a.lf) & !is.na(m.lf) & !is.na(ma.ilf)
       a.lf[ii] <- m.lf[ii] / ma.ilf[ii] 
       
+      # Missing leaf mass when leaf area and LMA are OK.
+      ii <- !is.na(a.lf) & is.na(m.lf) & !is.na(ma.ilf)
+      m.lf[ii] <- a.lf[ii] * ma.ilf[ii] 
+      
       # Height to crown base if tree height and crown depth are OK.
       ii <- is.na(h.c) & !is.na(c.d) & !is.na(h.t)
       h.c[ii] <- h.t[ii] - c.d[ii]
