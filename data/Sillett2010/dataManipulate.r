@@ -10,7 +10,10 @@ manipulate <- function(raw) {
   
   # stem mass - difference between total and leaf
   raw$m.st <- (raw[["Dry mass (Mg)"]]*1000 - raw[["Leaf dry mass (kg)"]])
-   
+
+  # provides diametr, but this is better listed as area because "ours are functional diameters (cross sectional area converted to diameter of circle with same area)"
+  # diameter will then be back claculated from diameter in postprocess
+  raw[["a.stbh"]] <- 0.25*pi*raw[["Dbh (cm)"]]^2
   raw
 }
 
