@@ -26,13 +26,10 @@ clean:
 install-dataMashR:
 	R CMD INSTALL dataMashR
 
-test: ${BAAD}
-	make -C tests
+test:
+	Rscript -e "library(methods); testthat::test_file('testing.R')"
 
 check-eol:
 	./scripts/check_line_endings.sh csv
-
-test-dat:
-	Rscript -e "library(methods); testthat::test_file('testing.R')"
 
 .PHONY: baad clean install-dataMashR test check-eol test-dat

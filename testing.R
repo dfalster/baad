@@ -1,5 +1,14 @@
-# Not a real project file.  Just for developing tests.
+library(testthat)
 library(dataMashR)
-for (d in dir("data")) {
-  validate(d)
-}
+
+# for debug
+# options(warn=1, error=recover)
+
+context("Check package setup")
+
+validateConfig("config")
+
+context("Check datasets")
+
+for(d in dir("data"))
+	validateStudy(d, "config")
