@@ -485,7 +485,7 @@ summaryTable <- function(data, var.def, digits = 2){
     N <- sapply(thesevars, function(x)length(data[[x]][!is.na(data[[x]])]))
 
 
-    df <- rbind.fill(apply(data[,thesevars], 2, function(x)data.frame(Min=min(x, na.rm=TRUE),Max=max(x, na.rm=TRUE),Median=median(x, na.rm=TRUE))))
+    df <- suppressWarnings(rbind.fill(apply(data[,thesevars], 2, function(x)data.frame(Min=min(x, na.rm=TRUE),Max=max(x, na.rm=TRUE),Median=median(x, na.rm=TRUE)))))
     dfr <- data.frame(Variable=thesevars, N=N)
 
     dfr <- cbind(dfr,df)
@@ -493,10 +493,9 @@ summaryTable <- function(data, var.def, digits = 2){
     for(v in c("Min", "Max", "Median"))
         dfr[[v]] <- formatC(dfr[[v]], digits=digits, format="fg")
 
-    dfr[["Units"]] <- var.def$Units[match(thesevars, var.def$variable)]
+    dfr[["Units"]] <- var.def$units[match(thesevars, var.def$variable)]
     dfr[["Variable"]] <- var.def$variable[match(thesevars, var.def$variable)]
     dfr[["Label"]] <- capitalize(var.def$label[match(thesevars, var.def$variable)])
-
     dfr <- dfr[dfr$N > 0,c("Variable",  "Label", "Units", "N", "Min","Median","Max")]
     rownames(dfr) <- NULL
     dfr
