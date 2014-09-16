@@ -3,8 +3,6 @@ lookupVariable,lookupValue,newVariable,newValue,source
 ,,species,Pinus sylvestris,
 ,,family,Pinaceae,
 ,,location,Finland,
-,,latitude,61.33,Coarse map average
-,,longitude,25.0,Coarse map average
 ,,growingCondition,PM,
 ,,vegetation,BorF,
 ,,h.bh,1.33,DBarneche[from_author]
