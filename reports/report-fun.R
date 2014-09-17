@@ -462,7 +462,7 @@ spLevelInfo <- function(data) {
 
     spec$pft <- sapply(spec$pft , function(x)
         switch(x,
-            EA = "vergreen angiosperm",
+            EA = "evergreen angiosperm",
             DA = "deciduous angiosperm",
             EG = "evergreen gymnosperm",
             DG = "deciduous gymnosperm",
