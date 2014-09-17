@@ -20,7 +20,13 @@ vars <- setdiff(var.def$variable[var.def$type == "numeric"], c("map","mat","lai"
 ```
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
-writeLines(paste("**List of Authors:**", pasteC(listOfAuthors(baad$contact), ', ')))
+details <- authorDetails(baad$contact)
+
+writeLines(paste("**List of Authors:** ", paste0(details$authors, "^", details$address_code,"^",collapse = ", ") ))
+
+writeLines("\n\n")
+
+writeLines(paste0(details$address$code, ". ", details$address$address, collapse="\n"))
 ```
 
 ## INTRODUCTION

@@ -2,6 +2,7 @@ library(knitr, quietly = TRUE)
 library(maps, quietly = TRUE)
 library(bibtex, quietly = TRUE)
 library(knitcitations, quietly = TRUE)
+library(plyr, quietly = TRUE)
 
 ## Mimic dataMashR function here, but relative to *this* directory.
 data.path <- function(...) {
@@ -29,10 +30,6 @@ getMetadataMethods  <-  function(studyName) {
 		metadata  <-  metadata[!is.na(metadata$Description) & !(tolower(metadata$Topic) %in% c('sampling strategy', 'age', 'growth environment')),]
 		pasteC(paste0(metadata$Topic, ': ', metadata$Description), '\n\t- ')
 	}
-}
-
-getPersonell  <-  function(studyName) {
-	readStudyFile(studyName, "studyContact.csv")[,"name", drop=TRUE]
 }
 
 getSiteHistory <-function(code){
@@ -118,7 +115,8 @@ studyDetails  <-  function(data) {
                       siteHistory=pasteC(getSiteHistory(unique(data$growingCondition)),'; '),
            	          metadataDesign=getMetadataDesign(unique(data$studyName)),
            	          lab=getMetadataMethods(unique(data$studyName)),
-           	          personell=pasteC(getPersonell(unique(data$studyName)),", "),
+           	          personell=pasteC(
+           	          	readStudyFile(unique(data$studyName), "studyContact.csv")[,"name", drop=TRUE],", "),
            	          citation=getCitation(data$studyName[1]),
            	          vars=pasteC(names(removeNAcols(data,
            	          	exclude = c("studyName","species","speciesMatched","location", "latitude","longitude","vegetation","map","mat","family","pft","growingCondition", "grouping"))), ", ")
@@ -133,14 +131,21 @@ getLastName  <-  function(authorNames) {
 							})
 	}
 
-listOfAuthors  <-  function(data) {
-	firstAuthors   <-  c('Daniel S. Falster', 'Remko A. Duursma', 'Masae Ishihara', 'Diego R. Barneche', 'Rich G. FitzJohn', 'Angelica Vårhammar')
-	dataAuthors <- unique(do.call(c, lapply(unique(data$studyName), getPersonell)))
+authorDetails  <-  function(data) {
+	firstAuthors   <-  read.csv("../config/contact.csv", header = TRUE,
+        na.strings = c(NA,''), stringsAsFactors = FALSE, strip.white = TRUE)
+	dataAuthors <- arrange(ldply(unique(data$studyName),function(x) readStudyFile(x, "studyContact.csv")), name)
+	allAuthors <- rbind(firstAuthors,
+		dataAuthors[order(getLastName(dataAuthors$name)),])
+	allAuthors <- allAuthors[!duplicated(allAuthors$name),]
 
-	dataAuthors <- dataAuthors[!dataAuthors %in% firstAuthors]
-	c(firstAuthors, dataAuthors[order(getLastName(dataAuthors))])
+	authorList <- allAuthors$name
+	addresses_unique_in_order <- allAuthors$address[!duplicated(allAuthors$address)]
+
+	adressList <- match(allAuthors$address, addresses_unique_in_order)
+
+	list(authors=authorList, address_code=adressList, address=data.frame(code=seq_len(length(addresses_unique_in_order)), address=addresses_unique_in_order))
 }
-
 
 capitalize <- function (string) {
     capped <- grep("^[^A-Z]*$", string, perl = TRUE)
