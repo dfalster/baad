@@ -1,10 +1,10 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,pft,EG,
-,,growingCondition,PM,
-,,family,Pinaceae,
-,,h.bh,1.37,paper[RAD]
-,,location,Penobscot Experimental Forest,
-,,latitude,44.87,paper[RAD]
-,,longitude,-68.63,paper[RAD]
-,,map,1060,paper[RAD]
-,,mat,6.6,paper[RAD]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"pft","EG",""
+NA,NA,"growingCondition","PM",""
+NA,NA,"family","Pinaceae",""
+NA,NA,"h.bh","1.37","paper[RAD]"
+NA,NA,"location","Penobscot Experimental Forest",""
+NA,NA,"latitude","44.87","paper[RAD]"
+NA,NA,"longitude","-68.63","paper[RAD]"
+NA,NA,"map","1060","paper[RAD]"
+NA,NA,"mat","6.6","paper[RAD]"

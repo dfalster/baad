@@ -1,5 +1,5 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-grouping,L ,grouping,Elevation band = 550-630 m,from paper[R. Whittaker]
-grouping,M,grouping,Elevation band = 630-710 m,from paper[R. Whittaker]
-grouping,H,grouping ,Elevation band = 710-785 m,from paper[R. Whittaker]
-,,h.bh,1.35,DBarneche[from_author]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"grouping","L ","grouping","Elevation band = 550-630 m","from paper[R. Whittaker]"
+"grouping","M","grouping","Elevation band = 630-710 m","from paper[R. Whittaker]"
+"grouping","H","grouping ","Elevation band = 710-785 m","from paper[R. Whittaker]"
+"","","h.bh","1.35","DBarneche[from_author]"

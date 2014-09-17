@@ -1,12 +1,12 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,latitude,35,from paper[S Naidu]
-,,longitude,-79,from paper[S Naidu]
-,,vegetation,TempF,from paper[S Naidu]
-,,growingCondition,PU,from paper[S Naidu]
-,,pft,EG,from paper[S Naidu]
-,,family,Pinaceae,from paper[S Naidu]
-,,species,Pinus taeda,from paper[S Naidu]
-status,d,status,3,from paper[S Naidu]
-status,s,status,0,from paper[S Naidu]
-,,location,"Blackwood and Durham divisions of Duke Forest in the Piedmont region of North Carolina", email [S Naidu]
-,,h.bh,1.3,default
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"","","latitude","35","from paper[S Naidu]"
+"","","longitude","-79","from paper[S Naidu]"
+"","","vegetation","TempF","from paper[S Naidu]"
+"","","growingCondition","PU","from paper[S Naidu]"
+"","","pft","EG","from paper[S Naidu]"
+"","","family","Pinaceae","from paper[S Naidu]"
+"","","species","Pinus taeda","from paper[S Naidu]"
+"status","d","status","3","from paper[S Naidu]"
+"status","s","status","0","from paper[S Naidu]"
+"","","location","Blackwood and Durham divisions of Duke Forest in the Piedmont region of North Carolina"," email [S Naidu]"
+"","","h.bh","1.3","default"

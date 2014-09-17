@@ -1,8 +1,8 @@
-Topic, Description
-Sampling strategy,"Two sampling strategies were compared. The first used antithetic sampling of branches within crown quarters; these branches were used with branch diameter measurements throughout the crown to infer whole crown mass estimates. A second strategy was to weigh the green crown by quarters and then use the sample branches to divide total mass into its components. We thus compared a 'bottom-up' sample to a 'top-down' disaggregation."
-Leaf area,"Current foliage was collected from sample branches and frozen. Frozen samples were thawed and measured for projected leaf area using the Mocha image analysis program (Jandal Scientific). The sample needles where then dried in 70degC and specific leaf area was determined. SLA was then used to estimate total leaf area."
-Stem cross sectional area,Determined on sawn cross-sections with image-processing software.
-Height, Total height and hight to to the crown base (lowest contiguous living whorl) was  measured from the ground,
-Crown area,"Estimated from branch lengths, which were estimated from regressions on diameter"
-Biomass,Estimated by bottom-up methods from sample branches and by top-down methods from green crown weights.
-Traits,"Also specific leaf area, sapwood cross-sectional area and foliated length of branches."
+"Topic","Description"
+"Two sampling strategies were compared. The first used antithetic sampling of branches within crown quarters; these branches were used with branch diameter measurements throughout the crown to infer whole crown mass estimates. A second strategy was to weigh the green crown by quarters and then use the sample branches to divide total mass into its components. We thus compared a 'bottom-up' sample to a 'top-down' disaggregation.",NA
+"Current foliage was collected from sample branches and frozen. Frozen samples were thawed and measured for projected leaf area using the Mocha image analysis program (Jandal Scientific). The sample needles where then dried in 70degC and specific leaf area was determined. SLA was then used to estimate total leaf area.",NA
+"Determined on sawn cross-sections with image-processing software.",NA
+" Total height and hight to to the crown base (lowest contiguous living whorl) was  measured from the ground",NA
+"Estimated from branch lengths, which were estimated from regressions on diameter",NA
+"Estimated by bottom-up methods from sample branches and by top-down methods from green crown weights.",NA
+"Also specific leaf area, sapwood cross-sectional area and foliated length of branches.",NA

@@ -1,7 +1,7 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,growingCondition,FW,
-,,pft,EA,from paper[D Barneche]
-,,vegetation,TempRF,DFalster[from_author_reply]
-,,location,Miranda Scenic Reserve,DFalster[from_author_reply]
-,,latitude,-37.25,DFalster[from_author_reply]
-,,longitude,175.3,DFalster[from_author_reply]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"growingCondition","FW",""
+NA,NA,"pft","EA","from paper[D Barneche]"
+NA,NA,"vegetation","TempRF","DFalster[from_author_reply]"
+NA,NA,"location","Miranda Scenic Reserve","DFalster[from_author_reply]"
+NA,NA,"latitude","-37.25","DFalster[from_author_reply]"
+NA,NA,"longitude","175.3","DFalster[from_author_reply]"

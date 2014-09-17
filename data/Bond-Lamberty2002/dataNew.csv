@@ -1,42 +1,42 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-species,A,species,Populus tremuloides,from paper[D Barneche]
-species,BI,species,Betula papyrifera,from paper[D Barneche]
-species,B,species,Picea mariana,from paper[D Barneche]
-species,JP,species,Pinus banksiana,from paper[D Barneche]
-species,T,species,Larix laricina,from paper[D Barneche]
-species,W,species,Salix spp.,from paper[D Barneche]
-species,BS,species,Picea mariana,from paper[D Barneche]
-,,growingCondition,FW,from paper[D Barneche]
-,,vegetation,BorF,from paper[D Barneche]
-,,location,"Near Thompson and Leaf Rapids, Manitoba, Canada",from paper[D Barneche]
-species,Populus tremuloides,pft,DA,DBarneche[from_author_reply]
-species,Betula papyrifera,pft,DA,DBarneche[from_author_reply]
-species,Picea mariana,pft,EG,DBarneche[from_author_reply]
-species,Pinus banksiana,pft,EG,DBarneche[from_author_reply]
-species,Larix laricina,pft,DG,DBarneche[from_author_reply]
-species,Salix spp.,pft,DA,DBarneche[from_author_reply]
-species,Populus tremuloides,family,Salicaceae,DBarneche[from_author_reply]
-species,Betula papyrifera,family,Betulaceae,DBarneche[from_author_reply]
-species,Picea mariana,family,Pinaceae,DBarneche[from_author_reply]
-species,Pinus banksiana,family,Pinaceae,DBarneche[from_author_reply]
-species,Larix laricina,family,Pinaceae,DBarneche[from_author_reply]
-species,Salix spp.,family,Salicaceae,DBarneche[from_author_reply]
-status,D1995,status,3,DBarneche[from_author_reply]
-status,W1981,status,3,DBarneche[from_author_reply]
-status,W1989,status,3,DBarneche[from_author_reply]
-status,W1995,status,3,DBarneche[from_author_reply]
-status,W1964,status,3,DBarneche[from_author_reply]
-status,W1850,status,3,DBarneche[from_author_reply]
-status,W1930,status,3,DBarneche[from_author_reply]
-status,D1930,status,0,DBarneche[from_author_reply]
-status,D1850,status,0,DBarneche[from_author_reply]
-status,D1964,status,1,DBarneche[from_author_reply]
-status,D1981,status,1,DBarneche[from_author_reply]
-status,D1989,status,1,DBarneche[from_author_reply]
-status,OA,status,1,DBarneche[from_author_reply]
-status,U6W5S,status,1,DBarneche[from_author_reply]
-status,GILLAM,status,1,DBarneche[from_author_reply]
-status,OJP,status,1,DBarneche[from_author_reply]
-status,YJP,status,1,DBarneche[from_author_reply]
-status,T6R5S,status,1,DBarneche[from_author_reply]
-,,h.bh,1.37,from metadata
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"species","A","species","Populus tremuloides","from paper[D Barneche]"
+"species","BI","species","Betula papyrifera","from paper[D Barneche]"
+"species","B","species","Picea mariana","from paper[D Barneche]"
+"species","JP","species","Pinus banksiana","from paper[D Barneche]"
+"species","T","species","Larix laricina","from paper[D Barneche]"
+"species","W","species","Salix spp.","from paper[D Barneche]"
+"species","BS","species","Picea mariana","from paper[D Barneche]"
+"","","growingCondition","FW","from paper[D Barneche]"
+"","","vegetation","BorF","from paper[D Barneche]"
+"","","location","Near Thompson and Leaf Rapids, Manitoba, Canada","from paper[D Barneche]"
+"species","Populus tremuloides","pft","DA","DBarneche[from_author_reply]"
+"species","Betula papyrifera","pft","DA","DBarneche[from_author_reply]"
+"species","Picea mariana","pft","EG","DBarneche[from_author_reply]"
+"species","Pinus banksiana","pft","EG","DBarneche[from_author_reply]"
+"species","Larix laricina","pft","DG","DBarneche[from_author_reply]"
+"species","Salix spp.","pft","DA","DBarneche[from_author_reply]"
+"species","Populus tremuloides","family","Salicaceae","DBarneche[from_author_reply]"
+"species","Betula papyrifera","family","Betulaceae","DBarneche[from_author_reply]"
+"species","Picea mariana","family","Pinaceae","DBarneche[from_author_reply]"
+"species","Pinus banksiana","family","Pinaceae","DBarneche[from_author_reply]"
+"species","Larix laricina","family","Pinaceae","DBarneche[from_author_reply]"
+"species","Salix spp.","family","Salicaceae","DBarneche[from_author_reply]"
+"status","D1995","status","3","DBarneche[from_author_reply]"
+"status","W1981","status","3","DBarneche[from_author_reply]"
+"status","W1989","status","3","DBarneche[from_author_reply]"
+"status","W1995","status","3","DBarneche[from_author_reply]"
+"status","W1964","status","3","DBarneche[from_author_reply]"
+"status","W1850","status","3","DBarneche[from_author_reply]"
+"status","W1930","status","3","DBarneche[from_author_reply]"
+"status","D1930","status","0","DBarneche[from_author_reply]"
+"status","D1850","status","0","DBarneche[from_author_reply]"
+"status","D1964","status","1","DBarneche[from_author_reply]"
+"status","D1981","status","1","DBarneche[from_author_reply]"
+"status","D1989","status","1","DBarneche[from_author_reply]"
+"status","OA","status","1","DBarneche[from_author_reply]"
+"status","U6W5S","status","1","DBarneche[from_author_reply]"
+"status","GILLAM","status","1","DBarneche[from_author_reply]"
+"status","OJP","status","1","DBarneche[from_author_reply]"
+"status","YJP","status","1","DBarneche[from_author_reply]"
+"status","T6R5S","status","1","DBarneche[from_author_reply]"
+"","","h.bh","1.37","from metadata"

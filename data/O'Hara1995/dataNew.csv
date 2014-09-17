@@ -1,18 +1,18 @@
 "lookupVariable","lookupValue","newVariable","newValue","source"
-,,"vegetation","TempF","from paper[D Barneche]"
-,,"growingCondition","FW","from paper[D Barneche]"
-location,"Montana",latitude,46.858,DBarneche[from_author_reply]
-location,"Oregon",latitude,43.710,DBarneche[from_author_reply]
-location,"Montana",longitude,-113.984,DBarneche[from_author_reply]
-location,"Oregon",longitude,-121.627,DBarneche[from_author_reply]
-location,"Montana",location,"western Montana, USA",DBarneche[from_author_reply]
-location,"Oregon",location,"central Oregon, USA",DBarneche[from_author_reply]
-,,family,Pinaceae,DBarneche[from_author_reply]
-,,pft,EG,DBarneche[from_author_reply]
-,,species,Pinus ponderosa,
-status,S,status,0,
-status,I,status,1,
-status,C,status,2,
-status,CD,status,2,
-status,D,status,3,
-,,h.bh,1.4,default
+"","","vegetation","TempF","from paper[D Barneche]"
+"","","growingCondition","FW","from paper[D Barneche]"
+"location","Montana","latitude","46.858","DBarneche[from_author_reply]"
+"location","Oregon","latitude","43.710","DBarneche[from_author_reply]"
+"location","Montana","longitude","-113.984","DBarneche[from_author_reply]"
+"location","Oregon","longitude","-121.627","DBarneche[from_author_reply]"
+"location","Montana","location","western Montana, USA","DBarneche[from_author_reply]"
+"location","Oregon","location","central Oregon, USA","DBarneche[from_author_reply]"
+"","","family","Pinaceae","DBarneche[from_author_reply]"
+"","","pft","EG","DBarneche[from_author_reply]"
+"","","species","Pinus ponderosa",""
+"status","S","status","0",""
+"status","I","status","1",""
+"status","C","status","2",""
+"status","CD","status","2",""
+"status","D","status","3",""
+"","","h.bh","1.4","default"

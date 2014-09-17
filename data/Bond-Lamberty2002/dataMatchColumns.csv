@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
 "Site",NA,NA,"status",NA
-"Lat",NA,deg,"latitude",NA
-"Long",NA,deg,"longitude",NA
+"Lat",NA,"deg","latitude",NA
+"Long",NA,"deg","longitude",NA
 "BurnYear",NA,NA,NA,NA
 "HarvestYear",NA,NA,NA,NA
 "Edaphic",NA,NA,NA,NA

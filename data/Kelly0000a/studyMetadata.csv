@@ -1,7 +1,7 @@
-Topic,Description
-Sampling strategy,Seedlings of two Eucalyptus species (Eucalytpus pilularis and Eucalyptus populnea) were grown under a treatment combination of ambient or elevated CO2 (380 or 700  ppm) and high or low water availability.  Measurements listed in file represent all digitized seedlings at ~8 months for E. pilularis and ~10.5 months for E. populnea.
-Leaf area,All leaves were digitized and leaf area was calculated as the sum of all individual leaves.
-Height,Height was measured as the vertical distance from the pot surface (stem base) to the highest apex.
-Crown area,"Crown surface area was estimated from digitized points, assuming the crown was a convex hull.  "
-Growth environment,Glasshouse.
+"Topic","Description"
+"Sampling strategy","Seedlings of two Eucalyptus species (Eucalytpus pilularis and Eucalyptus populnea) were grown under a treatment combination of ambient or elevated CO2 (380 or 700  ppm) and high or low water availability.  Measurements listed in file represent all digitized seedlings at ~8 months for E. pilularis and ~10.5 months for E. populnea."
+"Leaf area","All leaves were digitized and leaf area was calculated as the sum of all individual leaves."
+"Height","Height was measured as the vertical distance from the pot surface (stem base) to the highest apex."
+"Crown area","Crown surface area was estimated from digitized points, assuming the crown was a convex hull.  "
+"Growth environment","Glasshouse."
 "Year collected","2009"

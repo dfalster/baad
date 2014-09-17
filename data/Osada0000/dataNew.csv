@@ -1,6 +1,5 @@
 "lookupVariable","lookupValue","newVariable","newValue","source"
-vegetation, "Tropical rainforest", vegetation, TropRF, Daniel Falster - standardising vegetation type
-species,"Elateriospermum tapos Blume",family,Euphorbiaceae,DBarneche[from_author_reply]
-species,"Gamblea innovans (Siebold et Zucc.) C.B. Shang, Lowry et Frodin",family,Araliaceae,DBarneche[from_author_reply]
-species,"Chengiopanax sciadophylloides (Franch. et Sav.) C.B. Shang et J.Y. Huang",family,Araliaceae,DBarneche[from_author_reply]
-
+"vegetation"," Tropical rainforest"," vegetation"," TropRF"," Daniel Falster - standardising vegetation type"
+"species","Elateriospermum tapos Blume","family","Euphorbiaceae","DBarneche[from_author_reply]"
+"species","Gamblea innovans (Siebold et Zucc.) C.B. Shang, Lowry et Frodin","family","Araliaceae","DBarneche[from_author_reply]"
+"species","Chengiopanax sciadophylloides (Franch. et Sav.) C.B. Shang et J.Y. Huang","family","Araliaceae","DBarneche[from_author_reply]"

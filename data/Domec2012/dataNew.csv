@@ -1,6 +1,6 @@
 "lookupVariable","lookupValue","newVariable","newValue","source"
-species,pinus ponderosa,species,Pinus ponderosa,
-species,Pseudostuga menziesii (Mirb.) Franco,species,Pseudotsuga menziesii,
-longitude,-117.07,longitude,-120.07,DBarneche[from_author_reply]
-longitude,-124.5,longitude,-123.21,DBarneche[from_author_reply]
-,,h.bh,1.3,default
+"species","pinus ponderosa","species","Pinus ponderosa",""
+"species","Pseudostuga menziesii (Mirb.) Franco","species","Pseudotsuga menziesii",""
+"longitude","-117.07","longitude","-120.07","DBarneche[from_author_reply]"
+"longitude","-124.5","longitude","-123.21","DBarneche[from_author_reply]"
+"","","h.bh","1.3","default"

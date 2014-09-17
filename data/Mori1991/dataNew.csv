@@ -1,10 +1,10 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,species,Chamaecyparis obtusa,from paper[D Barneche]
-,,vegetation,TempF,from paper[D Barneche]
-,,growingCondition,PU,from paper[D Barneche]
-,,location,"Inabu, Aich, Japan",DBarneche[from_author_reply]
-,,latitude,35,DBarneche[from_author_reply]
-,,longitude,137,DBarneche[from_author_reply]
-,,family,Cupressaceae,DBarneche[from_author_reply]
-,,pft,EG,DBarneche[from_author_reply]
-,,h.bh,1.3,default
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"species","Chamaecyparis obtusa","from paper[D Barneche]"
+NA,NA,"vegetation","TempF","from paper[D Barneche]"
+NA,NA,"growingCondition","PU","from paper[D Barneche]"
+NA,NA,"location","Inabu, Aich, Japan","DBarneche[from_author_reply]"
+NA,NA,"latitude","35","DBarneche[from_author_reply]"
+NA,NA,"longitude","137","DBarneche[from_author_reply]"
+NA,NA,"family","Cupressaceae","DBarneche[from_author_reply]"
+NA,NA,"pft","EG","DBarneche[from_author_reply]"
+NA,NA,"h.bh","1.3","default"

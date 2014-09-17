@@ -1,13 +1,13 @@
 "lookupVariable","lookupValue","newVariable","newValue","source"
-location,MG14U,latitude,-22.353,DBarneche[from_author_reply]
-location,MG14U,longitude,-46.965507,DBarneche[from_author_reply]
-location,MG14U,location,Mogi Guacu,DBarneche[from_paper]
-location,NS24U,location,Mogi Guacu,DBarneche[from_paper]
-location,BR171,location,Brotas,DBarneche[from_paper]
-location,BR183U,location,Brotas,DBarneche[from_paper]
-location,BR89,location,Brotas,DBarneche[from_paper]
-location,BR178U,location,Brotas,DBarneche[from_paper]
-location,BR43E,location,Brotas,DBarneche[from_paper]
-,,family,Myrtaceae,DBarneche[from_author_reply]
-,,species,"Eucalyptus urophylla * Eucalyptus grandis (clone)",consistent with Nouvellon2010
-,,h.bh,1.3,default
+"location","MG14U","latitude","-22.353","DBarneche[from_author_reply]"
+"location","MG14U","longitude","-46.965507","DBarneche[from_author_reply]"
+"location","MG14U","location","Mogi Guacu","DBarneche[from_paper]"
+"location","NS24U","location","Mogi Guacu","DBarneche[from_paper]"
+"location","BR171","location","Brotas","DBarneche[from_paper]"
+"location","BR183U","location","Brotas","DBarneche[from_paper]"
+"location","BR89","location","Brotas","DBarneche[from_paper]"
+"location","BR178U","location","Brotas","DBarneche[from_paper]"
+"location","BR43E","location","Brotas","DBarneche[from_paper]"
+"","","family","Myrtaceae","DBarneche[from_author_reply]"
+"","","species","Eucalyptus urophylla * Eucalyptus grandis (clone)","consistent with Nouvellon2010"
+"","","h.bh","1.3","default"

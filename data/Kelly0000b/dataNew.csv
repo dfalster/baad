@@ -1,9 +1,9 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,pft,EA,from .txt file[J Kelly]
-,,growingCondition,GH,from .txt file[J Kelly]
-,,location,"Macquarie University, North Ryde, NSW, Australia",from .txt file[J Kelly]
-,,latitude,-33,DBarneche[from_author_reply]
-,,longitude,151,DBarneche[from_author_reply]
-,,family,Myrtaceae,DBarneche[from_author_reply]
-species,PIL,species,Eucalyptus pilularis,from .txt file[J Kelly]
-species,POP,species,Eucalytpus populnea,from .txt file[J Kelly]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"","","pft","EA","from .txt file[J Kelly]"
+"","","growingCondition","GH","from .txt file[J Kelly]"
+"","","location","Macquarie University, North Ryde, NSW, Australia","from .txt file[J Kelly]"
+"","","latitude","-33","DBarneche[from_author_reply]"
+"","","longitude","151","DBarneche[from_author_reply]"
+"","","family","Myrtaceae","DBarneche[from_author_reply]"
+"species","PIL","species","Eucalyptus pilularis","from .txt file[J Kelly]"
+"species","POP","species","Eucalytpus populnea","from .txt file[J Kelly]"

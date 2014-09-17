@@ -1,13 +1,13 @@
-Topic,Description
-Sampling strategy,"In September 1995, 15 canopy dominant and 15 suppressed loblolly pine trees were sampled from five sites (7-45 year-old abandoned pine plantations) in the Duke forest region of North Carolina."
-Growth environment, Abandoned Pine plantation.
-Other variables, Saplings grown under closed canopy and canopy openness were measured using hemispherical photographs; Mean annual rainfall provided; Mean annual temperature provided.
-status, Dominant (d) trees had a majority of the live crown within or above the canopy of surrounding trees; suppressed (s) trees had a majority of the live crown located in the lower portion or below the canopy of surrounding trees.
-Diameter, Diameter of the bole was measured at 140cm above the ground and at the base of the live crown (BLC) for each tree.
-Height,Total height of each tree was measured after harvest.
-Sapwood Area and Weight,Wood was stained with ferric choride to differentiate sapwood.  Discs were collected for this (and other bole component calculations) at 1m intervals along the bole). Total Sapwood area and volume was calculated and converted to mass using the specific gravity (measured) of wood samples.
-Bole weight,Total bole weight was determined by regression analysis and summing based upon component weights (see Sapwood).
-Branch weight,"For each tree, four branches were sub-sampled. Diameter at the base of all branches on the tree were measured and all component weights were then regressed to diameter of branch base. Branch weight from sampled branches was estimated by cross-sectional area and length measurements of all component parts and specific gravity calculations."
-Needle weight,Needles from sampled branches were dried to constant mass and weighed. Total mass was based on regression to basal branch area.
-Leaf Area,Sub-samples of needle cohorts were taken for measurements of surface leaf area and estimates of projected leaf area.
-Root weight,The roots of four of the dominant and five suppressed individuals were excavated with a backhoe for extimations of coarse root allocation. Basal diameter of each primary lateral root was measured and the taproot was dried and weighted. Mass of lateral roots was estimated with regression.
+"Topic","Description"
+"Sampling strategy","In September 1995, 15 canopy dominant and 15 suppressed loblolly pine trees were sampled from five sites (7-45 year-old abandoned pine plantations) in the Duke forest region of North Carolina."
+"Growth environment"," Abandoned Pine plantation."
+"Other variables"," Saplings grown under closed canopy and canopy openness were measured using hemispherical photographs; Mean annual rainfall provided; Mean annual temperature provided."
+"status"," Dominant (d) trees had a majority of the live crown within or above the canopy of surrounding trees; suppressed (s) trees had a majority of the live crown located in the lower portion or below the canopy of surrounding trees."
+"Diameter"," Diameter of the bole was measured at 140cm above the ground and at the base of the live crown (BLC) for each tree."
+"Height","Total height of each tree was measured after harvest."
+"Sapwood Area and Weight","Wood was stained with ferric choride to differentiate sapwood.  Discs were collected for this (and other bole component calculations) at 1m intervals along the bole). Total Sapwood area and volume was calculated and converted to mass using the specific gravity (measured) of wood samples."
+"Bole weight","Total bole weight was determined by regression analysis and summing based upon component weights (see Sapwood)."
+"Branch weight","For each tree, four branches were sub-sampled. Diameter at the base of all branches on the tree were measured and all component weights were then regressed to diameter of branch base. Branch weight from sampled branches was estimated by cross-sectional area and length measurements of all component parts and specific gravity calculations."
+"Needle weight","Needles from sampled branches were dried to constant mass and weighed. Total mass was based on regression to basal branch area."
+"Leaf Area","Sub-samples of needle cohorts were taken for measurements of surface leaf area and estimates of projected leaf area."
+"Root weight","The roots of four of the dominant and five suppressed individuals were excavated with a backhoe for extimations of coarse root allocation. Basal diameter of each primary lateral root was measured and the taproot was dried and weighted. Mass of lateral roots was estimated with regression."

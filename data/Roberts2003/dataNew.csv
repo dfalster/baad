@@ -1,11 +1,11 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,age,15,original datafile
-,,family,Pinaceae,
-,,pft,EG,
-,,species,Pinus taeda,
-,,growingCondition,PU,
-,,latitude,33.235,found on map
-,,longitude,-89.05,found on map
-,,location,"Winston County, Mississippi USA",datafile
-,,vegetation,TempF,DBarneche[from_Remko]
-,,h.bh,1.37,DBarneche[from_Scott_Roberts]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"age","15","original datafile"
+NA,NA,"family","Pinaceae",""
+NA,NA,"pft","EG",""
+NA,NA,"species","Pinus taeda",""
+NA,NA,"growingCondition","PU",""
+NA,NA,"latitude","33.235","found on map"
+NA,NA,"longitude","-89.05","found on map"
+NA,NA,"location","Winston County, Mississippi USA","datafile"
+NA,NA,"vegetation","TempF","DBarneche[from_Remko]"
+NA,NA,"h.bh","1.37","DBarneche[from_Scott_Roberts]"

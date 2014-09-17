@@ -6,7 +6,7 @@ NA,NA,"mat","7.8","from paper[D Barneche]"
 NA,NA,"growingCondition","FW","from paper[D Barneche]"
 NA,NA,"vegetation","TempF","from paper[D Barneche]"
 NA,NA,"pft","DA","from paper[D Barneche] - fixed to DA (RAD)"
-,,location,"Forest Wibbecke, near Goettingen (Lower Saxony, Germany)",DBarneche[from_author_reply]
-species,"Acer pseudoplatanus",family,Aceraceae,DBarneche[from_author_reply]
-species,"Fagus sylvatica",family,Fagaceae,DBarneche[from_author_reply]
-species,"Fraxinus excelsior",family,Oleaceae,DBarneche[from_author_reply]
+"","","location","Forest Wibbecke, near Goettingen (Lower Saxony, Germany)","DBarneche[from_author_reply]"
+"species","Acer pseudoplatanus","family","Aceraceae","DBarneche[from_author_reply]"
+"species","Fagus sylvatica","family","Fagaceae","DBarneche[from_author_reply]"
+"species","Fraxinus excelsior","family","Oleaceae","DBarneche[from_author_reply]"

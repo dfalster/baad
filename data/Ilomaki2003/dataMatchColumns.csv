@@ -1,16 +1,16 @@
-var_in,method,unit_in,var_out,notes
-stand,NA,NA,NA,NA
-tree,NA,NA,NA,NA
-Competition index,NA,NA,NA,NA
-Height m,dx,m,h.t,NA
-H Crown base,dx,m,h.c,NA
-D 1.3 m,e,m,d.bh,NA
-D Crown Base m,NA,NA,NA,NA
-Crown class,NA,NA,status,NA
-stem+bark mass kg,NA,NA,NA,NA
-stem+bark mass inside crown kg,NA,NA,NA,NA
-branch mass kg,p7 m1,kg,m.br,NA
-foliage mass kg,"m1,7",kg,m.lf,NA
-woody mass inside crown kg,NA,NA,NA,NA
-woody mass of tree kg,j m1,kg,m.st,NA
-grouping,NA,NA,grouping,NA
+"var_in","method","unit_in","var_out","notes"
+"stand",NA,NA,NA,NA
+"tree",NA,NA,NA,NA
+"Competition index",NA,NA,NA,NA
+"Height m","dx","m","h.t",NA
+"H Crown base","dx","m","h.c",NA
+"D 1.3 m","e","m","d.bh",NA
+"D Crown Base m",NA,NA,NA,NA
+"Crown class",NA,NA,"status",NA
+"stem+bark mass kg",NA,NA,NA,NA
+"stem+bark mass inside crown kg",NA,NA,NA,NA
+"branch mass kg","p7 m1","kg","m.br",NA
+"foliage mass kg","m1,7","kg","m.lf",NA
+"woody mass inside crown kg",NA,NA,NA,NA
+"woody mass of tree kg","j m1","kg","m.st",NA
+"grouping",NA,NA,"grouping",NA

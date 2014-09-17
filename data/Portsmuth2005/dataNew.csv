@@ -1,8 +1,8 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,vegetation,TempF,from paper[A Portsmuth]
-,,growingCondition,FW,from paper[A Portsmuth]
-,,pft,EG,from paper[A Portsmuth]
-latitude,58,latitude,58.86,DBarneche[from_paper]
-longitude,26,longitude,26.25,DBarneche[from_paper]
-latitude,59,latitude,59.47,DBarneche[from_paper]
-longitude,25,longitude,25.02,DBarneche[from_paper]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"",NA,"vegetation","TempF","from paper[A Portsmuth]"
+"",NA,"growingCondition","FW","from paper[A Portsmuth]"
+"",NA,"pft","EG","from paper[A Portsmuth]"
+"latitude",58,"latitude","58.86","DBarneche[from_paper]"
+"longitude",26,"longitude","26.25","DBarneche[from_paper]"
+"latitude",59,"latitude","59.47","DBarneche[from_paper]"
+"longitude",25,"longitude","25.02","DBarneche[from_paper]"

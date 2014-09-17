@@ -1,34 +1,34 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-species,Landom,family,Meliaceae,DBarneche[from_author_reply]
-species,Durzib,family,Bombacaceae,DBarneche[from_author_reply]
-species,Hevbra,family,Euphorbiaceae,DBarneche[from_author_reply]
-species,Alssch,family,Apocynaceae,DBarneche[from_author_reply]
-species,Schwal,family,Theaceae,DBarneche[from_author_reply]
-species,Fagfra,family,Loganiaceae,DBarneche[from_author_reply]
-species,Shoste,family,Dipterocarpaceae,DBarneche[from_author_reply]
-species,Pitjir,family,Leguminosae,DBarneche[from_author_reply]
-species,Acaman,family,Leguminosae,DBarneche[from_author_reply]
-species,Albfal,family,Dipterocarpaceae,DBarneche[from_author_reply]
-species,Landom,species,Lansium domesticum,from paper[D Barneche]
-species,Durzib,species,Durio zibethinus,from paper[D Barneche]
-species,Hevbra,species,Hevea brasiliensis,from paper[D Barneche]
-species,Alssch,species,Alstonia scholaris,from paper[D Barneche]
-species,Schwal,species,Schima wallichii,from paper[D Barneche]
-species,Fagfra,species,Fagraea fragrans,from paper[D Barneche]
-species,Shoste,species,Shorea stenoptera,from paper[D Barneche]
-species,Pitjir,species,Archidendron jiringa,from paper[D Barneche]
-species,Acaman,species,Acacia mangium,from paper[D Barneche]
-species,Albfal,species,Albizia falcataria,from paper[D Barneche]
-,,growingCondition,FW,from paper[D Barneche]
-,,vegetation,TropRF,from paper[D Barneche]
-location,Bogor,latitude,-6.563922,DBarneche[from_author_reply]
-location,Bogor,longitude,106.631836,DBarneche[from_author_reply]
-location,Jambi,latitude,-1.590796,DBarneche[from_author_reply]
-location,Jambi,longitude,102.24864,DBarneche[from_author_reply]
-location,Palembang,latitude,-2.923754,DBarneche[from_author_reply]
-location,Palembang,longitude,104.542208,DBarneche[from_author_reply]
-location,Sanggau,latitude,0.133724,DBarneche[from_author_reply]
-location,Sanggau,longitude,110.603743,DBarneche[from_author_reply]
-,,pft,EA,DBarneche[from_author_reply]
-,,status,3,DBarneche[from_author_reply]
-,,h.bh,1.3,default
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"species","Landom","family","Meliaceae","DBarneche[from_author_reply]"
+"species","Durzib","family","Bombacaceae","DBarneche[from_author_reply]"
+"species","Hevbra","family","Euphorbiaceae","DBarneche[from_author_reply]"
+"species","Alssch","family","Apocynaceae","DBarneche[from_author_reply]"
+"species","Schwal","family","Theaceae","DBarneche[from_author_reply]"
+"species","Fagfra","family","Loganiaceae","DBarneche[from_author_reply]"
+"species","Shoste","family","Dipterocarpaceae","DBarneche[from_author_reply]"
+"species","Pitjir","family","Leguminosae","DBarneche[from_author_reply]"
+"species","Acaman","family","Leguminosae","DBarneche[from_author_reply]"
+"species","Albfal","family","Dipterocarpaceae","DBarneche[from_author_reply]"
+"species","Landom","species","Lansium domesticum","from paper[D Barneche]"
+"species","Durzib","species","Durio zibethinus","from paper[D Barneche]"
+"species","Hevbra","species","Hevea brasiliensis","from paper[D Barneche]"
+"species","Alssch","species","Alstonia scholaris","from paper[D Barneche]"
+"species","Schwal","species","Schima wallichii","from paper[D Barneche]"
+"species","Fagfra","species","Fagraea fragrans","from paper[D Barneche]"
+"species","Shoste","species","Shorea stenoptera","from paper[D Barneche]"
+"species","Pitjir","species","Archidendron jiringa","from paper[D Barneche]"
+"species","Acaman","species","Acacia mangium","from paper[D Barneche]"
+"species","Albfal","species","Albizia falcataria","from paper[D Barneche]"
+"","","growingCondition","FW","from paper[D Barneche]"
+"","","vegetation","TropRF","from paper[D Barneche]"
+"location","Bogor","latitude","-6.563922","DBarneche[from_author_reply]"
+"location","Bogor","longitude","106.631836","DBarneche[from_author_reply]"
+"location","Jambi","latitude","-1.590796","DBarneche[from_author_reply]"
+"location","Jambi","longitude","102.24864","DBarneche[from_author_reply]"
+"location","Palembang","latitude","-2.923754","DBarneche[from_author_reply]"
+"location","Palembang","longitude","104.542208","DBarneche[from_author_reply]"
+"location","Sanggau","latitude","0.133724","DBarneche[from_author_reply]"
+"location","Sanggau","longitude","110.603743","DBarneche[from_author_reply]"
+"","","pft","EA","DBarneche[from_author_reply]"
+"","","status","3","DBarneche[from_author_reply]"
+"","","h.bh","1.3","default"

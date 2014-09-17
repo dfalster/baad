@@ -1,24 +1,24 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-location,Mogo SF,latitude,-35.73333,DBarneche[based_on_report]
-location,Mogo SF,longitude,150.0667,DBarneche[based_on_report]
-location,Clyde SF,latitude,-35.45,DBarneche[based_on_report]
-location,Clyde SF,longitude,150.2,DBarneche[based_on_report]
-location,Flat Rock SF,latitude,-35.41667,DBarneche[based_on_report]
-location,Flat Rock SF,longitude,150.3,DBarneche[based_on_report]
-location,Mogo SF,location,Mogo State Forest,DBarneche[based_on_report]
-location,Clyde SF,location,Clyde State Forest,DBarneche[based_on_report]
-location,Flat Rock SF,location,Flat Rock State Forest,DBarneche[based_on_report]
-,,growingCondition,FW,DBarneche[based_on_report]
-,,vegetation,TempF,DBarneche[based_on_report]
-,,pft,EA,DBarneche[based_on_report]
-,,family,Myrtaceae,DBarneche[based_on_report]
-species,WAT,family,Fabaceae,DBarneche[based_on_report]
-species,IBK,species,Eucalyptus paniculata,DBarneche[based_on_report]
-species,SPG,species,Corymbia maculata,DBarneche[based_on_report]
-species,WSB,species,Eucalyptus eugenioides,DBarneche[based_on_report]
-species,RMY,species,Eucalyptus resinifera,DBarneche[based_on_report]
-species,YSB,species,Eucalyptus muellerana,DBarneche[based_on_report]
-species,GIB,species,Eucalyptus paniculata,DBarneche[based_on_report]
-species,SBG,species,Eucalyptus saligna,DBarneche[based_on_report]
-species,WAT,species,Acacia spp.,DBarneche[based_on_report]
-,,h.bh,1.3,default
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"location","Mogo SF","latitude","-35.73333","DBarneche[based_on_report]"
+"location","Mogo SF","longitude","150.0667","DBarneche[based_on_report]"
+"location","Clyde SF","latitude","-35.45","DBarneche[based_on_report]"
+"location","Clyde SF","longitude","150.2","DBarneche[based_on_report]"
+"location","Flat Rock SF","latitude","-35.41667","DBarneche[based_on_report]"
+"location","Flat Rock SF","longitude","150.3","DBarneche[based_on_report]"
+"location","Mogo SF","location","Mogo State Forest","DBarneche[based_on_report]"
+"location","Clyde SF","location","Clyde State Forest","DBarneche[based_on_report]"
+"location","Flat Rock SF","location","Flat Rock State Forest","DBarneche[based_on_report]"
+"","","growingCondition","FW","DBarneche[based_on_report]"
+"","","vegetation","TempF","DBarneche[based_on_report]"
+"","","pft","EA","DBarneche[based_on_report]"
+"","","family","Myrtaceae","DBarneche[based_on_report]"
+"species","WAT","family","Fabaceae","DBarneche[based_on_report]"
+"species","IBK","species","Eucalyptus paniculata","DBarneche[based_on_report]"
+"species","SPG","species","Corymbia maculata","DBarneche[based_on_report]"
+"species","WSB","species","Eucalyptus eugenioides","DBarneche[based_on_report]"
+"species","RMY","species","Eucalyptus resinifera","DBarneche[based_on_report]"
+"species","YSB","species","Eucalyptus muellerana","DBarneche[based_on_report]"
+"species","GIB","species","Eucalyptus paniculata","DBarneche[based_on_report]"
+"species","SBG","species","Eucalyptus saligna","DBarneche[based_on_report]"
+"species","WAT","species","Acacia spp.","DBarneche[based_on_report]"
+"","","h.bh","1.3","default"

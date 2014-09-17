@@ -1,9 +1,9 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,pft,EG,
-,,growingCondition,PM,
-,,vegetation,TempF,
-,,h.bh,1.37,paper[RAD]
-,,family,Pinaceae,
-,,location,Pringle Butte and Lookout Mountain,paper[RAD]
-,,latitude,43.78,mean of two sites in paper
-,,longitude,-121.65,mean of two sites in paper
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"pft","EG",""
+NA,NA,"growingCondition","PM",""
+NA,NA,"vegetation","TempF",""
+NA,NA,"h.bh","1.37","paper[RAD]"
+NA,NA,"family","Pinaceae",""
+NA,NA,"location","Pringle Butte and Lookout Mountain","paper[RAD]"
+NA,NA,"latitude","43.78","mean of two sites in paper"
+NA,NA,"longitude","-121.65","mean of two sites in paper"

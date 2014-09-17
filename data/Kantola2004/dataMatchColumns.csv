@@ -1,26 +1,26 @@
-var_in,method,unit_in,var_out,notes
-spdataset,NA,NA,NA,NA
-dataset,NA,NA,NA,NA
-wrong.sp,NA,NA,NA,NA
-age,dy,yr,age,NA
-dbh,e,cm,d.bh,NA
-sapbh,NA,NA,NA,NA
-sapcb,NA,NA,NA,NA
-h_t,dx,m,h.t,NA
-h_c,dx,m,h.c,NA
-cw,d,m,d.cr,NA
-m_lf,"m1,7, p",kg,m.lf,NA
-a_lf,c r2,m2,a.lf,NA
-wbr,"m1, 7, p",kg,m.br,NA
-m_st,dz,kg,m.st,NA
-sp,NA,NA,species,NA
-authorname,NA,NA,NA,NA
-reference,NA,NA,NA,NA
-country,NA,NA,NA,NA
-remark,NA,NA,NA,NA
-a_cp,a,m2,a.cp,NA
-a_st,e,m2,a.stbh,NA
-a_ss_dbh,NA,NA,NA,NA
-a_ss_crownbase,NA,NA,NA,NA
-longitude,NA,deg,longitude,NA
-latitude,NA,deg,latitude,NA
+"var_in","method","unit_in","var_out","notes"
+"spdataset",NA,NA,NA,NA
+"dataset",NA,NA,NA,NA
+"wrong.sp",NA,NA,NA,NA
+"age","dy","yr","age",NA
+"dbh","e","cm","d.bh",NA
+"sapbh",NA,NA,NA,NA
+"sapcb",NA,NA,NA,NA
+"h_t","dx","m","h.t",NA
+"h_c","dx","m","h.c",NA
+"cw","d","m","d.cr",NA
+"m_lf","m1,7, p","kg","m.lf",NA
+"a_lf","c r2","m2","a.lf",NA
+"wbr","m1, 7, p","kg","m.br",NA
+"m_st","dz","kg","m.st",NA
+"sp",NA,NA,"species",NA
+"authorname",NA,NA,NA,NA
+"reference",NA,NA,NA,NA
+"country",NA,NA,NA,NA
+"remark",NA,NA,NA,NA
+"a_cp","a","m2","a.cp",NA
+"a_st","e","m2","a.stbh",NA
+"a_ss_dbh",NA,NA,NA,NA
+"a_ss_crownbase",NA,NA,NA,NA
+"longitude",NA,"deg","longitude",NA
+"latitude",NA,"deg","latitude",NA

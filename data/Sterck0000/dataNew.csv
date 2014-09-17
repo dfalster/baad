@@ -1,14 +1,14 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,species,Fagus sylvatica,DBarneche[from_author_reply]
-,,family,Fagaceae,DBarneche[from_author_reply]
-,,pft,DA,DBarneche[from_author_reply]
-,,location,"Ede Bos (Ede, Netherlands)",DBarneche[from_author_reply]
-,,latitude,52.05314,DBarneche[from_author_reply]
-,,longitude,5.678333,DBarneche[from_author_reply]
-,,vegetation,TempF,DBarneche[from_author_reply]
-status,1,growingCondition,PM,DBarneche[from_author_reply]
-status,2,growingCondition,FW,DBarneche[from_author_reply]
-status,3,growingCondition,FW,DBarneche[from_author_reply]
-status,1,status,3,DBarneche[from_author_reply]
-status,2,status,0,DBarneche[from_author_reply]
-status,3,status,0,DBarneche[from_author_reply]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"",NA,"species","Fagus sylvatica","DBarneche[from_author_reply]"
+"",NA,"family","Fagaceae","DBarneche[from_author_reply]"
+"",NA,"pft","DA","DBarneche[from_author_reply]"
+"",NA,"location","Ede Bos (Ede, Netherlands)","DBarneche[from_author_reply]"
+"",NA,"latitude","52.05314","DBarneche[from_author_reply]"
+"",NA,"longitude","5.678333","DBarneche[from_author_reply]"
+"",NA,"vegetation","TempF","DBarneche[from_author_reply]"
+"status",1,"growingCondition","PM","DBarneche[from_author_reply]"
+"status",2,"growingCondition","FW","DBarneche[from_author_reply]"
+"status",3,"growingCondition","FW","DBarneche[from_author_reply]"
+"status",1,"status","3","DBarneche[from_author_reply]"
+"status",2,"status","0","DBarneche[from_author_reply]"
+"status",3,"status","0","DBarneche[from_author_reply]"

@@ -1,19 +1,19 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,latitude,19.583,from paper[A Saldana-Acosta]
-,,longitude,-104.2833,from paper[A Saldana-Acosta]
-,,map,1609,from paper[A Saldana-Acosta]
-,,vegetation,TropF,from paper[A Saldana-Acosta]
-,,growingCondition,GH,from paper[A Saldana-Acosta]
-,,location,"Las Joyas Scientific Station,Sierra de Manantlan Biosphere Reserve, Jalisco State, western Mexico",from author[A Saldana-Acosta]
-species,Fraxinus uhdei,pft,EA,from author [A Saldana-Acosta]. Is DA elsewhere but EA at this site.
-species,Juglans major,pft,DA,from paper[A Saldana-Acosta]
-species,Persea hintonii,pft,EA,RAD lookup
-species,Dendropanax arboreus,pft,EA,RAD lookup
-species,Symplococarpon purpusii,pft,EA,RAD lookup
-species,Quercus salicifolia,pft,EA,from author [A Saldana-Acosta]. Is DA elsewhere but EA at this site.
-species,Citharexylum mocinnii,pft,EA,RAD lookup
-species,Magnolia iltisiana,pft,EA,Vazquez-G 1994 Brittonia 46:1-23
-light,a,light,3-5% of PAR,from paper[A Saldana-Acosta]
-light,b,light,8-10% of PAR,from paper[A Saldana-Acosta]
-light,c,light,18-20% of PAR,from paper[A Saldana-Acosta]
-light,d,light,55-60% of PAR,from paper[A Saldana-Acosta]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"","","latitude","19.583","from paper[A Saldana-Acosta]"
+"","","longitude","-104.2833","from paper[A Saldana-Acosta]"
+"","","map","1609","from paper[A Saldana-Acosta]"
+"","","vegetation","TropF","from paper[A Saldana-Acosta]"
+"","","growingCondition","GH","from paper[A Saldana-Acosta]"
+"","","location","Las Joyas Scientific Station,Sierra de Manantlan Biosphere Reserve, Jalisco State, western Mexico","from author[A Saldana-Acosta]"
+"species","Fraxinus uhdei","pft","EA","from author [A Saldana-Acosta]. Is DA elsewhere but EA at this site."
+"species","Juglans major","pft","DA","from paper[A Saldana-Acosta]"
+"species","Persea hintonii","pft","EA","RAD lookup"
+"species","Dendropanax arboreus","pft","EA","RAD lookup"
+"species","Symplococarpon purpusii","pft","EA","RAD lookup"
+"species","Quercus salicifolia","pft","EA","from author [A Saldana-Acosta]. Is DA elsewhere but EA at this site."
+"species","Citharexylum mocinnii","pft","EA","RAD lookup"
+"species","Magnolia iltisiana","pft","EA","Vazquez-G 1994 Brittonia 46:1-23"
+"light","a","light","3-5% of PAR","from paper[A Saldana-Acosta]"
+"light","b","light","8-10% of PAR","from paper[A Saldana-Acosta]"
+"light","c","light","18-20% of PAR","from paper[A Saldana-Acosta]"
+"light","d","light","55-60% of PAR","from paper[A Saldana-Acosta]"

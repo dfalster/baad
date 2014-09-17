@@ -1,9 +1,9 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,growingCondition,CG,RAD fixed - plants are in pots
-,,vegetation,TropRF,from paper[D Barneche]
-,,pft,EA,from paper[D Barneche]
-,,family,Rubiaceae,DBarneche[from_author-reply]
-species,Psychotria psychotrif,species,Psychotria psychotriifolia,from paper [RAD]
-,,location,Barro Colorado Island (BCI Panama),from paper[D Barneche]
-,,latitude,9.15,from paper[D Barneche]
-,,longitude,-79.85,from paper[D Barneche]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"","","growingCondition","CG","RAD fixed - plants are in pots"
+"","","vegetation","TropRF","from paper[D Barneche]"
+"","","pft","EA","from paper[D Barneche]"
+"","","family","Rubiaceae","DBarneche[from_author-reply]"
+"species","Psychotria psychotrif","species","Psychotria psychotriifolia","from paper [RAD]"
+"","","location","Barro Colorado Island (BCI Panama)","from paper[D Barneche]"
+"","","latitude","9.15","from paper[D Barneche]"
+"","","longitude","-79.85","from paper[D Barneche]"

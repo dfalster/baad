@@ -1,9 +1,9 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-NA,NA,vegetation,TropRF,from paper[T. Yamakura]
-NA,NA,pft,EA,from paper[T. Yamakura]
-NA,NA,growingCondition,FW,from paper[T. Yamakura]
-NA,NA,location,"Sebulu, East Kalimantan Province, Indonesia",from paper[T. Yamakura]
-NA,NA,latitude,-1.5,from paper[T. Yamakura]
-NA,NA,longitude,116.967,from paper[D. Falster]
-NA,NA,map,1862,from paper[T. Yamakura]
-,,h.bh,1.3,default
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"vegetation","TropRF","from paper[T. Yamakura]"
+NA,NA,"pft","EA","from paper[T. Yamakura]"
+NA,NA,"growingCondition","FW","from paper[T. Yamakura]"
+NA,NA,"location","Sebulu, East Kalimantan Province, Indonesia","from paper[T. Yamakura]"
+NA,NA,"latitude","-1.5","from paper[T. Yamakura]"
+NA,NA,"longitude","116.967","from paper[D. Falster]"
+NA,NA,"map","1862","from paper[T. Yamakura]"
+NA,NA,"h.bh","1.3","default"

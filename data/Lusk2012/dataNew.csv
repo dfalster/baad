@@ -1,16 +1,16 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,pft,EA,from paper[D Barneche]
-species,Podocarpus nubigena,pft,EG,from paper[D Barneche]
-species,Podocarpus salignus,pft,EG,from paper[D Barneche]
-species,Saxegothaea conspicua,pft,EG,from paper[D Barneche]
-species,Araucaria araucana,pft,EG,from paper[D Barneche]
-species,Agathis australis,pft,EG,from paper[D Barneche]
-species,Phyllocladus trichomanoides,pft,EG,from paper[D Barneche]
-,,growingCondition,FW,from paper[D Barneche]
-,,vegetation,TempRF,from paper[D Barneche]
-location,Chile,latitude,-40.65,from paper[D Barneche]
-location,Chile,longitude,-72.18,from paper[D Barneche]
-location,Chile,location,"Parque Nacional Puyehue, Chile",from paper[D Barneche]
-location,NZ,latitude,-37.25,from paper[D Barneche]
-location,NZ,longitude,175.3,from paper[D Barneche]
-location,NZ,location,"Miranda, New Zealand",from paper[D Barneche]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"","","pft","EA","from paper[D Barneche]"
+"species","Podocarpus nubigena","pft","EG","from paper[D Barneche]"
+"species","Podocarpus salignus","pft","EG","from paper[D Barneche]"
+"species","Saxegothaea conspicua","pft","EG","from paper[D Barneche]"
+"species","Araucaria araucana","pft","EG","from paper[D Barneche]"
+"species","Agathis australis","pft","EG","from paper[D Barneche]"
+"species","Phyllocladus trichomanoides","pft","EG","from paper[D Barneche]"
+"","","growingCondition","FW","from paper[D Barneche]"
+"","","vegetation","TempRF","from paper[D Barneche]"
+"location","Chile","latitude","-40.65","from paper[D Barneche]"
+"location","Chile","longitude","-72.18","from paper[D Barneche]"
+"location","Chile","location","Parque Nacional Puyehue, Chile","from paper[D Barneche]"
+"location","NZ","latitude","-37.25","from paper[D Barneche]"
+"location","NZ","longitude","175.3","from paper[D Barneche]"
+"location","NZ","location","Miranda, New Zealand","from paper[D Barneche]"

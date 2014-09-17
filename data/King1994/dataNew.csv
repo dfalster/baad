@@ -1,25 +1,25 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-species,Trichilia,family,Meliaceae,DBarneche[from_author_reply]
-species,Tachigali,family,Fabaceae,DBarneche[from_author_reply]
-species,Protium panamensis,family,Burseraceae,DBarneche[from_author_reply]
-species,Herrania,family,Sterculaceae,DBarneche[from_author_reply]
-species,Calophyllum,family,Clusiaceae,DBarneche[from_author_reply]
-species,Alseis,family,Rubiaceae,DBarneche[from_author_reply]
-species,Miconia,family,Melastomataceae,DBarneche[from_author_reply]
-species,Palicourea,family,Rubiaceae,DBarneche[from_author_reply]
-species,Cecropia,family,Cecropiaceae,DBarneche[from_author_reply]
-species,Trichilia,species,Trichilia tuberculata,from paper[D Barneche]
-species,Tachigali,species,Tachigali versicolor,from paper[D Barneche]
-species,Protium panamensis,species,Protium panamense,from paper[D Barneche]
-species,Herrania,species,Herrania purpurea,from paper[D Barneche]
-species,Calophyllum,species,Calophyllum longifolium,from paper[D Barneche]
-species,Alseis,species,Alseis blackiana,from paper[D Barneche]
-species,Miconia,species,Miconia argentea,from paper[D Barneche]
-species,Palicourea,species,Palicourea guianensis,from paper[D Barneche]
-species,Cecropia,species,Cecropia insignis,from paper[D Barneche]
-,,location,"Barro Colorado Island, Panama",DBarneche[from_author_reply]
-,,longitude,-79.85,DBarneche[from_author_reply]
-,,latitude,9.15,DBarneche[from_author_reply]
-,,vegetation,TropRF,DBarneche[from_author_reply]
-,,growingCondition,FW,DBarneche[from_author_reply]
-,,pft,EA,DBarneche[from_author_reply]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"species","Trichilia","family","Meliaceae","DBarneche[from_author_reply]"
+"species","Tachigali","family","Fabaceae","DBarneche[from_author_reply]"
+"species","Protium panamensis","family","Burseraceae","DBarneche[from_author_reply]"
+"species","Herrania","family","Sterculaceae","DBarneche[from_author_reply]"
+"species","Calophyllum","family","Clusiaceae","DBarneche[from_author_reply]"
+"species","Alseis","family","Rubiaceae","DBarneche[from_author_reply]"
+"species","Miconia","family","Melastomataceae","DBarneche[from_author_reply]"
+"species","Palicourea","family","Rubiaceae","DBarneche[from_author_reply]"
+"species","Cecropia","family","Cecropiaceae","DBarneche[from_author_reply]"
+"species","Trichilia","species","Trichilia tuberculata","from paper[D Barneche]"
+"species","Tachigali","species","Tachigali versicolor","from paper[D Barneche]"
+"species","Protium panamensis","species","Protium panamense","from paper[D Barneche]"
+"species","Herrania","species","Herrania purpurea","from paper[D Barneche]"
+"species","Calophyllum","species","Calophyllum longifolium","from paper[D Barneche]"
+"species","Alseis","species","Alseis blackiana","from paper[D Barneche]"
+"species","Miconia","species","Miconia argentea","from paper[D Barneche]"
+"species","Palicourea","species","Palicourea guianensis","from paper[D Barneche]"
+"species","Cecropia","species","Cecropia insignis","from paper[D Barneche]"
+"","","location","Barro Colorado Island, Panama","DBarneche[from_author_reply]"
+"","","longitude","-79.85","DBarneche[from_author_reply]"
+"","","latitude","9.15","DBarneche[from_author_reply]"
+"","","vegetation","TropRF","DBarneche[from_author_reply]"
+"","","growingCondition","FW","DBarneche[from_author_reply]"
+"","","pft","EA","DBarneche[from_author_reply]"

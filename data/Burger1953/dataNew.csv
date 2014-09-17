@@ -1,14 +1,14 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,pft,EG,
-,,family,Pinaceae,
-,,species,Picea abies,
-status,u,status,0,
-status,b,status,1,
-status,m,status,2,
-status,d,status,3,
-,,location,Switzerland,
-,,vegetation,TempF,
-,,growingCondition,PM,
-,,latitude,47.38,Zurich (many sites close)
-,,longitude,8.51,Zurich (many sites close)
-,,h.bh,1.3,default
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"","","pft","EG",""
+"","","family","Pinaceae",""
+"","","species","Picea abies",""
+"status","u","status","0",""
+"status","b","status","1",""
+"status","m","status","2",""
+"status","d","status","3",""
+"","","location","Switzerland",""
+"","","vegetation","TempF",""
+"","","growingCondition","PM",""
+"","","latitude","47.38","Zurich (many sites close)"
+"","","longitude","8.51","Zurich (many sites close)"
+"","","h.bh","1.3","default"

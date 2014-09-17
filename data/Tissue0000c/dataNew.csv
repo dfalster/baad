@@ -1,9 +1,9 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,pft,EG,from .txt file[R Smith]
-,,growingCondition,GH,from .txt file[R Smith]
-,,location,"University of Western Sydney, Richmond, NSW, Australia",from .txt file[R Smith]
-,,species,Wollemia nobilis,from .txt file[R Smith]
-,,age,2.5,from .txt file[R Smith]
-,,family,Araucariaceae,
-,,latitude,-33.61,
-,,longitude,150.75,
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"pft","EG","from .txt file[R Smith]"
+NA,NA,"growingCondition","GH","from .txt file[R Smith]"
+NA,NA,"location","University of Western Sydney, Richmond, NSW, Australia","from .txt file[R Smith]"
+NA,NA,"species","Wollemia nobilis","from .txt file[R Smith]"
+NA,NA,"age","2.5","from .txt file[R Smith]"
+NA,NA,"family","Araucariaceae",""
+NA,NA,"latitude","-33.61",""
+NA,NA,"longitude","150.75",""

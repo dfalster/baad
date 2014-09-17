@@ -1,10 +1,10 @@
-var_in,method,unit_in,var_out,notes
-Species,NA,NA,species,NA
-Tree #,NA,NA,NA,NA
-Height (m),Optical rangefinder for trees > 4 m tall,m,h.t,NA
-D1.10,"I,x,a1",cm,d.ba,NA
-Crown width (m),"a,d",m,d.cr,NA
-Lowest leaf height (m),u,m,h.c,NA
-Ave Leaf Height (m),NA,NA,NA,NA
-Crown length,Height - lowest leaf height for purposes of this data paper,m,c.d,NA
-h.bh,NA,m,h.bh,"diameter measured at 1/10th of tree height"
+"var_in","method","unit_in","var_out","notes"
+"Species",NA,NA,"species",NA
+"Tree #",NA,NA,NA,NA
+"Height (m)","Optical rangefinder for trees > 4 m tall","m","h.t",NA
+"D1.10","I,x,a1","cm","d.ba",NA
+"Crown width (m)","a,d","m","d.cr",NA
+"Lowest leaf height (m)","u","m","h.c",NA
+"Ave Leaf Height (m)",NA,NA,NA,NA
+"Crown length","Height - lowest leaf height for purposes of this data paper","m","c.d",NA
+"h.bh",NA,"m","h.bh","diameter measured at 1/10th of tree height"

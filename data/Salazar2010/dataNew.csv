@@ -1,14 +1,14 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-species,Castanea sativa,map,1590,from paper[D Barneche]
-species,Quercus pyrenaica,map,1530,from paper[D Barneche]
-species,Castanea sativa,mat,10.8,from paper[D Barneche]
-species,Quercus pyrenaica,mat,11.1,from paper[D Barneche]
-,,growingCondition,FW,from paper[D Barneche]
-,,longitude,-5.953,DFalster[from_author_reply]
-,,latitude,40.5761,DFalster[from_author_reply]
-,,vegetation,Wo,DBarneche[from_author_reply]
-,,family,Fagaceae,DBarneche[from_author_reply]
-,,pft,DA,DBarneche[from_author_reply]
-,,status,3,DBarneche[from_author_reply]
-,,location,"La Honfria, Linares de Riofrio, Salamanca, Spain", DBarneche[from_author_reply]
-,,h.bh,1.3,default
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"species","Castanea sativa","map","1590","from paper[D Barneche]"
+"species","Quercus pyrenaica","map","1530","from paper[D Barneche]"
+"species","Castanea sativa","mat","10.8","from paper[D Barneche]"
+"species","Quercus pyrenaica","mat","11.1","from paper[D Barneche]"
+"","","growingCondition","FW","from paper[D Barneche]"
+"","","longitude","-5.953","DFalster[from_author_reply]"
+"","","latitude","40.5761","DFalster[from_author_reply]"
+"","","vegetation","Wo","DBarneche[from_author_reply]"
+"","","family","Fagaceae","DBarneche[from_author_reply]"
+"","","pft","DA","DBarneche[from_author_reply]"
+"","","status","3","DBarneche[from_author_reply]"
+"","","location","La Honfria, Linares de Riofrio, Salamanca, Spain"," DBarneche[from_author_reply]"
+"","","h.bh","1.3","default"

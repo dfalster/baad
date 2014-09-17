@@ -1,14 +1,14 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,growingCondition,FE,D Barneche[from paper]
-,,age,28,D Barneche[from paper]
-,,location,"Varkaus, Finland",DBarneche[from_author_reply]
-,,longitude,27.86,DBarneche[from_author_reply]
-,,latitude,62.33,DBarneche[from_author_reply]
-,,pft,DA,D Barneche[from web]
-,,species,Betula pendula,D Barneche[from paper]
-,,family,Betulaceae,D Barneche[from web]
-,,vegetation,BorF,from location
-status,1,status,3,D Barneche-RADconfirm
-status,3,status,1,D Barneche-RADconfirm
-status,4,status,0,D Barneche-RADconfirm
-,,h.bh,1.3,default
+"lookupVariable","lookupValue","newVariable","newValue","source"
+"",NA,"growingCondition","FE","D Barneche[from paper]"
+"",NA,"age","28","D Barneche[from paper]"
+"",NA,"location","Varkaus, Finland","DBarneche[from_author_reply]"
+"",NA,"longitude","27.86","DBarneche[from_author_reply]"
+"",NA,"latitude","62.33","DBarneche[from_author_reply]"
+"",NA,"pft","DA","D Barneche[from web]"
+"",NA,"species","Betula pendula","D Barneche[from paper]"
+"",NA,"family","Betulaceae","D Barneche[from web]"
+"",NA,"vegetation","BorF","from location"
+"status",1,"status","3","D Barneche-RADconfirm"
+"status",3,"status","1","D Barneche-RADconfirm"
+"status",4,"status","0","D Barneche-RADconfirm"
+"",NA,"h.bh","1.3","default"

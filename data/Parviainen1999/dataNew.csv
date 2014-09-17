@@ -1,11 +1,11 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,species,Betula pendula,D Barneche [from paper]
-,,family,Betulaceae,D Barneche [from web]
-,,pft,DA,D Barneche [from web]
-,,location,"Juupajoki, Finland",DBarneche[from_author_reply]
-,,longitude,24.283,DBarneche[from_author_reply]
-,,latitude,61.85,DBarneche[from_author_reply]
-,,growingCondition,FW,DBarneche[from_author_reply]
-,,status,2,DBarneche[from_author_reply]
-,,vegetation,BorF,DBarneche[from_author_reply]
-,,h.bh,1.3,default
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"species","Betula pendula","D Barneche [from paper]"
+NA,NA,"family","Betulaceae","D Barneche [from web]"
+NA,NA,"pft","DA","D Barneche [from web]"
+NA,NA,"location","Juupajoki, Finland","DBarneche[from_author_reply]"
+NA,NA,"longitude","24.283","DBarneche[from_author_reply]"
+NA,NA,"latitude","61.85","DBarneche[from_author_reply]"
+NA,NA,"growingCondition","FW","DBarneche[from_author_reply]"
+NA,NA,"status","2","DBarneche[from_author_reply]"
+NA,NA,"vegetation","BorF","DBarneche[from_author_reply]"
+NA,NA,"h.bh","1.3","default"

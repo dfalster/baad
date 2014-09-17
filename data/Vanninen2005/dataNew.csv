@@ -1,8 +1,8 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,pft,EG,
-,,species,Pinus sylvestris,
-,,family,Pinaceae,
-,,location,Finland,
-,,growingCondition,PM,
-,,vegetation,BorF,
-,,h.bh,1.33,DBarneche[from_author]
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"pft","EG",""
+NA,NA,"species","Pinus sylvestris",""
+NA,NA,"family","Pinaceae",""
+NA,NA,"location","Finland",""
+NA,NA,"growingCondition","PM",""
+NA,NA,"vegetation","BorF",""
+NA,NA,"h.bh","1.33","DBarneche[from_author]"
