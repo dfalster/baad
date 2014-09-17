@@ -1,6 +1,6 @@
 var_in,method,unit_in,var_out,notes
-species,NA,-,species,NA
-family,NA,-,family,NA
+species,NA,NA,species,NA
+family,NA,NA,family,NA
 Time,NA,NA,NA,NA
 light level,li,NA,light,see dataNew
 SLA (cm2 g-1),"b,m5,6",cm2.g,ma.ilf,NA

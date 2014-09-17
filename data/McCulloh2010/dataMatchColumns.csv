@@ -3,7 +3,7 @@ A.lf.m2,"b,r,c,7",m2,a.lf,NA
 stem.d.mm,d10,mm,d.ba,NA
 sapwd.area.m2,?,m2,a.ssba,NA
 height.m,?,m,h.t,NA
-species,NA,-,species,NA
+species,NA,NA,species,NA
 wood.type,NA,NA,NA,NA
 collection.site,NA,NA,NA,NA
 individual.number,NA,NA,NA,NA
@@ -15,9 +15,9 @@ conduit.frequency.mm-2,NA,NA,NA,NA
 xylem.area.m2,NA,NA,NA,NA
 latitude,NA,deg,latitude,NA
 longitude,NA,deg,longitude,NA
-growingCondition,NA,-,growingCondition,NA
-vegetation,NA,-,vegetation,NA
-status,NA,-,status,NA
+growingCondition,NA,NA,growingCondition,NA
+vegetation,NA,NA,vegetation,NA
+status,NA,NA,status,NA
 Family,NA,NA,family,NA
-pft,NA,-,pft,NA
+pft,NA,NA,pft,NA
 collection.site,NA,NA,location,NA

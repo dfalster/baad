@@ -1,12 +1,12 @@
 "var_in","method","unit_in","var_out","notes"
 "SPEC",NA,NA,NA,NA
-"species",NA,"-","species",NA
-"family",NA,"-","family",NA
-"pft",NA,"-","pft",NA
+"species",NA,NA,"species",NA
+"family",NA,NA,"family",NA
+"pft",NA,NA,"pft",NA
 "growth period",NA,NA,NA,NA
 "age","?","yr","age",NA
-"growingCondition",NA,"-","growingCondition",NA
-"light","li3","-","light",NA
+"growingCondition",NA,NA,"growingCondition",NA
+"light","li3",NA,"light",NA
 "plant #",NA,NA,NA,NA
 "harvest #",NA,NA,NA,NA
 "m.rt","m1","g","m.rt",NA

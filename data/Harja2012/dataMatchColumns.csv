@@ -2,7 +2,7 @@
 "Wd","?","kg.m3","r.st",NA
 "Cw_Avg","a","m","d.cr",NA
 "Hcb","?","m","h.c",NA
-"CP_Idx","cpidx","-","light",NA
+"CP_Idx","cpidx",NA,"light",NA
 "Dbh","?","cm","d.bh",NA
 "Height","?","m","h.t",NA
 "Location",NA,NA,"location",NA

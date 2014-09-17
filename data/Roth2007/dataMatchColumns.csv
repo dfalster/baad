@@ -6,7 +6,7 @@
 "longitude",NA,"deg","longitude",NA
 "Veg Type",NA,NA,"vegetation",NA
 "Functional type",NA,NA,"pft",NA
-"grouping",NA,"-","grouping",NA
+"grouping",NA,NA,"grouping",NA
 "DBH","?","cm","d.bh",NA
 "CW","?","cm","d.cr",NA
 "GLD","?","cm","d.ba",NA

@@ -5,10 +5,10 @@ latitude,NA,deg,latitude,NA
 longitude,NA,deg,longitude,NA
 map,NA,mm,map,NA
 mat,NA,deg,mat,NA
-species,NA,-,species,NA
-family,NA,-,family,NA
+species,NA,NA,species,NA
+family,NA,NA,family,NA
 individual,NA,NA,NA,NA
-pft,NA,-,pft,NA
+pft,NA,NA,pft,NA
 age (yr),,,,NA
 a.lf,c,cm2,a.lf,NA
 a.stba,i,mm2,a.stba,NA
@@ -25,6 +25,6 @@ m.to,m1,g,m.to,NA
 a.ilf,a1,cm2,a.ilf,NA
 ma.ilf,"m1,b,6",g.m2,ma.ilf,NA
 r.st,f2,g.cm3,r.st,NA
-growingCondition,NA,-,growingCondition,NA
-status,NA,-,status,NA
-light,li5,-,light,NA
+growingCondition,NA,NA,growingCondition,NA
+status,NA,NA,status,NA
+light,li5,NA,light,NA

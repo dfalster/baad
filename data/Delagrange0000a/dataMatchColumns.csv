@@ -11,8 +11,8 @@
 "m.st","?","kg","m.st",NA
 "m.rt","?","kg","m.rt",NA
 "lf.ma","?","kg.m2","ma.ilf",NA
-"pft",NA,"-","pft",NA
-"growingCondition",NA,"-","growingCondition",NA
+"pft",NA,NA,"pft",NA
+"growingCondition",NA,NA,"growingCondition",NA
 "Light","?",NA,"light",NA
 "Group",NA,NA,NA,NA
 "Location",NA,NA,"location",NA
@@ -27,4 +27,4 @@
 "LIMING 3t/ha",NA,NA,NA,NA
 "plot_ID",NA,NA,NA,NA
 "Subplot_ID",NA,NA,NA,NA
-"grouping",NA,"-","grouping",NA
+"grouping",NA,NA,"grouping",NA

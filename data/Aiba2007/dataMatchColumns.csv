@@ -10,5 +10,5 @@
 "crown height (cm)","?","cm","h.c",NA
 "base diameter (mm)","?","mm","d.ba",NA
 "genus",NA,NA,NA,NA
-"species",NA,"-","species",NA
+"species",NA,NA,"species",NA
 "branch mass + stem mass (g)","m0","g","m.st",NA

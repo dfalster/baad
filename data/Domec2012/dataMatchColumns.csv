@@ -34,12 +34,12 @@
 "Species",NA,NA,"species",NA
 "Family",NA,NA,"family",NA
 "Height of crown",NA,NA,NA,NA
-"pft",NA,"-","pft",NA
-"growingCondition",NA,"-","growingCondition",NA
+"pft",NA,NA,"pft",NA
+"growingCondition",NA,NA,"growingCondition",NA
 "Position inforest canopy",NA,NA,"status",NA
-"vegetation",NA,"-","vegetation",NA
-"light","?","-","light",NA
-"location",NA,"-","location",NA
+"vegetation",NA,NA,"vegetation",NA
+"light","?",NA,"light",NA
+"location",NA,NA,"location",NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "map",NA,"mm","map",NA

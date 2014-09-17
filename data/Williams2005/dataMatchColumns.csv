@@ -1,6 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
 "Spp Abbrev",NA,NA,NA,NA
-"species",NA,"-","species",NA
+"species",NA,NA,"species",NA
 "site",NA,NA,"location",NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA

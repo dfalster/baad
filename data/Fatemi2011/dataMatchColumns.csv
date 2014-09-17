@@ -1,13 +1,13 @@
 "var_in","method","unit_in","var_out","notes"
 "dataset",NA,NA,NA,NA
-"location",NA,"-","location",NA
+"location",NA,NA,"location",NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "Vegetation",NA,NA,"vegetation",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
-"species",NA,"-","species",NA
-"family",NA,"-","family",NA
+"species",NA,NA,"species",NA
+"family",NA,NA,"family",NA
 "ID",NA,NA,NA,NA
 "stand age","?","yr","age",NA
 "d.ba","i","m","d.ba",NA

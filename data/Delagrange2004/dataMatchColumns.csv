@@ -14,12 +14,12 @@
 "lf.ma","m1,c2,7","g.m2","ma.ilf",NA
 "d.st","?","kg.l","r.st",NA
 "n.lf","?","g.g","n.lf",NA
-"Light","li3","-","light",NA
+"Light","li3",NA,"light",NA
 "Contributor",NA,NA,NA,NA
-"Family",NA,NA,NA,NA
+"Family",NA,NA,family,NA
 "Species",NA,NA,"species",NA
-"pft",NA,"-","pft",NA
-"growingCondition",NA,"-","growingCondition",NA
+"pft",NA,NA,"pft",NA
+"growingCondition",NA,NA,"growingCondition",NA
 "Location",NA,NA,"location",NA
 "Latitude",NA,"deg","latitude",NA
 "Longitude",NA,"deg","longitude",NA

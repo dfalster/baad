@@ -1,14 +1,14 @@
 "var_in","method","unit_in","var_out","notes"
-"location",NA,"-","location",NA
+"location",NA,NA,"location",NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
-"vegetation",NA,"-","vegetation",NA
+"vegetation",NA,NA,"vegetation",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
-"grouping",NA,"-","grouping","see dataNew"
-"species",NA,"-","species",NA
-"family",NA,"-","family",NA
-"pft",NA,"-","pft",NA
+"grouping",NA,NA,"grouping","see dataNew"
+"species",NA,NA,"species",NA
+"family",NA,NA,"family",NA
+"pft",NA,NA,"pft",NA
 "age","?","yr","age",NA
 "h.t","?","m","h.t",NA
 "d.bh","e","m","d.bh",NA
@@ -18,4 +18,4 @@
 "m.br","m5","kg","m.br",NA
 "m.rt","m5","kg","m.rt",NA
 "m.to","m5","kg","m.to",NA
-"growingCondition",NA,"-","growingCondition",NA
+"growingCondition",NA,NA,"growingCondition",NA

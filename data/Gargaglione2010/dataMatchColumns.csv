@@ -1,14 +1,14 @@
 "var_in","method","unit_in","var_out","notes"
 "Age","?","yr","age",NA
-"pft",NA,"-","pft",NA
-"species",NA,"-","species",NA
+"pft",NA,NA,"pft",NA
+"species",NA,NA,"species",NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
-"growingCondition",NA,"-","growingCondition",NA
-"vegetation",NA,"-","vegetation",NA
-"grouping",NA,"-","grouping",NA
-"location",NA,"-","location",NA
-"Status",NA,"-","status",NA
+"growingCondition",NA,NA,"growingCondition",NA
+"vegetation",NA,NA,"vegetation",NA
+"grouping",NA,NA,"grouping",NA
+"location",NA,NA,"location",NA
+"Status",NA,NA,"status",NA
 "DBH (cm)","?","cm","d.bh",NA
 "Height (m)","?","m","h.t",NA
 "N bole",NA,NA,NA,NA

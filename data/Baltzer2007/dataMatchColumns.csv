@@ -9,8 +9,8 @@ stem mass (g),m1,g,m.st,NA
 Single leaf area (cm2),b,cm2,a.ilf,NA
 lma (g cm-2),"m1,7",g.cm2,ma.ilf,NA
 contributor,NA,NA,NA,NA
-family,NA,-,family,NA
-species,NA,-,species,NA
+family,NA,NA,family,NA
+species,NA,NA,species,NA
 Plant functional type,NA,NA,pft,NA
 Growing condition,NA,NA,growingCondition,NA
 Status,NA,NA,NA,NA

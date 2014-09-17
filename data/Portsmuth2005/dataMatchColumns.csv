@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
 "plant nr",NA,NA,NA,NA
-"species",NA,"-","species",NA
-"family",NA,"-","family",NA
+"species",NA,NA,"species",NA
+"family",NA,NA,"family",NA
 "growth location",NA,NA,"location",NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA

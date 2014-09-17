@@ -9,7 +9,7 @@ specific.leaf.area.cm2/g,NA,NA,NA,NA
 "total.belowground.biomass.g","m0","g","m.rt",NA
 "total.plant.biomass.g","m0","g","m.to",NA
 "stem.biomass.g","m0","g","m.st",NA
-species,NA,"-","species",NA
+species,NA,NA,"species",NA
 tree,NA,NA,NA,NA
 sampled.leaves.#,NA,NA,NA,NA
 individual.leaf.mass.g,NA,NA,NA,NA

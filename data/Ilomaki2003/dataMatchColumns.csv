@@ -13,4 +13,4 @@ branch mass kg,p7 m1,kg,m.br,NA
 foliage mass kg,"m1,7",kg,m.lf,NA
 woody mass inside crown kg,NA,NA,NA,NA
 woody mass of tree kg,j m1,kg,m.st,NA
-grouping,NA,-,grouping,NA
+grouping,NA,NA,grouping,NA

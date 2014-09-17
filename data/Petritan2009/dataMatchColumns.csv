@@ -7,6 +7,6 @@
 "Crown.lenght..cm.","?","cm","c.d",NA
 "Total.height.of.plant..cm.","?","cm","h.t",NA
 "Specific.leaf.area..cm2.g-1.","m1,b,7","cm2.g","ma.ilf",NA
-"ISF..percent...Indirect.Site.Factor..in.percent.of.above.canopy.light","li","-","light",NA
+"ISF..percent...Indirect.Site.Factor..in.percent.of.above.canopy.light","li",NA,"light",NA
 "LAI..cm2.cm-2.","?","m2.m2","lai",NA
 "Species",NA,NA,"species",NA

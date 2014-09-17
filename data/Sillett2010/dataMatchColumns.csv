@@ -17,6 +17,6 @@
 "Wood growth (kg)",NA,NA,NA,NA
 "PC1",NA,NA,NA,NA
 "PC2",NA,NA,NA,NA
-"status",NA,"-","status",NA
+"status",NA,NA,"status",NA
 "m.st","?","kg","m.st",NA
 "a.stbh","?","cm2","a.stbh","Created from diameter in manipulate step"

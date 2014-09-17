@@ -10,8 +10,8 @@ Delta leaf (g),NA,NA,NA,NA
 Leaf area1 (cm2),k,cm2,a.lf,NA
 Leaf area2 (cm2),NA,NA,NA,NA
 Area/leaf (cm2),Leaf width x length x conversion factor derived from harvested leaves,cm2,a.ilf,NA
-ISF,li,-,light,NA
+ISF,li,NA,light,NA
 Wood2 (g),NA,NA,NA,NA
 Leaf2 (g),NA,NA,NA,NA
-species,NA,-,species,NA
+species,NA,NA,species,NA
 h.bh,NA,m,h.bh,"diameter measured at 1/10th of tree height"

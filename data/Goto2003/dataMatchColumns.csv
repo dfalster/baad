@@ -1,12 +1,12 @@
 var_in,method,unit_in,var_out,notes
 dataset,NA,NA,NA,NA
-location,NA,-,location,NA
+location,NA,NA,location,NA
 latitude,NA,deg,latitude,NA
 longitude,NA,deg,longitude,NA
-vegetation,NA,-,vegetation,NA
-family,NA,-,family,NA
-species,NA,-,species,NA
-pft,NA,-,pft,NA
+vegetation,NA,NA,vegetation,NA
+family,NA,NA,family,NA
+species,NA,NA,species,NA
+pft,NA,NA,pft,NA
 age,?,yr,age,NA
 a.lf,"b,c,r",m2,a.lf,NA
 a.stbc,?,m2,a.stbc,NA
@@ -20,4 +20,4 @@ m.so,m5,kg,m.so,NA
 m.br,m5,kg,m.br,NA
 m.rt,m5,kg,m.rt,NA
 m.to,m5,kg,m.to,NA
-growingCondition,NA,-,growingCondition,NA
+growingCondition,NA,NA,growingCondition,NA

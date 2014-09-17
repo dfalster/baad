@@ -17,10 +17,10 @@ n.ss,7,kg.kg,n.ss,NA
 n.rf,7,kg.kg,n.rf,NA
 n.rc,7,kg.kg,n.rc,NA
 lai,a1,m2.m2,lai,NA
-pft,NA,-,pft,NA
-growingCondition,NA,-,growingCondition,NA
-status,NA,-,status,NA
-vegetation,NA,-,vegetation,NA
+pft,NA,NA,pft,NA
+growingCondition,NA,NA,growingCondition,NA
+status,NA,NA,status,NA
+vegetation,NA,NA,vegetation,NA
 latitude,NA,deg,latitude,NA
 longitude,NA,deg,longitude,NA
 map,NA,mm,map,NA
