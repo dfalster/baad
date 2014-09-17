@@ -10,6 +10,9 @@ manipulate <- function(raw) {
   raw$N.ht[raw$N.ht == 0] <- NA
   raw$N.ba[raw$N.ba == 0] <- NA
   
+  # One wood density clearly wrong (other values for this species are ca. 500.)
+  raw$RHO[raw$RHO > 1500] <- NA
+  
   raw
 }
 
