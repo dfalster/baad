@@ -9,9 +9,9 @@
 "h_t","dx","m","h.t",NA
 "h_c","dx","m","h.c",NA
 "cw","d","m","d.cr",NA
-"m_lf","m1,7, p","kg","m.lf",NA
-"a_lf","c r2","m2","a.lf",NA
-"wbr","m1, 7, p","kg","m.br",NA
+"m_lf","m1,7,p","kg","m.lf",NA
+"a_lf","c,r2","m2","a.lf",NA
+"wbr","m1,7,p","kg","m.br",NA
 "m_st","dz","kg","m.st",NA
 "sp",NA,NA,"species",NA
 "authorname",NA,NA,NA,NA
