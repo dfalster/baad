@@ -1,78 +1,63 @@
-method,definition
-a,Crown width in two directions 90o to one another; assumes ellipse shape
-b,Leaves scanned for area
-c,Multiplying Leaf  mass with SLA
-d,at ground level from two angles
-e,dbh; approx. 130 cm
-e2,total height was measure with tape in felling trees
-e3,dbh; approx. 137 cm
-i,at 1/10 of height of tree
-e4,10cm above base
-f,Leaf dry mass /trunk volume approximated as a cone
-f2,Stem dry mass /stem volume approximated as a cone
-g,ovendried weight over green volume
-h,data taken from other datasets
-j,discs of stem dried and measured
-k,leaf length * leaf width * correlation factor
-l,5 marked places of diameter measurement to be able to remeasure at later time
-m,from dried samples soaked in water for 24hr
-n,using Site-specific allometrics equations
-o,sum of individual leaf areas
-p,scaling up from branches to crown
-q,core sample at DBH
-r,Conifers : projected leaf area
-r2,Conifers : all-sided leaf area
-r3,Conifers : half all-sided leaf area
-r4,Conifers : projected leaf area multiplied with converstion factor to all-sided leaf area
-rx,Conifers: unknown method used to estimate leaf area
-s,Adelaide Technique = visually count units then take sample of units and calc area and scale up
-t,scaling from branch to canopy
-u,at base of crown
-u1,at base of tree
-v,volume displacement method
-x,from circumference
-w,average between row and inter-row diameter
-y,LAI estimated from allometric relationships calibrated on the destructive data of this excel file (one relationship per date and per stand)
-z,calculated by multiplying two crown diameters
-a1,average across entire plant
-a2,average for entire species
-a3,average within treatment
-a4,average from 3 composite samples per treatment
-m0,dry mass - method non-specified
-m1,dried at 60-70oC
-m2,dried at 50oC
-m3,wet mass * dry/wet ratio (stem disk specific)
-m4,Root systems were washed with high-pressure water jets; clipped to remove extraneous small (<5 mm) roots
-m5,dried at 80 - 110oC
-m6,fresh mass?
-m7,dried at room temperature for a month
-m8,ovendried weight:fresh weight ratio applied to subsample of total fresh mass per meter section
-1,sample of leaves from whole crown
-2,crown mass * SLA and leaf blade mass:total leaf mass = total leaf area
-3,2-26 typical leaves
-4,50 leaves taken from main axis; 1st and 2nd order branches of tree
-5,one representatative leaf per individual
-li,Light (ISF or PAR) (%) Above canopy light
-li2,percentage relative to 50mol/m2/d
-li3,(%)PPFD
-li4,values in proportion; light measured with three hemispherical photographs
-li5,"Categorical estimation of % overhead light on the crown; Dawkins index"
-i2,measured at 1/10 of height for individuals smaller than 30cm
-6,All material measured
-7,Subsample of material measured
-br1,includes petioles biomass
-c1,total leaf area (m2) is calculated by multiplying the number of leaves with the mean leaf area of a random leaf sample (20 leaves for taller individuals but smaller samples for small individuals)
-dx,from felled trees with a tape measure
-dy,from nr of rings on stump
-dz,stem assumed to be composed of cut cones betweensample disks
-xx3,tape measure from base to apex
-xx4,Precise age calculated based on data of germination and harvest
-xx5,diameter tape
-xx6,provincial fire records and/or tree coring
-xx7,callipers
-xx8,determined using clinometers
-d10,at 10-20 cm above ground level from two angles
-ht,"Tree height was measured as stem length, measured linearly from base to top after felling"
-tr,annual tree rings counted
-ta,"area traced onto tracing paper, cut out, and area measured with Li-Cor Model 3100 area meter"
-ftm,"tree felled, then measured with a field tape measure"
+method,definition,biomass,leaf_area,height,stem_diameter,traits,growth_environment
+d1,at ground level/base of tree,,,x,x,x,
+d2,at 10 cm above ground level/base of tree,,,x,x,x,
+d3,at dbh (130-137 cm),,,x,x,x,
+d4,at 1/10 of tree height,,,x,x,x,
+d5,at 5 marked locations along stem,,,x,x,x,
+d6,at base of crown,,,x,x,x,
+d7,measured from base to apex,,,x,,,
+d8,of lowest leaf,,,x,,,
+c,on felled trees,,,x,x,x,
+f,in two directions,,,,x,x,
+a1,directly scanned,,x,,,,
+a2,traced and scanned,,x,,,,
+a3,length x width x correction factor,,x,,,,
+a4,conifers:projected leaf area,,x,,,,
+a5,conifers - all-sided leaf area,,x,,,,
+a6,conifers - half all-sided leaf area,,x,,,,
+a7,conifers - projected leaf areaxconverstion factor to all-sided leaf area,,x,,,,
+ax,conifers - unknown method used to estimate leaf area,,x,,,,
+e1,mass x mass_area ratio,x,x,,,,
+e2,mass x dry_wet ratio,x,,,,x,
+e3,average area or mass x number,x,x,,,,
+b1,includes petioles,x,,,,,
+r1,not including small roots <5 mm,x,,,,,
+mx,dry mass - method not specified,x,,,,,
+m1,dried at room temperature,x,,,,,
+m2,dried at 50-60oc,x,,,,,
+m3,dried at 60-70oc,x,,,,,
+m4,dried at 70-110oc,x,,,,,
+m5,fresh mass,x,,,,,
+l1,adelaide technique (visually count units then take sample of units and calc area and scale up),,x,,,x,x
+l2,light (isf or par) (%) above canopy light,,,,,,x
+l3,percentage relative to 50mol/m2/d,,,,,,x
+l4,(%) ppfd,,,,,,x
+l5,values in proportion - light measured with three hemispherical photographs,,,,,,x
+l6,categorical estimation of % overhead light on the crown - dawkins index,,,,,,x
+l7,"Crown position index (Emergent = 5, Full overhead light = 4, some overhead light = 3, some side light = 2, no direct light = 1)",,,,,,x
+k1,from other datasets,x,x,x,x,x,x
+k3,site specific allometrics and data,x,x,x,x,x,x
+k4,scaling from branch to crown,x,x,,x,x,
+n1,annual tree rings,,,,x,x,
+n2,provincial fire records and/or tree coring,x,,,,x,
+v1,stem assumed to be cone,x,,,,x,
+v2,volume displacement,x,,,,x,
+v3,from circumference,x,,,x,x,
+v4,core,x,,,,x,
+v5,dry weight over fresh volume,x,,,,x,
+v6,average between row and interrow diameter,,,,x,x,
+v7,rehydrated dried samples,x,,,,x,
+p1,diameter tape,,,,x,,
+p2,calipers,,,,x,x,
+p3,tape measure,,,x,x,,
+p4,clinometer,,,x,,,
+x1,average across plant based on subsamples,x,x,x,x,x,x
+x2,average across species,x,x,x,x,x,x
+x3,average within treatment,x,x,x,x,x,x
+x4,average across treatments,x,x,x,x,x,x
+x6,all material,x,x,x,x,x,x
+x7,sum of individual measurements,x,x,x,x,x,x
+x8,sampled from nearby individuals,,,,,x,
+?,unknown method,,,,,,
+NA,non-applicable (variable not collected for this study),,,,,,
+j,from stem disks,x,,,x,,
