@@ -10,9 +10,9 @@
 "age","?","yr","age",NA
 "h.t","?","m","h.t",NA
 "h.c","?","m","h.c",NA
-"d.bh","e","m","d.bh",NA
-"m.lf","m5","kg","m.lf",NA
-"m.st","j,m3,m5","kg","m.st",NA
-"m.so","m5","kg","m.so",NA
-"m.br","m5","kg","m.br",NA
+"d.bh","d3","m","d.bh",NA
+"m.lf","m4","kg","m.lf",NA
+"m.st","j,e2,m4","kg","m.st",NA
+"m.so","m4","kg","m.so",NA
+"m.br","m4","kg","m.br",NA
 "growingCondition",NA,NA,"growingCondition",NA

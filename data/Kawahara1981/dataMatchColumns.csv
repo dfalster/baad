@@ -6,9 +6,9 @@
 "vegetation",NA,NA,"vegetation",NA
 "species",NA,NA,"species",NA
 "h.t","?","m","h.t",NA
-"d.bh","e","m","d.bh",NA
-"m.lf","m0","kg","m.lf",NA
-"m.st","m0","kg","m.st",NA
-"m.so","m0","kg","m.so",NA
-"m.br","m0","kg","m.br",NA
+"d.bh","d3","m","d.bh",NA
+"m.lf","mx","kg","m.lf",NA
+"m.st","mx","kg","m.st",NA
+"m.so","mx","kg","m.so",NA
+"m.br","mx","kg","m.br",NA
 "growingCondition",NA,NA,"growingCondition",NA

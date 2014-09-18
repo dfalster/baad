@@ -1,10 +1,10 @@
 "var_in","method","unit_in","var_out","notes","X"
-"Dbh_2004","e","cm","d.bh",NA,NA
-"tree_ht","xx8","m","h.t",NA,NA
-"Fork_ht","xx8","m","h.c",NA,NA
+"Dbh_2004","d3","cm","d.bh",NA,NA
+"tree_ht","p4","m","h.t",NA,NA
+"Fork_ht","p4","m","h.c",NA,NA
 "crown_depth","?","m","c.d",NA,NA
-"cr_width","a","m","d.cr",NA,NA
-"crown_sil_area","a","m2","a.cp",NA,NA
+"cr_width","f","m","d.cr",NA,NA
+"crown_sil_area","f","m2","a.cp",NA,NA
 "Tree_no",NA,NA,NA,NA,NA
 "Family",NA,NA,"family",NA,NA
 "Genera",NA,NA,NA,NA,NA

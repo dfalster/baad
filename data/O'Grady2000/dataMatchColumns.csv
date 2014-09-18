@@ -1,9 +1,9 @@
 "var_in","method","unit_in","var_out","notes"
-"DBH","e","cm","d.bh",NA
-"Leaf weight","m0","kg","m.lf",NA
-"Wood Weight","m0","kg","m.st",NA
-"TOT","m0","kg","m.so",NA
-"Leaf area","s","m2","a.lf",NA
+"DBH","d3","cm","d.bh",NA
+"Leaf weight","mx","kg","m.lf",NA
+"Wood Weight","mx","kg","m.st",NA
+"TOT","mx","kg","m.so",NA
+"Leaf area","l1","m2","a.lf",NA
 "SITE",NA,NA,NA,NA
 "SPECIES",NA,NA,"species",NA
 "dbh>10",NA,NA,NA,NA

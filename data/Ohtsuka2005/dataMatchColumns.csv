@@ -9,8 +9,8 @@
 "pft",NA,NA,"pft",NA
 "age","?","yr","age",NA
 "h.t","?","m","h.t",NA
-"d.bh","e","m","d.bh",NA
-"m.st","j,m3,m5","kg","m.st",NA
-"m.br","m5","kg","m.br",NA
-"m.rt","m5","kg","m.rt",NA
+"d.bh","d3","m","d.bh",NA
+"m.st","j,e2,m4","kg","m.st",NA
+"m.br","m4","kg","m.br",NA
+"m.rt","m4","kg","m.rt",NA
 "growingCondition",NA,NA,"growingCondition",NA

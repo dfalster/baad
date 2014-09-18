@@ -1,16 +1,16 @@
 "var_in","method","unit_in","var_out","notes"
 "No.",NA,NA,NA,NA
-"ht1 (cm)","xx3","cm","h.t",NA
+"ht1 (cm)","d7,p3","cm","h.t",NA
 "ht2 (cm)",NA,NA,NA,NA
 "Delta t (days)",NA,NA,NA,NA
 "Wood1 (g)","x8","g","m.st",NA
 "Delta wood (g)",NA,NA,NA,NA
-"Leaf1 (g)","m1,7","g","m.lf",NA
+"Leaf1 (g)","m3,x1","g","m.lf",NA
 "Delta leaf (g)",NA,NA,NA,NA
-"Leaf area1 (cm2)","k","cm2","a.lf",NA
+"Leaf area1 (cm2)","a3","cm2","a.lf",NA
 "Leaf area2 (cm2)",NA,NA,NA,NA
-"Area/leaf (cm2)","k","cm2","a.ilf",NA
-"ISF","li",NA,"light",NA
+"Area/leaf (cm2)","a3","cm2","a.ilf",NA
+"ISF","l2",NA,"light",NA
 "Wood2 (g)",NA,NA,NA,NA
 "Leaf2 (g)",NA,NA,NA,NA
 "species",NA,NA,"species",NA

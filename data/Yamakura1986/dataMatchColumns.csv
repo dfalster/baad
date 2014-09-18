@@ -2,18 +2,18 @@
 "Family",NA,NA,"family",NA
 "Species",NA,NA,"species",NA
 "Tree No.",NA,NA,NA,NA
-"D (cm)","e","cm","d.bh",NA
+"D (cm)","d3","cm","d.bh",NA
 "DBut (cm)",NA,NA,NA,NA
-"D0 (cm)","d","cm","d.ba",NA
+"D0 (cm)","d1,f","cm","d.ba",NA
 "D30 (cm)",NA,NA,NA,NA
-"D0.1 (cm)","i",NA,NA,NA
+"D0.1 (cm)","d4",NA,NA,NA
 "DB (cm)",NA,NA,NA,NA
 "H (m)","?","m","h.t",NA
 "HBut (m)",NA,NA,NA,NA
 "HB (m)","?","m","h.c",NA
 "R (m)","?","m","d.cr",NA
 "V (m3)",NA,NA,NA,NA
-"WS (kg)","m5","kg","m.st",NA
-"WB (kg)","m5","kg","m.br",NA
-"WL (kg)","m5,7","kg","m.lf",NA
-"U (m2)","c,b,7","m2","a.lf",NA
+"WS (kg)","m4","kg","m.st",NA
+"WB (kg)","m4","kg","m.br",NA
+"WL (kg)","m4,x1","kg","m.lf",NA
+"U (m2)","e1,a1,x1","m2","a.lf",NA

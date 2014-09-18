@@ -4,9 +4,9 @@
 "bh.sap","j","cm2","a.ssbh",NA
 "cb.sap","j","cm2","a.ssbc",NA
 "num.of.branches",NA,NA,NA,NA
-"leaf.area","b,c,r","m2","a.lf",NA
-"dbh","dx","cm","d.bh",NA
-"hgt.crown.base.","dx","m","h.c",NA
-"basal.diameter","dx","cm","d.ba",NA
+"leaf.area","a1,e1,a4","m2","a.lf",NA
+"dbh","c,d7,p3","cm","d.bh",NA
+"hgt.crown.base.","c,d7,p3","m","h.c",NA
+"basal.diameter","c,d7,p3","cm","d.ba",NA
 "Basal.cross.sectional.area","j","cm2","a.stba",NA
-"height","dx","m","h.t",NA
+"height","c,d7,p3","m","h.t",NA

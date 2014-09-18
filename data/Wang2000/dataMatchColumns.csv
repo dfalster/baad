@@ -3,14 +3,14 @@
 "D.B.H.(mm)","?","mm","d.bh",NA
 "Hieght (cm)","?","cm","h.t",NA
 "Branch (cm)","?","cm","h.c",NA
-"Foliage","m1,7","g","m.lf",NA
-"Branch","m1","g","m.br",NA
+"Foliage","m3,x1","g","m.lf",NA
+"Branch","m3","g","m.br",NA
 "Dead Branch",NA,NA,NA,NA
-"Stem Wood","m1","g","m.st",NA
-"Stem Bark","m1","g","m.sb",NA
-"m.rc","m1","g","m.rc",NA
-"Sm. Root","m1","g","m.rf",NA
-"TOTAL","m1","g","m.to",NA
+"Stem Wood","m3","g","m.st",NA
+"Stem Bark","m3","g","m.sb",NA
+"m.rc","m3","g","m.rc",NA
+"Sm. Root","m3","g","m.rf",NA
+"TOTAL","m3","g","m.to",NA
 "species",NA,NA,"species",NA
 "Tree #",NA,NA,NA,NA
 "Lrg. Root",NA,NA,NA,NA

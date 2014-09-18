@@ -5,21 +5,21 @@
 "CO2",NA,NA,NA,NA
 "H2O",NA,NA,NA,NA
 "Number of leaves",NA,NA,NA,NA
-"Leaf area (m2)","b,o,1","m2","a.lf",NA
-"Leaf mass (g)","m1","g","m.lf",NA
+"Leaf area (m2)","a1,x7,x1","m2","a.lf",NA
+"Leaf mass (g)","m3","g","m.lf",NA
 "SLA (kg.m2)",NA,NA,NA,NA
-"Aboveground mass (Leaves + Stems (g))","m1","g","m.so",NA
-"Main stem mass (g)","m1","g",NA,NA
-"Lateral Stem mass (g)","m1","g",NA,NA
-"Whole stem mass (g)","m1","g","m.st",NA
-"Coarse root mass (g)","m1","g","m.rc",NA
-"Fine root mass (g)","m1","g","m.rf",NA
-"Whole root mass (g)","m1","g","m.rt",NA
+"Aboveground mass (Leaves + Stems (g))","m3","g","m.so",NA
+"Main stem mass (g)","m3","g",NA,NA
+"Lateral Stem mass (g)","m3","g",NA,NA
+"Whole stem mass (g)","m3","g","m.st",NA
+"Coarse root mass (g)","m3","g","m.rc",NA
+"Fine root mass (g)","m3","g","m.rf",NA
+"Whole root mass (g)","m3","g","m.rt",NA
 "Height (m)","?","m","h.t",NA
 "Basal diameter (mm)","?","mm","d.ba",NA
-"Total biomass (Leaves, stems and roots (g))","m1","g","m.to",NA
+"Total biomass (Leaves, stems and roots (g))","m3","g","m.to",NA
 "Root_shoot ratio (g.g)",NA,NA,NA,NA
-"Crown width (m)","a","m","d.cr",NA
+"Crown width (m)","f","m","d.cr",NA
 "Root mass ratio (g.g)",NA,NA,NA,NA
 "Stem mass ratio (g.g)",NA,NA,NA,NA
 "Leaf mass ratio (g.g)",NA,NA,NA,NA

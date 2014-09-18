@@ -1,9 +1,9 @@
 "var_in","method","unit_in","var_out","notes"
 "DBH","?","cm","d.bh",NA
 "Height","?","m","h.t",NA
-"Leaf_biomass","m5","kg","m.lf",NA
-"Branch_biomass","m5","kg","m.br",NA
-"Stem_biomass","m5","kg","m.st",NA
-"Total_biomass","m5","kg","m.so",NA
+"Leaf_biomass","m4","kg","m.lf",NA
+"Branch_biomass","m4","kg","m.br",NA
+"Stem_biomass","m4","kg","m.st",NA
+"Total_biomass","m4","kg","m.so",NA
 "Species",NA,NA,"species",NA
 "Trunk_biomass",NA,NA,NA,NA

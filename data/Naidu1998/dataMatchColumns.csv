@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
 "TREE",NA,NA,NA,NA
 "CAT",NA,NA,"status",NA
-"DBH","e","cm","d.bh",NA
+"DBH","d3","cm","d.bh",NA
 "SWarea (BH)","?","cm2","a.ssbh",NA
 "dBLC",NA,"cm",NA,NA
 "SWarea (BLC)","?","cm2","a.ssbc",NA
@@ -9,15 +9,15 @@
 "Bole","j","g",NA,NA
 "Branch","j","g","m.br",NA
 "Bole+Brn","j","g","m.st",NA
-"Needles","m1,7","g","m.lf",NA
+"Needles","m3,x1","g","m.lf",NA
 "Roots","?","g","m.rt",NA
 "Sht Mass","?","g","m.so",NA
 "Tot Mass","?","g","m.to",NA
 "SWmass","j","g","m.ss",NA
 "SWvol","j","cm3",NA,NA
 "SWvol/yr",NA,"cm3/yr",NA,NA
-"Proj lf area","k,r",NA,NA,NA
-"Surf lf area","n,r2","cm2",NA,"= pi * Proj lf area"
+"Proj lf area","a3,a4",NA,NA,NA
+"Surf lf area","k3,a5","cm2",NA,"= pi * Proj lf area"
 "SW Mass/",NA,NA,NA,NA
 "SW Vol/",NA,NA,NA,NA
 "SW Mass/",NA,NA,NA,NA

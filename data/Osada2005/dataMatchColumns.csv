@@ -3,15 +3,15 @@
 "h.bh",NA,"cm","h.bh","variable description"
 "Height","?","cm","h.t",NA
 "Crown.depth","?","cm","c.d",NA
-"Crown.Projection.Area","a","m2","a.cp",NA
+"Crown.Projection.Area","f","m2","a.cp",NA
 "Stem.mass","?","g","m.st",NA
-"Total.leaf.mass","m1,7","g","m.lf",NA
-"Total.leaf.area","b,7,c","cm2","a.lf",NA
-"Individual.leaf.area","b,1","cm2","a.ilf",NA
+"Total.leaf.mass","m3,x1","g","m.lf",NA
+"Total.leaf.area","a1,x1,e1","cm2","a.lf",NA
+"Individual.leaf.area","a1,x1","cm2","a.ilf",NA
 "SLA","?","cm2.g","ma.ilf",NA
 "LAI","?","m2.m2","lai",NA
 "D0","?","mm","d.ba",NA
-"light.ISF","li4",NA,"light",NA
+"light.ISF","l5",NA,"light",NA
 "light.DSF",NA,NA,NA,NA
 "light.GSF",NA,NA,NA,NA
 "Source",NA,NA,NA,NA

@@ -8,7 +8,7 @@
 "species",NA,NA,"species",NA
 "pft",NA,NA,"pft",NA
 "age","?","yr","age",NA
-"a.lf","r","m2","a.lf","Method assumed same as Mori1991 (same species and author)"
+"a.lf","a4","m2","a.lf","Method assumed same as Mori1991 (same species and author)"
 "a.stbc","?","m2","a.stbc",NA
 "h.t","?","m","h.t",NA
 "h.c","?","m","h.c",NA

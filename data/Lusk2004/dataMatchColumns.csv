@@ -1,9 +1,9 @@
 "var_in","method","unit_in","var_out","notes"
-"a.lf","b,6","m2","a.lf",NA
+"a.lf","a1,x6","m2","a.lf",NA
 "h.t","?","m","h.t",NA
-"m.lf","m1,6","kg","m.lf",NA
-"m.st","m0","kg","m.st",NA
-"m.rt","m0","kg","m.rt",NA
+"m.lf","m3,x6","kg","m.lf",NA
+"m.st","mx","kg","m.st",NA
+"m.rt","mx","kg","m.rt",NA
 "dataset",NA,NA,NA,NA
 "Country",NA,NA,NA,NA
 "Forest.type",NA,NA,NA,NA

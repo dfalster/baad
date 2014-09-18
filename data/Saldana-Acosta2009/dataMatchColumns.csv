@@ -2,10 +2,10 @@
 "species",NA,NA,"species",NA
 "family",NA,NA,"family",NA
 "Time",NA,NA,NA,NA
-"light level","li",NA,"light","see dataNew"
-"SLA (cm2 g-1)","b,m5,6","cm2.g","ma.ilf",NA
-"leafbiomass_fixed","m5,6","g","m.lf",NA
-"Stem biomass (g)","m5","g","m.st",NA
-"Root biomass (g)","m5","g","m.rt",NA
+"light level","l2",NA,"light","see dataNew"
+"SLA (cm2 g-1)","a1,m4,x6","cm2.g","ma.ilf",NA
+"leafbiomass_fixed","m4,x6","g","m.lf",NA
+"Stem biomass (g)","m4","g","m.st",NA
+"Root biomass (g)","m4","g","m.rt",NA
 "Initial height (cm)",NA,NA,NA,NA
-"Final height (cm)","xx3","cm","h.t",NA
+"Final height (cm)","d7,p3","cm","h.t",NA

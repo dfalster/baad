@@ -6,23 +6,23 @@
 "growth period",NA,NA,NA,NA
 "age","?","yr","age",NA
 "growingCondition",NA,NA,"growingCondition",NA
-"light","li3",NA,"light",NA
+"light","l4",NA,"light",NA
 "plant #",NA,NA,NA,NA
 "harvest #",NA,NA,NA,NA
-"m.rt","m1","g","m.rt",NA
-"m.st","m1","g","m.st",NA
-"m.so","m1","g","m.so",NA
-"m.to","m1","g","m.to",NA
-"m.lf","m1","g","m.lf",NA
-"m.br","m1","g","m.br",NA
+"m.rt","m3","g","m.rt",NA
+"m.st","m3","g","m.st",NA
+"m.so","m3","g","m.so",NA
+"m.to","m3","g","m.to",NA
+"m.lf","m3","g","m.lf",NA
+"m.br","m3","g","m.br",NA
 "m.to2",NA,NA,NA,"Poorter says to ignore this column as it contains errors"
-"a.lf","b","m2","a.lf",NA
-"ma.ilf","m1,b","kg.m2","ma.ilf",NA
-"a.ilf","b","cm2","a.ilf",NA
+"a.lf","a1","m2","a.lf",NA
+"ma.ilf","m3,a1","kg.m2","ma.ilf",NA
+"a.ilf","a1","cm2","a.ilf",NA
 "c.d","?","cm","c.d",NA
 "h.t","?","cm","h.t",NA
-"d.ba","i","cm","d.ba",NA
-"d.cr","a","cm","d.cr",NA
+"d.ba","d4","cm","d.ba",NA
+"d.cr","f","cm","d.cr",NA
 "d.cr2",NA,NA,NA,NA
 "a.cp","?","m2","a.cp",NA
 "r.st","?","g.cm3","r.st",NA

@@ -2,15 +2,15 @@
 "Species",NA,NA,"species",NA
 "Stem",NA,NA,NA,NA
 "No. of stems on tree",NA,NA,NA,NA
-"dbh (cm)","e","cm","d.bh",NA
+"dbh (cm)","d3","cm","d.bh",NA
 "D30 (cm)",NA,NA,NA,NA
 "Height (m)","?","m","h.t",NA
 "Width (m)","?","m","d.cr",NA
 "Stem wood (kg)",NA,NA,NA,NA
 "Stem bark (kg)",NA,NA,NA,NA
-"Leaves (kg)","m5,7","kg","m.lf",NA
-"branchmass","m5","kg","m.br",NA
+"Leaves (kg)","m4,x1","kg","m.lf",NA
+"branchmass","m4","kg","m.br",NA
 "Branch bark (kg)",NA,NA,NA,NA
 "Twigs (kg)",NA,NA,NA,NA
-"Total biomass (kg)","m5","kg","m.to",NA
-"barkmass","m5","kg","m.sb",NA
+"Total biomass (kg)","m4","kg","m.to",NA
+"barkmass","m4","kg","m.sb",NA

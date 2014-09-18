@@ -1,9 +1,9 @@
 "var_in","method","unit_in","var_out","notes"
-"dbh","e3","cm","d.bh",NA
-"hite_m","d","m","h.t",NA
-"ht_blc","d","m","h.c",NA
-"cw_avg","a2","m","d.cr",NA
-"stem","m8","g","m.st",NA
-"crn_wood","m8","g","m.br",NA
-"foliage","m5,7","g","m.lf",NA
-"treela","r","m2","a.lf",NA
+"dbh","d3","cm","d.bh",NA
+"hite_m","d1,f","m","h.t",NA
+"ht_blc","d1,f","m","h.c",NA
+"cw_avg","x2","m","d.cr",NA
+"stem","e2","g","m.st",NA
+"crn_wood","e2","g","m.br",NA
+"foliage","m4,x1","g","m.lf",NA
+"treela","a4","m2","a.lf",NA

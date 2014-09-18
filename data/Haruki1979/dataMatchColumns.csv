@@ -9,9 +9,9 @@
 "pft",NA,NA,"pft",NA
 "h.t","?","m","h.t",NA
 "d.ba","?","m","d.ba",NA
-"d.bh","e","m","d.bh",NA
-"m.lf","m5,1","kg","m.lf",NA
-"m.st","m3,m5","kg","m.st",NA
-"m.so","m5","kg","m.so",NA
-"m.br","m5","kg","m.br",NA
+"d.bh","d3","m","d.bh",NA
+"m.lf","m4,x1","kg","m.lf",NA
+"m.st","e2,m4","kg","m.st",NA
+"m.so","m4","kg","m.so",NA
+"m.br","m4","kg","m.br",NA
 "growingCondition",NA,NA,"growingCondition",NA

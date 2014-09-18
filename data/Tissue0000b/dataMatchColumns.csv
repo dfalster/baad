@@ -4,10 +4,10 @@
 "Leafnum",NA,NA,NA,NA
 "Height","?","cm","h.t",NA
 "grouping",NA,NA,"grouping",NA
-"LA","b,o,1","cm2","a.lf",NA
-"LeafDW","m1","g","m.lf",NA
-"StemDW","m1","g","m.st",NA
-"RootDW","m1","g","m.rt",NA
+"LA","a1,x7,x1","cm2","a.lf",NA
+"LeafDW","m3","g","m.lf",NA
+"StemDW","m3","g","m.st",NA
+"RootDW","m3","g","m.rt",NA
 "SLA",NA,NA,NA,NA
 "Temp",NA,NA,NA,NA
 "CO2",NA,NA,NA,NA

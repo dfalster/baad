@@ -3,7 +3,7 @@
 "Crown length (m)","?","m","c.d",NA
 "Dbh (cm)","?","cm","d.bh",NA
 "m.lf","?","kg","m.lf",NA
-"a.lf","r","m2","a.lf",NA
+"a.lf","a4","m2","a.lf",NA
 "a.ssbh","?","m2","a.ssbh",NA
 "a.ssbc","?","m2","a.ssbc",NA
 "location",NA,NA,"location","From Maguire1991b cited in paper"

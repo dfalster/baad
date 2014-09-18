@@ -45,7 +45,7 @@
 "Total bark mass","?","kg","m.sb",NA
 "total heartwood","?","kg","m.sh",NA
 "total rotten wood",NA,NA,NA,NA
-"leaf mass","m1,7","kg","m.lf",NA
+"leaf mass","m3,x1","kg","m.lf",NA
 "small branches mass",NA,NA,NA,NA
 "total areal mass",NA,NA,NA,NA
 "fine roots mass","?","kg","m.rf",NA
