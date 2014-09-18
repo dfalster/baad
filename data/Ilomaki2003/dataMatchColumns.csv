@@ -9,7 +9,7 @@
 "Crown class",NA,NA,"status",NA
 "stem+bark mass kg",NA,NA,NA,NA
 "stem+bark mass inside crown kg",NA,NA,NA,NA
-"branch mass kg","p7,m1","kg","m.br",NA
+"branch mass kg","p,7,m1","kg","m.br",NA
 "foliage mass kg","m1,7","kg","m.lf",NA
 "woody mass inside crown kg",NA,NA,NA,NA
 "woody mass of tree kg","j,m1","kg","m.st",NA
