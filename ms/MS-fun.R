@@ -5,8 +5,8 @@ library(knitcitations, quietly = TRUE)
 library(plyr, quietly = TRUE)
 
 ## Mimic dataMashR function here, but relative to *this* directory.
-data.path <- function(...) {
-  file.path("../data", ...)
+data.path <- function(root="..",...) {
+  file.path(root, "data", ...)
 }
 
 #Paste and collapse
@@ -14,8 +14,8 @@ pasteC  <-  function(values, binder="\n") {
 	paste0(unique(values), collapse=binder)
 }
 
-readStudyFile  <-  function(studyName, File) {
-	read.csv(data.path(studyName, File), header = TRUE,
+readStudyFile  <-  function(studyName, File, ...) {
+	read.csv(data.path(studyName, File, ...), header = TRUE,
         na.strings = c(NA,''), stringsAsFactors = FALSE, strip.white = TRUE)
 }
 
@@ -131,20 +131,21 @@ getLastName  <-  function(authorNames) {
 							})
 	}
 
-authorDetails  <-  function(data) {
-	firstAuthors   <-  read.csv("../config/contact.csv", header = TRUE,
+authorDetails  <-  function(data, root="..") {
+	firstAuthors   <-  read.csv(file.path(root, "config", "contact.csv"), header = TRUE,
         na.strings = c(NA,''), stringsAsFactors = FALSE, strip.white = TRUE)
-	dataAuthors <- arrange(ldply(unique(data$studyName),function(x) readStudyFile(x, "studyContact.csv")), name)
+	dataAuthors <- arrange(ldply(unique(data$studyName),function(x) readStudyFile(x, "studyContact.csv", root=root)), name)
 	allAuthors <- rbind(firstAuthors,
 		dataAuthors[order(getLastName(dataAuthors$name)),])
 	allAuthors <- allAuthors[!duplicated(allAuthors$name),]
 
-	authorList <- allAuthors$name
+	authors <- allAuthors$name
+	emails <- allAuthors$email
 	addresses_unique_in_order <- allAuthors$address[!duplicated(allAuthors$address)]
 
 	adressList <- match(allAuthors$address, addresses_unique_in_order)
 
-	list(authors=authorList, address_code=adressList, address=data.frame(code=seq_len(length(addresses_unique_in_order)), address=addresses_unique_in_order))
+	list(authors=authors	, emails=emails, address_code=adressList, address=data.frame(code=seq_len(length(addresses_unique_in_order)), address=addresses_unique_in_order))
 }
 
 capitalize <- function (string) {
