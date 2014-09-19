@@ -93,12 +93,16 @@ postProcess <- function(data, lookupSpecies="none"){
       return(data)
     }
     
-    if(lookupWhich == "missingonly")
-      stop("Not implemented yet. Try 'all' or 'none'.")
-    
     if(lookupWhich != "all"){
-      species_dfr <- read.csv(cachefile, stringsAsFactors=FALSE)
-      #       species <- setdiff(species, cache$speciesMatched)
+      cache <- read.csv(cachefile, stringsAsFactors=FALSE)
+    }
+    
+    if(lookupWhich == "missingonly"){
+      species <- setdiff(species, cache$species)
+      if(length(species) == 0)
+        lookupWhich <- "none"
+      else
+        message("Looking up ", length(species), " species.")
     }
     
     if(lookupWhich != "none"){
@@ -108,6 +112,8 @@ postProcess <- function(data, lookupSpecies="none"){
       # Note we have to use try() because TPL fails to exit nicely when a species does not exist (!).
       options(show.error.messages=FALSE)
       starttime <- proc.time()[3]
+      
+      # Sink needed because TPL writes too much garbage
       sink(tempfile())
       tpl <- lapply(species, function(x)try(TPL(x, corr=TRUE)))
       sink()
@@ -121,8 +127,6 @@ postProcess <- function(data, lookupSpecies="none"){
           return(NA)
         else{
           if(x$Plant.Name.Index){
-            #             hasVar <- !(x$New.Infraspecific %in% c("NA",""))
-            #             Var <- if(hasVar) paste("var.",x$New.Infraspecific) else ""
             
             return(paste(x$New.Genus, x$New.Species))  #, Var))
           } else {
@@ -152,28 +156,40 @@ postProcess <- function(data, lookupSpecies="none"){
       
       # Grab the matched name if they are all the same, otherwise grab the one that was the same as 
       # the submitted one. Because in this particular case, they are all the same except for one,
-      # which was correct anyway (Psychotria gracilifora). Again, this is a fix of unexpected behaviour
-      # by taxize.
+      # which was correct anyway (Psychotria gracilifora). 
       sp_fixed <- sapply(txz, function(x){
         
-        if(nlevels(x$matched_name2) == 1)
-          return(levels(x$matched_name2)[1])
+        res <- unique(x$results$matched_name2)
+        score <- x$results$score[1]
+        
+        if(length(res) == 1 & score > 0.9)
+          return(res)
         else
-          return(levels(x$submitted_name)[1])
+          return(x$results$submitted_name[1])
         
       })
       
       # Results for taxize
       species_dfr_taxize <- data.frame(species = sp_miss, species_new_taxize = sp_fixed,
                                        stringsAsFactors=FALSE)
-      
+
+
       # Dataframe with Taxonstand, taxize results.
-      species_dfr <- merge(species_dfr, species_dfr_taxize, all=TRUE)
+      if(length(sp_miss) > 0)
+        species_dfr <- merge(species_dfr, species_dfr_taxize, all=TRUE)
+      else
+        species_dfr$species_new_taxize <- NA
       
       # Variable species_Fixed in cache is from Taxonstand, or taxize when Taxonstand
       # returned NA.
       species_dfr$speciesMatched <- with(species_dfr, 
-                                         ifelse(is.na(species_new_Taxonstand),species_new_taxize,species_new_Taxonstand))
+                                         ifelse(is.na(species_new_Taxonstand),
+                                                species_new_taxize,
+                                                species_new_Taxonstand))
+   
+      # Combine cache with new results. Toss duplicated rows.
+      species_dfr <- rbind(cache, species_dfr)
+      species_dfr <- species_dfr[!duplicated(species_dfr),]
       
       # Write cache
       write.csv(species_dfr, cachefile, row.names=FALSE)
@@ -192,17 +208,24 @@ postProcess <- function(data, lookupSpecies="none"){
     
     # sp. is dropped in speciesMatched
     nc <- sapply(strsplit(dfr$speciesMatched, " "),length)
-    dfr$speciesMatched[nc==1 & dfr$speciesMatched != "Unknown"] <-
-      paste(dfr$speciesMatched[nc==1 & dfr$speciesMatched != "Unknown"], "sp.")
-
+    
+    ii <- nc==1 & dfr$speciesMatched != "Unknown"
+    dfr$speciesMatched[ii] <- paste(dfr$speciesMatched[ii], "sp.")
+    
     # Find hybrids; don't match names
     hyb <- c(grep("[*]", dfr$species),
              grep(" x ", dfr$species))
     dfr$speciesMatched[hyb] <- dfr$species[hyb]
     
     # Merge onto full dataset
-    names(dfr)[2] <- newVarName 
-    data <- merge(data, dfr, by="species")
+    names(dfr)[2] <- newVarName
+    data <- merge(data, dfr, by="species", all.x=TRUE, all.y=FALSE)
+    
+    # NAs in speciesMatched: these occur when lookupSpecies == "none", but species was 
+    # not in cache. Since we already use submitted name when name could not be matched 
+    # (in taxize bit), do same here. Note we don't have an indicator variable showing which names
+    # were actually matched.
+    data$speciesMatched[is.na(data$speciesMatched)] <- data$species[is.na(data$speciesMatched)] 
     
     # Reshuffle; new species next to species
     s <- match("species",names(data))
