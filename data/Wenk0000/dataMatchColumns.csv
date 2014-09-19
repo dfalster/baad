@@ -10,4 +10,5 @@
 "dia","d1,p2","mm","d.ba",NA
 "stem.area","d1,p2","mm2","a.stba",NA
 "lma","m3,x1,x8","mg.mm2","ma.ilf",NA
+"leaf_size","x1,x8","cm2","a.ilf",NA
 "leaf_area","e1,b1","mm2","a.lf",NA
