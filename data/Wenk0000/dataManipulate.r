@@ -1,0 +1,4 @@
+manipulate <- function(raw) {
+  raw
+}
+

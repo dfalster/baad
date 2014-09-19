@@ -9,6 +9,7 @@ g.cm2,kg.m2,x*10
 m2.kg,kg.m2,1/x
 cm2.g,kg.m2,10/x
 g.m2,kg.m2,x/1000
+mg.mm2,kg.m2,x
 g.cm3,kg.m3,x*1000
 per,kg.kg,x/100
 mg,kg,x*10^-6
