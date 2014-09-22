@@ -47,7 +47,7 @@ Combining data from many different studies, each using its own set of terms and 
 Until recently, scientific publications in biology have mostly been concerned with "small data" `r citep("10.1038/nj7461-243a")`. Datasets arrive in small parcels, corresponding to the work of an individual study, or perhaps a handful of studies. It is exciting to be able to put these parcels together, to create something larger. We hope others will use this dataset and build on it. See [https://github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
 
 
-```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height8}
+```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=7}
 
 # World plot colored by vegetation type
 cols <- make.transparent(c(
