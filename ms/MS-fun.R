@@ -5,7 +5,7 @@ library(knitcitations, quietly = TRUE)
 library(plyr, quietly = TRUE)
 
 ## Mimic dataMashR function here, but relative to *this* directory.
-data.path <- function(root="..",...) {
+data.path <- function(..., root="..") {
   file.path(root, "data", ...)
 }
 
