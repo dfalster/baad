@@ -11,6 +11,7 @@ output:
 source("MS-fun.R")
 
 knitr::opts_chunk$set(tidy=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.cap="")
+options(citation_format = "text", max.names=2)
 
 bib <- read.bibtex("refs.bib")
 baad <- readRDS("../output/baad.rds")
@@ -121,7 +122,7 @@ with data.
 
 i) Initial analysis by data contributors. The majority of studies have been published and as such have gone through quality assurance by the data contributor.
 ii) Review by compilers of database. We have gone through extensive data verification by checking cross-correlations, credible ranges, and outliers of all variables in the database.
-iii) All species names were matched against online databases with the R packages `Taxonstand` and `taxize` R package citet(c("10.1111/j.2041-210X.2012.00232.x", bib["chamberlain2013taxize"]))`.
+iii) All species names were matched against online databases with the R packages `Taxonstand` and `taxize` R package `r citep(list("10.1111/j.2041-210X.2012.00232.x", bib["chamberlain2013taxize"]))`.
 iv) Additional review by contributors using reports generated from the data.  In these reports, we summarized species, locations (latitude, longitude and maps), plant functional type, metadata provided by the contributor, and pair-wise plots of all numeric variables in the dataset (and a comparison to all data in the database). Each contributor checked the reports for problems, which allowed us to improve data quality in many cases.
 
 ### B. Accessibility
