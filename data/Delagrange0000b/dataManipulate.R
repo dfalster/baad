@@ -10,6 +10,7 @@ manipulate <- function(raw) {
   # h.c is actually c.d; must have gone wrong in previous processing
   raw$h.c <- raw$h.t - raw$h.c
   raw$h.c[raw$h.c > raw$h.t] <- NA
+  raw$h.c[raw$h.c < 0] <- NA
   
   raw
 }
