@@ -18,8 +18,8 @@
 "SWvol/yr",NA,"cm3/yr",NA,NA
 "Proj lf area","a3,a4",NA,NA,NA
 "Surf lf area","k3,a5","cm2",NA,"= pi * Proj lf area"
-"SW Mass/",NA,NA,NA,NA
+"SW Mass/1",NA,NA,NA,NA
 "SW Vol/",NA,NA,NA,NA
-"SW Mass/",NA,NA,NA,NA
+"SW Mass/2",NA,NA,NA,NA
 "Root/",NA,NA,NA,NA
 "het/aut",NA,NA,NA,NA
