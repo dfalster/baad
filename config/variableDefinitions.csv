@@ -53,7 +53,7 @@ r.st,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,wood density,1.00E-20,2000,
 r.ss,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,sapwood density,1.00E-20,2000,,density of stem sapwood
 r.sb,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,bark density,1.00E-20,2000,,density of stem bark
 r.sh,kg.m3,kg m<sup>-3</sup>,tree,numeric,TRUE,FALSE,heartwood density,1.00E-20,2000,,density of stem heartwood
-n.lf,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,leaf nitrogen,1.00E-20,0.1,,leaf nitrogen (average across entire plant or sample taken from top of plant)
+n.lf,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,leaf [nitrogen],1.00E-20,0.1,,leaf nitrogen (average across entire plant or sample taken from top of plant)
 n.ss,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,sapwood [nitrogen],1.00E-20,0.1,,nitrogen content of sapwood
 n.sb,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,bark [nitrogen],1.00E-20,0.1,,nitrogen content of bark
 n.sh,kg.kg,kg kg<sup>-1</sup>,tree,numeric,TRUE,FALSE,heartwood [nitrogen],1.00E-20,0.1,,nitrogen content of heartwood
