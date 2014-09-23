@@ -507,3 +507,40 @@ capitalize <- function (string) {
         1, 1))
     string
 }
+
+
+comparePlots <- function(baad= readRDS("../output/baad.rds"), path="../output/report-by-var", reprocess=FALSE) {
+
+  dir.create(path,recursive=TRUE,showWarnings = FALSE)
+
+ # determine variables to plot
+  var.def <- baad$dictionary
+  vars  <-  sort(var.def$variable[var.def$group=="tree" & !var.def$variable %in% c("growingCondition","status","light")])
+  i <- combn(length(vars), 2)
+  plot_list <- matrix(vars[i], ncol=2, byrow=TRUE)
+
+  message("Generating ", nrow(plot_list), " variable reports")
+  wp <- txtProgressBar(min = 0, max = nrow(plot_list), initial = 0, width = 50, style = 3)
+
+  for(i in seq_len(nrow(plot_list))) {
+
+    v1 <- plot_list[i,1]
+    v2 <- plot_list[i,2]
+    if(any(!is.na(baad$data[[v1]]*baad$data[[v2]]))){
+
+        filename <- paste0(path,"/", v1,"-vs-",v2,".pdf")
+        if(!file.exists(filename) | reprocess) {
+            pdf(filename)
+            for(g in unique(baad$data$studyName)) {
+                subdata  <- baad$data[baad$data$studyName==g,]
+                if(any(!is.na(subdata[[v1]]*subdata[[v2]]))) {
+                 makePlot(baad$data, subdata, studycol="red", xvar = v1, yvar = v2,  xlab=v1, ylab=v2, main=g)
+                }
+            }
+            dev.off()
+        }
+    }
+  setTxtProgressBar(wp, i)
+  }
+ close(wp)
+}
