@@ -1,18 +1,18 @@
 variable,units,unitsMD,group,type,methods,essential,label,minValue,maxValue,allowableValues,description
-location,-,-,site,character,FALSE,TRUE,location,,,,name of location where sampled
+location,NA,NA,site,character,FALSE,TRUE,location,,,,name of location where sampled
 latitude,deg,deg,site,numeric,FALSE,TRUE,latitude,-90,90,,latitude of location where sampled (-90 to 90 deg South to North)
 longitude,deg,deg,site,numeric,FALSE,TRUE,longitude,-180,180,,longitude of location where sampled (-180 to 180 West to East)
-vegetation,-,-,site,character,FALSE,TRUE,vegetation,,,,vegetation type where sampled if grown in field (leave blank for plantations / glasshouse / common garden): Sav = Savannah; TropRF = Tropical rainforest; TempRF = Temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temperate forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
+vegetation,NA,NA,site,character,FALSE,TRUE,vegetation,,,,vegetation type where sampled if grown in field (leave blank for plantations / glasshouse / common garden): Sav = Savannah; TropRF = Tropical rainforest; TempRF = Temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temperate forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
 map,mm,mm,site,numeric,FALSE,FALSE,map,100,12000,,mean annual rainfall (wild grown plants only)
 mat,deg,deg,site,numeric,FALSE,FALSE,mat,-20,40,,mean annual temperature (wild grown plants only)
-grouping,-,-,stand,character,FALSE,FALSE,grouping,,,,any information about growing environment of sampled plant such as treatment or subplot
+grouping,NA,NA,stand,character,FALSE,FALSE,grouping,,,,any information about growing environment of sampled plant such as treatment or subplot
 lai,m2.m2,m<sup>2</sup> m<sup>-2</sup>,stand,numeric,TRUE,FALSE,lai,1.00E-20,30,,leaf area index of vegetation (wild plants only)
-species,-,-,species,character,FALSE,TRUE,species,,,,latin name of species (genus species)
-family,-,-,species,character,FALSE,FALSE,family,,,,family
-pft,-,-,species,character,FALSE,TRUE,pft,,,"EA,DA,EG,DG",plant functional type: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
-growingCondition,-,-,tree,character,FALSE,TRUE,growing environment,,,"FW,FE,GH,PU,PM,GC,CG",growing environment of sampled plant: FW = field wild; FE =field experimental; GH = glasshouse; PU = plantation unmanaged; PM = plantation managed; GC = growth chamber; CG = common garden
-status,-,-,tree,character,FALSE,TRUE,crown status,,,"0,1,2,3",position in forest canopy (wild grown plants only): 0 = supressed; 1 = intermediate; 2 = codominant (crown partly exposed); 3 = dominant (crown fully exposed)
-light,-,-,tree,character,TRUE,FALSE,light environment,,,,note any information about light environment of sampled plant; we will determine appropriate categories once we see what information is available
+species,NA,NA,species,character,FALSE,TRUE,species,,,,latin name of species (genus species)
+family,NA,NA,species,character,FALSE,FALSE,family,,,,family
+pft,NA,NA,species,character,FALSE,TRUE,pft,,,"EA,DA,EG,DG",plant functional type: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
+growingCondition,NA,NA,tree,character,FALSE,TRUE,growing environment,,,"FW,FE,GH,PU,PM,GC,CG",growing environment of sampled plant: FW = field wild; FE =field experimental; GH = glasshouse; PU = plantation unmanaged; PM = plantation managed; GC = growth chamber; CG = common garden
+status,NA,NA,tree,character,FALSE,TRUE,crown status,,,"0,1,2,3",position in forest canopy (wild grown plants only): 0 = supressed; 1 = intermediate; 2 = codominant (crown partly exposed); 3 = dominant (crown fully exposed)
+light,NA,NA,tree,character,TRUE,FALSE,light environment,,,,note any information about light environment of sampled plant; we will determine appropriate categories once we see what information is available
 age,yr,yr,tree,numeric,TRUE,FALSE,age,1.00E-20,1000,,age of plant expressed as decimal -> e.g. 3months = 0.25years
 a.lf,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,leaf area,1.00E-20,10000,,leaf area of whole plant
 a.ssba,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,sapwood area at base,1.00E-20,100,,area of sapwood cross section at base
