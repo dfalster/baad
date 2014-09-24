@@ -1,12 +1,13 @@
 "var_in","method","unit_in","var_out","notes"
+"Temp",NA,NA,NA,NA
+"CO2",NA,NA,NA,NA
 "Potnum",NA,NA,NA,NA
 "LA","a1,x7,x1,a4","cm2","a.lf",NA
 "StemFW",NA,NA,NA,NA
 "LeafFW",NA,NA,NA,NA
-"grouping",NA,NA,"grouping",NA
 "StemDW","m3","g","m.st",NA
 "LeafDW","m3","g","m.lf",NA
 "LMA","?","g.m2","ma.ilf",NA
+"Narea",NA,NA,NA,NA
+"grouping",NA,NA,"grouping",NA
 "Nmass","?","g.g","n.lf",NA
-"Temp",NA,NA,NA,NA
-"CO2",NA,NA,NA,NA

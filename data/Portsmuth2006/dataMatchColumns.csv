@@ -26,7 +26,7 @@
 "Root weigh ratio: RWR g g-1",NA,NA,NA,NA
 "fine root/ coarse root g g-1",NA,NA,NA,NA
 "average minimum weight at the beginning of the experiment",NA,NA,NA,NA
-"Relative growth rate RGR la (l?ppkaal)-ln(algkaal)/63",NA,NA,NA,NA
+"Relative growth rate RGR la (l›ppkaal)-ln(algkaal)/63",NA,NA,NA,NA
 "log total dry mass",NA,NA,NA,NA
 "ln total dry mass",NA,NA,NA,NA
 "P (mg/g) in leaves",NA,NA,NA,NA
@@ -40,3 +40,4 @@
 "stem% of total dry mass",NA,NA,NA,NA
 "fine roots % of total dry mass",NA,NA,NA,NA
 "coarse roots % of total dry mass",NA,NA,NA,NA
+"nothing",NA,NA,NA,NA

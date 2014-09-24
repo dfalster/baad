@@ -1,4 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
+"species",NA,NA,"species",NA
+"Tree #",NA,NA,NA,NA
 "Dia. (mm)","?","mm","d.ba",NA
 "D.B.H.(mm)","?","mm","d.bh",NA
 "Hieght (cm)","?","cm","h.t",NA
@@ -8,10 +10,8 @@
 "Dead Branch",NA,NA,NA,NA
 "Stem Wood","m3","g","m.st",NA
 "Stem Bark","m3","g","m.sb",NA
-"m.rc","m3","g","m.rc",NA
-"Sm. Root","m3","g","m.rf",NA
-"TOTAL","m3","g","m.to",NA
-"species",NA,NA,"species",NA
-"Tree #",NA,NA,NA,NA
 "Lrg. Root",NA,NA,NA,NA
 "Med. Root",NA,NA,NA,NA
+"Sm. Root","m3","g","m.rf",NA
+"TOTAL","m3","g","m.to",NA
+"m.rc","m3","g","m.rc",NA

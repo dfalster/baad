@@ -1,4 +1,8 @@
 "var_in","method","unit_in","var_out","notes"
+"Variable",NA,NA,NA,NA
+"contributor",NA,NA,NA,NA
+"family",NA,NA,"family",NA
+"species",NA,NA,"species",NA
 "age","?","yr","age",NA
 "a.lf","e1","m2","a.lf",NA
 "lf.sz","x1","m2","a.ilf",NA
@@ -10,11 +14,6 @@
 "m.sb","m3","kg","m.sb",NA
 "m.br","m3","kg","m.br",NA
 "lf.ma","m3,x1","kg.m2","ma.ilf",NA
-"lai","?","m2.m2","lai",NA
-"Variable",NA,NA,NA,NA
-"contributor",NA,NA,NA,NA
-"family",NA,NA,"family",NA
-"species",NA,NA,"species",NA
 "pft",NA,NA,"pft",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "status",NA,NA,"status",NA
@@ -23,6 +22,8 @@
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "vegetation",NA,NA,"vegetation",NA
+"lai","?","m2.m2","lai",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
 "reference",NA,NA,NA,NA
+"grouping",NA,NA,"grouping",NA

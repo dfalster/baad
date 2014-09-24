@@ -1,11 +1,16 @@
 "var_in","method","unit_in","var_out","notes"
 "h.t","?","m","h.t",NA
-"Crown length (m)","?","m","c.d",NA
-"Dbh (cm)","?","cm","d.bh",NA
 "m.lf","?","kg","m.lf",NA
 "a.lf","a4","m2","a.lf",NA
 "a.ssbh","?","m2","a.ssbh",NA
 "a.ssbc","?","m2","a.ssbc",NA
+"species",NA,NA,NA,NA
+"pft",NA,NA,NA,NA
+"Installation",NA,NA,NA,NA
+"Plot",NA,NA,NA,NA
+"Dbh (cm)","?","cm","d.bh",NA
+"Crown length (m)","?","m","c.d",NA
 "location",NA,NA,"location","From Maguire1991b cited in paper"
 "latitude",NA,"deg","latitude","From Maguire1991b cited in paper"
 "longitude",NA,"deg","longitude","From Maguire1991b cited in paper"
+"grouping",NA,NA,"grouping",NA

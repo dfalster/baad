@@ -1,5 +1,5 @@
 ,cm,m,,,m,kg,1,2,3,4,5,cm2,cm2,m2
-tree,dbh,hgt ,stratum,crown class,hgt crown base,foliage mass,% foliate mass by morphology type,% foliate mass by morphology type,% foliate mass by morphology type,% foliate mass by morphology type,% foliate mass by morphology type,BH Sapwood area,BLC sapwood area,Leaf Area
+tree,dbh,hgt ,stratum,crown class,hgt crown base,foliage mass,% foliate mass by morphology type.1,% foliate mass by morphology type.2,% foliate mass by morphology type.3,% foliate mass by morphology type.4,% foliate mass by morphology type.5,BH Sapwood area,BLC sapwood area,Leaf Area
 2,10.9,9.6,d,s,3.7,3.45,,,0,0,0,64.8,44.7,13.2
 3,11.2,7.7,c,d,1.1,15.0,,,0,0,0,68.6,80.0,40.6
 4,16.5,7.8,c,cd,0.8,20.5,14.5,84.7,0.0,0.0,0.7,103.1,116.3,49.0

@@ -13,6 +13,9 @@
 "a_lf","e1,a5","m2","a.lf",NA
 "wbr","m3,x1,k4","kg","m.br",NA
 "m_st","v1","kg","m.st",NA
+"a_cs",NA,NA,NA,NA
+"SAcon",NA,NA,NA,NA
+"Vell",NA,NA,NA,NA
 "sp",NA,NA,"species",NA
 "authorname",NA,NA,NA,NA
 "reference",NA,NA,NA,NA
@@ -22,5 +25,5 @@
 "a_st","d3","m2","a.stbh",NA
 "a_ss_dbh",NA,NA,NA,NA
 "a_ss_crownbase",NA,NA,NA,NA
-"longitude",NA,"deg","longitude",NA
 "latitude",NA,"deg","latitude",NA
+"longitude",NA,"deg","longitude",NA

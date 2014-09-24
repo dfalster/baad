@@ -1,24 +1,8 @@
 "var_in","method","unit_in","var_out","notes"
-"age","?","yr","age",NA
-"a.lf","e1","m2","a.lf",NA
-"a.ssbh","?","m2","a.ssbh","Measured at 4 years, estimated other ages"
-"a.shbh","?","m2","a.shbh","Measured at 4 years, estimated other ages"
-"a.stbh","?","m2","a.stbh","from circumference over bark"
-"a.sbbh","?","m2","a.sbbh","from circumference under bark"
-"d.cr","?","m","d.cr",NA
-"h.t","?","m","h.t",NA
-"h.c","?","m","h.c",NA
-"m.lf","m3,x1","kg","m.lf",NA
-"m.st","mx","kg","m.st",NA
-"m.sb","mx","kg","m.sb",NA
-"m.br","mx","kg","m.br","Living branch mass"
-"m.rc","mx","kg","m.rc","Coarse root + stump mass"
-"n.lf","x1","kg.kg","n.lf",NA
-"n.ss","?","kg.kg","n.ss","Sapwood + Heartwood"
-"n.sb","?","kg.kg","n.sb",NA
-"n.rf","x4","kg.kg","n.rf",NA
-"d.bh","?","m","d.bh",NA
+"dataset",NA,NA,NA,NA
+"grouping",NA,NA,"grouping",NA
 "location",NA,NA,"location",NA
+"location2",NA,NA,NA,NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "vegetation",NA,NA,"vegetation",NA
@@ -28,6 +12,51 @@
 "family",NA,NA,"family",NA
 "species",NA,NA,"species",NA
 "pft",NA,NA,"pft",NA
+"age","?","yr","age",NA
+"a.lf","e1","m2","a.lf",NA
+"a.ssba",NA,"m2","a.ssba",NA
+"a.ssbh","?","m2","a.ssbh","Measured at 4 years, estimated other ages"
+"a.ssbc",NA,"m2","a.ssbc",NA
+"a.shba",NA,"m2","a.shba",NA
+"a.shbh","?","m2","a.shbh","Measured at 4 years, estimated other ages"
+"a.shbc",NA,"m2","a.shbc",NA
+"a.sbba",NA,"m2","a.sbba",NA
+"a.sbbh","?","m2","a.sbbh","from circumference under bark"
+"a.sbbc",NA,"m2","a.sbbc",NA
+"a.stba",NA,"m2","a.stba",NA
+"a.stbh","?","m2","a.stbh","from circumference over bark"
+"a.stbc",NA,"m2","a.stbc",NA
+"a.cp",NA,"m2","a.cp",NA
+"a.cs",NA,"m2","a.cs",NA
+"h.t","?","m","h.t",NA
+"h.c","?","m","h.c",NA
+"d.ba",NA,"m","d.ba",NA
+"d.bh","?","m","d.bh",NA
+"d.cr","?","m","d.cr",NA
+"c.d",NA,"m","c.d",NA
+"m.lf","m3,x1","kg","m.lf",NA
+"m.ss",NA,"kg","m.ss",NA
+"m.sh",NA,"kg","m.sh",NA
+"m.sb","mx","kg","m.sb",NA
+"m.st","mx","kg","m.st",NA
+"m.so",NA,"kg","m.so",NA
+"m.br","mx","kg","m.br","Living branch mass"
+"m.rc","mx","kg","m.rc","Coarse root + stump mass"
+"m.rt",NA,"kg","m.rt",NA
+"m.to",NA,"kg","m.to",NA
+"a.ilf",NA,"m2","a.ilf",NA
+"ma.ilf",NA,"kg.m2","ma.ilf",NA
+"r.st",NA,"kg.m3","r.st",NA
+"r.ss",NA,"kg.m3","r.ss",NA
+"r.sb",NA,"kg.m3","r.sb",NA
+"r.sh",NA,"kg.m3","r.sh",NA
+"n.lf","x1","kg.kg","n.lf",NA
+"n.ss","?","kg.kg","n.ss","Sapwood + Heartwood"
+"n.sb","?","kg.kg","n.sb",NA
+"n.sh",NA,"kg.kg","n.sh",NA
+"n.rf","x4","kg.kg","n.rf",NA
+"n.rc",NA,"kg.kg","n.rc",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "status",NA,NA,"status",NA
 "light","?",NA,"light",NA
+"fertilization",NA,NA,NA,NA

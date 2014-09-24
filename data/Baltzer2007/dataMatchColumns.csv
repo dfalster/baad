@@ -1,4 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
+"contributor",NA,NA,NA,NA
+"family",NA,NA,"family",NA
+"species",NA,NA,"species",NA
 "age (months)","k3","months","age",NA
 "total height (cm)","d7,p3","cm","h.t",NA
 "stem diameter at base (mm)","d1,f","mm","d.ba",NA
@@ -8,9 +11,6 @@
 "stem mass (g)","m3","g","m.st",NA
 "Single leaf area (cm2)","a1","cm2","a.ilf",NA
 "lma (g cm-2)","m3,x1","g.cm2","ma.ilf",NA
-"contributor",NA,NA,NA,NA
-"family",NA,NA,"family",NA
-"species",NA,NA,"species",NA
 "Plant functional type",NA,NA,"pft",NA
 "Growing condition",NA,NA,"growingCondition",NA
 "Status",NA,NA,NA,NA

@@ -1,4 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
+"spp",NA,NA,"species",NA
+"Filter",NA,NA,NA,NA
 "age","?","yr","age",NA
 "H","?","m","h.t",NA
 "dbh","?","cm","d.bh",NA
@@ -16,5 +18,4 @@
 "N.ht","?","per","n.sh",NA
 "N.ba","?","per","n.sb",NA
 "N.lf","?","kg.kg","n.lf","transformed the original percentage to proportion in R"
-"spp",NA,NA,"species",NA
-"Filter",NA,NA,NA,NA
+"grouping",NA,NA,"grouping",NA

@@ -1,37 +1,9 @@
 "var_in","method","unit_in","var_out","notes"
 "Age","?","yr","age",NA
-"pft",NA,NA,"pft",NA
-"species",NA,NA,"species",NA
-"latitude",NA,"deg","latitude",NA
-"longitude",NA,"deg","longitude",NA
-"growingCondition",NA,NA,"growingCondition",NA
-"vegetation",NA,NA,"vegetation",NA
-"grouping",NA,NA,"grouping",NA
-"location",NA,NA,"location",NA
 "Status",NA,NA,"status",NA
-"DBH (cm)","?","cm","d.bh",NA
 "Height (m)","?","m","h.t",NA
-"N bole",NA,NA,NA,NA
-"N bark",NA,NA,NA,NA
-"N sapwood",NA,NA,NA,NA
-"N heartwood",NA,NA,NA,NA
-"N rotten wood",NA,NA,NA,NA
-"N branches sapwood",NA,NA,NA,NA
-"N branches bark",NA,NA,NA,NA
-"N branches heartwood",NA,NA,NA,NA
-"N branches rotten wood",NA,NA,NA,NA
-"total N sapwood","?","kg.kg","n.ss",NA
-"Total N bark","?","kg.kg","n.sb",NA
-"total N heartwood","?","kg.kg","n.sh",NA
-"total N rotten wood",NA,NA,NA,NA
-"N leaf",NA,NA,NA,NA
-"N small branches",NA,NA,NA,NA
-"Total aerial N",NA,NA,NA,NA
-"N fine roots","?","kg.kg","n.rf",NA
-"N medium roots",NA,NA,NA,NA
-"N coarse roots",NA,NA,NA,NA
-"total N underground",NA,NA,NA,NA
-"total N (g N/tree)",NA,NA,NA,NA
+"Site",NA,NA,NA,NA
+"DBH (cm)","?","cm","d.bh",NA
 "bole mass",NA,NA,NA,NA
 "bark bole mass",NA,NA,NA,NA
 "Sapwood mass",NA,NA,NA,NA
@@ -40,11 +12,9 @@
 "branches sapwood mass",NA,NA,NA,NA
 "branches bark mass",NA,NA,NA,NA
 "branches heartwood mass",NA,NA,NA,NA
-"branches rotten wood",NA,NA,NA,NA
 "total sapwood","?","kg","m.ss",NA
-"Total bark mass","?","kg","m.sb",NA
+"total bark",NA,NA,NA,NA
 "total heartwood","?","kg","m.sh",NA
-"total rotten wood",NA,NA,NA,NA
 "leaf mass","m3,x1","kg","m.lf",NA
 "small branches mass",NA,NA,NA,NA
 "total areal mass",NA,NA,NA,NA
@@ -53,7 +23,41 @@
 "coarse roots mass",NA,NA,NA,NA
 "total underground mass","?","kg","m.rt",NA
 "total mass/tree",NA,NA,NA,NA
-"stem_mass","?","kg","m.st",NA
+"latitude",NA,"deg","latitude",NA
+"longitude",NA,"deg","longitude",NA
+"N bole",NA,NA,NA,NA
+"N bark",NA,NA,NA,NA
+"N sapwood",NA,NA,NA,NA
+"N heartwood",NA,NA,NA,NA
+"N rotten wood",NA,NA,NA,NA
+"N branches sapwood",NA,NA,NA,NA
+"N branches bark",NA,NA,NA,NA
+"total N sapwood","?","kg.kg","n.ss",NA
+"Total N bark","?","kg.kg","n.sb",NA
+"N leaf",NA,NA,NA,NA
+"N small branches",NA,NA,NA,NA
+"Total aerial N",NA,NA,NA,NA
+"N fine roots","?","kg.kg","n.rf",NA
+"N medium roots",NA,NA,NA,NA
+"N coarse roots",NA,NA,NA,NA
+"total N underground",NA,NA,NA,NA
+"total N (g N/tree)",NA,NA,NA,NA
+"branches heartwood",NA,NA,NA,NA
+"branches rotten wood",NA,NA,NA,NA
+"Total bark mass","?","kg","m.sb",NA
+"total rotten wood",NA,NA,NA,NA
+"N branches heartwood",NA,NA,NA,NA
+"N branches rotten wood",NA,NA,NA,NA
+"total N heartwood","?","kg.kg","n.sh",NA
+"total N rotten wood",NA,NA,NA,NA
+"pft",NA,NA,"pft",NA
+"species",NA,NA,"species",NA
+"growingCondition",NA,NA,"growingCondition",NA
+"vegetation",NA,NA,"vegetation",NA
+"location",NA,NA,"location",NA
+"RootsEstimated",NA,NA,NA,NA
 "branch_mass","?","kg","m.br",NA
+"stem_mass","?","kg","m.st",NA
 "coarse_root_mass","?","kg","m.rc",NA
 "NcoarseRoots","?","kg.kg","n.rc",NA
+"grouping",NA,NA,"grouping",NA

@@ -1,21 +1,49 @@
 "var_in","method","unit_in","var_out","notes"
 "Site",NA,NA,"location",NA
-"speciesfix",NA,NA,"species",NA
+"Species",NA,NA,NA,NA
 "Age yrs","?","yr","age",NA
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
+"soil",NA,NA,NA,NA
 "Veg Type",NA,NA,"vegetation",NA
 "Functional type",NA,NA,"pft",NA
-"grouping",NA,NA,"grouping",NA
+"Environment",NA,NA,NA,NA
+"Shading",NA,NA,NA,NA
+"Block",NA,NA,NA,NA
+"Species2",NA,NA,NA,NA
+"DensityID",NA,NA,NA,NA
+"Silviculturalinputs",NA,NA,NA,NA
+"FamilyID",NA,NA,NA,NA
+"Tree",NA,NA,NA,NA
 "DBH","?","cm","d.bh",NA
-"CW","?","cm","d.cr",NA
 "GLD","?","cm","d.ba",NA
 "HT","?","m","h.t",NA
 "Foliage","m3,x1","kg","m.lf",NA
 "Branches","?","kg","m.br",NA
 "Bole","?","kg","m.st",NA
 "Bark","?","kg","m.sb",NA
-"coarseroot","?","kg","m.rc",NA
+"CoarseR20",NA,NA,NA,NA
+"CoarseR40",NA,NA,NA,NA
+"Taproot",NA,NA,NA,NA
+"CoarseRoot",NA,NA,NA,NA
+"DeadBranch",NA,NA,NA,NA
+"DeadNeedles in kg",NA,NA,NA,NA
 "HCB","?","m","h.c",NA
+"Cwalong",NA,NA,NA,NA
+"Cwacross",NA,NA,NA,NA
 "SNA","?","cm2.g","ma.ilf",NA
 "LEAFAREA","a5","m2","a.lf",NA
+"Ht25",NA,NA,NA,NA
+"AC25",NA,NA,NA,NA
+"AL25",NA,NA,NA,NA
+"Ht50",NA,NA,NA,NA
+"AC50",NA,NA,NA,NA
+"AL50",NA,NA,NA,NA
+"Ht75",NA,NA,NA,NA
+"AC75",NA,NA,NA,NA
+"AL75",NA,NA,NA,NA
+"CW","?","cm","d.cr",NA
+"speciesfix",NA,NA,"species",NA
+"standdensity",NA,NA,NA,NA
+"grouping",NA,NA,"grouping",NA
+"coarseroot","?","kg","m.rc",NA

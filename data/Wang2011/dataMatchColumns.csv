@@ -1,4 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
+"Individual",NA,NA,NA,NA
+"Age","?","yr","age",NA
 "Plant height (cm)","c,d7,p3","cm","h.t",NA
 "Stem diameter at base (cm)","c,d7,p3","cm","d.ba",NA
 "Total fresh mass (g)",NA,NA,NA,NA
@@ -10,5 +12,3 @@
 "Total leaf fresh mass (g)",NA,NA,NA,NA
 "Total leaf dry mass (g)","m3","g","m.lf",NA
 "Total leaf area(cm2)","a5","cm2","a.lf",NA
-"Individual",NA,NA,NA,NA
-"Age","?","yr","age",NA

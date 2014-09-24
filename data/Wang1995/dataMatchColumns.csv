@@ -1,9 +1,10 @@
 "var_in","method","unit_in","var_out","notes"
+"TREE_NO",NA,NA,NA,NA
 "DBH (cm)","?","cm","d.bh",NA
 "HEIGHT (m)","?","m","h.t",NA
 "LEAF (kg)","m3,x1","kg","m.lf",NA
 "BRANCH (kg)","m3","kg","m.br",NA
-"mst","m3","kg","m.st",NA
+"STEMWOOD (kg)",NA,NA,NA,NA
 "STEMBARK (kg)","m3","kg","m.sb",NA
 "TOTAL_ABOVE (kg)","m3","kg","m.so",NA
-"TREE_NO",NA,NA,NA,NA
+"mst","m3","kg","m.st",NA

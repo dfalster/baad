@@ -1,4 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
+"species",NA,NA,"species",NA
+"treatment",NA,NA,NA,NA
 "a.cs","?","m2","a.cs",NA
 "h.c","?","m","h.c",NA
 "h.t","?","m","h.t",NA
@@ -9,4 +11,4 @@
 "d.st","x2","kg.l","r.st",NA
 "lf.ma","a1,m3,x1,x3","g.m2","ma.ilf",NA
 "a.cp","?","m2","a.cp",NA
-"species",NA,NA,"species",NA
+"grouping",NA,NA,"grouping",NA

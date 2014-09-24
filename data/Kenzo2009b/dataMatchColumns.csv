@@ -1,4 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
+"contributor",NA,NA,NA,NA
+"family",NA,NA,"family",NA
+"species",NA,NA,"species",NA
 "a.stba.cm","d1,f","cm","d.ba",NA
 "a.stbh.cm","d3","cm","d.bh",NA
 "a.stbc.cm",NA,NA,NA,NA
@@ -10,9 +13,6 @@
 "m.rt.kg","m4,x1","kg","m.rt",NA
 "lf.ma.g.m2","m3,x1","g.m2","ma.ilf",NA
 "d.st.g.cm3","?","g.cm3","r.st",NA
-"contributor",NA,NA,NA,NA
-"family",NA,NA,"family",NA
-"species",NA,NA,"species",NA
 "pft",NA,NA,"pft",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "status",NA,NA,"status",NA
@@ -20,6 +20,8 @@
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "vegetation",NA,NA,"vegetation",NA
+"lai.m2.m2",NA,NA,NA,NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
 "reference",NA,NA,NA,NA
+"grouping",NA,NA,"grouping",NA

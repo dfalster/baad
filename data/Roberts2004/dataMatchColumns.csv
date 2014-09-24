@@ -1,9 +1,18 @@
 "var_in","method","unit_in","var_out","notes"
+"Plot",NA,NA,NA,NA
+"Tree",NA,NA,NA,NA
+"Treat",NA,NA,NA,NA
 "DBH","d3","cm","d.bh",NA
+"Hite_a",NA,NA,NA,NA
 "Hite_m","d1,f","m","h.t",NA
 "Ht BLC","d1,f","m","h.c",NA
-"cw","x2","m","d.cr",NA
+"CW1",NA,NA,NA,NA
+"CW2",NA,NA,NA,NA
 "stem_wood","e2","g","m.st",NA
 "crown_wood","e2","g","m.br",NA
+"tot_wood",NA,NA,NA,NA
 "tot_fol","m4,x1","g","m.lf",NA
+"tot_tree",NA,NA,NA,NA
 "treela","a4","m2","a.lf",NA
+"grouping",NA,NA,"grouping",NA
+"cw","x2","m","d.cr",NA

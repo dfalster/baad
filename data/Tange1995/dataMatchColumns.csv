@@ -4,8 +4,8 @@
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "vegetation",NA,NA,"vegetation",NA
-"family",NA,NA,"family",NA
 "species",NA,NA,"species",NA
+"family",NA,NA,"family",NA
 "pft",NA,NA,"pft",NA
 "age","?","yr","age",NA
 "h.t","?","m","h.t",NA
@@ -15,4 +15,6 @@
 "m.st","j,e2,m4","kg","m.st",NA
 "m.so","m4","kg","m.so",NA
 "m.br","m4","kg","m.br",NA
+"m.rt",NA,NA,NA,NA
+"m.to",NA,NA,NA,NA
 "growingCondition",NA,NA,"growingCondition",NA

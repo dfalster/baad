@@ -1,4 +1,6 @@
 "var_in","method","unit_in","var_out","notes"
+"Genus",NA,NA,NA,NA
+"Species",NA,NA,"species",NA
 "root mass (g)","m3","g","m.rt",NA
 "trunk mass (g)","m3","g","m.st",NA
 "branch mass (g)","m3","g","m.br",NA
@@ -9,5 +11,3 @@
 "crown area (cm^2)","f","cm2","a.cp",NA
 "height (cm)","?","cm","h.t",NA
 "stem diameter (mm)","d1,f","mm","d.ba",NA
-"Species",NA,NA,"species",NA
-"Genus",NA,NA,NA,NA

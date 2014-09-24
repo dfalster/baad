@@ -4,10 +4,11 @@
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "vegetation",NA,NA,"vegetation",NA
-"family",NA,NA,"family",NA
 "species",NA,NA,"species",NA
+"family",NA,NA,"family",NA
 "pft",NA,NA,"pft",NA
 "d.bh","d3","m","d.bh",NA
+"h.t",NA,NA,NA,NA
 "m.lf","mx1,m4,1","kg","m.lf",NA
 "m.st","j,e2,m3,m4","kg","m.st",NA
 "m.so","m3,m4","kg","m.so",NA

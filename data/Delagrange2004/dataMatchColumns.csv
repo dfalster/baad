@@ -1,4 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
+"Contributor",NA,NA,NA,NA
+"Family",NA,NA,"family",NA
+"Species",NA,NA,"species",NA
 "Age","?","yr","age",NA
 "LeafArea","e1","cm2","a.lf",NA
 "Diam at colar height","?","cm","d.ba",NA
@@ -14,12 +17,10 @@
 "lf.ma","m3,x1","g.m2","ma.ilf",NA
 "d.st","?","kg.l","r.st",NA
 "n.lf","?","g.g","n.lf",NA
-"Light","l4",NA,"light",NA
-"Contributor",NA,NA,NA,NA
-"Family",NA,NA,"family",NA
-"Species",NA,NA,"species",NA
 "pft",NA,NA,"pft",NA
 "growingCondition",NA,NA,"growingCondition",NA
+"Light","l4",NA,"light",NA
+"Group",NA,NA,NA,NA
 "Location",NA,NA,"location",NA
 "Latitude",NA,"deg","latitude",NA
 "Longitude",NA,"deg","longitude",NA
@@ -29,3 +30,4 @@
 "Reference",NA,NA,NA,NA
 "Last perturbation",NA,NA,NA,NA
 "Tree_ID",NA,NA,NA,NA
+"grouping",NA,NA,"grouping",NA

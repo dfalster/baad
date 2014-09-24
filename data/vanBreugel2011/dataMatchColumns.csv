@@ -6,6 +6,7 @@
 "vegetation",NA,NA,"vegetation",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
+"grouping",NA,NA,"grouping",NA
 "species",NA,NA,"species",NA
 "family",NA,NA,"family",NA
 "pft",NA,NA,"pft",NA
@@ -14,6 +15,7 @@
 "h.c","d6","m","h.c",NA
 "d.ba","v3","cm","d.ba",NA
 "d.bh","d3","cm","d.bh",NA
+"c.d",NA,NA,NA,NA
 "m.lf","m3,x1","kg","m.lf",NA
 "m.st","m3","kg","m.st",NA
 "m.so","m3","kg","m.so",NA

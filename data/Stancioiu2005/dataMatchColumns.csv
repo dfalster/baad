@@ -1,16 +1,16 @@
 "var_in","method","unit_in","var_out","notes"
+"tree",NA,NA,NA,NA
 "dbh","j","cm","d.bh",NA
 "hgt","c,d7,p3","m","h.t",NA
+"stratum",NA,NA,NA,NA
+"crown class",NA,NA,"status",NA
 "hgt crown base","c,d7,p3","m","h.c",NA
 "foliage mass","m5","kg","m.lf",NA
+"% foliate mass by morphology type.1",NA,NA,NA,NA
+"% foliate mass by morphology type.2",NA,NA,NA,NA
+"% foliate mass by morphology type.3",NA,NA,NA,NA
+"% foliate mass by morphology type.4",NA,NA,NA,NA
+"% foliate mass by morphology type.5",NA,NA,NA,NA
 "BH Sapwood area","j","cm2","a.ssbh",NA
 "BLC sapwood area","j","cm2","a.ssbc",NA
 "Leaf Area","a1,a4,x1","m2","a.lf",NA
-"tree",NA,NA,NA,NA
-"stratum",NA,NA,NA,NA
-"crown class",NA,NA,"status",NA
-"% foliate mass by morphology type",NA,NA,NA,NA
-"% foliate mass by morphology type",NA,NA,NA,NA
-"% foliate mass by morphology type",NA,NA,NA,NA
-"% foliate mass by morphology type",NA,NA,NA,NA
-"% foliate mass by morphology type",NA,NA,NA,NA

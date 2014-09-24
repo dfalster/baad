@@ -1,4 +1,9 @@
 "var_in","method","unit_in","var_out","notes"
+"dataset",NA,NA,NA,NA
+"Country",NA,NA,"location",NA
+"Forest.type",NA,NA,NA,NA
+"Species",NA,NA,"species",NA
+"Family",NA,NA,"family",NA
 "a.lf","a4","m2","a.lf",NA
 "h.t","?","m","h.t",NA
 "m.lf","m3,x6","kg","m.lf",NA
@@ -9,8 +14,3 @@
 "h.c","?","m","h.c",NA
 "a.cp","?","m2","a.cp",NA
 "d.ba","d1,f","m","d.ba",NA
-"dataset",NA,NA,NA,NA
-"Country",NA,NA,"location",NA
-"Forest.type",NA,NA,NA,NA
-"Species",NA,NA,"species",NA
-"Family",NA,NA,"family",NA

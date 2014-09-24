@@ -1,13 +1,52 @@
 "var_in","method","unit_in","var_out","notes"
+"sampling year",NA,NA,NA,NA
+"site code",NA,NA,NA,NA
+"Site type",NA,NA,NA,NA
+"ruutu",NA,NA,NA,NA
+"PUU",NA,NA,NA,NA
+"LUOKKA",NA,NA,NA,NA
+"ALALUOKKA",NA,NA,NA,NA
 "tree age","n1","yr","age",NA
+"HDCLASS",NA,NA,NA,NA
+"hd",NA,NA,NA,NA
 "D13","d3","mm","d.bh",NA
 "tree height CM","c,d7,p3","cm","h.t",NA
-"hcb","c,d7,p3","cm","h.c",NA
+"crown length cm",NA,NA,NA,NA
+"stem bark mass KG",NA,NA,NA,NA
 "branch mass","k4","kg","m.br",NA
+"branch (heartwood)",NA,NA,NA,NA
+"branch (sapwood)",NA,NA,NA,NA
 "needle mass","m4,x1,k4","kg","m.lf",NA
+"stem sapwood mass",NA,NA,NA,NA
+"stem heartwood mass",NA,NA,NA,NA
+"stem mass","j,v2,v1","kg","m.st",NA
+"above ground biomass",NA,NA,NA,NA
+"needle area cm^2","e1,a5","cm2","a.lf",NA
+"spesnpa cm^2/g",NA,NA,NA,NA
+"below ground",NA,NA,NA,NA
+"stump",NA,NA,NA,NA
+"roots (>20 cm)",NA,NA,NA,NA
+"scoarce roots (0,5-20 cm)",NA,NA,NA,NA
+"fineroots (< 0,2 mm) estim.","r1,m4","kg","m.rf",NA
+"total biomass",NA,NA,NA,NA
+"tap root",NA,NA,NA,NA
+" j 0-0,5 mm kg",NA,NA,NA,NA
+" j 0,5-2cm",NA,NA,NA,NA
+"j 2- cm",NA,NA,NA,NA
+"hclass",NA,NA,NA,NA
+"ageclass",NA,NA,NA,NA
+"RKUORI%",NA,NA,NA,NA
+"oksa%",NA,NA,NA,NA
+"neulas%",NA,NA,NA,NA
+"MRM%",NA,NA,NA,NA
+"MRSP%",NA,NA,NA,NA
+"below ground%",NA,NA,NA,NA
+"stump%",NA,NA,NA,NA
+"lsuhde",NA,NA,NA,NA
+"latitude",NA,NA,NA,NA
+"longitude",NA,NA,NA,NA
+"grouping",NA,NA,"grouping",NA
+"hcb","c,d7,p3","cm","h.c",NA
 "m.ss","j","kg","m.ss",NA
 "m.sh","j","kg","m.sh",NA
-"stem mass","j,v2,v1","kg","m.st",NA
-"needle area cm^2","e1,a5","cm2","a.lf",NA
 "m.rc","m4","kg","m.rc",NA
-"fineroots (< 0,2 mm) estim.","r1,m4","kg","m.rf",NA

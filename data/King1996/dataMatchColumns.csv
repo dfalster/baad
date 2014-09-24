@@ -4,7 +4,7 @@
 "Height (m)","p4","m","h.t",NA
 "D1.10","d4,v3,x1","cm","d.ba",NA
 "Crown width (m)","f,d1,f","m","d.cr",NA
-"Lowest leaf height (m)","d6","m","h.c",NA
 "Ave Leaf Height (m)",NA,NA,NA,NA
+"Lowest leaf height (m)","d6","m","h.c",NA
 "Crown length","d8","m","c.d",NA
 "h.bh",NA,"m","h.bh","diameter measured at 1/10th of tree height"

@@ -1,4 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
+"Reference publication",NA,NA,NA,NA
+"Species",NA,NA,"species",NA
+"Family",NA,NA,"family",NA
 "Age","?","yr","age",NA
 "Total leaf area","a4,a7,e1,k4","m2","a.lf",NA
 "Individual leaf size_equals_projected AREA","a1,x1","m2","a.ilf",NA
@@ -8,6 +11,7 @@
 "Crown projected area","?","m2","a.cp",NA
 "Crown surface area","?","m2","a.cs",NA
 "Height to crown base","?","m","h.c",NA
+"Height of crown",NA,NA,NA,NA
 "Total height of plant","?","m","h.t",NA
 "Total leaf mass","m3,x1","kg","m.lf",NA
 "Stem mass","?","kg","m.st",NA
@@ -19,10 +23,10 @@
 "Coarse root mass","?","kg","m.rc",NA
 "Total root mass","?","kg","m.rt",NA
 "Leaf mass per area","m3,a4,a7,x1","kg.m2","ma.ilf",NA
-"Density of stem sapwood","?","g.cm3","r.ss",NA
-"Density of stem heartwood","?","g.cm3","r.sh",NA
 "Density of stem tissue","?","g.cm3","r.st",NA
+"Density of stem sapwood","?","g.cm3","r.ss",NA
 "Density of stem bark","?","g.cm3","r.sb",NA
+"Density of stem heartwood","?","g.cm3","r.sh",NA
 "Leaf nitrogen","?","kg.kg","n.lf",NA
 "Sapwood nitrogen","?","kg.kg","n.ss",NA
 "Bark nitrogen","?","kg.kg","n.sb",NA
@@ -30,10 +34,6 @@
 "Fine roots nitrogen","?","kg.kg","n.rf",NA
 "Coarse root nitrogen","?","kg.kg","n.rc",NA
 "LAI","?","m2.m2","lai",NA
-"Reference publication",NA,NA,NA,NA
-"Species",NA,NA,"species",NA
-"Family",NA,NA,"family",NA
-"Height of crown",NA,NA,NA,NA
 "pft",NA,NA,"pft",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "Position inforest canopy",NA,NA,"status",NA
