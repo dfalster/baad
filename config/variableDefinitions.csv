@@ -2,7 +2,7 @@ variable,units,unitsMD,group,type,methods,essential,label,minValue,maxValue,allo
 location,NA,NA,site,character,FALSE,TRUE,location,,,,name of location where sampled
 latitude,deg,deg,site,numeric,FALSE,TRUE,latitude,-90,90,,latitude of location where sampled (-90 to 90 deg South to North)
 longitude,deg,deg,site,numeric,FALSE,TRUE,longitude,-180,180,,longitude of location where sampled (-180 to 180 West to East)
-vegetation,NA,NA,site,character,FALSE,TRUE,vegetation,,,,vegetation type where sampled if grown in field (leave blank for plantations / glasshouse / common garden): Sav = Savannah; TropRF = Tropical rainforest; TempRF = Temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temperate forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
+vegetation,NA,NA,site,character,FALSE,TRUE,vegetation,,,"Sav,TropRF,TempRF,TropSF,TempF,BorF,Wo,Gr,Sh,De",vegetation type where sampled if grown in field (leave blank for plantations / glasshouse / common garden): Sav = Savannah; TropRF = Tropical rainforest; TempRF = Temperate rainforest; TropSF = Tropical seasonal forest; TempF = Temperate forest; BorF = Boreal forest; Wo = Woodland; Gr = Grassland; Sh = Shrubland; De = Desert
 map,mm,mm,site,numeric,FALSE,FALSE,map,100,12000,,mean annual rainfall (wild grown plants only)
 mat,deg,deg,site,numeric,FALSE,FALSE,mat,-20,40,,mean annual temperature (wild grown plants only)
 grouping,NA,NA,stand,character,FALSE,FALSE,grouping,,,,any information about growing environment of sampled plant such as treatment or subplot
