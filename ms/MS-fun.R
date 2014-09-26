@@ -27,7 +27,7 @@ getMetadataDesign  <-  function(studyName) {
 getMetadataMethods  <-  function(studyName) {
 	metadata  <-  readStudyFile(studyName, "studyMetadata.csv")
 	if(nrow(metadata) > 0) {
-		metadata  <-  metadata[!is.na(metadata$Description) & !(tolower(metadata$Topic) %in% c('sampling strategy', 'age', 'growth environment')),]
+		metadata  <-  metadata[!is.na(metadata$Description) & !(tolower(metadata$Topic) %in% c('sampling strategy', 'age', 'growth environment', 'acknowledgements')),]
 		pasteC(paste0(metadata$Topic, ': ', metadata$Description), '\n\t- ')
 	}
 }
@@ -85,8 +85,8 @@ removeNAcols <- function(dfr, exclude = c("empty")){
 }
 
 getLatLon <- function(data){
-	uniquesites <- data[-duplicated(paste(data$longitude, data$latitude))]
-	pasteC(sprintf("%3.2f, %3.2f", as.numeric(uniquesites$latitude), as.numeric(uniquesites$longitude)),';  ')
+	uniquesites <- data[!duplicated(paste(data$longitude, data$latitude)),]
+	pasteC(sprintf("%s, %s",prettyNum(uniquesites$latitude), prettyNum(uniquesites$longitude)), "; ")
 }
 
 studyDetails  <-  function(data) {
@@ -102,6 +102,7 @@ studyDetails  <-  function(data) {
  	    '2. Experimental or sampling design',
 		'\t- Design characteristics: {{metadataDesign}}',
  	    '\t- Variables included: {{vars}}',
+ 	    '\t- Species sampled: *{{species}}*',
  	    '3. Research methods',
 		'\t- {{lab}}',
 		'4. Study contacts: {{personell}}'
@@ -119,7 +120,8 @@ studyDetails  <-  function(data) {
            	          	readStudyFile(unique(data$studyName), "studyContact.csv")[,"name", drop=TRUE],", "),
            	          citation=getCitation(data$studyName[1]),
            	          vars=pasteC(names(removeNAcols(data,
-           	          	exclude = c("studyName","species","speciesMatched","location", "latitude","longitude","vegetation","map","mat","family","pft","growingCondition", "grouping"))), ", ")
+           	          	exclude = c("studyName","species","speciesMatched","location", "latitude","longitude","vegetation","map","mat","family","pft","growingCondition", "grouping"))), ", "),
+           	          species=pasteC(unique(data$species), ", ")
                  ))
 }
 

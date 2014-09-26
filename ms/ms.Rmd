@@ -188,20 +188,21 @@ kable(summaryTable(data, var.def), "markdown", align="l", padding=10)
 
 ## ACKNOWLEDGMENTS
 
-D.S. Falster, A. Vårhammer and D.R. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to R.A. Duursma. R.G. FitzJohn was supported by the Science and Industry Endowment Fund (RP04-174). M.I. Ishihara was supported by the Environmental Research and Technology Development Fund (S-9-3) of the Ministry of the Environment, Japan. We thank Takahiro Inoue, Hayato Aoyama and Shin-ichiro Aiba for valuable assistance. In addition, the authors thank the following people for contributions to the following studies:
+**Compilers:** D.S. Falster, A. Vårhammer and D.R. Barneche were employed on an ARC discovery grant to Falster (DP110102086) and a UWS start-up grant to R.A. Duursma. R.G. FitzJohn was supported by the Science and Industry Endowment Fund (RP04-174). M.I. Ishihara was supported by the Environmental Research and Technology Development Fund (S-9-3) of the Ministry of the Environment, Japan. We thank Takahiro Inoue, Hayato Aoyama and Shin-ichiro Aiba for valuable assistance.
 
+In addition, we thank the following people for contributions to the following studies:
 ```{r,results="asis",echo=FALSE, message=FALSE}
-
 getAcknowledgments <- function(studyName) {
   metadata  <-  readStudyFile(studyName, "studyMetadata.csv")
   i <- match("Acknowledgements",metadata$Topic)
   out <- ""
   if(!is.na(i))
-    out <- sprintf("- %s: %s.\n", studyName, metadata$Description[i])
+    out <- sprintf(" **%s:** %s;", studyName, metadata$Description[i])
   out
 }
 writeLines(paste(sapply(unique(data$studyName), getAcknowledgments), collapse= ""))
 ```
+.
 
 ## REFERENCES
 

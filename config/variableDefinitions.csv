@@ -32,7 +32,7 @@ a.cs,m2,m<sup>2</sup>,tree,numeric,TRUE,FALSE,crown surface area,1.00E-20,10000,
 h.t,m,m,tree,numeric,TRUE,FALSE,height,1.00E-20,150,,total height of plant from ground to highest leaf
 h.c,m,m,tree,numeric,TRUE,FALSE,height to crown base,0,100,,height to crown base
 d.ba,m,m,tree,numeric,TRUE,FALSE,basal diameter,1.00E-20,25,,diameter of stem at base
-d.bh,m,m,tree,numeric,TRUE,FALSE,dbh,1.00E-20,25,,diameter of stem at breast height (~1.35cm)
+d.bh,m,m,tree,numeric,TRUE,FALSE,dbh,1.00E-20,25,,diameter of stem at breast height
 h.bh,m,m,tree,numeric,FALSE,FALSE,height of d.bh measurement,1.00E-20,50,,height at which diameter at breast height (d.bh) is measured
 d.cr,m,m,tree,numeric,TRUE,FALSE,crown width,1.00E-20,100,,diameter or width of crown
 c.d,m,m,tree,numeric,TRUE,FALSE,crown depth,1.00E-20,100,,crown depth
