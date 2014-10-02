@@ -30,6 +30,8 @@ writeLines(paste("**List of Authors:** ", paste0(details$authors, "^", details$a
 writeLines("\n\n")
 
 writeLines(paste0(details$address$code, ". ", details$address$address, collapse="\n"))
+
+write.csv(data.frame(name=details$authors, email=details$emails, address=details$address$address[match(details$address_code, details$address$code)]), "../output/authors.csv", row.names=FALSE)
 ```
 
 ```{r precite, results='hide', message=FALSE, echo=FALSE}
