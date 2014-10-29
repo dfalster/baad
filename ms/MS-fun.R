@@ -136,9 +136,13 @@ getLastName  <-  function(authorNames) {
 authorDetails  <-  function(data, root="..") {
 	firstAuthors   <-  read.csv(file.path(root, "config", "contact.csv"), header = TRUE,
         na.strings = c(NA,''), stringsAsFactors = FALSE, strip.white = TRUE)
-	dataAuthors <- arrange(ldply(unique(data$studyName),function(x) readStudyFile(x, "studyContact.csv", root=root)), name)
-	allAuthors <- rbind(firstAuthors,
-		dataAuthors[order(getLastName(dataAuthors$name)),])
+	dataAuthors <- arrange(ldply(unique(data$studyName),
+                               function(x) readStudyFile(x, "studyContact.csv", root=root)), name)
+	
+	dataAuthors <- dataAuthors[order(getLastName(dataAuthors$name)),]
+  cols <- c("name","email","address")
+  allAuthors <- rbind(firstAuthors[,cols],
+		dataAuthors[,cols])
 	allAuthors <- allAuthors[!duplicated(allAuthors$name),]
 
 	authors <- allAuthors$name
