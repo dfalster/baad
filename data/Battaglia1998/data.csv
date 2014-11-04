@@ -1,0 +1,37 @@
+dataset,location,latitude,longitude,map,mat,species,growingcondition,dominanceclass,stem.ha-1,harvest_year,age,tree_id,d.bhcm,d.bacm,h.t,h.c,d.ccm,a.ssbhcm2,a.sbhcm2,a.ssbccm2,a.shbccm2,a.lf,SLAcm2g-1
+Battaglia1998,"Creekton B1/3, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,1,1430,1996,7,B1-3CL1,6.5,4.1,9.23,4.51,4.1,23.4,5,10.4,0,5.9197,55.4
+Battaglia1998,"Creekton B1/3, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,2,1430,1996,7,B1-3CL2,9.8,7.4,12.91,5.02,7.4,51.4,12.6,35.8,0,15.74191,47.9
+Battaglia1998,"Creekton B1/3, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,3,1430,1996,7,B1-3CL3,11.6,8.9,11.83,3.85,8.9,72.2,16.4,51.7,0,20.79007,46.2
+Battaglia1998,"Creekton B1/3, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,4,1430,1996,7,B1-3CL4,13,10.2,11.85,4.11,10.2,78,33.5,68.5,0,30.5246,48.3
+Battaglia1998,"Creekton B1/3, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,5,1430,1996,7,B1-3CL5,14.2,10,14.6,6.13,10,70.2,65.5,61.4,5.1,22.83578,47.2
+Battaglia1998,"Creekton B1/3, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,6,1430,1996,7,B1-3CL6,17.7,14.6,15.12,4.6,14.6,137.8,68.4,128.3,19.4,67.7661,47.7
+Battaglia1998,"Creekton c1/2, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,1,1430,1996,7,C1-2CL1,7.7,4.8,11.23,5.8,4.8,27,10.5,14.8,0,7.6011,64.5
+Battaglia1998,"Creekton c1/2, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,2,1430,1996,7,C1-2CL2,12.9,9.2,13.68,5.03,9.2,50.9,54.4,36.7,18.5,25.1286,52.3
+Battaglia1998,"Creekton c1/2, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,3,1430,1996,7,C1-2CL3,14.5,11.9,14.35,4.66,11.9,91.8,47,87.2,7.5,42.4977,51.6
+Battaglia1998,"Creekton c1/2, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,4,1430,1996,7,C1-2CL4,16.7,9.9,16.47,8,9.9,54.4,133.5,32.9,33.1,28.1292,49.2
+Battaglia1998,"Creekton c1/2, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,5,1430,1996,7,C1-2CL5,19.7,16,18.7,5.89,16,147.2,104.7,123.1,44.4,76.6598,49.4
+Battaglia1998,"Creekton c1/2, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,6,1430,1996,7,C1-2CL6,22.9,17.4,18.98,5.91,17.4,137.4,199.3,125.1,68.1,80.6192,47
+Battaglia1998,"CreektonNutr-A, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,1,1430,1996,7,NUTACL1,3.6,2.8,4.6,2.14,2.8,7,0,3.5,0,0.600673,61.9
+Battaglia1998,"CreektonNutr-A, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,2,1430,1996,7,NUTACL2,6.5,5.7,7.01,2.03,5.7,20.7,3.5,19.8,0,5.1174,55.2
+Battaglia1998,"CreektonNutr-A, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,3,1430,1996,7,NUTACL3,8.2,6.7,9.27,2.75,6.7,35.3,7.2,28.2,0,3.73558,47
+Battaglia1998,"CreektonNutr-A, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,4,1430,1996,7,NUTACL4,9.9,7.8,9.83,3.23,7.8,46,12.6,37.1,0,11.91757,48.4
+Battaglia1998,"CreektonNutr-A, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,5,1430,1996,7,NUTACL5,11.5,11.6,11.02,1.37,11.6,74.3,10.7,75.7,10.2,23.0979,48.2
+Battaglia1998,"CreektonNutr-A, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,6,1430,1996,7,NUTACL6,15.4,19.4,12.44,0.26,19.4,114.7,33.3,150.3,67,55.7443,45.9
+Battaglia1998,"GouldsQP1, Tasmania, Australia",43D18MS,147D36ME,,,Eucalyptus nitens,PM,1,1430,1996,6,QP1CL1,9.9,6.4,13.21,6.35,6.4,37.8,30.1,25.7,1.1,10.47331,58.9
+Battaglia1998,"GouldsQP1, Tasmania, Australia",43D18MS,147D36ME,,,Eucalyptus nitens,PM,2,1430,1996,6,QP1CL2,14.1,11,14.75,4.82,11,93.7,32.8,75.5,0,36.80378,52
+Battaglia1998,"GouldsQP1, Tasmania, Australia",43D18MS,147D36ME,,,Eucalyptus nitens,PM,3,1430,1996,6,QP1CL3,15.6,13.7,16.94,4.18,13.7,115.7,39.3,111.8,12.4,38.48289,55.6
+Battaglia1998,"GouldsQP1, Tasmania, Australia",43D18MS,147D36ME,,,Eucalyptus nitens,PM,4,1430,1996,6,QP1CL4,17.4,15.5,16.87,4.6,15.5,155.7,37.4,134.5,0.7,71.20959,51.4
+Battaglia1998,"GouldsQP1, Tasmania, Australia",43D18MS,147D36ME,,,Eucalyptus nitens,PM,5,1430,1996,6,QP1CL5,18.75,16,16.96,4.55,16,124.5,98.7,117.9,42.5,60.22596,53.5
+Battaglia1998,"GouldsQP1, Tasmania, Australia",43D18MS,147D36ME,,,Eucalyptus nitens,PM,6,1430,1996,6,QP1CL6,21.2,16.9,18.85,5.35,16.9,171.4,129.5,145,40.5,102.18025,45.6
+Battaglia1998,"Lewisham, Tasmania, Australia",42D49MS,147D35ME,,,Eucalyptus nitens,PM,1,1430,1996,6,LEWCL1,9,8.4,10.65,2.47,8.4,51.2,0,44,0,17.7488,58.3
+Battaglia1998,"Lewisham, Tasmania, Australia",42D49MS,147D35ME,,,Eucalyptus nitens,PM,2,1430,1996,6,LEWCL2,14.2,13.2,12.74,2.3,13.2,88.6,40.8,83.8,27.3,42.3749,48.5
+Battaglia1998,"Lewisham, Tasmania, Australia",42D49MS,147D35ME,,,Eucalyptus nitens,PM,3,1430,1996,6,LEWCL3,15.5,13.9,14.18,3.27,13.9,77.2,74.7,85.9,40.6,56.4259,50.5
+Battaglia1998,"Lewisham, Tasmania, Australia",42D49MS,147D35ME,,,Eucalyptus nitens,PM,4,1430,1996,6,LEWCL4,17,13.6,14.92,4.2,13.6,117.3,66.2,106.5,14.1,45.9158,52.9
+Battaglia1998,"Lewisham, Tasmania, Australia",42D49MS,147D35ME,,,Eucalyptus nitens,PM,5,1430,1996,6,LEWCL5,18.8,17.4,14.4,2.4,17.4,141.6,88.1,140.1,57.7,81.0053,51.3
+Battaglia1998,"Lewisham, Tasmania, Australia",42D49MS,147D35ME,,,Eucalyptus nitens,PM,6,1430,1996,6,LEWCL6,20.2,17.8,14.55,3.57,17.8,145.7,128.2,147.9,68.3,102.5096,57.1
+Battaglia1998,"Wyena, Tasmania, Australia",41D10MS,147D17ME,,,Eucalyptus nitens,PM,1,1430,1996,7,WYEN1,4.3,2.3,4.16,2.63,2.3,11,0,3,0,0.82889,
+Battaglia1998,"Wyena, Tasmania, Australia",41D10MS,147D17ME,,,Eucalyptus nitens,PM,2,1430,1996,7,WYEN2,5.3,3.7,5.71,2.71,3.7,16.7,0,8.3,0,2.64853,
+Battaglia1998,"Wyena, Tasmania, Australia",41D10MS,147D17ME,,,Eucalyptus nitens,PM,3,1430,1996,7,WYEN3,6.3,5.3,5.13,2.34,5.3,17.8,8.9,12.3,6.4,4.06117,
+Battaglia1998,"Wyena, Tasmania, Australia",41D10MS,147D17ME,,,Eucalyptus nitens,PM,4,1430,1996,7,WYEN4,7.5,4.7,6.01,3.27,4.7,20.1,17.8,11.7,1.2,3.33439,
+Battaglia1998,"Wyena, Tasmania, Australia",41D10MS,147D17ME,,,Eucalyptus nitens,PM,5,1430,1996,7,WYEN5,8.4,8,6.76,1.83,8,43.4,0,38.3,0,11.30981,
+Battaglia1998,"Wyena, Tasmania, Australia",41D10MS,147D17ME,,,Eucalyptus nitens,PM,6,1430,1996,7,WYEN6,10.3,7.3,7.93,3.62,7.3,42.2,21.2,29.7,2.1,11.23466,

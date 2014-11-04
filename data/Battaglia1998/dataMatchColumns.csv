@@ -1,0 +1,12 @@
+var_in,method,unit_in,var_out,notes
+d.bhcm,p1,cm,d.bh,
+d.bacm,p1,cm,d.ba,
+h.t,p3,m,h.t,
+h.c,p3,m,h.c,
+astbc,p1,cm2,a.stbc
+a.ssbhcm2,p1,cm2,a.ssbh,
+a.ssbccm2,p1,cm2,a.ssbc,
+a.shbccm2,p1,cm2,a.shbc,
+a.lf,k3,m2,a.lf,
+"SLAcm2g-1",k3,cm2.g,ma.ilf,
+dominanceclass,,,status,
