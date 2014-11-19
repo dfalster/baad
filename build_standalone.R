@@ -4,6 +4,7 @@ source("functions_support.R")
 source("functions_combine.R")
 
 source("functions_evil.R")
+source("config/postProcess.R")
 
 res <- build_baad()
 cmp <- readRDS("baad_ref2.rds")

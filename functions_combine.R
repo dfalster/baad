@@ -1,15 +1,5 @@
 ## This is designed to mimic the current assembly, and will change
 ## considerably.
-make_config <- function() {
-  config <- list()
-  config$var_def <- read_csv("config/variableDefinitions.csv")
-  config$conversions <-
-    read_csv("config/variableConversion.csv")
-  config$post_process <-
-    get_function_from_source("postProcess", "config/postProcess.R")
-  config
-}
-
 load_study_helper <- function(study_name,
                               variable_definitions,
                               conversions) {
@@ -27,20 +17,17 @@ load_study_helper <- function(study_name,
 }
 
 build_baad <- function(verbose=TRUE) {
-  config <- make_config()
+  variable_definitions <- read_csv("config/variableDefinitions.csv")
+  conversions <- read_csv("config/variableConversion.csv")
+
   study_names <- dir("data")
 
   d <- lapply(study_names, load_study_helper,
-              config$var_def, config$conversion)
+              variable_definitions, conversions)
   names(d) <- study_names
 
   for (i in seq_along(d)) {
     d[[i]]$bibtex <- set_bib_key(d[[i]]$bibtex, study_names[[i]])
-  }
-
-  post_process <- config$post_process
-  for (i in seq_along(d)) {
-    d[[i]]$data <- post_process(d[[i]]$data)
   }
 
   # combine into single object
@@ -53,9 +40,9 @@ build_baad <- function(verbose=TRUE) {
               contacts=combine("contacts", d),
               references=combine("references", d))
 
-  ret$data <- fix_types(ret$data, config)
+  ret$data <- fix_types(ret$data, variable_definitions)
   ret$bibtex <- do.call("c", unname(lapply(d, "[[", "bibtex")))
-  ret$dictionary <- config$var_def
+  ret$dictionary <- variable_definitions
 
   ret
 }
