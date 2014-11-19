@@ -24,25 +24,21 @@ build_baad <- function(verbose=TRUE) {
 
   d <- lapply(study_names, load_study_helper,
               variable_definitions, conversions)
-  names(d) <- study_names
+  combine_baad(d=d, variable_definitions=variable_definitions)
+}
 
-  for (i in seq_along(d)) {
-    d[[i]]$bibtex <- set_bib_key(d[[i]]$bibtex, study_names[[i]])
-  }
-
-  # combine into single object
+combine_baad <- function(..., d=list(...), variable_definitions) {
   combine <- function(name, d) {
     ret <- plyr::ldply(d, function(x) x[[name]])
     rename_columns(ret, ".id", "studyName")
   }
+  names(d) <- sapply(d, "[[", "key")
   ret <- list(data=combine("data", d),
               methods=combine("methods", d),
               contacts=combine("contacts", d),
               references=combine("references", d))
 
-  ret$data <- fix_types(ret$data, variable_definitions)
   ret$bibtex <- do.call("c", unname(lapply(d, "[[", "bibtex")))
   ret$dictionary <- variable_definitions
-
   ret
 }

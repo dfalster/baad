@@ -14,11 +14,15 @@ load_study <- function(filename_data_raw,
                           filename_new_data,
                           variable_definitions,
                           conversions)
-  bibentry <- bibtex::read.bib(filename_bib)
+
+  key <- basename(dirname(filename_data_raw))
+  bibentry <- set_bib_key(bibtex::read.bib(filename_bib), key)
+
   methods  <- read_methods(filename_columns, variable_definitions)
   contacts <- read_csv(filename_contact)
 
-  list(data       = data,
+  list(key        = key,
+       data       = data,
        methods    = methods,
        bibtex     = bibentry,
        contacts   = contacts,
