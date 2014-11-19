@@ -4,24 +4,24 @@ read_data_study <- function(study_name, config, verbose=FALSE) {
     message(study_name)
   }
 
-  data <- read_data_raw(study_name, config)
-  data <- manipulate_data(data, study_name, config)
-  data <- convert_data(data, study_name, config)
-  data <- add_all_columns(data, config)
-  data <- add_new_data(data, study_name, config)
-  data <- fix_types(data, config)
+  data <- read_data_raw(study_name)
+  data <- manipulate_data(data, study_name)
+  data <- convert_data(data, study_name, config$var_def, config$conversion)
+  data <- add_all_columns(data, config$var_def)
+  data <- add_new_data(data, study_name)
+  data <- fix_types(data, config$var_def)
   data <- config$post_process(data)
 
-  filename <- data_filename(study_name, config)
+  filename <- file.path("output/cache", paste0(study_name, ".csv"))
   dir.create(dirname(filename), showWarnings=FALSE, recursive=TRUE)
   write.csv(data, filename, row.names=FALSE)
 
   data
 }
 
-read_data_raw <- function(study_name, config) {
-  opts <- read_data_raw_import_options(study_name, config)
-  filename <- file.path(config$dir_data, study_name, opts$name)
+read_data_raw <- function(study_name) {
+  opts <- read_data_raw_import_options(study_name)
+  filename <- file.path("data", study_name, opts$name)
   read.csv(filename,
            ## Special options:
            header=opts$header, skip=opts$skip, na.strings=opts$na.strings,
@@ -37,20 +37,19 @@ read_data_raw <- function(study_name, config) {
 ##
 ## TODO: This needs modifying to deal with scoping issues more
 ## carefully.
-manipulate_data <- function(data, study_name, config) {
-  filename <- file.path(config$dir_data, study_name, "dataManipulate.R")
+manipulate_data <- function(data, study_name) {
+  filename <- file.path("data", study_name, "dataManipulate.R")
   manipulate <- get_function_from_source("manipulate", filename, identity)
   manipulate(data)
 }
 
 ## Convert data to desired format, changing units, variable names
-convert_data <- function(data, study_name, config) {
-  var_match <- read_match_columns(study_name, config)
-  var_match <- var_match[!is.na(var_match$var_out), ]
+convert_data <- function(data, study_name, variable_definitions, conversions) {
+  var_match <- read_match_columns(study_name)
 
   data <- rename_columns(data, var_match$var_in, var_match$var_out)
   
-  info <- column_info(config)
+  info <- column_info(variable_definitions)
 
   ## Change units
   to_check <- intersect(names(data), var_match$var_out)
@@ -62,10 +61,9 @@ convert_data <- function(data, study_name, config) {
     if (unit_from != unit_to) {
       ## TODO: This is absolutely horrible and should change.
       x <- data[[col]]
-      i <- (config$conversion$unit_in == unit_from &
-            config$conversion$unit_out == unit_to)
-      expr <- config$conversion$conversion[i]
-      data[[col]] <- eval(parse(text=expr))
+      i <- (conversions$unit_in == unit_from &
+            conversions$unit_out == unit_to)
+      data[[col]] <- eval(parse(text=conversions$conversion[i]))
     }
   }
 
@@ -76,12 +74,12 @@ convert_data <- function(data, study_name, config) {
 ##
 ## May add or remove columns of data as needed so that all sets have
 ## the same columns.
-add_all_columns <- function(data, config) {
+add_all_columns <- function(data, variable_definitions) {
   na_vector <- function(type, n) {
     rep(list(character=NA_character_, numeric=NA_real_)[[type]], n)
   }
 
-  info <- column_info(config)
+  info <- column_info(variable_definitions)
   missing <- setdiff(info$variable, names(data))
   if (length(missing) != 0) {
     extra <- as.data.frame(lapply(info$type[missing], na_vector, nrow(data)),
@@ -100,8 +98,8 @@ add_all_columns <- function(data, config) {
 ## `newValue`.  If `lookupVariable` is `NA`, then replace all elements
 ## of `newVariable` with the value `newValue`. Note that
 ## lookupVariable can be the same as newVariable.
-add_new_data <- function(data, study_name, config) {
-  filename <- file.path(config$dir_data, study_name, "dataNew.csv")
+add_new_data <- function(data, study_name) {
+  filename <- file.path("data", study_name, "dataNew.csv")
   import <- read.csv(filename, stringsAsFactors=FALSE, strip.white=TRUE)
   if (nrow(import) > 0) {
     import$lookupVariable[import$lookupVariable == ""] <- NA
@@ -126,8 +124,8 @@ add_new_data <- function(data, study_name, config) {
 }
 
 ## Ensures variables have correct type
-fix_types <- function(data, config) {
-  var_def <- config$var_def
+fix_types <- function(data, variable_definitions) {
+  var_def <- variable_definitions
   for (i in seq_along(var_def$variable)) {
     v <- var_def$variable[i]
     data[[v]] <- match.fun(paste0("as.", var_def$type[i]))(data[[v]])

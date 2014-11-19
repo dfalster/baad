@@ -1,17 +1,9 @@
-read_data_processed <- function(studyName, ...) {
-  process_study(studyName, ...)
-}
-
-data_filename <- function(study_name, config) {
-  file.path(config$dir_out, "cache", paste0(study_name, ".csv"))
-}
-
 load_study <- function(study_name, config, verbose=FALSE) {
-  bibentry <- read_reference(study_name, config)
+  bibentry <- read_reference(study_name)
 
   list(data       = read_data_study(study_name, config, verbose),
-       methods    = read_methods(study_name, config),
+       methods    = read_methods(study_name, config$var_def),
        bibtex     = bibentry,
-       contacts   = read_contact(study_name, config),
+       contacts   = read_contact(study_name),
        references = get_citation(bibentry))
 }

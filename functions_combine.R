@@ -1,25 +1,23 @@
 ## This is designed to mimic the current assembly, and will change
 ## considerably.
 make_config <- function() {
-  config <- list(dir_data="data",
-                 dir_out="output",
-                 dir_config="config")
+  config <- list()
   config$var_def <-
-    read.csv(file.path(config$dir_config, "variableDefinitions.csv"),
+    read.csv(file.path("config", "variableDefinitions.csv"),
              stringsAsFactors=FALSE)
   config$conversions <-
-    read.csv(file.path(config$dir_config, "variableConversion.csv"),
+    read.csv(file.path("config", "variableConversion.csv"),
              stringsAsFactors=FALSE, check.names=FALSE)
   config$post_process <-
     get_function_from_source("postProcess",
-                             file.path(config$dir_config, "postProcess.R"),
+                             file.path("config", "postProcess.R"),
                              identity)
   config
 }
 
 build_baad <- function(verbose=TRUE) {
   config <- make_config()
-  study_names <- dir(config$dir_data)
+  study_names <- dir("data")
   d <- lapply(study_names, load_study, config, verbose)
   names(d) <- study_names
 

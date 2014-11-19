@@ -1,5 +1,5 @@
-read_data_raw_import_options <- function(study_name, config) {
-  filename <- file.path(config$dir_data, study_name,
+read_data_raw_import_options <- function(study_name) {
+  filename <- file.path("data", study_name,
                         "dataImportOptions.csv")
   tmp <- read.csv(filename, header=FALSE, row.names=1,
                   stringsAsFactors=FALSE)
@@ -18,8 +18,8 @@ read_data_raw_import_options <- function(study_name, config) {
   import  
 }
 
-read_reference <- function(study_name, config) {
-  filename <- file.path(config$dir_data, study_name, "studyRef.bib")
+read_reference <- function(study_name) {
+  filename <- file.path("data", study_name, "studyRef.bib")
   bib <- bibtex::read.bib(filename)
 
   ## Hack work around to change key in bib entry (bibtex entry
@@ -31,13 +31,12 @@ read_reference <- function(study_name, config) {
   bib_plain
 }
 
-read_methods <- function(study_name, config) {
+read_methods <- function(study_name, variable_definitions) {
   ## TODO: Rename 'methods' to 'is_method' in 'variableDefinitions.csv'
-  vars <- config$var_def$variable[config$var_def$methods]
+  vars <- variable_definitions$variable[variable_definitions$methods]
 
   ## Fill with data from study
-  var_match <- read_match_columns(study_name, config)
-  var_match <- var_match[!is.na(var_match$var_out), ]
+  var_match <- read_match_columns(study_name)
 
   ## Make data frame with all variables requiring methods
   methods <- data.frame(rbind(character(length(vars))), stringsAsFactors=FALSE)
@@ -49,14 +48,15 @@ read_methods <- function(study_name, config) {
   methods
 }
 
-read_match_columns <- function(study_name, config) {
-  filename <- file.path(config$dir_data, study_name, "dataMatchColumns.csv")
-  read.csv(filename, stringsAsFactors=FALSE, na.strings = c("NA", ""),
-           strip.white=TRUE)
+read_match_columns <- function(study_name) {
+  filename <- file.path("data", study_name, "dataMatchColumns.csv")
+  ret <- read.csv(filename, stringsAsFactors=FALSE, na.strings = c("NA", ""),
+                  strip.white=TRUE)
+  ret[!is.na(ret$var_out), ]
 }
 
-read_contact <- function(study_name, config) {
-  filename <- file.path(config$dir_data, study_name, "studyContact.csv")
+read_contact <- function(study_name) {
+  filename <- file.path("data", study_name, "studyContact.csv")
   read.csv(filename, stringsAsFactors=FALSE, strip.white=TRUE)
 }
 
@@ -92,8 +92,8 @@ format_citation <- function(bibentry) {
   citation
 }
 
-column_info <- function(config) {
-  ret <- as.list(config$var_def[c("variable", "type", "units")])
+column_info <- function(variable_definitions) {
+  ret <- as.list(variable_definitions[c("variable", "type", "units")])
   names(ret$type) <- names(ret$units) <- ret$variable
   ret
 }
