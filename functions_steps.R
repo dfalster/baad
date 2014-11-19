@@ -1,27 +1,25 @@
 ## These are the cleaning steps:
-read_data_study <- function(study_name, config, verbose=FALSE) {
-  if (verbose) {
-    message(study_name)
-  }
-
-  data <- read_data_raw(study_name)
-  data <- manipulate_data(data, study_name)
-  data <- convert_data(data, study_name, config$var_def, config$conversion)
-  data <- add_all_columns(data, config$var_def)
-  data <- add_new_data(data, study_name)
-  data <- fix_types(data, config$var_def)
-  data <- config$post_process(data)
-
-  filename <- file.path("output/cache", paste0(study_name, ".csv"))
-  dir.create(dirname(filename), showWarnings=FALSE, recursive=TRUE)
-  write.csv(data, filename, row.names=FALSE)
-
+read_data_study <- function(filename_data_raw,
+                            filename_data_opts,
+                            filename_manipulate,
+                            filename_columns,
+                            filename_new_data,
+                            variable_definitions,
+                            conversions,
+                            post_process) {
+  data <- read_data_raw(filename_data_raw, filename_data_opts)
+  data <- manipulate_data(data, filename_manipulate)
+  data <- convert_data(data, filename_columns, variable_definitions, conversions)
+  data <- add_all_columns(data, variable_definitions)
+  data <- add_new_data(data, filename_new_data)
+  data <- fix_types(data, variable_definitions)
+  ## TODO: move this up out of this function
+  data <- post_process(data)
   data
 }
 
-read_data_raw <- function(study_name) {
-  opts <- read_data_raw_import_options(study_name)
-  filename <- file.path("data", study_name, opts$name)
+read_data_raw <- function(filename, filename_opts) {
+  opts <- read_data_raw_import_options(filename_opts)
   read.csv(filename,
            ## Special options:
            header=opts$header, skip=opts$skip, na.strings=opts$na.strings,
@@ -37,15 +35,14 @@ read_data_raw <- function(study_name) {
 ##
 ## TODO: This needs modifying to deal with scoping issues more
 ## carefully.
-manipulate_data <- function(data, study_name) {
-  filename <- file.path("data", study_name, "dataManipulate.R")
-  manipulate <- get_function_from_source("manipulate", filename, identity)
+manipulate_data <- function(data, filename_manipulate) {
+  manipulate <- get_function_from_source("manipulate", filename_manipulate, identity)
   manipulate(data)
 }
 
 ## Convert data to desired format, changing units, variable names
-convert_data <- function(data, study_name, variable_definitions, conversions) {
-  var_match <- read_match_columns(study_name)
+convert_data <- function(data, filename_columns, variable_definitions, conversions) {
+  var_match <- read_match_columns(filename_columns)
 
   data <- rename_columns(data, var_match$var_in, var_match$var_out)
   
@@ -98,8 +95,7 @@ add_all_columns <- function(data, variable_definitions) {
 ## `newValue`.  If `lookupVariable` is `NA`, then replace all elements
 ## of `newVariable` with the value `newValue`. Note that
 ## lookupVariable can be the same as newVariable.
-add_new_data <- function(data, study_name) {
-  filename <- file.path("data", study_name, "dataNew.csv")
+add_new_data <- function(data, filename) {
   import <- read.csv(filename, stringsAsFactors=FALSE, strip.white=TRUE)
   if (nrow(import) > 0) {
     import$lookupVariable[import$lookupVariable == ""] <- NA

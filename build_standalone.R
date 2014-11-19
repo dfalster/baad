@@ -7,6 +7,9 @@ source("functions_combine.R")
 source("functions_evil.R")
 
 res <- build_baad()
+cmp <- readRDS("baad_ref2.rds")
+all.equal(res, cmp)
+
 cmp <- readRDS("baad_ref.rds")
 
 identical(names(res), names(cmp))
@@ -20,5 +23,3 @@ all.equal(res$bibtex, cmp$bibtex)
 
 ## saveRDS(res, "baad_ref2.rds")
 
-cmp <- readRDS("baad_ref2.rds")
-all.equal(res, cmp)

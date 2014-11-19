@@ -1,6 +1,4 @@
-read_data_raw_import_options <- function(study_name) {
-  filename <- file.path("data", study_name,
-                        "dataImportOptions.csv")
+read_data_raw_import_options <- function(filename) {
   tmp <- read.csv(filename, header=FALSE, row.names=1,
                   stringsAsFactors=FALSE)
   opts <- structure(as.list(tmp[[1]]), names=rownames(tmp))
@@ -18,8 +16,7 @@ read_data_raw_import_options <- function(study_name) {
   import  
 }
 
-read_reference <- function(study_name) {
-  filename <- file.path("data", study_name, "studyRef.bib")
+read_reference <- function(filename, study_name) {
   bib <- bibtex::read.bib(filename)
 
   ## Hack work around to change key in bib entry (bibtex entry
@@ -31,12 +28,12 @@ read_reference <- function(study_name) {
   bib_plain
 }
 
-read_methods <- function(study_name, variable_definitions) {
+read_methods <- function(filename_columns, variable_definitions) {
   ## TODO: Rename 'methods' to 'is_method' in 'variableDefinitions.csv'
   vars <- variable_definitions$variable[variable_definitions$methods]
 
   ## Fill with data from study
-  var_match <- read_match_columns(study_name)
+  var_match <- read_match_columns(filename_columns)
 
   ## Make data frame with all variables requiring methods
   methods <- data.frame(rbind(character(length(vars))), stringsAsFactors=FALSE)
@@ -48,15 +45,13 @@ read_methods <- function(study_name, variable_definitions) {
   methods
 }
 
-read_match_columns <- function(study_name) {
-  filename <- file.path("data", study_name, "dataMatchColumns.csv")
+read_match_columns <- function(filename) {
   ret <- read.csv(filename, stringsAsFactors=FALSE, na.strings = c("NA", ""),
                   strip.white=TRUE)
   ret[!is.na(ret$var_out), ]
 }
 
-read_contact <- function(study_name) {
-  filename <- file.path("data", study_name, "studyContact.csv")
+read_contact <- function(filename) {
   read.csv(filename, stringsAsFactors=FALSE, strip.white=TRUE)
 }
 
