@@ -24,6 +24,6 @@ load_study <- function(study_name, config, verbose=FALSE) {
   list(data       = data,
        methods    = read_methods(filename_columns, config$var_def),
        bibtex     = bibentry,
-       contacts   = read_contact(filename_contact),
+       contacts   = read_csv(filename_contact),
        references = get_citation(bibentry))
 }

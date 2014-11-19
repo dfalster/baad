@@ -16,3 +16,8 @@ rename_columns <- function(obj, from, to) {
   names(obj)[match(from, names(obj))] <- to
   obj
 }
+
+read_csv <- function(...) {
+  read.csv(..., stringsAsFactors=FALSE, check.names=FALSE,
+           strip.white=TRUE)
+}

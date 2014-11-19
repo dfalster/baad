@@ -1,18 +1,14 @@
 read_data_raw_import_options <- function(filename) {
-  tmp <- read.csv(filename, header=FALSE, row.names=1,
-                  stringsAsFactors=FALSE)
+  tmp <- read_csv(filename, header=FALSE, row.names=1)
   opts <- structure(as.list(tmp[[1]]), names=rownames(tmp))
   
-  defaults <- list(na.strings="NA")
-
-  import <- modifyList(defaults, opts)
+  import <- modifyList(list(na.strings="NA"), opts)
 
   ## Then some processing:
   import$header <- as.logical(import$header)
   import$skip <- as.integer(import$skip)
-  if (!("NA" %in% import$na.strings)) {
-    import$na.strings <- c("NA", import$na.strings)
-  }
+  import$na.strings <- union("NA", import$na.strings)
+
   import  
 }
 
@@ -46,13 +42,8 @@ read_methods <- function(filename_columns, variable_definitions) {
 }
 
 read_match_columns <- function(filename) {
-  ret <- read.csv(filename, stringsAsFactors=FALSE, na.strings = c("NA", ""),
-                  strip.white=TRUE)
+  ret <- read_csv(filename, na.strings = c("NA", ""))
   ret[!is.na(ret$var_out), ]
-}
-
-read_contact <- function(filename) {
-  read.csv(filename, stringsAsFactors=FALSE, strip.white=TRUE)
 }
 
 get_citation <- function(bibentry) {
@@ -61,11 +52,7 @@ get_citation <- function(bibentry) {
     url <- if (is.null(bibentry$url[[1]])) "" else bibentry$url[[1]]
   } else {
     doi <- bibentry$doi[[1]]
-    if (doi != "") {
-      url <- paste0("http://doi.org/", doi)
-    } else if (!is.null(bibentry$url)) {
-      url <- bibentry$url[[1]]
-    }
+    url <- paste0("http://doi.org/", doi)
   }
 
   data.frame(doi=doi, url=url, citation=format_citation(bibentry),

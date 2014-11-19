@@ -2,15 +2,11 @@
 ## considerably.
 make_config <- function() {
   config <- list()
-  config$var_def <-
-    read.csv(file.path("config", "variableDefinitions.csv"),
-             stringsAsFactors=FALSE)
+  config$var_def <- read_csv("config/variableDefinitions.csv")
   config$conversions <-
-    read.csv(file.path("config", "variableConversion.csv"),
-             stringsAsFactors=FALSE, check.names=FALSE)
+    read_csv("config/variableConversion.csv")
   config$post_process <-
-    get_function_from_source("postProcess",
-                             file.path("config", "postProcess.R"),
+    get_function_from_source("postProcess", "config/postProcess.R",
                              identity)
   config
 }

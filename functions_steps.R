@@ -20,11 +20,8 @@ read_data_study <- function(filename_data_raw,
 
 read_data_raw <- function(filename, filename_opts) {
   opts <- read_data_raw_import_options(filename_opts)
-  read.csv(filename,
-           ## Special options:
-           header=opts$header, skip=opts$skip, na.strings=opts$na.strings,
-           ## Shared options:
-           check.names=FALSE, stringsAsFactors=FALSE, strip.white=TRUE)
+  read_csv(filename,
+           header=opts$header, skip=opts$skip, na.strings=opts$na.strings)
 }
 
 ## If the `dataManipulate.R` file is present within a study's data
@@ -96,7 +93,7 @@ add_all_columns <- function(data, variable_definitions) {
 ## of `newVariable` with the value `newValue`. Note that
 ## lookupVariable can be the same as newVariable.
 add_new_data <- function(data, filename) {
-  import <- read.csv(filename, stringsAsFactors=FALSE, strip.white=TRUE)
+  import <- read_csv(filename)
   if (nrow(import) > 0) {
     import$lookupVariable[import$lookupVariable == ""] <- NA
   }
