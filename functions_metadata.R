@@ -12,18 +12,6 @@ read_data_raw_import_options <- function(filename) {
   import  
 }
 
-read_reference <- function(filename, study_name) {
-  bib <- bibtex::read.bib(filename)
-
-  ## Hack work around to change key in bib entry (bibtex entry
-  ## redefines '[' and/or '[[' in ways that cause nothing but grief)
-  bib_plain <- unclass(bib)
-  attr(bib_plain[[1]], "key") <- study_name
-  class(bib_plain) <- "bibentry"
-
-  bib_plain
-}
-
 read_methods <- function(filename_columns, variable_definitions) {
   ## TODO: Rename 'methods' to 'is_method' in 'variableDefinitions.csv'
   vars <- variable_definitions$variable[variable_definitions$methods]

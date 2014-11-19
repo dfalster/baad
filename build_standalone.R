@@ -1,4 +1,3 @@
-source("functions.R")
 source("functions_steps.R")
 source("functions_metadata.R")
 source("functions_support.R")
