@@ -1,0 +1,13 @@
+{{#study_names}}
+  {{study_name}}:
+    command: >
+      load_study("data/{{study_name}}/data.csv",
+                 "data/{{study_name}}/dataImportOptions.csv",
+                 "data/{{study_name}}/dataManipulate.R",
+                 "data/{{study_name}}/dataMatchColumns.csv",
+                 "data/{{study_name}}/dataNew.csv",
+                 "data/{{study_name}}/studyRef.bib",
+                 "data/{{study_name}}/studyContact.csv",
+                 variable_definitions,
+                 conversions)
+{{/study_names}}
