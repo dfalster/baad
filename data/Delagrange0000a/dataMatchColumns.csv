@@ -10,7 +10,7 @@
 "m.lf","?","kg","m.lf",NA
 "m.st","?","kg","m.st",NA
 "m.rt","?","kg","m.rt",NA
-"lf.ma","?","kg.m2","ma.ilf",NA
+"lf.ma","?","kg/m2","ma.ilf",NA
 "pft",NA,NA,"pft",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "Light","?",NA,"light",NA

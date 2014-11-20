@@ -7,8 +7,8 @@
 "Crown area (m2)","?","m2","a.cp",NA
 "Individual leaf area (cm2)","?","cm2","a.ilf",NA
 "Total leaf area (m2)","?","m2","a.lf",NA
-"LMA (g.cm-2)","?","g.cm2","ma.ilf",NA
-"WD (g.cm3)","?","g.cm3","r.st",NA
+"LMA (g.cm-2)","?","g/cm2","ma.ilf",NA
+"WD (g.cm3)","?","g/cm3","r.st",NA
 "Current-year wood biomass (g.yr-1)",NA,NA,NA,NA
 "Leaf biomass (g.yr-1)",NA,NA,NA,NA
 "Segment biomass (g.yr-1)",NA,NA,NA,NA

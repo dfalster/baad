@@ -23,8 +23,8 @@
 "m.rt","m3","g","m.rt",NA
 "m.to","m3","g","m.to",NA
 "a.ilf","x1","cm2","a.ilf",NA
-"ma.ilf","m3,a1,x6","g.m2","ma.ilf",NA
-"r.st","v1,v5","g.cm3","r.st",NA
+"ma.ilf","m3,a1,x6","g/m2","ma.ilf",NA
+"r.st","v1,v5","g/cm3","r.st",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "status",NA,NA,"status",NA
 "light","l6",NA,"light",NA

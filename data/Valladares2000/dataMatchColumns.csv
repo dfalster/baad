@@ -8,7 +8,7 @@
 "lf.sz","?","m2","a.ilf",NA
 "m.t","?","kg","m.to",NA
 "m.lf","m3,x1","kg","m.lf",NA
-"d.st","x2","kg.l","r.st",NA
-"lf.ma","a1,m3,x1,x3","g.m2","ma.ilf",NA
+"d.st","x2","kg/l","r.st",NA
+"lf.ma","a1,m3,x1,x3","g/m2","ma.ilf",NA
 "a.cp","?","m2","a.cp",NA
 "grouping",NA,NA,"grouping",NA

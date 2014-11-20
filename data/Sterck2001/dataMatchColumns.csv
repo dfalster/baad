@@ -10,7 +10,7 @@
 "NrLvs",NA,NA,NA,NA
 "TLA","a1,x1,x7","m2","a.lf","total leaf area (m2) is calculated by multiplying the number of leaves with the mean leaf area of a random leaf sample (20 leaves for taller individuals, but smaller samples for small individuals)"
 "LA","?","cm2","a.ilf","leaf area (cm2) is the average area of a single leaf, based on the average area of a leaf sample of 20 leaves."
-"SLA","?","cm2.g","ma.ilf",NA
+"SLA","?","cm2/g","ma.ilf",NA
 "CPI",NA,NA,NA,NA
 "Open",NA,NA,NA,NA
 "PAR","l2",NA,"light",NA
