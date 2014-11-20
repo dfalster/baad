@@ -4,3 +4,8 @@ output
 .Rhistory
 figure
 xtra
+
+.maker
+ms.html
+ms.md
+*.rds

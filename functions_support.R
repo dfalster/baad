@@ -28,3 +28,29 @@ set_bib_key <- function(bib, key) {
   class(bib_plain) <- "bibentry"
   bib_plain
 }
+
+last <- function(x) {
+  x[[length(x)]]
+}
+
+## Make colours semitransparent:
+make_transparent <- function(col, opacity=0.5) {
+  if (length(opacity) > 1 && any(is.na(opacity))) {
+    n <- max(length(col), length(opacity))
+    opacity <- rep(opacity, length.out = n)
+    col <- rep(col, length.out = n)
+    ok <- !is.na(opacity)
+    ret <- rep(NA, length(col))
+    ret[ok] <- Recall(col[ok], opacity[ok])
+    ret
+  } else {
+    tmp <- col2rgb(col)/255
+    rgb(tmp[1, ], tmp[2, ], tmp[3, ], alpha = opacity)
+  }
+}
+
+capitalize <- function (string) {
+  capped <- grep("^[^A-Z]*$", string, perl = TRUE)
+  substr(string[capped], 1, 1) <- toupper(substr(string[capped], 1, 1))
+  string
+}
