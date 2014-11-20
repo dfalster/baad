@@ -8,6 +8,7 @@
                  "data/{{study_name}}/dataNew.csv",
                  "data/{{study_name}}/studyRef.bib",
                  "data/{{study_name}}/studyContact.csv",
+                 "data/{{study_name}}/studyMetadata.csv",
                  variable_definitions,
                  conversions)
 {{/study_names}}

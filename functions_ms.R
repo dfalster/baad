@@ -107,17 +107,13 @@ study_details <- function(data, baad) {
 
   template <- paste(template, collapse="\n")
 
-  ## These bits should be replaced by accessing the raw data:
   study_name <- data$studyName[[1]]
 
-  filename_contact <- file.path("data", study_name, "studyContact.csv")
-  personell <- read.csv(filename_contact, stringsAsFactors=FALSE)$name
+  personell <- baad$contacts$name[baad$contacts$studyName == study_name]
   personell <- paste0(personell, collapse=", ")
-  
-  filename_metadata <- file.path("data", study_name, "studyMetadata.csv")
-  metadata <- read.csv(filename_metadata,
-                       na.strings=c(NA, ''), stringsAsFactors=FALSE,
-                       strip.white=TRUE)
+
+  metadata <- baad$metadata[baad$metadata$studyName == study_name,]
+  metadata <- metadata[names(metadata) != study_name]
   
   site_type <- classify_veg_type(data$vegetation)
   site_history <- classify_site_history(data$growingCondition)
@@ -246,19 +242,10 @@ summary_table <- function(data, var_def, digits=2) {
   dfr
 }
 
-get_acknowledgements <- function(study_name) {
-  filename_metadata <- file.path("data", study_name, "studyMetadata.csv")
-  metadata <- read.csv(filename_metadata,
-                       na.strings=c(NA, ''), stringsAsFactors=FALSE,
-                       strip.white=TRUE)
-  i <- match("Acknowledgements", metadata$Topic)
-  ## TODO: Better to return NULL on no match here?
-  if (is.na(i)) {
-    ret <- ""
-  } else {
-    ret <- sprintf(" **%s:** %s;", study_name, metadata$Description[i])
-  }
-  ret
+get_acknowledgements <- function(baad) {
+  ack <- baad$metadata[baad$metadata$Topic == "Acknowledgements",]
+  paste(sprintf("**%s:** %s", ack$studyName, ack$Description),
+        collapse="; ")
 }
 
 ## This is a temporary helper until first class rendering is done:

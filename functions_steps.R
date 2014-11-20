@@ -5,6 +5,7 @@ load_study <- function(filename_data_raw,
                        filename_new_data,
                        filename_bib,
                        filename_contact,
+                       filename_metadata,
                        variable_definitions,
                        conversions) {
   data <- read_data_study(filename_data_raw,
@@ -20,12 +21,14 @@ load_study <- function(filename_data_raw,
 
   methods  <- read_methods(filename_columns, variable_definitions)
   contacts <- read_csv(filename_contact)
+  metadata <- read_csv(filename_metadata)
 
   list(key        = key,
        data       = data,
        methods    = methods,
        bibtex     = bibentry,
        contacts   = contacts,
+       metadata   = metadata,
        references = get_citation(bibentry))
 }
 

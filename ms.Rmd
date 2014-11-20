@@ -169,8 +169,7 @@ kable(summary_table(data, var_def), "markdown", align="l", padding=10)
 
 In addition, we thank the following people for contributions to the following studies:
 ```{r,results="asis",echo=FALSE, message=FALSE}
-ack <- sapply(unique(data$studyName), get_acknowledgements)
-writeLines(paste(ack, collapse=""))
+writeLines(get_acknowledgements(baad))
 ```
 .
 

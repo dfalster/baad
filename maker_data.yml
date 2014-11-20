@@ -15,6 +15,7 @@ targets:
                  "data/Abe1981/dataNew.csv",
                  "data/Abe1981/studyRef.bib",
                  "data/Abe1981/studyContact.csv",
+                 "data/Abe1981/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Aiba2005:
@@ -26,6 +27,7 @@ targets:
                  "data/Aiba2005/dataNew.csv",
                  "data/Aiba2005/studyRef.bib",
                  "data/Aiba2005/studyContact.csv",
+                 "data/Aiba2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Aiba2007:
@@ -37,6 +39,7 @@ targets:
                  "data/Aiba2007/dataNew.csv",
                  "data/Aiba2007/studyRef.bib",
                  "data/Aiba2007/studyContact.csv",
+                 "data/Aiba2007/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Albrektson1984:
@@ -48,6 +51,7 @@ targets:
                  "data/Albrektson1984/dataNew.csv",
                  "data/Albrektson1984/studyRef.bib",
                  "data/Albrektson1984/studyContact.csv",
+                 "data/Albrektson1984/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ando1962:
@@ -59,6 +63,7 @@ targets:
                  "data/Ando1962/dataNew.csv",
                  "data/Ando1962/studyRef.bib",
                  "data/Ando1962/studyContact.csv",
+                 "data/Ando1962/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ando1973:
@@ -70,6 +75,7 @@ targets:
                  "data/Ando1973/dataNew.csv",
                  "data/Ando1973/studyRef.bib",
                  "data/Ando1973/studyContact.csv",
+                 "data/Ando1973/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ando1988:
@@ -81,6 +87,7 @@ targets:
                  "data/Ando1988/dataNew.csv",
                  "data/Ando1988/studyRef.bib",
                  "data/Ando1988/studyContact.csv",
+                 "data/Ando1988/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Aspinwall2013:
@@ -92,6 +99,7 @@ targets:
                  "data/Aspinwall2013/dataNew.csv",
                  "data/Aspinwall2013/studyRef.bib",
                  "data/Aspinwall2013/studyContact.csv",
+                 "data/Aspinwall2013/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Baltzer2007:
@@ -103,6 +111,7 @@ targets:
                  "data/Baltzer2007/dataNew.csv",
                  "data/Baltzer2007/studyRef.bib",
                  "data/Baltzer2007/studyContact.csv",
+                 "data/Baltzer2007/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Baraloto2006:
@@ -114,6 +123,7 @@ targets:
                  "data/Baraloto2006/dataNew.csv",
                  "data/Baraloto2006/studyRef.bib",
                  "data/Baraloto2006/studyContact.csv",
+                 "data/Baraloto2006/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Battaglia1998:
@@ -125,6 +135,7 @@ targets:
                  "data/Battaglia1998/dataNew.csv",
                  "data/Battaglia1998/studyRef.bib",
                  "data/Battaglia1998/studyContact.csv",
+                 "data/Battaglia1998/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   BondLamberty2002:
@@ -136,6 +147,7 @@ targets:
                  "data/BondLamberty2002/dataNew.csv",
                  "data/BondLamberty2002/studyRef.bib",
                  "data/BondLamberty2002/studyContact.csv",
+                 "data/BondLamberty2002/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Brown1978:
@@ -147,6 +159,7 @@ targets:
                  "data/Brown1978/dataNew.csv",
                  "data/Brown1978/studyRef.bib",
                  "data/Brown1978/studyContact.csv",
+                 "data/Brown1978/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Burger1953:
@@ -158,6 +171,7 @@ targets:
                  "data/Burger1953/dataNew.csv",
                  "data/Burger1953/studyRef.bib",
                  "data/Burger1953/studyContact.csv",
+                 "data/Burger1953/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Claveau2002:
@@ -169,6 +183,7 @@ targets:
                  "data/Claveau2002/dataNew.csv",
                  "data/Claveau2002/studyRef.bib",
                  "data/Claveau2002/studyContact.csv",
+                 "data/Claveau2002/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Claveau2005:
@@ -180,6 +195,7 @@ targets:
                  "data/Claveau2005/dataNew.csv",
                  "data/Claveau2005/studyRef.bib",
                  "data/Claveau2005/studyContact.csv",
+                 "data/Claveau2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Coll2008:
@@ -191,6 +207,7 @@ targets:
                  "data/Coll2008/dataNew.csv",
                  "data/Coll2008/studyRef.bib",
                  "data/Coll2008/studyContact.csv",
+                 "data/Coll2008/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Dannoura2006:
@@ -202,6 +219,7 @@ targets:
                  "data/Dannoura2006/dataNew.csv",
                  "data/Dannoura2006/studyRef.bib",
                  "data/Dannoura2006/studyContact.csv",
+                 "data/Dannoura2006/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Delagrange0000a:
@@ -213,6 +231,7 @@ targets:
                  "data/Delagrange0000a/dataNew.csv",
                  "data/Delagrange0000a/studyRef.bib",
                  "data/Delagrange0000a/studyContact.csv",
+                 "data/Delagrange0000a/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Delagrange0000b:
@@ -224,6 +243,7 @@ targets:
                  "data/Delagrange0000b/dataNew.csv",
                  "data/Delagrange0000b/studyRef.bib",
                  "data/Delagrange0000b/studyContact.csv",
+                 "data/Delagrange0000b/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Delagrange2004:
@@ -235,6 +255,7 @@ targets:
                  "data/Delagrange2004/dataNew.csv",
                  "data/Delagrange2004/studyRef.bib",
                  "data/Delagrange2004/studyContact.csv",
+                 "data/Delagrange2004/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Domec2012:
@@ -246,6 +267,7 @@ targets:
                  "data/Domec2012/dataNew.csv",
                  "data/Domec2012/studyRef.bib",
                  "data/Domec2012/studyContact.csv",
+                 "data/Domec2012/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Epron2011:
@@ -257,6 +279,7 @@ targets:
                  "data/Epron2011/dataNew.csv",
                  "data/Epron2011/studyRef.bib",
                  "data/Epron2011/studyContact.csv",
+                 "data/Epron2011/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Fatemi2011:
@@ -268,6 +291,7 @@ targets:
                  "data/Fatemi2011/dataNew.csv",
                  "data/Fatemi2011/studyRef.bib",
                  "data/Fatemi2011/studyContact.csv",
+                 "data/Fatemi2011/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   FLFU1963:
@@ -279,6 +303,7 @@ targets:
                  "data/FLFU1963/dataNew.csv",
                  "data/FLFU1963/studyRef.bib",
                  "data/FLFU1963/studyContact.csv",
+                 "data/FLFU1963/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   FLFU1965:
@@ -290,6 +315,7 @@ targets:
                  "data/FLFU1965/dataNew.csv",
                  "data/FLFU1965/studyRef.bib",
                  "data/FLFU1965/studyContact.csv",
+                 "data/FLFU1965/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Furuno1967:
@@ -301,6 +327,7 @@ targets:
                  "data/Furuno1967/dataNew.csv",
                  "data/Furuno1967/studyRef.bib",
                  "data/Furuno1967/studyContact.csv",
+                 "data/Furuno1967/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Garber2005:
@@ -312,6 +339,7 @@ targets:
                  "data/Garber2005/dataNew.csv",
                  "data/Garber2005/studyRef.bib",
                  "data/Garber2005/studyContact.csv",
+                 "data/Garber2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Gargaglione2010:
@@ -323,6 +351,7 @@ targets:
                  "data/Gargaglione2010/dataNew.csv",
                  "data/Gargaglione2010/studyRef.bib",
                  "data/Gargaglione2010/studyContact.csv",
+                 "data/Gargaglione2010/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ghannoum2010a:
@@ -334,6 +363,7 @@ targets:
                  "data/Ghannoum2010a/dataNew.csv",
                  "data/Ghannoum2010a/studyRef.bib",
                  "data/Ghannoum2010a/studyContact.csv",
+                 "data/Ghannoum2010a/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ghannoum2010b:
@@ -345,6 +375,7 @@ targets:
                  "data/Ghannoum2010b/dataNew.csv",
                  "data/Ghannoum2010b/studyRef.bib",
                  "data/Ghannoum2010b/studyContact.csv",
+                 "data/Ghannoum2010b/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Goto2003:
@@ -356,6 +387,7 @@ targets:
                  "data/Goto2003/dataNew.csv",
                  "data/Goto2003/studyRef.bib",
                  "data/Goto2003/studyContact.csv",
+                 "data/Goto2003/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Hagihara1993:
@@ -367,6 +399,7 @@ targets:
                  "data/Hagihara1993/dataNew.csv",
                  "data/Hagihara1993/studyRef.bib",
                  "data/Hagihara1993/studyContact.csv",
+                 "data/Hagihara1993/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Hamilton2005:
@@ -378,6 +411,7 @@ targets:
                  "data/Hamilton2005/dataNew.csv",
                  "data/Hamilton2005/studyRef.bib",
                  "data/Hamilton2005/studyContact.csv",
+                 "data/Hamilton2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Harada1972:
@@ -389,6 +423,7 @@ targets:
                  "data/Harada1972/dataNew.csv",
                  "data/Harada1972/studyRef.bib",
                  "data/Harada1972/studyContact.csv",
+                 "data/Harada1972/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Harja2012:
@@ -400,6 +435,7 @@ targets:
                  "data/Harja2012/dataNew.csv",
                  "data/Harja2012/studyRef.bib",
                  "data/Harja2012/studyContact.csv",
+                 "data/Harja2012/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Haruki1979:
@@ -411,6 +447,7 @@ targets:
                  "data/Haruki1979/dataNew.csv",
                  "data/Haruki1979/studyRef.bib",
                  "data/Haruki1979/studyContact.csv",
+                 "data/Haruki1979/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Hashizume1980:
@@ -422,6 +459,7 @@ targets:
                  "data/Hashizume1980/dataNew.csv",
                  "data/Hashizume1980/studyRef.bib",
                  "data/Hashizume1980/studyContact.csv",
+                 "data/Hashizume1980/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Hashizume1985:
@@ -433,6 +471,7 @@ targets:
                  "data/Hashizume1985/dataNew.csv",
                  "data/Hashizume1985/studyRef.bib",
                  "data/Hashizume1985/studyContact.csv",
+                 "data/Hashizume1985/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Holdaway2008:
@@ -444,6 +483,7 @@ targets:
                  "data/Holdaway2008/dataNew.csv",
                  "data/Holdaway2008/studyRef.bib",
                  "data/Holdaway2008/studyContact.csv",
+                 "data/Holdaway2008/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Iijima1991:
@@ -455,6 +495,7 @@ targets:
                  "data/Iijima1991/dataNew.csv",
                  "data/Iijima1991/studyRef.bib",
                  "data/Iijima1991/studyContact.csv",
+                 "data/Iijima1991/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ikushima1964:
@@ -466,6 +507,7 @@ targets:
                  "data/Ikushima1964/dataNew.csv",
                  "data/Ikushima1964/studyRef.bib",
                  "data/Ikushima1964/studyContact.csv",
+                 "data/Ikushima1964/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ilomaki2003:
@@ -477,6 +519,7 @@ targets:
                  "data/Ilomaki2003/dataNew.csv",
                  "data/Ilomaki2003/studyRef.bib",
                  "data/Ilomaki2003/studyContact.csv",
+                 "data/Ilomaki2003/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ishii2000:
@@ -488,6 +531,7 @@ targets:
                  "data/Ishii2000/dataNew.csv",
                  "data/Ishii2000/studyRef.bib",
                  "data/Ishii2000/studyContact.csv",
+                 "data/Ishii2000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kabaya1968:
@@ -499,6 +543,7 @@ targets:
                  "data/Kabaya1968/dataNew.csv",
                  "data/Kabaya1968/studyRef.bib",
                  "data/Kabaya1968/studyContact.csv",
+                 "data/Kabaya1968/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kabaya1981:
@@ -510,6 +555,7 @@ targets:
                  "data/Kabaya1981/dataNew.csv",
                  "data/Kabaya1981/studyRef.bib",
                  "data/Kabaya1981/studyContact.csv",
+                 "data/Kabaya1981/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kantola2004:
@@ -521,6 +567,7 @@ targets:
                  "data/Kantola2004/dataNew.csv",
                  "data/Kantola2004/studyRef.bib",
                  "data/Kantola2004/studyContact.csv",
+                 "data/Kantola2004/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Karizumi1984:
@@ -532,6 +579,7 @@ targets:
                  "data/Karizumi1984/dataNew.csv",
                  "data/Karizumi1984/studyRef.bib",
                  "data/Karizumi1984/studyContact.csv",
+                 "data/Karizumi1984/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Katagiri1984:
@@ -543,6 +591,7 @@ targets:
                  "data/Katagiri1984/dataNew.csv",
                  "data/Katagiri1984/studyRef.bib",
                  "data/Katagiri1984/studyContact.csv",
+                 "data/Katagiri1984/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Katakura2007:
@@ -554,6 +603,7 @@ targets:
                  "data/Katakura2007/dataNew.csv",
                  "data/Katakura2007/studyRef.bib",
                  "data/Katakura2007/studyContact.csv",
+                 "data/Katakura2007/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kato1973:
@@ -565,6 +615,7 @@ targets:
                  "data/Kato1973/dataNew.csv",
                  "data/Kato1973/studyRef.bib",
                  "data/Kato1973/studyContact.csv",
+                 "data/Kato1973/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kawahara1981:
@@ -576,6 +627,7 @@ targets:
                  "data/Kawahara1981/dataNew.csv",
                  "data/Kawahara1981/studyRef.bib",
                  "data/Kawahara1981/studyContact.csv",
+                 "data/Kawahara1981/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kawanabe1977:
@@ -587,6 +639,7 @@ targets:
                  "data/Kawanabe1977/dataNew.csv",
                  "data/Kawanabe1977/studyRef.bib",
                  "data/Kawanabe1977/studyContact.csv",
+                 "data/Kawanabe1977/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kelly0000a:
@@ -598,6 +651,7 @@ targets:
                  "data/Kelly0000a/dataNew.csv",
                  "data/Kelly0000a/studyRef.bib",
                  "data/Kelly0000a/studyContact.csv",
+                 "data/Kelly0000a/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kelly0000b:
@@ -609,6 +663,7 @@ targets:
                  "data/Kelly0000b/dataNew.csv",
                  "data/Kelly0000b/studyRef.bib",
                  "data/Kelly0000b/studyContact.csv",
+                 "data/Kelly0000b/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kenzo2009:
@@ -620,6 +675,7 @@ targets:
                  "data/Kenzo2009/dataNew.csv",
                  "data/Kenzo2009/studyRef.bib",
                  "data/Kenzo2009/studyContact.csv",
+                 "data/Kenzo2009/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kenzo2009b:
@@ -631,6 +687,7 @@ targets:
                  "data/Kenzo2009b/dataNew.csv",
                  "data/Kenzo2009b/studyRef.bib",
                  "data/Kenzo2009b/studyContact.csv",
+                 "data/Kenzo2009b/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   King1994:
@@ -642,6 +699,7 @@ targets:
                  "data/King1994/dataNew.csv",
                  "data/King1994/studyRef.bib",
                  "data/King1994/studyContact.csv",
+                 "data/King1994/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   King1996:
@@ -653,6 +711,7 @@ targets:
                  "data/King1996/dataNew.csv",
                  "data/King1996/studyRef.bib",
                  "data/King1996/studyContact.csv",
+                 "data/King1996/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kitazawa1959:
@@ -664,6 +723,7 @@ targets:
                  "data/Kitazawa1959/dataNew.csv",
                  "data/Kitazawa1959/studyRef.bib",
                  "data/Kitazawa1959/studyContact.csv",
+                 "data/Kitazawa1959/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kohyama0000:
@@ -675,6 +735,7 @@ targets:
                  "data/Kohyama0000/dataNew.csv",
                  "data/Kohyama0000/studyRef.bib",
                  "data/Kohyama0000/studyContact.csv",
+                 "data/Kohyama0000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kohyama1987:
@@ -686,6 +747,7 @@ targets:
                  "data/Kohyama1987/dataNew.csv",
                  "data/Kohyama1987/studyRef.bib",
                  "data/Kohyama1987/studyContact.csv",
+                 "data/Kohyama1987/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kohyama1990:
@@ -697,6 +759,7 @@ targets:
                  "data/Kohyama1990/dataNew.csv",
                  "data/Kohyama1990/studyRef.bib",
                  "data/Kohyama1990/studyContact.csv",
+                 "data/Kohyama1990/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Kohyama1994:
@@ -708,6 +771,7 @@ targets:
                  "data/Kohyama1994/dataNew.csv",
                  "data/Kohyama1994/studyRef.bib",
                  "data/Kohyama1994/studyContact.csv",
+                 "data/Kohyama1994/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Komiyama2002:
@@ -719,6 +783,7 @@ targets:
                  "data/Komiyama2002/dataNew.csv",
                  "data/Komiyama2002/studyRef.bib",
                  "data/Komiyama2002/studyContact.csv",
+                 "data/Komiyama2002/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Komiyama2003:
@@ -730,6 +795,7 @@ targets:
                  "data/Komiyama2003/dataNew.csv",
                  "data/Komiyama2003/studyRef.bib",
                  "data/Komiyama2003/studyContact.csv",
+                 "data/Komiyama2003/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   leMaire2011:
@@ -741,6 +807,7 @@ targets:
                  "data/leMaire2011/dataNew.csv",
                  "data/leMaire2011/studyRef.bib",
                  "data/leMaire2011/studyContact.csv",
+                 "data/leMaire2011/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Lewis2013:
@@ -752,6 +819,7 @@ targets:
                  "data/Lewis2013/dataNew.csv",
                  "data/Lewis2013/studyRef.bib",
                  "data/Lewis2013/studyContact.csv",
+                 "data/Lewis2013/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Lusk0000a:
@@ -763,6 +831,7 @@ targets:
                  "data/Lusk0000a/dataNew.csv",
                  "data/Lusk0000a/studyRef.bib",
                  "data/Lusk0000a/studyContact.csv",
+                 "data/Lusk0000a/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Lusk0000b:
@@ -774,6 +843,7 @@ targets:
                  "data/Lusk0000b/dataNew.csv",
                  "data/Lusk0000b/studyRef.bib",
                  "data/Lusk0000b/studyContact.csv",
+                 "data/Lusk0000b/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Lusk2002:
@@ -785,6 +855,7 @@ targets:
                  "data/Lusk2002/dataNew.csv",
                  "data/Lusk2002/studyRef.bib",
                  "data/Lusk2002/studyContact.csv",
+                 "data/Lusk2002/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Lusk2004:
@@ -796,6 +867,7 @@ targets:
                  "data/Lusk2004/dataNew.csv",
                  "data/Lusk2004/studyRef.bib",
                  "data/Lusk2004/studyContact.csv",
+                 "data/Lusk2004/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Lusk2011:
@@ -807,6 +879,7 @@ targets:
                  "data/Lusk2011/dataNew.csv",
                  "data/Lusk2011/studyRef.bib",
                  "data/Lusk2011/studyContact.csv",
+                 "data/Lusk2011/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Lusk2012:
@@ -818,6 +891,7 @@ targets:
                  "data/Lusk2012/dataNew.csv",
                  "data/Lusk2012/studyRef.bib",
                  "data/Lusk2012/studyContact.csv",
+                 "data/Lusk2012/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Lusk2013:
@@ -829,6 +903,7 @@ targets:
                  "data/Lusk2013/dataNew.csv",
                  "data/Lusk2013/studyRef.bib",
                  "data/Lusk2013/studyContact.csv",
+                 "data/Lusk2013/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Maguire1998:
@@ -840,6 +915,7 @@ targets:
                  "data/Maguire1998/dataNew.csv",
                  "data/Maguire1998/studyRef.bib",
                  "data/Maguire1998/studyContact.csv",
+                 "data/Maguire1998/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Markesteijn2009:
@@ -851,6 +927,7 @@ targets:
                  "data/Markesteijn2009/dataNew.csv",
                  "data/Markesteijn2009/studyRef.bib",
                  "data/Markesteijn2009/studyContact.csv",
+                 "data/Markesteijn2009/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Martin1998:
@@ -862,6 +939,7 @@ targets:
                  "data/Martin1998/dataNew.csv",
                  "data/Martin1998/studyRef.bib",
                  "data/Martin1998/studyContact.csv",
+                 "data/Martin1998/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   McCulloh2010:
@@ -873,6 +951,7 @@ targets:
                  "data/McCulloh2010/dataNew.csv",
                  "data/McCulloh2010/studyRef.bib",
                  "data/McCulloh2010/studyContact.csv",
+                 "data/McCulloh2010/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Mokany2003:
@@ -884,6 +963,7 @@ targets:
                  "data/Mokany2003/dataNew.csv",
                  "data/Mokany2003/studyRef.bib",
                  "data/Mokany2003/studyContact.csv",
+                 "data/Mokany2003/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Monserud1999:
@@ -895,6 +975,7 @@ targets:
                  "data/Monserud1999/dataNew.csv",
                  "data/Monserud1999/studyRef.bib",
                  "data/Monserud1999/studyContact.csv",
+                 "data/Monserud1999/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Mori1979:
@@ -906,6 +987,7 @@ targets:
                  "data/Mori1979/dataNew.csv",
                  "data/Mori1979/studyRef.bib",
                  "data/Mori1979/studyContact.csv",
+                 "data/Mori1979/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Mori1991:
@@ -917,6 +999,7 @@ targets:
                  "data/Mori1991/dataNew.csv",
                  "data/Mori1991/studyRef.bib",
                  "data/Mori1991/studyContact.csv",
+                 "data/Mori1991/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Morisawa1957:
@@ -928,6 +1011,7 @@ targets:
                  "data/Morisawa1957/dataNew.csv",
                  "data/Morisawa1957/studyRef.bib",
                  "data/Morisawa1957/studyContact.csv",
+                 "data/Morisawa1957/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Muro2006:
@@ -939,6 +1023,7 @@ targets:
                  "data/Muro2006/dataNew.csv",
                  "data/Muro2006/studyRef.bib",
                  "data/Muro2006/studyContact.csv",
+                 "data/Muro2006/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Myster2009:
@@ -950,6 +1035,7 @@ targets:
                  "data/Myster2009/dataNew.csv",
                  "data/Myster2009/studyRef.bib",
                  "data/Myster2009/studyContact.csv",
+                 "data/Myster2009/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Naidu1998:
@@ -961,6 +1047,7 @@ targets:
                  "data/Naidu1998/dataNew.csv",
                  "data/Naidu1998/studyRef.bib",
                  "data/Naidu1998/studyContact.csv",
+                 "data/Naidu1998/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Nakagaki1983:
@@ -972,6 +1059,7 @@ targets:
                  "data/Nakagaki1983/dataNew.csv",
                  "data/Nakagaki1983/studyRef.bib",
                  "data/Nakagaki1983/studyContact.csv",
+                 "data/Nakagaki1983/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Nishioka1982:
@@ -983,6 +1071,7 @@ targets:
                  "data/Nishioka1982/dataNew.csv",
                  "data/Nishioka1982/studyRef.bib",
                  "data/Nishioka1982/studyContact.csv",
+                 "data/Nishioka1982/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Nouvellon2010:
@@ -994,6 +1083,7 @@ targets:
                  "data/Nouvellon2010/dataNew.csv",
                  "data/Nouvellon2010/studyRef.bib",
                  "data/Nouvellon2010/studyContact.csv",
+                 "data/Nouvellon2010/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   OGrady2000:
@@ -1005,6 +1095,7 @@ targets:
                  "data/OGrady2000/dataNew.csv",
                  "data/OGrady2000/studyRef.bib",
                  "data/OGrady2000/studyContact.csv",
+                 "data/OGrady2000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   OGrady2006:
@@ -1016,6 +1107,7 @@ targets:
                  "data/OGrady2006/dataNew.csv",
                  "data/OGrady2006/studyRef.bib",
                  "data/OGrady2006/studyContact.csv",
+                 "data/OGrady2006/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   OHara1995:
@@ -1027,6 +1119,7 @@ targets:
                  "data/OHara1995/dataNew.csv",
                  "data/OHara1995/studyRef.bib",
                  "data/OHara1995/studyContact.csv",
+                 "data/OHara1995/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   OHara2014:
@@ -1038,6 +1131,7 @@ targets:
                  "data/OHara2014/dataNew.csv",
                  "data/OHara2014/studyRef.bib",
                  "data/OHara2014/studyContact.csv",
+                 "data/OHara2014/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ohtsuka2005:
@@ -1049,6 +1143,7 @@ targets:
                  "data/Ohtsuka2005/dataNew.csv",
                  "data/Ohtsuka2005/studyRef.bib",
                  "data/Ohtsuka2005/studyContact.csv",
+                 "data/Ohtsuka2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Osada0000:
@@ -1060,6 +1155,7 @@ targets:
                  "data/Osada0000/dataNew.csv",
                  "data/Osada0000/studyRef.bib",
                  "data/Osada0000/studyContact.csv",
+                 "data/Osada0000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Osada2003:
@@ -1071,6 +1167,7 @@ targets:
                  "data/Osada2003/dataNew.csv",
                  "data/Osada2003/studyRef.bib",
                  "data/Osada2003/studyContact.csv",
+                 "data/Osada2003/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Osada2005:
@@ -1082,6 +1179,7 @@ targets:
                  "data/Osada2005/dataNew.csv",
                  "data/Osada2005/studyRef.bib",
                  "data/Osada2005/studyContact.csv",
+                 "data/Osada2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Osunkoya2007:
@@ -1093,6 +1191,7 @@ targets:
                  "data/Osunkoya2007/dataNew.csv",
                  "data/Osunkoya2007/studyRef.bib",
                  "data/Osunkoya2007/studyContact.csv",
+                 "data/Osunkoya2007/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Parviainen1999:
@@ -1104,6 +1203,7 @@ targets:
                  "data/Parviainen1999/dataNew.csv",
                  "data/Parviainen1999/studyRef.bib",
                  "data/Parviainen1999/studyContact.csv",
+                 "data/Parviainen1999/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Peri0000:
@@ -1115,6 +1215,7 @@ targets:
                  "data/Peri0000/dataNew.csv",
                  "data/Peri0000/studyRef.bib",
                  "data/Peri0000/studyContact.csv",
+                 "data/Peri0000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Peri2008:
@@ -1126,6 +1227,7 @@ targets:
                  "data/Peri2008/dataNew.csv",
                  "data/Peri2008/studyRef.bib",
                  "data/Peri2008/studyContact.csv",
+                 "data/Peri2008/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Peri2011:
@@ -1137,6 +1239,7 @@ targets:
                  "data/Peri2011/dataNew.csv",
                  "data/Peri2011/studyRef.bib",
                  "data/Peri2011/studyContact.csv",
+                 "data/Peri2011/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Petritan2009:
@@ -1148,6 +1251,7 @@ targets:
                  "data/Petritan2009/dataNew.csv",
                  "data/Petritan2009/studyRef.bib",
                  "data/Petritan2009/studyContact.csv",
+                 "data/Petritan2009/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Poorter1999:
@@ -1159,6 +1263,7 @@ targets:
                  "data/Poorter1999/dataNew.csv",
                  "data/Poorter1999/studyRef.bib",
                  "data/Poorter1999/studyContact.csv",
+                 "data/Poorter1999/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Portsmuth2005:
@@ -1170,6 +1275,7 @@ targets:
                  "data/Portsmuth2005/dataNew.csv",
                  "data/Portsmuth2005/studyRef.bib",
                  "data/Portsmuth2005/studyContact.csv",
+                 "data/Portsmuth2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Portsmuth2006:
@@ -1181,6 +1287,7 @@ targets:
                  "data/Portsmuth2006/dataNew.csv",
                  "data/Portsmuth2006/studyRef.bib",
                  "data/Portsmuth2006/studyContact.csv",
+                 "data/Portsmuth2006/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Reid2004:
@@ -1192,6 +1299,7 @@ targets:
                  "data/Reid2004/dataNew.csv",
                  "data/Reid2004/studyRef.bib",
                  "data/Reid2004/studyContact.csv",
+                 "data/Reid2004/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ribeiro2011:
@@ -1203,6 +1311,7 @@ targets:
                  "data/Ribeiro2011/dataNew.csv",
                  "data/Ribeiro2011/studyRef.bib",
                  "data/Ribeiro2011/studyContact.csv",
+                 "data/Ribeiro2011/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Roberts2003:
@@ -1214,6 +1323,7 @@ targets:
                  "data/Roberts2003/dataNew.csv",
                  "data/Roberts2003/studyRef.bib",
                  "data/Roberts2003/studyContact.csv",
+                 "data/Roberts2003/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Roberts2004:
@@ -1225,6 +1335,7 @@ targets:
                  "data/Roberts2004/dataNew.csv",
                  "data/Roberts2004/studyRef.bib",
                  "data/Roberts2004/studyContact.csv",
+                 "data/Roberts2004/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Rodriguez2003:
@@ -1236,6 +1347,7 @@ targets:
                  "data/Rodriguez2003/dataNew.csv",
                  "data/Rodriguez2003/studyRef.bib",
                  "data/Rodriguez2003/studyContact.csv",
+                 "data/Rodriguez2003/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Roeh1997:
@@ -1247,6 +1359,7 @@ targets:
                  "data/Roeh1997/dataNew.csv",
                  "data/Roeh1997/studyRef.bib",
                  "data/Roeh1997/studyContact.csv",
+                 "data/Roeh1997/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Roth2007:
@@ -1258,6 +1371,7 @@ targets:
                  "data/Roth2007/dataNew.csv",
                  "data/Roth2007/studyRef.bib",
                  "data/Roth2007/studyContact.csv",
+                 "data/Roth2007/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Saito1981:
@@ -1269,6 +1383,7 @@ targets:
                  "data/Saito1981/dataNew.csv",
                  "data/Saito1981/studyRef.bib",
                  "data/Saito1981/studyContact.csv",
+                 "data/Saito1981/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Salazar2010:
@@ -1280,6 +1395,7 @@ targets:
                  "data/Salazar2010/dataNew.csv",
                  "data/Salazar2010/studyRef.bib",
                  "data/Salazar2010/studyContact.csv",
+                 "data/Salazar2010/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   SaldanaAcosta2009:
@@ -1291,6 +1407,7 @@ targets:
                  "data/SaldanaAcosta2009/dataNew.csv",
                  "data/SaldanaAcosta2009/studyRef.bib",
                  "data/SaldanaAcosta2009/studyContact.csv",
+                 "data/SaldanaAcosta2009/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   SantaRegina0000:
@@ -1302,6 +1419,7 @@ targets:
                  "data/SantaRegina0000/dataNew.csv",
                  "data/SantaRegina0000/studyRef.bib",
                  "data/SantaRegina0000/studyContact.csv",
+                 "data/SantaRegina0000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   SantaRegina1999:
@@ -1313,6 +1431,7 @@ targets:
                  "data/SantaRegina1999/dataNew.csv",
                  "data/SantaRegina1999/studyRef.bib",
                  "data/SantaRegina1999/studyContact.csv",
+                 "data/SantaRegina1999/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Sato1971:
@@ -1324,6 +1443,7 @@ targets:
                  "data/Sato1971/dataNew.csv",
                  "data/Sato1971/studyRef.bib",
                  "data/Sato1971/studyContact.csv",
+                 "data/Sato1971/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Satoo1968:
@@ -1335,6 +1455,7 @@ targets:
                  "data/Satoo1968/dataNew.csv",
                  "data/Satoo1968/studyRef.bib",
                  "data/Satoo1968/studyContact.csv",
+                 "data/Satoo1968/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Satoo1974a:
@@ -1346,6 +1467,7 @@ targets:
                  "data/Satoo1974a/dataNew.csv",
                  "data/Satoo1974a/studyRef.bib",
                  "data/Satoo1974a/studyContact.csv",
+                 "data/Satoo1974a/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Satoo1974b:
@@ -1357,6 +1479,7 @@ targets:
                  "data/Satoo1974b/dataNew.csv",
                  "data/Satoo1974b/studyRef.bib",
                  "data/Satoo1974b/studyContact.csv",
+                 "data/Satoo1974b/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Satoo1974c:
@@ -1368,6 +1491,7 @@ targets:
                  "data/Satoo1974c/dataNew.csv",
                  "data/Satoo1974c/studyRef.bib",
                  "data/Satoo1974c/studyContact.csv",
+                 "data/Satoo1974c/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Satoo1974d:
@@ -1379,6 +1503,7 @@ targets:
                  "data/Satoo1974d/dataNew.csv",
                  "data/Satoo1974d/studyRef.bib",
                  "data/Satoo1974d/studyContact.csv",
+                 "data/Satoo1974d/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Satoo1974e:
@@ -1390,6 +1515,7 @@ targets:
                  "data/Satoo1974e/dataNew.csv",
                  "data/Satoo1974e/studyRef.bib",
                  "data/Satoo1974e/studyContact.csv",
+                 "data/Satoo1974e/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Segawa1969:
@@ -1401,6 +1527,7 @@ targets:
                  "data/Segawa1969/dataNew.csv",
                  "data/Segawa1969/studyRef.bib",
                  "data/Segawa1969/studyContact.csv",
+                 "data/Segawa1969/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Segawa1973:
@@ -1412,6 +1539,7 @@ targets:
                  "data/Segawa1973/dataNew.csv",
                  "data/Segawa1973/studyRef.bib",
                  "data/Segawa1973/studyContact.csv",
+                 "data/Segawa1973/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Selaya2010:
@@ -1423,6 +1551,7 @@ targets:
                  "data/Selaya2010/dataNew.csv",
                  "data/Selaya2010/studyRef.bib",
                  "data/Selaya2010/studyContact.csv",
+                 "data/Selaya2010/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Sillett2010:
@@ -1434,6 +1563,7 @@ targets:
                  "data/Sillett2010/dataNew.csv",
                  "data/Sillett2010/studyRef.bib",
                  "data/Sillett2010/studyContact.csv",
+                 "data/Sillett2010/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Singh1980:
@@ -1445,6 +1575,7 @@ targets:
                  "data/Singh1980/dataNew.csv",
                  "data/Singh1980/studyRef.bib",
                  "data/Singh1980/studyContact.csv",
+                 "data/Singh1980/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Stancioiu2005:
@@ -1456,6 +1587,7 @@ targets:
                  "data/Stancioiu2005/dataNew.csv",
                  "data/Stancioiu2005/studyRef.bib",
                  "data/Stancioiu2005/studyContact.csv",
+                 "data/Stancioiu2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Sterck0000:
@@ -1467,6 +1599,7 @@ targets:
                  "data/Sterck0000/dataNew.csv",
                  "data/Sterck0000/studyRef.bib",
                  "data/Sterck0000/studyContact.csv",
+                 "data/Sterck0000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Sterck2001:
@@ -1478,6 +1611,7 @@ targets:
                  "data/Sterck2001/dataNew.csv",
                  "data/Sterck2001/studyRef.bib",
                  "data/Sterck2001/studyContact.csv",
+                 "data/Sterck2001/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Suzuki1990:
@@ -1489,6 +1623,7 @@ targets:
                  "data/Suzuki1990/dataNew.csv",
                  "data/Suzuki1990/studyRef.bib",
                  "data/Suzuki1990/studyContact.csv",
+                 "data/Suzuki1990/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Suzuki2012:
@@ -1500,6 +1635,7 @@ targets:
                  "data/Suzuki2012/dataNew.csv",
                  "data/Suzuki2012/studyRef.bib",
                  "data/Suzuki2012/studyContact.csv",
+                 "data/Suzuki2012/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Sweda2003:
@@ -1511,6 +1647,7 @@ targets:
                  "data/Sweda2003/dataNew.csv",
                  "data/Sweda2003/studyRef.bib",
                  "data/Sweda2003/studyContact.csv",
+                 "data/Sweda2003/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Tadaki1979:
@@ -1522,6 +1659,7 @@ targets:
                  "data/Tadaki1979/dataNew.csv",
                  "data/Tadaki1979/studyRef.bib",
                  "data/Tadaki1979/studyContact.csv",
+                 "data/Tadaki1979/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Tadaki1995:
@@ -1533,6 +1671,7 @@ targets:
                  "data/Tadaki1995/dataNew.csv",
                  "data/Tadaki1995/studyRef.bib",
                  "data/Tadaki1995/studyContact.csv",
+                 "data/Tadaki1995/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Takagi2010:
@@ -1544,6 +1683,7 @@ targets:
                  "data/Takagi2010/dataNew.csv",
                  "data/Takagi2010/studyRef.bib",
                  "data/Takagi2010/studyContact.csv",
+                 "data/Takagi2010/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Takahashi1999:
@@ -1555,6 +1695,7 @@ targets:
                  "data/Takahashi1999/dataNew.csv",
                  "data/Takahashi1999/studyRef.bib",
                  "data/Takahashi1999/studyContact.csv",
+                 "data/Takahashi1999/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Tanao1982:
@@ -1566,6 +1707,7 @@ targets:
                  "data/Tanao1982/dataNew.csv",
                  "data/Tanao1982/studyRef.bib",
                  "data/Tanao1982/studyContact.csv",
+                 "data/Tanao1982/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Tange1995:
@@ -1577,6 +1719,7 @@ targets:
                  "data/Tange1995/dataNew.csv",
                  "data/Tange1995/studyRef.bib",
                  "data/Tange1995/studyContact.csv",
+                 "data/Tange1995/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Tange2010:
@@ -1588,6 +1731,7 @@ targets:
                  "data/Tange2010/dataNew.csv",
                  "data/Tange2010/studyRef.bib",
                  "data/Tange2010/studyContact.csv",
+                 "data/Tange2010/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Terashi1982:
@@ -1599,6 +1743,7 @@ targets:
                  "data/Terashi1982/dataNew.csv",
                  "data/Terashi1982/studyRef.bib",
                  "data/Terashi1982/studyContact.csv",
+                 "data/Terashi1982/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Tissue0000a:
@@ -1610,6 +1755,7 @@ targets:
                  "data/Tissue0000a/dataNew.csv",
                  "data/Tissue0000a/studyRef.bib",
                  "data/Tissue0000a/studyContact.csv",
+                 "data/Tissue0000a/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Tissue0000b:
@@ -1621,6 +1767,7 @@ targets:
                  "data/Tissue0000b/dataNew.csv",
                  "data/Tissue0000b/studyRef.bib",
                  "data/Tissue0000b/studyContact.csv",
+                 "data/Tissue0000b/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Tissue0000c:
@@ -1632,6 +1779,7 @@ targets:
                  "data/Tissue0000c/dataNew.csv",
                  "data/Tissue0000c/studyRef.bib",
                  "data/Tissue0000c/studyContact.csv",
+                 "data/Tissue0000c/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Utsugi0000:
@@ -1643,6 +1791,7 @@ targets:
                  "data/Utsugi0000/dataNew.csv",
                  "data/Utsugi0000/studyRef.bib",
                  "data/Utsugi0000/studyContact.csv",
+                 "data/Utsugi0000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Utsugi2004:
@@ -1654,6 +1803,7 @@ targets:
                  "data/Utsugi2004/dataNew.csv",
                  "data/Utsugi2004/studyRef.bib",
                  "data/Utsugi2004/studyContact.csv",
+                 "data/Utsugi2004/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Valladares2000:
@@ -1665,6 +1815,7 @@ targets:
                  "data/Valladares2000/dataNew.csv",
                  "data/Valladares2000/studyRef.bib",
                  "data/Valladares2000/studyContact.csv",
+                 "data/Valladares2000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   vanBreugel2011:
@@ -1676,6 +1827,7 @@ targets:
                  "data/vanBreugel2011/dataNew.csv",
                  "data/vanBreugel2011/studyRef.bib",
                  "data/vanBreugel2011/studyContact.csv",
+                 "data/vanBreugel2011/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Vanninen2005:
@@ -1687,6 +1839,7 @@ targets:
                  "data/Vanninen2005/dataNew.csv",
                  "data/Vanninen2005/studyRef.bib",
                  "data/Vanninen2005/studyContact.csv",
+                 "data/Vanninen2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Wang1995:
@@ -1698,6 +1851,7 @@ targets:
                  "data/Wang1995/dataNew.csv",
                  "data/Wang1995/studyRef.bib",
                  "data/Wang1995/studyContact.csv",
+                 "data/Wang1995/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Wang1996:
@@ -1709,6 +1863,7 @@ targets:
                  "data/Wang1996/dataNew.csv",
                  "data/Wang1996/studyRef.bib",
                  "data/Wang1996/studyContact.csv",
+                 "data/Wang1996/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Wang2000:
@@ -1720,6 +1875,7 @@ targets:
                  "data/Wang2000/dataNew.csv",
                  "data/Wang2000/studyRef.bib",
                  "data/Wang2000/studyContact.csv",
+                 "data/Wang2000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Wang2011:
@@ -1731,6 +1887,7 @@ targets:
                  "data/Wang2011/dataNew.csv",
                  "data/Wang2011/studyRef.bib",
                  "data/Wang2011/studyContact.csv",
+                 "data/Wang2011/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Watanabe1984:
@@ -1742,6 +1899,7 @@ targets:
                  "data/Watanabe1984/dataNew.csv",
                  "data/Watanabe1984/studyRef.bib",
                  "data/Watanabe1984/studyContact.csv",
+                 "data/Watanabe1984/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Watanabe1985:
@@ -1753,6 +1911,7 @@ targets:
                  "data/Watanabe1985/dataNew.csv",
                  "data/Watanabe1985/studyRef.bib",
                  "data/Watanabe1985/studyContact.csv",
+                 "data/Watanabe1985/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Wenk0000:
@@ -1764,6 +1923,7 @@ targets:
                  "data/Wenk0000/dataNew.csv",
                  "data/Wenk0000/studyRef.bib",
                  "data/Wenk0000/studyContact.csv",
+                 "data/Wenk0000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Whittaker1974:
@@ -1775,6 +1935,7 @@ targets:
                  "data/Whittaker1974/dataNew.csv",
                  "data/Whittaker1974/studyRef.bib",
                  "data/Whittaker1974/studyContact.csv",
+                 "data/Whittaker1974/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Williams2005:
@@ -1786,6 +1947,7 @@ targets:
                  "data/Williams2005/dataNew.csv",
                  "data/Williams2005/studyRef.bib",
                  "data/Williams2005/studyContact.csv",
+                 "data/Williams2005/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Ximenes2004:
@@ -1797,6 +1959,7 @@ targets:
                  "data/Ximenes2004/dataNew.csv",
                  "data/Ximenes2004/studyRef.bib",
                  "data/Ximenes2004/studyContact.csv",
+                 "data/Ximenes2004/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yamaba2007:
@@ -1808,6 +1971,7 @@ targets:
                  "data/Yamaba2007/dataNew.csv",
                  "data/Yamaba2007/studyRef.bib",
                  "data/Yamaba2007/studyContact.csv",
+                 "data/Yamaba2007/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yamada1957:
@@ -1819,6 +1983,7 @@ targets:
                  "data/Yamada1957/dataNew.csv",
                  "data/Yamada1957/studyRef.bib",
                  "data/Yamada1957/studyContact.csv",
+                 "data/Yamada1957/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yamada1996:
@@ -1830,6 +1995,7 @@ targets:
                  "data/Yamada1996/dataNew.csv",
                  "data/Yamada1996/studyRef.bib",
                  "data/Yamada1996/studyContact.csv",
+                 "data/Yamada1996/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yamada2000:
@@ -1841,6 +2007,7 @@ targets:
                  "data/Yamada2000/dataNew.csv",
                  "data/Yamada2000/studyRef.bib",
                  "data/Yamada2000/studyContact.csv",
+                 "data/Yamada2000/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yamaji1991:
@@ -1852,6 +2019,7 @@ targets:
                  "data/Yamaji1991/dataNew.csv",
                  "data/Yamaji1991/studyRef.bib",
                  "data/Yamaji1991/studyContact.csv",
+                 "data/Yamaji1991/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yamakura1972:
@@ -1863,6 +2031,7 @@ targets:
                  "data/Yamakura1972/dataNew.csv",
                  "data/Yamakura1972/studyRef.bib",
                  "data/Yamakura1972/studyContact.csv",
+                 "data/Yamakura1972/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yamakura1986:
@@ -1874,6 +2043,7 @@ targets:
                  "data/Yamakura1986/dataNew.csv",
                  "data/Yamakura1986/studyRef.bib",
                  "data/Yamakura1986/studyContact.csv",
+                 "data/Yamakura1986/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yasui1970:
@@ -1885,6 +2055,7 @@ targets:
                  "data/Yasui1970/dataNew.csv",
                  "data/Yasui1970/studyRef.bib",
                  "data/Yasui1970/studyContact.csv",
+                 "data/Yasui1970/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yasui1971:
@@ -1896,6 +2067,7 @@ targets:
                  "data/Yasui1971/dataNew.csv",
                  "data/Yasui1971/studyRef.bib",
                  "data/Yasui1971/studyContact.csv",
+                 "data/Yasui1971/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yasui1983:
@@ -1907,6 +2079,7 @@ targets:
                  "data/Yasui1983/dataNew.csv",
                  "data/Yasui1983/studyRef.bib",
                  "data/Yasui1983/studyContact.csv",
+                 "data/Yasui1983/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yi1989:
@@ -1918,6 +2091,7 @@ targets:
                  "data/Yi1989/dataNew.csv",
                  "data/Yi1989/studyRef.bib",
                  "data/Yi1989/studyContact.csv",
+                 "data/Yi1989/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   Yoda1978:
@@ -1929,6 +2103,7 @@ targets:
                  "data/Yoda1978/dataNew.csv",
                  "data/Yoda1978/studyRef.bib",
                  "data/Yoda1978/studyContact.csv",
+                 "data/Yoda1978/studyMetadata.csv",
                  variable_definitions,
                  conversions)
   baad:

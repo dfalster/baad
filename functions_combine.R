@@ -1,5 +1,3 @@
-## This is designed to mimic the current assembly, and will change
-## considerably.
 load_study_helper <- function(study_name,
                               variable_definitions,
                               conversions) {
@@ -12,6 +10,7 @@ load_study_helper <- function(study_name,
              path("dataNew.csv"),
              path("studyRef.bib"),
              path("studyContact.csv"),
+             path("studyMetadata.csv"),
              variable_definitions,
              conversions)
 }
@@ -36,7 +35,8 @@ combine_baad <- function(..., d=list(...), variable_definitions) {
   ret <- list(data=combine("data", d),
               methods=combine("methods", d),
               contacts=combine("contacts", d),
-              references=combine("references", d))
+              references=combine("references", d),
+              metadata=combine("metadata", d))
 
   ret$bibtex <- do.call("c", unname(lapply(d, "[[", "bibtex")))
   ret$dictionary <- variable_definitions
