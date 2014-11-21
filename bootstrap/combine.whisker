@@ -1,7 +1,0 @@
-  baad:
-    command: >
-      combine_baad(
-{{#study_names}}
-        {{study_name}},
-{{/study_names}}
-        variable_definitions=variable_definitions)

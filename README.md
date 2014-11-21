@@ -88,3 +88,7 @@ dat <- readRDS('output/baad.rds')
 The database is stored as a list with components `data`, `contact` and `ref`. These contain the data (as a dataframe), contact information for the data providers, and references to publications (where available).
 
 More information for interacting with the maker-generated database forthcoming...
+
+# Adding datasets
+
+[maker](https://github.com/richfitz/maker) offers no looping constructs (on purpose) so for now at least we generate the makerfile using [whisker](https://github.com/edwindj/whisker).  If you add a dataset, you will need to rerun the `bootstrap.R` script, which will update the `maker_data.yml` and `maker_reports.yml` files with appropriate rules for the new dataset (similarly if you remove datasets, do the same).
