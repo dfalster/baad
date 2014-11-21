@@ -140,7 +140,7 @@ study_details <- function(data, baad) {
     lab          = metadata_methods,
     personell    = personell,
     citation     = get_citation_ms(study_name, baad),
-    vars         = vars,
+    vars         = paste0(vars, collapse=", "),
     species      = paste0(unique(data$species), collapse=", "))
   
   whisker.render(template, dat)
