@@ -15,7 +15,7 @@ include:
   # This defines all the reports and including it greatly slows down
   # maker (both in the startup time and in checking the dependency
   # graph).  Commenting it out might be useful sometimes.
-  # - maker_reports.yml
+  - maker_reports.yml
 
 targets:
   all:
