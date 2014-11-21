@@ -32,7 +32,6 @@ save_author_details <- function(d, filename) {
 
 ## Below here still needs work
 
-## TODO: This needs adding to the main baad object.
 get_metadata_methods  <-  function(metadata) {
   if (nrow(metadata) > 0) {
     metadata <- metadata[!is.na(metadata$Description) &
@@ -52,6 +51,7 @@ drawWorldPlot <- function(data, sizebyn=FALSE, add=FALSE,
     map('world',col="black",boundary=TRUE,lwd=0.2,interior=FALSE,fill=FALSE,add=TRUE,resolution=0,wrap=TRUE)
   }
 
+  ## See reports-port
   # Remove all duplicates (increases speed and minimizes file size)
   latlon <- with(data, paste(latitude, longitude))
   lat <- data$latitude[!duplicated(latlon)]
@@ -68,7 +68,7 @@ drawWorldPlot <- function(data, sizebyn=FALSE, add=FALSE,
   } else {
 
     if(!sizebyn){
-      points(lon,lat, pch=19, col=make_transparent("blue",0.5), cex=1.6)
+      points(lon,lat, pch=19, col=pchcol, cex=0.6)
     } else {
       n <- table(latlon)
       symbols(lon,lat, circles=log10(n), inches=0.1, fg="black", bg=pchcol, add=TRUE)
@@ -162,7 +162,7 @@ classify_veg_type <-function(code) {
   classify(code, dat)
 }
 
-classify_site_history <-function(code) {
+classify_site_history <- function(code) {
   dat <- c(FW = "field wild",
            FE = "field experimental",
            GH = "glasshouse",
@@ -173,7 +173,16 @@ classify_site_history <-function(code) {
   classify(code, dat)
 }
 
+classify_pft <- function(code) {
+  dat <- c(EA = "evergreen angiosperm",
+           DA = "deciduous angiosperm",
+           EG = "evergreen gymnosperm",
+           DG = "deciduous gymnosperm")
+  classify(code, dat)
+}
+
 get_lat_long <- function(data) {
+  ## TODO: resolve duplicates without paste.
   uniquesites <- data[!duplicated(paste(data$longitude, data$latitude)),]
   paste(prettyNum(uniquesites$latitude),
         prettyNum(uniquesites$longitude), sep=", ", collapse="; ")
@@ -184,6 +193,7 @@ get_citation_ms <-  function(study_name, baad) {
   citation <- baad$references$citation[i]
 
   if (baad$references$doi[i] != "") {
+    ## TODO: Use md_link and md_link_doi
     citation <- sprintf("%s, DOI: [%s](http://doi.org/%s).",
                         citation, baad$references$doi[i],
                         baad$references$doi[i])
@@ -250,5 +260,5 @@ get_acknowledgements <- function(baad) {
 
 ## This is a temporary helper until first class rendering is done:
 render_ms <- function(filename_md) {
-  rmarkdown::render(filename_md, "html_document")
+  rmarkdown::render(filename_md, "html_document", quiet=TRUE)
 }

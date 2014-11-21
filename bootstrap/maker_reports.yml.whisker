@@ -1,0 +1,18 @@
+targets:
+{{#study_names}}
+  reports/{{study_name}}.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: {{study_name}}
+      - baad
+  reports/{{study_name}}.html:
+    command: render_ms("reports/{{study_name}}.md")
+{{/study_names}}
+  reports:
+    depends:
+{{#study_names}}
+      - reports/{{study_name}}.html
+{{/study_names}}

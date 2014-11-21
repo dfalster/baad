@@ -15,3 +15,6 @@ vals <- list(study_names=iteratelist(study_names, value="study_name"))
 
 str <- whisker.render(templates$maker_data.yml, vals, templates)
 writeLines(str, "maker_data.yml")
+
+str <- whisker.render(templates$maker_reports.yml, vals, templates)
+writeLines(str, "maker_reports.yml")
