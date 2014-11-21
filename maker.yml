@@ -22,13 +22,13 @@ include:
   # This defines all the reports and including it greatly slows down
   # maker (both in the startup time and in checking the dependency
   # graph).  Commenting it out might be useful sometimes.
-  - maker_reports.yml
+  # - maker_reports.yml
 
 targets:
   all:
     depends: baad
   manuscript:
-    depends: ms.html
+    depends: ms/ms.html
 
   output/baad.rds:
     command: saveRDS(baad, target_name)
@@ -38,17 +38,18 @@ targets:
   output/authors.csv:
     command: save_author_details(author_info, target_name)
 
-  ms.md:
-    knitr: true
+  ms/ms.md:
+    knitr:
+      chdir: true
+      auto_figure_prefix: true
     packages:
-      - maps
       - whisker
       - knitcitations
     depends:
       - baad
       - author_info
-      - refs.bib
+      - ms/refs.bib
 
-  ms.html:
-    command: render_ms("ms.md")
+  ms/ms.html:
+    command: render_ms("ms/ms.md")
     quiet: true

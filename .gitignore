@@ -6,6 +6,10 @@ figure
 xtra
 
 .maker
-ms.html
-ms.md
 *.rds
+ms/ms.html
+ms/ms.md
+ms/figure
+reports/*.html
+reports/*.md
+reports/figure
