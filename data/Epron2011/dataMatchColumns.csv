@@ -6,7 +6,7 @@
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "vegetation",NA,NA,"vegetation",NA
-"lai","?","m2.m2","lai",NA
+"lai","?","m2/m2","lai",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
 "family",NA,NA,"family",NA
@@ -45,17 +45,17 @@
 "m.rt",NA,"kg","m.rt",NA
 "m.to",NA,"kg","m.to",NA
 "a.ilf",NA,"m2","a.ilf",NA
-"ma.ilf",NA,"kg.m2","ma.ilf",NA
-"r.st",NA,"kg.m3","r.st",NA
-"r.ss",NA,"kg.m3","r.ss",NA
-"r.sb",NA,"kg.m3","r.sb",NA
-"r.sh",NA,"kg.m3","r.sh",NA
-"n.lf","x1","kg.kg","n.lf",NA
-"n.ss","?","kg.kg","n.ss","Sapwood + Heartwood"
-"n.sb","?","kg.kg","n.sb",NA
-"n.sh",NA,"kg.kg","n.sh",NA
-"n.rf","x4","kg.kg","n.rf",NA
-"n.rc",NA,"kg.kg","n.rc",NA
+"ma.ilf",NA,"kg/m2","ma.ilf",NA
+"r.st",NA,"kg/m3","r.st",NA
+"r.ss",NA,"kg/m3","r.ss",NA
+"r.sb",NA,"kg/m3","r.sb",NA
+"r.sh",NA,"kg/m3","r.sh",NA
+"n.lf","x1","kg/kg","n.lf",NA
+"n.ss","?","kg/kg","n.ss","Sapwood + Heartwood"
+"n.sb","?","kg/kg","n.sb",NA
+"n.sh",NA,"kg/kg","n.sh",NA
+"n.rf","x4","kg/kg","n.rf",NA
+"n.rc",NA,"kg/kg","n.rc",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "status",NA,NA,"status",NA
 "light","?",NA,"light",NA

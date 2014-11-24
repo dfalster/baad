@@ -12,8 +12,8 @@
 "h.c","x6","m","h.c",NA
 "m.lf","m3,x6,x1","kg","m.lf",NA
 "m.br","m3","kg","m.br",NA
-"lf.ma","m3,x1","kg.m2","ma.ilf",NA
-"d.st","j,k3","g.cm3","r.st",NA
+"lf.ma","m3,x1","kg/m2","ma.ilf",NA
+"d.st","j,k3","g/cm3","r.st",NA
 "pft",NA,NA,"pft",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "status",NA,NA,"status",NA
@@ -23,7 +23,7 @@
 "latitude",NA,"deg","latitude",NA
 "longitude",NA,"deg","longitude",NA
 "vegetation",NA,NA,"vegetation",NA
-"lai","k3","m2.m2","lai",NA
+"lai","k3","m2/m2","lai",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
 "grouping",NA,NA,"grouping",NA

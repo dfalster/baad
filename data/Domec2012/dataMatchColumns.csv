@@ -22,18 +22,18 @@
 "Fine root mass","?","kg","m.rf",NA
 "Coarse root mass","?","kg","m.rc",NA
 "Total root mass","?","kg","m.rt",NA
-"Leaf mass per area","m3,a4,a7,x1","kg.m2","ma.ilf",NA
-"Density of stem tissue","?","g.cm3","r.st",NA
-"Density of stem sapwood","?","g.cm3","r.ss",NA
-"Density of stem bark","?","g.cm3","r.sb",NA
-"Density of stem heartwood","?","g.cm3","r.sh",NA
-"Leaf nitrogen","?","kg.kg","n.lf",NA
-"Sapwood nitrogen","?","kg.kg","n.ss",NA
-"Bark nitrogen","?","kg.kg","n.sb",NA
-"Heartwood nitrogen","?","kg.kg","n.sh",NA
-"Fine roots nitrogen","?","kg.kg","n.rf",NA
-"Coarse root nitrogen","?","kg.kg","n.rc",NA
-"LAI","?","m2.m2","lai",NA
+"Leaf mass per area","m3,a4,a7,x1","kg/m2","ma.ilf",NA
+"Density of stem tissue","?","g/cm3","r.st",NA
+"Density of stem sapwood","?","g/cm3","r.ss",NA
+"Density of stem bark","?","g/cm3","r.sb",NA
+"Density of stem heartwood","?","g/cm3","r.sh",NA
+"Leaf nitrogen","?","kg/kg","n.lf",NA
+"Sapwood nitrogen","?","kg/kg","n.ss",NA
+"Bark nitrogen","?","kg/kg","n.sb",NA
+"Heartwood nitrogen","?","kg/kg","n.sh",NA
+"Fine roots nitrogen","?","kg/kg","n.rf",NA
+"Coarse root nitrogen","?","kg/kg","n.rc",NA
+"LAI","?","m2/m2","lai",NA
 "pft",NA,NA,"pft",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "Position inforest canopy",NA,NA,"status",NA

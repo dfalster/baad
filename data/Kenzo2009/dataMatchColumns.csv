@@ -13,9 +13,9 @@
 "m.rf.g","m4,x1","g","m.rf",NA
 "m.rc.g","m4,x1","g","m.rc",NA
 "m.rt.g","m4,x1","g","m.rt",NA
-"lf.ma.g.m2","m3,x1","g.m2","ma.ilf",NA
-"d.st.g.cm3","?","g.cm3","r.st",NA
-"n.lf.per","m3","kg.kg","n.lf","originally percentage, but transformed into proportion in the R script"
+"lf.ma.g.m2","m3,x1","g/m2","ma.ilf",NA
+"d.st.g.cm3","?","g/cm3","r.st",NA
+"n.lf.per","m3","kg/kg","n.lf","originally percentage, but transformed into proportion in the R script"
 "n.ss.per","m3","per","n.ss","percentage"
 "n.rf.per","m3","per","n.rf","percentage"
 "n.rc.per","m3","per","n.rc","percentage"

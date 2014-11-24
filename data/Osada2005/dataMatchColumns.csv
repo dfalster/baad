@@ -12,9 +12,9 @@
 "Total.leaf.area","a1,x1,e1","cm2","a.lf",NA
 "Individual.leaf.area","a1,x1","cm2","a.ilf",NA
 "Stem.diameter.at.10.percent.Height","?","cm","d.bh",NA
-"SLA","?","cm2.g","ma.ilf",NA
+"SLA","?","cm2/g","ma.ilf",NA
 "LMA",NA,NA,NA,NA
-"LAI","?","m2.m2","lai",NA
+"LAI","?","m2/m2","lai",NA
 "light.ISF","l5",NA,"light",NA
 "light.DSF",NA,NA,NA,NA
 "light.GSF",NA,NA,NA,NA

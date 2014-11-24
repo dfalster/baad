@@ -11,9 +11,9 @@
 "m.lf","m3","g","m.lf",NA
 "m.st","?","g","m.st",NA
 "m.br.2.","b1","g","m.br",NA
-"lf.ma.1.","a1,m3,x1","g.m2","ma.ilf",NA
-"d.st","?","g.cm3","r.st",NA
-"n.lf","x1","kg.kg","n.lf",NA
+"lf.ma.1.","a1,m3,x1","g/m2","ma.ilf",NA
+"d.st","?","g/cm3","r.st",NA
+"n.lf","x1","kg/kg","n.lf",NA
 "pft",NA,NA,"pft",NA
 "growth.conditions",NA,NA,NA,NA
 "status",NA,NA,"status",NA
@@ -24,7 +24,7 @@
 "lat",NA,NA,NA,NA
 "long",NA,NA,NA,NA
 "vegetation",NA,NA,"vegetation",NA
-"lai","?","m2.m2","lai",NA
+"lai","?","m2/m2","lai",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
 "reference",NA,NA,NA,NA

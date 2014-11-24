@@ -27,12 +27,12 @@
 "projected trunk area from side(cm2)",NA,NA,NA,NA
 "projected crone area from above (cm2)",NA,NA,NA,NA
 "projected cone area from side (cm2)",NA,NA,NA,NA
-"coarse root N%","m4","g.g","n.rc",NA
-"I year needles N%","m4","g.g",NA,NA
-"II year needles N%","m4","g.g",NA,NA
-"III year needles N%","m4","g.g","n.lf",NA
-"trunk N%","m4","g.g",NA,NA
-"weighed average N%","m4","g.g",NA,NA
+"coarse root N%","m4","g/g","n.rc",NA
+"I year needles N%","m4","g/g",NA,NA
+"II year needles N%","m4","g/g",NA,NA
+"III year needles N%","m4","g/g","n.lf",NA
+"trunk N%","m4","g/g",NA,NA
+"weighed average N%","m4","g/g",NA,NA
 "this year seedling mass","m4","g",NA,NA
 "last year seedling mas","m4","g",NA,NA
 "2 years ago seedling mass","m4","g",NA,NA
@@ -40,7 +40,7 @@
 "total needle area cm2( mm /100)","a1,a5,x1","cm2",NA,NA
 "total needle area m2 (mm / 1000000)","a3,a5,x1","m2","a.lf",NA
 "total dry mass g","m4","g","m.to",NA
-"LMA g m-2","a3,a4,m4,x1","g.m2","ma.ilf",NA
+"LMA g m-2","a3,a4,m4,x1","g/m2","ma.ilf",NA
 "S/R kg kg-1",NA,NA,NA,NA
 "LAR m2 kg-1",NA,NA,NA,NA
 "LWR kg kg-1",NA,NA,NA,NA
