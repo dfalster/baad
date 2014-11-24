@@ -8,30 +8,24 @@ output:
 
 
 ```{r, results="hide", echo=FALSE, message=FALSE}
-source("MS-fun.R")
-
 knitr::opts_chunk$set(tidy=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.cap="")
 options(citation_format = "text", max.names=2)
 
 bib <- read.bibtex("refs.bib")
-baad <- readRDS("../output/baad.rds")
 data <- baad$data
-var.def <- read.csv("../config/variableDefinitions.csv",
-                    stringsAsFactors=FALSE)
-
-vars <- setdiff(var.def$variable[var.def$type == "numeric"], c("map","mat","lai","age"))
+var_def <- baad$dictionary
+vars <- setdiff(var_def$variable[var_def$type == "numeric"], 
+                c("map", "mat", "lai", "age"))
 ```
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
-details <- authorDetails(baad$contact)
-
-writeLines(paste("**List of Authors:** ", paste0(details$authors, "^", details$address_code,"^",collapse = ", ") ))
-
+writeLines(paste("**List of Authors:** ", 
+                 paste0(author_info$authors$name, 
+                        "^", author_info$authors$address_code, "^", 
+                        collapse = ", ")))
 writeLines("\n\n")
-
-writeLines(paste0(details$address$code, ". ", details$address$address, collapse="\n"))
-
-write.csv(data.frame(name=details$authors, email=details$emails, address=details$address$address[match(details$address_code, details$address$code)]), "../output/authors.csv", row.names=FALSE)
+writeLines(paste0(author_info$address_table$code, ". ", 
+                  author_info$address_table$address))
 ```
 
 ```{r precite, results='hide', message=FALSE, echo=FALSE}
@@ -63,9 +57,8 @@ Until recently, scientific publications in biology have mostly been concerned wi
 
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=7}
-
 # World plot colored by vegetation type
-cols <- make.transparent(c(
+cols <- make_transparent(c(
     "blue","brown","forestgreen","darkorange","dodgerblue2",
     "navajowhite4","lightgoldenrod3","lavender"),0.67)
 vegs <- c("BorF","Sav","TempF","TempRF","TropRF","TropSF","Wo")
@@ -82,7 +75,6 @@ drawWorldPlot(data[data$growingCondition == "GH",], sizebyn=TRUE,
 par(xpd=NA)
 legend(-160, -100, vegs_labels[1:4], fill=cols[1:4], bty='n')
 legend(-40, -100, vegs_labels[5:8], fill=cols[5:8], bty='n')
-
 ```
 
 **Figure 1** Global distribution of studies included in BAAD. Symbols are sized relative to the number of individual plants in each dataset.
@@ -111,16 +103,8 @@ plant traits; biomass allocation; biomass partitioning; plant allometry; allomet
 ### B. SPECIFIC SUBPROJECT DESCRIPTION
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
-library(plyr)
-library(whisker)
-
-## for debugging
-# for(s in unique(data$studyName)){
-#  cat(s)
-#  studyDetails(data[data$studyName==s,])}
-
-details2B  <-  daply(data, .(studyName), function(x) studyDetails(x))
-writeLines(details2B,sep="\n\n")
+details2B <- sapply(split(data, data$studyName), study_details, baad)
+writeLines(details2B, sep="\n\n")
 ```
 
 ## CLASS III. DATA SET STATUS AND ACCESSIBILITY
@@ -169,24 +153,15 @@ BAAD contains the following files:
 ### B. Variable definitions for data.csv
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, comment='', results="asis"}
-x <-daply(var.def, 1, function(x)
-		paste0("* ", x$variable,
-    "\n\t- Type: ", x$type,
-		"\n\t- Label: ", x$label,
-		"\n\t- Description: ", x$description,
-		"\n\t- Units: ", gsub(".","/", x$unitsMD, fixed=TRUE)
-		))
-
-writeLines(x[var.def$variable])
+writeLines(variable_details(var_def))
 ```
 
 **Number of observations by variable**
 
 ```{r results='asis', echo=FALSE, warning=FALSE}
 options(digits=9)
-kable(summaryTable(data, var.def), "markdown", align="l", padding=10)
+kable(summary_table(data, var_def), "markdown", align="l", padding=10)
 ```
-
 
 ## ACKNOWLEDGMENTS
 
@@ -194,15 +169,7 @@ kable(summaryTable(data, var.def), "markdown", align="l", padding=10)
 
 In addition, we thank the following people for contributions to the following studies:
 ```{r,results="asis",echo=FALSE, message=FALSE}
-getAcknowledgments <- function(studyName) {
-  metadata  <-  readStudyFile(studyName, "studyMetadata.csv")
-  i <- match("Acknowledgements",metadata$Topic)
-  out <- ""
-  if(!is.na(i))
-    out <- sprintf(" **%s:** %s;", studyName, metadata$Description[i])
-  out
-}
-writeLines(paste(sapply(unique(data$studyName), getAcknowledgments), collapse= ""))
+writeLines(get_acknowledgements(baad))
 ```
 .
 

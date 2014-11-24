@@ -1,0 +1,1929 @@
+targets:
+  reports/Abe1981.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Abe1981
+      - baad
+  reports/Abe1981.html:
+    command: render_ms("reports/Abe1981.md")
+  reports/Aiba2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Aiba2005
+      - baad
+  reports/Aiba2005.html:
+    command: render_ms("reports/Aiba2005.md")
+  reports/Aiba2007.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Aiba2007
+      - baad
+  reports/Aiba2007.html:
+    command: render_ms("reports/Aiba2007.md")
+  reports/Albrektson1984.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Albrektson1984
+      - baad
+  reports/Albrektson1984.html:
+    command: render_ms("reports/Albrektson1984.md")
+  reports/Ando1962.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ando1962
+      - baad
+  reports/Ando1962.html:
+    command: render_ms("reports/Ando1962.md")
+  reports/Ando1973.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ando1973
+      - baad
+  reports/Ando1973.html:
+    command: render_ms("reports/Ando1973.md")
+  reports/Ando1988.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ando1988
+      - baad
+  reports/Ando1988.html:
+    command: render_ms("reports/Ando1988.md")
+  reports/Aspinwall2013.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Aspinwall2013
+      - baad
+  reports/Aspinwall2013.html:
+    command: render_ms("reports/Aspinwall2013.md")
+  reports/Baltzer2007.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Baltzer2007
+      - baad
+  reports/Baltzer2007.html:
+    command: render_ms("reports/Baltzer2007.md")
+  reports/Baraloto2006.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Baraloto2006
+      - baad
+  reports/Baraloto2006.html:
+    command: render_ms("reports/Baraloto2006.md")
+  reports/Battaglia1998.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Battaglia1998
+      - baad
+  reports/Battaglia1998.html:
+    command: render_ms("reports/Battaglia1998.md")
+  reports/BondLamberty2002.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: BondLamberty2002
+      - baad
+  reports/BondLamberty2002.html:
+    command: render_ms("reports/BondLamberty2002.md")
+  reports/Brown1978.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Brown1978
+      - baad
+  reports/Brown1978.html:
+    command: render_ms("reports/Brown1978.md")
+  reports/Burger1953.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Burger1953
+      - baad
+  reports/Burger1953.html:
+    command: render_ms("reports/Burger1953.md")
+  reports/Claveau2002.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Claveau2002
+      - baad
+  reports/Claveau2002.html:
+    command: render_ms("reports/Claveau2002.md")
+  reports/Claveau2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Claveau2005
+      - baad
+  reports/Claveau2005.html:
+    command: render_ms("reports/Claveau2005.md")
+  reports/Coll2008.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Coll2008
+      - baad
+  reports/Coll2008.html:
+    command: render_ms("reports/Coll2008.md")
+  reports/Dannoura2006.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Dannoura2006
+      - baad
+  reports/Dannoura2006.html:
+    command: render_ms("reports/Dannoura2006.md")
+  reports/Delagrange0000a.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Delagrange0000a
+      - baad
+  reports/Delagrange0000a.html:
+    command: render_ms("reports/Delagrange0000a.md")
+  reports/Delagrange0000b.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Delagrange0000b
+      - baad
+  reports/Delagrange0000b.html:
+    command: render_ms("reports/Delagrange0000b.md")
+  reports/Delagrange2004.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Delagrange2004
+      - baad
+  reports/Delagrange2004.html:
+    command: render_ms("reports/Delagrange2004.md")
+  reports/Domec2012.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Domec2012
+      - baad
+  reports/Domec2012.html:
+    command: render_ms("reports/Domec2012.md")
+  reports/Epron2011.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Epron2011
+      - baad
+  reports/Epron2011.html:
+    command: render_ms("reports/Epron2011.md")
+  reports/Fatemi2011.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Fatemi2011
+      - baad
+  reports/Fatemi2011.html:
+    command: render_ms("reports/Fatemi2011.md")
+  reports/FLFU1963.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: FLFU1963
+      - baad
+  reports/FLFU1963.html:
+    command: render_ms("reports/FLFU1963.md")
+  reports/FLFU1965.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: FLFU1965
+      - baad
+  reports/FLFU1965.html:
+    command: render_ms("reports/FLFU1965.md")
+  reports/Furuno1967.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Furuno1967
+      - baad
+  reports/Furuno1967.html:
+    command: render_ms("reports/Furuno1967.md")
+  reports/Garber2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Garber2005
+      - baad
+  reports/Garber2005.html:
+    command: render_ms("reports/Garber2005.md")
+  reports/Gargaglione2010.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Gargaglione2010
+      - baad
+  reports/Gargaglione2010.html:
+    command: render_ms("reports/Gargaglione2010.md")
+  reports/Ghannoum2010a.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ghannoum2010a
+      - baad
+  reports/Ghannoum2010a.html:
+    command: render_ms("reports/Ghannoum2010a.md")
+  reports/Ghannoum2010b.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ghannoum2010b
+      - baad
+  reports/Ghannoum2010b.html:
+    command: render_ms("reports/Ghannoum2010b.md")
+  reports/Goto2003.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Goto2003
+      - baad
+  reports/Goto2003.html:
+    command: render_ms("reports/Goto2003.md")
+  reports/Hagihara1993.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Hagihara1993
+      - baad
+  reports/Hagihara1993.html:
+    command: render_ms("reports/Hagihara1993.md")
+  reports/Hamilton2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Hamilton2005
+      - baad
+  reports/Hamilton2005.html:
+    command: render_ms("reports/Hamilton2005.md")
+  reports/Harada1972.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Harada1972
+      - baad
+  reports/Harada1972.html:
+    command: render_ms("reports/Harada1972.md")
+  reports/Harja2012.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Harja2012
+      - baad
+  reports/Harja2012.html:
+    command: render_ms("reports/Harja2012.md")
+  reports/Haruki1979.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Haruki1979
+      - baad
+  reports/Haruki1979.html:
+    command: render_ms("reports/Haruki1979.md")
+  reports/Hashizume1980.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Hashizume1980
+      - baad
+  reports/Hashizume1980.html:
+    command: render_ms("reports/Hashizume1980.md")
+  reports/Hashizume1985.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Hashizume1985
+      - baad
+  reports/Hashizume1985.html:
+    command: render_ms("reports/Hashizume1985.md")
+  reports/Holdaway2008.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Holdaway2008
+      - baad
+  reports/Holdaway2008.html:
+    command: render_ms("reports/Holdaway2008.md")
+  reports/Iijima1991.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Iijima1991
+      - baad
+  reports/Iijima1991.html:
+    command: render_ms("reports/Iijima1991.md")
+  reports/Ikushima1964.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ikushima1964
+      - baad
+  reports/Ikushima1964.html:
+    command: render_ms("reports/Ikushima1964.md")
+  reports/Ilomaki2003.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ilomaki2003
+      - baad
+  reports/Ilomaki2003.html:
+    command: render_ms("reports/Ilomaki2003.md")
+  reports/Ishii2000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ishii2000
+      - baad
+  reports/Ishii2000.html:
+    command: render_ms("reports/Ishii2000.md")
+  reports/Kabaya1968.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kabaya1968
+      - baad
+  reports/Kabaya1968.html:
+    command: render_ms("reports/Kabaya1968.md")
+  reports/Kabaya1981.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kabaya1981
+      - baad
+  reports/Kabaya1981.html:
+    command: render_ms("reports/Kabaya1981.md")
+  reports/Kantola2004.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kantola2004
+      - baad
+  reports/Kantola2004.html:
+    command: render_ms("reports/Kantola2004.md")
+  reports/Karizumi1984.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Karizumi1984
+      - baad
+  reports/Karizumi1984.html:
+    command: render_ms("reports/Karizumi1984.md")
+  reports/Katagiri1984.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Katagiri1984
+      - baad
+  reports/Katagiri1984.html:
+    command: render_ms("reports/Katagiri1984.md")
+  reports/Katakura2007.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Katakura2007
+      - baad
+  reports/Katakura2007.html:
+    command: render_ms("reports/Katakura2007.md")
+  reports/Kato1973.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kato1973
+      - baad
+  reports/Kato1973.html:
+    command: render_ms("reports/Kato1973.md")
+  reports/Kawahara1981.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kawahara1981
+      - baad
+  reports/Kawahara1981.html:
+    command: render_ms("reports/Kawahara1981.md")
+  reports/Kawanabe1977.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kawanabe1977
+      - baad
+  reports/Kawanabe1977.html:
+    command: render_ms("reports/Kawanabe1977.md")
+  reports/Kelly0000a.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kelly0000a
+      - baad
+  reports/Kelly0000a.html:
+    command: render_ms("reports/Kelly0000a.md")
+  reports/Kelly0000b.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kelly0000b
+      - baad
+  reports/Kelly0000b.html:
+    command: render_ms("reports/Kelly0000b.md")
+  reports/Kenzo2009.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kenzo2009
+      - baad
+  reports/Kenzo2009.html:
+    command: render_ms("reports/Kenzo2009.md")
+  reports/Kenzo2009b.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kenzo2009b
+      - baad
+  reports/Kenzo2009b.html:
+    command: render_ms("reports/Kenzo2009b.md")
+  reports/King1994.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: King1994
+      - baad
+  reports/King1994.html:
+    command: render_ms("reports/King1994.md")
+  reports/King1996.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: King1996
+      - baad
+  reports/King1996.html:
+    command: render_ms("reports/King1996.md")
+  reports/Kitazawa1959.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kitazawa1959
+      - baad
+  reports/Kitazawa1959.html:
+    command: render_ms("reports/Kitazawa1959.md")
+  reports/Kohyama0000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kohyama0000
+      - baad
+  reports/Kohyama0000.html:
+    command: render_ms("reports/Kohyama0000.md")
+  reports/Kohyama1987.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kohyama1987
+      - baad
+  reports/Kohyama1987.html:
+    command: render_ms("reports/Kohyama1987.md")
+  reports/Kohyama1990.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kohyama1990
+      - baad
+  reports/Kohyama1990.html:
+    command: render_ms("reports/Kohyama1990.md")
+  reports/Kohyama1994.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Kohyama1994
+      - baad
+  reports/Kohyama1994.html:
+    command: render_ms("reports/Kohyama1994.md")
+  reports/Komiyama2002.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Komiyama2002
+      - baad
+  reports/Komiyama2002.html:
+    command: render_ms("reports/Komiyama2002.md")
+  reports/Komiyama2003.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Komiyama2003
+      - baad
+  reports/Komiyama2003.html:
+    command: render_ms("reports/Komiyama2003.md")
+  reports/leMaire2011.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: leMaire2011
+      - baad
+  reports/leMaire2011.html:
+    command: render_ms("reports/leMaire2011.md")
+  reports/Lewis2013.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Lewis2013
+      - baad
+  reports/Lewis2013.html:
+    command: render_ms("reports/Lewis2013.md")
+  reports/Lusk0000a.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Lusk0000a
+      - baad
+  reports/Lusk0000a.html:
+    command: render_ms("reports/Lusk0000a.md")
+  reports/Lusk0000b.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Lusk0000b
+      - baad
+  reports/Lusk0000b.html:
+    command: render_ms("reports/Lusk0000b.md")
+  reports/Lusk2002.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Lusk2002
+      - baad
+  reports/Lusk2002.html:
+    command: render_ms("reports/Lusk2002.md")
+  reports/Lusk2004.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Lusk2004
+      - baad
+  reports/Lusk2004.html:
+    command: render_ms("reports/Lusk2004.md")
+  reports/Lusk2011.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Lusk2011
+      - baad
+  reports/Lusk2011.html:
+    command: render_ms("reports/Lusk2011.md")
+  reports/Lusk2012.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Lusk2012
+      - baad
+  reports/Lusk2012.html:
+    command: render_ms("reports/Lusk2012.md")
+  reports/Lusk2013.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Lusk2013
+      - baad
+  reports/Lusk2013.html:
+    command: render_ms("reports/Lusk2013.md")
+  reports/Maguire1998.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Maguire1998
+      - baad
+  reports/Maguire1998.html:
+    command: render_ms("reports/Maguire1998.md")
+  reports/Markesteijn2009.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Markesteijn2009
+      - baad
+  reports/Markesteijn2009.html:
+    command: render_ms("reports/Markesteijn2009.md")
+  reports/Martin1998.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Martin1998
+      - baad
+  reports/Martin1998.html:
+    command: render_ms("reports/Martin1998.md")
+  reports/McCulloh2010.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: McCulloh2010
+      - baad
+  reports/McCulloh2010.html:
+    command: render_ms("reports/McCulloh2010.md")
+  reports/Mokany2003.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Mokany2003
+      - baad
+  reports/Mokany2003.html:
+    command: render_ms("reports/Mokany2003.md")
+  reports/Monserud1999.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Monserud1999
+      - baad
+  reports/Monserud1999.html:
+    command: render_ms("reports/Monserud1999.md")
+  reports/Mori1979.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Mori1979
+      - baad
+  reports/Mori1979.html:
+    command: render_ms("reports/Mori1979.md")
+  reports/Mori1991.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Mori1991
+      - baad
+  reports/Mori1991.html:
+    command: render_ms("reports/Mori1991.md")
+  reports/Morisawa1957.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Morisawa1957
+      - baad
+  reports/Morisawa1957.html:
+    command: render_ms("reports/Morisawa1957.md")
+  reports/Muro2006.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Muro2006
+      - baad
+  reports/Muro2006.html:
+    command: render_ms("reports/Muro2006.md")
+  reports/Myster2009.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Myster2009
+      - baad
+  reports/Myster2009.html:
+    command: render_ms("reports/Myster2009.md")
+  reports/Naidu1998.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Naidu1998
+      - baad
+  reports/Naidu1998.html:
+    command: render_ms("reports/Naidu1998.md")
+  reports/Nakagaki1983.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Nakagaki1983
+      - baad
+  reports/Nakagaki1983.html:
+    command: render_ms("reports/Nakagaki1983.md")
+  reports/Nishioka1982.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Nishioka1982
+      - baad
+  reports/Nishioka1982.html:
+    command: render_ms("reports/Nishioka1982.md")
+  reports/Nouvellon2010.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Nouvellon2010
+      - baad
+  reports/Nouvellon2010.html:
+    command: render_ms("reports/Nouvellon2010.md")
+  reports/OGrady2000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: OGrady2000
+      - baad
+  reports/OGrady2000.html:
+    command: render_ms("reports/OGrady2000.md")
+  reports/OGrady2006.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: OGrady2006
+      - baad
+  reports/OGrady2006.html:
+    command: render_ms("reports/OGrady2006.md")
+  reports/OHara1995.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: OHara1995
+      - baad
+  reports/OHara1995.html:
+    command: render_ms("reports/OHara1995.md")
+  reports/OHara2014.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: OHara2014
+      - baad
+  reports/OHara2014.html:
+    command: render_ms("reports/OHara2014.md")
+  reports/Ohtsuka2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ohtsuka2005
+      - baad
+  reports/Ohtsuka2005.html:
+    command: render_ms("reports/Ohtsuka2005.md")
+  reports/Osada0000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Osada0000
+      - baad
+  reports/Osada0000.html:
+    command: render_ms("reports/Osada0000.md")
+  reports/Osada2003.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Osada2003
+      - baad
+  reports/Osada2003.html:
+    command: render_ms("reports/Osada2003.md")
+  reports/Osada2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Osada2005
+      - baad
+  reports/Osada2005.html:
+    command: render_ms("reports/Osada2005.md")
+  reports/Osunkoya2007.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Osunkoya2007
+      - baad
+  reports/Osunkoya2007.html:
+    command: render_ms("reports/Osunkoya2007.md")
+  reports/Parviainen1999.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Parviainen1999
+      - baad
+  reports/Parviainen1999.html:
+    command: render_ms("reports/Parviainen1999.md")
+  reports/Peri0000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Peri0000
+      - baad
+  reports/Peri0000.html:
+    command: render_ms("reports/Peri0000.md")
+  reports/Peri2008.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Peri2008
+      - baad
+  reports/Peri2008.html:
+    command: render_ms("reports/Peri2008.md")
+  reports/Peri2011.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Peri2011
+      - baad
+  reports/Peri2011.html:
+    command: render_ms("reports/Peri2011.md")
+  reports/Petritan2009.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Petritan2009
+      - baad
+  reports/Petritan2009.html:
+    command: render_ms("reports/Petritan2009.md")
+  reports/Poorter1999.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Poorter1999
+      - baad
+  reports/Poorter1999.html:
+    command: render_ms("reports/Poorter1999.md")
+  reports/Portsmuth2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Portsmuth2005
+      - baad
+  reports/Portsmuth2005.html:
+    command: render_ms("reports/Portsmuth2005.md")
+  reports/Portsmuth2006.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Portsmuth2006
+      - baad
+  reports/Portsmuth2006.html:
+    command: render_ms("reports/Portsmuth2006.md")
+  reports/Reid2004.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Reid2004
+      - baad
+  reports/Reid2004.html:
+    command: render_ms("reports/Reid2004.md")
+  reports/Ribeiro2011.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ribeiro2011
+      - baad
+  reports/Ribeiro2011.html:
+    command: render_ms("reports/Ribeiro2011.md")
+  reports/Roberts2003.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Roberts2003
+      - baad
+  reports/Roberts2003.html:
+    command: render_ms("reports/Roberts2003.md")
+  reports/Roberts2004.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Roberts2004
+      - baad
+  reports/Roberts2004.html:
+    command: render_ms("reports/Roberts2004.md")
+  reports/Rodriguez2003.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Rodriguez2003
+      - baad
+  reports/Rodriguez2003.html:
+    command: render_ms("reports/Rodriguez2003.md")
+  reports/Roeh1997.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Roeh1997
+      - baad
+  reports/Roeh1997.html:
+    command: render_ms("reports/Roeh1997.md")
+  reports/Roth2007.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Roth2007
+      - baad
+  reports/Roth2007.html:
+    command: render_ms("reports/Roth2007.md")
+  reports/Saito1981.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Saito1981
+      - baad
+  reports/Saito1981.html:
+    command: render_ms("reports/Saito1981.md")
+  reports/Salazar2010.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Salazar2010
+      - baad
+  reports/Salazar2010.html:
+    command: render_ms("reports/Salazar2010.md")
+  reports/SaldanaAcosta2009.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: SaldanaAcosta2009
+      - baad
+  reports/SaldanaAcosta2009.html:
+    command: render_ms("reports/SaldanaAcosta2009.md")
+  reports/SantaRegina0000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: SantaRegina0000
+      - baad
+  reports/SantaRegina0000.html:
+    command: render_ms("reports/SantaRegina0000.md")
+  reports/SantaRegina1999.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: SantaRegina1999
+      - baad
+  reports/SantaRegina1999.html:
+    command: render_ms("reports/SantaRegina1999.md")
+  reports/Sato1971.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Sato1971
+      - baad
+  reports/Sato1971.html:
+    command: render_ms("reports/Sato1971.md")
+  reports/Satoo1968.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Satoo1968
+      - baad
+  reports/Satoo1968.html:
+    command: render_ms("reports/Satoo1968.md")
+  reports/Satoo1974a.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Satoo1974a
+      - baad
+  reports/Satoo1974a.html:
+    command: render_ms("reports/Satoo1974a.md")
+  reports/Satoo1974b.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Satoo1974b
+      - baad
+  reports/Satoo1974b.html:
+    command: render_ms("reports/Satoo1974b.md")
+  reports/Satoo1974c.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Satoo1974c
+      - baad
+  reports/Satoo1974c.html:
+    command: render_ms("reports/Satoo1974c.md")
+  reports/Satoo1974d.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Satoo1974d
+      - baad
+  reports/Satoo1974d.html:
+    command: render_ms("reports/Satoo1974d.md")
+  reports/Satoo1974e.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Satoo1974e
+      - baad
+  reports/Satoo1974e.html:
+    command: render_ms("reports/Satoo1974e.md")
+  reports/Segawa1969.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Segawa1969
+      - baad
+  reports/Segawa1969.html:
+    command: render_ms("reports/Segawa1969.md")
+  reports/Segawa1973.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Segawa1973
+      - baad
+  reports/Segawa1973.html:
+    command: render_ms("reports/Segawa1973.md")
+  reports/Selaya2010.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Selaya2010
+      - baad
+  reports/Selaya2010.html:
+    command: render_ms("reports/Selaya2010.md")
+  reports/Sillett2010.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Sillett2010
+      - baad
+  reports/Sillett2010.html:
+    command: render_ms("reports/Sillett2010.md")
+  reports/Singh1980.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Singh1980
+      - baad
+  reports/Singh1980.html:
+    command: render_ms("reports/Singh1980.md")
+  reports/Stancioiu2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Stancioiu2005
+      - baad
+  reports/Stancioiu2005.html:
+    command: render_ms("reports/Stancioiu2005.md")
+  reports/Sterck0000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Sterck0000
+      - baad
+  reports/Sterck0000.html:
+    command: render_ms("reports/Sterck0000.md")
+  reports/Sterck2001.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Sterck2001
+      - baad
+  reports/Sterck2001.html:
+    command: render_ms("reports/Sterck2001.md")
+  reports/Suzuki1990.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Suzuki1990
+      - baad
+  reports/Suzuki1990.html:
+    command: render_ms("reports/Suzuki1990.md")
+  reports/Suzuki2012.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Suzuki2012
+      - baad
+  reports/Suzuki2012.html:
+    command: render_ms("reports/Suzuki2012.md")
+  reports/Sweda2003.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Sweda2003
+      - baad
+  reports/Sweda2003.html:
+    command: render_ms("reports/Sweda2003.md")
+  reports/Tadaki1979.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Tadaki1979
+      - baad
+  reports/Tadaki1979.html:
+    command: render_ms("reports/Tadaki1979.md")
+  reports/Tadaki1995.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Tadaki1995
+      - baad
+  reports/Tadaki1995.html:
+    command: render_ms("reports/Tadaki1995.md")
+  reports/Takagi2010.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Takagi2010
+      - baad
+  reports/Takagi2010.html:
+    command: render_ms("reports/Takagi2010.md")
+  reports/Takahashi1999.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Takahashi1999
+      - baad
+  reports/Takahashi1999.html:
+    command: render_ms("reports/Takahashi1999.md")
+  reports/Tanao1982.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Tanao1982
+      - baad
+  reports/Tanao1982.html:
+    command: render_ms("reports/Tanao1982.md")
+  reports/Tange1995.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Tange1995
+      - baad
+  reports/Tange1995.html:
+    command: render_ms("reports/Tange1995.md")
+  reports/Tange2010.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Tange2010
+      - baad
+  reports/Tange2010.html:
+    command: render_ms("reports/Tange2010.md")
+  reports/Terashi1982.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Terashi1982
+      - baad
+  reports/Terashi1982.html:
+    command: render_ms("reports/Terashi1982.md")
+  reports/Tissue0000a.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Tissue0000a
+      - baad
+  reports/Tissue0000a.html:
+    command: render_ms("reports/Tissue0000a.md")
+  reports/Tissue0000b.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Tissue0000b
+      - baad
+  reports/Tissue0000b.html:
+    command: render_ms("reports/Tissue0000b.md")
+  reports/Tissue0000c.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Tissue0000c
+      - baad
+  reports/Tissue0000c.html:
+    command: render_ms("reports/Tissue0000c.md")
+  reports/Utsugi0000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Utsugi0000
+      - baad
+  reports/Utsugi0000.html:
+    command: render_ms("reports/Utsugi0000.md")
+  reports/Utsugi2004.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Utsugi2004
+      - baad
+  reports/Utsugi2004.html:
+    command: render_ms("reports/Utsugi2004.md")
+  reports/Valladares2000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Valladares2000
+      - baad
+  reports/Valladares2000.html:
+    command: render_ms("reports/Valladares2000.md")
+  reports/vanBreugel2011.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: vanBreugel2011
+      - baad
+  reports/vanBreugel2011.html:
+    command: render_ms("reports/vanBreugel2011.md")
+  reports/Vanninen2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Vanninen2005
+      - baad
+  reports/Vanninen2005.html:
+    command: render_ms("reports/Vanninen2005.md")
+  reports/Wang1995.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Wang1995
+      - baad
+  reports/Wang1995.html:
+    command: render_ms("reports/Wang1995.md")
+  reports/Wang1996.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Wang1996
+      - baad
+  reports/Wang1996.html:
+    command: render_ms("reports/Wang1996.md")
+  reports/Wang2000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Wang2000
+      - baad
+  reports/Wang2000.html:
+    command: render_ms("reports/Wang2000.md")
+  reports/Wang2011.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Wang2011
+      - baad
+  reports/Wang2011.html:
+    command: render_ms("reports/Wang2011.md")
+  reports/Watanabe1984.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Watanabe1984
+      - baad
+  reports/Watanabe1984.html:
+    command: render_ms("reports/Watanabe1984.md")
+  reports/Watanabe1985.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Watanabe1985
+      - baad
+  reports/Watanabe1985.html:
+    command: render_ms("reports/Watanabe1985.md")
+  reports/Wenk0000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Wenk0000
+      - baad
+  reports/Wenk0000.html:
+    command: render_ms("reports/Wenk0000.md")
+  reports/Whittaker1974.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Whittaker1974
+      - baad
+  reports/Whittaker1974.html:
+    command: render_ms("reports/Whittaker1974.md")
+  reports/Williams2005.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Williams2005
+      - baad
+  reports/Williams2005.html:
+    command: render_ms("reports/Williams2005.md")
+  reports/Ximenes2004.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Ximenes2004
+      - baad
+  reports/Ximenes2004.html:
+    command: render_ms("reports/Ximenes2004.md")
+  reports/Yamaba2007.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yamaba2007
+      - baad
+  reports/Yamaba2007.html:
+    command: render_ms("reports/Yamaba2007.md")
+  reports/Yamada1957.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yamada1957
+      - baad
+  reports/Yamada1957.html:
+    command: render_ms("reports/Yamada1957.md")
+  reports/Yamada1996.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yamada1996
+      - baad
+  reports/Yamada1996.html:
+    command: render_ms("reports/Yamada1996.md")
+  reports/Yamada2000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yamada2000
+      - baad
+  reports/Yamada2000.html:
+    command: render_ms("reports/Yamada2000.md")
+  reports/Yamaji1991.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yamaji1991
+      - baad
+  reports/Yamaji1991.html:
+    command: render_ms("reports/Yamaji1991.md")
+  reports/Yamakura1972.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yamakura1972
+      - baad
+  reports/Yamakura1972.html:
+    command: render_ms("reports/Yamakura1972.md")
+  reports/Yamakura1986.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yamakura1986
+      - baad
+  reports/Yamakura1986.html:
+    command: render_ms("reports/Yamakura1986.md")
+  reports/Yasui1970.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yasui1970
+      - baad
+  reports/Yasui1970.html:
+    command: render_ms("reports/Yasui1970.md")
+  reports/Yasui1971.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yasui1971
+      - baad
+  reports/Yasui1971.html:
+    command: render_ms("reports/Yasui1971.md")
+  reports/Yasui1983.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yasui1983
+      - baad
+  reports/Yasui1983.html:
+    command: render_ms("reports/Yasui1983.md")
+  reports/Yi1989.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yi1989
+      - baad
+  reports/Yi1989.html:
+    command: render_ms("reports/Yi1989.md")
+  reports/Yoda1978.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Yoda1978
+      - baad
+  reports/Yoda1978.html:
+    command: render_ms("reports/Yoda1978.md")
+  reports:
+    depends:
+      - reports/Abe1981.html
+      - reports/Aiba2005.html
+      - reports/Aiba2007.html
+      - reports/Albrektson1984.html
+      - reports/Ando1962.html
+      - reports/Ando1973.html
+      - reports/Ando1988.html
+      - reports/Aspinwall2013.html
+      - reports/Baltzer2007.html
+      - reports/Baraloto2006.html
+      - reports/Battaglia1998.html
+      - reports/BondLamberty2002.html
+      - reports/Brown1978.html
+      - reports/Burger1953.html
+      - reports/Claveau2002.html
+      - reports/Claveau2005.html
+      - reports/Coll2008.html
+      - reports/Dannoura2006.html
+      - reports/Delagrange0000a.html
+      - reports/Delagrange0000b.html
+      - reports/Delagrange2004.html
+      - reports/Domec2012.html
+      - reports/Epron2011.html
+      - reports/Fatemi2011.html
+      - reports/FLFU1963.html
+      - reports/FLFU1965.html
+      - reports/Furuno1967.html
+      - reports/Garber2005.html
+      - reports/Gargaglione2010.html
+      - reports/Ghannoum2010a.html
+      - reports/Ghannoum2010b.html
+      - reports/Goto2003.html
+      - reports/Hagihara1993.html
+      - reports/Hamilton2005.html
+      - reports/Harada1972.html
+      - reports/Harja2012.html
+      - reports/Haruki1979.html
+      - reports/Hashizume1980.html
+      - reports/Hashizume1985.html
+      - reports/Holdaway2008.html
+      - reports/Iijima1991.html
+      - reports/Ikushima1964.html
+      - reports/Ilomaki2003.html
+      - reports/Ishii2000.html
+      - reports/Kabaya1968.html
+      - reports/Kabaya1981.html
+      - reports/Kantola2004.html
+      - reports/Karizumi1984.html
+      - reports/Katagiri1984.html
+      - reports/Katakura2007.html
+      - reports/Kato1973.html
+      - reports/Kawahara1981.html
+      - reports/Kawanabe1977.html
+      - reports/Kelly0000a.html
+      - reports/Kelly0000b.html
+      - reports/Kenzo2009.html
+      - reports/Kenzo2009b.html
+      - reports/King1994.html
+      - reports/King1996.html
+      - reports/Kitazawa1959.html
+      - reports/Kohyama0000.html
+      - reports/Kohyama1987.html
+      - reports/Kohyama1990.html
+      - reports/Kohyama1994.html
+      - reports/Komiyama2002.html
+      - reports/Komiyama2003.html
+      - reports/leMaire2011.html
+      - reports/Lewis2013.html
+      - reports/Lusk0000a.html
+      - reports/Lusk0000b.html
+      - reports/Lusk2002.html
+      - reports/Lusk2004.html
+      - reports/Lusk2011.html
+      - reports/Lusk2012.html
+      - reports/Lusk2013.html
+      - reports/Maguire1998.html
+      - reports/Markesteijn2009.html
+      - reports/Martin1998.html
+      - reports/McCulloh2010.html
+      - reports/Mokany2003.html
+      - reports/Monserud1999.html
+      - reports/Mori1979.html
+      - reports/Mori1991.html
+      - reports/Morisawa1957.html
+      - reports/Muro2006.html
+      - reports/Myster2009.html
+      - reports/Naidu1998.html
+      - reports/Nakagaki1983.html
+      - reports/Nishioka1982.html
+      - reports/Nouvellon2010.html
+      - reports/OGrady2000.html
+      - reports/OGrady2006.html
+      - reports/OHara1995.html
+      - reports/OHara2014.html
+      - reports/Ohtsuka2005.html
+      - reports/Osada0000.html
+      - reports/Osada2003.html
+      - reports/Osada2005.html
+      - reports/Osunkoya2007.html
+      - reports/Parviainen1999.html
+      - reports/Peri0000.html
+      - reports/Peri2008.html
+      - reports/Peri2011.html
+      - reports/Petritan2009.html
+      - reports/Poorter1999.html
+      - reports/Portsmuth2005.html
+      - reports/Portsmuth2006.html
+      - reports/Reid2004.html
+      - reports/Ribeiro2011.html
+      - reports/Roberts2003.html
+      - reports/Roberts2004.html
+      - reports/Rodriguez2003.html
+      - reports/Roeh1997.html
+      - reports/Roth2007.html
+      - reports/Saito1981.html
+      - reports/Salazar2010.html
+      - reports/SaldanaAcosta2009.html
+      - reports/SantaRegina0000.html
+      - reports/SantaRegina1999.html
+      - reports/Sato1971.html
+      - reports/Satoo1968.html
+      - reports/Satoo1974a.html
+      - reports/Satoo1974b.html
+      - reports/Satoo1974c.html
+      - reports/Satoo1974d.html
+      - reports/Satoo1974e.html
+      - reports/Segawa1969.html
+      - reports/Segawa1973.html
+      - reports/Selaya2010.html
+      - reports/Sillett2010.html
+      - reports/Singh1980.html
+      - reports/Stancioiu2005.html
+      - reports/Sterck0000.html
+      - reports/Sterck2001.html
+      - reports/Suzuki1990.html
+      - reports/Suzuki2012.html
+      - reports/Sweda2003.html
+      - reports/Tadaki1979.html
+      - reports/Tadaki1995.html
+      - reports/Takagi2010.html
+      - reports/Takahashi1999.html
+      - reports/Tanao1982.html
+      - reports/Tange1995.html
+      - reports/Tange2010.html
+      - reports/Terashi1982.html
+      - reports/Tissue0000a.html
+      - reports/Tissue0000b.html
+      - reports/Tissue0000c.html
+      - reports/Utsugi0000.html
+      - reports/Utsugi2004.html
+      - reports/Valladares2000.html
+      - reports/vanBreugel2011.html
+      - reports/Vanninen2005.html
+      - reports/Wang1995.html
+      - reports/Wang1996.html
+      - reports/Wang2000.html
+      - reports/Wang2011.html
+      - reports/Watanabe1984.html
+      - reports/Watanabe1985.html
+      - reports/Wenk0000.html
+      - reports/Whittaker1974.html
+      - reports/Williams2005.html
+      - reports/Ximenes2004.html
+      - reports/Yamaba2007.html
+      - reports/Yamada1957.html
+      - reports/Yamada1996.html
+      - reports/Yamada2000.html
+      - reports/Yamaji1991.html
+      - reports/Yamakura1972.html
+      - reports/Yamakura1986.html
+      - reports/Yasui1970.html
+      - reports/Yasui1971.html
+      - reports/Yasui1983.html
+      - reports/Yi1989.html
+      - reports/Yoda1978.html
+

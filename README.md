@@ -4,27 +4,7 @@
 
 ## Required packages
 
-Building of the baad requires the package ['dataMashR'](https://github.com/dfalster/dataMashR), which is still under development.
-
-To ensure we use the right version of dataMashR we are using using git's [submodules feature](http://git-scm.com/book/en/Git-Tools-Submodules). Submodule ensures the right version of dataMashR is installed for a given commit in baad.
-
-To set-up submodules after cloning run
-
-```
-git submodule init
-```
-
-To update submodule to correct version:
-
-```
-git submodule update
-```
-
-You can then install the package locally (into the folder `/lib`) by running
-
-```
-make install-dataMashR
-```
+Building of the baad requires the package ['maker'](https://github.com/richfitz/maker), which is still under development.
 
 ### Other packages
 
@@ -93,18 +73,22 @@ is checked (the default).
 
 # Rebuilding the database
 
-The database can be rebuilt using the Makefile. Simply run,
+The database can be rebuilt using maker. From R, run:
 
 ```
-make baad
+maker::make("output/baad.rds")
 ````
 
-This will rebuild the database, stored in `output/baad.rds`. To read this dataframe in `R`, use `readRDS`,
+This will rebuild the database, and store a copy in `output/baad.rds`. To read this dataframe in `R`, use `readRDS`,
 
 ```
 dat <- readRDS('output/baad.rds')
 ```
 
-**Windows users** must install a bundle of Unix-like tools (otherwise `make` is not available). These are conveniently wrapped in [Rtools](http://cran.r-project.org/bin/windows/Rtools/) (select the newest version and install).
-
 The database is stored as a list with components `data`, `contact` and `ref`. These contain the data (as a dataframe), contact information for the data providers, and references to publications (where available).
+
+More information for interacting with the maker-generated database forthcoming...
+
+# Adding datasets
+
+[maker](https://github.com/richfitz/maker) offers no looping constructs (on purpose) so for now at least we generate the makerfile using [whisker](https://github.com/edwindj/whisker).  If you add a dataset, you will need to rerun the `bootstrap.R` script, which will update the `maker_data.yml` and `maker_reports.yml` files with appropriate rules for the new dataset (similarly if you remove datasets, do the same).

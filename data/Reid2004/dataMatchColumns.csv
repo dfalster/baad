@@ -5,7 +5,7 @@
 "latitude",NA,NA,NA,NA
 "longitude",NA,NA,NA,NA
 "vegetation",NA,NA,"vegetation",NA
-"lai","?","m2.m2","lai",NA
+"lai","?","m2/m2","lai",NA
 "map",NA,"mm","map",NA
 "mat",NA,"deg","mat",NA
 "family",NA,NA,"family",NA

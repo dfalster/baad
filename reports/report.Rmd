@@ -1,87 +1,78 @@
-```{r, echo=FALSE}
-source('report-fun.R')
+```{r, echo=FALSE, results="hide"}
+study_name <- data_study$key
 ```
 
-# Report for study: `r .study`
+# Report for study: `r study_name`
 
 ## Contact Information
 
-**Data contributor:** `r .dat$contacts$name`
+**Data contributor:** `r data_study$contacts$name`
 
-**Email:** `r paste0(.dat$contacts$email[.dat$contacts$email!=""], collapse = ", ")`
+**Email:** `r paste0(data_study$contacts$email[data_study$contacts$email!=""], collapse = ", ")`
 
 **Address:**
 
-`r paste0("- ", .dat$contacts$address, collapse = "\n")`
+`r paste0("- ", data_study$contacts$address, collapse = "\n")`
 
 ## Data source
 
-**Citation:** `r .dat$references$citation`
+**Citation:** `r data_study$references$citation`
 
-**DOI:** `r  paste0('[', bibGetElement(.dat$bibtex, element = "doi"), '](http://doi.org/', bibGetElement(.dat$bibtex, element = "doi"),')')`
+**DOI:** `r md_link_doi(bib_element(data_study$bibtex, "doi"))`
 
-**Abstract:** `r  bibGetElement(.dat$bibtex, element = "abstract")`
+**Abstract:** `r  bib_element(data_study$bibtex, "abstract")`
 
 ## Overview of data provided
 
-The dataset includes records for `r length(.dat$data$studyName)` individuals from `r length(unique(.dat$data$species))` species belonging to `r length(unique(.dat$data$family))` family(ies), presenting `r length(unique(.dat$data$pft))` functional type(s), growing in `r length(unique(.dat$data$growingCondition))` condition(s) within `r length(unique(.dat$data$vegetation))` major type(s) of habitat, with data included for the following variables:
+The dataset includes records for `r nrow(data_study$data)` individuals from `r length(unique(data_study$data$species))` species belonging to `r length(unique(data_study$data$family))` family(ies), presenting `r length(unique(data_study$data$pft))` functional type(s), growing in `r length(unique(data_study$data$growingCondition))` condition(s) within `r length(unique(data_study$data$vegetation))` major type(s) of habitat, with data included for the following variables:
 
-```{r results='asis', echo=FALSE, warning=FALSE}
-options(digits=9)
-kable(
-	summaryTable(.dat$data, var.def= read.csv("../config/variableDefinitions.csv", stringsAsFactors=FALSE)),
-	 "markdown", align="l", padding=10)
+```{r summary_table, results='asis', echo=FALSE}
+# From the ms functions:
+tab <- summary_table(data_study$data, baad$dictionary)
+kable(tab[names(tab) != "Studies"], "markdown", align="l", padding=10)
 ```
 
-
-## Locations sampled
-
-Data were sampled at the following locations:
-
-```{r echo=FALSE, fig.width=12, fig.height=10, message=FALSE, warning=FALSE}
-prepdata  <-  prepMapInfo(alldata$data, .study)
-drawWorldPlot (prepdata)
+```{r world_map, echo=FALSE, fig.width=12, fig.height=10}
+map_info <- prep_map_info(data_study$data, study_name)
+drawWorldPlot(map_info)
 ```
-
 
 And locally within the country:
 
-```{r echo=FALSE, fig.width=12, fig.height=10, message=FALSE, warning=FALSE}
-repMissingInfo(prepdata)
-drawCountryPlot(prepdata)
+```{r country_map, echo=FALSE, fig.width=12, fig.height=10}
+report_missing_info(map_info)
+drawCountryPlot(map_info)
 ```
-
 
 The sites sampled are:
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, comment='',results='asis'}
-kable(locLevelInfo(.dat$data),"markdown", align="l", padding=2)
+```{r location_level_info, echo=FALSE, comment='', results='asis'}
+kable(location_level_info(data_study$data), "markdown", align="l", padding=2)
 ```
-
 
 The growing conditions of sampled plants was:
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, comment='', results="asis"}
-kable(standLevelInfo(.dat$data),"markdown", align="l", padding=2)
+```{r stand_level_info, echo=FALSE, comment='', results="asis"}
+kable(stand_level_info(data_study$data), "markdown", align="l", padding=2)
 ```
 
 ## Species sampled
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, comment='',results="asis"}
-kable(spLevelInfo(.dat$data), "markdown", align="l", padding=2)
+```{r species_level_info, echo=FALSE, comment='', results="asis"}
+kable(species_level_info(data_study$data), "markdown", align="l", padding=2)
 ```
 
 ## Methods used
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, comment='', results="asis"}
-metaTable  <-  getMeta(.study)
-writeLines(paste0("**",metaTable[,1],"**", ": ", metaTable[,2], "\n"))
+```{r metadata, echo=FALSE, comment='', results="asis"}
+metadata <- data_study$metadata
+writeLines(sprintf("**%s**: %s\n", metadata$Topic, metadata$Description))
 ```
 
 ## Plots of data
 
-This is how the study `r .study` fits in the entire dataset (grey). each colour represents a species. A legend of species names with colours is included at the end for reports with 1 < n < 20 species.
+This is how the study `r study_name` fits in the entire dataset (grey). each colour represents a species. A legend of species names with colours is included at the end for reports with 1 < n < 20 species.
 
-```{r fig.height=12, fig.width=12, echo=FALSE, warning=FALSE, message=FALSE}
-makePlotPanel(alldata, .dat)
+```{r variable_plots, fig.height=12, fig.width=12, echo=FALSE}
+report_variable_plots(data_study, baad)
 ```

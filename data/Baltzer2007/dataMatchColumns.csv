@@ -10,7 +10,7 @@
 "total root mass (g)","m3","g","m.rt",NA
 "stem mass (g)","m3","g","m.st",NA
 "Single leaf area (cm2)","a1","cm2","a.ilf",NA
-"lma (g cm-2)","m3,x1","g.cm2","ma.ilf",NA
+"lma (g cm-2)","m3,x1","g/cm2","ma.ilf",NA
 "Plant functional type",NA,NA,"pft",NA
 "Growing condition",NA,NA,"growingCondition",NA
 "Status",NA,NA,NA,NA

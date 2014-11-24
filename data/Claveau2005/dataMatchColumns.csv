@@ -18,7 +18,7 @@
 "m.st","m3","kg","m.st",NA
 "m.so","m3","kg","m.so",NA
 "m.br","m3","kg","m.br",NA
-"ma.ilf","m3,x1","kg.m2","ma.ilf",NA
+"ma.ilf","m3,x1","kg/m2","ma.ilf",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "status",NA,NA,"status",NA
 "light","?",NA,"light",NA

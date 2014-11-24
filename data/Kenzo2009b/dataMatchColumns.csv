@@ -11,8 +11,8 @@
 "m.st.kg","m4,x1","kg","m.st",NA
 "m.br.kg","m4,x1","kg","m.br",NA
 "m.rt.kg","m4,x1","kg","m.rt",NA
-"lf.ma.g.m2","m3,x1","g.m2","ma.ilf",NA
-"d.st.g.cm3","?","g.cm3","r.st",NA
+"lf.ma.g.m2","m3,x1","g/m2","ma.ilf",NA
+"d.st.g.cm3","?","g/cm3","r.st",NA
 "pft",NA,NA,"pft",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "status",NA,NA,"status",NA
