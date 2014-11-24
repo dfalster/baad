@@ -24,6 +24,10 @@ targets:
     depends: baad
   manuscript:
     depends: ms/ms.html
+  everything:
+    depends:
+      - manuscript
+      - reports
 
   output/baad.rds:
     command: saveRDS(baad, target_name)
