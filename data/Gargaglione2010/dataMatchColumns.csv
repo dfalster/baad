@@ -32,12 +32,12 @@
 "N rotten wood",NA,NA,NA,NA
 "N branches sapwood",NA,NA,NA,NA
 "N branches bark",NA,NA,NA,NA
-"total N sapwood","?","kg.kg","n.ss",NA
-"Total N bark","?","kg.kg","n.sb",NA
+"total N sapwood","?","kg/kg","n.ss",NA
+"Total N bark","?","kg/kg","n.sb",NA
 "N leaf",NA,NA,NA,NA
 "N small branches",NA,NA,NA,NA
 "Total aerial N",NA,NA,NA,NA
-"N fine roots","?","kg.kg","n.rf",NA
+"N fine roots","?","kg/kg","n.rf",NA
 "N medium roots",NA,NA,NA,NA
 "N coarse roots",NA,NA,NA,NA
 "total N underground",NA,NA,NA,NA
@@ -48,7 +48,7 @@
 "total rotten wood",NA,NA,NA,NA
 "N branches heartwood",NA,NA,NA,NA
 "N branches rotten wood",NA,NA,NA,NA
-"total N heartwood","?","kg.kg","n.sh",NA
+"total N heartwood","?","kg/kg","n.sh",NA
 "total N rotten wood",NA,NA,NA,NA
 "pft",NA,NA,"pft",NA
 "species",NA,NA,"species",NA
@@ -59,5 +59,5 @@
 "branch_mass","?","kg","m.br",NA
 "stem_mass","?","kg","m.st",NA
 "coarse_root_mass","?","kg","m.rc",NA
-"NcoarseRoots","?","kg.kg","n.rc",NA
+"NcoarseRoots","?","kg/kg","n.rc",NA
 "grouping",NA,NA,"grouping",NA

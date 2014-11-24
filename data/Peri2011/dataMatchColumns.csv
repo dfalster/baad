@@ -12,11 +12,11 @@
 "m.rf","m3","kg","m.rf",NA
 "m.rc","m3","kg","m.rc",NA
 "m.rt","m3","kg","m.rt",NA
-"n.lf","x1","kg.kg","n.lf",NA
-"n.ss","x1","kg.kg","n.ss",NA
-"n.rf","x1","kg.kg","n.rf",NA
-"n.rc","x1","kg.kg","n.rc",NA
-"lai","x1","m2.m2","lai",NA
+"n.lf","x1","kg/kg","n.lf",NA
+"n.ss","x1","kg/kg","n.ss",NA
+"n.rf","x1","kg/kg","n.rf",NA
+"n.rc","x1","kg/kg","n.rc",NA
+"lai","x1","m2/m2","lai",NA
 "pft",NA,NA,"pft",NA
 "growingCondition",NA,NA,"growingCondition",NA
 "status",NA,NA,"status",NA
