@@ -1,247 +1,192 @@
+post_process <- function(data){
+  ## Fill missing derived variables (e.g. m.so= m.st+m.lf, etc.)
+  data <- fill_derived_variables(data)
 
-## This is checking that is specific to the baad data set
-postProcess <- function(data, lookupSpecies="none"){
-  
-  fillDerivedVariables <- function(x){
-    
-    x <- within(x, {
-      c.d <- as.numeric(c.d)
-      m.rt <- as.numeric(m.rt)
-      a.cp <- as.numeric(a.cp)
-      d.cr <- as.numeric(d.cr)
-      
-      # Missing leaf area when leaf mass and LMA are OK.
-      ii <- is.na(a.lf) & !is.na(m.lf) & !is.na(ma.ilf)
-      a.lf[ii] <- m.lf[ii] / ma.ilf[ii] 
-      
-      # Missing leaf mass when leaf area and LMA are OK.
-      ii <- !is.na(a.lf) & is.na(m.lf) & !is.na(ma.ilf)
-      m.lf[ii] <- a.lf[ii] * ma.ilf[ii] 
-      
-      # Height to crown base if tree height and crown depth are OK.
-      ii <- is.na(h.c) & !is.na(c.d) & !is.na(h.t)
-      h.c[ii] <- h.t[ii] - c.d[ii]
-      
-      # Crown depth if tree height and height to crown base are OK
-      ii <- is.na(c.d) & !is.na(h.t) & !is.na(h.c)
-      c.d[ii] <- h.t[ii] - h.c[ii]
-      
-      # Stem area  / DBH at breast height or base.
-      ii <- is.na(a.stbh) & !is.na(d.bh)
-      a.stbh[ii] <- (pi/4)*d.bh[ii]^2
-      
-      ii <- is.na(a.stba) & !is.na(d.ba)
-      a.stba[ii] <- (pi/4)*d.ba[ii]^2
-      
-      # Again, the other way around.
-      ii <- !is.na(a.stbh) & is.na(d.bh)
-      d.bh[ii] <- sqrt(a.stbh[ii] / (pi/4))
-      
-      ii <- !is.na(a.stba) & is.na(d.ba)
-      d.ba[ii] <- sqrt(a.stba[ii] / (pi/4))
-      
-      # Stem mass
-      ii <- is.na(m.st) & !is.na(m.ss) & !is.na(m.sh) &
-        !is.na(m.sb)
-      m.st[ii] <- m.ss[ii] + m.sh[ii] + m.sb[ii]
-      
-      # total aboveground mass.
-      ii <- is.na(m.so) & !is.na(m.lf) & !is.na(m.st)
-      m.so[ii] <- m.lf[ii] + m.st[ii]
-      
-      # total root mass
-      ii <- is.na(m.rt) & !is.na(m.rf) & !is.na(m.rc)
-      m.rt[ii] <- m.rf[ii] + m.rc[ii]
-      
-      # Total mass.
-      ii <- is.na(m.to) & !is.na(m.rt) & !is.na(m.so)
-      m.to[ii] <- m.rt[ii] + m.so[ii]
-      
-      # crown width
-      ii <- is.na(d.cr) & !is.na(a.cp)
-      d.cr[ii] <- sqrt(a.cp[ii]/(pi/4))
-      
-      # crown area
-      ii <- !is.na(d.cr) & is.na(a.cp)
-      a.cp[ii] <- (pi/4)*d.cr[ii]^2
-      
-      # clean up
-      ii <- NULL
-    })
-    
-    x
-  }
-  
-  checkSpeciesNames <- function(data, cachefile="config/taxon_updates.csv",
-                                newVarName="speciesMatched",
-                                lookupWhich=c("none","missingonly","all")
-  ){
-    
-    species <- sort(unique(as.character(data$species)))
-    lookupWhich <- match.arg(lookupWhich)
-    
-    r1 <- require(Taxonstand)
-    r2 <- suppressPackageStartupMessages(require(taxize))
-    r3 <- require(jsonlite)
-    
-    if(!all(r1,r2,r3)){
-      warning("Not looking up species names; install Taxonstand, taxize and jsonlite packages first. Using cache.")
-      lookupWhich <- "none"
-    }
-    if(!file.exists(cachefile) & lookupWhich != "all"){
-      warning("cachefile not found. Set lookupWhich='all' to match all.")
-      return(data)
-    }
-    
-    if(lookupWhich != "all"){
-      cache <- read.csv(cachefile, stringsAsFactors=FALSE)
-    }
-    
-    if(lookupWhich == "missingonly"){
-      species <- setdiff(species, cache$species)
-      if(length(species) == 0)
-        lookupWhich <- "none"
-      else
-        message("Looking up ", length(species), " species.")
-    }
-    
-    if(lookupWhich != "none"){
-      
-      #---- Taxonstand
-      
-      # Note we have to use try() because TPL fails to exit nicely when a species does not exist (!).
-      options(show.error.messages=FALSE)
-      starttime <- proc.time()[3]
-      
-      # Sink needed because TPL writes too much garbage
-      sink(tempfile())
-      tpl <- lapply(species, function(x)try(TPL(x, corr=TRUE)))
-      sink()
-      endtime <- proc.time()[3]
-      message("Taxonstand query completed in ", round((endtime-starttime)/60,1)," minutes.")
-      options(show.error.messages=TRUE)
-      
-      # Make species name out of returned object (or NA when not found).
-      f <- function(x){  
-        if(inherits(x, "try-error"))
-          return(NA)
-        else{
-          if(x$Plant.Name.Index){
-            
-            return(paste(x$New.Genus, x$New.Species))  #, Var))
-          } else {
-            return(NA)
-          }
-          
-        }
-      }
-      species_new <- sapply(tpl,f)
-      species_dfr <- data.frame(species=species, species_new_Taxonstand=species_new,
-                                stringsAsFactors=FALSE)
-      
-      #---- taxize
-      
-      # gnr_resolve() is also not robust. If I send all species names, it throws a mysterious error. 
-      # Try this yourself:
-      # txz <- lapply(species, function(x)try(gnr_resolve(x)))
-      # it returns too much, and when it does not properly match you get lots of strange responses.
-      # Might have to revisit this when/if taxize is updated in the future.
-      # Here we lookup just the ones that Taxonstand could not do. 
-      sp_miss <- species_dfr$species[is.na(species_dfr$species_new_Taxonstand)]
-      
-      starttime <- proc.time()[3]
-      txz <- lapply(sp_miss, function(x)try(gnr_resolve(x, stripauthority=TRUE)))
-      endtime <- proc.time()[3]
-      message("taxize completed in ", round((endtime-starttime)/60,1)," minutes.")
-      
-      # Grab the matched name if they are all the same, otherwise grab the one that was the same as 
-      # the submitted one. Because in this particular case, they are all the same except for one,
-      # which was correct anyway (Psychotria gracilifora). 
-      sp_fixed <- sapply(txz, function(x){
-        
-        res <- unique(x$results$matched_name2)
-        score <- x$results$score[1]
-        
-        if(length(res) == 1 & score > 0.9)
-          return(res)
-        else
-          return(x$results$submitted_name[1])
-        
-      })
-      
-      # Results for taxize
-      species_dfr_taxize <- data.frame(species = sp_miss, species_new_taxize = sp_fixed,
-                                       stringsAsFactors=FALSE)
+  ## Add matched species name.
+  data <- check_species_names(data)
 
-
-      # Dataframe with Taxonstand, taxize results.
-      if(length(sp_miss) > 0)
-        species_dfr <- merge(species_dfr, species_dfr_taxize, all=TRUE)
-      else
-        species_dfr$species_new_taxize <- NA
-      
-      # Variable species_Fixed in cache is from Taxonstand, or taxize when Taxonstand
-      # returned NA.
-      species_dfr$speciesMatched <- with(species_dfr, 
-                                         ifelse(is.na(species_new_Taxonstand),
-                                                species_new_taxize,
-                                                species_new_Taxonstand))
-   
-      # Combine cache with new results. Toss duplicated rows.
-      species_dfr <- rbind(cache, species_dfr)
-      species_dfr <- species_dfr[!duplicated(species_dfr),]
-      
-      # Write cache
-      write.csv(species_dfr, cachefile, row.names=FALSE)
-      
-    } else {
-      species_dfr <- read.csv(cachefile, stringsAsFactors=FALSE)
-    }
-    
-    dfr <- species_dfr[,c("species","speciesMatched")]
-    
-    # Some cleaning up:
-    # 'unknown' species
-    unk <- c(grep("unknown",dfr$species,ignore.case=TRUE),
-             grep("unidentified",dfr$species,ignore.case=TRUE))
-    dfr$speciesMatched[unk] <- "Unknown"
-    
-    # sp. is dropped in speciesMatched
-    nc <- sapply(strsplit(dfr$speciesMatched, " "),length)
-    
-    ii <- nc==1 & dfr$speciesMatched != "Unknown"
-    dfr$speciesMatched[ii] <- paste(dfr$speciesMatched[ii], "sp.")
-    
-    # Find hybrids; don't match names
-    hyb <- c(grep("[*]", dfr$species),
-             grep(" x ", dfr$species))
-    dfr$speciesMatched[hyb] <- dfr$species[hyb]
-    
-    # Merge onto full dataset
-    names(dfr)[2] <- newVarName
-    data <- merge(data, dfr, by="species", all.x=TRUE, all.y=FALSE)
-    
-    # NAs in speciesMatched: these occur when lookupSpecies == "none", but species was 
-    # not in cache. Since we already use submitted name when name could not be matched 
-    # (in taxize bit), do same here. Note we don't have an indicator variable showing which names
-    # were actually matched.
-    data$speciesMatched[is.na(data$speciesMatched)] <- data$species[is.na(data$speciesMatched)] 
-    
-    # Reshuffle; new species next to species
-    s <- match("species",names(data))
-    n <- ncol(data)
-    data <- data[,c(1:s,n,(s+1):(n-1))]
-    
-    return(data)
-  }
-  
-  # Fill missing derived variables (e.g. m.so= m.st+m.lf, etc.)
-  data <- fillDerivedVariables(data)
-  
-  # Add matched species name.
-  data <- checkSpeciesNames(data, lookupWhich=lookupSpecies)
-  
-  
-  return(data)  
+  data
 }
 
+fill_derived_variables <- function(data) {
+  to_numeric <- c("c.d", "m.rt", "a.cp", "d.cr")
+  data[to_numeric] <- lapply(data[to_numeric], as.numeric)
+
+  # Missing leaf area when leaf mass and LMA are OK.
+  ii <- is.na(data$a.lf) & !is.na(data$m.lf) & !is.na(data$ma.ilf)
+  data$a.lf[ii] <- data$m.lf[ii] / data$ma.ilf[ii]
+
+  # Missing leaf mass when leaf area and LMA are OK.
+  ii <- is.na(data$m.lf) & !is.na(data$a.lf) & !is.na(data$ma.ilf)
+  data$m.lf[ii] <- data$a.lf[ii] * data$ma.ilf[ii]
+
+  # Height to crown base if tree height and crown depth are OK.
+  ii <- is.na(data$h.c) & !is.na(data$c.d) & !is.na(data$h.t)
+  data$h.c[ii] <- data$h.t[ii] - data$c.d[ii]
+
+  # Crown depth if tree height and height to crown base are OK
+  ii <- is.na(data$c.d) & !is.na(data$h.t) & !is.na(data$h.c)
+  data$c.d[ii] <- data$h.t[ii] - data$h.c[ii]
+
+  # Stem area  / DBH at breast height or base.
+  ii <- is.na(data$a.stbh) & !is.na(data$d.bh)
+  data$a.stbh[ii] <- (pi/4) * data$d.bh[ii]^2
+
+  ii <- is.na(data$a.stba) & !is.na(data$d.ba)
+  data$a.stba[ii] <- (pi/4) * data$d.ba[ii]^2
+
+  # Again, the other way around.
+  ii <- !is.na(data$a.stbh) & is.na(data$d.bh)
+  data$d.bh[ii] <- sqrt(data$a.stbh[ii] / (pi/4))
+
+  ii <- !is.na(data$a.stba) & is.na(data$d.ba)
+  data$d.ba[ii] <- sqrt(data$a.stba[ii] / (pi/4))
+
+  # Stem mass
+  ii <- is.na(data$m.st) & !is.na(data$m.ss) & !is.na(data$m.sh) &
+    !is.na(data$m.sb)
+  data$m.st[ii] <- data$m.ss[ii] + data$m.sh[ii] + data$m.sb[ii]
+
+  # total aboveground mass.
+  ii <- is.na(data$m.so) & !is.na(data$m.lf) & !is.na(data$m.st)
+  data$m.so[ii] <- data$m.lf[ii] + data$m.st[ii]
+
+  # total root mass
+  ii <- is.na(data$m.rt) & !is.na(data$m.rf) & !is.na(data$m.rc)
+  data$m.rt[ii] <- data$m.rf[ii] + data$m.rc[ii]
+
+  # Total mass.
+  ii <- is.na(data$m.to) & !is.na(data$m.rt) & !is.na(data$m.so)
+  data$m.to[ii] <- data$m.rt[ii] + data$m.so[ii]
+
+  # crown width
+  ii <- is.na(data$d.cr) & !is.na(data$a.cp)
+  data$d.cr[ii] <- sqrt(data$a.cp[ii] / (pi/4))
+
+  # crown area
+  ii <- !is.na(data$d.cr) & is.na(data$a.cp)
+  data$a.cp[ii] <- (pi/4) * data$d.cr[ii]^2
+
+  data
+}
+
+rebuild_species_cache <- function(species) {
+  file.remove("config/taxon_updates.csv")
+  invisible(update_species_cache(species, "config/taxon_updates.csv"))
+}
+
+check_species_names <- function(data) {
+  sp_info <- update_species_cache(data$species, "config/taxon_updates.csv")
+
+  i <- match(data$species, sp_info$species)
+  species_matched  <- sp_info$species_matched[i]
+
+  ## Missing values here should not happen:
+  if (any(is.na(i))) {
+    warning("Some species names were missing -- should not happen!")
+    species_matched[is.na(i)] <- data$species[is.na(i)]
+  }
+
+  ## Arrange this into the final data frame next to the 'species'
+  ## column:
+  s <- seq_len(match("species", names(data)))
+  cbind(data[s], speciesMatched=species_matched, data[-s],
+        stringsAsFactors=FALSE)
+}
+
+update_species_cache <- function(species, cachefile) {
+  species <- sort(unique(as.character(species)))
+  if (file.exists(cachefile)) {
+    cache <- read.csv(cachefile, stringsAsFactors=FALSE)
+  } else {
+    cache <- NULL
+  }
+
+  n_cached <- length(intersect(species, cache$species))
+  species <- setdiff(species, cache$species)
+  n_lookup <- length(species)
+
+
+  if (n_lookup > 0L) {
+    message(sprintf("Looking up %d species (%d cached)",
+                    n_lookup, n_cached))
+    ## ---- Taxonstand
+    species1 <- lookup_taxonstand(species)
+
+    sp_missing <- species[is.na(species1)]
+    species2 <- lookup_taxize(sp_missing)
+
+    info <- data.frame(species=species,
+                       species_Taxonstand=species1,
+                       species_taxize=NA_character_,
+                       species_matched=NA_character_,
+                       stringsAsFactors=FALSE, row.names=NULL)
+    info$species_taxize[match(sp_missing, species)] <- species2
+
+    ## Variable species_Fixed in cache is from Taxonstand, or taxize
+    ## when Taxonstand returned NA.  When both Taxonstand and taxize
+    ## don't have any suggestions, we go with NA.
+    info$species_matched <- info$species_Taxonstand
+    i <- is.na(info$species_matched)
+    info$species_matched[i] <- info$species_taxize[i]
+    i <- is.na(info$species_matched)
+    info$species_matched[i] <- info$species[i]
+
+    ## Standardise unknown species:
+    unk <- grep("un(known|identified)", info$species, ignore.case=TRUE)
+    info$species_matched[unk] <- "Unknown"
+
+    ## Rewrite species that are genus only become Genus sp:
+    i <- !grepl(" ", info$species_matched) & info$species_matched != "Unknown"
+    info$species_matched[i] <- paste(info$species_matched[i], "sp.")
+
+    ## Don't alter hybrid names
+    hyb <- grep(" [*x] ", info$species)
+    info$species_matched[hyb] <- info$species[hyb]
+
+    ## Combine cache with new results, and write out:
+    cache <- rbind(cache, info)
+    write.csv(cache, cachefile, row.names=FALSE)
+  }
+
+  cache[c("species", "species_matched")]
+}
+
+lookup_taxonstand <- function(species) {
+  ## Need to drop things in parentheses because they break
+  ## taxonstand's use of regular expressions.  It's possible that
+  ## running the substitutions
+  ##   sub("\\(", "\\\\\\(", species)
+  ##   sub("\\)", "\\\\\\)", species)
+  ## will also work, but I've not tested this.
+  species <- sub("\\s*\\(.+$", "", species)
+
+  starttime <- proc.time()
+  capture.output(tpl <- TPL(species, corr=TRUE), file=tempfile())
+  endtime <- proc.time()
+  message(sprintf("Taxonstand query completed in %2.1f minutes.",
+                  (endtime - starttime)[[3]] / 60))
+
+  ret <- structure(rep(NA_character_, length(species)), names=species)
+  i <- tpl$Plant.Name.Index
+  ret[i] <- paste(tpl$New.Genus[i], tpl$New.Species[i])
+  ret
+}
+
+lookup_taxize <- function(species) {
+  ## Use 'POST' rather than 'GET'
+  ## https://github.com/ropensci/taxize/issues/262#issuecomment-39232271
+  ## Probably fixed already in upstream taxize.
+  starttime <- proc.time()
+  txz <- gnr_resolve(species, stripauthority=TRUE, http='post')
+  endtime <- proc.time()
+  message(sprintf("Taxize query completed in %2.1f minutes.",
+                  (endtime - starttime)[[3]] / 60))
+
+  ret <- structure(rep(NA_character_, length(species)), names=species)
+  dat <- split(txz$results, txz$results$submitted_name)
+  i <- sapply(dat, function(x)
+              x$score[[1]] > 0.9 && length(unique(x$matched_name2)) == 1L)
+  ret[i] <- sapply(dat[i], function(x) x$matched_name2[[1]])
+  ret
+}

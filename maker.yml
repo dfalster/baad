@@ -4,6 +4,8 @@ packages:
   - knitr
   - maps
   - mapdata
+  - Taxonstand
+  - taxize
 
 sources: 
   - R/

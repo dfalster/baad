@@ -46,7 +46,7 @@ read_data_study <- function(filename_data_raw,
   data <- add_all_columns(data, variable_definitions)
   data <- add_new_data(data, filename_new_data)
   data <- fix_types(data, variable_definitions)
-  data <- postProcess(data)
+  data <- post_process(data)
   data
 }
 
