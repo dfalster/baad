@@ -184,18 +184,15 @@ species_level_info <- function(data) {
 
 ######################################################################
 
-report_variable_plots <- function(data_study, baad) {
-  dict <- baad$dictionary
-  dict$units <- gsub(".", "/", dict$units, fixed=TRUE)
-  
-  labels <- sprintf("%s (%s)", dict$label, dict$units)
-  names(labels) <- dict$variable
+report_variable_plots <- function(data_study, data, dictionary) {
+  labels <- sprintf("%s (%s)", dictionary$label, dictionary$units)
+  names(labels) <- dictionary$variable
 
   ## determine variables to plot
-  var_present <- colSums(!is.na(data_study$data[dict$variable])) > 0
-  plot_vars <- dict$variable[dict$group == "tree" &
-                             dict$type == "numeric" &
-                             var_present]
+  var_present <- colSums(!is.na(data_study$data[dictionary$variable])) > 0
+  plot_vars <- dictionary$variable[dictionary$group == "tree" &
+                                   dictionary$type == "numeric" &
+                                   var_present]
 
   ## set up a vector of colours, each species with different color
   species <- as.factor(data_study$data$species)
@@ -207,7 +204,7 @@ report_variable_plots <- function(data_study, baad) {
     v1 <- plot_vars[[i]]
     for (v2 in plot_vars[seq_along(plot_vars) > i]) {
       report_variable_plot1(data_study$data[c(v1, v2)],
-                            baad$data[c(v1, v2)], studycol=cols,
+                            data[c(v1, v2)], studycol=cols,
                             xlab=labels[[v1]], ylab=labels[[v2]])
     }
   }
@@ -288,4 +285,13 @@ axis_log10 <- function(side=1, horiz=FALSE, labels=TRUE,
     axis(side, at=10^at, FALSE, col=if (horiz) fg else NA,
          col.ticks=fg, las=las)
   }
+}
+
+## Dancing around the need to rebuild everything if we update methods
+## only, not generally useful.
+extract_baad_dictionary <- function(baad) {
+  baad$dictionary
+}
+extract_baad_data <- function(baad) {
+  baad$data
 }

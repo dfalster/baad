@@ -28,7 +28,7 @@ The dataset includes records for `r nrow(data_study$data)` individuals from `r l
 
 ```{r summary_table, results='asis', echo=FALSE}
 # From the ms functions:
-tab <- summary_table(data_study$data, baad$dictionary)
+tab <- summary_table(data_study$data, baad_dictionary)
 kable(tab[names(tab) != "Studies"], "markdown", align="l", padding=10)
 ```
 
@@ -74,5 +74,5 @@ writeLines(sprintf("**%s**: %s\n", metadata$Topic, metadata$Description))
 This is how the study `r study_name` fits in the entire dataset (grey). each colour represents a species. A legend of species names with colours is included at the end for reports with 1 < n < 20 species.
 
 ```{r variable_plots, fig.height=12, fig.width=12, echo=FALSE}
-report_variable_plots(data_study, baad)
+report_variable_plots(data_study, baad_data, baad_dictionary)
 ```

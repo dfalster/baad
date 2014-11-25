@@ -1,4 +1,8 @@
 targets:
+  baad_dictionary:
+    command: extract_baad_dictionary(baad)
+  baad_data:
+    command: extract_baad_data(baad)
   reports/Abe1981.md:
     knitr:
       input: reports/report.Rmd
@@ -6,7 +10,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Abe1981
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Abe1981.html:
     command: render_ms("reports/Abe1981.md")
   reports/Aiba2005.md:
@@ -16,7 +21,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Aiba2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Aiba2005.html:
     command: render_ms("reports/Aiba2005.md")
   reports/Aiba2007.md:
@@ -26,7 +32,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Aiba2007
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Aiba2007.html:
     command: render_ms("reports/Aiba2007.md")
   reports/Albrektson1984.md:
@@ -36,7 +43,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Albrektson1984
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Albrektson1984.html:
     command: render_ms("reports/Albrektson1984.md")
   reports/Ando1962.md:
@@ -46,7 +54,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ando1962
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ando1962.html:
     command: render_ms("reports/Ando1962.md")
   reports/Ando1973.md:
@@ -56,7 +65,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ando1973
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ando1973.html:
     command: render_ms("reports/Ando1973.md")
   reports/Ando1988.md:
@@ -66,7 +76,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ando1988
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ando1988.html:
     command: render_ms("reports/Ando1988.md")
   reports/Aspinwall2013.md:
@@ -76,7 +87,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Aspinwall2013
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Aspinwall2013.html:
     command: render_ms("reports/Aspinwall2013.md")
   reports/Baltzer2007.md:
@@ -86,7 +98,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Baltzer2007
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Baltzer2007.html:
     command: render_ms("reports/Baltzer2007.md")
   reports/Baraloto2006.md:
@@ -96,7 +109,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Baraloto2006
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Baraloto2006.html:
     command: render_ms("reports/Baraloto2006.md")
   reports/Battaglia1998.md:
@@ -106,7 +120,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Battaglia1998
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Battaglia1998.html:
     command: render_ms("reports/Battaglia1998.md")
   reports/BondLamberty2002.md:
@@ -116,7 +131,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: BondLamberty2002
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/BondLamberty2002.html:
     command: render_ms("reports/BondLamberty2002.md")
   reports/Brown1978.md:
@@ -126,7 +142,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Brown1978
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Brown1978.html:
     command: render_ms("reports/Brown1978.md")
   reports/Burger1953.md:
@@ -136,7 +153,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Burger1953
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Burger1953.html:
     command: render_ms("reports/Burger1953.md")
   reports/Claveau2002.md:
@@ -146,7 +164,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Claveau2002
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Claveau2002.html:
     command: render_ms("reports/Claveau2002.md")
   reports/Claveau2005.md:
@@ -156,7 +175,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Claveau2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Claveau2005.html:
     command: render_ms("reports/Claveau2005.md")
   reports/Coll2008.md:
@@ -166,7 +186,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Coll2008
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Coll2008.html:
     command: render_ms("reports/Coll2008.md")
   reports/Dannoura2006.md:
@@ -176,7 +197,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Dannoura2006
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Dannoura2006.html:
     command: render_ms("reports/Dannoura2006.md")
   reports/Delagrange0000a.md:
@@ -186,7 +208,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Delagrange0000a
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Delagrange0000a.html:
     command: render_ms("reports/Delagrange0000a.md")
   reports/Delagrange0000b.md:
@@ -196,7 +219,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Delagrange0000b
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Delagrange0000b.html:
     command: render_ms("reports/Delagrange0000b.md")
   reports/Delagrange2004.md:
@@ -206,7 +230,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Delagrange2004
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Delagrange2004.html:
     command: render_ms("reports/Delagrange2004.md")
   reports/Domec2012.md:
@@ -216,7 +241,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Domec2012
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Domec2012.html:
     command: render_ms("reports/Domec2012.md")
   reports/Epron2011.md:
@@ -226,7 +252,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Epron2011
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Epron2011.html:
     command: render_ms("reports/Epron2011.md")
   reports/Fatemi2011.md:
@@ -236,7 +263,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Fatemi2011
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Fatemi2011.html:
     command: render_ms("reports/Fatemi2011.md")
   reports/FLFU1963.md:
@@ -246,7 +274,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: FLFU1963
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/FLFU1963.html:
     command: render_ms("reports/FLFU1963.md")
   reports/FLFU1965.md:
@@ -256,7 +285,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: FLFU1965
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/FLFU1965.html:
     command: render_ms("reports/FLFU1965.md")
   reports/Furuno1967.md:
@@ -266,7 +296,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Furuno1967
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Furuno1967.html:
     command: render_ms("reports/Furuno1967.md")
   reports/Garber2005.md:
@@ -276,7 +307,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Garber2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Garber2005.html:
     command: render_ms("reports/Garber2005.md")
   reports/Gargaglione2010.md:
@@ -286,7 +318,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Gargaglione2010
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Gargaglione2010.html:
     command: render_ms("reports/Gargaglione2010.md")
   reports/Ghannoum2010a.md:
@@ -296,7 +329,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ghannoum2010a
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ghannoum2010a.html:
     command: render_ms("reports/Ghannoum2010a.md")
   reports/Ghannoum2010b.md:
@@ -306,7 +340,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ghannoum2010b
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ghannoum2010b.html:
     command: render_ms("reports/Ghannoum2010b.md")
   reports/Goto2003.md:
@@ -316,7 +351,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Goto2003
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Goto2003.html:
     command: render_ms("reports/Goto2003.md")
   reports/Hagihara1993.md:
@@ -326,7 +362,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Hagihara1993
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Hagihara1993.html:
     command: render_ms("reports/Hagihara1993.md")
   reports/Hamilton2005.md:
@@ -336,7 +373,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Hamilton2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Hamilton2005.html:
     command: render_ms("reports/Hamilton2005.md")
   reports/Harada1972.md:
@@ -346,7 +384,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Harada1972
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Harada1972.html:
     command: render_ms("reports/Harada1972.md")
   reports/Harja2012.md:
@@ -356,7 +395,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Harja2012
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Harja2012.html:
     command: render_ms("reports/Harja2012.md")
   reports/Haruki1979.md:
@@ -366,7 +406,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Haruki1979
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Haruki1979.html:
     command: render_ms("reports/Haruki1979.md")
   reports/Hashizume1980.md:
@@ -376,7 +417,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Hashizume1980
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Hashizume1980.html:
     command: render_ms("reports/Hashizume1980.md")
   reports/Hashizume1985.md:
@@ -386,7 +428,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Hashizume1985
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Hashizume1985.html:
     command: render_ms("reports/Hashizume1985.md")
   reports/Holdaway2008.md:
@@ -396,7 +439,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Holdaway2008
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Holdaway2008.html:
     command: render_ms("reports/Holdaway2008.md")
   reports/Iijima1991.md:
@@ -406,7 +450,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Iijima1991
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Iijima1991.html:
     command: render_ms("reports/Iijima1991.md")
   reports/Ikushima1964.md:
@@ -416,7 +461,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ikushima1964
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ikushima1964.html:
     command: render_ms("reports/Ikushima1964.md")
   reports/Ilomaki2003.md:
@@ -426,7 +472,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ilomaki2003
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ilomaki2003.html:
     command: render_ms("reports/Ilomaki2003.md")
   reports/Ishii2000.md:
@@ -436,7 +483,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ishii2000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ishii2000.html:
     command: render_ms("reports/Ishii2000.md")
   reports/Kabaya1968.md:
@@ -446,7 +494,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kabaya1968
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kabaya1968.html:
     command: render_ms("reports/Kabaya1968.md")
   reports/Kabaya1981.md:
@@ -456,7 +505,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kabaya1981
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kabaya1981.html:
     command: render_ms("reports/Kabaya1981.md")
   reports/Kantola2004.md:
@@ -466,7 +516,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kantola2004
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kantola2004.html:
     command: render_ms("reports/Kantola2004.md")
   reports/Karizumi1984.md:
@@ -476,7 +527,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Karizumi1984
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Karizumi1984.html:
     command: render_ms("reports/Karizumi1984.md")
   reports/Katagiri1984.md:
@@ -486,7 +538,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Katagiri1984
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Katagiri1984.html:
     command: render_ms("reports/Katagiri1984.md")
   reports/Katakura2007.md:
@@ -496,7 +549,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Katakura2007
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Katakura2007.html:
     command: render_ms("reports/Katakura2007.md")
   reports/Kato1973.md:
@@ -506,7 +560,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kato1973
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kato1973.html:
     command: render_ms("reports/Kato1973.md")
   reports/Kawahara1981.md:
@@ -516,7 +571,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kawahara1981
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kawahara1981.html:
     command: render_ms("reports/Kawahara1981.md")
   reports/Kawanabe1977.md:
@@ -526,7 +582,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kawanabe1977
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kawanabe1977.html:
     command: render_ms("reports/Kawanabe1977.md")
   reports/Kelly0000a.md:
@@ -536,7 +593,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kelly0000a
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kelly0000a.html:
     command: render_ms("reports/Kelly0000a.md")
   reports/Kelly0000b.md:
@@ -546,7 +604,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kelly0000b
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kelly0000b.html:
     command: render_ms("reports/Kelly0000b.md")
   reports/Kenzo2009.md:
@@ -556,7 +615,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kenzo2009
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kenzo2009.html:
     command: render_ms("reports/Kenzo2009.md")
   reports/Kenzo2009b.md:
@@ -566,7 +626,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kenzo2009b
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kenzo2009b.html:
     command: render_ms("reports/Kenzo2009b.md")
   reports/King1994.md:
@@ -576,7 +637,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: King1994
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/King1994.html:
     command: render_ms("reports/King1994.md")
   reports/King1996.md:
@@ -586,7 +648,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: King1996
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/King1996.html:
     command: render_ms("reports/King1996.md")
   reports/Kitazawa1959.md:
@@ -596,7 +659,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kitazawa1959
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kitazawa1959.html:
     command: render_ms("reports/Kitazawa1959.md")
   reports/Kohyama0000.md:
@@ -606,7 +670,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kohyama0000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kohyama0000.html:
     command: render_ms("reports/Kohyama0000.md")
   reports/Kohyama1987.md:
@@ -616,7 +681,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kohyama1987
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kohyama1987.html:
     command: render_ms("reports/Kohyama1987.md")
   reports/Kohyama1990.md:
@@ -626,7 +692,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kohyama1990
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kohyama1990.html:
     command: render_ms("reports/Kohyama1990.md")
   reports/Kohyama1994.md:
@@ -636,7 +703,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Kohyama1994
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Kohyama1994.html:
     command: render_ms("reports/Kohyama1994.md")
   reports/Komiyama2002.md:
@@ -646,7 +714,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Komiyama2002
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Komiyama2002.html:
     command: render_ms("reports/Komiyama2002.md")
   reports/Komiyama2003.md:
@@ -656,7 +725,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Komiyama2003
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Komiyama2003.html:
     command: render_ms("reports/Komiyama2003.md")
   reports/leMaire2011.md:
@@ -666,7 +736,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: leMaire2011
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/leMaire2011.html:
     command: render_ms("reports/leMaire2011.md")
   reports/Lewis2013.md:
@@ -676,7 +747,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Lewis2013
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Lewis2013.html:
     command: render_ms("reports/Lewis2013.md")
   reports/Lusk0000a.md:
@@ -686,7 +758,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Lusk0000a
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Lusk0000a.html:
     command: render_ms("reports/Lusk0000a.md")
   reports/Lusk0000b.md:
@@ -696,7 +769,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Lusk0000b
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Lusk0000b.html:
     command: render_ms("reports/Lusk0000b.md")
   reports/Lusk2002.md:
@@ -706,7 +780,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Lusk2002
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Lusk2002.html:
     command: render_ms("reports/Lusk2002.md")
   reports/Lusk2004.md:
@@ -716,7 +791,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Lusk2004
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Lusk2004.html:
     command: render_ms("reports/Lusk2004.md")
   reports/Lusk2011.md:
@@ -726,7 +802,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Lusk2011
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Lusk2011.html:
     command: render_ms("reports/Lusk2011.md")
   reports/Lusk2012.md:
@@ -736,7 +813,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Lusk2012
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Lusk2012.html:
     command: render_ms("reports/Lusk2012.md")
   reports/Lusk2013.md:
@@ -746,7 +824,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Lusk2013
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Lusk2013.html:
     command: render_ms("reports/Lusk2013.md")
   reports/Maguire1998.md:
@@ -756,7 +835,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Maguire1998
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Maguire1998.html:
     command: render_ms("reports/Maguire1998.md")
   reports/Markesteijn2009.md:
@@ -766,7 +846,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Markesteijn2009
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Markesteijn2009.html:
     command: render_ms("reports/Markesteijn2009.md")
   reports/Martin1998.md:
@@ -776,7 +857,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Martin1998
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Martin1998.html:
     command: render_ms("reports/Martin1998.md")
   reports/McCulloh2010.md:
@@ -786,7 +868,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: McCulloh2010
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/McCulloh2010.html:
     command: render_ms("reports/McCulloh2010.md")
   reports/Mokany2003.md:
@@ -796,7 +879,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Mokany2003
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Mokany2003.html:
     command: render_ms("reports/Mokany2003.md")
   reports/Monserud1999.md:
@@ -806,7 +890,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Monserud1999
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Monserud1999.html:
     command: render_ms("reports/Monserud1999.md")
   reports/Mori1979.md:
@@ -816,7 +901,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Mori1979
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Mori1979.html:
     command: render_ms("reports/Mori1979.md")
   reports/Mori1991.md:
@@ -826,7 +912,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Mori1991
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Mori1991.html:
     command: render_ms("reports/Mori1991.md")
   reports/Morisawa1957.md:
@@ -836,7 +923,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Morisawa1957
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Morisawa1957.html:
     command: render_ms("reports/Morisawa1957.md")
   reports/Muro2006.md:
@@ -846,7 +934,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Muro2006
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Muro2006.html:
     command: render_ms("reports/Muro2006.md")
   reports/Myster2009.md:
@@ -856,7 +945,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Myster2009
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Myster2009.html:
     command: render_ms("reports/Myster2009.md")
   reports/Naidu1998.md:
@@ -866,7 +956,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Naidu1998
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Naidu1998.html:
     command: render_ms("reports/Naidu1998.md")
   reports/Nakagaki1983.md:
@@ -876,7 +967,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Nakagaki1983
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Nakagaki1983.html:
     command: render_ms("reports/Nakagaki1983.md")
   reports/Nishioka1982.md:
@@ -886,7 +978,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Nishioka1982
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Nishioka1982.html:
     command: render_ms("reports/Nishioka1982.md")
   reports/Nouvellon2010.md:
@@ -896,7 +989,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Nouvellon2010
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Nouvellon2010.html:
     command: render_ms("reports/Nouvellon2010.md")
   reports/OGrady2000.md:
@@ -906,7 +1000,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: OGrady2000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/OGrady2000.html:
     command: render_ms("reports/OGrady2000.md")
   reports/OGrady2006.md:
@@ -916,7 +1011,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: OGrady2006
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/OGrady2006.html:
     command: render_ms("reports/OGrady2006.md")
   reports/OHara1995.md:
@@ -926,7 +1022,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: OHara1995
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/OHara1995.html:
     command: render_ms("reports/OHara1995.md")
   reports/OHara2014.md:
@@ -936,7 +1033,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: OHara2014
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/OHara2014.html:
     command: render_ms("reports/OHara2014.md")
   reports/Ohtsuka2005.md:
@@ -946,7 +1044,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ohtsuka2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ohtsuka2005.html:
     command: render_ms("reports/Ohtsuka2005.md")
   reports/Osada0000.md:
@@ -956,7 +1055,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Osada0000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Osada0000.html:
     command: render_ms("reports/Osada0000.md")
   reports/Osada2003.md:
@@ -966,7 +1066,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Osada2003
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Osada2003.html:
     command: render_ms("reports/Osada2003.md")
   reports/Osada2005.md:
@@ -976,7 +1077,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Osada2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Osada2005.html:
     command: render_ms("reports/Osada2005.md")
   reports/Osunkoya2007.md:
@@ -986,7 +1088,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Osunkoya2007
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Osunkoya2007.html:
     command: render_ms("reports/Osunkoya2007.md")
   reports/Parviainen1999.md:
@@ -996,7 +1099,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Parviainen1999
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Parviainen1999.html:
     command: render_ms("reports/Parviainen1999.md")
   reports/Peri0000.md:
@@ -1006,7 +1110,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Peri0000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Peri0000.html:
     command: render_ms("reports/Peri0000.md")
   reports/Peri2008.md:
@@ -1016,7 +1121,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Peri2008
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Peri2008.html:
     command: render_ms("reports/Peri2008.md")
   reports/Peri2011.md:
@@ -1026,7 +1132,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Peri2011
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Peri2011.html:
     command: render_ms("reports/Peri2011.md")
   reports/Petritan2009.md:
@@ -1036,7 +1143,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Petritan2009
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Petritan2009.html:
     command: render_ms("reports/Petritan2009.md")
   reports/Poorter1999.md:
@@ -1046,7 +1154,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Poorter1999
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Poorter1999.html:
     command: render_ms("reports/Poorter1999.md")
   reports/Portsmuth2005.md:
@@ -1056,7 +1165,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Portsmuth2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Portsmuth2005.html:
     command: render_ms("reports/Portsmuth2005.md")
   reports/Portsmuth2006.md:
@@ -1066,7 +1176,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Portsmuth2006
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Portsmuth2006.html:
     command: render_ms("reports/Portsmuth2006.md")
   reports/Reid2004.md:
@@ -1076,7 +1187,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Reid2004
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Reid2004.html:
     command: render_ms("reports/Reid2004.md")
   reports/Ribeiro2011.md:
@@ -1086,7 +1198,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ribeiro2011
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ribeiro2011.html:
     command: render_ms("reports/Ribeiro2011.md")
   reports/Roberts2003.md:
@@ -1096,7 +1209,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Roberts2003
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Roberts2003.html:
     command: render_ms("reports/Roberts2003.md")
   reports/Roberts2004.md:
@@ -1106,7 +1220,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Roberts2004
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Roberts2004.html:
     command: render_ms("reports/Roberts2004.md")
   reports/Rodriguez2003.md:
@@ -1116,7 +1231,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Rodriguez2003
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Rodriguez2003.html:
     command: render_ms("reports/Rodriguez2003.md")
   reports/Roeh1997.md:
@@ -1126,7 +1242,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Roeh1997
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Roeh1997.html:
     command: render_ms("reports/Roeh1997.md")
   reports/Roth2007.md:
@@ -1136,7 +1253,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Roth2007
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Roth2007.html:
     command: render_ms("reports/Roth2007.md")
   reports/Saito1981.md:
@@ -1146,7 +1264,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Saito1981
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Saito1981.html:
     command: render_ms("reports/Saito1981.md")
   reports/Salazar2010.md:
@@ -1156,7 +1275,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Salazar2010
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Salazar2010.html:
     command: render_ms("reports/Salazar2010.md")
   reports/SaldanaAcosta2009.md:
@@ -1166,7 +1286,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: SaldanaAcosta2009
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/SaldanaAcosta2009.html:
     command: render_ms("reports/SaldanaAcosta2009.md")
   reports/SantaRegina0000.md:
@@ -1176,7 +1297,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: SantaRegina0000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/SantaRegina0000.html:
     command: render_ms("reports/SantaRegina0000.md")
   reports/SantaRegina1999.md:
@@ -1186,7 +1308,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: SantaRegina1999
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/SantaRegina1999.html:
     command: render_ms("reports/SantaRegina1999.md")
   reports/Sato1971.md:
@@ -1196,7 +1319,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Sato1971
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Sato1971.html:
     command: render_ms("reports/Sato1971.md")
   reports/Satoo1968.md:
@@ -1206,7 +1330,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Satoo1968
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Satoo1968.html:
     command: render_ms("reports/Satoo1968.md")
   reports/Satoo1974a.md:
@@ -1216,7 +1341,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Satoo1974a
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Satoo1974a.html:
     command: render_ms("reports/Satoo1974a.md")
   reports/Satoo1974b.md:
@@ -1226,7 +1352,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Satoo1974b
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Satoo1974b.html:
     command: render_ms("reports/Satoo1974b.md")
   reports/Satoo1974c.md:
@@ -1236,7 +1363,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Satoo1974c
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Satoo1974c.html:
     command: render_ms("reports/Satoo1974c.md")
   reports/Satoo1974d.md:
@@ -1246,7 +1374,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Satoo1974d
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Satoo1974d.html:
     command: render_ms("reports/Satoo1974d.md")
   reports/Satoo1974e.md:
@@ -1256,7 +1385,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Satoo1974e
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Satoo1974e.html:
     command: render_ms("reports/Satoo1974e.md")
   reports/Segawa1969.md:
@@ -1266,7 +1396,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Segawa1969
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Segawa1969.html:
     command: render_ms("reports/Segawa1969.md")
   reports/Segawa1973.md:
@@ -1276,7 +1407,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Segawa1973
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Segawa1973.html:
     command: render_ms("reports/Segawa1973.md")
   reports/Selaya2010.md:
@@ -1286,7 +1418,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Selaya2010
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Selaya2010.html:
     command: render_ms("reports/Selaya2010.md")
   reports/Sillett2010.md:
@@ -1296,7 +1429,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Sillett2010
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Sillett2010.html:
     command: render_ms("reports/Sillett2010.md")
   reports/Singh1980.md:
@@ -1306,7 +1440,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Singh1980
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Singh1980.html:
     command: render_ms("reports/Singh1980.md")
   reports/Stancioiu2005.md:
@@ -1316,7 +1451,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Stancioiu2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Stancioiu2005.html:
     command: render_ms("reports/Stancioiu2005.md")
   reports/Sterck0000.md:
@@ -1326,7 +1462,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Sterck0000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Sterck0000.html:
     command: render_ms("reports/Sterck0000.md")
   reports/Sterck2001.md:
@@ -1336,7 +1473,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Sterck2001
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Sterck2001.html:
     command: render_ms("reports/Sterck2001.md")
   reports/Suzuki1990.md:
@@ -1346,7 +1484,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Suzuki1990
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Suzuki1990.html:
     command: render_ms("reports/Suzuki1990.md")
   reports/Suzuki2012.md:
@@ -1356,7 +1495,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Suzuki2012
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Suzuki2012.html:
     command: render_ms("reports/Suzuki2012.md")
   reports/Sweda2003.md:
@@ -1366,7 +1506,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Sweda2003
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Sweda2003.html:
     command: render_ms("reports/Sweda2003.md")
   reports/Tadaki1979.md:
@@ -1376,7 +1517,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Tadaki1979
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Tadaki1979.html:
     command: render_ms("reports/Tadaki1979.md")
   reports/Tadaki1995.md:
@@ -1386,7 +1528,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Tadaki1995
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Tadaki1995.html:
     command: render_ms("reports/Tadaki1995.md")
   reports/Takagi2010.md:
@@ -1396,7 +1539,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Takagi2010
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Takagi2010.html:
     command: render_ms("reports/Takagi2010.md")
   reports/Takahashi1999.md:
@@ -1406,7 +1550,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Takahashi1999
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Takahashi1999.html:
     command: render_ms("reports/Takahashi1999.md")
   reports/Tanao1982.md:
@@ -1416,7 +1561,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Tanao1982
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Tanao1982.html:
     command: render_ms("reports/Tanao1982.md")
   reports/Tange1995.md:
@@ -1426,7 +1572,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Tange1995
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Tange1995.html:
     command: render_ms("reports/Tange1995.md")
   reports/Tange2010.md:
@@ -1436,7 +1583,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Tange2010
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Tange2010.html:
     command: render_ms("reports/Tange2010.md")
   reports/Terashi1982.md:
@@ -1446,7 +1594,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Terashi1982
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Terashi1982.html:
     command: render_ms("reports/Terashi1982.md")
   reports/Tissue0000a.md:
@@ -1456,7 +1605,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Tissue0000a
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Tissue0000a.html:
     command: render_ms("reports/Tissue0000a.md")
   reports/Tissue0000b.md:
@@ -1466,7 +1616,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Tissue0000b
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Tissue0000b.html:
     command: render_ms("reports/Tissue0000b.md")
   reports/Tissue0000c.md:
@@ -1476,7 +1627,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Tissue0000c
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Tissue0000c.html:
     command: render_ms("reports/Tissue0000c.md")
   reports/Utsugi0000.md:
@@ -1486,7 +1638,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Utsugi0000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Utsugi0000.html:
     command: render_ms("reports/Utsugi0000.md")
   reports/Utsugi2004.md:
@@ -1496,7 +1649,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Utsugi2004
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Utsugi2004.html:
     command: render_ms("reports/Utsugi2004.md")
   reports/Valladares2000.md:
@@ -1506,7 +1660,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Valladares2000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Valladares2000.html:
     command: render_ms("reports/Valladares2000.md")
   reports/vanBreugel2011.md:
@@ -1516,7 +1671,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: vanBreugel2011
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/vanBreugel2011.html:
     command: render_ms("reports/vanBreugel2011.md")
   reports/Vanninen2005.md:
@@ -1526,7 +1682,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Vanninen2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Vanninen2005.html:
     command: render_ms("reports/Vanninen2005.md")
   reports/Wang1995.md:
@@ -1536,7 +1693,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Wang1995
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Wang1995.html:
     command: render_ms("reports/Wang1995.md")
   reports/Wang1996.md:
@@ -1546,7 +1704,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Wang1996
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Wang1996.html:
     command: render_ms("reports/Wang1996.md")
   reports/Wang2000.md:
@@ -1556,7 +1715,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Wang2000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Wang2000.html:
     command: render_ms("reports/Wang2000.md")
   reports/Wang2011.md:
@@ -1566,7 +1726,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Wang2011
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Wang2011.html:
     command: render_ms("reports/Wang2011.md")
   reports/Watanabe1984.md:
@@ -1576,7 +1737,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Watanabe1984
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Watanabe1984.html:
     command: render_ms("reports/Watanabe1984.md")
   reports/Watanabe1985.md:
@@ -1586,7 +1748,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Watanabe1985
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Watanabe1985.html:
     command: render_ms("reports/Watanabe1985.md")
   reports/Wenk0000.md:
@@ -1596,7 +1759,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Wenk0000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Wenk0000.html:
     command: render_ms("reports/Wenk0000.md")
   reports/Whittaker1974.md:
@@ -1606,7 +1770,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Whittaker1974
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Whittaker1974.html:
     command: render_ms("reports/Whittaker1974.md")
   reports/Williams2005.md:
@@ -1616,7 +1781,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Williams2005
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Williams2005.html:
     command: render_ms("reports/Williams2005.md")
   reports/Ximenes2004.md:
@@ -1626,7 +1792,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Ximenes2004
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Ximenes2004.html:
     command: render_ms("reports/Ximenes2004.md")
   reports/Yamaba2007.md:
@@ -1636,7 +1803,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yamaba2007
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yamaba2007.html:
     command: render_ms("reports/Yamaba2007.md")
   reports/Yamada1957.md:
@@ -1646,7 +1814,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yamada1957
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yamada1957.html:
     command: render_ms("reports/Yamada1957.md")
   reports/Yamada1996.md:
@@ -1656,7 +1825,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yamada1996
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yamada1996.html:
     command: render_ms("reports/Yamada1996.md")
   reports/Yamada2000.md:
@@ -1666,7 +1836,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yamada2000
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yamada2000.html:
     command: render_ms("reports/Yamada2000.md")
   reports/Yamaji1991.md:
@@ -1676,7 +1847,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yamaji1991
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yamaji1991.html:
     command: render_ms("reports/Yamaji1991.md")
   reports/Yamakura1972.md:
@@ -1686,7 +1858,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yamakura1972
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yamakura1972.html:
     command: render_ms("reports/Yamakura1972.md")
   reports/Yamakura1986.md:
@@ -1696,7 +1869,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yamakura1986
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yamakura1986.html:
     command: render_ms("reports/Yamakura1986.md")
   reports/Yasui1970.md:
@@ -1706,7 +1880,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yasui1970
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yasui1970.html:
     command: render_ms("reports/Yasui1970.md")
   reports/Yasui1971.md:
@@ -1716,7 +1891,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yasui1971
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yasui1971.html:
     command: render_ms("reports/Yasui1971.md")
   reports/Yasui1983.md:
@@ -1726,7 +1902,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yasui1983
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yasui1983.html:
     command: render_ms("reports/Yasui1983.md")
   reports/Yi1989.md:
@@ -1736,7 +1913,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yi1989
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yi1989.html:
     command: render_ms("reports/Yi1989.md")
   reports/Yoda1978.md:
@@ -1746,7 +1924,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: Yoda1978
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/Yoda1978.html:
     command: render_ms("reports/Yoda1978.md")
   reports:

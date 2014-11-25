@@ -1,4 +1,8 @@
 targets:
+  baad_dictionary:
+    command: extract_baad_dictionary(baad)
+  baad_data:
+    command: extract_baad_data(baad)
 {{#study_names}}
   reports/{{study_name}}.md:
     knitr:
@@ -7,7 +11,8 @@ targets:
       auto_figure_prefix: true
     depends:
       - data_study: {{study_name}}
-      - baad
+      - baad_dictionary
+      - baad_data
   reports/{{study_name}}.html:
     command: render_ms("reports/{{study_name}}.md")
 {{/study_names}}
