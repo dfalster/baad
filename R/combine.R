@@ -42,3 +42,27 @@ combine_baad <- function(..., d=list(...), variable_definitions) {
   ret$dictionary <- variable_definitions
   ret
 }
+
+## Functions for extracting bits from baad.  Works around some of the
+## limitations in how I wrote maker.
+extract_baad_data <- function(baad) {
+  baad$data
+}
+extract_baad_methods <- function(baad) {
+  baad$methods
+}
+extract_baad_contacts <- function(baad) {
+  baad$contacts
+}
+extract_baad_references <- function(baad) {
+  baad$references
+}
+extract_baad_metadata <- function(baad) {
+  baad$metadata
+}
+extract_baad_bibtex <- function(baad) {
+  baad$bibtex
+}
+extract_baad_dictionary <- function(baad) {
+  baad$dictionary
+}

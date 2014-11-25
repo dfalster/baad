@@ -7,6 +7,7 @@ packages:
   - Taxonstand
   - taxize
   - methods
+  - bibtex
 
 sources:
   - R/
@@ -27,11 +28,9 @@ targets:
     depends: ms/ms.html
   everything:
     depends:
+      - export
       - manuscript
       - reports
-
-  output/baad.rds:
-    command: saveRDS(baad, target_name)
 
   author_info:
     command: author_details("config/contact.csv", baad)
@@ -53,3 +52,44 @@ targets:
   ms/ms.html:
     command: render_ms("ms/ms.md")
     quiet: true
+
+  ## exporting targets
+  export:
+    depends:
+      - output/baad.rds
+      - output/baad_data.csv
+      - output/baad_contacts.csv
+      - output/baad_references.csv
+      - output/baad_metadata.csv
+      - output/baad.bib
+      - output/baad_dictionary.csv
+
+  output/baad.rds:
+    command: saveRDS(baad, target_name)
+  output/baad_data.csv:
+    command: write_csv(baad_data, target_name)
+  output/baad_contacts.csv:
+    command: write_csv(baad_contacts, target_name)
+  output/baad_references.csv:
+    command: write_csv(baad_references, target_name)
+  output/baad_metadata.csv:
+    command: write_csv(baad_metadata, target_name)
+  output/baad.bib:
+    command: write.bib(baad_bibtex, target_name)
+    quiet: true
+  output/baad_dictionary.csv:
+    command: write_csv(baad_dictionary, target_name)
+
+  ## baad elements
+  baad_data:
+    command: extract_baad_data(baad)
+  baad_contacts:
+    command: extract_baad_contacts(baad)
+  baad_references:
+    command: extract_baad_references(baad)
+  baad_metadata:
+    command: extract_baad_metadata(baad)
+  baad_bibtex:
+    command: extract_baad_bibtex(baad)
+  baad_dictionary:
+    command: extract_baad_dictionary(baad)

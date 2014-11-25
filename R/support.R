@@ -54,3 +54,7 @@ capitalize <- function (string) {
   substr(string[capped], 1, 1) <- toupper(substr(string[capped], 1, 1))
   string
 }
+
+write_csv <- function(data, filename) {
+  write.csv(data, filename, row.names=FALSE)
+}

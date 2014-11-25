@@ -286,12 +286,3 @@ axis_log10 <- function(side=1, horiz=FALSE, labels=TRUE,
          col.ticks=fg, las=las)
   }
 }
-
-## Dancing around the need to rebuild everything if we update methods
-## only, not generally useful.
-extract_baad_dictionary <- function(baad) {
-  baad$dictionary
-}
-extract_baad_data <- function(baad) {
-  baad$data
-}

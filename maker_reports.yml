@@ -1,8 +1,4 @@
 targets:
-  baad_dictionary:
-    command: extract_baad_dictionary(baad)
-  baad_data:
-    command: extract_baad_data(baad)
   reports/Abe1981.md:
     knitr:
       input: reports/report.Rmd
