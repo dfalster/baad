@@ -1,23 +1,16 @@
 language: c
 
 script: 
-    - make
-    - make test
-    - make check-eol
+    - ./maker ms/ms.html
 
 before_install:
     - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
     - chmod 755 ./travis-tool.sh
     - ./travis-tool.sh bootstrap
+    - ./travis-tool.sh install_github richfitz/maker
+    - Rscript -e 'maker::install_maker(".")'
 install:
-    - ./travis-tool.sh install_deps
-    - git submodule init
-    - git submodule update
-    - make install-dataMashR
+    - ./maker install_packages
 
 after_success:
     - cat ms/ms.html
-
-env:
-  global:
-    - BOOTSTRAP_LATEX="1"
