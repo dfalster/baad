@@ -6,8 +6,9 @@ packages:
   - mapdata
   - Taxonstand
   - taxize
+  - methods
 
-sources: 
+sources:
   - R/
 
 include:
