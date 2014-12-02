@@ -1,9 +1,7 @@
-output
 .Rapp.history
 .Rproj.user
 .Rhistory
 figure
-xtra
 
 .maker
 *.rds
@@ -11,3 +9,4 @@ ms/ms.html
 ms/ms.md
 ms/figure
 reports
+export
