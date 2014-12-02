@@ -57,8 +57,7 @@ map_sites_in_country <- function(data){
 location_level_info <- function(data) {
   vars <- c("location", "longitude", "latitude", "vegetation")
   loc <- data[!duplicated(data[, vars]), vars]
-  ## TODO: "NA" should never happen here?
-  loc[is.na(loc) | loc == "" | loc == "NA"] <- "missing"
+  loc[is.na(loc) | loc == ""] <- "missing"
   rownames(loc) <- NULL
   loc$vegetation <- classify_veg_type(loc$vegetation)
   names(loc) <- capitalize(names(loc))
@@ -72,8 +71,7 @@ stand_level_info <- function(data) {
   if (all(is.na(sta$grouping))) {
     sta <- sta[names(sta) != "grouping"]
   }
-  ## TODO: "NA" should never happen?
-  sta[is.na(sta) | sta == "" | sta == "NA"] <- "missing"
+  sta[is.na(sta) | sta == ""] <- "missing"
   rownames(sta) <- NULL
   sta$growingCondition <- classify_site_history(sta$growingCondition)
   names(sta) <- capitalize(names(sta))
