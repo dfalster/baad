@@ -192,13 +192,11 @@ get_citation_ms <-  function(study_name, baad) {
   citation <- baad$references$citation[i]
 
   if (baad$references$doi[i] != "") {
-    ## TODO: Use md_link and md_link_doi
-    citation <- sprintf("%s, DOI: [%s](http://doi.org/%s).",
-                        citation, baad$references$doi[i],
-                        baad$references$doi[i])
+    citation <- sprintf("%s DOI: %s.",
+                        citation, md_link_doi(baad$references$doi[i]))
   } else if (baad$references$url[i] != "") {
-    citation <- sprintf("%s, DOI: [LINK](%s).",
-                        citation, baad$references$url[i])
+    citation <- sprintf("%s %s.",
+                        citation, md_link("LINK",baad$references$url[i]))
   }
   citation
 }
