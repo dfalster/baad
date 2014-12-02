@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 WIKI_DIR=reports
 WIKI_TMP=__wiki
 GIT_WIKI="--git-dir=$WIKI_DIR/.git --work-tree=$WIKI_DIR"
