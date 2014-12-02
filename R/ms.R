@@ -15,7 +15,7 @@ author_details <- function(filename_first_authors, baad) {
   address_table <- data.frame(code=seq_along(address), address=address)
 
   all_authors$address_code <- match(all_authors$address, address)
-  
+
   list(authors=all_authors,
        address_table=address_table)
 }
@@ -114,7 +114,7 @@ study_details <- function(data, baad) {
 
   metadata <- baad$metadata[baad$metadata$studyName == study_name,]
   metadata <- metadata[names(metadata) != study_name]
-  
+
   site_type <- classify_veg_type(data$vegetation)
   site_history <- classify_site_history(data$growingCondition)
   metadata_methods <- get_metadata_methods(metadata)
@@ -126,7 +126,7 @@ study_details <- function(data, baad) {
               "family", "pft", "growingCondition", "grouping")
   test <- setdiff(names(data), common)
   vars <- names(which(!apply(is.na(data[test]), 2, all)))
-  
+
   dat <- list(
     study_name   = study_name,
     site_type    = site_type,
@@ -138,7 +138,7 @@ study_details <- function(data, baad) {
     citation     = get_citation_ms(study_name, baad),
     vars         = paste0(vars, collapse=", "),
     species      = paste0(unique(data$species), collapse=", "))
-  
+
   whisker.render(template, dat)
 }
 
@@ -182,8 +182,7 @@ classify_pft <- function(code) {
 }
 
 get_lat_long <- function(data) {
-  ## TODO: resolve duplicates without paste.
-  uniquesites <- data[!duplicated(paste(data$longitude, data$latitude)),]
+  uniquesites <- data[!duplicated(data[,c("longitude", "latitude")]),]
   paste(prettyNum(uniquesites$latitude),
         prettyNum(uniquesites$longitude), sep=", ", collapse="; ")
 }
@@ -224,7 +223,7 @@ summary_table <- function(data, var_def, digits=2) {
   N <- colSums(!is.na(data[thesevars]))
   thesevars <- thesevars[N > 0]
   N <- N[N > 0]
-  
+
   Nstud <- sapply(data[thesevars], function(x)
                   length(unique(data$studyName[!is.na(x)])))
 
@@ -232,7 +231,7 @@ summary_table <- function(data, var_def, digits=2) {
                          data.frame(Min=min(x, na.rm=TRUE),
                                     Max=max(x, na.rm=TRUE),
                                     Median=median(x, na.rm=TRUE))))
-  
+
   dfr <- data.frame(Variable=thesevars, N=N, Studies=Nstud)
   dfr <- cbind(dfr, df)
 
