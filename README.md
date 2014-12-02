@@ -16,13 +16,6 @@ If you are going to lookup species names from Taxonstand and taxize (with the po
 
     taxize, Taxonstand, jsonlite
 
-All these packages are available from CRAN, except `rmarkdown`, which can be installed from github using the `devtools` package
-
-```
-install.packages("devtools")
-devtools::install_github("rstudio/rmarkdown")
-```
-
 # Line endings
 
 ## Fix all line endings
