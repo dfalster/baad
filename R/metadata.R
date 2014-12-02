@@ -13,8 +13,8 @@ read_data_raw_import_options <- function(filename) {
 }
 
 read_methods <- function(filename_columns, variable_definitions) {
-  ## TODO: Rename 'methods' to 'is_method' in 'variableDefinitions.csv'
-  vars <- variable_definitions$variable[variable_definitions$methods]
+
+  vars <- variable_definitions$variable[variable_definitions$has_methods]
 
   ## Fill with data from study
   var_match <- read_match_columns(filename_columns)
