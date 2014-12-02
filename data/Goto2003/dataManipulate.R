@@ -4,7 +4,7 @@ manipulate  <-  function(raw){
 raw$m.st <- raw$m.st + raw$m.br
 
 	# Remove vine species
-	vines <- c("Trachelospermum asiaticum", "Akebia trifoliata", "Gardneria nutans", "Cocculus trilobus", "Wisteria floribunda", "Vitis saccharifera", "Hedera rhombea", "Ficus nipponica")
+	vines <- c("Akebia trifoliata", "Cocculus trilobus", "Wisteria floribunda", "Vitis saccharifera")
 
 	raw <- subset(raw, !(species %in% vines))
 
