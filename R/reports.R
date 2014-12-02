@@ -17,128 +17,40 @@ md_link_doi <- function(doi) {
   md_link(doi, paste0("http://doi.org/", doi))
 }
 
-prep_map_info <- function(data, study_name=NA) {
+map_sites_all_countries <- function(data) {
+
   cols <- c("latitude", "longitude", "location")
-  is_unique <- !duplicated(data[c("latitude", "longitude", "location")])
-  dsub <- data[is_unique, cols]
-
-  i <- !is.na(dsub$latitude) | !is.na(dsub$longitude)
-  if (any(i)) {
-    dsub$country <- NA_character_
-    dsub$country[i] <- map.where(x=as.numeric(dsub$longitude[i]),
-                                 y=as.numeric(dsub$latitude[i]))
-  }
-
-  dsub
+  data <- data[!duplicated(data[,cols]), cols]
+  data$country <- map.where(x=as.numeric(data$longitude),
+                                 y=as.numeric(data$latitude))
+  d_ply(data, "country", map_sites_in_country)
 }
 
-## TODO: Can someone look into this and see if this is still useful?
-## TODO: Why is "NA" a possibility?  I thought that NA strings would
-## have dealt with that?
-## TODO: 
-report_missing_info <- function(data) {
-  j <- (!is.na(data$latitude) & !is.na(data$longitude) &
-        data$location != "NA" | is.na(data$location))
-  sj <- data[!j, ]
+map_sites_in_country <- function(data){
 
-  # location Info
-  k <- !is.na(sj$location) & is.na(sj$longitude)
-  if (length(k[k == TRUE]) > 0) {
-    cat("Please notice that there are no coordinates for the following location(s):")
-    return(cbind(sj$location[k]))
-  }
-  # coordinate Info
-  k <- !is.na(sj$longitude) & is.na(sj$location) | sj$location == "NA"
-  if (any(k)) {
-    cat("Please notice that there is no location information for the following coordinate(s):")
-    return(cbind(lon=sj$lon[k], lat=sj$lat[k]))
-  }
-  # country Info
-  k <- !is.na(sj$location) & is.na(sj$country)
-  if (any(k)) {
-    cat("Please notice that there is no country information for the following location(s):")
-    return(cbind(sj$location[k]))
-    cat("The most likely reason is either a missing or wrong coordinate, please revise")
-  }
-}
+  g=data$country[1]
 
-## TODO: This is a target for simplification later on.
-## TODO: 10 is apprently special here
-## TODO: lots of 1:10, 10:1 constructs that are needlessly confusing,
-## especially `c(10:1)[1:nrow(subC)]`
-drawCountryPlot <- function(data) {
-  mapCountries <- unique(data$country)
-  mapCountries <- mapCountries[!is.na(mapCountries)]
-  countriesLen <- length(mapCountries)
-  ppoint <- rep(c(21, 22, 23, 24, 25), 2)
-  cpoint <- c("yellow", "blue", "darkgreen", "red", "grey", "black",
-              "yellow", "blue", "darkgreen", "red")
+  if(is.na(g)){
+    cat("NA - location lies outside country borders. Perhaps add more decimal places?")
+  } else {
 
-  # make map for each country
-  for (g in mapCountries) {
-    zeta <- data$country == g
-    subC <- data[zeta, ]
+    par(mfrow=c(1, 2), mar=c(0, 0, 1, 0), oma=c(0,0,0,0))
+    pars <- expand.grid(pch=21:25, col=nice_colours(ceiling(nrow(data)/5)), stringsAsFactors=FALSE)
 
-    if (nrow(subC) <= 10) {
-      par(mfrow=c(1, 2), mar=c(4, 4, 5, 1))
-      if (g == "USA") {
+    if (g == "USA") {
         map("usa")
       } else {
-        map("worldHires", g)
+        map("worldHires", g, mar=par("mar"))
       }
-      title(g)
-      subC$group <- as.numeric(as.factor(paste0(subC$longitude, subC$latitude)))
-      subC$cpoint <- cpoint[match(subC$group, 1:10)]
-      subC$ppoint <- ppoint[match(subC$group, 1:10)]
-      for (d in unique(subC$group)) {
-        subD <- subC[subC$group == d, ]
-        points(subD$longitude[1], subD$latitude[1],
-               pch=subD$ppoint[1], col="black",
-               bg=subD$cpoint[1], cex=0.8)
-      }
+    title(g)
+    points(data$longitude, data$latitude,
+              pch=pars$pch, col="black",
+              bg=pars$col, cex=0.8)
 
-      par(mar=c(2, 0, 2, 0))
-      plot(0, 0, type="n", axes=FALSE, xlab="", ylab="",
-           xlim=c(0, 20), ylim=c(-2, 12))
-      for (i in c(10:1)[1:nrow(subC)]) {
-        points(0, i, pch=subC$ppoint[which(c(10:1) == i)], col="black",
-               bg=subC$cpoint[which(c(10:1) == i)])
-        text(0.3, i, subC$location[which(c(10:1) == i)], pos=4, xpd=TRUE,
-             cex=0.8)
-      }
-    } else {
-      subC$org <- as.integer(cut(1:nrow(subC), ceiling(nrow(subC)/10)))
-      for (f in unique(subC$org)) {
-        subK <- subC[subC$org == f, ]
-
-        par(mfrow=c(1, 2), mar=c(4, 4, 5, 1))
-        if (g == "USA") {
-          map("usa")
-        } else {
-          map("worldHires", g)
-        }
-        title(g)
-        subK$group <- as.numeric(as.factor(paste0(subK$longitude, subK$latitude)))
-        subK$cpoint <- cpoint[match(subK$group, 1:10)]
-        subK$ppoint <- ppoint[match(subK$group, 1:10)]
-        for (d in unique(subK$group)) {
-          subD <- subK[subK$group == d, ]
-          points(subD$longitude[1], subD$latitude[1],
-                 pch=subD$ppoint[1], col="black", bg=subD$cpoint[1],
-                 cex=0.8)
-        }
-
-        par(mar=c(2, 0, 2, 0))
-        plot(0, 0, type="n", axes=FALSE, xlab="", ylab="",
-             xlim=c(0, 20), ylim=c(-2, 12))
-        for (i in c(10:1)[1:nrow(subK)]) {
-          points(0, i, pch=subK$ppoint[which(c(10:1) == i)], col="black",
-                 bg=subK$cpoint[which(c(10:1) == i)])
-          text(0.3, i, subK$location[which(c(10:1) == i)], pos=4, xpd=TRUE,
-               cex=0.8)
-        }
-      }
-    }
+  # Add legned in second plot
+  plot(NA, xlim=c(0,1), ylim=c(0,1), ann=FALSE, axes=FALSE)
+  legend("topleft", legend = data$location, col="black",
+             pt.bg =pars$col, pch=pars$pch, bty = "n", xpd=NA)
   }
 }
 

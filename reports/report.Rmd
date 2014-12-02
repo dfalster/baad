@@ -33,15 +33,13 @@ kable(tab[names(tab) != "Studies"], "markdown", align="l", padding=10)
 ```
 
 ```{r world_map, echo=FALSE, fig.width=12, fig.height=10}
-map_info <- prep_map_info(data_study$data, study_name)
-drawWorldPlot(map_info)
+drawWorldPlot(data_study$data)
 ```
 
 And locally within the country:
 
 ```{r country_map, echo=FALSE, fig.width=12, fig.height=10}
-report_missing_info(map_info)
-drawCountryPlot(map_info)
+map_sites_all_countries(data_study$data)
 ```
 
 The sites sampled are:
