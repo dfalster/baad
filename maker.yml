@@ -48,6 +48,7 @@ targets:
       - baad
       - author_info
       - ms/refs.bib
+      - R/ms.R
 
   ms/ms.html:
     command: render_ms("ms/ms.md")

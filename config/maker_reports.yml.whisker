@@ -9,6 +9,7 @@ targets:
       - data_study: {{study_name}}
       - baad_dictionary
       - baad_data
+      - R/reports.R
   reports/{{study_name}}.html:
     command: render_ms("reports/{{study_name}}.md")
 {{/study_names}}
