@@ -21,9 +21,18 @@ map_sites_all_countries <- function(data) {
 
   cols <- c("latitude", "longitude", "location")
   data <- data[!duplicated(data[,cols]), cols]
-  data$country <- map.where(x=as.numeric(data$longitude),
-                                 y=as.numeric(data$latitude))
-  d_ply(data, "country", map_sites_in_country)
+
+  ii <- !is.na(data[["latitude"]]) & !is.na(data[["longitude"]])
+
+  data$country <- NA_character_
+  data$country[ii] <- map.where(x=as.numeric(data$longitude[ii]),
+                                 y=as.numeric(data$latitude[ii]))
+  if(any(!ii)){
+    cat("Error - location(s) missing coordinates")
+    cat(paste0("\t- ", data$location[!ii], "\n"))
+  }
+
+  d_ply(data[ii,], "country", map_sites_in_country)
 }
 
 map_sites_in_country <- function(data){
@@ -31,7 +40,7 @@ map_sites_in_country <- function(data){
   g=data$country[1]
 
   if(is.na(g)){
-    cat("NA - location lies outside country borders. Perhaps add more decimal places?")
+    cat("Error - location lies outside country borders. Perhaps add more decimal places?")
   } else {
 
     par(mfrow=c(1, 2), mar=c(0, 0, 1, 0), oma=c(0,0,0,0))
