@@ -9,8 +9,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Abe1981.html:
     command: render_ms("reports/Abe1981.md")
+    cleanup_level: purge
   reports/Aiba2005.md:
     knitr:
       input: reports/report.Rmd
@@ -21,8 +23,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Aiba2005.html:
     command: render_ms("reports/Aiba2005.md")
+    cleanup_level: purge
   reports/Aiba2007.md:
     knitr:
       input: reports/report.Rmd
@@ -33,8 +37,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Aiba2007.html:
     command: render_ms("reports/Aiba2007.md")
+    cleanup_level: purge
   reports/Albrektson1984.md:
     knitr:
       input: reports/report.Rmd
@@ -45,8 +51,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Albrektson1984.html:
     command: render_ms("reports/Albrektson1984.md")
+    cleanup_level: purge
   reports/Ando1962.md:
     knitr:
       input: reports/report.Rmd
@@ -57,8 +65,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ando1962.html:
     command: render_ms("reports/Ando1962.md")
+    cleanup_level: purge
   reports/Ando1973.md:
     knitr:
       input: reports/report.Rmd
@@ -69,8 +79,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ando1973.html:
     command: render_ms("reports/Ando1973.md")
+    cleanup_level: purge
   reports/Ando1988.md:
     knitr:
       input: reports/report.Rmd
@@ -81,8 +93,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ando1988.html:
     command: render_ms("reports/Ando1988.md")
+    cleanup_level: purge
   reports/Aspinwall2013.md:
     knitr:
       input: reports/report.Rmd
@@ -93,8 +107,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Aspinwall2013.html:
     command: render_ms("reports/Aspinwall2013.md")
+    cleanup_level: purge
   reports/Baltzer2007.md:
     knitr:
       input: reports/report.Rmd
@@ -105,8 +121,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Baltzer2007.html:
     command: render_ms("reports/Baltzer2007.md")
+    cleanup_level: purge
   reports/Baraloto2006.md:
     knitr:
       input: reports/report.Rmd
@@ -117,8 +135,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Baraloto2006.html:
     command: render_ms("reports/Baraloto2006.md")
+    cleanup_level: purge
   reports/Battaglia1998.md:
     knitr:
       input: reports/report.Rmd
@@ -129,8 +149,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Battaglia1998.html:
     command: render_ms("reports/Battaglia1998.md")
+    cleanup_level: purge
   reports/BondLamberty2002.md:
     knitr:
       input: reports/report.Rmd
@@ -141,8 +163,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/BondLamberty2002.html:
     command: render_ms("reports/BondLamberty2002.md")
+    cleanup_level: purge
   reports/Brown1978.md:
     knitr:
       input: reports/report.Rmd
@@ -153,8 +177,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Brown1978.html:
     command: render_ms("reports/Brown1978.md")
+    cleanup_level: purge
   reports/Burger1953.md:
     knitr:
       input: reports/report.Rmd
@@ -165,8 +191,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Burger1953.html:
     command: render_ms("reports/Burger1953.md")
+    cleanup_level: purge
   reports/Claveau2002.md:
     knitr:
       input: reports/report.Rmd
@@ -177,8 +205,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Claveau2002.html:
     command: render_ms("reports/Claveau2002.md")
+    cleanup_level: purge
   reports/Claveau2005.md:
     knitr:
       input: reports/report.Rmd
@@ -189,8 +219,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Claveau2005.html:
     command: render_ms("reports/Claveau2005.md")
+    cleanup_level: purge
   reports/Coll2008.md:
     knitr:
       input: reports/report.Rmd
@@ -201,8 +233,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Coll2008.html:
     command: render_ms("reports/Coll2008.md")
+    cleanup_level: purge
   reports/Dannoura2006.md:
     knitr:
       input: reports/report.Rmd
@@ -213,8 +247,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Dannoura2006.html:
     command: render_ms("reports/Dannoura2006.md")
+    cleanup_level: purge
   reports/Delagrange0000a.md:
     knitr:
       input: reports/report.Rmd
@@ -225,8 +261,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Delagrange0000a.html:
     command: render_ms("reports/Delagrange0000a.md")
+    cleanup_level: purge
   reports/Delagrange0000b.md:
     knitr:
       input: reports/report.Rmd
@@ -237,8 +275,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Delagrange0000b.html:
     command: render_ms("reports/Delagrange0000b.md")
+    cleanup_level: purge
   reports/Delagrange2004.md:
     knitr:
       input: reports/report.Rmd
@@ -249,8 +289,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Delagrange2004.html:
     command: render_ms("reports/Delagrange2004.md")
+    cleanup_level: purge
   reports/Domec2012.md:
     knitr:
       input: reports/report.Rmd
@@ -261,8 +303,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Domec2012.html:
     command: render_ms("reports/Domec2012.md")
+    cleanup_level: purge
   reports/Epron2011.md:
     knitr:
       input: reports/report.Rmd
@@ -273,8 +317,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Epron2011.html:
     command: render_ms("reports/Epron2011.md")
+    cleanup_level: purge
   reports/Fatemi2011.md:
     knitr:
       input: reports/report.Rmd
@@ -285,8 +331,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Fatemi2011.html:
     command: render_ms("reports/Fatemi2011.md")
+    cleanup_level: purge
   reports/FLFU1963.md:
     knitr:
       input: reports/report.Rmd
@@ -297,8 +345,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/FLFU1963.html:
     command: render_ms("reports/FLFU1963.md")
+    cleanup_level: purge
   reports/FLFU1965.md:
     knitr:
       input: reports/report.Rmd
@@ -309,8 +359,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/FLFU1965.html:
     command: render_ms("reports/FLFU1965.md")
+    cleanup_level: purge
   reports/Furuno1967.md:
     knitr:
       input: reports/report.Rmd
@@ -321,8 +373,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Furuno1967.html:
     command: render_ms("reports/Furuno1967.md")
+    cleanup_level: purge
   reports/Garber2005.md:
     knitr:
       input: reports/report.Rmd
@@ -333,8 +387,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Garber2005.html:
     command: render_ms("reports/Garber2005.md")
+    cleanup_level: purge
   reports/Gargaglione2010.md:
     knitr:
       input: reports/report.Rmd
@@ -345,8 +401,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Gargaglione2010.html:
     command: render_ms("reports/Gargaglione2010.md")
+    cleanup_level: purge
   reports/Ghannoum2010a.md:
     knitr:
       input: reports/report.Rmd
@@ -357,8 +415,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ghannoum2010a.html:
     command: render_ms("reports/Ghannoum2010a.md")
+    cleanup_level: purge
   reports/Ghannoum2010b.md:
     knitr:
       input: reports/report.Rmd
@@ -369,8 +429,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ghannoum2010b.html:
     command: render_ms("reports/Ghannoum2010b.md")
+    cleanup_level: purge
   reports/Goto2003.md:
     knitr:
       input: reports/report.Rmd
@@ -381,8 +443,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Goto2003.html:
     command: render_ms("reports/Goto2003.md")
+    cleanup_level: purge
   reports/Hagihara1993.md:
     knitr:
       input: reports/report.Rmd
@@ -393,8 +457,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Hagihara1993.html:
     command: render_ms("reports/Hagihara1993.md")
+    cleanup_level: purge
   reports/Hamilton2005.md:
     knitr:
       input: reports/report.Rmd
@@ -405,8 +471,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Hamilton2005.html:
     command: render_ms("reports/Hamilton2005.md")
+    cleanup_level: purge
   reports/Harada1972.md:
     knitr:
       input: reports/report.Rmd
@@ -417,8 +485,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Harada1972.html:
     command: render_ms("reports/Harada1972.md")
+    cleanup_level: purge
   reports/Harja2012.md:
     knitr:
       input: reports/report.Rmd
@@ -429,8 +499,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Harja2012.html:
     command: render_ms("reports/Harja2012.md")
+    cleanup_level: purge
   reports/Haruki1979.md:
     knitr:
       input: reports/report.Rmd
@@ -441,8 +513,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Haruki1979.html:
     command: render_ms("reports/Haruki1979.md")
+    cleanup_level: purge
   reports/Hashizume1980.md:
     knitr:
       input: reports/report.Rmd
@@ -453,8 +527,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Hashizume1980.html:
     command: render_ms("reports/Hashizume1980.md")
+    cleanup_level: purge
   reports/Hashizume1985.md:
     knitr:
       input: reports/report.Rmd
@@ -465,8 +541,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Hashizume1985.html:
     command: render_ms("reports/Hashizume1985.md")
+    cleanup_level: purge
   reports/Holdaway2008.md:
     knitr:
       input: reports/report.Rmd
@@ -477,8 +555,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Holdaway2008.html:
     command: render_ms("reports/Holdaway2008.md")
+    cleanup_level: purge
   reports/Iijima1991.md:
     knitr:
       input: reports/report.Rmd
@@ -489,8 +569,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Iijima1991.html:
     command: render_ms("reports/Iijima1991.md")
+    cleanup_level: purge
   reports/Ikushima1964.md:
     knitr:
       input: reports/report.Rmd
@@ -501,8 +583,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ikushima1964.html:
     command: render_ms("reports/Ikushima1964.md")
+    cleanup_level: purge
   reports/Ilomaki2003.md:
     knitr:
       input: reports/report.Rmd
@@ -513,8 +597,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ilomaki2003.html:
     command: render_ms("reports/Ilomaki2003.md")
+    cleanup_level: purge
   reports/Ishii2000.md:
     knitr:
       input: reports/report.Rmd
@@ -525,8 +611,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ishii2000.html:
     command: render_ms("reports/Ishii2000.md")
+    cleanup_level: purge
   reports/Kabaya1968.md:
     knitr:
       input: reports/report.Rmd
@@ -537,8 +625,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kabaya1968.html:
     command: render_ms("reports/Kabaya1968.md")
+    cleanup_level: purge
   reports/Kabaya1981.md:
     knitr:
       input: reports/report.Rmd
@@ -549,8 +639,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kabaya1981.html:
     command: render_ms("reports/Kabaya1981.md")
+    cleanup_level: purge
   reports/Kantola2004.md:
     knitr:
       input: reports/report.Rmd
@@ -561,8 +653,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kantola2004.html:
     command: render_ms("reports/Kantola2004.md")
+    cleanup_level: purge
   reports/Karizumi1984.md:
     knitr:
       input: reports/report.Rmd
@@ -573,8 +667,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Karizumi1984.html:
     command: render_ms("reports/Karizumi1984.md")
+    cleanup_level: purge
   reports/Katagiri1984.md:
     knitr:
       input: reports/report.Rmd
@@ -585,8 +681,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Katagiri1984.html:
     command: render_ms("reports/Katagiri1984.md")
+    cleanup_level: purge
   reports/Katakura2007.md:
     knitr:
       input: reports/report.Rmd
@@ -597,8 +695,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Katakura2007.html:
     command: render_ms("reports/Katakura2007.md")
+    cleanup_level: purge
   reports/Kato1973.md:
     knitr:
       input: reports/report.Rmd
@@ -609,8 +709,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kato1973.html:
     command: render_ms("reports/Kato1973.md")
+    cleanup_level: purge
   reports/Kawahara1981.md:
     knitr:
       input: reports/report.Rmd
@@ -621,8 +723,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kawahara1981.html:
     command: render_ms("reports/Kawahara1981.md")
+    cleanup_level: purge
   reports/Kawanabe1977.md:
     knitr:
       input: reports/report.Rmd
@@ -633,8 +737,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kawanabe1977.html:
     command: render_ms("reports/Kawanabe1977.md")
+    cleanup_level: purge
   reports/Kelly0000a.md:
     knitr:
       input: reports/report.Rmd
@@ -645,8 +751,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kelly0000a.html:
     command: render_ms("reports/Kelly0000a.md")
+    cleanup_level: purge
   reports/Kelly0000b.md:
     knitr:
       input: reports/report.Rmd
@@ -657,8 +765,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kelly0000b.html:
     command: render_ms("reports/Kelly0000b.md")
+    cleanup_level: purge
   reports/Kenzo2009.md:
     knitr:
       input: reports/report.Rmd
@@ -669,8 +779,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kenzo2009.html:
     command: render_ms("reports/Kenzo2009.md")
+    cleanup_level: purge
   reports/Kenzo2009b.md:
     knitr:
       input: reports/report.Rmd
@@ -681,8 +793,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kenzo2009b.html:
     command: render_ms("reports/Kenzo2009b.md")
+    cleanup_level: purge
   reports/King1994.md:
     knitr:
       input: reports/report.Rmd
@@ -693,8 +807,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/King1994.html:
     command: render_ms("reports/King1994.md")
+    cleanup_level: purge
   reports/King1996.md:
     knitr:
       input: reports/report.Rmd
@@ -705,8 +821,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/King1996.html:
     command: render_ms("reports/King1996.md")
+    cleanup_level: purge
   reports/Kitazawa1959.md:
     knitr:
       input: reports/report.Rmd
@@ -717,8 +835,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kitazawa1959.html:
     command: render_ms("reports/Kitazawa1959.md")
+    cleanup_level: purge
   reports/Kohyama0000.md:
     knitr:
       input: reports/report.Rmd
@@ -729,8 +849,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kohyama0000.html:
     command: render_ms("reports/Kohyama0000.md")
+    cleanup_level: purge
   reports/Kohyama1987.md:
     knitr:
       input: reports/report.Rmd
@@ -741,8 +863,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kohyama1987.html:
     command: render_ms("reports/Kohyama1987.md")
+    cleanup_level: purge
   reports/Kohyama1990.md:
     knitr:
       input: reports/report.Rmd
@@ -753,8 +877,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kohyama1990.html:
     command: render_ms("reports/Kohyama1990.md")
+    cleanup_level: purge
   reports/Kohyama1994.md:
     knitr:
       input: reports/report.Rmd
@@ -765,8 +891,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Kohyama1994.html:
     command: render_ms("reports/Kohyama1994.md")
+    cleanup_level: purge
   reports/Komiyama2002.md:
     knitr:
       input: reports/report.Rmd
@@ -777,8 +905,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Komiyama2002.html:
     command: render_ms("reports/Komiyama2002.md")
+    cleanup_level: purge
   reports/Komiyama2003.md:
     knitr:
       input: reports/report.Rmd
@@ -789,8 +919,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Komiyama2003.html:
     command: render_ms("reports/Komiyama2003.md")
+    cleanup_level: purge
   reports/leMaire2011.md:
     knitr:
       input: reports/report.Rmd
@@ -801,8 +933,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/leMaire2011.html:
     command: render_ms("reports/leMaire2011.md")
+    cleanup_level: purge
   reports/Lewis2013.md:
     knitr:
       input: reports/report.Rmd
@@ -813,8 +947,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Lewis2013.html:
     command: render_ms("reports/Lewis2013.md")
+    cleanup_level: purge
   reports/Lusk0000a.md:
     knitr:
       input: reports/report.Rmd
@@ -825,8 +961,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Lusk0000a.html:
     command: render_ms("reports/Lusk0000a.md")
+    cleanup_level: purge
   reports/Lusk0000b.md:
     knitr:
       input: reports/report.Rmd
@@ -837,8 +975,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Lusk0000b.html:
     command: render_ms("reports/Lusk0000b.md")
+    cleanup_level: purge
   reports/Lusk2002.md:
     knitr:
       input: reports/report.Rmd
@@ -849,8 +989,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Lusk2002.html:
     command: render_ms("reports/Lusk2002.md")
+    cleanup_level: purge
   reports/Lusk2004.md:
     knitr:
       input: reports/report.Rmd
@@ -861,8 +1003,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Lusk2004.html:
     command: render_ms("reports/Lusk2004.md")
+    cleanup_level: purge
   reports/Lusk2011.md:
     knitr:
       input: reports/report.Rmd
@@ -873,8 +1017,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Lusk2011.html:
     command: render_ms("reports/Lusk2011.md")
+    cleanup_level: purge
   reports/Lusk2012.md:
     knitr:
       input: reports/report.Rmd
@@ -885,8 +1031,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Lusk2012.html:
     command: render_ms("reports/Lusk2012.md")
+    cleanup_level: purge
   reports/Lusk2013.md:
     knitr:
       input: reports/report.Rmd
@@ -897,8 +1045,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Lusk2013.html:
     command: render_ms("reports/Lusk2013.md")
+    cleanup_level: purge
   reports/Maguire1998.md:
     knitr:
       input: reports/report.Rmd
@@ -909,8 +1059,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Maguire1998.html:
     command: render_ms("reports/Maguire1998.md")
+    cleanup_level: purge
   reports/Markesteijn2009.md:
     knitr:
       input: reports/report.Rmd
@@ -921,8 +1073,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Markesteijn2009.html:
     command: render_ms("reports/Markesteijn2009.md")
+    cleanup_level: purge
   reports/Martin1998.md:
     knitr:
       input: reports/report.Rmd
@@ -933,8 +1087,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Martin1998.html:
     command: render_ms("reports/Martin1998.md")
+    cleanup_level: purge
   reports/McCulloh2010.md:
     knitr:
       input: reports/report.Rmd
@@ -945,8 +1101,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/McCulloh2010.html:
     command: render_ms("reports/McCulloh2010.md")
+    cleanup_level: purge
   reports/Mokany2003.md:
     knitr:
       input: reports/report.Rmd
@@ -957,8 +1115,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Mokany2003.html:
     command: render_ms("reports/Mokany2003.md")
+    cleanup_level: purge
   reports/Monserud1999.md:
     knitr:
       input: reports/report.Rmd
@@ -969,8 +1129,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Monserud1999.html:
     command: render_ms("reports/Monserud1999.md")
+    cleanup_level: purge
   reports/Mori1979.md:
     knitr:
       input: reports/report.Rmd
@@ -981,8 +1143,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Mori1979.html:
     command: render_ms("reports/Mori1979.md")
+    cleanup_level: purge
   reports/Mori1991.md:
     knitr:
       input: reports/report.Rmd
@@ -993,8 +1157,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Mori1991.html:
     command: render_ms("reports/Mori1991.md")
+    cleanup_level: purge
   reports/Morisawa1957.md:
     knitr:
       input: reports/report.Rmd
@@ -1005,8 +1171,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Morisawa1957.html:
     command: render_ms("reports/Morisawa1957.md")
+    cleanup_level: purge
   reports/Muro2006.md:
     knitr:
       input: reports/report.Rmd
@@ -1017,8 +1185,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Muro2006.html:
     command: render_ms("reports/Muro2006.md")
+    cleanup_level: purge
   reports/Myster2009.md:
     knitr:
       input: reports/report.Rmd
@@ -1029,8 +1199,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Myster2009.html:
     command: render_ms("reports/Myster2009.md")
+    cleanup_level: purge
   reports/Naidu1998.md:
     knitr:
       input: reports/report.Rmd
@@ -1041,8 +1213,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Naidu1998.html:
     command: render_ms("reports/Naidu1998.md")
+    cleanup_level: purge
   reports/Nakagaki1983.md:
     knitr:
       input: reports/report.Rmd
@@ -1053,8 +1227,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Nakagaki1983.html:
     command: render_ms("reports/Nakagaki1983.md")
+    cleanup_level: purge
   reports/Nishioka1982.md:
     knitr:
       input: reports/report.Rmd
@@ -1065,8 +1241,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Nishioka1982.html:
     command: render_ms("reports/Nishioka1982.md")
+    cleanup_level: purge
   reports/Nouvellon2010.md:
     knitr:
       input: reports/report.Rmd
@@ -1077,8 +1255,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Nouvellon2010.html:
     command: render_ms("reports/Nouvellon2010.md")
+    cleanup_level: purge
   reports/OGrady2000.md:
     knitr:
       input: reports/report.Rmd
@@ -1089,8 +1269,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/OGrady2000.html:
     command: render_ms("reports/OGrady2000.md")
+    cleanup_level: purge
   reports/OGrady2006.md:
     knitr:
       input: reports/report.Rmd
@@ -1101,8 +1283,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/OGrady2006.html:
     command: render_ms("reports/OGrady2006.md")
+    cleanup_level: purge
   reports/OHara1995.md:
     knitr:
       input: reports/report.Rmd
@@ -1113,8 +1297,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/OHara1995.html:
     command: render_ms("reports/OHara1995.md")
+    cleanup_level: purge
   reports/OHara2014.md:
     knitr:
       input: reports/report.Rmd
@@ -1125,8 +1311,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/OHara2014.html:
     command: render_ms("reports/OHara2014.md")
+    cleanup_level: purge
   reports/Ohtsuka2005.md:
     knitr:
       input: reports/report.Rmd
@@ -1137,8 +1325,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ohtsuka2005.html:
     command: render_ms("reports/Ohtsuka2005.md")
+    cleanup_level: purge
   reports/Osada0000.md:
     knitr:
       input: reports/report.Rmd
@@ -1149,8 +1339,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Osada0000.html:
     command: render_ms("reports/Osada0000.md")
+    cleanup_level: purge
   reports/Osada2003.md:
     knitr:
       input: reports/report.Rmd
@@ -1161,8 +1353,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Osada2003.html:
     command: render_ms("reports/Osada2003.md")
+    cleanup_level: purge
   reports/Osada2005.md:
     knitr:
       input: reports/report.Rmd
@@ -1173,8 +1367,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Osada2005.html:
     command: render_ms("reports/Osada2005.md")
+    cleanup_level: purge
   reports/Osunkoya2007.md:
     knitr:
       input: reports/report.Rmd
@@ -1185,8 +1381,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Osunkoya2007.html:
     command: render_ms("reports/Osunkoya2007.md")
+    cleanup_level: purge
   reports/Parviainen1999.md:
     knitr:
       input: reports/report.Rmd
@@ -1197,8 +1395,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Parviainen1999.html:
     command: render_ms("reports/Parviainen1999.md")
+    cleanup_level: purge
   reports/Peri0000.md:
     knitr:
       input: reports/report.Rmd
@@ -1209,8 +1409,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Peri0000.html:
     command: render_ms("reports/Peri0000.md")
+    cleanup_level: purge
   reports/Peri2008.md:
     knitr:
       input: reports/report.Rmd
@@ -1221,8 +1423,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Peri2008.html:
     command: render_ms("reports/Peri2008.md")
+    cleanup_level: purge
   reports/Peri2011.md:
     knitr:
       input: reports/report.Rmd
@@ -1233,8 +1437,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Peri2011.html:
     command: render_ms("reports/Peri2011.md")
+    cleanup_level: purge
   reports/Petritan2009.md:
     knitr:
       input: reports/report.Rmd
@@ -1245,8 +1451,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Petritan2009.html:
     command: render_ms("reports/Petritan2009.md")
+    cleanup_level: purge
   reports/Poorter1999.md:
     knitr:
       input: reports/report.Rmd
@@ -1257,8 +1465,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Poorter1999.html:
     command: render_ms("reports/Poorter1999.md")
+    cleanup_level: purge
   reports/Portsmuth2005.md:
     knitr:
       input: reports/report.Rmd
@@ -1269,8 +1479,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Portsmuth2005.html:
     command: render_ms("reports/Portsmuth2005.md")
+    cleanup_level: purge
   reports/Portsmuth2006.md:
     knitr:
       input: reports/report.Rmd
@@ -1281,8 +1493,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Portsmuth2006.html:
     command: render_ms("reports/Portsmuth2006.md")
+    cleanup_level: purge
   reports/Reid2004.md:
     knitr:
       input: reports/report.Rmd
@@ -1293,8 +1507,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Reid2004.html:
     command: render_ms("reports/Reid2004.md")
+    cleanup_level: purge
   reports/Ribeiro2011.md:
     knitr:
       input: reports/report.Rmd
@@ -1305,8 +1521,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ribeiro2011.html:
     command: render_ms("reports/Ribeiro2011.md")
+    cleanup_level: purge
   reports/Roberts2003.md:
     knitr:
       input: reports/report.Rmd
@@ -1317,8 +1535,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Roberts2003.html:
     command: render_ms("reports/Roberts2003.md")
+    cleanup_level: purge
   reports/Roberts2004.md:
     knitr:
       input: reports/report.Rmd
@@ -1329,8 +1549,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Roberts2004.html:
     command: render_ms("reports/Roberts2004.md")
+    cleanup_level: purge
   reports/Rodriguez2003.md:
     knitr:
       input: reports/report.Rmd
@@ -1341,8 +1563,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Rodriguez2003.html:
     command: render_ms("reports/Rodriguez2003.md")
+    cleanup_level: purge
   reports/Roeh1997.md:
     knitr:
       input: reports/report.Rmd
@@ -1353,8 +1577,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Roeh1997.html:
     command: render_ms("reports/Roeh1997.md")
+    cleanup_level: purge
   reports/Roth2007.md:
     knitr:
       input: reports/report.Rmd
@@ -1365,8 +1591,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Roth2007.html:
     command: render_ms("reports/Roth2007.md")
+    cleanup_level: purge
   reports/Saito1981.md:
     knitr:
       input: reports/report.Rmd
@@ -1377,8 +1605,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Saito1981.html:
     command: render_ms("reports/Saito1981.md")
+    cleanup_level: purge
   reports/Salazar2010.md:
     knitr:
       input: reports/report.Rmd
@@ -1389,8 +1619,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Salazar2010.html:
     command: render_ms("reports/Salazar2010.md")
+    cleanup_level: purge
   reports/SaldanaAcosta2009.md:
     knitr:
       input: reports/report.Rmd
@@ -1401,8 +1633,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/SaldanaAcosta2009.html:
     command: render_ms("reports/SaldanaAcosta2009.md")
+    cleanup_level: purge
   reports/SantaRegina0000.md:
     knitr:
       input: reports/report.Rmd
@@ -1413,8 +1647,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/SantaRegina0000.html:
     command: render_ms("reports/SantaRegina0000.md")
+    cleanup_level: purge
   reports/SantaRegina1999.md:
     knitr:
       input: reports/report.Rmd
@@ -1425,8 +1661,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/SantaRegina1999.html:
     command: render_ms("reports/SantaRegina1999.md")
+    cleanup_level: purge
   reports/Sato1971.md:
     knitr:
       input: reports/report.Rmd
@@ -1437,8 +1675,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Sato1971.html:
     command: render_ms("reports/Sato1971.md")
+    cleanup_level: purge
   reports/Satoo1968.md:
     knitr:
       input: reports/report.Rmd
@@ -1449,8 +1689,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Satoo1968.html:
     command: render_ms("reports/Satoo1968.md")
+    cleanup_level: purge
   reports/Satoo1974a.md:
     knitr:
       input: reports/report.Rmd
@@ -1461,8 +1703,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Satoo1974a.html:
     command: render_ms("reports/Satoo1974a.md")
+    cleanup_level: purge
   reports/Satoo1974b.md:
     knitr:
       input: reports/report.Rmd
@@ -1473,8 +1717,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Satoo1974b.html:
     command: render_ms("reports/Satoo1974b.md")
+    cleanup_level: purge
   reports/Satoo1974c.md:
     knitr:
       input: reports/report.Rmd
@@ -1485,8 +1731,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Satoo1974c.html:
     command: render_ms("reports/Satoo1974c.md")
+    cleanup_level: purge
   reports/Satoo1974d.md:
     knitr:
       input: reports/report.Rmd
@@ -1497,8 +1745,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Satoo1974d.html:
     command: render_ms("reports/Satoo1974d.md")
+    cleanup_level: purge
   reports/Satoo1974e.md:
     knitr:
       input: reports/report.Rmd
@@ -1509,8 +1759,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Satoo1974e.html:
     command: render_ms("reports/Satoo1974e.md")
+    cleanup_level: purge
   reports/Segawa1969.md:
     knitr:
       input: reports/report.Rmd
@@ -1521,8 +1773,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Segawa1969.html:
     command: render_ms("reports/Segawa1969.md")
+    cleanup_level: purge
   reports/Segawa1973.md:
     knitr:
       input: reports/report.Rmd
@@ -1533,8 +1787,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Segawa1973.html:
     command: render_ms("reports/Segawa1973.md")
+    cleanup_level: purge
   reports/Selaya2010.md:
     knitr:
       input: reports/report.Rmd
@@ -1545,8 +1801,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Selaya2010.html:
     command: render_ms("reports/Selaya2010.md")
+    cleanup_level: purge
   reports/Sillett2010.md:
     knitr:
       input: reports/report.Rmd
@@ -1557,8 +1815,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Sillett2010.html:
     command: render_ms("reports/Sillett2010.md")
+    cleanup_level: purge
   reports/Singh1980.md:
     knitr:
       input: reports/report.Rmd
@@ -1569,8 +1829,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Singh1980.html:
     command: render_ms("reports/Singh1980.md")
+    cleanup_level: purge
   reports/Stancioiu2005.md:
     knitr:
       input: reports/report.Rmd
@@ -1581,8 +1843,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Stancioiu2005.html:
     command: render_ms("reports/Stancioiu2005.md")
+    cleanup_level: purge
   reports/Sterck0000.md:
     knitr:
       input: reports/report.Rmd
@@ -1593,8 +1857,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Sterck0000.html:
     command: render_ms("reports/Sterck0000.md")
+    cleanup_level: purge
   reports/Sterck2001.md:
     knitr:
       input: reports/report.Rmd
@@ -1605,8 +1871,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Sterck2001.html:
     command: render_ms("reports/Sterck2001.md")
+    cleanup_level: purge
   reports/Suzuki1990.md:
     knitr:
       input: reports/report.Rmd
@@ -1617,8 +1885,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Suzuki1990.html:
     command: render_ms("reports/Suzuki1990.md")
+    cleanup_level: purge
   reports/Suzuki2012.md:
     knitr:
       input: reports/report.Rmd
@@ -1629,8 +1899,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Suzuki2012.html:
     command: render_ms("reports/Suzuki2012.md")
+    cleanup_level: purge
   reports/Sweda2003.md:
     knitr:
       input: reports/report.Rmd
@@ -1641,8 +1913,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Sweda2003.html:
     command: render_ms("reports/Sweda2003.md")
+    cleanup_level: purge
   reports/Tadaki1979.md:
     knitr:
       input: reports/report.Rmd
@@ -1653,8 +1927,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Tadaki1979.html:
     command: render_ms("reports/Tadaki1979.md")
+    cleanup_level: purge
   reports/Tadaki1995.md:
     knitr:
       input: reports/report.Rmd
@@ -1665,8 +1941,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Tadaki1995.html:
     command: render_ms("reports/Tadaki1995.md")
+    cleanup_level: purge
   reports/Takagi2010.md:
     knitr:
       input: reports/report.Rmd
@@ -1677,8 +1955,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Takagi2010.html:
     command: render_ms("reports/Takagi2010.md")
+    cleanup_level: purge
   reports/Takahashi1999.md:
     knitr:
       input: reports/report.Rmd
@@ -1689,8 +1969,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Takahashi1999.html:
     command: render_ms("reports/Takahashi1999.md")
+    cleanup_level: purge
   reports/Tanao1982.md:
     knitr:
       input: reports/report.Rmd
@@ -1701,8 +1983,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Tanao1982.html:
     command: render_ms("reports/Tanao1982.md")
+    cleanup_level: purge
   reports/Tange1995.md:
     knitr:
       input: reports/report.Rmd
@@ -1713,8 +1997,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Tange1995.html:
     command: render_ms("reports/Tange1995.md")
+    cleanup_level: purge
   reports/Tange2010.md:
     knitr:
       input: reports/report.Rmd
@@ -1725,8 +2011,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Tange2010.html:
     command: render_ms("reports/Tange2010.md")
+    cleanup_level: purge
   reports/Terashi1982.md:
     knitr:
       input: reports/report.Rmd
@@ -1737,8 +2025,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Terashi1982.html:
     command: render_ms("reports/Terashi1982.md")
+    cleanup_level: purge
   reports/Tissue0000a.md:
     knitr:
       input: reports/report.Rmd
@@ -1749,8 +2039,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Tissue0000a.html:
     command: render_ms("reports/Tissue0000a.md")
+    cleanup_level: purge
   reports/Tissue0000b.md:
     knitr:
       input: reports/report.Rmd
@@ -1761,8 +2053,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Tissue0000b.html:
     command: render_ms("reports/Tissue0000b.md")
+    cleanup_level: purge
   reports/Tissue0000c.md:
     knitr:
       input: reports/report.Rmd
@@ -1773,8 +2067,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Tissue0000c.html:
     command: render_ms("reports/Tissue0000c.md")
+    cleanup_level: purge
   reports/Utsugi0000.md:
     knitr:
       input: reports/report.Rmd
@@ -1785,8 +2081,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Utsugi0000.html:
     command: render_ms("reports/Utsugi0000.md")
+    cleanup_level: purge
   reports/Utsugi2004.md:
     knitr:
       input: reports/report.Rmd
@@ -1797,8 +2095,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Utsugi2004.html:
     command: render_ms("reports/Utsugi2004.md")
+    cleanup_level: purge
   reports/Valladares2000.md:
     knitr:
       input: reports/report.Rmd
@@ -1809,8 +2109,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Valladares2000.html:
     command: render_ms("reports/Valladares2000.md")
+    cleanup_level: purge
   reports/vanBreugel2011.md:
     knitr:
       input: reports/report.Rmd
@@ -1821,8 +2123,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/vanBreugel2011.html:
     command: render_ms("reports/vanBreugel2011.md")
+    cleanup_level: purge
   reports/Vanninen2005.md:
     knitr:
       input: reports/report.Rmd
@@ -1833,8 +2137,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Vanninen2005.html:
     command: render_ms("reports/Vanninen2005.md")
+    cleanup_level: purge
   reports/Wang1995.md:
     knitr:
       input: reports/report.Rmd
@@ -1845,8 +2151,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Wang1995.html:
     command: render_ms("reports/Wang1995.md")
+    cleanup_level: purge
   reports/Wang1996.md:
     knitr:
       input: reports/report.Rmd
@@ -1857,8 +2165,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Wang1996.html:
     command: render_ms("reports/Wang1996.md")
+    cleanup_level: purge
   reports/Wang2000.md:
     knitr:
       input: reports/report.Rmd
@@ -1869,8 +2179,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Wang2000.html:
     command: render_ms("reports/Wang2000.md")
+    cleanup_level: purge
   reports/Wang2011.md:
     knitr:
       input: reports/report.Rmd
@@ -1881,8 +2193,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Wang2011.html:
     command: render_ms("reports/Wang2011.md")
+    cleanup_level: purge
   reports/Watanabe1984.md:
     knitr:
       input: reports/report.Rmd
@@ -1893,8 +2207,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Watanabe1984.html:
     command: render_ms("reports/Watanabe1984.md")
+    cleanup_level: purge
   reports/Watanabe1985.md:
     knitr:
       input: reports/report.Rmd
@@ -1905,8 +2221,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Watanabe1985.html:
     command: render_ms("reports/Watanabe1985.md")
+    cleanup_level: purge
   reports/Wenk0000.md:
     knitr:
       input: reports/report.Rmd
@@ -1917,8 +2235,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Wenk0000.html:
     command: render_ms("reports/Wenk0000.md")
+    cleanup_level: purge
   reports/Whittaker1974.md:
     knitr:
       input: reports/report.Rmd
@@ -1929,8 +2249,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Whittaker1974.html:
     command: render_ms("reports/Whittaker1974.md")
+    cleanup_level: purge
   reports/Williams2005.md:
     knitr:
       input: reports/report.Rmd
@@ -1941,8 +2263,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Williams2005.html:
     command: render_ms("reports/Williams2005.md")
+    cleanup_level: purge
   reports/Ximenes2004.md:
     knitr:
       input: reports/report.Rmd
@@ -1953,8 +2277,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Ximenes2004.html:
     command: render_ms("reports/Ximenes2004.md")
+    cleanup_level: purge
   reports/Yamaba2007.md:
     knitr:
       input: reports/report.Rmd
@@ -1965,8 +2291,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yamaba2007.html:
     command: render_ms("reports/Yamaba2007.md")
+    cleanup_level: purge
   reports/Yamada1957.md:
     knitr:
       input: reports/report.Rmd
@@ -1977,8 +2305,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yamada1957.html:
     command: render_ms("reports/Yamada1957.md")
+    cleanup_level: purge
   reports/Yamada1996.md:
     knitr:
       input: reports/report.Rmd
@@ -1989,8 +2319,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yamada1996.html:
     command: render_ms("reports/Yamada1996.md")
+    cleanup_level: purge
   reports/Yamada2000.md:
     knitr:
       input: reports/report.Rmd
@@ -2001,8 +2333,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yamada2000.html:
     command: render_ms("reports/Yamada2000.md")
+    cleanup_level: purge
   reports/Yamaji1991.md:
     knitr:
       input: reports/report.Rmd
@@ -2013,8 +2347,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yamaji1991.html:
     command: render_ms("reports/Yamaji1991.md")
+    cleanup_level: purge
   reports/Yamakura1972.md:
     knitr:
       input: reports/report.Rmd
@@ -2025,8 +2361,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yamakura1972.html:
     command: render_ms("reports/Yamakura1972.md")
+    cleanup_level: purge
   reports/Yamakura1986.md:
     knitr:
       input: reports/report.Rmd
@@ -2037,8 +2375,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yamakura1986.html:
     command: render_ms("reports/Yamakura1986.md")
+    cleanup_level: purge
   reports/Yasui1970.md:
     knitr:
       input: reports/report.Rmd
@@ -2049,8 +2389,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yasui1970.html:
     command: render_ms("reports/Yasui1970.md")
+    cleanup_level: purge
   reports/Yasui1971.md:
     knitr:
       input: reports/report.Rmd
@@ -2061,8 +2403,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yasui1971.html:
     command: render_ms("reports/Yasui1971.md")
+    cleanup_level: purge
   reports/Yasui1983.md:
     knitr:
       input: reports/report.Rmd
@@ -2073,8 +2417,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yasui1983.html:
     command: render_ms("reports/Yasui1983.md")
+    cleanup_level: purge
   reports/Yi1989.md:
     knitr:
       input: reports/report.Rmd
@@ -2085,8 +2431,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yi1989.html:
     command: render_ms("reports/Yi1989.md")
+    cleanup_level: purge
   reports/Yoda1978.md:
     knitr:
       input: reports/report.Rmd
@@ -2097,8 +2445,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/Yoda1978.html:
     command: render_ms("reports/Yoda1978.md")
+    cleanup_level: purge
   reports:
     depends:
       - reports/Abe1981.html

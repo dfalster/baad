@@ -10,8 +10,10 @@ targets:
       - baad_dictionary
       - baad_data
       - R/reports.R
+    cleanup_level: purge
   reports/{{study_name}}.html:
     command: render_ms("reports/{{study_name}}.md")
+    cleanup_level: purge
 {{/study_names}}
   reports:
     depends:
