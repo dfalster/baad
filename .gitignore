@@ -4,7 +4,4 @@ output
 .Rhistory
 
 figure
-data/Ilomaki2003/xtra/~$Birch data.xlsx
-
-## Reference output, currently being used by RGF
-output.ref
+xtra

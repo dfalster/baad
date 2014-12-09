@@ -74,26 +74,26 @@ processStudy <- function(studyName, verbose=FALSE) {
 
   outputName <- studyDataFile(studyName)
   
-  if (verbose) cat("load data\n")
+  if (verbose) cat("load data ")
   data <- readDataRaw(studyName)
   
-  if (verbose) cat("manipulate data\n")
+  if (verbose) cat("manipulate data ")
   data <- manipulateData(studyName, data)
   
   data$dataset <- studyName
   
   #convert units and variable names, add methods variables
-  if (verbose) cat("convert units\n")
+  if (verbose) cat("convert units ")
   data <- convertData(studyName, data)
   
   #Remove / add columns to mirror those in final database
-  if (verbose) cat("add/remove columns\n")
+  if (verbose) cat("add/remove columns ")
   data <- addAllColumns(data)
   
-  if (verbose) cat("import new data \n")
+  if (verbose) cat("import new data ")
   data <- addNewData(studyName, data)
   
-  if (verbose) cat("write to file\n")
+  if (verbose) cat("write to file ")
   
   ## Creates output directory if does not already exist 
   if(!file.exists(dir.cleanData))
@@ -206,7 +206,6 @@ addAllColumns <- function(data) {
 ##' @return modified data.frame
 addNewData <- function(studyName, data) {
   import <- readNewData(studyName)
-  
   if ( !is.null(import) ) {
     for (i in seq_len(nrow(import))) {
       col.to <- import$newVariable[i]
@@ -376,7 +375,6 @@ readMatchColumns <- function(studyName) {
   nameIsOK <- (var.match$var_out[!is.na(var.match$var_out)] %in%
                var.def$Variable)
   if (any(!nameIsOK))
-    
     stop("Incorrect name in var_out columns of dataMatchColumns.csv for ",
          studyName, "--> ",
          paste(var.match$var_out[!nameIsOK], collapse=", "))
