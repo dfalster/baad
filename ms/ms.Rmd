@@ -149,14 +149,19 @@ If you notice any problems with the dataset, please list an issue [here](https:/
 
 ### A. Data Set Files
 
-BAAD contains the following files:
+BAAD contains the following elements:
 
-- `dictionary.csv`: a table of variable definitions
-- `data.csv`: amalgamated dataset, with columns as defined in `dictionary.csv`
-- `references.bib`: bibtex entries containing the primary source for each study
-- `references.csv`: summary of bibtex file, giving DOI, URL and citation of  the primary source for each study
-- `contacts.csv`: list of contacts and affiliations for each study
+- `data`: amalgamated dataset, with columns as defined in `dictionary`
+- `dictionary`: a table of variable definitions
+- `metadata`: a table with columns "studyName","Topic","Description", containing written information about the methods used to collect the data
+- `methods`: a table with columns as in data, but containing a code for the methods used to collect the data. See [config/methodsDefinitions.csv](config/methodsDefinitions.csv) for codes.
+- `references`:  as both summary table (giving DOI, URL, citation) and bibtex entries containing the primary source for each study
+- `contacts`: table with contacts and affiliations for each study.
 
+These elements are available as both
+
+1) a list within the file `baad.rds` (for use in R)
+2) as a series of csv and text files.
 
 ### B. Variable definitions for data.csv
 
