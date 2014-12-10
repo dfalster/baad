@@ -14,17 +14,17 @@ options(citation_format = "text", max.names=2)
 bib <- read.bibtex("refs.bib")
 data <- baad$data
 var_def <- baad$dictionary
-vars <- setdiff(var_def$variable[var_def$type == "numeric"], 
+vars <- setdiff(var_def$variable[var_def$type == "numeric"],
                 c("map", "mat", "lai", "age"))
 ```
 
 ```{r,results="asis",echo=FALSE, message=FALSE}
-writeLines(paste("**List of Authors:** ", 
-                 paste0(author_info$authors$name, 
-                        "^", author_info$authors$address_code, "^", 
+writeLines(paste("**List of Authors:** ",
+                 paste0(author_info$authors$name,
+                        "^", author_info$authors$address_code, "^",
                         collapse = ", ")))
 writeLines("\n\n")
-writeLines(paste0(author_info$address_table$code, ". ", 
+writeLines(paste0(author_info$address_table$code, ". ",
                   author_info$address_table$address))
 ```
 
@@ -49,11 +49,12 @@ We (D.S. Falster and R.A. Duursma, with the help of D.R. Barneche, R.G. FitzJohn
 Combining data from many different studies, each using its own set of terms and units, and quirks, is no trivial task `r citep(c("10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2","10.1016/j.tree.2011.11.016","10.12688/f1000research.4518"))`. This compilation would not have been possible without several new technologies. In particular,
 
 1. Our entire work flow is scripted, using the R computing environment. The database can be rebuilt in an instant from the raw data files, using a single command. When a single data contribution has been modified, the final master dataset is thus easily recreated.
-2. We wrote a new `R` package [dataMashR](https://github.com/dfalster/dataMashR) for merging data from different studies in a transparent and reproducible fashion. While it was written with BAAD in mind, the package is designed to be easily  deployed for other compilations.
-3. We used version control and the code sharing website [github](www.github.com) to track the evolution of the database and the code to process the raw data. Datasets as well as processing methods inevitably contain errors. With version control, we are able to trace these errors to the source.
-4. We used the package `knitr` within `R` to automatically produce reports comparing the raw data provided by a single study to the rest of the database `r citep(citation("knitr"))`. These reports were sent to data contributors for verification, and allowed easy identification of errors in the raw data or processing.
+2. We minimised the amount of code by requiring each study to conform to a common format (Figure 2).
+3. We used the package `knitr` within `R` to automatically produce reports comparing the raw data provided by a single study to the rest of the database `r citep(citation("knitr"))`. These reports were sent to data contributors for verification, and thus allowed for easy identification of errors in the raw data or processing. Each report included plots for every pairwise combination of quantitative variables in a given study, site maps, and metadata. The updated reports are available on the database website.
+4. We used version control and the code sharing website [github](www.github.com) to track the evolution of the database and the code to process the raw data. Datasets as well as processing methods inevitably contain errors. With version control, we are able to trace these errors to the source.
 
-Until recently, scientific publications in biology have mostly been concerned with "small data" `r citep("10.1038/nj7461-243a")`. Datasets arrive in small parcels, corresponding to the work of an individual study, or perhaps a handful of studies. It is exciting to be able to put these parcels together, to create something larger. We hope others will use this dataset and build on it. See [https://github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
+
+Until recently, most scientific publications in biology have mostly been concerned with "small data" `r citep("10.1038/nj7461-243a")`. Datasets arrive in small parcels, corresponding to the work of an individual study, or perhaps a handful of studies. It is exciting to be able to put these parcels together, to create something larger. We hope others will use this dataset and build on it. See [https://github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
 
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=7}
@@ -79,6 +80,13 @@ legend(-40, -100, vegs_labels[5:8], fill=cols[5:8], bty='n')
 
 **Figure 1** Global distribution of studies included in BAAD. Symbols are sized relative to the number of individual plants in each dataset.
 
+
+![baadworkflow](Figure2.png)
+**Figure2** Workflow of BAAD. Each of the raw data files was processed in the same way, resulting in a single dataset ('BAAD') with a common format.
+
+
+
+
 ## METHODS
 
 ## METADATA CLASS I. DATA SET DESCRIPTORS
@@ -91,7 +99,7 @@ BAAD: a Biomass And Allometry Database for woody plants
 ### C. DATA SET DESCRIPTORS:
 **1. Originators**: The study was initiated by D.S. Falster and R.A. Duursma. D.R. Barneche, R.G. FitzJohn and A. Vårhammar assisted with literature searching, data compilation, and coding. A separate compilation focusing on natural forests in Japan, was compiled by M.I. Ishihara, with assistance from T. Hiura, H. Utsugi and H. Tanouchi. All other authors contributed data to the project.
 
-**2. Abstract**: Understanding how plants are plant constructed -- i.e. how key size dimensions and the amount of mass invested in different tissues varies among individuals -- is essential for modeling plant growth, estimating carbon stocks, and mapping energy-fluxes in the terrestrial biosphere. Allocation patterns can differ through ontogeny, but also among coexisting species, and among species adapted to or grown in different environments. While a variety of models dealing with biomass allocation exist, we lack a synthetic understanding of the underlying processes. This is partly due to the lack of suitable datasets for validating and parametrising models. To that end, we present the Biomass And Allometry Database (BAAD) for woody plants. BAAD contains `r sum(!is.na(data[,vars]))` measurements collected in `r length(unique(data$studyName))` different studies, from `r nrow(data)` individuals across `r length(unique(data$species))` species. Most of these data are associated with an existing publication, however, raw data files were rarely made public at time of publication. Thus BAAD contains individual level data from different studies, transformed into standard units and variable names. The transformations were achieved using a new R package dataMashR. Other features which distinguish BAAD are: i) measurements were for individual plants rather than stand averages; ii) individuals spanning a range of sizes were measured; iii) inclusion of plants from 0.01-100m in height; and iii) biomass was estimated directly, i.e. not indirectly via allometric equations (except in very large trees where biomass was estimated from detailed sub-sampling). We included both wild and artificially grown plants. The dataset contains the following size metrics: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; height of plant and crown base, crown area and surface area; and the dry mass of leaf, stem, branches, sapwood, heartwood, bark, coarse roots and fine root tissues. We also report other properties of individuals (age, leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (location, light, experimental treatment, vegetation type) where available. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the world's vegetation.
+**2. Abstract**: Understanding how plants are plant constructed -- i.e. how key size dimensions and the amount of mass invested in different tissues varies among individuals -- is essential for modeling plant growth, estimating carbon stocks, and mapping energy-fluxes in the terrestrial biosphere. Allocation patterns can differ through ontogeny, but also among coexisting species, and among species adapted to or grown in different environments. While a variety of models dealing with biomass allocation exist, we lack a synthetic understanding of the underlying processes. This is partly due to the lack of suitable datasets for validating and parameterising models. To that end, we present the Biomass And Allometry Database (BAAD) for woody plants. BAAD contains `r sum(!is.na(data[,vars]))` measurements collected in `r length(unique(data$studyName))` different studies, from `r nrow(data)` individuals across `r length(unique(data$species))` species. Most of these data are associated with an existing publication, however, raw data files were rarely made public at time of publication. Thus BAAD contains individual level data from different studies, transformed into standard units and variable names. The transformations were achieved using a common workflow for all raw data files. Other features which distinguish BAAD are: i) measurements were for individual plants rather than stand averages; ii) individuals spanning a range of sizes were measured; iii) inclusion of plants from 0.01-100m in height; and iii) biomass was estimated directly, i.e. not indirectly via allometric equations (except in very large trees where biomass was estimated from detailed sub-sampling). We included both wild and artificially grown plants. The dataset contains the following size metrics: total leaf area; area of stem cross-section, including sapwood, heartwood, and bark; height of plant and crown base, crown area and surface area; and the dry mass of leaf, stem, branches, sapwood, heartwood, bark, coarse roots and fine root tissues. We also report other properties of individuals (age, leaf size, leaf mass per area, wood density, nitrogen content of leaves and wood), as well as information about the growing environment (location, light, experimental treatment, vegetation type) where available. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the world's vegetation.
 
 ### D. Key words
 
@@ -111,27 +119,27 @@ writeLines(details2B, sep="\n\n")
 
 ### A. Status
 
-**Latest update**: xxxx for all data files.
+**Latest update**: The dataset made available through this publication was processed on 2014-12-10. Newer updates may be retrieved from the BAAD website ([https://github.com/dfalster/baad/](https://github.com/dfalster/baad/).
 
-**Metadata status**: Metadata are complete to last update and are stored
-with data.
+**Metadata status**: Metadata are complete to last update and are stored with data.
 
-**Data verification**: The raw data passed through several rounds of review, to ensure units were correct, raw data was approppriately matched to variables in BAAD, and to minimize outliers.
+**Data verification**: The raw data passed through several rounds of review, to ensure units were correct, raw data was appropriately matched to variables in BAAD, and to minimize outliers.
 
 i) Initial analysis by data contributors. The majority of studies have been published and as such have gone through quality assurance by the data contributor.
 ii) Review by compilers of database. We have gone through extensive data verification by checking cross-correlations, credible ranges, and outliers of all variables in the database.
 iii) All species names were matched against online databases with the R packages `Taxonstand` and `taxize` R package `r citep(list("10.1111/j.2041-210X.2012.00232.x", bib["chamberlain2013taxize"]))`.
 iv) Additional review by contributors using reports generated from the data.  In these reports, we summarized species, locations (latitude, longitude and maps), plant functional type, metadata provided by the contributor, and pair-wise plots of all numeric variables in the dataset (and a comparison to all data in the database). Each contributor checked the reports for problems, which allowed us to improve data quality in many cases.
+v) Derived variables were calculated from the raw data where appropriate. For example, a dataset may contain crown length and plant height but not height to crown base, in which case the latter was calculated from the other two variables.
 
 ### B. Accessibility
 
-**1. Storage location and medium**: The data published here is the first release from the Biomass and allometry database stored at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/). The version of the data made available for this publication is available here XXXXX. For scientific analyses, we suggest you use this version.
+**1. Storage location and medium**: The data published here is the first release from the Biomass and allometry database stored at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/). The version of the data made available for this publication is available here ((LINK TO ECOLOGICAL ARCHIVES DATA FILE)). For scientific analyses, we suggest you use this version.
 
 Development versions of the dataset will continue to be available at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/).
 
-If you notice any problem with the dataset, please list an issue [here](https://github.com/dfalster/baad/issues/new).
+If you notice any problems with the dataset, please list an issue [here](https://github.com/dfalster/baad/issues/new).
 
-**Contact persons**: Queries about individual specific data points can be directed to the contributing author for that study. For queries about the entire dataset, please contact either Daniel Falster or Remko Duursma. Contact details for all authors are available in the attached table. For problems with the dataset, please submit an issue as described above.
+**Contact persons**: Queries about individual specific data points can be directed to the contributing author for that study. For queries about the entire dataset, please contact either Daniel Falster or Remko Duursma. For problems with the dataset, please submit an issue as described above.
 
 **Copyright restrictions**: The dataset is released under the [Creative Commons CC0 license](http://creativecommons.org/choose/zero/?lang=en). As such, it may be freely used and redistributed. When using the dataset, we kindly request that you cite this article, recognizing the hard work that went into collecting the data and the authors' willingness to make it publicly available.
 
