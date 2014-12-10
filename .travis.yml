@@ -1,6 +1,6 @@
 language: c
 
-script: 
+script:
     - ./maker ms/ms.html
 
 before_install:
@@ -14,3 +14,6 @@ install:
 
 after_success:
     - cat ms/ms.html
+
+notifications:
+  slack: ecology:vj80qn6ZugIB1Uh4p6MBrkVq
