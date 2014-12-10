@@ -7,6 +7,11 @@ before_install:
     - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
     - chmod 755 ./travis-tool.sh
     - ./travis-tool.sh bootstrap
+    # The next three are unfortunate, but are dependencies of maker
+    # that install_github won't install by default:
+    - ./travis-tool.sh install_r optparse
+    - ./travis-tool.sh install_r R6
+    - ./travis-tool.sh install_r yaml
     - ./travis-tool.sh install_github richfitz/maker
     - Rscript -e 'maker::install_maker(".")'
 install:
