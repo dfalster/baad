@@ -15,7 +15,7 @@ before_install:
     - ./travis-tool.sh install_github richfitz/maker
     - Rscript -e 'maker::install_maker(".")'
 install:
-    - ./maker install_packages
+    - Rscript -e 'maker::maker_install_packages()'
 
 after_success:
     - cat ms/ms.html
