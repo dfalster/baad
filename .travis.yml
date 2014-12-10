@@ -15,7 +15,7 @@ before_install:
     - ./travis-tool.sh install_github richfitz/maker
     - Rscript -e 'maker::install_maker(".")'
 install:
-    - Rscript -e 'maker::maker_install_packages()'
+    - Rscript -e 'options(repos="http://cran.rstudio.com"); maker::maker_install_packages()'
 
 after_success:
     - cat ms/ms.html
