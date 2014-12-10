@@ -26,14 +26,14 @@ To contribute, please follow the steps below. It is important that all steps are
 1) Create a folder with name corresponding to the paper or study of the dataset, e.g. `Falster2014` (do not include `etal` or similar).
 2) Prepare need the following files:
 
-	* `data.csv`: a table of data in comma-separated values format, with data for each individual plant on a single row
-	* `dataImportOptions.csv`: minor details about the file `data.csv`
-	* `dataManipulate.R`: a custom R function to manipulate data, if needed
-	* `dataMatchColumns.csv`: a table giving units of columns in `data.csv` and suitable columns onto a variable in the BAAD.
-	* `dataNew.csv`: any data you wish to add, not already in `data.csv`, e.g. site name, location, vegetation type.
-	* `studyContact.csv`: contact details of data contributor(s). Please keep the number of contributors to one or two.
-	* `studyMetadata.csv`: description of the methods used to collect the data.
-	* `studyRef.bib`: reference for the study, in [bibtex format](http://en.wikipedia.org/wiki/BibTeX#Examples).
+* `data.csv`: a table of data in comma-separated values format, with data for each individual plant on a single row
+* `dataImportOptions.csv`: minor details about the file `data.csv`
+* `dataManipulate.R`: a custom R function to manipulate data, if needed
+* `dataMatchColumns.csv`: a table giving units of columns in `data.csv` and suitable columns onto a variable in the BAAD.
+* `dataNew.csv`: any data you wish to add, not already in `data.csv`, e.g. site name, location, vegetation type.
+* `studyContact.csv`: contact details of data contributor(s). Please keep the number of contributors to one or two.
+* `studyMetadata.csv`: description of the methods used to collect the data.
+* `studyRef.bib`: reference for the study, in [bibtex format](http://en.wikipedia.org/wiki/BibTeX#Examples).
 
 See examples from some of the other [datasets within the BAAD](https://github.com/dfalster/baad/tree/master/data). It may help to download one of these and use it as a template for your own files. 
 
