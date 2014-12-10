@@ -62,6 +62,7 @@ targets:
       - export/baad_contacts.csv
       - export/baad_references.csv
       - export/baad_metadata.csv
+      - export/baad_methods.csv
       - export/baad.bib
       - export/baad_dictionary.csv
 
@@ -75,6 +76,8 @@ targets:
     command: write_csv(baad_references, target_name)
   export/baad_metadata.csv:
     command: write_csv(baad_metadata, target_name)
+  export/baad_methods.csv:
+    command: write_csv(baad_methods, target_name)
   export/baad.bib:
     command: write.bib(baad_bibtex, target_name)
     quiet: true
@@ -90,6 +93,8 @@ targets:
     command: extract_baad_references(baad)
   baad_metadata:
     command: extract_baad_metadata(baad)
+  baad_methods:
+    command: extract_baad_methods(baad)
   baad_bibtex:
     command: extract_baad_bibtex(baad)
   baad_dictionary:
