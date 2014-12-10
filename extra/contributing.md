@@ -6,7 +6,7 @@ Contributing to the BAAD
 
 If you notice a possible error in the BAAD, please [post an issue here](https://github.com/dfalster/baad/issues), describing the error and possible fix in detail.
 
-## Contributing new data to the BAAD
+## Contributing new data
 
 If you would like to contribute data, the requirements are:
 
