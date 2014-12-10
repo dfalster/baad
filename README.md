@@ -3,7 +3,7 @@
 
 ## About
 
-The Biomass And Allometry Database (BAAD) contains data about the construction of woody plants across the globe. These data were gathered together from over 170 different published and unpublished scientific studies, most of which was not previously available in the public domain. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the world's vegetation. The dataset is described in detail in the following article
+The Biomass And Allometry Database (BAAD) contains data on the construction of woody plants across the globe. These data were gathered from over 170 published and unpublished scientific studies, most of which was not previously available in the public domain. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the world's woody vegetation. The dataset is described in detail in the following article.
 
 	citation
 
@@ -15,7 +15,7 @@ There are two options for accessing data within BAAD.
 
 ### Download compiled database
 
-You can download a compiled version of the database from either
+You can download a compiled version of the database from either:
 
 1) Ecological Archives [XXX Add Link XXX]. This is the published version of the database.
 2) Releases we have posted on [github](https://github.com/dfalster/baad/releases).
@@ -27,12 +27,12 @@ The database contains the following elements
 - `metadata`: a table with columns "studyName","Topic","Description", containing written information about the methods used to collect the data
 - `methods`: a table with columns as in data, but containing a code for the methods used to collect the data. See [config/methodsDefinitions.csv](config/methodsDefinitions.csv) for codes.
 - `references`: as both summary table and bibtex entries containing the primary source for each study
-- `contacts`: table with contacts and affiliations for each study
+- `contacts`: table with contact information and affiliations for each study
 
 These elements are available as both
 
 1) a list within the file `baad.rds` (for use in R)
-2) as a series of csv and text files.
+2) as a series of CSV and text files.
 
 Having downloaded the rds file, you can load it in `R`, using `readRDS`:
 
@@ -42,7 +42,7 @@ baad <- readRDS('baad.rds')
 
 ### Rebuilding from source
 
-The BAAD can be rebuilt from source (raw datafiles) using our scripted workflow in R. Beyond base R, building of the BAAD requires the package ['maker'](https://github.com/richfitz/maker). To install maker, from within R, run:
+The BAAD can be rebuilt from source (raw data files) using our scripted workflow in R. Beyond base R, building of the BAAD requires the package ['maker'](https://github.com/richfitz/maker). To install maker, from within R, run:
 
 ```
 install.packages("devtools")
@@ -62,7 +62,7 @@ A number of other packages are required to generate reports and the manuscript:
 
     rmarkdown, knitr, knitcitations, plyr, whisker, maps, mapdata, gdata, bibtex.
 
-If you are going to lookup species names from Taxonstand and taxize (with the postProcess function), you will also need,
+If you are going to look up species names from Taxonstand and taxize (with the postProcess function), you will also need,
 
     taxize, Taxonstand, jsonlite
 
@@ -81,11 +81,11 @@ If you would like to contribute data, the requirements are
 
 1) You collected biomass or size data for multiple individuals within a species
 2) You collected either total leaf area or at least one biomass measure
-3) Your biomass measurements (where present) were from direct harvests.
+3) Your biomass measurements (where present) were from direct harvests, not estimated via allometry.
 
 See [these instructions](extra/contributing.md) on how to prepare and submit your contribution.
 
-Once sufficient additional data has been contributed, we plan to submit an update to the first data paper, inviting as co authors anyone who has contributed since the first data paper.
+Once sufficient additional datasets have been contributed, we plan to submit an update to the first data paper, inviting as co authors anyone who has contributed since the first data paper.
 
 ## Acknowledgements
 
