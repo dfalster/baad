@@ -3,7 +3,7 @@ language: c
 env:
   global:
     - CRAN: http://cran.rstudio.com
-    - BOOTSTRAP_PANDOC=""
+    - BOOTSTRAP_PANDOC: ""
 
 script:
     - ./maker ms/ms.html
