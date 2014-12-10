@@ -1,8 +1,12 @@
-# Errors in the BAAD
+
+Contributing to the BAAD
+====================
+
+## Reporting errors
 
 If you notice a possible error in the BAAD, please [post an issue here](https://github.com/dfalster/baad/issues), describing the error and possible fix in detail.
 
-# Contributing new data to the BAAD
+## Contributing new data to the BAAD
 
 If you would like to contribute data, the requirements are:
 
@@ -15,7 +19,7 @@ If you would like to contribute data, the requirements are:
 **Figure 1** Workflow of BAAD. Data from each study is processed in the same way, resulting in a single dataset ('BAAD') with a common format.
 
 
-## Preparing data
+### Preparing data
 
 To contribute, please follow the steps below. It is important that all steps are followed so that the automated workflow (Figure 1) proceeds without problems.
 
@@ -33,19 +37,19 @@ To contribute, please follow the steps below. It is important that all steps are
 See examples from some of the other [datasets within the BAAD](https://github.com/dfalster/baad/tree/master/data). It may help to download one of these and use it as a template for your own files. 
 
 
-## Adding data to BAAD
+### Adding data to BAAD
 
-### Send us a pull request
+#### Send us a pull request
 
 By far our preferred way of contributing is for you to fork the database in github, add your dataset then send us a [pull request](https://help.github.com/articles/using-pull-requests/). If this is not possible, you could email the relevant files (see above) to [Daniel Falster](http://web.science.mq.edu.au/directory/listing/person.htm?id=dfalster) or [Remko Duursma](http://pubapps.uws.edu.au/teldir/personprocess.php?9764).
 
-### Adding your study
+#### Adding your study
 
 Once you have prepared your data files, add the relevant folder into the `data` directory. You can then rebuild the dataset, including your dataset.
 
 To do so you will need to rerun the `bootstrap.R` script, which will update the `maker_data.yml` and `maker_reports.yml` files with appropriate rules for the new dataset (similarly if you remove datasets, do the same). (At this stage, [maker](https://github.com/richfitz/maker) offers no looping constructs (on purpose) so for now at least we generate the makerfile using [whisker](https://github.com/edwindj/whisker).)
 
-### Dealing with line endings
+#### Dealing with line endings
 
 **Windows users**
 
