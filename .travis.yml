@@ -23,7 +23,7 @@ install:
     - Rscript -e 'options(repos="http://cran.rstudio.com"); maker::maker_install_packages()'
 
 after_success:
-    - cat ms/ms.html
+    - cat ms/ms.md
 
 notifications:
   slack: ecology:vj80qn6ZugIB1Uh4p6MBrkVq

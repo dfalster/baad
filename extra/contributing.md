@@ -10,33 +10,32 @@ If you notice a possible error in the BAAD, please [post an issue here](https://
 
 If you would like to contribute data, the requirements are:
 
-1. You collected biomass or size data for multiple individuals within a species
-2. You collected either total leaf area or at least one biomass measure
-3. Your biomass measurements (where present) were from direct harvests (not from allometry)
-4. That you make it is as easy as possible for us to incorporate your data
-
-![baadworkflow](../ms/Figure2.png)
-**Figure 1** Workflow of BAAD. Data from each study is processed in the same way, resulting in a single dataset ('BAAD') with a common format.
-
+1. Data collected are for woody plants
+2. You collected biomass or size data for multiple individuals within a species
+3. You collected either total leaf area or at least one biomass measure
+4. Your biomass measurements (where present) were from direct harvests, not estimated via allometric equations.
+5. You are willing to release the data under the [Creative commons CC0 license](http://creativecommons.org/about/cc0).
+6. **That you make it is as easy as possible for us to incorporate your data by carefully following the instructions below.**
 
 ### Preparing data
 
-To contribute, please follow the steps below. It is important that all steps are followed so that the automated workflow (Figure 1) proceeds without problems.
+To contribute, please follow the steps below. It is important that all steps are followed so that our automated workflow (Figure 1) proceeds without problems.
 
-1) Create a folder with name corresponding to the paper or study of the dataset, e.g. `Falster2014` (do not include `etal` or similar).
-2) Prepare need the following files:
+1. Create a folder with name corresponding to the paper or study of the dataset, e.g. `Falster2014` (do not include `etal` or similar).
+2. Prepare the following files, using examples from other [datasets within the BAAD](https://github.com/dfalster/baad/tree/master/data) as a guide on required content:
+	* `data.csv`: a table of data in comma-separated values format, with data for each individual plant on a single row
+	* `dataImportOptions.csv`: options for reading in the the file `data.csv`
+	* `dataManipulate.R`: a custom R function to manipulate data, if needed
+	* `dataMatchColumns.csv`: a table giving for each columns in `data.csv`, the corresponding variable in the BAAD and the units your data were collected in.
+	* `dataNew.csv`: any data you wish to add, not already in `data.csv`, e.g. site name, location, vegetation type. Substitutions are also possible, [as in this example](https://github.com/dfalster/baad/blob/master/data/Kohyama1994/dataNew.csv) where abbreviations in the variable `species` are used to add details such as family, and then to eventually replaced the abbreviation with species true name . Note, we prefer you to add these details here, rather than modifying the raw data file, as the modifications are then automated and part of the workflow.
+	* `studyContact.csv`: contact details of data contributor(s). Please keep the number of contributors to one or two.
+	* `studyMetadata.csv`: description of the methods used to collect the data.
+	* `studyRef.bib`: reference for the study, in [bibtex format](http://en.wikipedia.org/wiki/BibTeX#Examples).
 
-* `data.csv`: a table of data in comma-separated values format, with data for each individual plant on a single row
-* `dataImportOptions.csv`: minor details about the file `data.csv`
-* `dataManipulate.R`: a custom R function to manipulate data, if needed
-* `dataMatchColumns.csv`: a table giving units of columns in `data.csv` and suitable columns onto a variable in the BAAD.
-* `dataNew.csv`: any data you wish to add, not already in `data.csv`, e.g. site name, location, vegetation type.
-* `studyContact.csv`: contact details of data contributor(s). Please keep the number of contributors to one or two.
-* `studyMetadata.csv`: description of the methods used to collect the data.
-* `studyRef.bib`: reference for the study, in [bibtex format](http://en.wikipedia.org/wiki/BibTeX#Examples).
+It may help to download one of the [existing datasets](https://github.com/dfalster/baad/tree/master/data) and use it as a template for your own files. Note,
 
-See examples from some of the other [datasets within the BAAD](https://github.com/dfalster/baad/tree/master/data). It may help to download one of these and use it as a template for your own files. 
-
+![baadworkflow](../ms/Figure2.png)
+**Figure 1** Workflow for building the BAAD. Data from each study is processed in the same way, using a standardised set of input files, resulting in a single dataset with a common format.
 
 ### Adding data to BAAD
 
