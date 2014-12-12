@@ -1,1 +1,16 @@
-lookupVariable,lookupValue,newVariable,newValueNA,NA,location,"Bogong High Plains, Victoria, Australia"NA,NA,longitude,-36.90574NA,NA,latitude,147.27787NA,NA,altitude,1700NA,NA,growingCondition,FWNA,NA,lastburnt,2003spcode,GREAUS,species,Grevillea austalisspcode,ASTTRY,species,Asterolasia trymalioidesspcode,PHESQU,species,Phebalium squamulosumspcode,PROCUN,species,Prostanthera cuneataNA,NA,lifestage,seedlingNA,NA,vegetation,ShNA,NA,pft,EANA,NA,light,full light (bare ground)spcode,GREAUS,family,Proteaceae spcode,ASTTRY,family,Rutaceae spcode,PHESQU,family,Rutaceae spcode,PROCUN,family,Lamiaceae ,,,,,,
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"location","Bogong High Plains, Victoria, Australia",NA
+NA,NA,"latitude","-36.90574",NA
+NA,NA,"longitude","147.27787",NA
+NA,NA,"growingCondition","FW",NA
+"species","GREAUS","family","Proteaceae",NA
+"species","ASTTRY","family","Rutaceae",NA
+"species","PHESQU","family","Rutaceae",NA
+"species","PROCUN","family","Lamiaceae",NA
+"species","GREAUS","species","Grevillea australis",NA
+"species","ASTTRY","species","Asterolasia trymalioides",NA
+"species","PHESQU","species","Phebalium squamulosum",NA
+"species","PROCUN","species","Prostanthera cuneata",NA
+NA,NA,"vegetation","Sh",NA
+NA,NA,"pft","EA",NA
+NA,NA,"light","full light (bare ground)",NA

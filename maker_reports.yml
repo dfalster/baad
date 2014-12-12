@@ -195,6 +195,20 @@ targets:
   reports/Burger1953.html:
     command: render_ms("reports/Burger1953.md")
     cleanup_level: purge
+  reports/Camac0000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Camac0000
+      - baad_dictionary
+      - baad_data
+      - R/reports.R
+    cleanup_level: purge
+  reports/Camac0000.html:
+    command: render_ms("reports/Camac0000.md")
+    cleanup_level: purge
   reports/Claveau2002.md:
     knitr:
       input: reports/report.Rmd
@@ -2465,6 +2479,7 @@ targets:
       - reports/BondLamberty2002.html
       - reports/Brown1978.html
       - reports/Burger1953.html
+      - reports/Camac0000.html
       - reports/Claveau2002.html
       - reports/Claveau2005.html
       - reports/Coll2008.html
