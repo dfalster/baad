@@ -1,8 +1,8 @@
-lookupVariable,lookupValue,newVariable,newValue,source
-,,latitude,34.823,converted
-,,longitude,-77.303,converted
-,,growingCondition,PM,
-,,status,1,
-,,vegetation,TempF,
-,,family,Pinaceae,
-,,pft,EG,
+"lookupVariable","lookupValue","newVariable","newValue","source"
+NA,NA,"latitude","34.823","converted"
+NA,NA,"longitude","-77.303","converted"
+NA,NA,"growingCondition","PM",""
+NA,NA,"status","1",""
+NA,NA,"vegetation","TempF",""
+NA,NA,"family","Pinaceae",""
+NA,NA,"pft","EG",""
