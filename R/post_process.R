@@ -72,6 +72,7 @@ fill_derived_variables <- function(data) {
 
 rebuild_species_cache <- function(species) {
   file.remove("config/taxon_updates.csv")
+  browser()
   invisible(update_species_cache(species, "config/taxon_updates.csv"))
 }
 
@@ -113,15 +114,20 @@ update_species_cache <- function(species, cachefile) {
     ## ---- Taxonstand
     species1 <- lookup_taxonstand(species)
 
-    sp_missing <- species[is.na(species1)]
-    species2 <- lookup_taxize(sp_missing)
+    ## Taxize - only use if name absent in Taxonstand
+    species2 <- rep(NA_character_, length(species))
+
+    i_missing <- is.na(species1)
+
+    if(any(i_missing)){
+      species2[i_missing] <- lookup_taxize(species[i_missing])
+    }
 
     info <- data.frame(species=species,
                        species_Taxonstand=species1,
-                       species_taxize=NA_character_,
+                       species_taxize=species2,
                        species_matched=NA_character_,
                        stringsAsFactors=FALSE, row.names=NULL)
-    info$species_taxize[match(sp_missing, species)] <- species2
 
     ## Variable species_Fixed in cache is from Taxonstand, or taxize
     ## when Taxonstand returned NA.  When both Taxonstand and taxize
