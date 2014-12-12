@@ -167,257 +167,271 @@ targets:
   reports/BondLamberty2002.html:
     command: render_ms("reports/BondLamberty2002.md")
     cleanup_level: purge
-  reports/Brown1978.md:
+  reports/brown1978.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Brown1978
+      - data_study: brown1978
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Brown1978.html:
-    command: render_ms("reports/Brown1978.md")
+  reports/brown1978.html:
+    command: render_ms("reports/brown1978.md")
     cleanup_level: purge
-  reports/Burger1953.md:
+  reports/burger1953.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Burger1953
+      - data_study: burger1953
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Burger1953.html:
-    command: render_ms("reports/Burger1953.md")
+  reports/burger1953.html:
+    command: render_ms("reports/burger1953.md")
     cleanup_level: purge
-  reports/Claveau2002.md:
+  reports/Camac0000.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Claveau2002
+      - data_study: Camac0000
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Claveau2002.html:
-    command: render_ms("reports/Claveau2002.md")
+  reports/Camac0000.html:
+    command: render_ms("reports/Camac0000.md")
     cleanup_level: purge
-  reports/Claveau2005.md:
+  reports/claveau2002.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Claveau2005
+      - data_study: claveau2002
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Claveau2005.html:
-    command: render_ms("reports/Claveau2005.md")
+  reports/claveau2002.html:
+    command: render_ms("reports/claveau2002.md")
     cleanup_level: purge
-  reports/Coll2008.md:
+  reports/claveau2005.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Coll2008
+      - data_study: claveau2005
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Coll2008.html:
-    command: render_ms("reports/Coll2008.md")
+  reports/claveau2005.html:
+    command: render_ms("reports/claveau2005.md")
     cleanup_level: purge
-  reports/Dannoura2006.md:
+  reports/coll2008.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Dannoura2006
+      - data_study: coll2008
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Dannoura2006.html:
-    command: render_ms("reports/Dannoura2006.md")
+  reports/coll2008.html:
+    command: render_ms("reports/coll2008.md")
     cleanup_level: purge
-  reports/Delagrange0000a.md:
+  reports/dannoura2006.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Delagrange0000a
+      - data_study: dannoura2006
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Delagrange0000a.html:
-    command: render_ms("reports/Delagrange0000a.md")
+  reports/dannoura2006.html:
+    command: render_ms("reports/dannoura2006.md")
     cleanup_level: purge
-  reports/Delagrange0000b.md:
+  reports/delagrange0000a.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Delagrange0000b
+      - data_study: delagrange0000a
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Delagrange0000b.html:
-    command: render_ms("reports/Delagrange0000b.md")
+  reports/delagrange0000a.html:
+    command: render_ms("reports/delagrange0000a.md")
     cleanup_level: purge
-  reports/Delagrange2004.md:
+  reports/delagrange0000b.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Delagrange2004
+      - data_study: delagrange0000b
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Delagrange2004.html:
-    command: render_ms("reports/Delagrange2004.md")
+  reports/delagrange0000b.html:
+    command: render_ms("reports/delagrange0000b.md")
     cleanup_level: purge
-  reports/Domec2012.md:
+  reports/delagrange2004.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Domec2012
+      - data_study: delagrange2004
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Domec2012.html:
-    command: render_ms("reports/Domec2012.md")
+  reports/delagrange2004.html:
+    command: render_ms("reports/delagrange2004.md")
     cleanup_level: purge
-  reports/Epron2011.md:
+  reports/domec2012.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Epron2011
+      - data_study: domec2012
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Epron2011.html:
-    command: render_ms("reports/Epron2011.md")
+  reports/domec2012.html:
+    command: render_ms("reports/domec2012.md")
     cleanup_level: purge
-  reports/Fatemi2011.md:
+  reports/epron2011.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Fatemi2011
+      - data_study: epron2011
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Fatemi2011.html:
-    command: render_ms("reports/Fatemi2011.md")
+  reports/epron2011.html:
+    command: render_ms("reports/epron2011.md")
     cleanup_level: purge
-  reports/FLFU1963.md:
+  reports/fatemi2011.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: FLFU1963
+      - data_study: fatemi2011
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/FLFU1963.html:
-    command: render_ms("reports/FLFU1963.md")
+  reports/fatemi2011.html:
+    command: render_ms("reports/fatemi2011.md")
     cleanup_level: purge
-  reports/FLFU1965.md:
+  reports/flfu1963.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: FLFU1965
+      - data_study: flfu1963
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/FLFU1965.html:
-    command: render_ms("reports/FLFU1965.md")
+  reports/flfu1963.html:
+    command: render_ms("reports/flfu1963.md")
     cleanup_level: purge
-  reports/Furuno1967.md:
+  reports/flfu1965.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Furuno1967
+      - data_study: flfu1965
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Furuno1967.html:
-    command: render_ms("reports/Furuno1967.md")
+  reports/flfu1965.html:
+    command: render_ms("reports/flfu1965.md")
     cleanup_level: purge
-  reports/Garber2005.md:
+  reports/furuno1967.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Garber2005
+      - data_study: furuno1967
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Garber2005.html:
-    command: render_ms("reports/Garber2005.md")
+  reports/furuno1967.html:
+    command: render_ms("reports/furuno1967.md")
     cleanup_level: purge
-  reports/Gargaglione2010.md:
+  reports/garber2005.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Gargaglione2010
+      - data_study: garber2005
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Gargaglione2010.html:
-    command: render_ms("reports/Gargaglione2010.md")
+  reports/garber2005.html:
+    command: render_ms("reports/garber2005.md")
     cleanup_level: purge
-  reports/Ghannoum2010a.md:
+  reports/gargaglione2010.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Ghannoum2010a
+      - data_study: gargaglione2010
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Ghannoum2010a.html:
-    command: render_ms("reports/Ghannoum2010a.md")
+  reports/gargaglione2010.html:
+    command: render_ms("reports/gargaglione2010.md")
+    cleanup_level: purge
+  reports/ghannoum2010a.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: ghannoum2010a
+      - baad_dictionary
+      - baad_data
+      - R/reports.R
+    cleanup_level: purge
+  reports/ghannoum2010a.html:
+    command: render_ms("reports/ghannoum2010a.md")
     cleanup_level: purge
   reports/Ghannoum2010b.md:
     knitr:
@@ -685,481 +699,481 @@ targets:
   reports/Katagiri1984.html:
     command: render_ms("reports/Katagiri1984.md")
     cleanup_level: purge
-  reports/Katakura2007.md:
+  reports/katakura2007.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Katakura2007
+      - data_study: katakura2007
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Katakura2007.html:
-    command: render_ms("reports/Katakura2007.md")
+  reports/katakura2007.html:
+    command: render_ms("reports/katakura2007.md")
     cleanup_level: purge
-  reports/Kato1973.md:
+  reports/kato1973.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kato1973
+      - data_study: kato1973
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kato1973.html:
-    command: render_ms("reports/Kato1973.md")
+  reports/kato1973.html:
+    command: render_ms("reports/kato1973.md")
     cleanup_level: purge
-  reports/Kawahara1981.md:
+  reports/kawahara1981.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kawahara1981
+      - data_study: kawahara1981
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kawahara1981.html:
-    command: render_ms("reports/Kawahara1981.md")
+  reports/kawahara1981.html:
+    command: render_ms("reports/kawahara1981.md")
     cleanup_level: purge
-  reports/Kawanabe1977.md:
+  reports/kawanabe1977.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kawanabe1977
+      - data_study: kawanabe1977
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kawanabe1977.html:
-    command: render_ms("reports/Kawanabe1977.md")
+  reports/kawanabe1977.html:
+    command: render_ms("reports/kawanabe1977.md")
     cleanup_level: purge
-  reports/Kelly0000a.md:
+  reports/kelly0000a.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kelly0000a
+      - data_study: kelly0000a
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kelly0000a.html:
-    command: render_ms("reports/Kelly0000a.md")
+  reports/kelly0000a.html:
+    command: render_ms("reports/kelly0000a.md")
     cleanup_level: purge
-  reports/Kelly0000b.md:
+  reports/kelly0000b.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kelly0000b
+      - data_study: kelly0000b
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kelly0000b.html:
-    command: render_ms("reports/Kelly0000b.md")
+  reports/kelly0000b.html:
+    command: render_ms("reports/kelly0000b.md")
     cleanup_level: purge
-  reports/Kenzo2009.md:
+  reports/kenzo2009.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kenzo2009
+      - data_study: kenzo2009
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kenzo2009.html:
-    command: render_ms("reports/Kenzo2009.md")
+  reports/kenzo2009.html:
+    command: render_ms("reports/kenzo2009.md")
     cleanup_level: purge
-  reports/Kenzo2009b.md:
+  reports/kenzo2009b.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kenzo2009b
+      - data_study: kenzo2009b
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kenzo2009b.html:
-    command: render_ms("reports/Kenzo2009b.md")
+  reports/kenzo2009b.html:
+    command: render_ms("reports/kenzo2009b.md")
     cleanup_level: purge
-  reports/King1994.md:
+  reports/king1994.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: King1994
+      - data_study: king1994
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/King1994.html:
-    command: render_ms("reports/King1994.md")
+  reports/king1994.html:
+    command: render_ms("reports/king1994.md")
     cleanup_level: purge
-  reports/King1996.md:
+  reports/king1996.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: King1996
+      - data_study: king1996
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/King1996.html:
-    command: render_ms("reports/King1996.md")
+  reports/king1996.html:
+    command: render_ms("reports/king1996.md")
     cleanup_level: purge
-  reports/Kitazawa1959.md:
+  reports/kitazawa1959.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kitazawa1959
+      - data_study: kitazawa1959
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kitazawa1959.html:
-    command: render_ms("reports/Kitazawa1959.md")
+  reports/kitazawa1959.html:
+    command: render_ms("reports/kitazawa1959.md")
     cleanup_level: purge
-  reports/Kohyama0000.md:
+  reports/kohyama0000.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kohyama0000
+      - data_study: kohyama0000
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kohyama0000.html:
-    command: render_ms("reports/Kohyama0000.md")
+  reports/kohyama0000.html:
+    command: render_ms("reports/kohyama0000.md")
     cleanup_level: purge
-  reports/Kohyama1987.md:
+  reports/kohyama1987.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kohyama1987
+      - data_study: kohyama1987
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kohyama1987.html:
-    command: render_ms("reports/Kohyama1987.md")
+  reports/kohyama1987.html:
+    command: render_ms("reports/kohyama1987.md")
     cleanup_level: purge
-  reports/Kohyama1990.md:
+  reports/kohyama1990.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kohyama1990
+      - data_study: kohyama1990
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kohyama1990.html:
-    command: render_ms("reports/Kohyama1990.md")
+  reports/kohyama1990.html:
+    command: render_ms("reports/kohyama1990.md")
     cleanup_level: purge
-  reports/Kohyama1994.md:
+  reports/kohyama1994.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Kohyama1994
+      - data_study: kohyama1994
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Kohyama1994.html:
-    command: render_ms("reports/Kohyama1994.md")
+  reports/kohyama1994.html:
+    command: render_ms("reports/kohyama1994.md")
     cleanup_level: purge
-  reports/Komiyama2002.md:
+  reports/komiyama2002.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Komiyama2002
+      - data_study: komiyama2002
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Komiyama2002.html:
-    command: render_ms("reports/Komiyama2002.md")
+  reports/komiyama2002.html:
+    command: render_ms("reports/komiyama2002.md")
     cleanup_level: purge
-  reports/Komiyama2003.md:
+  reports/komiyama2003.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Komiyama2003
+      - data_study: komiyama2003
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Komiyama2003.html:
-    command: render_ms("reports/Komiyama2003.md")
+  reports/komiyama2003.html:
+    command: render_ms("reports/komiyama2003.md")
     cleanup_level: purge
-  reports/leMaire2011.md:
+  reports/lemaire2011.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: leMaire2011
+      - data_study: lemaire2011
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/leMaire2011.html:
-    command: render_ms("reports/leMaire2011.md")
+  reports/lemaire2011.html:
+    command: render_ms("reports/lemaire2011.md")
     cleanup_level: purge
-  reports/Lewis2013.md:
+  reports/lewis2013.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Lewis2013
+      - data_study: lewis2013
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Lewis2013.html:
-    command: render_ms("reports/Lewis2013.md")
+  reports/lewis2013.html:
+    command: render_ms("reports/lewis2013.md")
     cleanup_level: purge
-  reports/Lusk0000a.md:
+  reports/lusk0000a.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Lusk0000a
+      - data_study: lusk0000a
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Lusk0000a.html:
-    command: render_ms("reports/Lusk0000a.md")
+  reports/lusk0000a.html:
+    command: render_ms("reports/lusk0000a.md")
     cleanup_level: purge
-  reports/Lusk0000b.md:
+  reports/lusk0000b.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Lusk0000b
+      - data_study: lusk0000b
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Lusk0000b.html:
-    command: render_ms("reports/Lusk0000b.md")
+  reports/lusk0000b.html:
+    command: render_ms("reports/lusk0000b.md")
     cleanup_level: purge
-  reports/Lusk2002.md:
+  reports/lusk2002.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Lusk2002
+      - data_study: lusk2002
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Lusk2002.html:
-    command: render_ms("reports/Lusk2002.md")
+  reports/lusk2002.html:
+    command: render_ms("reports/lusk2002.md")
     cleanup_level: purge
-  reports/Lusk2004.md:
+  reports/lusk2004.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Lusk2004
+      - data_study: lusk2004
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Lusk2004.html:
-    command: render_ms("reports/Lusk2004.md")
+  reports/lusk2004.html:
+    command: render_ms("reports/lusk2004.md")
     cleanup_level: purge
-  reports/Lusk2011.md:
+  reports/lusk2011.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Lusk2011
+      - data_study: lusk2011
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Lusk2011.html:
-    command: render_ms("reports/Lusk2011.md")
+  reports/lusk2011.html:
+    command: render_ms("reports/lusk2011.md")
     cleanup_level: purge
-  reports/Lusk2012.md:
+  reports/lusk2012.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Lusk2012
+      - data_study: lusk2012
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Lusk2012.html:
-    command: render_ms("reports/Lusk2012.md")
+  reports/lusk2012.html:
+    command: render_ms("reports/lusk2012.md")
     cleanup_level: purge
-  reports/Lusk2013.md:
+  reports/lusk2013.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Lusk2013
+      - data_study: lusk2013
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Lusk2013.html:
-    command: render_ms("reports/Lusk2013.md")
+  reports/lusk2013.html:
+    command: render_ms("reports/lusk2013.md")
     cleanup_level: purge
-  reports/Maguire1998.md:
+  reports/maguire1998.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Maguire1998
+      - data_study: maguire1998
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Maguire1998.html:
-    command: render_ms("reports/Maguire1998.md")
+  reports/maguire1998.html:
+    command: render_ms("reports/maguire1998.md")
     cleanup_level: purge
-  reports/Markesteijn2009.md:
+  reports/markesteijn2009.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Markesteijn2009
+      - data_study: markesteijn2009
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Markesteijn2009.html:
-    command: render_ms("reports/Markesteijn2009.md")
+  reports/markesteijn2009.html:
+    command: render_ms("reports/markesteijn2009.md")
     cleanup_level: purge
-  reports/Martin1998.md:
+  reports/martin1998.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Martin1998
+      - data_study: martin1998
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Martin1998.html:
-    command: render_ms("reports/Martin1998.md")
+  reports/martin1998.html:
+    command: render_ms("reports/martin1998.md")
     cleanup_level: purge
-  reports/McCulloh2010.md:
+  reports/mcculloh2010.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: McCulloh2010
+      - data_study: mcculloh2010
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/McCulloh2010.html:
-    command: render_ms("reports/McCulloh2010.md")
+  reports/mcculloh2010.html:
+    command: render_ms("reports/mcculloh2010.md")
     cleanup_level: purge
-  reports/Mokany2003.md:
+  reports/mokany2003.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Mokany2003
+      - data_study: mokany2003
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Mokany2003.html:
-    command: render_ms("reports/Mokany2003.md")
+  reports/mokany2003.html:
+    command: render_ms("reports/mokany2003.md")
     cleanup_level: purge
-  reports/Monserud1999.md:
+  reports/monserud1999.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Monserud1999
+      - data_study: monserud1999
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Monserud1999.html:
-    command: render_ms("reports/Monserud1999.md")
+  reports/monserud1999.html:
+    command: render_ms("reports/monserud1999.md")
     cleanup_level: purge
-  reports/Mori1979.md:
+  reports/mori1979.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Mori1979
+      - data_study: mori1979
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Mori1979.html:
-    command: render_ms("reports/Mori1979.md")
+  reports/mori1979.html:
+    command: render_ms("reports/mori1979.md")
     cleanup_level: purge
-  reports/Mori1991.md:
+  reports/mori1991.md:
     knitr:
       input: reports/report.Rmd
       chdir: true
       auto_figure_prefix: true
     depends:
-      - data_study: Mori1991
+      - data_study: mori1991
       - baad_dictionary
       - baad_data
       - R/reports.R
     cleanup_level: purge
-  reports/Mori1991.html:
-    command: render_ms("reports/Mori1991.md")
+  reports/mori1991.html:
+    command: render_ms("reports/mori1991.md")
     cleanup_level: purge
   reports/Morisawa1957.md:
     knitr:
@@ -2463,24 +2477,25 @@ targets:
       - reports/Baraloto2006.html
       - reports/Battaglia1998.html
       - reports/BondLamberty2002.html
-      - reports/Brown1978.html
-      - reports/Burger1953.html
-      - reports/Claveau2002.html
-      - reports/Claveau2005.html
-      - reports/Coll2008.html
-      - reports/Dannoura2006.html
-      - reports/Delagrange0000a.html
-      - reports/Delagrange0000b.html
-      - reports/Delagrange2004.html
-      - reports/Domec2012.html
-      - reports/Epron2011.html
-      - reports/Fatemi2011.html
-      - reports/FLFU1963.html
-      - reports/FLFU1965.html
-      - reports/Furuno1967.html
-      - reports/Garber2005.html
-      - reports/Gargaglione2010.html
-      - reports/Ghannoum2010a.html
+      - reports/brown1978.html
+      - reports/burger1953.html
+      - reports/Camac0000.html
+      - reports/claveau2002.html
+      - reports/claveau2005.html
+      - reports/coll2008.html
+      - reports/dannoura2006.html
+      - reports/delagrange0000a.html
+      - reports/delagrange0000b.html
+      - reports/delagrange2004.html
+      - reports/domec2012.html
+      - reports/epron2011.html
+      - reports/fatemi2011.html
+      - reports/flfu1963.html
+      - reports/flfu1965.html
+      - reports/furuno1967.html
+      - reports/garber2005.html
+      - reports/gargaglione2010.html
+      - reports/ghannoum2010a.html
       - reports/Ghannoum2010b.html
       - reports/Goto2003.html
       - reports/Hagihara1993.html
@@ -2500,40 +2515,40 @@ targets:
       - reports/Kantola2004.html
       - reports/Karizumi1984.html
       - reports/Katagiri1984.html
-      - reports/Katakura2007.html
-      - reports/Kato1973.html
-      - reports/Kawahara1981.html
-      - reports/Kawanabe1977.html
-      - reports/Kelly0000a.html
-      - reports/Kelly0000b.html
-      - reports/Kenzo2009.html
-      - reports/Kenzo2009b.html
-      - reports/King1994.html
-      - reports/King1996.html
-      - reports/Kitazawa1959.html
-      - reports/Kohyama0000.html
-      - reports/Kohyama1987.html
-      - reports/Kohyama1990.html
-      - reports/Kohyama1994.html
-      - reports/Komiyama2002.html
-      - reports/Komiyama2003.html
-      - reports/leMaire2011.html
-      - reports/Lewis2013.html
-      - reports/Lusk0000a.html
-      - reports/Lusk0000b.html
-      - reports/Lusk2002.html
-      - reports/Lusk2004.html
-      - reports/Lusk2011.html
-      - reports/Lusk2012.html
-      - reports/Lusk2013.html
-      - reports/Maguire1998.html
-      - reports/Markesteijn2009.html
-      - reports/Martin1998.html
-      - reports/McCulloh2010.html
-      - reports/Mokany2003.html
-      - reports/Monserud1999.html
-      - reports/Mori1979.html
-      - reports/Mori1991.html
+      - reports/katakura2007.html
+      - reports/kato1973.html
+      - reports/kawahara1981.html
+      - reports/kawanabe1977.html
+      - reports/kelly0000a.html
+      - reports/kelly0000b.html
+      - reports/kenzo2009.html
+      - reports/kenzo2009b.html
+      - reports/king1994.html
+      - reports/king1996.html
+      - reports/kitazawa1959.html
+      - reports/kohyama0000.html
+      - reports/kohyama1987.html
+      - reports/kohyama1990.html
+      - reports/kohyama1994.html
+      - reports/komiyama2002.html
+      - reports/komiyama2003.html
+      - reports/lemaire2011.html
+      - reports/lewis2013.html
+      - reports/lusk0000a.html
+      - reports/lusk0000b.html
+      - reports/lusk2002.html
+      - reports/lusk2004.html
+      - reports/lusk2011.html
+      - reports/lusk2012.html
+      - reports/lusk2013.html
+      - reports/maguire1998.html
+      - reports/markesteijn2009.html
+      - reports/martin1998.html
+      - reports/mcculloh2010.html
+      - reports/mokany2003.html
+      - reports/monserud1999.html
+      - reports/mori1979.html
+      - reports/mori1991.html
       - reports/Morisawa1957.html
       - reports/Muro2006.html
       - reports/Myster2009.html
