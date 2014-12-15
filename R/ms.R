@@ -207,11 +207,20 @@ variable_details <- function(var_def) {
            "\n\t- Type: ", x$type,
            "\n\t- Label: ", x$label,
            "\n\t- Description: ", x$description,
-           "\n\t- Units: ", gsub(".", "/", x$unitsMD, fixed=TRUE)
+           "\n\t- Units: ", format_units(x$units)
            )
   }
   ret <- plyr::daply(var_def, 1, f)
   ret[var_def$variable]
+}
+
+format_units <- function(units){
+
+  old <- c("/m2", "/m3", "m2", "m3", "/kg" )
+  new <- c(" m<sup>-2</sup>", " m<sup>-3</sup>", "m<sup>2</sup>", "m<sup>3</sup>", " kg<sup>-1</sup>")
+  for(i in seq_len(length(old)))
+     units <- gsub(old[i], new[i], units, fixed=TRUE)
+  units
 }
 
 summary_table <- function(data, var_def, digits=2) {
@@ -238,7 +247,7 @@ summary_table <- function(data, var_def, digits=2) {
   }
 
   i <- match(thesevars, var_def$variable)
-  dfr$Units    <- var_def$unitsMD[i]
+  dfr$Units    <- format_units(var_def$units[i])
   dfr$Variable <- var_def$variable[i]
   dfr$Label    <- capitalize(var_def$label[i])
 
