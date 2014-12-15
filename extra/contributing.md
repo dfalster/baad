@@ -32,7 +32,7 @@ To contribute, please follow the steps below. It is important that all steps are
 	* `studyMetadata.csv`: description of the methods used to collect the data.
 	* `studyRef.bib`: reference for the study, in [bibtex format](http://en.wikipedia.org/wiki/BibTeX#Examples).
 
-It may help to download one of the [existing datasets](https://github.com/dfalster/baad/tree/master/data) and use it as a template for your own files. Note,
+It may help to download one of the [existing datasets](https://github.com/dfalster/baad/tree/master/data) and use it as a template for your own files.
 
 ![baadworkflow](../ms/Figure2.png)
 **Figure 1** Workflow for building the BAAD. Data from each study is processed in the same way, using a standardised set of input files, resulting in a single dataset with a common format.

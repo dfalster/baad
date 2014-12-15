@@ -74,7 +74,7 @@ Combining data from many different studies, each using its own set of terms and 
 1. Our entire work flow is scripted, using the R computing environment. The database can be rebuilt in an instant from the raw data files, using a single command. When a single data contribution has been modified, the final master dataset is thus easily recreated.
 2. We minimised the amount of code by requiring each study to conform to a common format, with separate files for raw data, units of data, meta data, contact details, and citation (see examples in attached code). These files were then processed in a standardised way (Fig. 2).
 3. We used the package `knitr` within `R` to automatically produce reports comparing the raw data provided by a single study to the rest of the database `r citep(citation("knitr"))`. These reports were sent to data contributors for verification, and thus allowed for easy identification of errors in the raw data or processing. Each report included plots for every pairwise combination of quantitative variables in a given study, site maps, and metadata. The updated reports are available on the database website.
-4. We used version control and the code sharing website [github](www.github.com) to track the evolution of the database and the code to process the raw data. Datasets as well as processing methods inevitably contain errors. With version control, we are able to trace these errors to the source, and review review the history of changes to any given dataset.
+4. We used version control and the code sharing website [github](https://github.com/dfalster/baad/) to track the evolution of the database and the code to process the raw data. Datasets as well as processing methods inevitably contain errors. With version control, we are able to trace these errors to the source, and review review the history of changes to any given dataset.
 
 
 ![baadworkflow](Figure2.png)
@@ -114,7 +114,7 @@ writeLines(details2B, sep="\n\n")
 
 ### A. Status
 
-**Latest update**: The dataset made available through this publication was processed on 2014-12-10. Newer updates may be retrieved from the BAAD website ([https://github.com/dfalster/baad/](https://github.com/dfalster/baad/).
+**Latest update**: The dataset made available through this publication was processed on 2014-12-15. Newer updates may be retrieved from the BAAD website ([https://github.com/dfalster/baad/](https://github.com/dfalster/baad/).
 
 **Metadata status**: Metadata are complete to last update and are stored with data.
 

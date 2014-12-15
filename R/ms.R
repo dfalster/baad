@@ -137,7 +137,7 @@ study_details <- function(data, baad) {
     personell    = personell,
     citation     = get_citation_ms(study_name, baad),
     vars         = paste0(vars, collapse=", "),
-    species      = paste0(unique(data$species), collapse=", "))
+    species      = paste0(sort(unique(data$species)), collapse=", "))
 
   whisker.render(template, dat)
 }

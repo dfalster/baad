@@ -9,7 +9,9 @@ The Biomass And Allometry Database (BAAD) contains data on the construction of w
 
 	citation forthcoming.
 
-At time of publication, BAAD contained 258526 measurements collected in 175 different studies, from 20950 individuals across 674 species.
+At time of publication, the BAAD contained 258526 measurements collected in 175 different studies, from 20950 individuals across 674 species.
+
+Details about individual studies contributed to the BAAD are given are available in these [online reports](https://github.com/dfalster/baad/wiki).
 
 ## Using BAAD
 
