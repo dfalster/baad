@@ -15,17 +15,6 @@ load_study_helper <- function(study_name,
              conversions)
 }
 
-build_baad <- function(verbose=TRUE) {
-  variable_definitions <- read_csv("config/variableDefinitions.csv")
-  conversions <- read_csv("config/variableConversion.csv")
-
-  study_names <- dir("data")
-
-  d <- lapply(study_names, load_study_helper,
-              variable_definitions, conversions)
-  combine_baad(d=d, variable_definitions=variable_definitions)
-}
-
 combine_baad <- function(..., d=list(...), variable_definitions) {
   combine <- function(name, d) {
     ret <- plyr::ldply(d, function(x) x[[name]])
