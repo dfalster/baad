@@ -27,4 +27,5 @@ targets:
 {{#study_names}}
         {{study_name}},
 {{/study_names}}
-        variable_definitions=variable_definitions)
+        variable_definitions=variable_definitions,
+        compiler_contacts=compiler_contacts)

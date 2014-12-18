@@ -32,8 +32,12 @@ targets:
       - manuscript
       - reports
 
+  compiler_contacts:
+    command: read_csv("config/contact.csv")
+
   author_info:
-    command: author_details("config/contact.csv", baad)
+    command: author_details(compiler_contacts, baad)
+
   export/authors.csv:
     command: save_author_details(author_info, target_name)
 

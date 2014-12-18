@@ -15,15 +15,17 @@ load_study_helper <- function(study_name,
              conversions)
 }
 
-combine_baad <- function(..., d=list(...), variable_definitions) {
+combine_baad <- function(..., d=list(...), variable_definitions, compiler_contacts) {
   combine <- function(name, d) {
     ret <- plyr::ldply(d, function(x) x[[name]])
     rename_columns(ret, ".id", "studyName")
   }
+
   names(d) <- sapply(d, "[[", "key")
   ret <- list(data=combine("data", d),
               methods=combine("methods", d),
-              contacts=combine("contacts", d),
+              contacts=rbind.fill(combine("contacts", d),
+                data.frame(studyName="BAAD_construction", compiler_contacts)),
               references=combine("references", d),
               metadata=combine("metadata", d))
 

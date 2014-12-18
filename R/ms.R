@@ -1,7 +1,5 @@
 ## Author information is handled as a proper maker target:
-author_details <- function(filename_first_authors, baad) {
-  first_authors <- read.csv(filename_first_authors, na.strings=c(NA, ''),
-                          stringsAsFactors=FALSE, strip.white=TRUE)
+author_details <- function(first_authors, baad) {
   data_authors <- baad$contact
   data_authors <- data_authors[order(last_name(data_authors$name),
                                      data_authors$name),]

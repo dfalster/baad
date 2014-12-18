@@ -2297,4 +2297,5 @@ targets:
         Yasui1983,
         Yi1989,
         Yoda1978,
-        variable_definitions=variable_definitions)
+        variable_definitions=variable_definitions,
+        compiler_contacts=compiler_contacts)
