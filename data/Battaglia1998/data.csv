@@ -1,4 +1,4 @@
-dataset,location,latitude,longitude,map,mat,species,growingcondition,dominanceclass,stem.ha-1,harvest_year,age,tree_id,d.bhcm,d.bacm,h.t,h.c,d.ccm,a.ssbhcm2,a.sbhcm2,a.ssbccm2,a.shbccm2,a.lf,SLAcm2g-1
+dataset,location,latitude,longitude,map,mat,species,growingcondition,dominanceclass,stem.ha-1,harvest_year,age,tree_id,d.bhcm,d.bacm,h.t,h.c,d.ccm,a.ssbhcm2,a.shbhcm2,a.ssbccm2,a.shbccm2,a.lf,SLAcm2g-1
 Battaglia1998,"Creekton B1/3, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,1,1430,1996,7,B1-3CL1,6.5,4.1,9.23,4.51,4.1,23.4,5,10.4,0,5.9197,55.4
 Battaglia1998,"Creekton B1/3, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,2,1430,1996,7,B1-3CL2,9.8,7.4,12.91,5.02,7.4,51.4,12.6,35.8,0,15.74191,47.9
 Battaglia1998,"Creekton B1/3, Tasmania, Australia",43D21MS,146D54ME,,,Eucalyptus nitens,PM,3,1430,1996,7,B1-3CL3,11.6,8.9,11.83,3.85,8.9,72.2,16.4,51.7,0,20.79007,46.2
