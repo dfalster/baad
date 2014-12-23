@@ -15,7 +15,7 @@ Details about individual studies contributed to the BAAD are given are available
 
 ## Using BAAD
 
-The data in BAAD are released under the [Creative commons CC0 license](http://creativecommons.org/about/cc0), and can therefore be reused without restriction. To recognise the work that has gone into building the database, we kindly ask that you cite the above article, or when using data from only one or few of the individual studies, the original articles if you prefer.
+The data in BAAD are released under the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/) public domain waiver, and can therefore be reused without restriction. To recognise the work that has gone into building the database, we kindly ask that you cite the above article, or when using data from only one or few of the individual studies, the original articles if you prefer.
 
 There are two options for accessing data within BAAD.
 
