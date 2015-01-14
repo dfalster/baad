@@ -129,7 +129,7 @@ v) Derived variables were calculated from the raw data where appropriate. For ex
 
 ### B. Accessibility
 
-**1. Storage location and medium**: The data published here is the first release from the Biomass and allometry database stored at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/). The version of the data made available for this publication is available here ((LINK TO ECOLOGICAL ARCHIVES DATA FILE)). For scientific analyses, we suggest you use this version.
+**1. Storage location and medium**: The data published here is the first release from the Biomass and allometry database stored at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/). The version of the data made available for this publication is can be downloaded from ecological archives. For scientific analyses, we suggest you use this version.
 
 Development versions of the dataset will continue to be available at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/).
 
