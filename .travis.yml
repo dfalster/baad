@@ -8,6 +8,8 @@ before_install:
     - chmod 755 ./travis-tool.sh
     - ./travis-tool.sh bootstrap
     - ./travis-tool.sh install_github richfitz/maker
+    # this one is in Suggests, so not always added.
+    - ./travis-tool.sh install_r optparse
     - Rscript -e 'maker::install_maker(".")'
 
 install:
