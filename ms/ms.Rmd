@@ -81,7 +81,7 @@ Combining data from many different studies, each using its own set of terms and 
 ![baadworkflow](Figure2.png)
 **Figure2** Workflow for building the BAAD. Data from each study is processed in the same way, using a standardised set of input files, resulting in a single dataset with a common format.
 
-Until recently, most scientific publications in biology have mostly been concerned with "small data" `r citep("10.1038/nj7461-243a")`. Datasets arrive in small parcels, corresponding to the work of an individual study, or perhaps a handful of studies. It is exciting to be able to put these parcels together, to create something larger. We hope others will use this dataset and build on it. See [https://github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
+Until recently, most scientific publications in biology have mostly been concerned with "small data" `r citep("10.1038/nj7461-243a")`. Datasets arrive in small parcels, corresponding to the work of an individual study, or perhaps a handful of studies. It is exciting to be able to put these parcels together, to create something larger. We hope others will use this dataset and build on it. See [github.com/dfalster/baad](https://github.com/dfalster/baad) for information on how to contribute to future releases.
 
 ## METHODS
 
@@ -115,7 +115,7 @@ writeLines(details2B, sep="\n\n")
 
 ### A. Status
 
-**Latest update**: The dataset made available through this publication was processed on 2014-12-15. Newer updates may be retrieved from the BAAD website ([https://github.com/dfalster/baad/](https://github.com/dfalster/baad/).
+**Latest update**: The dataset made available through this publication was processed on 2014-12-15. Newer updates may be retrieved from the BAAD website [github.com/dfalster/baad](https://github.com/dfalster/baad).
 
 **Metadata status**: Metadata are complete to last update and are stored with data.
 
@@ -129,15 +129,13 @@ v) Derived variables were calculated from the raw data where appropriate. For ex
 
 ### B. Accessibility
 
-**1. Storage location and medium**: The data published here is the first release from the Biomass and allometry database stored at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/). The version of the data made available for this publication is can be downloaded from ecological archives. For scientific analyses, we suggest you use this version.
+**1. Storage location and medium**: The data published on Ecological Archives is the first release from the Biomass and allometry database (v1.0.0) stored at [github.com/dfalster/baad](https://github.com/dfalster/baad/). The version of the data contained in this publication can also be downloaded from the releases page on gihtub: [github.com/dfalster/baad/releases](https://github.com/dfalster/baad/releases). Development versions of the dataset will continue to be made available at [github.com/dfalster/baad](https://github.com/dfalster/baad).
 
-Development versions of the dataset will continue to be available at [https://github.com/dfalster/baad/](https://github.com/dfalster/baad/).
-
-If you notice any problems with the dataset, please list an issue [here](https://github.com/dfalster/baad/issues/new).
+If you notice any problems with the dataset, please list an issue at [github.com/dfalster/baad/issues/new](https://github.com/dfalster/baad/issues/new).
 
 **Contact persons**: Queries about individual specific data points can be directed to the contributing author for that study. For queries about the entire dataset, please contact either Daniel Falster or Remko Duursma. For problems with the dataset, please submit an issue as described above.
 
-**Copyright restrictions**: The dataset is released under the [Creative Commons CC0 license](http://creativecommons.org/choose/zero/?lang=en). As such, it may be freely used and redistributed. When using the dataset, we kindly request that you cite this article, recognizing the hard work that went into collecting the data and the authors' willingness to make it publicly available.
+**Copyright restrictions**: The dataset is released under the the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/) public domain dedication. When using the dataset, we kindly request that you cite this article, recognizing the hard work that went into collecting the data and the authors' willingness to make it publicly available.
 
 **Costs**: None.
 
