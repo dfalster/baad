@@ -35,7 +35,7 @@ combine_baad <- function(..., d=list(...), variable_definitions, compiler_contac
 }
 
 ## Functions for extracting bits from baad.  Works around some of the
-## limitations in how I wrote maker.
+## limitations in how I wrote remake.
 extract_baad_data <- function(baad) {
   baad$data
 }

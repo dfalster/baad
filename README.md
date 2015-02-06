@@ -48,18 +48,18 @@ baad <- readRDS('baad.rds')
 
 ### Rebuilding from source
 
-The BAAD can be rebuilt from source (raw data files) using our scripted workflow in R. Beyond base R, building of the BAAD requires the package ['maker'](https://github.com/richfitz/maker). To install maker, from within R, run:
+The BAAD can be rebuilt from source (raw data files) using our scripted workflow in R. Beyond base R, building of the BAAD requires the package ['remake'](https://github.com/richfitz/remake). To install remake, from within R, run:
 
 ```
 # installs the package devtools
 install.packages("devtools")
-# use devtools to install maker
-devtools::install_github("richfitz/maker")
+# use devtools to install remake
+devtools::install_github("richfitz/remake")
 ```
 
-A number of other packages are also required (`rmarkdown, knitr, knitcitations, plyr, whisker, maps, mapdata, gdata, bibtex, taxize, Taxonstand, jsonlite`). These can be installed either within R using `install.packages`, or more easily using maker (instructions below).
+A number of other packages are also required (`rmarkdown, knitr, knitcitations, plyr, whisker, maps, mapdata, gdata, bibtex, taxize, Taxonstand, jsonlite`). These can be installed either within R using `install.packages`, or more easily using remake (instructions below).
 
-The database can then be rebuilt using maker.
+The database can then be rebuilt using remake.
 
 First download the code and raw data, either from Ecological Archives (for the published version) or from github as either [zip file](https://github.com/dfalster/baad/archive/master.zip), or by cloning the baad repository:
 
@@ -70,14 +70,11 @@ git clone git@github.com:dfalster/baad.git
 Then open R and set the downloaded folder as your working directory. Then,
 
 ```
-# load maker
-m <- maker:::maker()
-
 # ask maker to install any missing packages
-m$install_packages()
+remake::install_missing_packages()
 
 # build the dataset
-m$make("export")
+remake::make("export")
 
 # load dataset into R
 baad <- readRDS('export/baad.rds')

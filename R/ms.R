@@ -1,4 +1,4 @@
-## Author information is handled as a proper maker target:
+## Author information is handled as a proper remake target:
 author_details <- function(first_authors, baad) {
   data_authors <- baad$contact
   data_authors <- data_authors[order(last_name(data_authors$name),
