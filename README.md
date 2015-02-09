@@ -1,13 +1,10 @@
-
 # BAAD: a Biomass And Allometry Database for woody plants
 
 [![Build Status](https://travis-ci.org/dfalster/baad.png?branch=master)](https://travis-ci.org/dfalster/baad)
 
 ## About
 
-The Biomass And Allometry Database (BAAD) contains data on the construction of woody plants across the globe. These data were gathered from over 170 published and unpublished scientific studies, most of which was not previously available in the public domain. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the world's woody vegetation. The dataset is described in detail in the following article:
-
-	citation forthcoming.
+The Biomass And Allometry Database (BAAD) contains data on the construction of woody plants across the globe. These data were gathered from over 170 published and unpublished scientific studies, most of which was not previously available in the public domain. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the world's woody vegetation.
 
 At time of publication, the BAAD contained 258526 measurements collected in 175 different studies, from 20950 individuals across 674 species.
 
@@ -23,7 +20,7 @@ There are two options for accessing data within BAAD.
 
 You can download a compiled version of the database from either:
 
-1. Ecological Archives [XXX Add Link XXX]. This is the published version of the database.
+1. Ecological Archives. This is the version of the database associated with the correpsonding paper in the journal *Ecology*.
 2. Releases we have posted on [github](https://github.com/dfalster/baad/releases).
 
 The database contains the following elements
@@ -61,7 +58,7 @@ A number of other packages are also required (`rmarkdown, knitr, knitcitations, 
 
 The database can then be rebuilt using remake.
 
-First download the code and raw data, either from Ecological Archives (for the published version) or from github as either [zip file](https://github.com/dfalster/baad/archive/master.zip), or by cloning the baad repository:
+First download the code and raw data, either from Ecological Archives or from github as either [zip file](https://github.com/dfalster/baad/archive/master.zip), or by cloning the baad repository:
 
 ```
 git clone git@github.com:dfalster/baad.git
@@ -92,7 +89,7 @@ If you would like to contribute data, the requirements are
 2. You collected biomass or size data for multiple individuals within a species
 3. You collected either total leaf area or at least one biomass measure
 4. Your biomass measurements (where present) were from direct harvests, not estimated via allometric equations.
-5. You are willing to release the data under the [Creative commons CC0 license](http://creativecommons.org/about/cc0).
+5. You are willing to release the data under the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/) public domain dedication.
 
 See [these instructions](extra/contributing.md) on how to prepare and submit your contribution.
 
