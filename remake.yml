@@ -103,3 +103,14 @@ targets:
     command: extract_baad_bibtex(baad)
   baad_dictionary:
     command: extract_baad_dictionary(baad)
+
+  release/baad_data.zip:
+    command: make_release_baad_data_zip(target_name)
+    depends: export
+  release/baad.zip:
+    command: make_release_baad_code_zip(target_name)
+
+  release:
+    depends:
+      - release/baad_data.zip
+      - release/baad.zip
