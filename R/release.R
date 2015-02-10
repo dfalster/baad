@@ -3,6 +3,7 @@ make_release_baad_data_zip <- function(dest) {
   dir.create(path, FALSE, TRUE)
   to_copy <- list.files("export", "(csv|bib)$", full.names=TRUE)
   file.copy(to_copy, path)
+  colophon(path)
   remake:::zip_dir(path, dest)
 }
 
@@ -15,5 +16,28 @@ make_release_baad_code_zip <- function(dest, force=FALSE) {
   system(paste0("git clone . ", path))
   unlink(file.path(path, ".git"), recursive=TRUE)
   remake::make_script("export", filename=file.path(path, "remake.R"))
+  colophon(path)
   remake:::zip_dir(path, dest)
+}
+
+colophon <- function(path) {
+  file <- "colophon.Rmd"
+  str <-
+    c("# BAAD: a Biomass And Allometry Database for woody plants",
+      "",
+      "**Release 1.0.0**",
+      "",
+      "Session info used to generate this version:",
+      "",
+      "```{r}",
+      "devtools::session_info()",
+      "```")
+  ## Working directories are a bit of a disaster zone in knitr, so
+  ## we'll work around it here:
+  owd <- setwd(path)
+  on.exit(setwd(owd))
+  writeLines(str, file)
+  knitr::knit(file, quiet=TRUE)
+  file.remove(file)
+  invisible(file.path(path, file))
 }

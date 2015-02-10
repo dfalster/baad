@@ -8,6 +8,7 @@ packages:
   - taxize
   - methods
   - bibtex
+  - devtools
 
 sources:
   - R
