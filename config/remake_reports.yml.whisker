@@ -12,7 +12,7 @@ targets:
       - R/reports.R
     cleanup_level: purge
   reports/{{study_name}}.html:
-    command: render_ms("reports/{{study_name}}.md")
+    command: render_html("reports/{{study_name}}.md")
     cleanup_level: purge
 {{/study_names}}
   reports:
