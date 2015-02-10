@@ -21,11 +21,13 @@ make_release_baad_code_zip <- function(dest, force=FALSE) {
 }
 
 colophon <- function(path) {
+  git_sha <- system("git rev-parse HEAD", intern=TRUE)
+  git_url <- paste0("https://github.com/dfalster/baad/commit/", git_sha)
   file <- "colophon.Rmd"
   str <-
     c("# BAAD: a Biomass And Allometry Database for woody plants",
       "",
-      "**Release 1.0.0**",
+      sprintf("**Release 1.0.0** git SHA: [%s](%s)", git_sha, git_url),
       "",
       "Session info used to generate this version:",
       "",
