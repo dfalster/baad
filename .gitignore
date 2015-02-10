@@ -6,8 +6,9 @@ figure
 .maker
 .remake
 *.rds
-ms/ms.html
-ms/ms.md
+ms/*.html
+ms/*.md
+ms/*.docx
 ms/figure
 reports
 export
