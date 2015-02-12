@@ -15,7 +15,7 @@ writeLines(paste0(author_info$authors$name,
                         "^", author_info$authors$address_code, "^",
                         collapse = ", "))
 writeLines("\n\n")
-writeLines(paste0("^", author_info$authors$address_code, "^ ",
+writeLines(paste0("^", author_info$address_table$code, "^ ",
                   author_info$address_table$address,"  "))
 ```
 
