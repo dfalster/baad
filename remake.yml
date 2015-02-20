@@ -24,7 +24,9 @@ include:
 
 targets:
   all:
-    depends: baad
+    depends:
+      - baad
+      - export
   manuscript:
     depends:
       - ms/ms.docx
