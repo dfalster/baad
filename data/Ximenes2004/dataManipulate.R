@@ -1,5 +1,5 @@
 manipulate  <-  function(raw){
-  raw2         <-  read.csv('data/Ximenes2004/data2.csv', h=TRUE, 
+  raw2         <-  read.csv('data/Ximenes2004/data2.csv', header=TRUE, 
                             stringsAsFactors=FALSE, strip.white=TRUE, check.names=FALSE)
   raw          <-  merge(raw, raw2, by=c('Tree No','Site','Species'))
   raw$h.t      <-  raw[['Tree length (m)']] + raw[['Stump height (cm)']]/100

@@ -11,7 +11,7 @@ manipulate <- function(raw) {
   # (RAD)
   stat <- do.call(c,lapply(split(raw, raw$contributor), 
                            function(x)as.character(cut(x$status/max(x$status),
-                                                       seq(0,1,length=5),
+                                                       seq(0,1,length.out=5),
                                                        include.lowest=TRUE,
                                                        labels=as.character(0:3)))))
   raw$status <- unname(stat)
