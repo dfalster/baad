@@ -1,0 +1,9 @@
+# Three images to generate:
+names:
+  # This is the source unpacked and all dependencies installed.
+  clean: dfalster/baad
+  # Run the full analysis, but don't export anything
+  all: dfalster/baad_all
+  # Run the full analysis, and then export everything
+  everything: dfalster/baad_everything
+source: https://github.com/dfalster/baad
