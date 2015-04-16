@@ -19,4 +19,4 @@ after_success:
     - cat ms/ms.md
 
 notifications:
-  slack: ecology:vj80qn6ZugIB1Uh4p6MBrkVq
+  slack: bdkd:hY2eBCaH3bbsvNwlWwOfFdfr
