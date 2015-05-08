@@ -7,6 +7,7 @@ before_install:
     - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
     - chmod 755 ./travis-tool.sh
     - ./travis-tool.sh bootstrap
+    - ./travis-tool.sh install_github richfitz/storr
     - ./travis-tool.sh install_github richfitz/remake
     # this one is in Suggests, so not always added.
     - ./travis-tool.sh install_r optparse
@@ -19,4 +20,4 @@ after_success:
     - cat ms/ms.md
 
 notifications:
-  slack: ecology:vj80qn6ZugIB1Uh4p6MBrkVq
+  slack: bdkd:vj80qn6ZugIB1Uh4p6MBrkVq
