@@ -4,11 +4,11 @@
 
 ## About
 
-The Biomass And Allometry Database (BAAD) contains data on the construction of woody plants across the globe. These data were gathered from over 170 published and unpublished scientific studies, most of which was not previously available in the public domain. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the world's woody vegetation.
+The Biomass And Allometry Database (BAAD) contains data on the construction of woody plants across the globe. These data were gathered from over 170 published and unpublished scientific studies, most of which was not previously available in the public domain. It is our hope that making these data available will improve our ability to understand plant growth, ecosystem dynamics, and carbon cycling in the world's woody vegetation. The dataset is described further in the publication
 
-At time of publication, the BAAD contained 258526 measurements collected in 175 different studies, from 20950 individuals across 674 species.
+Falster, DS , RA Duursma, MI Ishihara, DR Barneche, RG FitzJohn, A Vårhammar, M Aiba, M Ando, N Anten, MJ Aspinwall, JL Baltzer, C Baraloto, M Battaglia, JJ Battles, B Bond-Lamberty, M van Breugel, J Camac, Y Claveau, L Coll, M Dannoura, S Delagrange, J-C Domec, F Fatemi, W Feng, V Gargaglione, Y Goto, A Hagihara, JS Hall, S Hamilton, D Harja, T Hiura, R Holdaway, LS Hutley, T Ichie, EJ Jokela, A Kantola, JW G Kelly, T Kenzo, D King, BD Kloeppel, T Kohyama, A Komiyama, J-P Laclau, CH Lusk, DA Maguire, G le Maire, A Mäkelä, L Markesteijn, J Marshall, K McCulloh, I Miyata, K Mokany, S Mori, RW Myster, M Nagano, SL Naidu, Y Nouvellon, AP O'Grady, KL O'Hara, T Ohtsuka, N Osada, OO Osunkoya, PL Peri, AM Petritan, L Poorter, A Portsmuth, C Potvin, J Ransijn, D Reid, SC Ribeiro, SD Roberts, R Rodríguez, A Saldaña-Acosta, I Santa-Regina, K Sasa, NG Selaya, SC Sillett, F Sterck, K Takagi, T Tange, H Tanouchi, D Tissue, T Umehara, H Utsugi, MA Vadeboncoeur, F Valladares, P Vanninen, JR Wang, E Wenk, R Williams, F de Aquino Ximenes, A Yamaba, T Yamada, T Yamakura, RD Yanai, and RA York (2015) BAAD: a Biomass And Allometry Database for woody plants. *Ecology* **96**:1445–1445. [10.1890/14-1889.1](http://doi.org/10.1890/14-1889.1)
 
-Details about individual studies contributed to the BAAD are given are available in these [online reports](https://github.com/dfalster/baad/wiki).
+At time of publication, the BAAD contained 258526 measurements collected in 175 different studies, from 20950 individuals across 674 species. Details about individual studies contributed to the BAAD are given are available in these [online reports](https://github.com/dfalster/baad/wiki).
 
 ## Using BAAD
 
@@ -20,7 +20,7 @@ There are two options for accessing data within BAAD.
 
 You can download a compiled version of the database from either:
 
-1. Ecological Archives. This is the version of the database associated with the correpsonding paper in the journal *Ecology*.
+1. Ecological Archives. This is the version of the database associated with the corresponding paper in the journal [*Ecology*]. [Link](http://www.esapubs.org/archive/ecol/E096/128/).
 2. Releases we have posted on [github](https://github.com/dfalster/baad/releases).
 
 The database contains the following elements
@@ -32,16 +32,15 @@ The database contains the following elements
 - `references`: as both summary table and bibtex entries containing the primary source for each study
 - `contacts`: table with contact information and affiliations for each study
 
-These elements are available as both
-
-1. a list within the file `baad.rds` (for use in R)
-2. as a series of CSV and text files.
+These elements at both of the above links as a series of CSV and text files. The github releases page also provides the file `baad.rds` (for use in R).
 
 Having downloaded the rds file, you can load it in `R`, using `readRDS`:
 
 ```
 baad <- readRDS('baad.rds')
 ```
+
+If you would prefer to use the csv files, you can use the put [this code](https://gist.github.com/dfalster/2605499cd5c6fffb0934) in your script to download and load baad in R.
 
 ### Rebuilding from source
 
@@ -67,7 +66,7 @@ git clone git@github.com:dfalster/baad.git
 Then open R and set the downloaded folder as your working directory. Then,
 
 ```
-# ask maker to install any missing packages
+# ask remake to install any missing packages
 remake::install_missing_packages()
 
 # build the dataset
