@@ -31,16 +31,21 @@ The database contains the following elements
 - `methods`: a table with columns as in data, but containing a code for the methods used to collect the data. See [config/methodsDefinitions.csv](config/methodsDefinitions.csv) for codes.
 - `references`: as both summary table and bibtex entries containing the primary source for each study
 - `contacts`: table with contact information and affiliations for each study
+These elements are available at both of the above links as a series of CSV and text files.
 
-These elements at both of the above links as a series of CSV and text files. The github releases page also provides the file `baad.rds` (for use in R).
+If you are using `R`, by far the best way to access data is via our package [baad.data](https://github.com/traitecoevo/baad.data).  After installing the package (instructions [here](https://github.com/traitecoevo/baad.data)), users can run
 
-Having downloaded the rds file, you can load it in `R`, using `readRDS`:
-
+```r
+baad.data:::data("ecology")
 ```
-baad <- readRDS('baad.rds')
+
+to download the version stored Ecological Archives, or
+
+```r
+baad.data:::data("x.y.z")
 ```
 
-If you would prefer to use the csv files, you can use the put [this code](https://gist.github.com/dfalster/2605499cd5c6fffb0934) in your script to download and load baad in R.
+to download an earlier or more recent version (where version numbers will follow the [semantic versioning](http://semver.org) guidelines. The baad.data package caches everything so subsequent calls, even across sessions, are very fast.  This should facilitate greater reproducibility by making it easy to depend on the version used for a particular analysis, and allowing different analyses to use different versions of the database. 
 
 ### Rebuilding from source
 
