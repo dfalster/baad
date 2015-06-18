@@ -30,6 +30,7 @@ targets:
   manuscript:
     depends:
       - ms/ms.docx
+      - ms/ms.html
       - ms/metadata.docx
       - ms/metadata.html
   everything:
@@ -74,6 +75,10 @@ targets:
 
   ms/metadata.docx:
     command: render_doc("ms/metadata.md")
+    quiet: true
+
+  ms/ms.html:
+    command: render_html("ms/metadata.md")
     quiet: true
 
   ms/ms.docx:
@@ -131,8 +136,11 @@ targets:
     depends: export
   release/baad.zip:
     command: make_release_baad_code_zip(target_name)
+  release/baad.rds:
+    command: file.copy("export/baad.rds", target_name)
 
   release:
     depends:
       - release/baad_data.zip
       - release/baad.zip
+      - release/baad.rds
