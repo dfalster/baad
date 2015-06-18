@@ -1,5 +1,7 @@
 language: c
 
+sudo: required
+
 script:
     - ./remake ms/ms.md
 
@@ -9,8 +11,6 @@ before_install:
     - ./travis-tool.sh bootstrap
     - ./travis-tool.sh install_github richfitz/storr
     - ./travis-tool.sh install_github richfitz/remake
-    # this one is in Suggests, so not always added.
-    - ./travis-tool.sh install_r optparse
     - Rscript -e 'remake::install_remake(".")'
 
 install:
