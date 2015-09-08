@@ -1,0 +1,14 @@
+var_in,method,unit_in,var_out,notes
+genet_id,NA,NA,genet_id,NA
+stem_id,NA,NA,stem_id,NA
+species,NA,NA,species,NA
+d.ba,"c,d2,p1,f",m,d.ba,NA
+d.bh,"c,d3,p1,f",m,d.bh,NA
+h.t,"c,d7,p3",m,h.t,NA
+m.st,"c,m3",kg,m.st,NA
+m.lf,"c,m3",kg,m.lf,NA
+a.lf,"c,e1",m2,a.lf,NA
+a.ilf,a1,m2,a.ilf,NA
+n.lf,NA,kg/kg,n.lf,NA
+a.cp,p3,m2,a.cp,NA
+a.ssbh,"p3,j",m2,a.ssbh,NA
