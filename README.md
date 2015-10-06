@@ -95,7 +95,7 @@ If you would like to contribute data, the requirements are
 4. Your biomass measurements (where present) were from direct harvests, not estimated via allometric equations.
 5. You are willing to release the data under the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/) public domain dedication.
 
-See [these instructions](extra/contributing.md) on how to prepare and submit your contribution.
+See [these instructions](CONTRIBUTING.md) on how to prepare and submit your contribution.
 
 Once sufficient additional data has been contributed, we plan to submit an update to the first data paper, inviting as co authors anyone who has contributed since the first data paper.
 
