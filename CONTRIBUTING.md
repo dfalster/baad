@@ -45,7 +45,7 @@ It may help to download one of the [existing datasets](https://github.com/dfalst
   * `variableConversion.csv`: list of unit conversions used
   * `methodsDefinitions.csv`: codes used to indicate methods used in collecting the data.
 
-![baadworkflow](../ms/Figure2.png)
+![baadworkflow](ms/Figure2.png)
 **Figure 1** Workflow for building the BAAD. Data from each study is processed in the same way, using a standardised set of input files, resulting in a single dataset with a common format.
 
 ### Adding data to BAAD
