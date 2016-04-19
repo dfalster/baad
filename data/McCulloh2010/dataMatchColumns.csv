@@ -1,7 +1,7 @@
 "var_in","method","unit_in","var_out","notes"
 "species",NA,NA,"species",NA
 "wood.type",NA,NA,NA,NA
-"collection.site",NA,NA,NA,NA
+"collection.site",NA,NA,"location",NA
 "individual.number",NA,NA,NA,NA
 "sample",NA,NA,NA,NA
 "A.lf.m2","a1,a4,e1,x1","m2","a.lf",NA
