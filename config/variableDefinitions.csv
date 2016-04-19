@@ -8,6 +8,7 @@ mat,deg,site,numeric,FALSE,FALSE,mat,-20,40,NA,mean annual temperature (wild gro
 grouping,NA,stand,character,FALSE,FALSE,grouping,NA,NA,NA,any information about growing environment of sampled plant such as treatment or subplot
 lai,m2/m2,stand,numeric,TRUE,FALSE,lai,1e-20,30,NA,leaf area index of vegetation (wild plants only)
 species,NA,species,character,FALSE,TRUE,species,NA,NA,NA,latin name of species (genus species)
+speciesMatched,NA,species,character,FALSE,TRUE,speciesMatched,NA,NA,NA, latin name of species (genus species) checked against taxize database
 family,NA,species,character,FALSE,FALSE,family,NA,NA,NA,family
 pft,NA,species,character,FALSE,TRUE,pft,NA,NA,"EA,DA,EG,DG",plant functional type: EA = evergreen angiosperm; DA = deciduous angiosperm; EG = evergreen gymnosperm; DG = deciduous gymnosperm
 growingCondition,NA,tree,character,FALSE,TRUE,growing environment,NA,NA,"FW,FE,GH,PU,PM,GC,CG",growing environment of sampled plant: FW = field wild; FE =field experimental; GH = glasshouse; PU = plantation unmanaged; PM = plantation managed; GC = growth chamber; CG = common garden
