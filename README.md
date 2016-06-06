@@ -1,6 +1,7 @@
 # BAAD: a Biomass And Allometry Database for woody plants
 
 [![Build Status](https://travis-ci.org/dfalster/baad.png?branch=master)](https://travis-ci.org/dfalster/baad)
+[![Build status](https://ci.appveyor.com/api/projects/status/248baerx4grttnwn?svg=true)](https://ci.appveyor.com/project/dfalster/baad)
 
 ## About
 
