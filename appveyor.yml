@@ -1,20 +1,26 @@
 init:
   ps: |
+        Get-Date
         $ErrorActionPreference = "Stop"
-        Invoke-WebRequest http://raw.github.com/krlmlr/r-appveyor/master/scripts/appveyor-tool.ps1 -OutFile "..\appveyor-tool.ps1"
-        Import-Module '..\appveyor-tool.ps1'
-
 install:
-  ps: Bootstrap
+  ps: |
+        Import-Module '.\scripts\appveyor-tool.ps1'
+        Bootstrap
+cache:
+  - C:\RLibrary
 
 build_script:
   - travis-tool.sh install_github richfitz/storr
   - travis-tool.sh install_github richfitz/remake
   - Rscript -e 'remake::install_remake(".")'
+  - Rscript -e 'options(repos="http://cran.rstudio.com"); remake::install_missing_packages();'
 
 test_script:
-  - Rscript -e 'options(repos="http://cran.rstudio.com"); remake::install_missing_packages()'
-  - ./remake export
+  - Rscript -e 'remake::make("export");'
 
 on_failure:
   - travis-tool.sh dump_logs
+
+environment:
+  global:
+    USE_RTOOLS: true
