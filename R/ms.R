@@ -1,46 +1,4 @@
-## Author information is handled as a proper remake target:
-author_details <- function(first_authors, baad) {
-  data_authors <- baad$contact
-  data_authors <- data_authors[order(last_name(data_authors$name),
-                                     data_authors$name),]
-  data_authors$email[data_authors$email == ""] <- NA
-
-  cols <- c("name", "email", "address")
-  all_authors <- rbind(first_authors[cols], data_authors[,cols])
-  all_authors <- all_authors[!duplicated(all_authors$name),]
-
-  address <- unique(all_authors$address)
-  address_table <- data.frame(code=seq_along(address), address=address)
-
-  all_authors$address_code <- match(all_authors$address, address)
-
-  list(authors=all_authors,
-       address_table=address_table)
-}
-
-last_name <- function(author) {
-  sapply(author, function(x)
-         last(strsplit(x, ' ', useBytes=TRUE)[[1]]))
-}
-
-save_author_details <- function(d, filename) {
-  write.csv(d$authors[c("name", "email", "address")], filename,
-            row.names=FALSE)
-}
-
-## Below here still needs work
-
-get_metadata_methods  <-  function(metadata) {
-  if (nrow(metadata) > 0) {
-    metadata <- metadata[!is.na(metadata$Description) &
-                         !(tolower(metadata$Topic) %in% c('sampling strategy', 'age', 'growth environment', 'acknowledgements')),]
-    paste0(metadata$Topic, ': ', metadata$Description, collapse='\n\t- ')
-  }
-}
-
-get_metadata_design  <-  function(metadata) {
-  metadata$Description[metadata$Topic == 'Sampling strategy']
-}
+# functions that were used in manuscript and are still sued in reports
 
 drawWorldPlot <- function(data, sizebyn=FALSE, add=FALSE,
                           pchcol="red", legend=TRUE) {
@@ -83,61 +41,6 @@ drawWorldPlot <- function(data, sizebyn=FALSE, add=FALSE,
       }
     }
   }
-}
-
-study_details <- function(data, baad) {
-  template <-
-    c('## {{study_name}}',
-      'Data from: {{citation}}\n',
-      '1. Site Description',
-      '\t- Site(s) type(s): {{site_type}}',
-      '\t- Geography',
-      '\t\t- latitude, longitude: {{latlon}}',
-      '\t- Site(s) history: plant grown in {{site_history}}',
-      '2. Experimental or sampling design',
-      '\t- Design characteristics: {{design}}',
-      '\t- Variables included: {{vars}}',
-      '\t- Species sampled: *{{species}}*',
-      '3. Research methods',
-      '\t- {{lab}}',
-      '4. Study contacts: {{personell}}'
-      )
-
-  template <- paste(template, collapse="\n")
-
-  study_name <- data$studyName[[1]]
-
-  personell <- baad$contacts$name[baad$contacts$studyName == study_name]
-  personell <- paste0(personell, collapse=", ")
-
-  metadata <- baad$metadata[baad$metadata$studyName == study_name,]
-  metadata <- metadata[names(metadata) != study_name]
-
-  site_type <- classify_veg_type(data$vegetation)
-  site_history <- classify_site_history(data$growingCondition)
-  metadata_methods <- get_metadata_methods(metadata)
-  metadata_design <- get_metadata_design(metadata)
-
-  ## Identify data columns that are not empty:
-  common <- c("studyName", "species", "speciesMatched", "location",
-              "latitude", "longitude", "vegetation", "map", "mat",
-              "family", "pft", "growingCondition", "grouping")
-  test <- setdiff(names(data), common)
-  vars <- names(which(!apply(is.na(data[test]), 2, all)))
-
-  dat <- list(
-    study_name   = study_name,
-    site_type    = site_type,
-    latlon       = get_lat_long(data),
-    site_history = site_history,
-    design       = metadata_design,
-    lab          = metadata_methods,
-    personell    = personell,
-    citation     = get_citation_ms(study_name, baad),
-    vars         = paste0(vars, collapse=", "),
-    species      = paste0(sort(unique(data$species)), collapse=", "))
-
-  whisker.render(template, dat)
 }
 
 classify <- function(code, table) {
@@ -256,11 +159,6 @@ summary_table <- function(data, var_def, digits=2) {
   dfr
 }
 
-get_acknowledgements <- function(baad) {
-  ack <- baad$metadata[baad$metadata$Topic == "Acknowledgements",]
-  paste(sprintf("**%s:** %s", ack$studyName, ack$Description),
-        collapse="; ")
-}
 
 ## This is a temporary helper until first class rendering is done:
 render_html <- function(filename_md) {

@@ -27,63 +27,13 @@ targets:
     depends:
       - baad
       - export
-  manuscript:
-    depends:
-      - ms/ms.docx
-      - ms/ms.html
-      - ms/metadata.docx
-      - ms/metadata.html
   everything:
     depends:
       - export
-      - manuscript
       - reports
 
   compiler_contacts:
     command: read_csv("config/contact.csv")
-
-  author_info:
-    command: author_details(compiler_contacts, baad)
-
-  export/authors.csv:
-    command: save_author_details(author_info, target_name)
-
-  ms/ms.md:
-    knitr:
-      chdir: true
-      auto_figure_prefix: true
-    depends:
-      - baad
-      - author_info
-      - R/ms.R
-
-  ms/metadata.md:
-    knitr:
-      chdir: true
-      auto_figure_prefix: true
-    packages:
-      - whisker
-      - knitcitations
-    depends:
-      - baad
-      - ms/refs.bib
-      - R/ms.R
-
-  ms/metadata.html:
-    command: render_html("ms/metadata.md")
-    quiet: true
-
-  ms/metadata.docx:
-    command: render_doc("ms/metadata.md")
-    quiet: true
-
-  ms/ms.html:
-    command: render_html("ms/metadata.md")
-    quiet: true
-
-  ms/ms.docx:
-    command: render_doc("ms/ms.md")
-    quiet: true
 
   ## exporting targets
   export:

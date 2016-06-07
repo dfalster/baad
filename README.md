@@ -84,6 +84,20 @@ baad <- readRDS('export/baad.rds')
 
 A copy of the dataset has been saved in the folder `export` as both `rds` (compressed data for R) and also as csv files.
 
+## Reproducing older versions of the BAAD and the paper from Ecology
+
+You can reproduce any version of the BAAD by checking out the appropriate commit that generated, or using the links provided under the [releases tab](https://github.com/dfalster/baad/releases). For example, to reproduce v1.0.0 of the database, corresponding to the paper in Ecology and the manuscript submitted to Ecology:
+
+```
+git checkout v1.0.0
+```
+
+Then in R run
+```
+remake::make("export")
+remake::make("manuscript")
+```
+
 ## Contributing data to the BAAD
 
 We welcome further contributions to the BAAD.

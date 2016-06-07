@@ -1,5 +1,5 @@
 "dataset","location","latitude","longitude","vegetation","species","family","pft","a.stbc","h.t","h.c","d.ba","d.bh","m.lf","m.st","m.so","m.br","growingCondition"
-"Abe1981","Japan-Oumu-46",45,143,"BorF","Abies sachalinensis","Pinaceae","EG",0.066508302,21.96,8.9,0.4915,0.408,49.2,403,566,113.8,"PM"
+"Abe1981","Japan-Oumu-46",45,143,"BorF","Abies sachalinensis","Pinaceae","EA",0.066508302,21.96,8.9,0.4915,0.408,49.2,403,566,113.8,"PM"
 "Abe1981","Japan-Oumu-46",45,143,"BorF","Abies sachalinensis","Pinaceae","EG",0.056410438,19.7,8.02,0.4265,0.352,28,342.8,455.7,84.9,"PM"
 "Abe1981","Japan-Oumu-46",45,143,"BorF","Abies sachalinensis","Pinaceae","EG",0.035298935,20.1,9.5,0.5003,0.3,19.9,224.8,274.9,30.2,"PM"
 "Abe1981","Japan-Oumu-46",45,143,"BorF","Abies sachalinensis","Pinaceae","EG",0.020611989,19.23,11.6,0.3,0.24,11.1,158.5,184,14.4,"PM"
