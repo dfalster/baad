@@ -1,9 +1,10 @@
-location,"Petsikko, Finland"
-latitude,69.491822025
-longitude,27.2310822944
-vegetation,BorF
-family,Betulaceae
-pft,DA
-growingCondition,FW
-status,3
-lai,0.61
+"lookupVariable","lookupValue","newVariable","newValue","source"
+,,location,"Petsikko, Finland",Rafael Poyatos
+,,latitude,69.491822025,Rafael Poyatos
+,,longitude,27.2310822944,Rafael Poyatos
+,,vegetation,BorF,Rafael Poyatos
+,,family,Betulaceae,Rafael Poyatos
+,,pft,DA,Rafael Poyatos
+,,growingCondition,FW,Rafael Poyatos
+,,status,3,Rafael Poyatos
+,,lai,0.61,Rafael Poyatos

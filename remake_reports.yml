@@ -1511,6 +1511,20 @@ targets:
   reports/Portsmuth2006.html:
     command: render_html("reports/Portsmuth2006.md")
     cleanup_level: purge
+  reports/Poyatos0000.md:
+    knitr:
+      input: reports/report.Rmd
+      chdir: true
+      auto_figure_prefix: true
+    depends:
+      - data_study: Poyatos0000
+      - baad_dictionary
+      - baad_data
+      - R/reports.R
+    cleanup_level: purge
+  reports/Poyatos0000.html:
+    command: render_html("reports/Poyatos0000.md")
+    cleanup_level: purge
   reports/Reid2004.md:
     knitr:
       input: reports/report.Rmd
@@ -2573,6 +2587,7 @@ targets:
       - reports/Poorter1999.html
       - reports/Portsmuth2005.html
       - reports/Portsmuth2006.html
+      - reports/Poyatos0000.html
       - reports/Reid2004.html
       - reports/Ribeiro2011.html
       - reports/Roberts2003.html

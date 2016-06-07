@@ -1302,6 +1302,18 @@ targets:
                  "data/Portsmuth2006/studyMetadata.csv",
                  variable_definitions,
                  conversions)
+  Poyatos0000:
+    command: >
+      load_study("data/Poyatos0000/data.csv",
+                 "data/Poyatos0000/dataImportOptions.csv",
+                 "data/Poyatos0000/dataManipulate.R",
+                 "data/Poyatos0000/dataMatchColumns.csv",
+                 "data/Poyatos0000/dataNew.csv",
+                 "data/Poyatos0000/studyRef.bib",
+                 "data/Poyatos0000/studyContact.csv",
+                 "data/Poyatos0000/studyMetadata.csv",
+                 variable_definitions,
+                 conversions)
   Reid2004:
     command: >
       load_study("data/Reid2004/data.csv",
@@ -2229,6 +2241,7 @@ targets:
         Poorter1999,
         Portsmuth2005,
         Portsmuth2006,
+        Poyatos0000,
         Reid2004,
         Ribeiro2011,
         Roberts2003,

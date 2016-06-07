@@ -1,6 +1,6 @@
 var_in,method,unit_in,var_out,notes
-genet_id,NA,NA,genet_id,NA
-stem_id,NA,NA,stem_id,NA
+genet_id,NA,NA,NA,NA
+stem_id,NA,NA,NA,NA
 species,NA,NA,species,NA
 d.ba,"c,d2,p1,f",m,d.ba,NA
 d.bh,"c,d3,p1,f",m,d.bh,NA
