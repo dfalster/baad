@@ -9,15 +9,12 @@ install:
 build_script:
   - travis-tool.sh install_github richfitz/storr
   - travis-tool.sh install_github richfitz/remake
-  - Rscript -e 'remake::install_remake(".")'
-  - Rscript -e 'options(repos="http://cran.rstudio.com"); remake::install_missing_packages();'
-
-test_script:
-  - Rscript -e 'remake::make("export");'
+  - travis-tool.sh r_install plyr rmarkdown knitr maps mapdata Taxonstand taxize methods bibtex devtools
+  - Rscript -e 'remake::make()'
 
 on_failure:
   - travis-tool.sh dump_logs
 
 environment:
-  global:
-    USE_RTOOLS: true
+  USE_RTOOLS: true
+  R_VERSION: stable

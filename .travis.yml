@@ -3,7 +3,7 @@ language: c
 sudo: required
 
 script:
-    - ./remake ms/ms.md
+    - ./remake export
 
 before_install:
     - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
@@ -15,9 +15,6 @@ before_install:
 
 install:
     - Rscript -e 'options(repos="http://cran.rstudio.com"); remake::install_missing_packages()'
-
-after_success:
-    - cat ms/ms.md
 
 notifications:
   slack: bdkd:vj80qn6ZugIB1Uh4p6MBrkVq
