@@ -23,6 +23,7 @@ You can download a compiled version of the database from either:
 
 1. Ecological Archives. This is the version of the database associated with the corresponding paper in the journal [*Ecology*]. [Link](http://www.esapubs.org/archive/ecol/E096/128/).
 2. Releases we have posted on [github](https://github.com/dfalster/baad/releases).
+3. The [baad.data](https://github.com/traitecoevo/baad.data) package for `R`.
 
 The database contains the following elements
 
@@ -47,6 +48,12 @@ baad.data:::data("x.y.z")
 ```
 
 to download an earlier or more recent version (where version numbers will follow the [semantic versioning](http://semver.org) guidelines. The baad.data package caches everything so subsequent calls, even across sessions, are very fast.  This should facilitate greater reproducibility by making it easy to depend on the version used for a particular analysis, and allowing different analyses to use different versions of the database. 
+
+Further details about the different versions and changes between versions is available on the [github releases](https://github.com/dfalster/baad/releases) page and in the [CHANGELOG](CHANGELOG.md).
+
+## Details about the data distribution system
+
+The BAAD is designed to be a living database -- we will be making periodic releases as we add more data. These updates will correspond with changes to the version number of this resource, and each version of the database will be available on [github](https://github.com/dfalster/baad/releases) and via the [baad.data](https://github.com/traitecoevo/baad.data) package. If you use this resource for a published analysis, please note the version number in your publication.  This will allow anyone in the future to go back and find **exactly** the same version of the data that you used.
 
 ### Rebuilding from source
 
