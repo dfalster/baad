@@ -29,6 +29,14 @@ To access a specific version, e.g. `1.0.0` using the [baad.data](https://github.
 
     baad.data:::data("1.0.0")
 
+## v1.0.1
+
+* Added `speciesMatch` to definitions
+* McCulloh2010: Missing location
+* Claveau2002: Remove special characters and empty quotes in data causing errors
+
+See here for all changes in the code between versions: [v1.0.0...v1.0.1](https://github.com/dfalster/baad/compare/v1.0.0...v1.0.1)
+
 ## v1.0.0
 
 This is the version of the database associated with the corresponding paper in the journal [*Ecology*]. [Link](http://www.esapubs.org/archive/ecol/E096/128/) and posted on Ecological Archives.

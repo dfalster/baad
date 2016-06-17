@@ -27,7 +27,7 @@ colophon <- function(path) {
   str <-
     c("# BAAD: a Biomass And Allometry Database for woody plants",
       "",
-      sprintf("**Release 1.0.0** git SHA: [%s](%s)", git_sha, git_url),
+      sprintf("**Release 1.0.1** git SHA: [%s](%s)", git_sha, git_url),
       "",
       "Session info used to generate this version:",
       "",
