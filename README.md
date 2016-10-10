@@ -38,13 +38,13 @@ These elements are available at both of the above links as a series of CSV and t
 If you are using `R`, by far the best way to access data is via our package [baad.data](https://github.com/traitecoevo/baad.data).  After installing the package (instructions [here](https://github.com/traitecoevo/baad.data)), users can run
 
 ```r
-baad.data:::baad_data("ecology")
+baad.data::baad_data("1.0.0")
 ```
 
 to download the version stored Ecological Archives, or
 
 ```r
-baad.data:::baad_data("x.y.z")
+baad.data::baad_data("x.y.z")
 ```
 
 to download an earlier or more recent version (where version numbers will follow the [semantic versioning](http://semver.org) guidelines. The baad.data package caches everything so subsequent calls, even across sessions, are very fast.  This should facilitate greater reproducibility by making it easy to depend on the version used for a particular analysis, and allowing different analyses to use different versions of the database. 
