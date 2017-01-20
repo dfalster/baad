@@ -31,8 +31,8 @@ To contribute, please follow the steps below. It is important that all steps are
 	* `dataMatchColumns.csv`: a table matching variables in your data to variables in BAAD. Columns are as follows:
     * `var_in` are the column names of your data file `data.csv`, 
     * `unit_in`: the units of your data
-    * `var_out`: the corresponding variable name in BAAD for this variable (from the table [`methodsDefinitions.csv`](https://github.com/dfalster/baad/blob/master/config/methodsDefinitions.csv))
-    * `method`:  any relevant codes describing how you collected the data (from the table [`variableDefinitions.csv`](https://github.com/dfalster/baad/blob/master/config/variableDefinitions.csv).
+    * `var_out`: the corresponding variable name in BAAD for this variable (from the table [`variableDefinitions.csv`](https://github.com/dfalster/baad/blob/master/config/variableDefinitions.csv))
+    * `method`:  any relevant codes describing how you collected the data (from the table [`methodsDefinitions.csv`](https://github.com/dfalster/baad/blob/master/config/methodsDefinitions.csv)).
 	* `dataNew.csv`: any data you wish to add, not already in `data.csv`, e.g. site name, location, vegetation type. 
     * Note, we prefer you to add these details here, rather than modifying the raw data file, as the modifications are then automated and part of the workflow.
     * Substitutions are also possible, [as in this example](https://github.com/dfalster/baad/blob/master/data/Kohyama1994/dataNew.csv) where abbreviations in the variable `species` are used to add details such as family, and then to eventually replaced the abbreviation with species true name . 
